@@ -1,0 +1,20 @@
+{
+  "cards": [
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Interpreting a graph"
+        }
+      ]
+    }
+  ],
+  "definitions": [],
+  "secText": [
+    "In the activity, you control the <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='wb_amplitude_concept'>amplitude</a> and <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='wb_period_concepta'>period</a> for a puck on a spring moving in simple harmonic motion. With the right settings, the motion of the puck will create a graph that matches the one shown on the paper.",
+    "Determine what the values for the amplitude and period should be by examining the graph. Assume you can read the graph to the nearest 0.1 m of displacement and the nearest 0.1 second of time. Press GO to see if you are correct."
+  ],
+  "objNames": [
+    "jsact_Chapter_15_6"
+  ]
+}

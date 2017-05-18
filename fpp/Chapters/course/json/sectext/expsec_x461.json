@@ -1,0 +1,52 @@
+{
+  "cards": [
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "What was actually observed"
+        },
+        {
+          "type": "headline",
+          "text": "  <u>Number</u> of electrons increases with light’s intensity instead of energy of electrons"
+        }
+      ]
+    },
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Light frequency and electrons"
+        },
+        {
+          "type": "headline",
+          "text": "Higher frequency caused electrons to be emitted"
+        },
+        {
+          "type": "headline",
+          "text": "Lower frequency light"
+        },
+        {
+          "type": "bullet",
+          "text": "Caused no electron emission"
+        },
+        {
+          "type": "bullet",
+          "text": "No matter how intense the light"
+        }
+      ]
+    }
+  ],
+  "definitions": [],
+  "secText": [
+    "In this section, we discuss what scientists observed when they conducted the photoelectric effect experiment. The results compelled Einstein to rethink the nature of light.  ",
+    "Scientists observed that when light gets more intense (brighter), more electrons are ejected from the metal. Increased intensity only meant <b>more</b> electrons, <b>not</b> faster-moving ones.  To compare this to a more everyday example, instead of more intense light acting like a larger wave knocking over one person with more energy, the more intense light was knocking over three people, each with the energy of one small wave.  ",
+    "Experimental scientists also discovered a relationship between the frequency of the light and its ability to cause electrons to be ejected from the metal. In the upper diagram, we show violet light. It causes electrons to be emitted. ",
+    "However, low frequencies of light, such as red light, do not cause any electrons to be emitted.  A photon of red light has less energy than a photon of green or violet light, since violet light’s frequency is greater, and a <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='wb_planck_concepts'>photon’s energy</a> is proportional to its frequency. ",
+    "The intensity of the lower-frequency light can be increased—it can be as bright as you like—but still no electrons are emitted from this material. We stress that this is puzzling, given a purely wave-based view of light. It is like saying you would be knocked over by high-frequency ocean waves that are just one centimeter tall, but a low-frequency tsunami wave ten meters high would leave you unmoved. "
+  ],
+  "objNames": [
+    "wb_photoelectric3",
+    "wb_photoelectric4"
+  ]
+}

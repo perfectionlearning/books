@@ -1,0 +1,44 @@
+{
+  "cards": [
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Torque"
+        },
+        {
+          "type": "headline",
+          "text": "Causes or opposes rotation"
+        },
+        {
+          "type": "headline",
+          "text": "Increases with amount of force, distance from axis to point of force"
+        }
+      ]
+    },
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Torque, angle and lever arm"
+        },
+        {
+          "type": "headline",
+          "text": "Torque proportional to component of force perpendicular to seesaw"
+        }
+      ]
+    }
+  ],
+  "definitions": [],
+  "secText": [
+    "  <b class=\"object-name\">Supplemental Material: </b>  <span class=\"object-name\">AP</span>",
+    "  <b>Essential Question: </b>  <br />How can we calculate the torque acting on an object?",
+    "  <b>Enduring Understandings:</b>  <b>    <br />  </b>1. <a class='pjumpToTopic' href='javascript:void(0)' data-chap='9' data-topic='3' data-subtopic='1' data-subsection='0'>Torque</a> causes or opposes rotation. It is measured in newton meters.<br />2. When the <a class='pjumpToTopic' href='javascript:void(0)' data-chap='9' data-topic='3' data-subtopic='2' data-subsection='0'>force is not perpendicular to the torque</a>, torque is calculated by multiplying the position vector by the force, by the sine of the angle between the position vector and the force.<br />3. <a class='pjumpToTopic' href='javascript:void(0)' data-chap='9' data-topic='3' data-subtopic='3' data-subsection='0'>Net Torque</a> is the sum of all torques acting on an object.",
+    "  <b>Vocabulary:</b>  <a class='pjumpToTopic' href='javascript:void(0)' data-chap='9' data-topic='3' data-subtopic='1' data-subsection='0'>torque</a>, <a class='pjumpToTopic' href='javascript:void(0)' data-chap='9' data-topic='3' data-subtopic='3' data-subsection='0'>net torque</a>",
+    "  <b>STEM Skills:</b>  <b>    <br />  </b>1. Review <a class='pjumpToTopic' href='javascript:void(0)' data-chap='5' data-topic='0' data-subtopic='1' data-subsection='1'>force</a>.<br />"
+  ],
+  "objNames": [
+    "wb_torque_concepts",
+    "wb_torque_lever_arm"
+  ]
+}

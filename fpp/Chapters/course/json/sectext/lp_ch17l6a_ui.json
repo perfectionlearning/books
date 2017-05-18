@@ -1,0 +1,48 @@
+{
+  "cards": [
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Lenz’s law"
+        },
+        {
+          "type": "headline",
+          "text": "Magnetic field of induced current opposes change in flux"
+        }
+      ]
+    },
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Motional induced emf"
+        },
+        {
+          "type": "headline",
+          "text": "Current in magnetic field experiences force "
+        },
+        {
+          "type": "headline",
+          "text": "Force on current opposes wire’s motion "
+        },
+        {
+          "type": "headline",
+          "text": "Right-hand rule indicates direction of current"
+        }
+      ]
+    }
+  ],
+  "definitions": [],
+  "secText": [
+    "  <b class=\"object-name\">Supplemental Material: </b>  <span class=\"object-name\">AP</span>",
+    "  <b>Essential Question: </b>  <b>    <br />  </b>How can we quantify electromagnetic induction?",
+    "  <b>Enduring Understandings:</b>  <b>    <br />  </b>1. <a class='pjumpToTopic' href='javascript:void(0)' data-chap='17' data-topic='5' data-subtopic='1' data-subsection='0'>Lenz's law</a> states that an induced current flows so that the direction of its magnetic field opposes the change in magnetic flux that causes the current.<br />2. <a class='pjumpToTopic' href='javascript:void(0)' data-chap='17' data-topic='5' data-subtopic='2' data-subsection='0'>Electric generators</a> are applications of motional induced emf and torque on a current-carrying loop.",
+    "  <b>Vocabulary:</b>  <a class='pjumpToTopic' href='javascript:void(0)' data-chap='17' data-topic='5' data-subtopic='1' data-subsection='0'>Lenz's law</a>",
+    "  <b>STEM Skills:</b>  <b>    <br />  </b>1. Review <a class='pjumpToTopic' href='javascript:void(0)' data-chap='17' data-topic='2' data-subtopic='1' data-subsection='0'>electromagnetic induction</a>."
+  ],
+  "objNames": [
+    "wb_Lenz_law_concepts2",
+    "wb_motional_induced_emf_force1"
+  ]
+}

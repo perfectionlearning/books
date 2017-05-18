@@ -1,0 +1,34 @@
+{
+  "cards": [
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Magnetic, electric forces are related "
+        },
+        {
+          "type": "headline",
+          "text": "Electromagnetic induction "
+        },
+        {
+          "type": "headline",
+          "text": "Maxwell provides conceptual model"
+        },
+        {
+          "type": "headline",
+          "text": "Hertz provides empirical data </br>(20 years later)"
+        }
+      ]
+    }
+  ],
+  "definitions": [],
+  "secText": [
+    "Electromagnetic induction shows another crucial relationship between electric and magnetic fields. It was a chance occurrence that led Faraday  to discover crucial evidence about electromagnetic induction in 1831. ",
+    "Faraday was conducting an experiment in which he wrapped two lengths of insulated wire around a soft iron ring. He used an ammeter to measure electric current in the wires. Faraday had always connected the battery in the first circuit before he connected an ammeter in the second, and he detected no current in the second circuit. However, on the morning of August 29, Faraday connected the ammeter first and then connected the battery. To his delight, he detected a momentary current in the second circuit; connecting the battery after the ammeter meant that the ammeter was measuring what happened as the current changed in the first circuit.",
+    "Physicist James Clerk Maxwell’s brilliant studies pioneered research into the nature of electromagnetic waves. He correctly concluded in 1865 that oscillating electric and magnetic fields can constitute a self-propagating wave that he called electromagnetic radiation. His correction to some of Amp<span class=\"apple-style-span\">é</span>re’s work (showing that a changing electric field causes a magnetic field) combined with Faraday’s law (a changing magnetic field causes an electric field) supplies the basis for understanding this kind of wave.",
+    "It took years to demonstrate that Maxwell’s work of 1865 was correct.  In 1886 the German physicist <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='wb_radio_wave_speed1'>Heinrich Hertz</a> built what we today would call a radio transmitter and receiver, which produced electromagnetic radiation. In later experiments, he demonstrated that the radiation moved at the speed of light.  His experiments provided the experimental proof of Maxwell’s conclusions. Research into electromagnetic forces continued, with <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='wb_particle_accelerator_1'>particle accelerators</a> playing an important role in this investigation. "
+  ],
+  "objNames": [
+    "wb_e_and_m_forces3"
+  ]
+}

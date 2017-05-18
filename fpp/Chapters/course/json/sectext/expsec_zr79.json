@@ -1,0 +1,38 @@
+{
+  "cards": [
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "History of gravity "
+        },
+        {
+          "type": "headline",
+          "text": "If not the Greeks, then Newton "
+        },
+        {
+          "type": "headline",
+          "text": "Kepler provided mathematical model for elliptical orbits"
+        },
+        {
+          "type": "headline",
+          "text": "Advances in technology played key role"
+        },
+        {
+          "type": "headline",
+          "text": "Einstein’s general theory of relativity"
+        }
+      ]
+    }
+  ],
+  "definitions": [],
+  "secText": [
+    "This section is one of several that outline some of the key milestones in the <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='wb_gravity_1'>history of science</a>. Whatever physics the Greeks did not first pioneer, it often seems that Sir Isaac Newton was the source. However, the application of the theory of gravity to the orbits of astronomical objects was a team effort. ",
+    "One inspiration to scientists of his era was comets.  These showy objects inspired scientists to understand their orbits, in part to predict when they would return. A crucial piece of the puzzle was what we now call Kepler’s laws of orbits.  Based on observations made by another scientist, Johannes Kepler had concluded that planets move in elliptical orbits, and deduced other aspects of their <a class='pjumpToTopic' href='javascript:void(0)' data-chap='1' data-topic='4' data-subtopic='1' data-subsection='0'>motion</a>.  However, he could not explain why. ",
+    "Technology also played a crucial role.  In the decades preceding Newton, optical <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='wb_reflecting_telescope_concepts'>telescopes</a> were conceived of, built, and significantly improved. Previously, astronomy had been done without the benefit of lenses or mirrors.  Galileo was among the first to use an optical telescope and improved their functionality.  Newton played his role, developing a telescope now called a Newtonian reflector. Newton used geometry and his theory of gravity to explain the observed elliptical orbits.  Edmond Halley in turn used Newton’s work to determine the orbit and <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='wb_UCM_period_concept'>period</a>  of the comet we now call Halley’s comet.",
+    "In the 1900s, Einstein further developed the theory of gravity in his <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='wb_general_rel'>general theory of relativity</a>.   General relativity revolutionized the way we think about space and time, and it has also had important experimental effects. For example, <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='wb_market_service1'>GPS devices</a> rely on a system of accelerating satellites that exchange radio signals, and which carry atomic clocks that are synchronized. None of this would be possible without the theoretical groundwork of general relativity."
+  ],
+  "objNames": [
+    "wb_gravity_1"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+    "cards": [{
+            "lines": [{
+                    "type": "title",
+                    "text": "Drive!"
+                }, {
+                    "type": "headline",
+                    "text": "Experiment with speed, velocity and acceleration"
+                }]
+        }],
+    "definitions": [],
+    "secText": ["When you click on the card, you will start a 3-D car driving simulation.  Press the up arrow key to go faster, and the spacebar to go slower. Press the down arrow key to turn around.  You can pause the simulation, if you like. ", "At first, we only let you drive along a line along the <i>x</i>-axis, but in later activities you will be able to turn in any direction you wish. ", "When you are driving, you are learning physics.  You are studying how to describe motion, a topic called kinematics. ", "For example, there are gauges for speed, velocity, and acceleration.   If you turn the car around, does your speed change?  your velocity?  Use this experiment to learn the difference between velocity and speed."],
+    "objNames": ["unityact_disp1d_v1"]
+}

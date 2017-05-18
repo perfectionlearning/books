@@ -1,0 +1,48 @@
+{
+  "cards": [
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Bernoulli’s principle"
+        },
+        {
+          "type": "headline",
+          "text": "The sum of:"
+        },
+        {
+          "type": "bullet",
+          "text": "Pressure, KE / unit volume, PE / unit volume"
+        },
+        {
+          "type": "headline",
+          "text": "Sum of pressure, energy density is constant in closed systems"
+        }
+      ]
+    },
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Bernoulli’s principle: Paper lift"
+        },
+        {
+          "type": "headline",
+          "text": "Pressure falls as speed increases"
+        }
+      ]
+    }
+  ],
+  "definitions": [],
+  "secText": [
+    "  <b class=\"object-name\">Supplemental Material: </b>  <span class=\"object-name\">AP</span>",
+    "  <b>Essential Question: </b>  <b>    <br />  </b>How can we use Bernoulli's principle to calculate properties of fluids?",
+    "  <b>Enduring Understandings:</b>  <b>    <br />  </b>1. <a class='pjumpToTopic' href='javascript:void(0)' data-chap='10' data-topic='5' data-subtopic='1' data-subsection='0'>Bernoulli’s principle</a> states that the pressure, kinetic energy density, and potential energy density are constant in a closed system.",
+    "  <b>Vocabulary:</b>  <a class='pjumpToTopic' href='javascript:void(0)' data-chap='10' data-topic='5' data-subtopic='1' data-subsection='0'>Bernoulli’s principle</a>",
+    "  <b>STEM Skills:</b>  <b>    <br />  </b>1. Review <a class='pjumpToTopic' href='javascript:void(0)' data-chap='6' data-topic='2' data-subtopic='2' data-subsection='0'>kinetic energy</a>.<br />2. Review <a class='pjumpToTopic' href='javascript:void(0)' data-chap='6' data-topic='3' data-subtopic='1' data-subsection='0'>potential energy</a>."
+  ],
+  "objNames": [
+    "wb_bernoulli_concepts",
+    "wb_bernoulli_applied1"
+  ]
+}

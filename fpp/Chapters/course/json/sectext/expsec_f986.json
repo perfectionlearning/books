@@ -1,0 +1,40 @@
+{
+  "cards": [
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Positive work done on a system"
+        },
+        {
+          "type": "headline",
+          "text": "Increases its energy"
+        }
+      ]
+    },
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Negative work done on a system"
+        },
+        {
+          "type": "headline",
+          "text": "Reduces its energy"
+        }
+      ]
+    }
+  ],
+  "definitions": [],
+  "secText": [
+    "In this section and the ones that <a class='pjumpToTopic' href='javascript:void(0)' data-chap='6' data-topic='5' data-subtopic='2' data-subsection='0'>follow</a> in this unit, we want to further discuss the relationship between work and a system’s energy.  We have done this earlier, such as discuss the relationship of <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='wb_pe_definition'>work and an object’s gravitational potential energy</a>. ",
+    "Work done on a system changes its energy. This is called the <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='wb_work_potentialequation'>work-energy theorem</a>.  We use the example of an elevator and its passengers.  To be more specific, our system includes the Earth, since the planet is a required element of the system’s gravitational potential energy.  ",
+    "The elevator and its passengers start on the ground and are pulled up by the cable.  The cable is doing positive work on the elevator car, applying a force through a displacement that is in the same direction.  The cable’s work increases both the gravitational potential energy and the kinetic energy of the car and its passengers.",
+    "Work can also reduce a system’s energy. Here, a force, <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='wb_friction_definition'>friction</a>, acts toward the right and opposes the motion of the block that is sliding to the left.  Friction is doing negative work on the block, slowing it down.",
+    "The work that is done is negative work, since the force is in the opposite direction of the displacement. The negative work on the object reduces its energy.   "
+  ],
+  "objNames": [
+    "wb_work_on_system_and_energy_add",
+    "wb_work_on_system_and_energy_subtract"
+  ]
+}

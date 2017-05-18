@@ -1,0 +1,26 @@
+{
+  "Title": "Resistivity",
+  "Slides": [
+    {
+      "startTime": "0",
+      "endTime": "8300",
+      "startMarkerName": "Introduction",
+      "endMarkerName": "Marker 4",
+      "headlines": [],
+      "bullets": []
+    },
+    {
+      "startTime": "9367",
+      "endTime": "-1",
+      "startMarkerName": "Marker 3",
+      "endMarkerName": "End",
+      "headlines": [
+        "A material’s opposition to current flow"
+      ],
+      "bullets": [
+        "Conductors have low resistivity",
+        "Insulators have high resistivity"
+      ]
+    }
+  ]
+}

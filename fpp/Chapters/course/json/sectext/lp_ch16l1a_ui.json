@@ -1,0 +1,39 @@
+{
+  "cards": [
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Direction of conventional current"
+        },
+        {
+          "type": "headline",
+          "text": "Current arrow in direction of <u>positive</u> charge flow"
+        }
+      ]
+    },
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Current equals"
+        },
+        {
+          "type": "headline",
+          "text": "Potential difference divided by resistance"
+        }
+      ]
+    }
+  ],
+  "definitions": [],
+  "secText": [
+    "  <b>Essential Question: </b>  <b>    <br />  </b>How does resistance affect the flow of electric current?",
+    "  <b>Enduring Understandings:</b>  <b>    <br />  </b>1. <a class='pjumpToTopic' href='javascript:void(0)' data-chap='16' data-topic='0' data-subtopic='1' data-subsection='0'>Electric current</a> is the rate of flow of electric charge passing through a surface. The direction of <a class='pjumpToTopic' href='javascript:void(0)' data-chap='16' data-topic='0' data-subtopic='1' data-subsection='2'>conventional current</a> is the same as the direction of the flow of positive charges.<br />2. <a class='pjumpToTopic' href='javascript:void(0)' data-chap='16' data-topic='0' data-subtopic='2' data-subsection='0'>Resistors</a> inhibit the flow of current.<br />3. Use <a class='pjumpToTopic' href='javascript:void(0)' data-chap='16' data-topic='0' data-subtopic='3' data-subsection='0'>Ohm's law</a> to calculate current, potential difference, or resistance if two of the three variables are known.<br />4. Current flows easily through conductors, while insulators <a class='pjumpToTopic' href='javascript:void(0)' data-chap='16' data-topic='0' data-subtopic='4' data-subsection='0'>resist</a> the flow of current.",
+    "  <b>Vocabulary:</b>  <a class='pjumpToTopic' href='javascript:void(0)' data-chap='16' data-topic='0' data-subtopic='1' data-subsection='0'>electric current</a>, <a class='pjumpToTopic' href='javascript:void(0)' data-chap='16' data-topic='0' data-subtopic='1' data-subsection='2'>conventional current</a>, <a class='pjumpToTopic' href='javascript:void(0)' data-chap='16' data-topic='0' data-subtopic='1' data-subsection='3'>drift speed</a>, <a class='pjumpToTopic' href='javascript:void(0)' data-chap='16' data-topic='0' data-subtopic='2' data-subsection='0'>resistor</a>, <a class='pjumpToTopic' href='javascript:void(0)' data-chap='16' data-topic='0' data-subtopic='3' data-subsection='0'>Ohm's law</a>, <a class='pjumpToTopic' href='javascript:void(0)' data-chap='16' data-topic='0' data-subtopic='4' data-subsection='0'>resistivity</a>",
+    "  <b>STEM Skills:</b>  <b>    <br />  </b>1. Review <a class='pjumpToTopic' href='javascript:void(0)' data-chap='15' data-topic='3' data-subtopic='2' data-subsection='0'>potential difference</a>.<br />2. Review <a class='pjumpToTopic' href='javascript:void(0)' data-chap='15' data-topic='0' data-subtopic='1' data-subsection='2'>charge</a>.<br />3. Review <a class='pjumpToTopic' href='javascript:void(0)' data-chap='15' data-topic='0' data-subtopic='3' data-subsection='0'>conductors and insulators</a>.<b><br /></b>"
+  ],
+  "objNames": [
+    "wb_electric_current_concepts2",
+    "wb_resistance_concepts"
+  ]
+}

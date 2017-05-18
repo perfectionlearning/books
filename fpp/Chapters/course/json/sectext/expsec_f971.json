@@ -1,0 +1,44 @@
+{
+  "cards": [
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Gravitational potential energy"
+        },
+        {
+          "type": "headline",
+          "text": "  <span class=\"math\">    <i>PE</i> = <i>mgh</i></span>"
+        },
+        {
+          "type": "headline",
+          "text": "  <span class=\"math\">    <i>PE</i> = gravitational potential energy,</span>  <span class=\"math\">    <i>m</i> = mass,</span> <br> <span class=\"math\">    <i>g</i> = freefall acceleration,</span>  <span class=\"math\">    <i>h</i> = height</span>"
+        }
+      ]
+    },
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Work and potential energy "
+        },
+        {
+          "type": "headline",
+          "text": "Work equals change in <i>PE</i>"
+        }
+      ]
+    }
+  ],
+  "definitions": [],
+  "secText": [
+    "Gravitational potential energy equals the product of mass, <i>g</i>, and height.     ",
+    "The height has to be measured relative to a reference height.  It might be the surface of  Earth.  Or, in the classic physics experiment of rolling a ball down a plane, it might be the height above a table’s surface. ",
+    "The reference height you choose defines a height of zero meters, and anything above that will have positive height.  This means a system can have zero potential energy, or it would have negative potential energy if it is lower than the reference height. ",
+    "In general, the work done on a system changes its energy. Here, we focus on its impact on gravitational <i>PE</i>.  If you lift the bucket, your work goes to changing the gravitational potential energy of the bucket-Earth system.",
+    "The equation, <i>mgh</i>, reflects the work done lifting the object if it starts and ends at rest, and it is also the change in gravitational <i>PE</i>. Why? The work you did in lifting equals the product of your force (<i>mg</i>, opposing the weight) and the displacement, <i>h</i>."
+  ],
+  "objNames": [
+    "wb_gravitational_PE_equation",
+    "wb_work_potentialequation"
+  ]
+}

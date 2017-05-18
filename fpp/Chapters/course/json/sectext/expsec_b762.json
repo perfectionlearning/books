@@ -1,0 +1,44 @@
+{
+  "cards": [
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Vector"
+        },
+        {
+          "type": "headline",
+          "text": "Magnitude and direction"
+        },
+        {
+          "type": "bullet",
+          "text": "Can be represented with an arrow"
+        },
+        {
+          "type": "headline",
+          "text": "Length of arrow proportional to magnitude"
+        }
+      ]
+    }
+  ],
+  "definitions": [
+    {
+      "term": "Vector",
+      "def": "A quantity defined by both magnitude and direction."
+    },
+    {
+      "term": "Magnitude",
+      "def": "“How much” of something there is, such as how fast or how far."
+    }
+  ],
+  "secText": [
+    "Many crucial properties in physics are described by vectors.  For instance, you have seen a velocity vector in an <a class='pjumpToTopic' href='javascript:void(0)' data-chap='1' data-topic='0' data-subtopic='1' data-subsection='0'>activity</a>, and in <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='actwb_speed_concept'>movies</a>.",
+    "A vector states “how much” and also states a direction.  An arrow can represent a vector.  The direction of the arrow is the direction of the vector.  ",
+    "The length of the arrow is proportional to the magnitude of the vector. Magnitude describes “how much” of something there is, such as how fast or how far.  ",
+    "For example, the vector representing “200 kilometers, east” is twice as long as the vector that represents “100 kilometers, southeast.”  The directions of these vectors differ as well. In the driving simulations, you see how the length and direction of the vector change to reflect the current velocity. ",
+    "Vectors are represented with bold letters, such as <b>v</b> for velocity, when both magnitude and direction are given.  Scalars and the magnitude of vectors are stated with italics, such as <span style='font-style:italic'>m</span> for mass."
+  ],
+  "objNames": [
+    "wb_vector_definition"
+  ]
+}

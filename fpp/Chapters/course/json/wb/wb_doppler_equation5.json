@@ -1,0 +1,43 @@
+{
+  "Title": "Source, listener both moving",
+  "Slides": [
+    {
+      "startTime": "0",
+      "endTime": "6000",
+      "startMarkerName": "Introduction",
+      "endMarkerName": "Marker 1",
+      "headlines": [],
+      "bullets": []
+    },
+    {
+      "startTime": "7000",
+      "endTime": "20433",
+      "startMarkerName": "Marker 2",
+      "endMarkerName": "Marker 6",
+      "headlines": [
+        "  <span class=\"math\">    <i>f</i>    <sub>L </sub>= listener frequency,</span>  <span class=\"math\">    <i>f</i>    <sub>S</sub> = source frequency,</span>  <span class=\"math\">    <i>v</i>    <sub>L</sub> = speed of listener,</span>  <span class=\"math\">    <i>v</i>    <sub>S</sub> = speed of source,</span>  <span class=\"math\">    <i>v</i> = speed of sound</span>"
+      ],
+      "bullets": []
+    },
+    {
+      "startTime": "21433",
+      "endTime": "30333",
+      "startMarkerName": "Marker 5",
+      "endMarkerName": "Marker 3",
+      "headlines": [
+        "  <span class=\"math\">    <i>f</i>    <sub>L </sub>= listener frequency,</span>  <span class=\"math\">    <i>f</i>    <sub>S</sub> = source frequency,</span>  <span class=\"math\">    <i>v</i>    <sub>L</sub> = speed of listener,</span>  <span class=\"math\">    <i>v</i>    <sub>S</sub> = speed of source,</span>  <span class=\"math\">    <i>v</i> = speed of sound</span>"
+      ],
+      "bullets": []
+    },
+    {
+      "startTime": "31333",
+      "endTime": "-1",
+      "startMarkerName": "Marker 4",
+      "endMarkerName": "End",
+      "headlines": [
+        "  <span class=\"math\">    <i>f</i>    <sub>L </sub>= listener frequency,</span>  <span class=\"math\">    <i>f</i>    <sub>S</sub> = source frequency,</span>  <span class=\"math\">    <i>v</i>    <sub>L</sub> = speed of listener,</span> </br> <span class=\"math\">    <i>v</i>    <sub>S</sub> = speed of source,</span>  <span class=\"math\">    <i>v</i> = speed of sound</span>"
+      ],
+      "bullets": []
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "cards": [
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Some metric system units"
+        },
+        {
+          "type": "headline",
+          "text": "Length: meter"
+        },
+        {
+          "type": "headline",
+          "text": "Mass: gram"
+        },
+        {
+          "type": "headline",
+          "text": "Volume: liter"
+        }
+      ]
+    }
+  ],
+  "definitions": [],
+  "secText": [
+    "The metric system uses units that include the meter, the gram, and the liter. The meter is a measure of length.  It is slightly longer than a yard.    ",
+    "The gram is a unit for <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='wb_mass_definition_physics'>mass</a>. To give you a sense of scale, one paperclip has a mass of about one gram. Grams measure mass − but in everyday speech, they are sometimes incorrectly used to refer to <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='wb_weight_definition'>weight</a> as well, as packaging refers to its contents both in grams (mass) and ounces, a unit of weight.  ",
+    "The liter is a unit of volume.  There are about 3.8 liters in a gallon. There are 1,000 liters in a cubic meter. "
+  ],
+  "objNames": [
+    "wb_metric_units"
+  ]
+}

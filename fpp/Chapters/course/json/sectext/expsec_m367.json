@@ -1,0 +1,30 @@
+{
+  "cards": [
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Acceleration and SHM"
+        },
+        {
+          "type": "headline",
+          "text": "At equilibrium: Zero acceleration"
+        },
+        {
+          "type": "headline",
+          "text": "At extremes: Maximum acceleration"
+        }
+      ]
+    }
+  ],
+  "definitions": [],
+  "secText": [
+    "As the puck moves, we show the acceleration using a green vector. ",
+    "At equilibrium, the puck is not accelerating.  Why?  There is no force. The spring is not stretched or compressed.",
+    "Once the puck moves beyond equilibrium, it starts to accelerate, because the spring is being stretched or compressed. The green arrow lengthens to reflect the greater acceleration. ",
+    "At the extremes, the force—as well as the acceleration—is the greatest. Why?  The force is greatest there because the spring is the most stretched, or compressed, at these points.  As <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='wb_hooke_equation'>Hooke’s law</a> states, the force is proportional to the displacement, which is greatest at these endpoints."
+  ],
+  "objNames": [
+    "wb_SHM_acceleration"
+  ]
+}

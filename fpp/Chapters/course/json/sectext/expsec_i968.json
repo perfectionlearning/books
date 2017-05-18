@@ -1,0 +1,47 @@
+{
+  "cards": [
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Net torque"
+        },
+        {
+          "type": "headline",
+          "text": "Add them to calculate net torque"
+        },
+        {
+          "type": "bullet",
+          "text": "Remember to include sign"
+        }
+      ]
+    },
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Net torque and angular acceleration"
+        },
+        {
+          "type": "headline",
+          "text": "Angular acceleration will be in direction of net torque"
+        }
+      ]
+    }
+  ],
+  "definitions": [
+    {
+      "term": "Net torque",
+      "def": "Sum of all torques."
+    }
+  ],
+  "secText": [
+    "  <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='wb_newton_second_law_concept'>Newton’s second law</a> told us to calculate the net force on an object. Just like forces, torques can be added.    ",
+    "Torque has a sign, with clockwise torques being negative, and counterclockwise being positive.  Torques can be added to calculate the net torque.  ",
+    "The sum of the torques on an object determines the net torque, which determines the direction of the object’s angular acceleration."
+  ],
+  "objNames": [
+    "wb_net_torque_concepts_signs",
+    "wb_net_torque_concepts"
+  ]
+}

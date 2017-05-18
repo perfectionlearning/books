@@ -1,0 +1,52 @@
+{
+  "cards": [
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Period of mass on spring"
+        },
+        {
+          "type": "headline",
+          "text": "Decreases with spring constant"
+        },
+        {
+          "type": "headline",
+          "text": "Increases with mass"
+        },
+        {
+          "type": "headline",
+          "text": "  <math>    <mrow>      <mi>T</mi>      <mo>=</mo>      <mn>2</mn>      <mi>π</mi>      <msqrt>        <mrow>          <mfrac linethickness=\"thin\">            <mi>m</mi>            <mi>k</mi>          </mfrac>        </mrow>      </msqrt>    </mrow>  </math>"
+        },
+        {
+          "type": "headline",
+          "text": "  <math>    <mrow>      <mi>T</mi>      <mi></mi>      <mtext>= period, </mtext>      <mi>m</mi>      <mi></mi>      <mtext>= mass, </mtext>      <mi>k</mi>      <mi></mi>      <mtext>= spring constant</mtext>    </mrow>  </math>"
+        }
+      ]
+    },
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Simple pendulum"
+        },
+        {
+          "type": "headline",
+          "text": "Pendulum motion approximates SHM"
+        }
+      ]
+    }
+  ],
+  "definitions": [],
+  "secText": [
+    "  <b class=\"object-name\">Supplemental Material: </b>  <span class=\"object-name\">Enrichment Topic</span>",
+    "  <b>Essential Question: </b>  <b>    <br />  </b>How can we describe real-world examples of simple harmonic motion?",
+    "  <b>Enduring Understandings:</b>  <b>    <br />  </b>1. Uniform circular motion can appear to be <a class='pjumpToTopic' href='javascript:void(0)' data-chap='13' data-topic='2' data-subtopic='1' data-subsection='0'>simple harmonic motion</a>.<br />2. <a class='pjumpToTopic' href='javascript:void(0)' data-chap='13' data-topic='2' data-subtopic='2' data-subsection='0'>Period of mass on a spring</a> is dependent on the mass and spring constant.<br/>3. A <a class='pjumpToTopic' href='javascript:void(0)' data-chap='13' data-topic='2' data-subtopic='3' data-subsection='0'>simple pendulum</a> has its mass all at one end of a rod and sways in simple harmonic motion. The period of a simple pendulum is dependent on its length and freefall acceleration.</br>4. An external force acting on an object in simple harmonic motion generates a <a class='pjumpToTopic' href='javascript:void(0)' data-chap='13' data-topic='2' data-subtopic='4' data-subsection='0'>forced oscillation</a>. Objects have a frequency at which they naturally vibrate. When the frequency of a force equals the natural frequency of an object, <a class='pjumpToTopic' href='javascript:void(0)' data-chap='13' data-topic='2' data-subtopic='4' data-subsection='0'>resonance</a> occurs.",
+    "  <b>Vocabulary:</b>  <a class='pjumpToTopic' href='javascript:void(0)' data-chap='13' data-topic='2' data-subtopic='3' data-subsection='0'>simple pendulum</a>, <a class='pjumpToTopic' href='javascript:void(0)' data-chap='13' data-topic='2' data-subtopic='4' data-subsection='0'>natural frequency</a>, <a class='pjumpToTopic' href='javascript:void(0)' data-chap='13' data-topic='2' data-subtopic='4' data-subsection='0'>resonance</a>",
+    "  <b>STEM Skills:</b>  <b>    <br />  </b>1. Review <a class='pjumpToTopic' href='javascript:void(0)' data-chap='8' data-topic='0' data-subtopic='1' data-subsection='2'>uniform circular motion</a>.<br />2. Review <a class='pjumpToTopic' href='javascript:void(0)' data-chap='5' data-topic='1' data-subtopic='2' data-subsection='0'>Newton's second law</a>."
+  ],
+  "objNames": [
+    "wb_period_spring",
+    "wb_simple_pendulum"
+  ]
+}

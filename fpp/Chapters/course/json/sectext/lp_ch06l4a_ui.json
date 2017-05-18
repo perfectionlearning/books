@@ -1,0 +1,38 @@
+{
+  "cards": [
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Work changes system’s energy "
+        },
+        {
+          "type": "headline",
+          "text": "Work increases bow’s potential energy"
+        },
+        {
+          "type": "bullet",
+          "text": "Bow then does work on arrow, changing its kinetic energy"
+        },
+        {
+          "type": "headline",
+          "text": "  <span class=\"math\">    <i>W</i> = <span class=\"Symbols\">∆</span><i>PE</i> + <span class=\"Symbols\">∆</span><i>KE</i></span>"
+        },
+        {
+          "type": "headline",
+          "text": "Work done on system equals its change in energy"
+        }
+      ]
+    }
+  ],
+  "definitions": [],
+  "secText": [
+    "  <b>Essential Question: </b>  <br />How do work and potential energy related?",
+    "  <b>Enduring Understandings:</b>  <b>    <br />  </b>1. There are multiple types of <a class='pjumpToTopic' href='javascript:void(0)' data-chap='6' data-topic='3' data-subtopic='1' data-subsection='0'>potential energy</a>, such as <a class='pjumpToTopic' href='javascript:void(0)' data-chap='6' data-topic='3' data-subtopic='1' data-subsection='1'>gravitational potential energy</a> and <a class='pjumpToTopic' href='javascript:void(0)' data-chap='6' data-topic='3' data-subtopic='1' data-subsection='4'>elastic potential energy</a>. The potential energy of a system can be calculated using the position and forces acting on a system.<br/>2. The <a class='pjumpToTopic' href='javascript:void(0)' data-chap='6' data-topic='3' data-subtopic='2' data-subsection='0'>amount of work done on an object</a> is equal to the change in potential energy plus the change in kinetic energy.",
+    " <b>Vocabulary:</b>  <a class='pjumpToTopic' href='javascript:void(0)' data-chap='6' data-topic='3' data-subtopic='1' data-subsection='0'>potential energy</a>, <a class='pjumpToTopic' href='javascript:void(0)' data-chap='6' data-topic='3' data-subtopic='1' data-subsection='1'>gravitational potential energy</a>, <a class='pjumpToTopic' href='javascript:void(0)' data-chap='6' data-topic='3' data-subtopic='1' data-subsection='4'>elastic potential energy</a>",
+    "<b>STEM Skills:</b><b> <br /></b>1. Review <a class='pjumpToTopic' href='javascript:void(0)' data-chap='2' data-topic='3' data-subtopic='1' data-subsection='0'>freefall acceleration</a>. "
+  ],
+  "objNames": [
+    "wb_work_and_potential_energy"
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "cards": [
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Charged objects"
+        }
+      ]
+    },
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Net charge"
+        }
+      ]
+    }
+  ],
+  "definitions": [],
+  "secText": [
+    "Try rubbing a comb in your hair, and then put it close to a piece of paper. After rubbing, the comb has a net negative charge, which the electrons in the paper, causing them to shift away from the comb. (The protons are contained in the <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='wb_nucleus_parts1'>nuclei</a> of the paper’s atoms, which tend to stay fixed.) That creates two charged ends in the paper dots: positive near the comb, where some electrons have shifted away and there are more protons than electrons, and negative away from the comb, due to the electrons outnumbering the protons there.",
+    "Each paper dot is still electrically neutral. In cases where an object is not electrically neutral, the equation shows how to calculate net charge − it equals the net number of charged particles times the charge of an electron or a proton.",
+    "By net, we mean the number of particles of one sign of charge that exceed those of the other sign. For instance, if there were 15 electrons and 8 protons, the net number of charged particles is 7.  The net charge in that case would be negative: seven multiplied by the charge on an electron, negative 1.60×10<sup class=\"\">−19</sup> C."
+  ],
+  "objNames": [
+    "wb_creating_charged__concepts2",
+    "wb_electric_charge_equation"
+  ]
+}

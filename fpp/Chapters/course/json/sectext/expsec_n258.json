@@ -1,0 +1,39 @@
+{
+  "cards": [
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Speed of sound partly depends on"
+        },
+        {
+          "type": "headline",
+          "text": "Properties of medium it travels through"
+        }
+      ]
+    },
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Speed of sound increases with temperature"
+        },
+        {
+          "type": "headline",
+          "text": "Faster moving  particles collide more frequently"
+        }
+      ]
+    }
+  ],
+  "definitions": [],
+  "secText": [
+    "As with other mechanical waves, the speed of a sound wave depends on the properties of the medium through which the wave travels.",
+    "As the first table shows, sound tends to travel faster in <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='wb_liquids_concept1'>liquids</a> than in <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='wb_gas_concept1'>gases</a>, and faster in <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='wb_solids_concept1'>solids</a> than in liquids. The nature and strength of the interactions between particles determines the speed of sound.  ",
+    "The tighter linkages between particles in a solid transmit sound faster than a liquid.  And sounds travel slowest in a gas, where collisions between generally widely separated particles transmit the sound.",
+    "The speed of sound in air also depends on the air temperature.  For instance, when a gas becomes warmer, its particles move faster and collide more frequently. This enables a sound wave to travel faster. The second table shows how the speed at which sound travels in air increases with temperature."
+  ],
+  "objNames": [
+    "wb_table_speed_of_sound_concepts",
+    "wb_table_speed_sound_equation"
+  ]
+}

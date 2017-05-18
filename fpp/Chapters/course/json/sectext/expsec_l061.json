@@ -1,0 +1,39 @@
+{
+  "cards": [
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Heat engine cycle and the first law"
+        },
+        {
+          "type": "headline",
+          "text": "Engine returns to initial thermal energy"
+        }
+      ]
+    },
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Heat engine cycle and the first law"
+        },
+        {
+          "type": "headline",
+          "text": "Net heat transfer goes to doing work"
+        }
+      ]
+    }
+  ],
+  "definitions": [],
+  "secText": [
+    "We apply the <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='wb_first_law_thermo_equation'>first law of thermodynamics</a> to an engine. This is another example of the principle of the conservation of energy. ",
+    "After a cycle, the engine returns to its initial state.  The gas inside has the same temperature, pressure, and volume as it did when the engine started the cycle. These same conditions mean the gas’s thermal energy is the same before and after a cycle. ",
+    "The first law says that change in thermal energy equals the net heat flow minus the work done by the engine.  In this case, there is no change in thermal energy. ",
+    "Since the change in thermal energy is zero after a cycle is completed, that means the net heat flow minus the work done by the engine is zero. In other words, the net heat flow goes to doing work.   We can write the equation that the net heat transfer, the heat in minus the heat out, equals the work done by the engine.  "
+  ],
+  "objNames": [
+    "wb_heat_engine_concepts3",
+    "wb_heat_engine_concepts2"
+  ]
+}

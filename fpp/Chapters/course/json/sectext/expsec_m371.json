@@ -1,0 +1,45 @@
+{
+  "cards": [
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Motion equations"
+        },
+        {
+          "type": "headline",
+          "text": "Calculate displacement using velocity, prior displacement"
+        },
+        {
+          "type": "headline",
+          "text": "Calculate velocity using prior velocity, acceleration"
+        }
+      ]
+    },
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Spreadsheet details"
+        },
+        {
+          "type": "headline",
+          "text": "Equations used to calculate results"
+        }
+      ]
+    }
+  ],
+  "definitions": [],
+  "secText": [
+    "A spreadsheet is a very useful modeling tool. We can use it to calculate or graph results that might be hard to describe with an expression evaluated just once.  The graph here is of the displacement over time as calculated and graphed by a spreadsheet. ",
+    "We calculate the <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='wb_displacement_equation'>displacement</a> by multiplying the velocity by a small amount of time and adding that to the previous displacement. This is the equation for <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='wb_velocity_equation'>velocity</a>, solved for the final displacement. We do this hundreds of times. We show the resulting spreadsheet graph for the calculated displacement.",
+    "We calculate the velocity as the sum of the initial velocity and the product of acceleration and a small elapsed time.  This is just the <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='wb_acceleration_equation'>acceleration</a> equation solved for the final velocity.  The acceleration is calculated using force, which in turn is calculated using <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='wb_hooke_equation'>Hooke’s law</a>. ",
+    "The second graphic shows the equations used for calculating the displacement, in “spreadsheet-ese.” (We use the feature that allows names to be used in equations.) The first equation shows the velocity multiplied by a small interval of time. ",
+    "The graphic also shows other equations we use.  The final two equations are Newton’s second law and Hooke’s law, which used together, let us calculate the acceleration. ",
+    " <a href=\"spreadsheets/shm_ss.xls\">Click here</a> to open the spreadsheet we used. (If the file does not open, on Windows click with the right mouse button and choose the save option. On the Macintosh, hold down the “control” key and click on the link, then choose the option to download the file.) This is a Microsoft® Excel spreadsheet that most spreadsheet programs can open."
+  ],
+  "objNames": [
+    "wb_SHM_ss_2a",
+    "wb_spreadsheet_SHM_ss_2"
+  ]
+}

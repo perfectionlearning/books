@@ -1,0 +1,31 @@
+{
+  "cards": [
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "We speak, hear in analog"
+        }
+      ]
+    },
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Computers process digital information"
+        }
+      ]
+    }
+  ],
+  "definitions": [],
+  "secText": [
+    "  <b>Essential Question: </b>  <b>    <br />  </b>How can we apply electromagnetic radiation to real-world technology?",
+    "  <b>Enduring Understandings:</b>  <b>    <br />  </b>1. <a class='pjumpToTopic' href='javascript:void(0)' data-chap='19' data-topic='2' data-subtopic='1' data-subsection='0'>Antennas</a> can transmit or receive electromagnetic signals, such as radio waves.<br />2. <a class='pjumpToTopic' href='javascript:void(0)' data-chap='19' data-topic='2' data-subtopic='2' data-subsection='0'>Analog</a> information is continuous, such as a speedometer. Digital information is numerical and is not continuous, like the information processed by computers in bits and bytes.<br />3. <a class='pjumpToTopic' href='javascript:void(0)' data-chap='19' data-topic='2' data-subtopic='2' data-subsection='1'>Digital</a> information is encoded into numerical form, and then decoded into its original form.",
+    "  <b>Vocabulary:</b>  <a class='pjumpToTopic' href='javascript:void(0)' data-chap='19' data-topic='2' data-subtopic='1' data-subsection='0'>antenna</a>, <a class='pjumpToTopic' href='javascript:void(0)' data-chap='19' data-topic='2' data-subtopic='2' data-subsection='0'>analog</a>, <a class='pjumpToTopic' href='javascript:void(0)' data-chap='19' data-topic='2' data-subtopic='2' data-subsection='1'>digital</a>, <a class='pjumpToTopic' href='javascript:void(0)' data-chap='19' data-topic='2' data-subtopic='2' data-subsection='2'>bit</a>, <a class='pjumpToTopic' href='javascript:void(0)' data-chap='19' data-topic='2' data-subtopic='2' data-subsection='2'>byte</a>, <a class='pjumpToTopic' href='javascript:void(0)' data-chap='19' data-topic='2' data-subtopic='3' data-subsection='0'>encode</a>, <a class='pjumpToTopic' href='javascript:void(0)' data-chap='19' data-topic='2' data-subtopic='3' data-subsection='0'>decode</a>, <a class='pjumpToTopic' href='javascript:void(0)' data-chap='19' data-topic='2' data-subtopic='3' data-subsection='0'>sampling</a>",
+    "  <b>STEM Skills:</b>  <b>    <br />  </b>1. Review <a class='pjumpToTopic' href='javascript:void(0)' data-chap='17' data-topic='5' data-subtopic='2' data-subsection='0'>generators</a> and <a class='pjumpToTopic' href='javascript:void(0)' data-chap='16' data-topic='2' data-subtopic='1' data-subsection='3'>AC</a>."
+  ],
+  "objNames": [
+    "wb_analog",
+    "wb_digital2"
+  ]
+}

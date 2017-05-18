@@ -1,0 +1,30 @@
+{
+  "cards": [
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Components in series"
+        },
+        {
+          "type": "headline",
+          "text": "No junction separates series components"
+        },
+        {
+          "type": "bullet",
+          "text": "Single current path between them"
+        }
+      ]
+    }
+  ],
+  "definitions": [],
+  "secText": [
+    "  <b>Essential Question: </b>  <b>    <br />  </b>How can we measure the resistance of electric circuits in mixed circuits?",
+    "  <b>Enduring Understandings:</b>  <b>    <br />  </b>1. <a class='pjumpToTopic' href='javascript:void(0)' data-chap='16' data-topic='4' data-subtopic='1' data-subsection='0'>Mixed circuits</a> have components in series and parallel. The rules for circuits with parallel and series wiring both apply to mixed circuits.",
+    "  <b>Vocabulary:</b>  <a class='pjumpToTopic' href='javascript:void(0)' data-chap='16' data-topic='4' data-subtopic='1' data-subsection='0'>mixed circuit</a>",
+    "  <b>STEM Skills:</b>  <b>    <br />  </b>1. Review <a class='pjumpToTopic' href='javascript:void(0)' data-chap='16' data-topic='3' data-subtopic='1' data-subsection='1'>resistance</a> for components in series.<br />2. Review <a class='pjumpToTopic' href='javascript:void(0)' data-chap='16' data-topic='3' data-subtopic='2' data-subsection='2'>resistance</a> for components in parallel."
+  ],
+  "objNames": [
+    "wb_mixed_circuits_concepts2"
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "cards": [
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Work and pressure-volume graphs"
+        },
+        {
+          "type": "headline",
+          "text": "Amount of work = area under graph"
+        },
+        {
+          "type": "headline",
+          "text": "Gas does"
+        },
+        {
+          "type": "bullet",
+          "text": "Positive work as volume increases"
+        },
+        {
+          "type": "bullet",
+          "text": "Negative work as volume decreases"
+        }
+      ]
+    }
+  ],
+  "definitions": [],
+  "secText": [
+    "To help understand pressure-volume graphs, we analyze a process in which gas expands at a constant pressure as heat is supplied to the engine.",
+    "The work done by the gas equals the area under the graph.  Why? That area equals the product of the pressure, which is force per unit area, and the volume. <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='wb_work_changing_force' >We can show</a> this to be equal to the product of force and displacement, which equals work.",
+    "When the volume of gas increases, it applies a force on the piston through a displacement and does work. The gas does positive work, pushing the piston. ",
+    "If this process were reversed and the volume of the gas decreased, then the work done by the gas would be negative, because the force the gas applies on the piston would be in the direction opposite to the piston’s displacement. "
+  ],
+  "objNames": [
+    "wb_work_PV_concepts"
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "cards": [
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Conservation of energy"
+        },
+        {
+          "type": "headline",
+          "text": "Total energy in an isolated system stays constant"
+        },
+        {
+          "type": "headline",
+          "text": "  <i>E</i>  <sub class=\"\">f </sub>= <i>E</i><sub class=\"\">i</sub>"
+        },
+        {
+          "type": "bullet",
+          "text": "final energy = initial energy"
+        }
+      ]
+    }
+  ],
+  "definitions": [],
+  "secText": [
+    "  <b>Essential Question: </b>  <b>    <br />  </b>What happens to the energy within a system?",
+    "  <b>Enduring Understandings:</b>  <b>    <br />  </b>1. Energy is always <a class='pjumpToTopic' href='javascript:void(0)' data-chap='6' data-topic='4' data-subtopic='1' data-subsection='0'>conserved</a>.<br />2. Energy cannot disappear and can be <a class='pjumpToTopic' href='javascript:void(0)' data-chap='6' data-topic='4' data-subtopic='2' data-subsection='0'>transferred</a> from one system to another.<br />3. The <a class='pjumpToTopic' href='javascript:void(0)' data-chap='6' data-topic='4' data-subtopic='3' data-subsection='0'>rate of energy transfer</a> can be calculated using the transfer of energy divided by elapsed time.",
+    "  <b>Vocabulary:</b>  <a class='pjumpToTopic' href='javascript:void(0)' data-chap='6' data-topic='4' data-subtopic='1' data-subsection='0'>conservation of energy</a>, <a class='pjumpToTopic' href='javascript:void(0)' data-chap='6' data-topic='4' data-subtopic='3' data-subsection='0'>power</a>",
+    "  <b>STEM Skills:</b>  <b>    <br />  </b>1. Review <a class='pjumpToTopic' href='javascript:void(0)' data-chap='6' data-topic='3' data-subtopic='1' data-subsection='1'>gravitational potential energy</a>.<br />2. Review <a class='pjumpToTopic' href='javascript:void(0)' data-chap='1' data-topic='4' data-subtopic='1' data-subsection='0'>motion equations</a>."
+  ],
+  "objNames": [
+    "wb_conservation_energy_concept"
+  ]
+}

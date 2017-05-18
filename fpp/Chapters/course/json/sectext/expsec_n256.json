@@ -1,0 +1,43 @@
+{
+  "cards": [
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Structure of a sound wave"
+        },
+        {
+          "type": "headline",
+          "text": "Condensation: Particles pushed close together "
+        },
+        {
+          "type": "headline",
+          "text": "Rarefaction: Particles separated"
+        }
+      ]
+    },
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Particles in a sound wave"
+        },
+        {
+          "type": "headline",
+          "text": "Move in simple harmonic motion"
+        }
+      ]
+    }
+  ],
+  "definitions": [],
+  "secText": [
+    "In this section, we describe the structure of a sound wave.",
+    "A sound wave consists of alternating zones of higher and lower air pressure. The loudspeaker pushes out against the air particles, causing them to move forward along the horizontal axis. The resulting region of clumped particles is a region of higher pressure and is called a condensation.",
+    "When the loudspeaker retreats, it creates an area of lower pressure behind the condensation. This area is called a rarefaction. The alternating pulses of condensation and rarefaction form the sound wave. The wavelength is the distance between two adjacent identical pressure regions. It is most easily measured as the distance between adjacent maximum condensations, which we show in the first diagram, or between two maximum rarefactions.",
+    "Each particle vibrates in <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='wb_shm_concept'>simple harmonic motion</a> as the condensations and rarefactions of the sound wave pass by. There is no net movement of particles, simply oscillation as they move back and forth."
+  ],
+  "objNames": [
+    "wb_soundwaves_concepts2",
+    "wb_soundwaves_concepts3"
+  ]
+}

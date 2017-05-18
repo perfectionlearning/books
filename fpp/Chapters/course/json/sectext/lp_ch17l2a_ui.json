@@ -1,0 +1,42 @@
+{
+  "cards": [
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Magnetic fields created by electric currents"
+        },
+        {
+          "type": "headline",
+          "text": "Magnetic field “circles” around wire"
+        }
+      ]
+    },
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Force with currents in same direction"
+        },
+        {
+          "type": "headline",
+          "text": "Field applies force on moving charges"
+        },
+        {
+          "type": "headline",
+          "text": "The wires attract "
+        }
+      ]
+    }
+  ],
+  "definitions": [],
+  "secText": [
+    "  <b>Essential Question: </b>  <b>    <br />  </b>How are magnetic fields created?",
+    "  <b>Enduring Understandings:</b>  <b>    <br />  </b>1. Electric currents create <a class='pjumpToTopic' href='javascript:void(0)' data-chap='17' data-topic='1' data-subtopic='1' data-subsection='1'>magnetic fields</a> around them. The right-hand rule can be used to determine the direction of the magnetic field created by an electric current.<br />2. Two current-carrying wires placed close together exert a <a class='pjumpToTopic' href='javascript:void(0)' data-chap='17' data-topic='1' data-subtopic='2' data-subsection='0'>force</a> on each other and the wires attract.<br />3. <a class='pjumpToTopic' href='javascript:void(0)' data-chap='17' data-topic='1' data-subtopic='3' data-subsection='0'>Electric motors</a> generate currents that create magnetic fields.",
+    "  <b>STEM Skills:</b>  <br />1. Review <a class='pjumpToTopic' href='javascript:void(0)' data-chap='16' data-topic='1' data-subtopic='1' data-subsection='0'>electric current</a>.<b><br /></b>"
+  ],
+  "objNames": [
+    "wb_bfields_wires_concepts1",
+    "wb_2wires_bfields_concepts2"
+  ]
+}

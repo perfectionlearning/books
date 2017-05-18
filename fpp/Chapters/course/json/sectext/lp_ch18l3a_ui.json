@@ -1,0 +1,43 @@
+{
+  "cards": [
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Huygens’ principle"
+        },
+        {
+          "type": "headline",
+          "text": "Wave front made up of spherical wavelets"
+        },
+        {
+          "type": "bullet",
+          "text": "Moves at the same speed as wavelets"
+        }
+      ]
+    },
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Diffraction limits circuit density"
+        },
+        {
+          "type": "headline",
+          "text": "Causes “blurred” or wider circuits"
+        }
+      ]
+    }
+  ],
+  "definitions": [],
+  "secText": [
+    "  <b>Essential Question: </b>  <b>    <br />  </b>How do wave fronts expand when passing through a slit?",
+    "  <b>Enduring Understandings:</b>  <b>    <br />  </b>1. <a class='pjumpToTopic' href='javascript:void(0)' data-chap='18' data-topic='2' data-subtopic='1' data-subsection='0'>Diffraction</a> is the expansion of a wave after it passes through an opening.<br />2. <a class='pjumpToTopic' href='javascript:void(0)' data-chap='18' data-topic='2' data-subtopic='2' data-subsection='0'>Huygens' principle</a> states that waves are made up of spherical wavelets, tangent to the wave front. Each point on the wave front is the source of secondary, spherical wavelets. ",
+    "  <b>Vocabulary:</b>  <a class='pjumpToTopic' href='javascript:void(0)' data-chap='18' data-topic='2' data-subtopic='1' data-subsection='0'>diffraction</a>, <a class='pjumpToTopic' href='javascript:void(0)' data-chap='18' data-topic='2' data-subtopic='2' data-subsection='0'>Huygens' principle</a>, <a class='pjumpToTopic' href='javascript:void(0)' data-chap='18' data-topic='2' data-subtopic='2' data-subsection='2'>photolithography</a>, <a class='pjumpToTopic' href='javascript:void(0)' data-chap='18' data-topic='2' data-subtopic='2' data-subsection='2'>microprocessor</a>",
+    "  <b>STEM Skills:</b>  <b>    <br />  </b>1. Review <a class='pjumpToTopic' href='javascript:void(0)' data-chap='14' data-topic='1' data-subtopic='1' data-subsection='0'>spherical waves</a>."
+  ],
+  "objNames": [
+    "wb_huygen_concepts1",
+    "wb_computer_chips_concepts3"
+  ]
+}

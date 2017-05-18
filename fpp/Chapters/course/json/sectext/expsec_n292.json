@@ -1,0 +1,41 @@
+{
+  "cards": [
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "MIDI"
+        },
+        {
+          "type": "headline",
+          "text": "Digital definition for music"
+        },
+        {
+          "type": "headline",
+          "text": "Describes music digitally"
+        },
+        {
+          "type": "headline",
+          "text": "Creates small, standard files"
+        }
+      ]
+    }
+  ],
+  "definitions": [
+    {
+      "term": "MIDI",
+      "def": "Musical Instrument Digital Interface – the standard way to digitally describe and play sound."
+    }
+  ],
+  "secText": [
+    "In contrast to Fourier analysis, which can be used to analyze the harmonic components of musical notes, MIDI uses digital notation to determine the notes that are played. ",
+    "Both MIDI and the music you hear on a typical CD use <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='wb_encode'>digital formats</a> to describe the music.  But a music CD records music that started as a sound wave, such as a note played by a piano in a recording studio, and converts that into the format a computer or music player can read and reproduce.",
+    "In contrast, MIDI starts by describing a note digitally.  The note might start by a piano player pressing a key.  MIDI then describes the note: its frequency, how long it was played, its tempo, and so on.",
+    "Using a MIDI device, a musician can switch from, say, playing an organ to a piano by simply flipping a switch, instead of having to acquire these two instruments. ",
+    "To provide a comparison: a camcorder is one way to record a dance, and that is like a music CD.  But if a choreographer describes a dance − two steps forward and a grand jeté − that is like MIDI.",
+    "One benefit of MIDI is that files it creates are small, since they contain just the instructions for music.  MIDI is also supported by all digital musical instrument companies, so music recorded on one MIDI instrument can be played back, or edited, on another. "
+  ],
+  "objNames": [
+    "wb_midi"
+  ]
+}

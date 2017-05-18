@@ -1,0 +1,31 @@
+{
+  "cards": [
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Friction"
+        },
+        {
+          "type": "headline",
+          "text": "Force that opposes one object sliding past another"
+        }
+      ]
+    }
+  ],
+  "definitions": [
+    {
+      "term": "Friction",
+      "def": "A force that resists the motion of one object sliding past another."
+    }
+  ],
+  "secText": [
+    "In general, friction is a contact force that resists the motion of an object that is sliding. We discuss two types of friction, static and kinetic. ",
+    "The force of friction opposes any motion between two objects.  For example, it would oppose a force that is trying to slide one object over another. Friction resists the efforts of the person to push the box.",
+    "The magnitude of the friction force depends on both of the materials in contact. For example, the box would slide more easily over ice than wood.",
+    "Friction is also proportional to the <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='wb_normal_force_definition'>normal force</a>, or force between objects.  The greater the normal force, the greater the friction.  For instance, it would be harder to slide the box along the floor if someone pressed down hard on the box, which increases the normal force between the box and the floor."
+  ],
+  "objNames": [
+    "wb_friction_definition"
+  ]
+}

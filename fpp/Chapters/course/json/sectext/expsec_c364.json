@@ -1,0 +1,38 @@
+{
+  "cards": [
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Trend line"
+        },
+        {
+          "type": "headline",
+          "text": "Line passes close to points "
+        },
+        {
+          "type": "headline",
+          "text": "Shows possible relationship between variables"
+        },
+        {
+          "type": "bullet",
+          "text": "Example: As time increases, the speed of the object increases"
+        }
+      ]
+    }
+  ],
+  "definitions": [
+    {
+      "term": "Trend line",
+      "def": "A line that passes as close as possible to points on a scatter plot."
+    }
+  ],
+  "secText": [
+    "Trend lines are used with scatter plots to show a possible relationship. Error in measurements or other factors cause some points not to lie on the line.",
+    "We take a scatter plot we used before and add a trend line to it.  It passes close to the points on the graph. There are mathematical techniques to draw trend lines so that the line supplies an accurate sense of the information, but common sense about being close to points can work, too.",
+    "A trend line makes the relationship between speed and time easier to see.  We could also use its slope to calculate <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='wb_math_rate_aquarium2'>the rate of change</a> of this positive speed (which is <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='actwb_acceleration_definition'>acceleration</a>)."
+  ],
+  "objNames": [
+    "wb_math_trendline"
+  ]
+}

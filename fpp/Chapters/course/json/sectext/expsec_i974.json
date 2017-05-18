@@ -1,0 +1,39 @@
+{
+  "cards": [
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Torque and angular momentum"
+        }
+      ]
+    },
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Conservation of angular momentum"
+        },
+        {
+          "type": "headline",
+          "text": "No net torque: Angular momentum is constant"
+        },
+        {
+          "type": "headline",
+          "text": "Changing her moment of inertia changes her angular velocity"
+        }
+      ]
+    }
+  ],
+  "definitions": [],
+  "secText": [
+    "Just as a net force changes <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='wb_momentum_equation'>linear momentum</a>, net torque changes angular momentum.   ",
+    "The product of the net torque and the time interval equals the change in angular momentum. The equation parallels the impulse equation for linear momentum. ",
+    "In another parallel, just as linear momentum is conserved when there is no net force, so too angular momentum is conserved when there is no net torque.  We use the example of the skater that you see in the diagram. There is little torque acting on her. Her skates encounter little friction on the ice, and that small amount of friction is close to the axis of rotation. Air resistance is minimal. This means that her angular momentum will stay approximately constant. ",
+    "Her angular momentum equals the product of her moment of inertia and her angular velocity. When she pulls her arms closer to her body, her moment of inertia becomes smaller. To conserve her angular momentum, which is the product of moment of inertia and angular velocity, her angular velocity must become larger. This accounts for how skaters can “speed up” their rotations as they pull in their arms, creating faster and faster spins."
+  ],
+  "objNames": [
+    "wb_torque_angular_momentum",
+    "wb_conservation_of_angular_momentum"
+  ]
+}

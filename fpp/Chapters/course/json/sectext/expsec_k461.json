@@ -1,0 +1,64 @@
+{
+  "cards": [
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Thermodynamics "
+        },
+        {
+          "type": "headline",
+          "text": "Heat, work and energy are key concepts"
+        },
+        {
+          "type": "headline",
+          "text": "Used to explain engines"
+        },
+        {
+          "type": "bullet",
+          "text": "Engines involve thermal energy and work"
+        }
+      ]
+    },
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Bunsen burner’s flame changes"
+        },
+        {
+          "type": "headline",
+          "text": "Microscopic property: Speed of an individual molecule"
+        },
+        {
+          "type": "headline",
+          "text": "Macroscopic property: Water’s temperature"
+        }
+      ]
+    }
+  ],
+  "definitions": [
+    {
+      "term": "Thermodynamics",
+      "def": "The study of the relationship of heat, work and energy."
+    },
+    {
+      "term": "Macroscopic",
+      "def": "A description of the overall properties of an object."
+    },
+    {
+      "term": "Microscopic",
+      "def": "A description of properties within an object."
+    }
+  ],
+  "secText": [
+    "Welcome to thermodynamics, one of the main fields in physics and physical science.  Three main topics in thermodynamics are <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='wb_heat_concepts1'>heat</a>, <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='wb_work_concept'>work</a>, and <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='wb_thermal_energy_concepta'>thermal energy</a>.   Relating these topics allows us to discuss and understand engines, such as the one we show from a car.    ",
+    "Thermodynamics provides a model for understanding engines. Engines convert thermal energy into mechanical work, resulting in a car’s acceleration, and heat transfer is an essential element in how they function.  Thermodynamics includes topics such as how efficient an engine is, which tells us how much of the thermal energy transferred to an engine can be converted to useful work. ",
+    "Thermodynamics covers both microscopic and macroscopic properties, typically focusing more on macroscopic properties. If you put the pot on a burner and turn on the heat, you will change the microscopic properties of the pot’s contents. If you were viewing an individual molecule, it might vibrate faster, move to a new location, or form new relationships with other molecules, ones with different potential energy.  The exact result would differ from molecule to molecule. ",
+    "A macroscopic property, the water’s thermal energy, would increase.  The water’s temperature, another macroscopic property reflecting the average kinetic energy of all molecules, would also increase.  In thermodynamics, it often proves very useful to focus more on macroscopic properties, such as the water’s temperature. "
+  ],
+  "objNames": [
+    "wb_thermodynamics_concept1",
+    "wb_thermal_versus_other_energy2"
+  ]
+}

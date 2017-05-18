@@ -1,0 +1,42 @@
+{
+  "cards": [
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Snell’s law"
+        },
+        {
+          "type": "headline",
+          "text": "Angles measured from normal"
+        }
+      ]
+    },
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Snell’s law equations"
+        },
+        {
+          "type": "headline",
+          "text": "  <span class=\"math\">    <i>      <math xmlns:xsl=\"http://www.w3.org/1999/XSL/Transform\">        <mi>θ</mi>      </math>    </i>    <sub>i</sub> = incident angle</span>, </br><span class=\"math\"><i>n</i><sub>i</sub> = refraction</span> index, incident material, </br><span class=\"math\"><i><math xmlns:xsl=\"http://www.w3.org/1999/XSL/Transform\"><mi>θ</mi></math></i><sub>r</sub> = refracted </span>angle, </br> <span class=\"math\"><i>n</i><sub>r</sub> = refraction</span> index, refracted material"
+        }
+      ]
+    }
+  ],
+  "definitions": [
+    {
+      "term": "Snell’s law",
+      "def": "Gives the relationship of refracted and incident angles using refractive indices."
+    }
+  ],
+  "secText": [
+    "Snell’s law allows the angle of refraction to be calculated. We show Snell’s law below as both a pair of products and a pair of ratios. The angles are measured from the normal. Snell’s Law tells us that if the light ray enters a slower medium, one with a <b>greater</b> index of refraction, the refracted angle will be smaller than the incident angle. In other words, if light enters a slower medium, it bends toward the normal. If it enters a faster medium, it bends away from the normal.",
+    "Note how the subscripts “change places” on the two sides of the second equation, with incident in the numerator on the left, and in the denominator on the right. "
+  ],
+  "objNames": [
+    "wb_snell_equation1",
+    "wb_snell_equation"
+  ]
+}

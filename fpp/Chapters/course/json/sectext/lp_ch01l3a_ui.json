@@ -1,0 +1,47 @@
+{
+  "cards": [
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Average velocity"
+        },
+        {
+          "type": "headline",
+          "text": "Velocity for entire movement"
+        }
+      ]
+    },
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Instantaneous velocity"
+        },
+        {
+          "type": "headline",
+          "text": "Velocity at an instant of time"
+        },
+        {
+          "type": "bullet",
+          "text": "Calculated using a small time interval"
+        },
+        {
+          "type": "headline",
+          "text": "Instantaneous and average velocity can differ"
+        }
+      ]
+    }
+  ],
+  "definitions": [],
+  "secText": [
+    "  <b>Essential Question: </b>  <br />How do average velocity and instantaneous velocity differ?",
+    "  <b>Enduring Understandings:</b>  <br />1. <a class='pjumpToTopic' href='javascript:void(0)' data-chap='1' data-topic='2' data-subtopic='1'>Average velocity</a> is the displacement divided by the elapsed time when the elapsed time is not miniscule.<br />2. <a class='pjumpToTopic' href='javascript:void(0)' data-chap='1' data-topic='2' data-subtopic='2'>Instantaneous velocity</a> refers to the velocity of an object during a miniscule amount of time.",
+    "  <b>Vocabulary:</b>  <a class='pjumpToTopic' href='javascript:void(0)' data-chap='1' data-topic='2' data-subtopic='1'>average velocity</a>, <a class='pjumpToTopic' href='javascript:void(0)' data-chap='1' data-topic='2' data-subtopic='2'>instantaneous velocity</a>",
+    "  <b>STEM Skills:</b>  <b>    <br />  </b>1. Review how to calculate an average."
+  ],
+  "objNames": [
+    "actwb_average_velocity_concept",
+    "actwb_instantaneous_velocity_definition"
+  ]
+}

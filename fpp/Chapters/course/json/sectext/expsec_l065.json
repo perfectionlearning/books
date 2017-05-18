@@ -1,0 +1,48 @@
+{
+  "cards": [
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Constant pressure (isobaric)"
+        },
+        {
+          "type": "headline",
+          "text": "  <span class=\"math\">    <i>W</i> = work,</span>  <span class=\"math\">    <i>P</i> = pressure,</span>  <span class=\"math\">    <span class=\"Symbols\">∆</span>    <i>V</i> = change in volume</span>"
+        }
+      ]
+    },
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Constant volume"
+        },
+        {
+          "type": "headline",
+          "text": "No work done"
+        },
+        {
+          "type": "headline",
+          "text": "  <span class=\"math\">    <span class=\"Symbols\">∆</span>    <i>U</i> = change in thermal energy,</span> <br> <span class=\"math\">    <i>Q</i> = net heat transferred to system</span>"
+        }
+      ]
+    }
+  ],
+  "definitions": [
+    {
+      "term": "Isobaric",
+      "def": "A constant-pressure process."
+    }
+  ],
+  "secText": [
+    "We discuss the second type of process, constant-pressure, and the third type, constant-volume.",
+    "When the pressure is constant in the process, the <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='wb_work_concept2' >work</a> done by the engine equals the product of the pressure and the change in volume.  We <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='der_work_pressure_volume' >derive</a> this relationship later.  A constant-pressure process is called “isobaric.”",
+    "The third case we discuss is a constant-volume process. If a process has constant volume, then no <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='wb_work_concept' >work</a> occurs.  No work occurs because with no volume change, there is no displacement, and with no displacement, there is no work.   ",
+    "If there is no work, then the first law simplifies to the fact that the change in thermal energy equals the heat transferred.  "
+  ],
+  "objNames": [
+    "wb_constant_pressure_concept",
+    "wb_constant_volume_concept"
+  ]
+}

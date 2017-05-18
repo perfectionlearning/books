@@ -1,0 +1,216 @@
+<!-- <div class="pActivityHeader">Using one-dimensional motion equation</div> -->
+<div class="pLabPageIntro">
+	In Skee-Ball, you roll a ball on a ramp, trying to cause it to drop into a particular slot in order to score the highest number of points. The ramp is often tilted, so the ball changes speed as it rolls. Although the rules of the game are straightforward, mastering it requires an understanding of the bedrock concepts of linear motion: displacement, velocity and acceleration. 
+	</br></br>
+	Step right up to the Skee-Ball arcade in this lab and develop your skill! Along the way you can collaborate with your classmates to try to gain the highest total score.
+	</br></br>
+	<span style='font-weight:bold;line-height: 22px;'>
+		This lab covers the following concepts:
+		<ul style='list-style-type:disc;padding-left: 18px;'>
+			<i><li>Position</li>
+			<li>Displacement</li>
+			<li>Velocity</li>
+			<li>Acceleration</li>
+			<li>Some linear motion equations</li></i>
+		</ul>
+	</span>
+	
+</div>
+<div class="pExerciseContainer">
+	<div class="pExcersiseTitle">Exercise 1: Intro to Skee-Ball </div>
+	Our Skee-Ball game is a bit different than the one you may have played at your local fairground or amusement park. It is a game of timing and intellectual skill, not physical coordination. Throughout this lab, you will be able to shoot a ball on a ramp straight toward a series of circular slots, as shown in the picture below.
+	<figure style="padding-top:20px;padding-bottom:10px;">
+		<img class="pExcersiseThumb" src="course/labs/Using_one-dimensional_equations/assets/Ex_01_Intro to Skee-Ball_01.png" style="width:70%;"/>
+		</br>
+		<figcaption style="font-family: AvenirNextLTPro-Demi;">Exercise 1. Shoot ball with correct speed to drop into 50-point slot at 2.00 seconds.</figcaption>
+	</figure>
+	In our game, the slots are initially closed. The ball will roll right over the top of them until a stated time when they will all open, allowing the ball to tumble down into one of them. In the first game, the slots will pop open 2.00 seconds after you shoot the ball.
+	</br></br>
+	As you can see, the slots have scores of 10, 20, 30 and 50. There is also a scale that tells you the positions of the slots in meters (m). The ball is initially at the zero meter position. If your ball is not positioned over any slot when they open, it will roll into the gutter and you will score negative 10 points.
+	</br></br>
+	You supply the ball with an initial velocity. There is no friction in the game. However, the ramp might be tilted, which could change the ball's velocity.
+	</br></br>
+	Each game consists of five shots. A scoreboard tallies your progress and displays the number of shots remaining.
+	<div class="pLabQASection">
+		Give it a try in the first simulation. When you open it, using the link below, you will see a Skee-Ball ramp.
+		</br></br>
+		There is nothing to calculate here. Just play the game using trial and error. However, we will ask you a question at the end of this section about what you observed.
+		</br></br>
+		Your ball is next to a plunger that you use to set the ball's initial firing velocity. Use your mouse to click anywhere on this device and pull it back. The farther you pull, the greater the initial velocity the plunger supplies. The velocity in meters per second (m/s) you choose is displayed next to the plunger. Pressing the button marked FIRE will send your ball along the ramp at the initial velocity you have chosen.
+		</br></br>
+		You can also pause the simulation with the PAUSE button and start a new game with the NEW GAME button.
+		</br></br>
+		You can even shoot the Skee-Ball in the other direction, to the left, by dragging the plunger to the other side of the ball so that it points in the other direction. This will cause the ball to start with a negative velocity. The negative sign indicates the direction is toward the left. (This technique is necessary in some later exercises.)
+		</br></br>
+		Use trial and error as you would in a real arcade Skee-Ball game to get a feel for the course and to try to sink the ball in the 50-point slot. Observe the ball's motion after you fire it. Is it moving at a constant speed? Does it ever change direction? If you are not sure, assign the ball a small initial velocity and observe closely. If the ramp is tilted, the force of gravity will accelerate the ball, changing its speed, after you press FIRE.
+		</br></br>
+		When you are done playing, return here to answer a follow-up question.
+		</br></br>
+		Click here to enter the <span class="pExerciseButton" data-href="http://mitrlearning.com/perfection_learning/Labs/1_Using%20one-dimensional%20motion%20equations/1_Intro%20to%20Skee-Ball/">Exercise 1 Simulation</span>
+		</br></br>
+		<div class="pLabQuestion">
+			<div class="pLabQNumber">1.</div><div class="pLabQText"> After you fired the ball, did the ball's speed or direction change? </div><div class="pLabQuestionArrow"></div>
+			<div class="pLabAnswerWrapper">
+				<textarea class="pLabAnswerBox" placeholder="Enter your answer here"></textarea>
+				<div class="pLabSaveButton" style="right: 40px;margin-top: -44px;"></div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="pExerciseContainer">
+	<div class="pExcersiseTitle">Exercise 2: Velocity</div>
+	This exercise features a different ramp than Exercise 1. You can get a good score using trial and error, but physics can help you master this game. Two key physics concepts you will need to apply are velocity and acceleration. In this exercise, we will explain velocity first, and then start to explain acceleration.
+	</br></br>
+	Velocity states the speed and direction of the ball. The speedometer in a car tells you the car’s speed, but not its velocity, since it does not state direction. Sixty km/hr states a speed; 60 km/hr due east states a velocity.
+	</br></br>
+	Below is the equation for average velocity. Average velocity is defined as the change in position (Δ<i>x</i>) divided by the elapsed time (Δ<i>t</i>). In equation form, the average velocity of an object between two position points 1 and 2 is: 
+	</br></br>
+	<img src= "course/labs/Using_one-dimensional_equations/assets/image100.gif">
+	</br></br>
+	The change in position, Δ<i>x</i>, is the displacement. Displacement states both distance and direction. If the ball moves from a position of 1.0 meter to 3.0 meters along the <i>x</i> axis, the displacement is 3.0 m − 1.0 m, which equals 2.0 meters. When the ball moves to the left, its displacement is negative, since its final position is less than its initial position. The sign of displacement indicates its direction.
+	</br></br>
+	The timer in the game tells you how much time has passed since the ball was fired. The elapsed time, Δ<i>t</i>, is how much time passes as the ball moves from an initial to final position. If you measure the displacement of the ball as it moves from <i>t</i> = 1.00 s to <i>t</i> = 3.00 s, then the elapsed time is 3.00 s − 1.00 s = 2.00 s.
+	</br></br>
+	As stated, average velocity is the displacement divided by the elapsed time. Example: Suppose the ball moves from 0.50 m to 2.00 m, during which time the clock ticks from 1.00 s to 3.00 s. The ball’s displacement then is 1.50 m, the elapsed time is 2.00 s, and the average velocity is 1.50 m / 2.00 s = 0.75 meters per second (m/s).
+	</br></br>
+	In this game, we use positive numbers to indicate the ball is moving to the right, and negative numbers to indicate it is moving to the left. A ball that is moving at 3 m/s is moving at the same speed, but opposite direction, of a ball that is moving at −3 m/s. One is moving to the right, and the other to the left. If a ball moves from the position 3.0 m to 1.0 m in two seconds, its displacement is −2.0 m, and its average velocity is −1.0 m/s. The average velocity has the same direction (and sign) as the displacement.
+	</br></br>
+	In this simulation you will see a gauge below the plunger that displays the ball’s position as it moves along the ramp. You will also see a timer in the scoreboard that starts when you press FIRE. Using the position meter and the timer, you can determine the ball’s average velocity between any two points.
+	</br></br>
+	Acceleration is the rate of change of the ball’s velocity. It is the change in velocity divided by the elapsed time. Your first challenge in this exercise is to determine at what rate the ball’s velocity changes as it moves along the ramp. In other words, you determine the ball’s acceleration. The acceleration may be zero, which means the velocity does not change.
+	</br></br>
+	In a follow-up exercise, you will use your findings to calculate the initial velocity that will sink a ball precisely in the 50-point slot. If the ball is not accelerating (its velocity is constant) then choosing an initial velocity for the ball is simpler. If the ball is accelerating (its velocity is changing) then it is more difficult to determine the correct initial velocity needed to sink the ball in the 50-point slot.
+	</br></br>
+	By recording data to determine a ball’s velocity twice as it moves, you can determine whether the ball’s velocity is constant or changing. Once you know whether the velocity is constant or changing, we will help you calculate how to sink the ball automatically into the 50-point slot. 
+	
+	<div class="pLabQASection">
+		In this first part of the exercise, there is no game and the slots do not open. Your task is to record data to determine the velocity of the ball after it is fired. Then, you will use your conclusions to play the game in the second part of this section.
+		</br></br>
+		Pick an initial velocity, vi, for the ball. Press FIRE to shoot the ball along the ramp. When the ball is part way along the ramp, press the PAUSE button to freeze the action. Using the position gauge and the timer, record readings for the ball’s position and the time. Press PAUSE a second time to restart the action. After the ball travels farther along the ramp, push PAUSE again to record another set of data points for position and time.
+		</br></br>
+		Record your data in the table below. Then, determine if the ball’s velocity is constant or changing as it rolls along the ramp.
+		</br></br>
+		Remember to record your data in the table below, and answer the follow-up questions.
+		</br></br>
+		Click here to enter the <span class="pExerciseButton" data-href="http://mitrlearning.com/perfection_learning/Labs/1_Using%20one-dimensional%20motion%20equations/2A_Velocity/">Exercise 2A Simulation</span>
+		</br></br>
+		<div class="pLabQuestion">
+			<div class="pLabQNumber">2.</div><div class="pLabQText">  Enter your data and calculations in the table below. Include the ball’s initial velocity, readings for position and time at any point 1, readings for position and time at point 2, and a calculation of average velocity between 1 and 2. </div><div class="pLabQuestionArrow"></div>
+			<div class="pLabAnswerWrapper">
+				<table class="pLabAnswerTable">
+					<tr>
+						<td><i>V</i><sub>i</sub></td><td><i>x</i><sub>1</sub></td><td><i>t</i><sub>1</sub></td><td><i>x</i><sub>2</sub></td><td><i>t</i><sub>2</sub></td><td><i>V</i><sub>avg</sub>(Δ<i>x</i>/<i>Δt</i>)</td>
+					</tr>
+					<tr>
+						<td>
+							<input type="text" class="pLabAnswerInput"/> m/s
+						</td>
+						<td>
+							<input type="text" class="pLabAnswerInput"/> m
+						</td>
+						<td>
+							<input type="text" class="pLabAnswerInput"/> s
+						</td>
+						<td>
+							<input type="text" class="pLabAnswerInput"/> m
+						</td>
+						<td>
+							<input type="text" class="pLabAnswerInput"/> s
+						</td>
+						<td>
+							<input type="text" class="pLabAnswerInput"/> m/s
+						</td>
+					</tr>
+				</table>
+				<div class="pLabSaveButton" style="left: 456px;margin-top: 44px;"></div>
+			</div>
+		</div>
+		<div class="pLabQuestion">
+			<div class="pLabQNumber">3.</div><div class="pLabQText"> Using the data, compare your ball’s initial velocity, <i>v</i><sub>i</sub>, with its velocity between the two later points. Does the velocity change or stay the same? </div><div class="pLabQuestionArrow"></div>
+			<div class="pLabAnswerWrapper">
+				<textarea class="pLabAnswerBox" placeholder="Enter your answer here"></textarea>
+				<div class="pLabSaveButton" style="right: 40px;margin-top: -44px;"></div>
+			</div>
+		</div>
+		<div class="pLabQuestion">
+			<div class="pLabQNumber">4.</div><div class="pLabQText">  Based on your findings about the ball’s velocity on this specific ramp, explain how to calculate an initial velocity that will put the ball into the 50-point slot if the slot is a known distance away, <i>x</i>, and will open in a known amount of time, <i>t</i>.</div><div class="pLabQuestionArrow"></div>
+			<div class="pLabAnswerWrapper">
+				<textarea class="pLabAnswerBox" placeholder="Enter your answer here"></textarea>
+				<div class="pLabSaveButton" style="right: 40px;margin-top: -44px;"></div>
+			</div>
+		</div>
+		Now try your answer to Question 4 in the second part of the exercise. The next simulation features a Skee-Ball ramp identical to the one you just investigated. The slots will open 2.00 seconds after you press FIRE. The 50-point slot is 3.00 meters away from the ball’s initial position.
+		</br></br>
+		What initial velocity should you enter so the ball is positioned over the 50-point slot 2.00 seconds after you fire it? You can use the definition of average velocity to calculate your answer.
+		</br></br>
+		Give it a try in the simulation. If you do not make it, try again. You get five shots. The sooner you calculate the answer, the higher your total score. 
+		</br></br>
+		When you are done, return here to answer a follow-up question. If you need a hint on how to solve this problem, click here.
+		</br></br>
+		Click here to open the <span class="pExerciseButton" data-href="http://mitrlearning.com/perfection_learning/Labs/1_Using%20one-dimensional%20motion%20equations/2B_Velocity/">Exercise 2B Simulation</span>
+		</br></br>
+		<div class="pLabQuestion">
+			<div class="pLabQNumber">5.</div><div class="pLabQText">What initial velocity causes the ball to move 3.00 meters in 2.00 seconds?</div><div class="pLabQuestionArrow"></div>
+			<div class="pLabAnswerWrapper">
+				<textarea class="pLabAnswerBox" placeholder="Enter your answer here"></textarea>
+				<div class="pLabSaveButton" style="right: 40px;margin-top: -44px;"></div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="pExerciseContainer">
+	<div class="pExcersiseTitle">Exercise 3: Acceleration</div>
+	In Exercise 2, you learned how to determine the ball’s average velocity. In that exercise, the velocity did not change as the ball traveled along the ramp. Another way of saying the velocity is constant is to say that the acceleration of the ball is zero.
+	</br></br>
+	What if the acceleration is not zero? In that case, the velocity changes over time. In this exercise, you will determine the ball’s acceleration and then use your conclusions to master a different Skee-Ball ramp.
+	</br></br>
+	In this simulation, you will see a gauge that displays the ball’s instantaneous velocity, its velocity at a moment in time. Instantaneous velocity is calculated in the same fashion as average velocity, but using the displacement that occurs during a very, very small interval of elapsed time.
+	</br></br>
+	Average acceleration is defined as the change in instantaneous velocity (Δ<i>v</i>) divided by the elapsed time (Δ<i>t</i>). In equation form, the average acceleration of an object between any two position points 1 and 2 is: 
+	</br></br>
+	<img src= "course/labs/Using_one-dimensional_equations/assets/image101.gif">
+	</br></br>
+	In this lab, the acceleration is always constant on any ramp. It can be positive, negative or zero, but it does not change in a given simulation. (Note: Some simulations have multiple ramps, and the acceleration may vary from ramp to ramp.) 
+	</br></br>
+	The ball’s instantaneous velocity will change if the ball is accelerating. By noting the ball’s instantaneous velocity and the time twice, you can use the above equation to calculate the ball’s acceleration.
+	</br></br>
+	Once you determine the ball’s acceleration, we will help you calculate how to sink the ball into the 50-point slot.
+	<div class="pLabQASection">
+		In this exercise, there is no game and the slots will not open. Your task is to record data to determine the acceleration of the ball.
+		</br></br>
+		Pick an initial velocity, vi, for the ball. Press FIRE to shoot the ball along the ramp. Then press the PAUSE button to freeze the action. Using the velocity gauge and the timer, record readings for the ball’s instantaneous velocity and the time. Press PAUSE a second time to restart the action. After the ball travels a bit farther along the ramp, push PAUSE again to record a second set of data for velocity and time. Repeat this 2 more times. 
+		</br></br>
+		Click here to enter the <span class="pExerciseButton" data-href="http://mitrlearning.com/perfection_learning/Labs/1_Using%20one-dimensional%20motion%20equations/3_Acceleration/">Exercise 3 Simulation</span>
+		</br></br>
+		<div class="pLabQuestion">
+			<div class="pLabQNumber">6.</div><div class="pLabQText">When you graphed the ball’s velocity on the vertical axis, against time on the horizontal axis, you saw a linear graph. What is the meaning of the slope? </div><div class="pLabQuestionArrow"></div>
+			<div class="pLabAnswerWrapper">
+				<textarea class="pLabAnswerBox" placeholder="Enter your answer here"></textarea>
+				<div class="pLabSaveButton" style="right: 40px;margin-top: -44px;"></div>
+			</div>
+		</div>
+		<div class="pLabQuestion">
+			<div class="pLabQNumber">7.</div><div class="pLabQText">Does your graph indicate that the ball is accelerating? How do you know? If it is accelerating, is the acceleration positive or negative?</div><div class="pLabQuestionArrow"></div>
+			<div class="pLabAnswerWrapper">
+				<textarea class="pLabAnswerBox" placeholder="Enter your answer here"></textarea>
+				<div class="pLabSaveButton" style="right: 40px;margin-top: -44px;"></div>
+			</div>
+		</div>
+		<div class="pLabQuestion">
+			<div class="pLabQNumber">8.</div><div class="pLabQText">Does a negative acceleration mean the ball is “slowing down”? Consider the complete motion of the ball, as it moves in both directions. Use the distinction between speed and velocity in your answer. Remember: Speed is “how fast” but does not indicate direction. Speed is always positive. Velocity reflects speed and direction, and direction in this lab is indicated with a positive or negative sign. Consider the speed of the ball when it first starts moving, and when it passes the plunger on its return journey. How do these speeds compare? What about the two velocities? </div><div class="pLabQuestionArrow"></div>
+			<div class="pLabAnswerWrapper">
+				<textarea class="pLabAnswerBox" placeholder="Enter your answer here"></textarea>
+				<div class="pLabSaveButton" style="right: 40px;margin-top: -44px;"></div>
+			</div>
+		</div>
+		<div class="pLabQuestion">
+			<div class="pLabQNumber">9.</div><div class="pLabQText">Graph the ball’s velocity on the vertical axis, against time on the horizontal axis, at four different times. You should see a linear graph. What is the meaning of the constant slope? </div><div class="pLabQuestionArrow"></div>
+			<div class="pLabAnswerWrapper">
+				<textarea class="pLabAnswerBox" placeholder="Enter your answer here"></textarea>
+				<div class="pLabSaveButton" style="right: 40px;margin-top: -44px;"></div>
+			</div>
+		</div>
+	</div>
+</div>

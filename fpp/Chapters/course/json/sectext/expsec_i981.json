@@ -1,0 +1,41 @@
+{
+  "cards": [
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Machine does <u>not</u> increase work done"
+        },
+        {
+          "type": "headline",
+          "text": "Displacement increases, amount of force or torque decreases"
+        }
+      ]
+    },
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Inclined plane"
+        },
+        {
+          "type": "headline",
+          "text": "Greater displacement, less force, than simply lifting straight up"
+        },
+        {
+          "type": "bullet",
+          "text": "Amount of work stays the same"
+        }
+      ]
+    }
+  ],
+  "definitions": [],
+  "secText": [
+    "Alas, machines do not give you something for nothing.  Consider the crowbar. The sharply curved tip supplies a good deal of torque to pry open the box.  But the person (or robot) wielding it has to rotate the other end through a far greater angular displacement. All the work done on the crowbar is accounted for. And this assumes the machine is perfectly <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='wb_efficiency_concepts1'>efficient</a>.",
+    "The same holds true for linear work.  Work equals the product of the displacement and the force in the direction of the displacement.  An inclined plane increases the displacement required to achieve a particular vertical height gain, and reduces the force.  The work done is the same, whether pushing an object along an inclined plane (ignoring friction) or lifting it to the same height.  "
+  ],
+  "objNames": [
+    "wb_machine_concept3",
+    "wb_machine_concept4"
+  ]
+}

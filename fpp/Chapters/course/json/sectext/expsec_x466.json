@@ -1,0 +1,52 @@
+{
+  "cards": [
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Bohr, photons and spectral lines"
+        },
+        {
+          "type": "headline",
+          "text": "Orbits (and energy levels) are quantized"
+        },
+        {
+          "type": "bullet",
+          "text": "Only certain energy changes possible"
+        }
+      ]
+    },
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Bohr, photons and spectral lines"
+        },
+        {
+          "type": "headline",
+          "text": "Photons of light are quantized"
+        },
+        {
+          "type": "bullet",
+          "text": "Energy = Planck’s constant times frequency"
+        },
+        {
+          "type": "bullet",
+          "text": "Observed spectral lines match energy differences"
+        }
+      ]
+    }
+  ],
+  "definitions": [],
+  "secText": [
+    "We discuss how quantum theory explained spectral lines − the distinct <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='wb_hydrogen_emission'>emission spectrum</a> of an element. We start with Bohr’s model of the atom. He said that the orbits and their corresponding energy levels are quantized. An electron can exist at certain orbital radii, such as those shown. An absorbed or emitted photon causes the electron to change orbits. ",
+    "Since only certain orbital energy levels are possible, only certain changes in energy are possible, so the atom will only react to photons of specific frequencies. If an incoming photon does not have enough energy to excite an electron to a higher energy level, nothing happens. Quantum theory also explains why atoms emit photons only of specific frequencies. When an electron drops to a lower-energy orbit, its total energy is lowered, and it emits a photon with that energy difference. ",
+    "Einstein concluded that the energy of the photon equals Planck’s constant times its frequency. The energy of the photon is determined by the change of energy of the electron. Only certain changes in the energy of the electron are possible, since it can exist only in certain orbits. This means the atom only emits photons of particular energies and frequencies. ",
+    "These two theories explained spectral lines. Only certain energy changes are possible with a given atom, since the energies of its orbits are quantized. This means only photons of specific energies and frequencies are emitted, and only light of those frequencies is in fact observed. ",
+    "The theories also explained why different elements and compounds emit different lines.  They depend on the allowed electron energy levels that are specific to each material. Case closed!"
+  ],
+  "objNames": [
+    "wb_bohr_photons1",
+    "wb_bohr_photons2"
+  ]
+}

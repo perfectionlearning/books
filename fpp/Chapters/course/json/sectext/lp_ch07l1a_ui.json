@@ -1,0 +1,51 @@
+{
+  "cards": [
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Momentum"
+        },
+        {
+          "type": "headline",
+          "text": "Moving objects have momentum"
+        },
+        {
+          "type": "headline",
+          "text": "Momentum proportional to mass, velocity"
+        }
+      ]
+    },
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Impulse"
+        },
+        {
+          "type": "headline",
+          "text": "Impulse is product of force and time"
+        },
+        {
+          "type": "headline",
+          "text": "Greater force, longer time means greater impulse"
+        },
+        {
+          "type": "headline",
+          "text": "Impulse also equals the change in momentum"
+        }
+      ]
+    }
+  ],
+  "definitions": [],
+  "secText": [
+    "  <b>Essential Question: </b>  <b>    <br />  </b>How can we determine the impulse of an object using its momentum?",
+    "  <b>Enduring Understandings:</b>  <b>    <br />  </b>1. The <a class='pjumpToTopic' href='javascript:void(0)' data-chap='7' data-topic='0' data-subtopic='1' data-subsection='1'>momentum</a> for objects with can be calculated using the object's mass and its velocity.<br />2. The <a class='pjumpToTopic' href='javascript:void(0)' data-chap='7' data-topic='0' data-subtopic='2' data-subsection='0'>impulse</a> of an object can be calculated using the change in momentum of an object, or the force acting on it over an elapsed time.",
+    "  <b>Vocabulary:</b>  <a class='pjumpToTopic' href='javascript:void(0)' data-chap='7' data-topic='0' data-subtopic='1' data-subsection='1'>momentum</a>, <a class='pjumpToTopic' href='javascript:void(0)' data-chap='7' data-topic='0' data-subtopic='2' data-subsection='0'>impulse</a>",
+    "  <b>STEM Skills:</b>  <b>    <br />  </b>1. Review <a class='pjumpToTopic' href='javascript:void(0)' data-chap='1' data-topic='2' data-subtopic='1' data-subsection='0'>velocity</a>.<b><br /></b>2. Review <a class='pjumpToTopic' href='javascript:void(0)' data-chap='5' data-topic='1' data-subtopic='1' data-subsection='0'>mass</a>.<b><br /></b>3. Review <a class='pjumpToTopic' href='javascript:void(0)' data-chap='5' data-topic='0' data-subtopic='1' data-subsection='1'>force</a>.<b><br /></b><b><br /></b>"
+  ],
+  "objNames": [
+    "wb_momentum",
+    "wb_impulse"
+  ]
+}

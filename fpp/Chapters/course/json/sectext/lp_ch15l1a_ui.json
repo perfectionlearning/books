@@ -1,0 +1,47 @@
+{
+  "cards": [
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Amount of charge of electron and proton"
+        },
+        {
+          "type": "headline",
+          "text": "Electron: −1.60×10<sup class=\"\">−19</sup> coulombs"
+        },
+        {
+          "type": "headline",
+          "text": "Proton: +1.60×10<sup class=\"\">−19</sup> coulombs"
+        },
+        {
+          "type": "headline",
+          "text": "Unit: coulomb (C)"
+        }
+      ]
+    },
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Conservation of charge"
+        },
+        {
+          "type": "headline",
+          "text": "Charges can move but a system’s net charge remains constant"
+        }
+      ]
+    }
+  ],
+  "definitions": [],
+  "secText": [
+    "  <b>Essential Question: </b>  <b>    <br />  </b>How can we create charged objects?",
+    "  <b>Enduring Understandings:</b>  <b>    <br />  </b>1. <a class='pjumpToTopic' href='javascript:void(0)' data-chap='15' data-topic='0' data-subtopic='1' data-subsection='1'>Electrons and protons</a> are the fundamental charge particles. Electrons have <a class='pjumpToTopic' href='javascript:void(0)' data-chap='15' data-topic='0' data-subtopic='1' data-subsection='2'>negative charge</a>, while protons have <a class='pjumpToTopic' href='javascript:void(0)' data-chap='15' data-topic='0' data-subtopic='1' data-subsection='2'>positive charge</a>. A system of charges has a <a class='pjumpToTopic' href='javascript:void(0)' data-chap='15' data-topic='0' data-subtopic='1' data-subsection='4'>net charge</a>.<br />2. <a class='pjumpToTopic' href='javascript:void(0)' data-chap='15' data-topic='0' data-subtopic='2' data-subsection='0'>Charge is conserved</a> in a system. A system's net charge remains constant.<br />3. Charge flows freely in <a class='pjumpToTopic' href='javascript:void(0)' data-chap='15' data-topic='0' data-subtopic='3' data-subsection='0'>conductors</a>. Charge flows with great difficulty in <a class='pjumpToTopic' href='javascript:void(0)' data-chap='15' data-topic='0' data-subtopic='3' data-subsection='0'>insulators</a>. Charge flows from an object to a <a class='pjumpToTopic' href='javascript:void(0)' data-chap='15' data-topic='0' data-subtopic='3' data-subsection='1'>ground</a>, leaving the object with a neutral charge.",
+    "  <b>Vocabulary:</b>  <a class='pjumpToTopic' href='javascript:void(0)' data-chap='15' data-topic='0' data-subtopic='1' data-subsection='1'>electric charge</a>, <a class='pjumpToTopic' href='javascript:void(0)' data-chap='15' data-topic='0' data-subtopic='3' data-subsection='0'>electrically neutral</a>, <a class='pjumpToTopic' href='javascript:void(0)' data-chap='15' data-topic='0' data-subtopic='3' data-subsection='0'>charged object</a>, <a class='pjumpToTopic' href='javascript:void(0)' data-chap='15' data-topic='0' data-subtopic='2' data-subsection='0'>conservation of charge</a>, <a class='pjumpToTopic' href='javascript:void(0)' data-chap='15' data-topic='0' data-subtopic='3' data-subsection='0'>conductor</a>, <a class='pjumpToTopic' href='javascript:void(0)' data-chap='15' data-topic='0' data-subtopic='3' data-subsection='0'>insulator</a>, <a class='pjumpToTopic' href='javascript:void(0)' data-chap='15' data-topic='0' data-subtopic='3' data-subsection='1'>ground</a>, <a class='pjumpToTopic' href='javascript:void(0)' data-chap='15' data-topic='0' data-subtopic='3' data-subsection='2'>inducing electric charge</a>",
+    "  <b>STEM Skills:</b>  <b>    <br />  </b>1. Review <a class='pjumpToTopic' href='javascript:void(0)' data-chap='6' data-topic='4' data-subtopic='1' data-subsection='0'>conservation</a>.<b><br /></b>"
+  ],
+  "objNames": [
+    "wb_charge_amount",
+    "wb_conservation_charge_concepts"
+  ]
+}

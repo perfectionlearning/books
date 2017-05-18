@@ -1,0 +1,46 @@
+{
+  "cards": [
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Boyle’s law"
+        },
+        {
+          "type": "headline",
+          "text": "  <math>    <mrow>      <msub>        <mi>P</mi>        <mtext>i</mtext>      </msub>      <msub>        <mi>V</mi>        <mtext>i</mtext>      </msub>      <mo>=</mo>      <msub>        <mi>P</mi>        <mtext>f</mtext>      </msub>      <msub>        <mi>V</mi>        <mtext>f</mtext>      </msub>    </mrow>  </math>"
+        },
+        {
+          "type": "bullet",
+          "text": "Product of pressure and volume constant, at constant temperature"
+        }
+      ]
+    },
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Charles’ law"
+        },
+        {
+          "type": "headline",
+          "text": "  <math>    <mrow>      <mfrac linethickness=\"thin\">        <mrow>          <msub>            <mi>V</mi>            <mtext>i</mtext>          </msub>        </mrow>        <mrow>          <msub>            <mi>T</mi>            <mtext>i</mtext>          </msub>        </mrow>      </mfrac>      <mo>=</mo>      <mfrac linethickness=\"thin\">        <mrow>          <msub>            <mi>V</mi>            <mtext>f</mtext>          </msub>        </mrow>        <mrow>          <msub>            <mi>T</mi>            <mtext>f</mtext>          </msub>        </mrow>      </mfrac>    </mrow>  </math>"
+        },
+        {
+          "type": "bullet",
+          "text": "Ratio of volume to temperature is constant, at constant pressure"
+        }
+      ]
+    }
+  ],
+  "definitions": [],
+  "secText": [
+    "The two laws in this section apply to an <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='wb_ideal_concept'>ideal gas</a>: a gas with particles widely separated, that interact only in elastic collisions. Boyle’s law applies when there is a constant quantity of gas at a constant temperature.  ",
+    "The law states that the absolute pressure times the volume is constant, or as we write in the equation for Boyle’s law, the product of the absolute pressure and volume at an initial state equals the product of the absolute pressure and volume at a final state.  Absolute pressure is the total pressure, not the pressure relative to atmospheric pressure. ",
+    "Charles’ law holds true for a constant quantity of gas at a constant pressure. It states that the ratio of the volume to the temperature is constant, or as we write in the equation for Charles’ law, the ratio of volume to temperature at an initial state equals the ratio of these properties at a final state. This equation only holds for temperatures stated in kelvins."
+  ],
+  "objNames": [
+    "wb_boyle",
+    "wb_Charles"
+  ]
+}

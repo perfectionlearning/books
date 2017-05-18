@@ -1,0 +1,16 @@
+{
+  "Title": "Magnetic force on wire",
+  "Slides": [
+    {
+      "startTime": "0",
+      "endTime": "-1",
+      "startMarkerName": "",
+      "endMarkerName": "End",
+      "headlines": [
+        "  <i>F</i> = <i>IL</i><i>B</i> sin <i><math xmlns:xsl=\"http://www.w3.org/1999/XSL/Transform\"><mi>θ</mi></math></i>",
+        "  <span class=\"math\">    <i>F</i> = force,</span>  <span class=\"math\">    <i>I</i> = current,</span>  <span class=\"math\">    <i>L</i> = length of wire,</span>  <span class=\"math\">    <i>B</i> = magnetic field,</span> </br> <span class=\"math\">    <i>      <math xmlns:xsl=\"http://www.w3.org/1999/XSL/Transform\">        <mi>θ</mi>      </math>    </i> = angle between <i>I </i>and <i>B</i></span>"
+      ],
+      "bullets": []
+    }
+  ]
+}

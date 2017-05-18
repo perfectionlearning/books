@@ -1,0 +1,40 @@
+{
+  "cards": [
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Effect of liquid pressure"
+        }
+      ]
+    },
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Pressure in liquid is caused by"
+        },
+        {
+          "type": "headline",
+          "text": "Density of liquid pressing down"
+        },
+        {
+          "type": "headline",
+          "text": "Depth of liquid"
+        }
+      ]
+    }
+  ],
+  "definitions": [],
+  "secText": [
+    "A comparison of the two cups shows the result of pressure due to a liquid. The cup on the left was submerged more than two kilometers below the ocean’s surface, where the pressure was much larger than at the surface.",
+    "Remember that both <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='wb_liquids_concept1'>liquids</a> and <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='wb_gas_concept1'>gases</a> are fluids.  We start with the pressure of a liquid, since its volume (and density) will be nearly constant.  ",
+    "For now, we focus only on the pressure caused by the liquid itself, ignoring the pressure added by Earth’s atmosphere. Pressure is a result of the density of liquid pressing down.  Liquid gold, which has a higher density than liquid water, will weigh more and apply more pressure at any given depth.",
+    "For any liquid, there will be more weight pressing down as the depth increases.  For example, if the fish we show in the second diagram dives deeper, the pressure on it will increase, due to a taller column of water pushing down on it. ",
+    "Calculating the pressure of a gas requires considering other factors, such as <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='wb_thermal_energy_temperature1'>temperature</a>.  We discuss gas pressure <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='wb_ideal_concept'>later</a>."
+  ],
+  "objNames": [
+    "wb_pressure_liquids_concepts1a",
+    "wb_pressure_liquids_concepts"
+  ]
+}

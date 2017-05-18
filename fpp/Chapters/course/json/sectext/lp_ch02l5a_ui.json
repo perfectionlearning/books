@@ -1,0 +1,39 @@
+{
+  "cards": [
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Reference frame"
+        },
+        {
+          "type": "headline",
+          "text": "System for observing motion"
+        },
+        {
+          "type": "headline",
+          "text": "Observer on track sees train moving forward"
+        }
+      ]
+    },
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Solving for a variable"
+        }
+      ]
+    }
+  ],
+  "definitions": [],
+  "secText": [
+    "  <b>Essential Question: </b>  <b>    <br />  </b>How can we use reference frames to measure relative velocity?",
+    "  <b>Enduring Understandings:</b>  <b>    <br />  </b>1. <a class='pjumpToTopic' href='javascript:void(0)' data-chap='2' data-topic='4' data-subtopic='1'>Reference frames</a> are different for each observer.<b><br /></b>2. <a class='pjumpToTopic' href='javascript:void(0)' data-chap='2' data-topic='4' data-subtopic='2'>Relative velocity</a> can be calculated based on the velocities observed in the reference frame of each observer.",
+    "  <b>Vocabulary:</b>  <a class='pjumpToTopic' href='javascript:void(0)' data-chap='2' data-topic='4' data-subtopic='1'>reference frame</a>, <a class='pjumpToTopic' href='javascript:void(0)' data-chap='2' data-topic='4' data-subtopic='2'>relative velocity</a>",
+    "  <b>STEM Skills:</b>  <b>    <br />  </b>1. <a class='pjumpToTopic' href='javascript:void(0)' data-chap='1' data-topic='0' data-subtopic='5'>Solve an equation for a variable</a>."
+  ],
+  "objNames": [
+    "wb_reference_frame_1",
+    "wb_math_solve_for_x"
+  ]
+}

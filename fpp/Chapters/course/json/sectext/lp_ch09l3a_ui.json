@@ -1,0 +1,51 @@
+{
+  "cards": [
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Rotational motion equations"
+        },
+        {
+          "type": "headline",
+          "text": "  <span class=\"math\">    <i>      <math xmlns:xsl=\"http://www.w3.org/1999/XSL/Transform\">        <mi>θ</mi>      </math>    </i> = angular position,</span>  <span class=\"math\">    <i>ω</i> = angular velocity,</span> <br> <span class=\"math\">    <i>      <span class=\"Symbols\">α</span>    </i> = angular acceleration,</span>  <span class=\"math\">    <span class=\"Symbols\">∆</span>    <i>t</i> = elapsed time</span>"
+        },
+        {
+          "type": "bullet",
+          "text": "Angular acceleration is constant"
+        }
+      ]
+    },
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Tangential velocity"
+        },
+        {
+          "type": "headline",
+          "text": "Linear velocity at any instant"
+        },
+        {
+          "type": "headline",
+          "text": "Magnitude: Magnitude of linear velocity"
+        },
+        {
+          "type": "headline",
+          "text": "Direction: Tangent to circle"
+        }
+      ]
+    }
+  ],
+  "definitions": [],
+  "secText": [
+    "  <b>Essential Question: </b>  <b>    <br />  </b>How are rotational motion equations similar to linear motion equations?",
+    "  <b>Enduring Understandings:</b>  <b>    <br />  </b>1. Advanced <a class='pjumpToTopic' href='javascript:void(0)' data-chap='9' data-topic='2' data-subtopic='1' data-subsection='0'>rotational motion equations</a> can be derived from the equations for angular position, angular displacement, angular velocity, and angular acceleration. Advanced rotational motion equations are equivalent to advanced linear  motion equations.<br />2. <a class='pjumpToTopic' href='javascript:void(0)' data-chap='9' data-topic='2' data-subtopic='2' data-subsection='0'>Tangential velocity</a> is the linear velocity of an object in rotational motion. It is measured in meters per second.",
+    "  <b>Vocabulary:</b>  <a class='pjumpToTopic' href='javascript:void(0)' data-chap='9' data-topic='2' data-subtopic='2' data-subsection='0'>tangential velocity</a>, <a class='pjumpToTopic' href='javascript:void(0)' data-chap='9' data-topic='2' data-subtopic='2' data-subsection='0'>tangent</a>",
+    "  <b>STEM Skills:</b>  <b>    <br />  </b>1. Review <a class='pjumpToTopic' href='javascript:void(0)' data-chap='1' data-topic='4' data-subtopic='1' data-subsection='0'>motion equations</a>."
+  ],
+  "objNames": [
+    "wb_angular_motion_equation",
+    "wb_tangential_velocity_concept"
+  ]
+}

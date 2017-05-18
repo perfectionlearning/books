@@ -1,0 +1,52 @@
+{
+  "cards": [
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Angular acceleration"
+        },
+        {
+          "type": "headline",
+          "text": "Net torque"
+        },
+        {
+          "type": "headline",
+          "text": "Moment of inertia"
+        }
+      ]
+    },
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Moment of inertia"
+        },
+        {
+          "type": "headline",
+          "text": "Sum of each particle’s"
+        },
+        {
+          "type": "bullet",
+          "text": "Mass times"
+        },
+        {
+          "type": "bullet",
+          "text": "Distance squared from axis"
+        }
+      ]
+    }
+  ],
+  "definitions": [],
+  "secText": [
+    "  <b class=\"object-name\">Supplemental Material: </b>  <span class=\"object-name\">Advanced Topic</span>",
+    "  <b>Essential Question: </b>  <b>    <br />  </b>How can we use the moment of inertia to calculate net torque?",
+    "  <b>Enduring Understandings:</b>  <b>    <br />  </b>1. <a class='pjumpToTopic' href='javascript:void(0)' data-chap='9' data-topic='4' data-subtopic='1' data-subsection='0'>Net Torque</a> can be calculated by multiplying the moment of inertia by the angular acceleration of an object.<br />2. The <a class='pjumpToTopic' href='javascript:void(0)' data-chap='9' data-topic='4' data-subtopic='2' data-subsection='0'>moment of inertia</a> of an object is the sum of the mass of each particle in an object multiplied by the particle’s distance squared from the axis of rotation.<br />3. The moment of inertia can be calculated for <a class='pjumpToTopic' href='javascript:void(0)' data-chap='9' data-topic='4' data-subtopic='3' data-subsection='0'>common shapes</a> such as sphere, cylinders, and rods.",
+    "  <b>Vocabulary:</b>  <a class='pjumpToTopic' href='javascript:void(0)'data-chap='9' data-topic='4' data-subtopic='2' data-subsection='0'>moment of inertia</a>",
+    "  <b>STEM Skills:</b>  <b>    <br />  </b>1. Review <a class='pjumpToTopic' href='javascript:void(0)' data-chap='9' data-topic='3' data-subtopic='3' data-subsection='0'>net torque</a>."
+  ],
+  "objNames": [
+    "wb_torque_law_concepts1",
+    "wb_moment_inertia_concepts"
+  ]
+}

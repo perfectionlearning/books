@@ -1,0 +1,510 @@
+<!-- <div class="pActivityHeader">Thermodynamics and states of matter</div> -->
+<div class="pLabPageIntro">
+	Physicists often refer to a gas under certain conditions as an “ideal gas”. They use the model of an ideal gas to relate important properties of a gas, such as its temperature and the kinetic energy of the molecules that make it up. The “ideal gas law” relates a gas’s pressure, its volume, the number of particles in the gas, and its temperature.
+	</br></br>
+	What is an ideal gas? An ideal gas consists of a large number of atoms or molecules. (We will from now on just refer to the particles that make up the gas as “molecules” for simplicity’s sake, although there are monatomic gases like neon.) They are separated on average by distances large relative to the size of a molecule. They move at high speeds and collide frequently.
+	</br></br>
+	Using descriptions like “large” and “frequently” does not convey the nature of gases as well as specific numbers. Consider nitrogen molecules (N<sub>2</sub>), the most common molecule in our atmosphere. In one cubic meter of nitrogen molecules at standard pressure and temperature, there are 2.69 × 10<sup>25</sup>molecules. They occupy just 0.07% of the space and move at an average speed of 454 m/s. The molecules run into one another a lot: There are 9.9 × 10<sup>34</sup> collisions each second in that space.
+	</br></br>
+	The molecules collide elastically both with each other and the container walls. The molecules only exert forces on one another when they collide; other longer range forces are negligible. 
+	</br></br>
+	Each molecule can be considered as a small, hard sphere. In elastic collisions, overall kinetic energy and momentum are both conserved. The velocities of the molecules change after a collision, but the total momentum and kinetic energy of the molecules remain the same. 
+	</br></br>
+	The walls of the container are assumed to be rigid. When a molecule collides with a wall, its speed does not change although its velocity does (because its direction changed). Standard Newtonian physics can be used to analyze the collisions of the molecules with each other and with the walls of the container. 
+	</br></br>
+	We use a pool table and pool balls to illustrate and model an ideal gas. The pool balls collide elastically, like the molecules in an ideal gas, and they only interact with one another via collisions. We ignore other forces like friction and air resistance.
+	</br></br>
+	In this lab, you conduct a series of experiments. You can answer questions such as: How does the speed of individual gas molecules vary over time? What happens to the pressure of a gas if you reduce the size of the container? What happens if you add more molecules?
+	</br></br>
+	<span style='font-weight:bold;line-height: 22px;'>
+		You will learn:
+		<ul style='list-style-type:disc;padding-left: 18px;'>
+			<li><i>What happens to molecules that are allowed to collide under ideal conditions</i></li>
+			<li><i>How a distribution curve describes the behavior of ideal gas molecules</i></li>
+			<li><i>The ideal gas law (the relationship between pressure, volume, temperature and the number of molecules in a quantity of gas)</i></li>
+		</ul>
+	</span>
+</div>
+
+<div class="pExerciseContainer">
+	<div class="pExcersiseTitle">Exercise 1: Simulating an ideal gas</div>
+	</br>
+	This exercise simulates how molecules interact under ideal conditions.
+	</br></br>
+	The simulation, pictured below, is a container with eight balls, each of which represents a gas molecule. All the molecules in the simulation are the same; they have identical masses and sizes.
+	</br></br>
+	<figure style="padding-top:20px;padding-bottom:10px;">
+		<img class="pExcersiseThumb" src="course/labs/Thermodynamics_and_states_of_matter/assets/Simulating an ideal gas.png" style="width:70%;"/>
+		</br></br>
+		<figcaption style="font-family: AvenirNextLTPro-Demi;">Exercise 1. Simulating an ideal gas.</figcaption>
+	</figure>
+	</br>
+	When you start the simulation, the molecules will be moving at the same speed but in randomly set directions. They will move around the container, bouncing off the walls and each other.
+	</br></br>
+	All collisions − between two molecules or between a molecule and a wall − are perfectly elastic, meaning there is no kinetic energy lost in the collisions. A molecule will rebound off a wall with exactly the same speed as it had coming in. When two molecules collide, some kinetic energy may transfer from one molecule to another, but the sum of their kinetic energies remains the same. 
+	</br></br>
+	There is no friction, and no other forces come into play.
+	</br></br>
+	You can think of the molecules you will see in the simulation as magnified and moving in slow motion. While the simulation accurately models the behavior of an ideal gas, it is important to keep in mind that a typical gas found in nature consists of billions or trillions of particles, each moving at extraordinarily high speeds. A single breath of fresh air at typical room temperature and pressure contains approximately 4.3×1022 molecules!
+	</br></br>
+	This simulation displays the speed of each molecule. The speed readings are presented in meters per second, and these are the values you should use in any calculations. However, the actual movement of the molecules on screen has been slowed by roughly a billion; it would be impossible to see the molecules if they were shown at their actual size and speeds.
+	</br></br>
+	Before you start the simulation, think about the setup and imagine what will happen once the molecules start moving and colliding with one another and the edges of the container.
+	</br></br>
+	<div class="pLabQASection">
+		<div class="pLabQuestion">
+			<div class="pLabQNumber">1.</div><div class="pLabQText"> The molecules start out with identical speeds. After the molecules have been moving − and colliding − for about 15 seconds, do you think the molecules will still have the same speed, or will they have varying speeds? Explain your prediction. </div><div class="pLabQuestionArrow"></div>
+			<div class="pLabAnswerWrapper">
+				<textarea class="pLabAnswerBox" placeholder="Enter your answer here"></textarea>
+				<div class="pLabSaveButton" style="right: 40px;margin-top: -44px;"></div>
+			</div>
+		</div>
+		</br></br>
+		Test your answer in the simulation. When the simulation opens, press the GO button in the control panel to start the molecules moving. 
+		</br></br>
+		Note the readout gauges that display the speed of each individual molecule at every instant. Use the PAUSE button to freeze the simulation at any point to more easily read the speed gauges. Pressing the PAUSE button again restarts the action. You can pause the simulation as many times as you like. 
+		</br></br>
+		You can also rerun the simulation from the beginning by pressing RESET. Hit RESET to clear the simulation, then GO to run it again. 
+		</br></br>
+		When you are done, return here to answer some follow-up questions.
+		</br></br>
+		Click here to enter the <span class="pExerciseButton" data-href="http://mitrlearning.com/perfection_learning/Labs/1_Using%20one-dimensional%20motion%20equations/1_Intro%20to%20Skee-Ball/">Exercise 1 Simulation</span>
+		</br></br>
+		<div class="pLabQuestion">
+			<div class="pLabQNumber">2.</div><div class="pLabQText"> Was your prediction correct? After the simulation has run for several seconds, do the speeds of the molecules vary over a wide range, or do they all eventually achieve about the same speed? </div><div class="pLabQuestionArrow"></div>
+			<div class="pLabAnswerWrapper">
+				<textarea class="pLabAnswerBox" placeholder="Enter your answer here"></textarea>
+				<div class="pLabSaveButton" style="right: 40px;margin-top: -44px;"></div>
+			</div>
+		</div>
+		<div class="pLabQuestion">
+			<div class="pLabQNumber">3.</div><div class="pLabQText"> Do you think the average KE of the molecules stays the same over time? What about the average speed? Record the data now and perform the calculations later as a homework assignment. To simplify matters, ignore the mass of the molecules in the expression ½ mv<sup>2</sup> (since it is the same for all molecules) when calculating the average KE − in other words, the average kinetic energy is just a constant times the average value of v<sup>2</sup>. You can determine whether the KE changes by seeing whether the square of the speed stays the same or changes.
+			</br></br> To see if the average KE and the average speed have changed, it is simplest to use the initial conditions (when all the molecules are moving at the same speed) as one of your data points. Then record the speeds of the molecules after you have run the simulation for several seconds. </div><div class="pLabQuestionArrow"></div>
+			<div class="pLabAnswerWrapper" style = "height: 410px">
+				<table class="pLabAnswerTable">
+					<tr>
+						<td> </td><td>Speed</td><td>Speed squared</td>
+					</tr>
+					<tr>
+						<td>Molecule 1</td>
+						<td>
+							<input type="text" class="pLabAnswerInput"/>
+						</td>
+						<td>
+							<input type="text" class="pLabAnswerInput"/>
+						</td>
+					</tr>
+					<tr>
+						<td>Molecule 2</td>
+						<td>
+							<input type="text" class="pLabAnswerInput"/>
+						</td>
+						<td>
+							<input type="text" class="pLabAnswerInput"/>
+						</td>
+					</tr>
+					<tr>
+						<td>Molecule 3</td>
+						<td>
+							<input type="text" class="pLabAnswerInput"/>
+						</td>
+						<td>
+							<input type="text" class="pLabAnswerInput"/>
+						</td>
+					</tr>
+					<tr>
+						<td>Molecule 4</td>
+						<td>
+							<input type="text" class="pLabAnswerInput"/> 
+						</td>
+						<td>
+							<input type="text" class="pLabAnswerInput"/> 
+						</td>
+					</tr>
+					<tr>
+						<td>Molecule 5</td>
+						<td>
+							<input type="text" class="pLabAnswerInput"/> 
+						</td>
+						<td>
+							<input type="text" class="pLabAnswerInput"/> 
+						</td>
+					</tr>
+					<tr>
+						<td>Molecule 6</td>
+						<td>
+							<input type="text" class="pLabAnswerInput"/> 
+						</td>
+						<td>
+							<input type="text" class="pLabAnswerInput"/> 
+						</td>
+					</tr>
+					<tr>
+						<td>Molecule 7</td>
+						<td>
+							<input type="text" class="pLabAnswerInput"/> 
+						</td>
+						<td>
+							<input type="text" class="pLabAnswerInput"/> 
+						</td>
+					</tr>
+					<tr>
+						<td>Molecule 8</td>
+						<td>
+							<input type="text" class="pLabAnswerInput"/> 
+						</td>
+						<td>
+							<input type="text" class="pLabAnswerInput"/> 
+						</td>
+					</tr>
+					<tr>
+						<td>AVERAGE</td>
+						<td>
+							<input type="text" class="pLabAnswerInput"/> 
+						</td>
+						<td>
+							<input type="text" class="pLabAnswerInput"/> 
+						</td>
+					</tr>
+				</table>
+				<div class="pLabSaveButton" style="left: 232px;margin-top: 358px;"></div>
+			</div>
+		</div>
+		<div class="pLabQuestion">
+			<div class="pLabQNumber">4.</div><div class="pLabQText"> Is there a physics principle that leads you to believe that the average KE should stay the same?</div><div class="pLabQuestionArrow"></div>
+			<div class="pLabAnswerWrapper">
+				<textarea class="pLabAnswerBox" placeholder="Enter your answer here"></textarea>
+				<div class="pLabSaveButton" style="right: 40px;margin-top: -44px;"></div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="pExerciseContainer">
+	<div class="pExcersiseTitle">Exercise 2: Speed distribution</div>
+	</br>
+	You probably noticed that once the molecules in the simulation start colliding, the speeds of the various molecules changed, and continued to change. Why? Imagine you are a gas molecule traveling due north at 150 meters per second, and another molecule traveling in a different direction collides with you. Your direction and speed afterwards may not be the same as they were before. 
+	</br></br>
+	The speed of an ideal gas molecule changes many times every second. Recording the data continuously is time-consuming, and displaying it numerically would be overwhelming. The simulation below includes a graphing feature to chart the pattern of speeds of the molecules, which makes it simpler to see patterns. 
+	</br></br>
+	The graph displays ranges of molecular speed on the x axis, and the percentage of molecules traveling in those speed ranges on the y axis. The simulation updates the speeds of the molecules about 20 times each second, and displays the cumulative data recorded from the beginning of the simulation. The software program is creating what is called a distribution curve; it shows the percentage of molecules moving at various speed ranges. 
+	</br></br>
+	This simulation contains an ideal gas similar to the one in Exercise 1. We have increased the number of gas molecules to 50.
+	</br></br>
+	The gas molecules all start at the same speed, 240 m/s, but again, their initial directions are random.
+	</br></br>
+	Again, though the speeds presented are in m/s, the motion on the screen is slowed by a factor of one billion.
+	</br></br>
+	Every time there is a collision between gas molecules, the graph updates the data for those molecules. In this fashion, the graph will present a picture of patterns in the molecular speeds.
+	</br></br>
+	
+	<div class="pLabQASection">
+		In the simulation, press GO on the control panel to start the molecules moving.
+		</br></br>
+		Observe the graph in the simulation window. Give the simulation about 40 seconds to generate enough data so that the graph reaches a near steady state. (If you have a chance, let it run for thirty minutes or so for the “perfect” graph.)
+		</br></br>
+		As before, you can freeze the action by pressing PAUSE. You can run the simulation again by pressing RESET to clear it, then GO to start.
+		</br></br>
+		When you are done, return here to answer some follow-up questions.
+		</br></br>
+		Click here to enter the <span class="pExerciseButton" data-href="http://mitrlearning.com/perfection_learning/Labs/1_Using%20one-dimensional%20motion%20equations/2A_Velocity/">Exercise 2 Simulation</span>
+		</br></br>
+		<div class="pLabQuestion">
+			<div class="pLabQNumber">5.</div><div class="pLabQText"> Describe the general characteristics of the graph. Is the likelihood of a molecule moving within each range of speeds exactly the same, or are some ranges more probable than others?</div><div class="pLabQuestionArrow"></div>
+			<div class="pLabAnswerWrapper">
+				<textarea class="pLabAnswerBox" placeholder="Enter your answer here"></textarea>
+				<div class="pLabSaveButton" style="right: 40px;margin-top: -44px;"></div>
+			</div>
+		</div>
+		<div class="pLabQuestion">
+			<div class="pLabQNumber">6.</div><div class="pLabQText"> You may have seen symmetrical distribution curves, such the one representing a normal distribution. A normal distribution can be approximated in many ways, such as by flipping 1000 pennies, and noting how often they come up 1000 heads, or 999 heads and a tail, or 998 heads and 2 tails, and so on up to 1000 tails. The likelihood of N number of tails is the same as the likelihood for N number of heads, so such a graph would be symmetric about the “500 heads, 500 tails”.
+			</br></br> Is the graph of the molecules’ speeds symmetrical? If the curve in this simulation is not symmetrical, describe it, with a focus on the behavior of the curve at higher speed ranges.</div><div class="pLabQuestionArrow"></div>
+			<div class="pLabAnswerWrapper">
+				<textarea class="pLabAnswerBox" placeholder="Enter your answer here"></textarea>
+				<div class="pLabSaveButton" style="right: 40px;margin-top: -44px;"></div>
+			</div>
+		</div>
+		</br></br>
+		The graph you saw is called a Maxwell distribution curve. It is named after James Clerk Maxwell, a British physicist in the 19th century whose achievements include developing statistical methods for modeling gases.
+		</br></br>
+		One characteristic of this curve you may have noted is the long “tail” to the right. Some molecules are moving quite rapidly compared to the average speed of the gas. This property of a gas (and other substances) is quite important.
+		</br></br>
+		This type of distribution can be used to explain other phenomena, like evaporation in a liquid. The speed of the water molecules is distributed, and those moving fast enough will evaporate. Not all the molecules evaporate at the same time because their speeds are not the same. Evaporation is a cooling process, as you no doubt have experienced after stepping out of the shower, because the molecules with the greatest speed (and KE) leave, reducing the average KE of the molecules that remain behind.
+	</div>
+</div>
+
+<div class="pExerciseContainer">
+	<div class="pExcersiseTitle">Exercise 3: Temperature and average molecular speed</div>
+	</br>
+	You now will study the “macroscopic” properties of a gas; these are overall properties of a quantity of gas, such as its pressure or volume, as opposed to “microscopic” properties, such as the speed of its individual molecules. To start this transition, you will explore how changing the temperature of a gas affects the speed of its molecules. You will observe the relationship qualitatively, and also develop a mathematical relationship for how temperature changes affect molecular speed.
+	</br></br>
+	After this exercise, you will experiment with the relationship between the average speed of a molecule and the pressure of the gas.
+	</br></br>
+	<div class="pLabQASection">
+		Start the simulation by pressing GO. Then change the temperature of the gas by clicking the up or down arrows on the temperature dial in the control panel. The temperature is displayed in kelvins (K) and ranges from 100 K to 600 K.
+		</br></br>
+		The simulation will calculate the average speed of the molecules (v<sub>avg</sub>) and display it in a gauge on the control panel.
+		</br></br>
+		The purpose of the exercise is to determine the relationship between the temperature and average molecular speed in an ideal gas. Pick a temperature and record the average speed of the gas molecules. Then change the temperature value and record the new average speed. Repeat this at least five times over a wide range of temperatures; you want enough data to determine the relationship between the two variables.
+		</br></br>
+		You will note that the output gauge for the average speed shows that this value fluctuates even while the temperature is held constant. This is not a bug; it accurately reflects the average speed. In terms of recording data, look at the gauge and make an approximation of what the average speed is for a given temperature. The average speed varies on the order of 5 to 10%. This is a good reason to record several data points. Pressing PAUSE enables you to read the data more easily. Data in real world experiments may have error or “noise”, and this computer simulation is no different. We have deliberately avoided creating “ideal” data, in order to expose you to the realities of laboratory work.
+		</br></br>
+		(Why does the average speed vary? One answer is: What principle of physics says it cannot? Earlier questions in this lab asked you to average both the KE (proportional to the speed squared) and the speed. You might ponder the data and conclusions you reach there in order to understand why the average speed changes. There is another average that physicists use, the root-mean-<b>square</b> (emphasis added). If we displayed that average, you would see less “jitter” in the data.)
+		</br></br>
+		Using your own graph paper, graph the temperature, T, on the y axis, and the average speed of the gas molecules (v<sub>avg</sub>), in m/s, on the x axis.
+		</br></br>
+		When you are done collecting and graphing your data, return here to answer some follow-up questions.
+		</br></br>
+		Click here to enter the <span class="pExerciseButton" data-href="http://mitrlearning.com/perfection_learning/Labs/1_Using%20one-dimensional%20motion%20equations/3_Acceleration/">Exercise 3 Simulation</span>
+		</br></br>
+		Analyze your data. Create a graph in which temperature, in kelvins, is on the y axis and average speed of the gas molecules, in m/s, is on the x axis. 
+		</br></br>
+		<div class="pLabQuestion">
+			<div class="pLabQNumber">7.</div><div class="pLabQText"> Based on your data, did the average speed of the gas molecules increase, decrease or stay the same as the temperature of the gas increased?</div><div class="pLabQuestionArrow"></div>
+			<div class="pLabAnswerWrapper">
+				<textarea class="pLabAnswerBox" placeholder="Enter your answer here"></textarea>
+				<div class="pLabSaveButton" style="right: 40px;margin-top: -44px;"></div>
+			</div>
+		</div>
+		</br>
+		Using your graph and data set, try to determine the mathematical relationship between temperature and molecular speed. Your goal is to determine a relationship between the two variables (i.e. linear, inverse, squared, no relationship at all, etc.).
+		</br></br>
+		For tips on how to establish a relationship from your graph, click <a href = "course/labs/Thermodynamics_and_states_of_matter/Analyzing data.htm">here</a>.
+		</br></br>
+		<div class="pLabQuestion">
+			<div class="pLabQNumber">8.</div><div class="pLabQText"> Write an equation for the relationship between temperature (T) and average molecular speed (v<sub>avg</sub>) in a gas (which may contain a numerical constant). Also describe the relationship in words.</div><div class="pLabQuestionArrow"></div>
+			<div class="pLabAnswerWrapper">
+				<textarea class="pLabAnswerBox" placeholder="Enter your answer here"></textarea>
+				<div class="pLabSaveButton" style="right: 40px;margin-top: -44px;"></div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="pExerciseContainer">
+	<div class="pExcersiseTitle">Exercise 4: Pressure and temperature </div>
+	</br>
+	The goal of this exercise and the two that follow is to collect data and graph the relationships between gas pressure (P) and three other macroscopic properties of a gas: its temperature (T), its volume (V) and the number of particles contained in the gas (N).
+	</br></br>
+	The ultimate goal is to describe an ideal gas with a single equation relating the macroscopic variables P, V, N and T. This is the subject of Exercise 7.
+	</br></br>
+	Exercise 4 asks this question: What happens, if anything, to the pressure of a gas when its temperature increases? The other properties of the gas, its volume and number of molecules, are held constant so you can focus on this relationship.
+	</br></br>
+	Use the ideal gas simulator to find out.
+	</br></br>
+	<div class="pLabQASection">
+		You can set the temperature of the gas as you did before, by clicking the up or down arrows on the temperature dial in the control panel. The temperature ranges from 100 K to 600 K.
+		</br></br>
+		A separate gauge displays the gas pressure, in pascals (Pa). Inside of a 3-D box, the average force per unit area exerted by bouncing molecules on the walls is called <b>pressure</b>. Generally, the more often molecules collide with the walls, the greater the pressure. The simulation measures pressure by calculating the force with which the molecules collide with the walls of the container, and then dividing by the surface area of the walls.
+		</br></br>
+		(NOTE: You can only see two dimensions in the simulation. An unseen third dimension is present in the simulation to create the volume shown in the output gauge.)
+		</br></br>
+		The purpose of this exercise is to find the relationship between the temperature and pressure of an ideal gas, when other variables (such as volume) are held constant.
+		</br></br>
+		Start the simulation by pressing GO, and then record the temperature and pressure of the gas. Change the temperature and record another pair of data points. Repeat this at least five times until you have enough data to graph the relationship between gas temperature and pressure.
+		</br></br>
+		In the graph, place pressure P in pascals (Pa) on the y axis, and temperature T, in kelvins (K), on the x axis.
+		</br></br>
+		You can use the PAUSE button to freeze the simulation at any point to more easily read the pressure gauge. Again, you will see fluctuations in the pressure at a given temperature. This occurs for the same reason that the average speed fluctuated. These fluctuations are smaller at lower temperatures. By pressing PAUSE several times, you can make a better estimate of the average pressure at a given temperature.
+		</br></br>
+		When you are done collecting and graphing your data, return here to answer some questions.
+		</br></br>
+		Click here to enter the <span class="pExerciseButton" data-href="http://mitrlearning.com/perfection_learning/Labs/1_Using%20one-dimensional%20motion%20equations/3_Acceleration/">Exercise 4 Simulation</span>
+		</br></br>
+		<div class="pLabQuestion">
+			<div class="pLabQNumber">9.</div><div class="pLabQText">  Look at your data. Did the average pressure of the gas increase, decrease or stay the same as the temperature of the gas increased? </div><div class="pLabQuestionArrow"></div>
+			<div class="pLabAnswerWrapper">
+				<textarea class="pLabAnswerBox" placeholder="Enter your answer here"></textarea>
+				<div class="pLabSaveButton" style="right: 40px;margin-top: -44px;"></div>
+			</div>
+		</div>
+		<div class="pLabQuestion">
+			<div class="pLabQNumber">10.</div><div class="pLabQText">Using the data set and graph, establish a relationship between the variables P and T. Is the relationship linear, inverse or squared? Write an equation with the variables P, T, and C<sub>1</sub> (C<sub>1</sub> is your first constant). </div><div class="pLabQuestionArrow"></div>
+			<div class="pLabAnswerWrapper">
+				<textarea class="pLabAnswerBox" placeholder="Enter your answer here"></textarea>
+				<div class="pLabSaveButton" style="right: 40px;margin-top: -44px;"></div>
+			</div>
+		</div>
+		<div class="pLabQuestion">
+			<div class="pLabQNumber">11.</div><div class="pLabQText"> Provide an explanation as to what happens on the molecular level to cause the pressure-temperature relationship you recorded. Consider how the increased speed of the molecules affects the collisions of the molecules with the walls. </div><div class="pLabQuestionArrow"></div>
+			<div class="pLabAnswerWrapper">
+				<textarea class="pLabAnswerBox" placeholder="Enter your answer here"></textarea>
+				<div class="pLabSaveButton" style="right: 40px;margin-top: -44px;"></div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="pExerciseContainer">
+	<div class="pExcersiseTitle">Exercise 5: Pressure and volume</div>
+	</br>
+	What happens, if anything, to the pressure of a gas when its volume increases, while temperature and the number of molecules are kept constant?
+	</br></br>
+	Use the ideal gas simulator to find out. In this exercise, the temperature is held constant, but you can vary the volume of the ideal gas, by use of the piston shown in the picture below.
+	</br></br>
+	<figure style="padding-top:20px;padding-bottom:10px;">
+		<img class="pExcersiseThumb" src="course/labs/Thermodynamics_and_states_of_matter/assets/Pressure and volume.png" style="width:70%;"/>
+		</br></br>
+		<figcaption style="font-family: AvenirNextLTPro-Demi;">Exercise 5. Use the piston to find how gas pressure changes with volume.</figcaption>
+	</figure>
+	</br>
+	Assume the temperature is constant. In an actual lab situation, the temperature can be held constant by taking away or adding (as in this case) energy in the form of heat. This heat transfer is not shown in this simulation.
+	</br></br>
+
+	<div class="pLabQASection">
+		You can set the volume of the gas by clicking the up or down arrows on the volume dial on the control panel. The volume is small at all times; at the container’s maximum, it is 3.2×10<sup>-22</sup> m<sup>3</sup>. We use such a small volume to get “reasonable” pressure readings given the small number of molecules we simulate. The simulation will move the piston up to increase the container's volume, and down to decrease it.
+		</br></br>
+		The purpose of this exercise is for you to determine the relationship between the pressure and the volume of an ideal gas, assuming the other variables are fixed. Start the simulation by pressing GO and then record the volume and pressure of the gas. Change the volume and record another pair of data points. Repeat at least five times until you have enough data to graph the relationship between pressure and gas volume. You can use the PAUSE button to freeze the simulation at any point to more easily read the pressure gauge. Again, the pressure will fluctuate at a given volume.
+		</br></br>
+		In the graph, place pressure, in pascals, on the y axis, and volume, in 10<sup>-22</sup> m<sup>3</sup>, on the x axis
+		</br></br>
+		When you are done collecting and graphing your data, return here to answer some follow-up questions.
+		</br></br>
+		Click here to enter the <span class="pExerciseButton" data-href="http://mitrlearning.com/perfection_learning/Labs/1_Using%20one-dimensional%20motion%20equations/1_Intro%20to%20Skee-Ball/">Exercise 5 Simulation</span>
+		</br></br>
+		<div class="pLabQuestion">
+			<div class="pLabQNumber">12.</div><div class="pLabQText"> Did the average pressure of the gas increase, decrease or stay the same as the volume of the gas increased?</div><div class="pLabQuestionArrow"></div>
+			<div class="pLabAnswerWrapper">
+				<textarea class="pLabAnswerBox" placeholder="Enter your answer here"></textarea>
+				<div class="pLabSaveButton" style="right: 40px;margin-top: -44px;"></div>
+			</div>
+		</div>
+		<div class="pLabQuestion">
+			<div class="pLabQNumber">13.</div><div class="pLabQText"> Using your data set and graph, establish a relationship, if any exists, between the variables P and V. Is the relationship linear, inverse or squared? Write an equation using the variables P, V, and C<sub>2</sub> (for the second constant you are using in your equation). </div><div class="pLabQuestionArrow"></div>
+			<div class="pLabAnswerWrapper">
+				<textarea class="pLabAnswerBox" placeholder="Enter your answer here"></textarea>
+				<div class="pLabSaveButton" style="right: 40px;margin-top: -44px;"></div>
+			</div>
+		</div>
+		<div class="pLabQuestion">
+			<div class="pLabQNumber">14.</div><div class="pLabQText"> Why does changing the volume of an ideal gas (at fixed temperature and number of molecules) change the pressure? Looking at the simulation with the volume set at different values provides a visual context for answering this question. </div><div class="pLabQuestionArrow"></div>
+			<div class="pLabAnswerWrapper">
+				<textarea class="pLabAnswerBox" placeholder="Enter your answer here"></textarea>
+				<div class="pLabSaveButton" style="right: 40px;margin-top: -44px;"></div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="pExerciseContainer">
+	<div class="pExcersiseTitle">Exercise 6: Pressure and number of molecules, N</div>
+	</br>
+	What happens, if anything, to the pressure of a gas when more molecules are introduced into the container?
+	</br></br>
+	Use the ideal gas simulator to find out. You can vary the number of gas molecules in this simulation.
+	</br></br>
+	In real life, adding molecules might affect pressure, volume or temperature. Here, volume and temperature will be held constant, so pressure is the only variable that can change as you alter the number of molecules. This is equivalent to making two assumptions. First, that the box is very rigid so that a pressure change will not cause a volume change. Second, that the molecules that are introduced come from a gas with the same temperature as the gas already in the container. If you remove molecules, the temperature also remains unchanged. 
+	</br></br>
+	
+	<div class="pLabQASection">
+		You can set the number of molecules in the gas by clicking the up or down arrows on the “number of molecules” dial in the control panel. The range for the number of molecules is 10 to 40.
+		</br></br>
+		The purpose of this exercise is to find the relationship between the pressure and the number of molecules in an ideal gas.
+		</br></br>
+		Start the simulation by pressing GO and then record the number of molecules and the pressure. Add some molecules and record another pair of data points. Repeat at least five times until you have enough data to make a graph of the relationship between the number of molecules and pressure. You can also use the PAUSE button to freeze the simulation at any point to more easily read the pressure gauge. As with the earlier exercises, there will be fluctuations in the pressure you observe.
+		</br></br>
+		In the graph, place pressure in pascals (Pa) on the y axis, and number of molecules, N, on the x axis.
+		</br></br>
+		When you are done collecting and graphing your data, return here to answer some follow-up questions.
+		</br></br>
+		Click here to enter the <span class="pExerciseButton" data-href="http://mitrlearning.com/perfection_learning/Labs/1_Using%20one-dimensional%20motion%20equations/1_Intro%20to%20Skee-Ball/">Exercise 6 Simulation</span>
+		</br></br>
+		<div class="pLabQuestion">
+			<div class="pLabQNumber">15.</div><div class="pLabQText"> Did the average pressure of the gas increase, decrease or stay the same as the number of molecules increased?</div><div class="pLabQuestionArrow"></div>
+			<div class="pLabAnswerWrapper">
+				<textarea class="pLabAnswerBox" placeholder="Enter your answer here"></textarea>
+				<div class="pLabSaveButton" style="right: 40px;margin-top: -44px;"></div>
+			</div>
+		</div>
+		<div class="pLabQuestion">
+			<div class="pLabQNumber">16.</div><div class="pLabQText">  Using your data set and graph, establish a relationship, if any exists, between the variables P and N. Is the relationship linear, inverse or squared? Write an equation using the variables P, N, and C<sub>3</sub> (for the third constant in your equations).</div><div class="pLabQuestionArrow"></div>
+			<div class="pLabAnswerWrapper">
+				<textarea class="pLabAnswerBox" placeholder="Enter your answer here"></textarea>
+				<div class="pLabSaveButton" style="right: 40px;margin-top: -44px;"></div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="pExerciseContainer">
+	<div class="pExcersiseTitle">Exercise 7: The ideal gas law</div>
+	</br>
+	You now have collected enough data to write a single mathematical equation relating pressure, volume, temperature and number of particles in an ideal gas. 
+	</br></br>
+	In exercises 4, 5 and 6, you derived equations for how pressure P relates to temperature T, volume V and number of molecules N, respectively. 
+	</br></br>
+	Now see if you can combine these three relationships into one. The key to doing this is to recognize that:
+	</br></br>
+	<ul style='list-style-type:disc;padding-left: 18px;'>
+		<li>all three equations relate to pressure, so it is legitimate to combine them</li>
+		<li>the equation that combines all four properties of the gas that you varied will have a constant, k, which can be determined using the data from the ideal gas simulator. </li>
+	</ul>
+	</br></br>
+	Example: Suppose you conducted two experiments, and from the data you determined the following two mathematical relationships:
+	</br></br>
+	<img src= "course/labs/Thermodynamics_and_states_of_matter/assets/imgF1.gif">
+	</br></br>
+	where c<sub>1</sub> is a constant, and 
+	</br></br>
+	<img src= "course/labs/Thermodynamics_and_states_of_matter/assets/imgF2.gif">
+	</br></br>
+	where c<sub>2</sub> is another constant. 
+	</br></br>
+	These equations are saying that F is linearly proportional to A when B is held constant, and F is inversely proportional to B when A is held constant. We would like to write a single relation that is consistent with both of those statements. That relation is: 
+	</br></br>
+	<img src= "course/labs/Thermodynamics_and_states_of_matter/assets/imgF3.gif">
+	</br></br>
+	Check to see that this single equation with a new constant, c<sub>3</sub> still applies to the individual scenarios. For instance, hold A constant, and make sure that F is still inversely proportional to B as B changes. 
+	</br></br>
+	All these steps are “just” algebra.
+	</br></br>
+	In this lab, you are exploring the relationship between pressure (P) and volume, temperature and number of molecules. First combine your results from Exercises 4 and 5 to write a relationship between pressure, volume and temperature. 
+	</br></br>
+	Then state the relation between pressure and N, the number of molecules. 
+	</br></br>	
+	<div class="pLabQASection">
+		<div class="pLabQuestion">
+			<div class="pLabQNumber">17.</div><div class="pLabQText"> Combine the three equations you wrote in Exercises 4, 5, and 6, respectively, in order to write a single equation of state that relates pressure to temperature, volume and number of molecules in a gas. This equation will contain a new constant, k. </div><div class="pLabQuestionArrow"></div>
+			<div class="pLabAnswerWrapper">
+				<textarea class="pLabAnswerBox" placeholder="Enter your answer here"></textarea>
+				<div class="pLabSaveButton" style="right: 40px;margin-top: -44px;"></div>
+			</div>
+		</div>
+		<div class="pLabQuestion">
+			<div class="pLabQNumber">18.</div><div class="pLabQText">  Find a numerical value for the new constant k using your new equation and data from Exercises 4, 5, or 6. Show your work, and make sure to include units for k.</div><div class="pLabQuestionArrow"></div>
+			<div class="pLabAnswerWrapper">
+				<textarea class="pLabAnswerBox" placeholder="Enter your answer here"></textarea>
+				<div class="pLabSaveButton" style="right: 40px;margin-top: -44px;"></div>
+			</div>
+		</div>
+		<div class="pLabQuestion">
+			<div class="pLabQNumber">19.</div><div class="pLabQText"> When written in the form PV = NkT, where P is pressure (Pa), V is volume (m<sup style="position:absolute;top:-5px">3</sup> &nbsp;&nbsp;), N is number of molecules, and T is temperature in kelvins, the constant k is called the Boltzmann constant. You can see its actual value by clicking <span class="popupParent" style="color:blue; text-decoration:underline;cursor:pointer;" onclick="togglePopup(event)">here<div class="midpopup" style="display: none;width: 400px;position: absolute;top:9px;background: white;color: black;padding: 10px;border: 1px solid;z-index:10;cursor:default;">
+			The Boltzmann constant is 1.38*10<sup>-23</sup> J/K
+				</div>
+				
+		</span>. How close was your value for k? Give the percent error of your result for k. </div><div class="pLabQuestionArrow"></div>
+			<div class="pLabAnswerWrapper">
+				<textarea class="pLabAnswerBox" placeholder="Enter your answer here"></textarea>
+				<div class="pLabSaveButton" style="right: 40px;margin-top: -44px;"></div>
+			</div>
+		</div>
+		<script>
+			function togglePopup(e){
+				if(!$(e.target).hasClass("midpopup")){
+					$(".midpopup").show().css("left", "50%").css("transform", "translateX(-50%)").css("-webkit-transform", "translateX(-50%)").css("-moz-transform", "translateX(-50%)");
+					
+					$(document).on("click", hidePopup);
+				}
+				e.stopPropagation();
+				e.stopImmediatePropagation();
+				return false;
+			}
+			function hidePopup(e){
+				if(!$(e.target).hasClass("midpopup") && !$(e.target).hasClass("popupParent")){
+					$(".midpopup").hide();
+					$(document).off("click", hidePopup);
+				}
+			}
+		</script>
+	</div>
+</div>

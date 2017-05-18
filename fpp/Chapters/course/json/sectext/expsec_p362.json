@@ -1,0 +1,44 @@
+{
+  "cards": [
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Energy in a capacitor"
+        },
+        {
+          "type": "headline",
+          "text": "Battery’s field causes electrons to move"
+        },
+        {
+          "type": "headline",
+          "text": "Work done by battery equals <i>PE</i> of capacitor"
+        }
+      ]
+    },
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Capacitor potential energy equations"
+        },
+        {
+          "type": "headline",
+          "text": "  <span class=\"math\">    <i>PE</i> = potential energy,</span>  <span class=\"math\">    <i>q</i> = charge,</span>  </br><span class=\"math\">    <i>C</i> = capacitance,</span> </br> <span class=\"math\">    <span class=\"Symbols\">∆</span>    <i>V</i> = potential difference</span>"
+        }
+      ]
+    }
+  ],
+  "definitions": [],
+  "secText": [
+    "Using a circuit that combines a capacitor and a battery, we show the process by which a capacitor stores charge.    ",
+    "When the switch is closed and the circuit completed, the battery charges the capacitor.  Its potential difference causes electrons to move through the wire, toward the positive terminal of the battery and away from the negative terminal. The opposite charges on the two plates of the capacitor create an electric field between the plates, as the field lines in the drawing show.",
+    "The charges on the capacitor’s plates possess electric potential energy, since work — performed by the battery — created that charge configuration. The capacitor will hold the charge, and store the energy until the electrons are allowed to flow from the negative plate back to the positive plate. ",
+    "The equation on the left states that the electric potential energy of a capacitor equals the square of the charge on one conductor divided by twice its capacitance. ",
+    "Using the definition of capacitance, we can also write a second equation that states the energy as a function of the capacitance and the potential difference."
+  ],
+  "objNames": [
+    "wb_energy_capacitor_concepts1",
+    "wb_capacitor_energy_equation"
+  ]
+}

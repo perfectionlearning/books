@@ -1,0 +1,53 @@
+{
+  "cards": [
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Thermometers"
+        },
+        {
+          "type": "headline",
+          "text": "Thermometers use physical properties to measure temperature"
+        }
+      ]
+    },
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Components of thermometers"
+        },
+        {
+          "type": "headline",
+          "text": "Bimetallic strips "
+        },
+        {
+          "type": "headline",
+          "text": "Infrared radiation sensors"
+        },
+        {
+          "type": "headline",
+          "text": "Resistors"
+        }
+      ]
+    }
+  ],
+  "definitions": [
+    {
+      "term": "Thermometer",
+      "def": "Device that measures temperature based on physical properties."
+    }
+  ],
+  "secText": [
+    "Thermometers come in all shapes and sizes, but they have some common properties. ",
+    "Thermometers use physical properties to measure temperature. The one you see in the first diagram relies on the fact that liquids expand at a predictable rate with temperature. The scale of the thermometer measures the amount of expansion − how much longer the column becomes as the liquid’s thermal energy increases.",
+    "Thermostats, which contain thermometers, are used to control furnaces and air conditioners. Thermometers found in older thermostats use bimetallic strips − two different metal strips attached side by side.  As the temperature rises, one metal <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='wb_linear_thermal_concepts1'>expands</a> more rapidly than the other, and the bimetallic strip bends, opening a circuit that stops the furnace. ",
+    "Thermometers for measuring human temperature can also rely on detecting radiation from an object, like the digital version shown in the second diagram.  This thermometer measures the infrared radiation from a human body.  The peak frequency of the radiation relates to the body’s temperature.",
+    "Other devices use the fact that a substance’s <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='wb_resistivity_concepts'>resistivity</a> − how hard or easy it is for electricity to flow through it − changes with temperature. "
+  ],
+  "objNames": [
+    "wb_thermometer_concepts1",
+    "wb_thermometer_concepts2"
+  ]
+}

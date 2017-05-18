@@ -1,0 +1,23 @@
+{
+  "Title": "Initial positive velocity and acceleration",
+  "Slides": [
+    {
+      "startTime": "0",
+      "endTime": "5167",
+      "startMarkerName": "Introduction",
+      "endMarkerName": "Marker 3",
+      "headlines": [],
+      "bullets": []
+    },
+    {
+      "startTime": "6167",
+      "endTime": "-1",
+      "startMarkerName": "Marker 1",
+      "endMarkerName": "End",
+      "headlines": [
+        "Car’s speed to right increases"
+      ],
+      "bullets": []
+    }
+  ]
+}

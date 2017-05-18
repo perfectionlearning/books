@@ -1,0 +1,53 @@
+{
+  "cards": [
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Inversely proportional"
+        },
+        {
+          "type": "headline",
+          "text": "Relationship that can be described as <math><mrow><mi>y</mi><mo>=</mo><mfrac linethickness=\"thin\"><mi>k</mi><mi>x</mi></mfrac></mrow></math>"
+        },
+        {
+          "type": "headline",
+          "text": "Graph is a curve"
+        }
+      ]
+    },
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Inverse square relationship"
+        },
+        {
+          "type": "headline",
+          "text": "Relationship that can be described as <math><mrow><mi>y</mi><mo>=</mo><mfrac linethickness=\"thin\"><mi>k</mi><mrow><msup><mi>x</mi><mn>2</mn></msup></mrow></mfrac></mrow></math>"
+        }
+      ]
+    }
+  ],
+  "definitions": [
+    {
+      "term": "Inversely proportional",
+      "def": "A relationship that can be written in the form <flashml width=\"30.75\" height=\"30.75\" color=\"33CCCC\">  <math>    <mrow>      <mi>y</mi>      <mo>=</mo>      <mfrac linethickness=\"thin\">        <mi>k</mi>        <mi>x</mi>      </mfrac>    </mrow>  </math></flashml>, with <i>k</i> being a constant.  As <i>x</i> increases, with a positive <i>k</i>, <i>y</i> decreases."
+    },
+    {
+      "term": "Nonlinear",
+      "def": "Not a line – a curve, or other shape that is not a line."
+    }
+  ],
+  "secText": [
+    "Inversely proportional means as one value increases, the other decreases as the reciprocal of that value. It is the antonym of a proportional relationship. ",
+    "More specifically, an inversely proportional relationship can be written in the form <math><mrow><mi>y</mi><mo>=</mo><mfrac linethickness=\"thin\"><mi>k</mi><mi>x</mi></mfrac><mo>.</mo></mrow></math><span class=\"math\" />   The letter <i>k</i> represents <i></i>a constant, other than zero. When <i>k</i> is positive, as <i>x</i> increases, <i>y </i>decreases. ",
+    "The graph is a curve, such as the one you see in the first diagram.  It is an example of a nonlinear relationship.  It shows that with <i>k</i> positive, the <i>y</i>-values become smaller as the <i>x</i>-values increase. ",
+    "An inverse square relationship is one that can be described as <math><mrow><mi>y</mi><mo>=</mo><mfrac linethickness=\"thin\"><mi>k</mi><mrow><msup><mi>x</mi><mn>2</mn></msup></mrow></mfrac><mo>.</mo></mrow></math>  The same change in <i>x</i> makes for even larger changes in <i>y</i> than with an inverse proportion.",
+    "We show a graph of this type of relationship in the second diagram.  We mention it because some very important scientific properties, such as the force of <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='wb_newton_equation_concept'>gravity</a> versus <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='wb_newton_equation'>distance between two masses</a>, are inverse square relationships.  "
+  ],
+  "objNames": [
+    "wb_math_inversely_proportional",
+    "wb_math_inverse_square"
+  ]
+}

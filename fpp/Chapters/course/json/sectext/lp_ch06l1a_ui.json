@@ -1,0 +1,39 @@
+{
+  "cards": [
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Work "
+        },
+        {
+          "type": "headline",
+          "text": "The product of the displacement and the force parallel to the displacement"
+        }
+      ]
+    },
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Equation for work"
+        },
+        {
+          "type": "headline",
+          "text": "Force parallel to displacement "
+        }
+      ]
+    }
+  ],
+  "definitions": [],
+  "secText": [
+    "  <b>Essential Question: </b>  <b>    <br />  </b>How can we calculate the amount of work done on an object?",
+    "  <b>Enduring Understandings:</b>  <b>    <br />  </b>1. When the <a class='pjumpToTopic' href='javascript:void(0)' data-chap='6' data-topic='0' data-subtopic='1' data-subsection='0'>force on an object is parallel to the displacement</a> of the object, then the <a class='pjumpToTopic' href='javascript:void(0)' data-chap='6' data-topic='0' data-subtopic='1' data-subsection='1'>work</a> is equal to the force multiplied by the displacement.",
+    "  <b>Vocabulary:</b>  <a class='pjumpToTopic' href='javascript:void(0)' data-chap='6' data-topic='0' data-subtopic='1' data-subsection='0'>work</a>",
+    "  <b>STEM Skills:</b>  <b>    <br />  </b>1. Review <a class='pjumpToTopic' href='javascript:void(0)' data-chap='5' data-topic='0' data-subtopic='1' data-subsection='1'>force</a>.<br />2. Review <a class='pjumpToTopic' href='javascript:void(0)' data-chap='1' data-topic='1' data-subtopic='3' data-subsection='0'>displacement</a>."
+  ],
+  "objNames": [
+    "wb_work_concept",
+    "wb_work_equation"
+  ]
+}

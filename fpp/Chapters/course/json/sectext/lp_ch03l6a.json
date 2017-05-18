@@ -1,0 +1,47 @@
+{
+  "cards": [
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Order of operations: PEMDAS"
+        },
+        {
+          "type": "headline",
+          "text": "Parentheses first"
+        },
+        {
+          "type": "headline",
+          "text": "Exponents second"
+        },
+        {
+          "type": "headline",
+          "text": "Multiplication, division"
+        },
+        {
+          "type": "bullet",
+          "text": "Left to right"
+        },
+        {
+          "type": "headline",
+          "text": "Addition, subtraction"
+        },
+        {
+          "type": "bullet",
+          "text": "Left to right"
+        }
+      ]
+    }
+  ],
+  "definitions": [],
+  "secText": [
+    "  <b>Supplemental Material: </b>Math Review",
+    "  <b>Essential Question: </b>  <b>    <br />  </b>How can we evaluate algebraic expressions?",
+    "  <b>Enduring Understandings:</b>  <b>    <br />  </b>1. When evaluating expressions, first evaluate the parentheses, exponents, multiplication, division, addition, and then subtraction ([OBJ:expsec_a356:PEMDAS]).",
+    "  <b>Vocabulary:</b>  [OBJ:expsec_a356:order of operations]",
+    "  <b>STEM Skills:</b>  <b>    <br />  </b>1. Review [OBJ:expsec_a354:exponents]."
+  ],
+  "objNames": [
+    "wb_math_pemdas"
+  ]
+}

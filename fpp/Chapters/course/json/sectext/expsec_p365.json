@@ -1,0 +1,53 @@
+{
+  "cards": [
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Electric circuit"
+        },
+        {
+          "type": "headline",
+          "text": "Set of electric components connected by wires"
+        }
+      ]
+    },
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Circuits usually contain:"
+        },
+        {
+          "type": "headline",
+          "text": "An energy source"
+        },
+        {
+          "type": "headline",
+          "text": "A load resistance "
+        },
+        {
+          "type": "headline",
+          "text": "Wires connecting it all in a loop"
+        }
+      ]
+    }
+  ],
+  "definitions": [
+    {
+      "term": "Electric circuit",
+      "def": "A system that allows current to flow in a loop.  It typically contains at least a power source and a load resistance."
+    }
+  ],
+  "secText": [
+    "Electric circuits are used in everything from flashlights to cell phones.    ",
+    "An electric circuit, such as the one found in a flashlight, contains components connected by wires. Inside this flashlight are batteries connected by wires to a light bulb. The purpose of this circuit is to cause a current to flow through the light bulb. ",
+    "A circuit must contain an energy source that causes charge to flow. Batteries are a common energy source in circuits. This flashlight has two batteries placed end to end.",
+    "The wire filament in the light bulb in this flashlight supplies most of the resistance of the circuit. It is called the circuit’s load resistance.",
+    "For the circuit to function, the batteries and the load resistance must be connected in a loop by wires. If wires do not connect the battery and the light bulb of this flashlight in an unbroken loop, current will not flow and the flashlight will not light up."
+  ],
+  "objNames": [
+    "wb_electric_circuit_concepts1",
+    "wb_electric_circuit_concepts2"
+  ]
+}

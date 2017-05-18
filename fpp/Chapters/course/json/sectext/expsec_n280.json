@@ -1,0 +1,44 @@
+{
+  "cards": [
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Harmonics with fixed endpoints"
+        },
+        {
+          "type": "headline",
+          "text": "Guitar is an instrument with fixed endpoints"
+        }
+      ]
+    },
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Nodes and antinodes"
+        },
+        {
+          "type": "headline",
+          "text": "Determine possible wave lengths in string"
+        }
+      ]
+    }
+  ],
+  "definitions": [
+    {
+      "term": "Harmonic",
+      "def": "A frequency that forms a standing wave, or a multiple of such a frequency."
+    }
+  ],
+  "secText": [
+    "Much of music relies on harmonics, the frequencies that are enhanced by an instrument.  The harmonics are a result of resonance.  <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='wb_resonance1'>Resonance</a> occurs when one object vibrates at the natural frequency of a second object, causing it to move in vibrational motion with a large amplitude.",
+    "We start by discussing harmonics associated with waves that occur in instruments where the medium is fixed, it does not vibrate, at the two ends.  The guitar we show is one example.",
+    "We show the first three harmonics that are possible in this configuration. These are the harmonics with the longest wavelength and lowest frequency.  The endpoints are nodes since there is no motion at the fixed endpoints. ",
+    "In the first harmonic, there is a single antinode between the endpoints − the string moves from peak to trough. There is only 1/2 of a wavelength in the string.  In the second harmonic, there is one node in the middle.  One entire wave pattern fits between the fixed ends in this configuration.  In the third harmonic, there are four nodes, and three antinodes. There are 3/2 wavelengths in the string."
+  ],
+  "objNames": [
+    "wb_harmonics_concepts1",
+    "wb_harmonics_nodes"
+  ]
+}

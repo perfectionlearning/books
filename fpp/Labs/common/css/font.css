@@ -1,0 +1,123 @@
+@font-face {
+    font-family: 'CentraleSansBold';
+    src: /* url('fonts/CentraleSansBold.otf') format('opentype'), */
+        url("fonts/CentraleSansBold.ttf") format("truetype"),
+        url("fonts/CentraleSansBold.woff") format("woff"),
+        url("fonts/CentraleSansBold.svg") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'CentraleSansBoldItalic';
+    src: url('fonts/CentraleSansBold-Italic.otf') format('opentype'),
+        url("fonts/CentraleSansBold-Italic.ttf") format("truetype"),
+        url("fonts/CentraleSansBold-Italic.woff") format("woff"),
+        url("fonts/CentraleSansBold-Italic.svg") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'CentraleSansBook';
+    src: url('fonts/CentraleSansBook.otf') format('opentype'),
+        url("fonts/CentraleSansBook.ttf") format("truetype"),
+        url("fonts/CentraleSansBook.woff") format("woff"),
+        url("fonts/CentraleSansBook.svg") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'CentraleSansBookItalic';
+    src: url('fonts/CentraleSansBook-Italic.otf') format('opentype'),
+        url("fonts/CentraleSansBook-Italic.ttf") format("truetype"),
+        url("fonts/CentraleSansBook-Italic.woff") format("woff"),
+        url("fonts/CentraleSansBook-Italic.svg") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'CentraleSansLight';
+    src: url('fonts/CentraleSansLight.otf') format('opentype'),
+        url("fonts/CentraleSansLight.ttf") format("truetype"),
+        url("fonts/CentraleSansLight.woff") format("woff"),
+        url("fonts/CentraleSansLight.svg") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'CentraleSansLightItalic';
+    src: url('fonts/CentraleSansLight-Italic.otf') format('opentype'),
+        url("fonts/CentraleSansLight-Italic.ttf") format("truetype"),
+        url("fonts/CentraleSansLight-Italic.woff") format("woff"),
+        url("fonts/CentraleSansLight-Italic.svg") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'CentraleSansMedium';
+    src: /* url('fonts/CentraleSansMedium.otf') format('opentype'), */
+        url("fonts/CentraleSansMedium.ttf") format("truetype"),
+        url("fonts/CentraleSansMedium.woff") format("woff"),
+        url("fonts/CentraleSansMedium.svg") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'CentraleSansMediumItalic';
+    src: url('fonts/CentraleSansMedium-Italic.otf') format('opentype'),
+        url("fonts/CentraleSansMedium-Italic.ttf") format("truetype"),
+        url("fonts/CentraleSansMedium-Italic.woff") format("woff"),
+        url("fonts/CentraleSansMedium-Italic.svg") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'CentraleSansThin';
+    src: url('fonts/CentraleSansThin.otf') format('opentype'),
+        url("fonts/CentraleSansThin.ttf") format("truetype"),
+        url("fonts/CentraleSansThin.woff") format("woff"),
+        url("fonts/CentraleSansThin.svg") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'CentraleSansThinItalic';
+    src: url('fonts/CentraleSansThin-Italic.otf') format('opentype'),
+        url("fonts/CentraleSansThin-Italic.ttf") format("truetype"),
+        url("fonts/CentraleSansThin-Italic.woff") format("woff"),
+        url("fonts/CentraleSansThin-Italic.svg") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+	margin:0;
+	overflow:hidden;
+}
+*{
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+#foreground, #background{
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+#loader{
+	position:absolute;
+	left:0px;
+	top:0px;
+	width:100%;
+	height:100%;
+	background-color:white;
+	background-size:auto;
+	background-repeat:no-repeat;
+	background-position:center center;
+}

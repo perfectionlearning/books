@@ -1,0 +1,18 @@
+{
+    "Title": "Slope equals rate",
+    "Slides": [{
+            "startTime": "0",
+            "endTime": "12233",
+            "startMarkerName": "Introduction",
+            "endMarkerName": "Marker 1",
+            "headlines": ["  <math>    <mrow>      <mtext>Slope = </mtext>      <mfrac linethickness=\"thin\">        <mrow>          <mtext>30 gallons </mtext>          <mo>−</mo>          <mtext> 10 gallons</mtext>        </mrow>        <mrow>          <mtext>15 seconds </mtext>          <mo>−</mo>          <mtext> 5 seconds</mtext>        </mrow>      </mfrac>      <mo>=</mo>      <mfrac linethickness=\"thin\">        <mrow>          <mtext>2 gallons</mtext>        </mrow>        <mrow>          <mtext>1 second</mtext>        </mrow>      </mfrac>    </mrow>  </math>"],
+            "bullets": []
+        }, {
+            "startTime": "13233",
+            "endTime": "-1",
+            "startMarkerName": "Marker 2",
+            "endMarkerName": "End",
+            "headlines": ["  <math>    <mrow>      <mtext>Slope = </mtext>      <mfrac linethickness=\"thin\">        <mrow>          <mtext>30 gallons </mtext>          <mo>−</mo>          <mtext> 10 gallons</mtext>        </mrow>        <mrow>          <mtext>15 seconds </mtext>          <mo>−</mo>          <mtext> 5 seconds</mtext>        </mrow>      </mfrac>      <mo>=</mo>      <mfrac linethickness=\"thin\">        <mrow>          <mtext>2 gallons</mtext>        </mrow>        <mrow>          <mtext>1 second</mtext>        </mrow>      </mfrac>    </mrow>  </math>"],
+            "bullets": []
+        }]
+}

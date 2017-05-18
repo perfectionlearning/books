@@ -1,0 +1,30 @@
+{
+  "cards": [
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Astrophysicist"
+        }
+      ]
+    },
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Particle physicists"
+        }
+      ]
+    }
+  ],
+  "definitions": [],
+  "secText": [
+    "Of course, physicists continue their research, standing on the shoulders of earlier scientists.  Neil deGrasse Tyson works to make astronomy accessible to the general public, while researching star formation and exploding stars.  ",
+    "Much research (and press) concerns the Higgs boson.  The theoretical work of physicist Peter Higgs was recognized for predicting the existence of, and leading to the eventual discovery of, this particle.",
+    "Frank Wilczek is an American physicist and mathematician, with accolades that include winning the Nobel Prize.   He has done fundamental research concerning <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='wb_standard_model2'>quarks</a>.  He has explained some of the implications of his work in the book “The Lightness of Being.”"
+  ],
+  "objNames": [
+    "wb_physicists3",
+    "wb_physicists4"
+  ]
+}

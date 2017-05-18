@@ -1,0 +1,48 @@
+{
+  "cards": [
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Barometer"
+        },
+        {
+          "type": "headline",
+          "text": "Device used to measure atmospheric pressure"
+        }
+      ]
+    },
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Barometer"
+        },
+        {
+          "type": "headline",
+          "text": "Atmospheric pressure equals pressure of mercury"
+        },
+        {
+          "type": "bullet",
+          "text": "Height of mercury reflects atmospheric pressure"
+        }
+      ]
+    }
+  ],
+  "definitions": [
+    {
+      "term": "Barometer",
+      "def": "Device used to measure atmospheric pressure."
+    }
+  ],
+  "secText": [
+    "We show a barometer, calibrated in millimeters of mercury and millibars. We typically use the pascal as the unit for pressure, but pressure can also be measured in millimeters of mercury and millibars.",
+    "Atmospheric pressure can vary, even at a constant height like sea level.  Changes in pressure can indicate that a change of weather is on the way.",
+    "Barometers measure atmospheric pressure. A barometer works by having the pressure of a column of fluid, often mercury, balance the pressure of the atmosphere on the surface of a reservoir. ",
+    "The mercury height is measured in millimeters. The height, <i>h,</i> of the column of mercury is typically about 760 mm at sea level. By definition, the pressure exerted by 760 mm of mercury, also called 760 torr, equals one standard atmosphere of pressure. "
+  ],
+  "objNames": [
+    "wb_barometersa",
+    "wb_barometers"
+  ]
+}

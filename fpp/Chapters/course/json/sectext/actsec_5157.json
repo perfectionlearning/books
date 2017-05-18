@@ -1,0 +1,21 @@
+{
+  "cards": [
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Projectile in an electric field"
+        }
+      ]
+    }
+  ],
+  "definitions": [],
+  "secText": [
+    "This simulation asks you to re-create part of a famous experiment conducted by the 1935 Nobel Prize winners Frédéric Joliot and Irène Joliot-Curie (the daughter of Pierre and Marie Curie). You need to use your skills from <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='wb_projectile_concept1'>projectile motion</a>.  However, here the vertical force is electric, not gravitational. ",
+    "In the simulation to the left, you will set the initial horizontal velocity of the <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='wb_radioactive_3'>alpha particle</a>.  An alpha particle consists of two protons and two neutrons.  Neutrons do not have a charge. The mass of a proton is 1.67×10<sup class=\"\">−27</sup> kg and the mass of a neutron is quite similar. This means the particle’s mass is 6.68×10<sup class=\"\">−27</sup> kg.",
+    "There is a uniform electric field of 3.60×10<sup class=\"\"><span class=\"Symbols\">−</span>4</sup> N/C directed downward. It supplies the downward force on the particle. Observe the vertical and horizontal distances of the cannon from the aluminum atom target. Calculate how long it will take the particle to reach bottom. Then calculate the required initial horizontal velocity to the nearest 0.1 m/s, and enter it in the space provided.  The horizontal velocity will remain constant. The acceleration due to the electric field is great enough that you can ignore the acceleration of the alpha particle due to gravity."
+  ],
+  "objNames": [
+    "jsact_Chapter_24_12"
+  ]
+}

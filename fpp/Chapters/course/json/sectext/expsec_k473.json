@@ -1,0 +1,61 @@
+{
+  "cards": [
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Heat "
+        },
+        {
+          "type": "headline",
+          "text": "Thermal energy flows "
+        },
+        {
+          "type": "headline",
+          "text": "Flow changes an object’s thermal energy "
+        },
+        {
+          "type": "headline",
+          "text": "Represented by <i>Q</i>"
+        },
+        {
+          "type": "headline",
+          "text": "Unit: joule (J)"
+        }
+      ]
+    },
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Flows spontaneously from warm to cold"
+        },
+        {
+          "type": "headline",
+          "text": "Heat flows to ice cream without work"
+        },
+        {
+          "type": "headline",
+          "text": "Requires work to flow from colder to warmer"
+        }
+      ]
+    }
+  ],
+  "definitions": [
+    {
+      "term": "Heat",
+      "def": "Thermal energy flowing from a warmer to a cooler object."
+    }
+  ],
+  "secText": [
+    "Put your hands near a hot stove, or sit outside on a sunny day, and you are experiencing heat. Heat is thermal energy that moves from one object to another.",
+    "When heat flows, it changes the thermal energy of an object.  This can be measured as a temperature change, or it can be a <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='wb_phase_change_concepts'>change in state</a>, such as a liquid changing to a gas at a constant temperature. ",
+    "The letter <i>Q</i> represents heat. Because it is a form of energy, heat is measured in joules.",
+    "Heat flows spontaneously from warmer objects to cooler ones, just like an apple falls from a tree to the ground. By “spontaneously,” we mean without requiring work from outside the system.  For instance, we show how heat flows from the hot air of a summer day to the cold ice cream without any action required. ",
+    "Heat can be caused to move from something cooler to something warmer − a refrigerator is an example.  It takes a heat pump (and energy) to do the work for heat to flow from the cooler inside of a refrigerator to a warmer kitchen.   "
+  ],
+  "objNames": [
+    "wb_heat_concepts1",
+    "wb_heat_concepts2"
+  ]
+}

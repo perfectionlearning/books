@@ -1,0 +1,34 @@
+{
+  "cards": [
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Series wiring"
+        },
+        {
+          "type": "headline",
+          "text": "Current has one path through components"
+        },
+        {
+          "type": "headline",
+          "text": "Current is the same at all points"
+        }
+      ]
+    }
+  ],
+  "definitions": [
+    {
+      "term": "Series wiring",
+      "def": "A circuit, or part of a circuit, in which the current has only one path."
+    }
+  ],
+  "secText": [
+    "In series wiring, components are all in a series, one after another, so that the same current flows through each.",
+    "The light bulbs and the battery shown in the diagram are wired in series. When components are wired in series, the current is limited to one path. You can see in the animation that there is only one possible path for the current to take.",
+    "Since the current has only one path, the same current passes through each component in a series circuit. "
+  ],
+  "objNames": [
+    "wb_series_wiring_concepts"
+  ]
+}

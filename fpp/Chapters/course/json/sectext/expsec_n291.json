@@ -1,0 +1,43 @@
+{
+  "cards": [
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Fourier analysis"
+        },
+        {
+          "type": "headline",
+          "text": "Describes notes as harmonics"
+        }
+      ]
+    },
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Fourier analysis"
+        },
+        {
+          "type": "headline",
+          "text": "Periodic functions described using trig functions"
+        }
+      ]
+    }
+  ],
+  "definitions": [
+    {
+      "term": "Fourier analysis",
+      "def": "Using harmonics and trigonometric functions to represent music."
+    }
+  ],
+  "secText": [
+    "Fourier analysis takes advantage of the fact that musical notes are composed of <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='wb_harmonics_nodes'>harmonics</a>.   It uses trigonometric functions to represent different harmonics. ",
+    "You see the sound waveforms for a clarinet and for a trombone, both of which are playing a B-flat at the same frequency of 233 Hz.  These waves look complicated, but each is composed of the fundamental frequency and harmonics, combined in varying intensities. It is these varying harmonic intensities that make musical instruments sound interesting and different. ",
+    "A periodic function is one that repeats consistently over time. Any periodic function can be built up as the sum of sine waves in a harmonic series. The French mathematician Jean-Baptiste-Joseph Fourier made this remarkable discovery in the early 1800s. Fourier analysis uses a series of sine waves with different frequencies. They are added together to approximate periodic functions. The more sine wave functions that are added, the closer the approximation to the original wave."
+  ],
+  "objNames": [
+    "wb_fourier",
+    "wb_fourier1"
+  ]
+}

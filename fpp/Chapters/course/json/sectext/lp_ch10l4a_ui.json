@@ -1,0 +1,52 @@
+{
+  "cards": [
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Archimedes’ principle"
+        },
+        {
+          "type": "headline",
+          "text": "Buoyant force: "
+        },
+        {
+          "type": "bullet",
+          "text": "Is upward force on an object in a fluid"
+        },
+        {
+          "type": "bullet",
+          "text": "Equals weight of the displaced fluid"
+        }
+      ]
+    },
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Floating and density"
+        },
+        {
+          "type": "headline",
+          "text": "Objects denser than water sink"
+        },
+        {
+          "type": "headline",
+          "text": "Objects less dense than water float"
+        }
+      ]
+    }
+  ],
+  "definitions": [],
+  "secText": [
+    "  <b class=\"object-name\">Supplemental Material: </b>  <span class=\"object-name\">AP</span>",
+    "  <b>Essential Question: </b>  <br />How can we determine if an object will sink or float?",
+    "  <b>Enduring Understandings:</b>  <b>    <br />  </b>1. <a class='pjumpToTopic' href='javascript:void(0)' data-chap='10' data-topic='3' data-subtopic='1' data-subsection='0'>Archimedes' principle</a> states that objects less dense than the fluid they are submerged in float, while objects more dense than the fluid they are submerged in sink.",
+    "  <b>Vocabulary:</b>  <a class='pjumpToTopic' href='javascript:void(0)' data-chap='10' data-topic='3' data-subtopic='1' data-subsection='0'>Archimedes' principle</a>, <a class='pjumpToTopic' href='javascript:void(0)' data-chap='10' data-topic='3' data-subtopic='1' data-subsection='0'>buoyant force</a>",
+    "  <b>STEM Skills:</b>  <b>    <br />  </b>1. Review <a class='pjumpToTopic' href='javascript:void(0)' data-chap='5' data-topic='0' data-subtopic='1' data-subsection='1'>force</a>."
+  ],
+  "objNames": [
+    "wb_archimedes_concepts2",
+    "wb_archimedes_density"
+  ]
+}

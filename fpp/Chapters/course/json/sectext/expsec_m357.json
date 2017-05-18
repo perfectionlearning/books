@@ -1,0 +1,34 @@
+{
+  "cards": [
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Graph of simple harmonic motion"
+        },
+        {
+          "type": "headline",
+          "text": "Motion is represented by a curve"
+        },
+        {
+          "type": "headline",
+          "text": "Maximum distance from equilibrium is constant"
+        },
+        {
+          "type": "headline",
+          "text": "Motion is periodic"
+        }
+      ]
+    }
+  ],
+  "definitions": [],
+  "secText": [
+    "In this section, we discuss the graph of SHM that you have seen in prior sections.",
+    "The <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='wb_math_position_time_concept'>graph</a> traces out the displacement of the object over time. This curve describes the motion. If you are familiar with trigonometric functions, you may recognize it as the graph of the cosine function.",
+    "The graph shows how the motion repeats a consistent, curved pattern.  The maximum distance from equilibrium stays the same. ",
+    "It also returns to its peak or trough position in equal amounts of time.  A peak is one extreme of motion and the trough is the other. The motion is periodic: It has a consistently repeating pattern over time."
+  ],
+  "objNames": [
+    "wb_SHM_graph_no_trig"
+  ]
+}

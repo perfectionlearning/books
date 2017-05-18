@@ -1,0 +1,411 @@
+<!-- <div class="pActivityHeader">Motion_in_two_dimensions_2</div> -->
+<div class="pLabPageIntro">
+	Physicists love juggling. Done correctly, juggling is a beautiful demonstration of projectile motion.
+	</br></br>
+	This lab covers the physics of juggling. By the end, you will be skilled enough to juggle five chainsaws!
+	</br></br>
+	<span style='font-weight:bold;line-height: 22px;'>
+		This lab covers the following topics:
+		<ul style='list-style-type:disc;padding-left: 18px;'>
+			<li><i>horizontal and vertical components of velocity</i></li>
+			<li><i>projectile motion</i></li>
+			<li><i>calculating range and height for projectiles</i></li>
+			<li><i>how to juggle five (virtual) chainsaws and amaze your friends</i></li>
+		</ul>
+	</span>
+	
+</div>
+<div class="pExerciseContainer">
+	<div class="pExcersiseTitle">Exercise 1: Juggling one ball</div>
+	Throwing a single ball into the air and catching it may not seem like juggling. But the simple catch and throw is the basis for all juggling. Jugglers must be able to throw a ball to a consistent height and judge precisely when and where it will land.
+	</br></br>
+	A common way to learn to juggle is to start with one ball, throwing it so that it stays in the air for a consistent amount of <b>time</b>.
+	</br>
+	<figure style="padding-top:20px;padding-bottom:10px;">
+		<img class="pExcersiseThumb" src="course/labs/Motion_in_two_dimensions_2/assets/Ex_05_Juggling to a specific height_1.png" style="width:70%;"/>
+		</br></br>
+		<figcaption style="font-family: AvenirNextLTPro-Demi;">Exercise 1. Pick an initial vertical velocity to keep the ball in the air for 1.4 seconds.</figcaption>
+	</figure>
+	In the first exercise, your challenge is to determine the initial vertical velocity so that the ball’s time of flight, or hang time, is 1.4 seconds. This time is how long it takes the ball to rise to its peak and fall back to its initial height, where the juggler will catch it.
+	</br></br>
+	When a ball is thrown upward, the force of gravity causes it to accelerate at a constant rate, slowing the ball as it rises and then speeding it up as it falls. While the ball is in the air, its acceleration is −9.80 m/s<sup>2</sup>. The magnitude of this acceleration is represented by g; the sign is negative because the acceleration is downward.
+	</br></br>
+	A ball thrown upward has positive “y“, or vertical, velocity. The ball slows until its velocity is zero at the peak of its motion. After that, the ball continues to accelerate at −9.80 m/s<sup>2</sup>, which means it then has negative y velocity and is moving downward.
+	</br></br>
+	<div style="padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    background: #cccccc;
+    margin-left: 20px;
+    width: 280px;
+    margin-bottom: 15px;">
+		<b><i>v</i><sub>f</sub> = <i>v</i><sub>i</sub> + <i>at</i>
+		</br>
+		Δ<i>y</i> = <i>v</i><sub>i</sub><i>t</i> + ½ <i>at</i><sup>2</sup>
+		</br>
+		<i>v</i><sub>f</sub><sup>2</sup> = <i>v</i><sub>i</sub><sup>2</sup> + 2<i>a</i>Δ<i>y</i>
+		</br>
+		Δ<i>y</i> = ½ (<i>v</i><sub>i</sub> + <i>v</i><sub>f</sub>)<i>t</i></b>
+		</br>
+		</br>
+
+
+		<i>a</i> = −9.80 m/s<sup>2</sup>
+		</br>
+		Δ<i>y</i> = vertical displacement
+		</br>
+		<i>v</i><sub>i</sub> = initial velocity
+		</br>
+		<i>v</i><sub>f</sub> = final velocity
+		</br>
+		<i>t</i> = elapsed time
+	</div>
+	The equations shown in the box above describe this linear freefall motion. Throughout the lab, you may make use of some or all of these motion equations.
+	</br></br>
+	Because in this lab you will use these equations to determine motion in the vertical direction, we specify the displacement as Δy.
+	</br></br>
+	The same equations also can be used to describe motion in the horizontal direction. In that case, Δx is substituted for Δy.
+	</br></br>
+	As stated, the variable a in this lab is the acceleration due to gravity, −9.80 m/s<sup>2</sup>. 
+	</br></br>
+	Later, we will introduce the horizontal velocity with which the juggler throws the ball from one hand to the other. For now, the juggler throws a single ball up and back down to the same hand.
+	</br></br>
+	The effect of air resistance is ignored during this entire lab.
+	</br>
+	<div class="pLabQASection">
+		<div class="pLabQuestion">
+			<div class="pLabQNumber">1.</div><div class="pLabQText">Using one or more of the motion equations shown in the box above, calculate the initial vertical velocity needed to throw a ball into the air for a total flight time of 1.4 seconds, assuming the acceleration due to gravity is −9.80 m/s<sup>2</sup>. Your answer should be accurate to the nearest 0.1 m/s. </div><div class="pLabQuestionArrow"></div>
+			<div class="pLabAnswerWrapper">
+				<textarea class="pLabAnswerBox" placeholder="Enter your answer here"></textarea>
+				<div class="pLabSaveButton" style="right: 40px;margin-top: -44px;"></div>
+			</div>
+		</div>
+		Test your answer in the juggling simulation.
+		</br></br>
+		When you open the simulation, you will see a control panel at the bottom. It contains one input gauge, marked "Initial y velocity.” This controls the vertical (y) component of the ball's velocity.
+		</br></br>
+		You should specify a value in the “Initial y velocity” gauge, in meters per second, m/s. (The ball’s x velocity is fixed at 0 m/s, although you will be able to adjust it later in this lab.) Again, your goal is to throw the ball straight up in the air so that its total time of flight − up and then down − is as close as possible to 1.4 seconds.
+		</br></br>
+		Once you have specified a value for the y velocity, press GO. Is the total flight time 1.4 seconds? The stop watch provided in the control panel runs automatically and will enable you to see if your initial velocity is correct.
+		</br></br>
+		Don’t worry if you do not get it right the first time. As with real juggling, you can try again. Hit RESET, type in a new value, and press GO.
+		</br></br>
+		You can try it as many times as you like.
+		</br></br>
+		When you are done, return here to answer some follow-up questions.
+		</br></br>
+		Click here to open the <span class="pExerciseButton" data-href="http://mitrlearning.com/perfection_learning/Labs/1_Using%20one-dimensional%20motion%20equations/1_Intro%20to%20Skee-Ball/">Exercise 1 Simulation</span>
+		</br></br>
+		<div class="pLabQuestion">
+			<div class="pLabQNumber">2.</div><div class="pLabQText"> Does the ball take the same amount of time to rise to its peak as it does to fall from the peak back down? (Use the simulation to find the answer to this question. The PAUSE button will help you.) </div><div class="pLabQuestionArrow"></div>
+			<div class="pLabAnswerWrapper">
+				<textarea class="pLabAnswerBox" placeholder="Enter your answer here"></textarea>
+				<div class="pLabSaveButton" style="right: 40px;margin-top: -44px;"></div>
+			</div>
+		</div>
+		<div class="pLabQuestion">
+			<div class="pLabQNumber">3.</div><div class="pLabQText"> To get the ball to go straight up and come back down to the same hand, the value for the x velocity must be zero. Why? </div><div class="pLabQuestionArrow"></div>
+			<div class="pLabAnswerWrapper">
+				<textarea class="pLabAnswerBox" placeholder="Enter your answer here"></textarea>
+				<div class="pLabSaveButton" style="right: 40px;margin-top: -44px;"></div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="pExerciseContainer">
+	<div class="pExcersiseTitle">Exercise 2: Two balls with one hand</div>
+	Now we add a second ball. Because a hand cannot catch and throw at the same instant, you must stagger the throws and catches.
+	</br></br>
+	When juggling two balls with one hand, you should throw the second ball approximately when the first ball is at the peak of its flight.
+	</br></br>
+	Later, when you juggle three balls, we will help you determine the correct timing of the throws.
+	</br></br>
+	Your challenge in this exercise is to juggle two balls with one hand. As in Exercise 1, you will assign an upward velocity to the balls so each hangs in the air for 1.4 seconds.
+	</br></br>
+	In this exercise you must also specify a time interval between throws, in seconds. <b>This time is equal to the time it takes for one ball to rise from the juggler’s hand to the peak of its flight</b>. 
+	</br></br>
+	Firing horizontally means that you set the cannon’s initial horizontal velocity. The cannonball will have zero vertical velocity when it leaves the mouth of the cannon. 
+	<div class="pLabQASection">
+		<div class="pLabQuestion">
+			<div class="pLabQNumber">4.</div><div class="pLabQText"> You want to throw a ball upward so that its hang time − the time it takes to go up and then back down − is 1.4 seconds. How long will it take, in seconds, for the ball to reach its peak?</div><div class="pLabQuestionArrow"></div>
+			<div class="pLabAnswerWrapper">
+				<textarea class="pLabAnswerBox" placeholder="Enter your answer here"></textarea>
+				<div class="pLabSaveButton" style="right: 40px;margin-top: -44px;"></div>
+			</div>
+		</div>
+	</div>
+	</br>
+	The time it takes a ball to rise to its peak is the time you should specify in the “Time interval” gauge in the control panel. If you specify the correct time, the juggler will throw the second ball precisely when the first ball is at the peak. You can also check your answer using the stopwatch in the control panel.
+	</br></br>
+	Changing the interval between tosses affects the spacing between the balls. You can successfully keep the balls in the air with a wide range of interval values, but the juggling will look most polished when you have the right interval. 
+	</br></br>
+	<div class="pLabQASection">
+		In the control panel gauge marked "Initial y velocity," specify a value for the vertical component of the ball's velocity that will keep it in the air for a total of 1.4 seconds. This is the same as the value that you used in Exercise 1.
+		</br></br>
+		In the gauge marked "Time interval," specify a time, in seconds, for a ball with a total hang time of 1.4 seconds to reach its peak.
+		</br></br>
+		After you press GO, the computer will throw the first ball according to your velocity, then automatically throw the second ball with the same velocity after waiting the period of time you specify. This cycle will repeat until you close the simulation or the juggler drops a ball.
+		</br></br>
+		It may appear that the balls are overlapping in flight, and perhaps should collide. Assume that when the balls appear to be passing through one another, what is really happening is that one is passing in front of the other.
+		</br></br>
+		You can try again by hitting RESET and specifying new values in the control panel.
+		</br></br>
+		When you are done, return here to answer a follow-up question.
+		</br></br>
+		Click here to open the <span class="pExerciseButton" data-href="http://mitrlearning.com/perfection_learning/Labs/1_Using%20one-dimensional%20motion%20equations/2A_Velocity/">Exercise 2 Simulation</span>
+		</br></br>
+		<div class="pLabQuestion">
+			<div class="pLabQNumber">5.</div><div class="pLabQText"> You may have noticed that a ball with a total hang time of 1.4 seconds always rises to the same height above the juggler’s hands. What is that height? (You may need to use one or more of the motion equations in the table in Exercise 1 to answer this question.) You can also check your calculated answer using the simulation.</div><div class="pLabQuestionArrow"></div>
+			<div class="pLabAnswerWrapper">
+				<textarea class="pLabAnswerBox" placeholder="Enter your answer here"></textarea>
+				<div class="pLabSaveButton" style="right: 40px;margin-top: -44px;"></div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="pExerciseContainer">
+	<div class="pExcersiseTitle">Exercise 3: Two balls with two hands</div>
+	You are almost a virtual juggler.
+	</br></br>
+	Now you just have to learn to throw from one hand to the other.
+	</br></br>
+	In this exercise, you will specify the same two values as in Exercise 2: the vertical, or y, component of velocity and the time interval between throws.
+	</br></br>
+	You will also determine how to throw the balls horizontally from one hand to the other.
+	</br></br>
+	<figure style="padding-top:20px;padding-bottom:10px;">
+		<img class="pExcersiseThumb" src="course/labs/Motion_in_two_dimensions_2/assets/Ex_05_Juggling to a specific height_1.png" style="width:70%;"/>
+		</br></br>
+		<figcaption style="font-family: AvenirNextLTPro-Demi;">Exercise 3. Give each ball a hang time of 1.4 seconds and hit the other hand 0.70 m away.</figcaption>
+	</figure>
+	How can you do this? You know the vertical velocity needed to give each ball a total hang time of 1.4 seconds.
+	</br></br>
+	The distance between the juggler's hands is 0.70 meters. Knowing this distance, and knowing the time it takes for a ball to travel through its entire arc of motion, you can calculate the x, or horizontal, component of velocity needed to throw the ball from one hand to the other. Unlike the vertical component of velocity, the horizontal component will be constant. 
+	</br></br>
+	<div class="pLabQASection">
+		<div class="pLabQuestion">
+			<div class="pLabQNumber">6.</div><div class="pLabQText"> Using the above information, calculate the horizontal velocity needed to precisely toss each ball from the juggler's right hand to his left hand (given that the hang time of each ball is 1.4 seconds). </div><div class="pLabQuestionArrow"></div>
+			<div class="pLabAnswerWrapper">
+				<textarea class="pLabAnswerBox" placeholder="Enter your answer here"></textarea>
+				<div class="pLabSaveButton" style="right: 40px;margin-top: -44px;"></div>
+			</div>
+		</div>
+		<!-- </br></br> -->
+		Test your answer. Specify three values in the control panel: an initial y velocity, an initial x velocity, and the time interval between throws. You should use the same time interval here that you calculated in Exercise 2 (the time it takes for a ball to rise to the peak of its arc).
+		</br></br>
+		Using the values you give, the computer will automatically program the second hand to throw the balls back to the beginning hand. You only have to get it right going from the juggler's right hand to his left hand (from your left to your right).
+		</br></br>
+		Again, try as many times as you like to get it right. You can press RESET at any time and specify new values.
+		</br></br>
+		When you are done, return here to answer some follow-up questions.
+		</br></br>
+		Click here to open the <span class="pExerciseButton" data-href="http://mitrlearning.com/perfection_learning/Labs/1_Using%20one-dimensional%20motion%20equations/3_Acceleration/">Exercise 3 Simulation</span>
+		</br></br>
+		<div class="pLabQuestion">
+			<div class="pLabQNumber">7.</div><div class="pLabQText"> Was your predicted value for the initial x velocity correct? If not, try again and write the correct velocity in the box below.</div><div class="pLabQuestionArrow"></div>
+			<div class="pLabAnswerWrapper">
+				<textarea class="pLabAnswerBox" placeholder="Enter your answer here"></textarea>
+				<div class="pLabSaveButton" style="right: 40px;margin-top: -44px;"></div>
+			</div>
+		</div>
+		<div class="pLabQuestion">
+			<div class="pLabQNumber">8.</div><div class="pLabQText"> Does the fact that a ball has a horizontal velocity affect the initial y velocity or how long the ball is in the air? Use the gauges in the simulation to inform your answer. </div><div class="pLabQuestionArrow"></div>
+			<div class="pLabAnswerWrapper">
+				<textarea class="pLabAnswerBox" placeholder="Enter your answer here"></textarea>
+				<div class="pLabSaveButton" style="right: 40px;margin-top: -44px;"></div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="pExerciseContainer">
+	<div class="pExcersiseTitle">Exercise 4: The amazing juggler</div>
+	You are ready to juggle!
+	</br></br>
+	Juggling three balls is not much different than juggling two. Again, you will specify the initial y velocity, the initial x velocity, and the time delay between throws.
+	</br></br>
+	As before, you want to throw each ball into the air for 1.4 seconds, during which time each ball will move through a horizontal displacement of 0.70 meters.
+	</br></br>
+	In juggling three or more objects, there is a formula for calculating the correct time interval between throws so that your virtual juggling looks as polished as the real thing. First, determine the time it takes for a single ball to leave one hand, rise and fall to the other hand, and then rise and fall back to the starting hand (in other words, double the hang time). Second, divide this round trip time by the number of objects being juggled. The result is the desired time interval between throws.
+	</br></br>
+	Example: Suppose you want to juggle three balls so that each one has a hang time of 2.0 seconds. Each ball would take 4.0 seconds to complete a round trip, a total of 2.0 seconds to go up from the first hand and down to the second, then another 2.0 seconds to make the return trip.
+	</br></br>
+	The time delay between throws then would be 4.0 seconds divided by 3, which is 1 1/3 seconds. In other words, when juggling three balls, the second ball should be thrown a little after the first ball has passed the peak of its arc. (You will use this formula again later when attempting to juggle five chainsaws!)
+	</br></br>
+	<div class="pLabQASection">
+		Give juggling three balls a try. Each ball should have a hang time of 1.4 seconds. Specify an initial y velocity and an initial x velocity so that each ball travels 0.70 m horizontally during its flight time. Also specify a time interval between throws using the input gauges in the control panel.
+		</br></br>
+		Then press GO and amaze your friends!
+		</br></br>
+		The computer will automatically program the second hand, using your specified values, to throw the balls back to the beginning hand. If you get the time interval correct, a ball will be released just when the prior ball is starting to fall toward the other hand. Your juggling will look as smooth and polished as a professional’s.
+		</br></br>
+		Once you have successfully juggled three balls, try juggling higher or lower by varying the initial y velocity. Here's something to think about: If you increase the initial y velocity, will the initial x velocity required for the juggler to catch the balls with the other hand increase, decrease or stay the same? Why?
+		</br></br>
+		When you are done, return here to go on to the next exercise.
+		</br></br>
+		Click here to open the <span class="pExerciseButton" data-href="http://mitrlearning.com/perfection_learning/Labs/1_Using%20one-dimensional%20motion%20equations/3_Acceleration/">Exercise 4 Simulation</span>
+		</br></br>
+		<div class="pLabQuestion">
+			<div class="pLabQNumber">9.</div><div class="pLabQText"> If you increase the initial y velocity of the balls (i.e. throw them higher), does the initial x velocity required for the juggler to catch the balls with the other hand increase, decrease or stay the same? Why? </div><div class="pLabQuestionArrow"></div>
+			<div class="pLabAnswerWrapper">
+				<textarea class="pLabAnswerBox" placeholder="Enter your answer here"></textarea>
+				<div class="pLabSaveButton" style="right: 40px;margin-top: -44px;"></div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="pExerciseContainer">
+	<div class="pExcersiseTitle">Exercise 5: Juggling to a specific height</div>
+	Now that you know how to juggle you can do all sorts of tricks to wow the crowd.
+	</br></br>
+	How about juggling the balls through a hoop at a set height above the juggler’s hands?
+	</br></br>
+	In this exercise, your juggler should throw the balls through the hoop, the center of which is 6.0 meters above his hands. His hands are 1.1 meters apart, as shown in the illustration below. 
+	</br></br>
+	<figure style="padding-top:20px;padding-bottom:10px;">
+		<img class="pExcersiseThumb" src="course/labs/Motion_in_two_dimensions_2/assets/Ex_05_Juggling to a specific height_1.png" style="width:70%;"/>
+		</br></br>
+		<figcaption style="font-family: AvenirNextLTPro-Demi;">Exercise 5. Juggle through the center of the hoop 6.0 meters up.</figcaption>
+	</figure>
+	Here, the challenge is to juggle consistently to a certain height. Notice that we did not mention the hang time. Starting with the vertical and horizontal displacement, you must determine the initial y velocity, hang time and initial x velocity. Then, you must also determine the time interval between throws, using the technique outlined in the previous exercise. 
+	</br></br>
+	<div class="pLabQASection">
+		<div class="pLabQuestion">
+			<div class="pLabQNumber">10.</div><div class="pLabQText"> What initial y velocity is needed to throw a ball 6.0 meters vertically into the air, assuming that the acceleration due to gravity is −9.80 m/s<sup>2</sup>? </div><div class="pLabQuestionArrow"></div>
+			<div class="pLabAnswerWrapper">
+				<textarea class="pLabAnswerBox" placeholder="Enter your answer here"></textarea>
+				<div class="pLabSaveButton" style="right: 40px;margin-top: -44px;"></div>
+			</div>
+		</div>
+		<div class="pLabQuestion">
+			<div class="pLabQNumber">11.</div><div class="pLabQText"> What is the total hang time − the time going up plus the time falling back down − of a ball thrown to a height of 6.0 meters?</div><div class="pLabQuestionArrow"></div>
+			<div class="pLabAnswerWrapper">
+				<textarea class="pLabAnswerBox" placeholder="Enter your answer here"></textarea>
+				<div class="pLabSaveButton" style="right: 40px;margin-top: -44px;"></div>
+			</div>
+		</div>
+		<div class="pLabQuestion">
+			<div class="pLabQNumber">12.</div><div class="pLabQText"> What initial x velocity will move the ball through a horizontal displacement of 1.1 m in the time it takes the ball to rise to 6.0 meters and fall back down again? </div><div class="pLabQuestionArrow"></div>
+			<div class="pLabAnswerWrapper">
+				<textarea class="pLabAnswerBox" placeholder="Enter your answer here"></textarea>
+				<div class="pLabSaveButton" style="right: 40px;margin-top: -44px;"></div>
+			</div>
+		</div>
+		</br></br>
+		Use the simulation to test your answers.
+		</br></br>
+		The usual input gauges are in the control panel, for initial y velocity, initial x velocity, and the time interval between throws.
+		</br></br>
+		Determine the time interval between throws by doubling the hang time and dividing it by three (the number of balls). You should have calculated the hang time in Question #11 above.
+		</br></br>
+		Specify your values by clicking the up/down buttons that control the three input gauges in the control panel. Press GO to see if the juggler successfully juggles three balls through the hoop.
+		</br></br>
+		You can try as many times as you like using the RESET button. Do not get discouraged. If you calculate incorrectly, use the simulation to figure out where you may have gone wrong. You can use the stopwatch in the simulation to check hang times. Redo your calculations as needed and try again.
+		</br></br>
+		When you are done with the simulation, return here to continue on to the next exercise.
+		</br></br>
+		Click here to open the <span class="pExerciseButton" data-href="http://mitrlearning.com/perfection_learning/Labs/1_Using%20one-dimensional%20motion%20equations/3_Acceleration/">Exercise 5 Simulation</span>
+		</br></br>
+		<div class="pLabQuestion">
+			<div class="pLabQNumber">7.</div><div class="pLabQText">When you fire the cannonball so your colleague does not catch it, what percentage of the time does the cannonball spend going up versus down? What is the relationship of the initial and final velocities of the cannonball? </div><div class="pLabQuestionArrow"></div>
+			<div class="pLabAnswerWrapper">
+				<textarea class="pLabAnswerBox" placeholder="Enter your answer here"></textarea>
+				<div class="pLabSaveButton" style="right: 40px;margin-top: -44px;"></div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="pExerciseContainer">
+	<div class="pExcersiseTitle">Exercise 6: Throwing angle</div>
+	Until now, you have specified the x and y components of the velocity to get your juggler to throw the ball from one hand to another.
+	</br></br>
+	There is another way to describe the projectile motion of juggling balls: by specifying the initial speed of each ball (the magnitude v of its velocity), and a throwing angle θ for each ball relative to the horizontal axis.
+	</br></br>
+	The vertical, or y, component of velocity is related to the speed and angle by this equation:
+	</br></br>
+	<img src= "course/labs/Motion_in_two_dimensions_2/assets/image60.gif">
+	</br></br>
+	And the horizontal, or x, velocity, by this equation:
+	</br></br>
+	<img src= "course/labs/Motion_in_two_dimensions_2/assets/image61.gif">
+	</br></br>
+	These three quantities, vy,vx,and v, form a right triangle and are related by the Pythagorean theorem. The components are the legs of the triangle and the velocity is the hypotenuse.
+	</br></br>
+	<img src= "course/labs/Motion_in_two_dimensions_2/assets/image62.gif">
+	</br></br>
+	Consider the next exercise, pictured below.
+	</br></br>
+	<figure style="padding-top:20px;padding-bottom:10px;">
+		<img class="pExcersiseThumb" src="course/labs/Motion_in_two_dimensions_2/assets/Ex_05_Juggling to a specific height_1.png" style="width:70%;"/>
+		</br></br>
+		<figcaption style="font-family: AvenirNextLTPro-Demi;">Exercise 6. Determine an initial speed and angle to juggle through a hoop 2.50 m high.</figcaption>
+	</figure>
+	<div class="pLabQASection">
+		<div class="pLabQuestion">
+			<div class="pLabQNumber">13.</div><div class="pLabQText">What values for the speed v and throwing angle θ will permit you to juggle three balls through a hoop 2.50 m up, with the juggler's hands 1.40 m apart? </div><div class="pLabQuestionArrow"></div>
+			<div class="pLabAnswerWrapper">
+				<textarea class="pLabAnswerBox" placeholder="Enter your answer here"></textarea>
+				<div class="pLabSaveButton" style="right: 40px;margin-top: -44px;"></div>
+			</div>
+		</div>
+		</br></br>
+		Determine the answers to the above question and then try them in the simulation. This is precision juggling: You must specify the speed and time interval to the nearest hundredth and the angle to the nearest tenth of a degree.
+		</br></br>
+		You can set the magnitude and direction of the velocity in the simulation by clicking and dragging the orange velocity vector which you also see in the diagram above. In the control panel, you will see two input gauges that describe to the length and direction of this orange vector. The first is marked "Initial speed," and it controls the initial speed for each ball. The second is marked "Angle," and it controls the angle at which the juggler throws the balls.
+		</br></br>
+		You can fine tune these values using the up/down buttons in the control panel.
+		</br></br>
+		The final gauge is for specifying the time interval between throws. You can calculate this by doubling the hang time and dividing by the number of balls (in this case, three).
+		</br></br>
+		Press GO to see if you correctly juggle through the hoop. You can try as many times as you want by pressing RESET and specifying new values. 
+		</br></br>
+		Click here to open the <span class="pExerciseButton" data-href="http://mitrlearning.com/perfection_learning/Labs/1_Using%20one-dimensional%20motion%20equations/3_Acceleration/">Exercise 6 Simulation</span>
+	</div>
+</div>
+
+<div class="pExerciseContainer">
+	<div class="pExcersiseTitle">Exercise 7: Juggle five chainsaws!</div>
+	If you are bold − and willing to continue at your own risk − try one final exercise, pictured below.
+	</br></br>
+	<figure style="padding-top:20px;padding-bottom:10px;">
+		<img class="pExcersiseThumb" src="course/labs/Motion_in_two_dimensions_2/assets/Ex_05_Juggling to a specific height_1.png" style="width:70%;"/>
+		</br></br>
+		<figcaption style="font-family: AvenirNextLTPro-Demi;">Exercise 7. Juggle five chainsaws!</figcaption>
+	</figure>
+	The goal is to juggle five chainsaws; you can throw them to any height you like. The juggler's hands are 1.40 meters apart. Again, you pick a speed and throwing angle to send the chainsaws into the air so that they land in the juggler’s other hand.
+	</br></br>
+	A variation here is that you are now trying to juggle five objects, not three. To determine the time interval between throws, double the hang time and divide by five. 
+	</br></br>
+	<div class="pLabQASection">
+		Give it a try in the simulation.
+		</br></br>
+		Pick a height you wish to juggle to (or alternatively, a time you wish each chainsaw to remain in the air). Use that value to calculate a throwing speed and throwing angle relative to the x axis. Remember, whatever you pick for the initial y component of velocity will affect the value of the x velocity required to move the chainsaws 1.40 m horizontally to the other hand in the right amount of time.
+		</br></br>
+		Also determine the time interval between throws. HINT: Now that you are juggling five objects, the time interval between throws must be shorter than it was for three objects. 
+		</br></br>
+		Click here to open the <span class="pExerciseButton" data-href="http://mitrlearning.com/perfection_learning/Labs/1_Using%20one-dimensional%20motion%20equations/3_Acceleration/">Exercise 7 Simulation</span>
+		</br>
+	</div>
+</div>
+
+<div class="pExerciseContainer">
+	<div class="pExcersiseTitle">Exercise 8: Turn off the computer and juggle </div>
+	Everything you just learned applies in real life. You can take what you just experienced and juggle real balls.
+	</br></br>
+	Try it. Start with a single ball. Juggle it with one hand, throwing to the same height every time. This is important. If you do not throw the ball to roughly the same height every time, juggling three balls will be extremely difficult.
+	</br></br>
+	Now try two balls with one hand. Think about the time interval between throws, and practice throwing each ball to the same height.
+	</br></br>
+	Next, try two balls with two hands. Keep everything the same, except impart some horizontal velocity to the balls as you throw them. You can see and feel how the vertical and horizontal velocity components of the balls are independent. (We are not making this stuff up!) It is very important that the balls always rise to the same height and always travel roughly the same horizontal distance.
+	</br></br>
+	Finally, add a third ball. Pick a hand to start with, say, your right. Put two balls in your right hand and one in your left.
+	</br></br>
+	Throw the first ball up, from the right to the left hand. When it reaches its peak − or better yet, just a bit after − throw the second ball up with your left hand to your right hand. Just after the second ball reaches its peak, throw the third ball with your right hand to your left hand. Meanwhile, remember to catch the balls that come down!
+	</br></br>
+	Have patience. That and a little physics knowledge is all you need to become a juggler.
+</div>

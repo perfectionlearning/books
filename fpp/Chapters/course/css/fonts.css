@@ -1,0 +1,32 @@
+@font-face {
+    font-family: 'AvenirNextLTPro-Demi';
+    font-weight: normal;
+    font-style: normal;
+    src: url('fonts/AvenirNextLTPro-Demi.eot') format('embedded-opentype'),
+        url("fonts/AvenirNextLTPro-Demi.woff") format("woff"),
+        url("fonts/AvenirNextLTPro-Demi.svg") format("svg");
+}
+@font-face {
+    font-family: 'AvenirNextLTPro-DemiIt';
+    font-weight: normal;
+    font-style: normal;
+    src: url('fonts/AvenirNextLTPro-DemiIt.eot') format('embedded-opentype'),
+        url("fonts/AvenirNextLTPro-DemiIt.woff") format("woff"),
+        url("fonts/AvenirNextLTPro-DemiIt.svg") format("svg");
+}
+@font-face {
+    font-family: 'AvenirNextLTPro-It';
+    font-weight: normal;
+    font-style: normal;
+    src: url('fonts/AvenirNextLTPro-It.eot') format('embedded-opentype'),
+        url("fonts/AvenirNextLTPro-It.woff") format("woff"),
+        url("fonts/AvenirNextLTPro-It.svg") format("svg");
+}
+@font-face {
+    font-family: 'AvenirNextLTPro-Regular';
+    font-weight: normal;
+    font-style: normal;
+    src: url('fonts/AvenirNextLTPro-Regular.eot') format('embedded-opentype'),
+        url("fonts/AvenirNextLTPro-Regular.woff") format("woff"),
+        url("fonts/AvenirNextLTPro-Regular.svg") format("svg");
+}

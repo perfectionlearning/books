@@ -1,0 +1,44 @@
+{
+  "cards": [
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Completely inelastic collisions"
+        },
+        {
+          "type": "headline",
+          "text": "Objects \"stick together\" after the collision"
+        },
+        {
+          "type": "headline",
+          "text": "Have same velocity after collision"
+        }
+      ]
+    },
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Completely inelastic collision equation"
+        }
+      ]
+    }
+  ],
+  "definitions": [
+    {
+      "term": "Completely inelastic collision",
+      "def": "The colliding objects “stick together” after the collision, and the system loses kinetic energy."
+    }
+  ],
+  "secText": [
+    "We discussed <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='wb_inelastic_collision_defined' >inelastic collisions</a> before, and now we discuss a <u>completely</u> inelastic collision. ",
+    "In a completely inelastic collision, the objects stick together after the collision. Two trains connecting, like those we show here, provide an example of a completely inelastic collision. ",
+    "Because the objects in a completely inelastic collision stick together, they have the same velocity after the collision.  For example, the trains share a common velocity after the collision. ",
+    "The equation for the final velocity for the objects in a completely inelastic collision can be derived using the law of conservation of momentum and some algebra. The result is shown here. "
+  ],
+  "objNames": [
+    "wb_inelastic_completely2",
+    "wb_inelastic_completely2_equation"
+  ]
+}

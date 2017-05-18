@@ -1,0 +1,29 @@
+{
+  "cards": [
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "What is the cat’s state before the chamber is opened?"
+        },
+        {
+          "type": "headline",
+          "text": "That is the mystery Schrödinger’s experiment poses"
+        },
+        {
+          "type": "headline",
+          "text": "After opening, it must be either alive or dead"
+        }
+      ]
+    }
+  ],
+  "definitions": [],
+  "secText": [
+    "Schrödinger then asked: How can the state of the cat be described before the chamber is opened?  The state of the cat before opening the door is directly linked to the state of the radioactive material.  Quantum mechanics says that the cat is simultaneously in a state of being alive and in a state of being dead. But we believe from everyday experience that at any time, it must be either one or the other. A cat cannot be 50% alive . . . or can it? ",
+    "Schrödinger’s thought experiment is parallel to specifying the state of a particle that has yet to be measured.  Its properties can only be described as probabilities.  ",
+    "Schrödinger’s thought experiment also applies to what happens when a particle is observed.  Once the chamber is opened, the cat is either alive or dead, and the probabilities collapse and become an outcome. Similarly, even though we need to describe a particle’s possible positions with probabilities, once observed, the broad probability density of the particle collapses to a specific position.  "
+  ],
+  "objNames": [
+    "wb_schrodinger2"
+  ]
+}

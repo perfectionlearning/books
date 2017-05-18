@@ -1,0 +1,34 @@
+{
+  "cards": [
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Electric and magnetic fields"
+        },
+        {
+          "type": "headline",
+          "text": "Change in strength over time at each point"
+        },
+        {
+          "type": "headline",
+          "text": "Fields have same frequency"
+        },
+        {
+          "type": "headline",
+          "text": "Drive each other by changing strength"
+        }
+      ]
+    }
+  ],
+  "definitions": [],
+  "secText": [
+    "In this section, we further discuss the fields that make up electromagnetic radiation. ",
+    "At every location, the strength of each field changes over time. We highlight this at the point <b>P</b>. In the animation, you can see that as the electromagnetic wave passes through, the strength of each field changes over time.",
+    "As we show, the electric and magnetic fields have the same frequency. In addition, they reach their peaks and troughs at the same places at the same time: They are <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='wb_constructive_interference'>in phase</a>.",
+    "The changes in field strength are what “drive” an electromagnetic wave. By Faraday’s law, a magnetic field that is changing over time creates an electric field.  And, as electromagnetic radiation shows, a changing electric field creates a magnetic field. "
+  ],
+  "objNames": [
+    "wb_em_waves_concepts2"
+  ]
+}

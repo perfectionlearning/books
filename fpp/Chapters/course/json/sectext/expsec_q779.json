@@ -1,0 +1,48 @@
+{
+  "cards": [
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Faraday’s law"
+        },
+        {
+          "type": "headline",
+          "text": "Change in magnetic field strength creates change in magnetic flux"
+        },
+        {
+          "type": "headline",
+          "text": "Flux change induces emf "
+        },
+        {
+          "type": "bullet",
+          "text": "emf drives induced current"
+        }
+      ]
+    },
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Faraday’s law"
+        }
+      ]
+    }
+  ],
+  "definitions": [
+    {
+      "term": "Faraday’s law",
+      "def": "The emf equals the rate of change of magnetic flux."
+    }
+  ],
+  "secText": [
+    "Faraday’s law reflects how changing magnetic flux induces an emf.",
+    "To illustrate the law, we start with a current source that causes changing amounts of current to flow through the coil on the left.  We start with the current increasing, which <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='wb_bfields_wires_concepts1'>causes the magnetic field</a> to increase in strength as well. This field passes through the iron core and through the coil on the right, with the iron directing the magnetic field. Since the magnetic field strength is increasing, the amount of magnetic flux passing through the coil is increasing as well. ",
+    "The change in magnetic flux induces an emf in the coil on the right. The emf in turn causes a current to flow through the coil on the right. The system you see here functions as a <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='wb_transformer_concepts1'>transformer</a>, changing the potential difference in the first coil to a different potential difference in the second coil.   ",
+    "The equation expresses Faraday’s law: The rate of change of the total magnetic flux equals the induced emf. The negative sign indicates the <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='wb_Lenz_law_concepts1'>direction of the emf</a>, which is the topic of another section. "
+  ],
+  "objNames": [
+    "wb_faraday_concepts",
+    "wb_faraday_equation"
+  ]
+}

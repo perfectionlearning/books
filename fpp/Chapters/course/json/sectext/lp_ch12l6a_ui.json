@@ -1,0 +1,40 @@
+{
+  "cards": [
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Greater temperature difference"
+        },
+        {
+          "type": "headline",
+          "text": "Increased efficiency"
+        }
+      ]
+    },
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Second law of thermodynamics"
+        },
+        {
+          "type": "headline",
+          "text": "Engines cannot convert 100% of heat into work during a cycle"
+        }
+      ]
+    }
+  ],
+  "definitions": [],
+  "secText": [
+    "  <b class=\"object-name\">Supplemental Material: </b>  <span class=\"object-name\">AP</span>",
+    "  <b>Essential Question: </b>  <b>    <br />  </b>How does the second law of thermodynamics explain the efficiency of real-world engines?",
+    "  <b>Enduring Understandings:</b>  <b>    <br />  </b>1. The <a class='pjumpToTopic' href='javascript:void(0)' data-chap='12' data-topic='5' data-subtopic='1' data-subsection='0'>efficiency</a> of engine cycles can be calculated by taking ratios using either work, heat in and heat out, or temperature of the hot and cold reservoirs.<br />2. The <a class='pjumpToTopic' href='javascript:void(0)' data-chap='12' data-topic='5' data-subtopic='2' data-subsection='0'>second law of thermodynamics</a> states that engines cannot be 100% efficient. Real-world engines lose heat to the environment during an engine cycle, so not all heat goes to doing work. Heat flows spontaneously from hotter environments to colder environments. Heat does not flow spontaneously from colder environments to hotter environments.",
+    "  <b>Vocabulary:</b>  <a class='pjumpToTopic' href='javascript:void(0)' data-chap='12' data-topic='5' data-subtopic='1' data-subsection='0'>efficiency</a>, <a class='pjumpToTopic' href='javascript:void(0)' data-chap='12' data-topic='5' data-subtopic='2' data-subsection='0'>second law of thermodynamics (engines)</a>",
+    "  <b>STEM Skills:</b>  <b>    <br />  </b>1. Review ratios."
+  ],
+  "objNames": [
+    "wb_more_thermo_efficiency2",
+    "wb_second_law_concepts"
+  ]
+}

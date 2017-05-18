@@ -1,0 +1,38 @@
+{
+  "cards": [
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Number of significant digits in a number"
+        },
+        {
+          "type": "headline",
+          "text": "Digits other than zero are significant"
+        },
+        {
+          "type": "bullet",
+          "text": "1 through 9 are significant"
+        },
+        {
+          "type": "headline",
+          "text": "Zero is significant if it is between 1 through 9"
+        },
+        {
+          "type": "headline",
+          "text": "Final zeros to right of decimal point are significant"
+        }
+      ]
+    }
+  ],
+  "definitions": [],
+  "secText": [
+    "  <b>Essential Question: </b>  <b>    <br />  </b>How can we use significant figures to write precise numbers?",
+    "  <b>Enduring Understandings:</b>  <b>    <br />  </b>1. <a class='pjumpToTopic' href='javascript:void(0)' data-chap='3' data-topic='2' data-subtopic='1'>Significant figures</a> are used to convey a precise number.<b><br /></b>2. When <a class='pjumpToTopic' href='javascript:void(0)' data-chap='3' data-topic='2' data-subtopic='2'>multiplying and dividing numbers with significant digits</a>, the number of significant digits in the answer remains the same as the number with the least amount of significant digits in the calculation. When <a class='pjumpToTopic' href='javascript:void(0)' data-chap='3' data-topic='2' data-subtopic='2' data-subsection='1'>adding and subtracting numbers with significant digits</a>, the answer has the same amount of significant digits as the number with the least amount of decimal places in the calculation.",
+    "  <b>Vocabulary:</b>  <a class='pjumpToTopic' href='javascript:void(0)' data-chap='3' data-topic='2' data-subtopic='1'>significant figures</a>, <a class='pjumpToTopic' href='javascript:void(0)' data-chap='3' data-topic='2' data-subtopic='2'>the result of multiplying or dividing two numbers</a>, <a class='pjumpToTopic' href='javascript:void(0)' data-chap='3' data-topic='2' data-subtopic='2' data-subsection='1'>the result of adding or subtracting two numbers</a>",
+    "  <b>STEM Skills:</b>  <b>    <br />  </b>1. Review <a class='pjumpToTopic' href='javascript:void(0)' data-chap='3' data-topic='6' data-subtopic='1'>order of operations</a>."
+  ],
+  "objNames": [
+    "wb_significant_figures_number_of"
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "cards": [
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Engine efficiency"
+        }
+      ]
+    },
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Efficiency equations"
+        }
+      ]
+    }
+  ],
+  "definitions": [
+    {
+      "term": "Efficiency",
+      "def": "The ratio of work done by an engine to the energy supplied to it."
+    }
+  ],
+  "secText": [
+    "  <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='wb_efficiency_equation'>Efficiency</a> is a word used in everyday conversation.  Here, we can define it in the context of an engine.",
+    "The efficiency of an engine equals the net work done by the engine divided by the heat supplied to it.  The more work an engine does per joule of energy supplied to it, the more efficient it is. The engine models wasted heat, heat not going to doing work, as heat exiting to the cold reservoir.",
+    "We use <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='wb_heat_concepts1'>heat</a>  for our discussion in this section, but the concept of efficiency applies to any form of energy supplied to an engine. For instance, many appliances use electrical energy, and their efficiency is based on that energy source. ",
+    "We show two ways to calculate efficiency.  One uses the definition: Efficiency equals the work done by the engine divided by the energy supplied to it.",
+    "The equation on the right states efficiency in terms of heat flow in and out of an engine.  The lower the ratio of heat out to heat in, the more efficient the engine is.  This makes sense − heat out is wasted heat.    ",
+    "Real-world engines tend to be 30% to 60% efficient.  A traditional gasoline-powered automobile would be on the lower end, toward 30%. A generator at a power plant would be on the higher end, closer to 60%. "
+  ],
+  "objNames": [
+    "wb_efficiency_concepts1",
+    "wb_efficiency_concepts"
+  ]
+}

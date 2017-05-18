@@ -1,0 +1,31 @@
+{
+  "cards": [
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Evaluating exponents with negative bases"
+        }
+      ]
+    },
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Evaluate expressions with fraction bars"
+        }
+      ]
+    }
+  ],
+  "definitions": [],
+  "secText": [
+    "  <b>Lesson:</b>  <b>    <br />  </b>1. [OBJ:expsec_a356:Evaluate expressions using the order of operations] (PEMDAS).<b><br /></b>2. [OBJ:expsec_5356:Evaluate expressions with negative numbers] using PEMDAS.<b><br /></b>3. [OBJ:expsec_a358:Evaluate expressions with fraction bars].",
+    "  <b>In-class assessment:</b>  <b>    <br />  </b>1. [OBJ:qc_39175:Evaluate] an expression with negative numbers using PEMDAS.<b><br /></b>2. [OBJ:qc_39180:Evaluate] an expression with a fraction bar using PEMDAS.",
+    "  <b>Homework:</b>  <span class=\"KBExternalLink\"><a href=\"assign.html#OHW 3.07\">OHW 3.07</a></span>",
+    "  <b>Quick Review:</b>  [OBJ:sum_order_ops:Order of Operations]"
+  ],
+  "objNames": [
+    "wb_math_negative_exp_one",
+    "wb_math_smpl_evaluateExpression"
+  ]
+}

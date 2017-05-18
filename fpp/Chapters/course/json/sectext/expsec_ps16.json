@@ -1,0 +1,52 @@
+{
+  "cards": [
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Kinetic energy of ideal gas"
+        },
+        {
+          "type": "headline",
+          "text": "As temperature of gas increases"
+        },
+        {
+          "type": "bullet",
+          "text": "average molecular speed increases"
+        },
+        {
+          "type": "bullet",
+          "text": "average <i>KE</i> increases"
+        }
+      ]
+    },
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Average molecular <i>KE</i> and temperature"
+        },
+        {
+          "type": "headline",
+          "text": "  <math>    <mrow>      <mover accent=\"true\">        <mrow>          <mi>K</mi>          <mi>E</mi>        </mrow>        <mo stretchy=\"true\">¯</mo>      </mover>      <mo>=</mo>      <mfrac linethickness=\"thin\">        <mn>3</mn>        <mn>2</mn>      </mfrac>      <mi>k</mi>      <mi>T</mi>    </mrow>  </math>"
+        },
+        {
+          "type": "headline",
+          "text": "  <math>    <mrow>      <mover accent=\"true\">        <mrow>          <mi>K</mi>          <mi>E</mi>        </mrow>        <mo stretchy=\"true\">¯</mo>      </mover>      <mo>=</mo>      <mtext>average </mtext>      <mi>K</mi>      <mi>E</mi>      <mtext> of molecule,</mtext>    </mrow> <br> </math>  <i>k</i> = Boltzmann’s constant, <i>T</i> = Kelvin temperature"
+        }
+      ]
+    }
+  ],
+  "definitions": [],
+  "secText": [
+    "We use the two containers you see to discuss the relationship of kinetic energy and temperature in an ideal gas. Both contain the same number of molecules of the same gas. The temperature of the gas on the left is less than the temperature of the gas on the right. ",
+    "The first two gauges below the cylinders display the temperature and average speed of molecules in the container. The third gauge displays the average kinetic energy per molecule.  ",
+    "As the temperature of a gas increases, the average speed of the molecules increases. In the animation, the gas molecules on the right are moving faster than those of the cooler gas on the left. ",
+    "Since the average speed of a molecule on the right is greater, the average kinetic energy of a molecule on the right is greater too.  ",
+    "The equation we show is for the average kinetic energy of <b>one</b> atom or molecule in an ideal gas. The average kinetic energy is a function solely of the temperature of the gas. It does <b>not</b> vary with pressure or volume. "
+  ],
+  "objNames": [
+    "wb_KE_T_concept",
+    "wb_ke_t_equation"
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "cards": [
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "The direction of refraction"
+        },
+        {
+          "type": "headline",
+          "text": "When light slows, it bends toward normal"
+        }
+      ]
+    },
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "When light changes speed"
+        },
+        {
+          "type": "headline",
+          "text": "The frequency stays the same"
+        },
+        {
+          "type": "headline",
+          "text": "The wavelength changes"
+        }
+      ]
+    }
+  ],
+  "definitions": [],
+  "secText": [
+    "  <b>Essential Question: </b>  <b>    <br />  </b>What happens to the direction and wavelength of light when light is refracted?",
+    "  <b>Enduring Understandings:</b>  <b>    <br />  </b>1. If the <a class='pjumpToTopic' href='javascript:void(0)' data-chap='21' data-topic='1' data-subtopic='1' data-subsection='0'>index of refraction</a> for the refracted material is greater than the index of refraction for the incident material, then the light bends toward the normal. If the index of refraction for the refracted material is less than the index of refraction for the incident material, then the light bends away from the normal.<br />2.   An <a class='pjumpToTopic' href='javascript:void(0)' data-chap='21' data-topic='1' data-subtopic='2' data-subsection='0'>analogy</a> for light refraction is a car moving from ice to dry pavement at an angle, changing direction when part of the car is on dry pavement while part remains on the ice. The car moves at different speeds on the ice and pavement, which causes it to change direction.<br />3.  The <a class='pjumpToTopic' href='javascript:void(0)' data-chap='21' data-topic='1' data-subtopic='3' data-subsection='0'>wavelengths of light</a> traveling through two different mediums can be calculated by setting the ratio of the wavelengths of light in both mediums equal to the ratio of the indices of the refraction of the mediums.",
+    "  <b>STEM Skills:</b>  <b>    <br />  </b>1. Review <a class='pjumpToTopic' href='javascript:void(0)' data-chap='13' data-topic='3' data-subtopic='4' data-subsection='0'>wavelength</a>.<br />2. Review <a class='pjumpToTopic' href='javascript:void(0)' data-chap='13' data-topic='3' data-subtopic='3' data-subsection='0'>frequency</a>."
+  ],
+  "objNames": [
+    "wb_snell_law_concepts",
+    "wb_refraction_frequency_wavelength_concepts1"
+  ]
+}

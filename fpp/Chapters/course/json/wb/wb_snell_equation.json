@@ -1,0 +1,15 @@
+{
+  "Title": "Snell’s law equations",
+  "Slides": [
+    {
+      "startTime": "0",
+      "endTime": "-1",
+      "startMarkerName": "",
+      "endMarkerName": "End",
+      "headlines": [
+        "  <span class=\"math\">    <i>      <math xmlns:xsl=\"http://www.w3.org/1999/XSL/Transform\">        <mi>θ</mi>      </math>    </i>    <sub>i</sub> = incident angle</span>, <span class=\"math\"><i>n</i><sub>i</sub> = refraction</span> index, incident material, <span class=\"math\"><i><math xmlns:xsl=\"http://www.w3.org/1999/XSL/Transform\"><mi>θ</mi></math></i><sub>r</sub> = refracted </span>angle, </br><span class=\"math\"><i>n</i><sub>r</sub> = refraction</span> index, refracted material"
+      ],
+      "bullets": []
+    }
+  ]
+}

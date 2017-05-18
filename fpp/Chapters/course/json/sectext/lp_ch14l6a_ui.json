@@ -1,0 +1,41 @@
+{
+  "cards": [
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Fourier analysis"
+        },
+        {
+          "type": "headline",
+          "text": "Describes notes as harmonics"
+        }
+      ]
+    },
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Beats"
+        },
+        {
+          "type": "headline",
+          "text": "Periodic changes in amplitude produced by two waves of different frequencies"
+        }
+      ]
+    }
+  ],
+  "definitions": [],
+  "secText": [
+    "  <b>Essential Question: </b>  <b>    <br />  </b>How do humans describe sound?",
+    
+    "  <b>Enduring Understandings:</b>  <b>    <br />  </b>1. A single frequency sound can be described as a <a class='pjumpToTopic' href='javascript:void(0)' data-chap='14' data-topic='5' data-subtopic='1' data-subsection='0'>pure tone</a>. <a class='pjumpToTopic' href='javascript:void(0)' data-chap='14' data-topic='5' data-subtopic='1' data-subsection='1'>Pitch</a> refers to the frequency of the sound. <a class='pjumpToTopic' href='javascript:void(0)' data-chap='14' data-topic='5' data-subtopic='1' data-subsection='2'>Timbre</a> refers to the complexity of the sound.<br />2. <a class='pjumpToTopic' href='javascript:void(0)' data-chap='14' data-topic='5' data-subtopic='2' data-subsection='0'>Fourier analysis</a> uses harmonics to graphically represent sounds. <a class='pjumpToTopic' href='javascript:void(0)' data-chap='14' data-topic='5' data-subtopic='2' data-subsection='1'>MIDI</a> uses digital representation to represent sounds.<br />3. <a class='pjumpToTopic' href='javascript:void(0)' data-chap='14' data-topic='5' data-subtopic='3' data-subsection='0'>Beats</a> are a pattern of loud and soft sounds.",
+	
+	"  <b>Vocabulary:</b>  <a class='pjumpToTopic' href='javascript:void(0)' data-chap='14' data-topic='5' data-subtopic='1' data-subsection='0'>pure tone</a>, <a class='pjumpToTopic' href='javascript:void(0)' data-chap='14' data-topic='5' data-subtopic='1' data-subsection='1'>pitch</a>, <a class='pjumpToTopic' href='javascript:void(0)' data-chap='14' data-topic='5' data-subtopic='1' data-subsection='2'>timbre</a>, <a class='pjumpToTopic' href='javascript:void(0)' data-chap='14' data-topic='5' data-subtopic='2' data-subsection='0'>Fourier analysis</a>, <a class='pjumpToTopic' href='javascript:void(0)' data-chap='14' data-topic='5' data-subtopic='2' data-subsection='1'>MIDI</a>, <a class='pjumpToTopic' href='javascript:void(0)' data-chap='14' data-topic='5' data-subtopic='3' data-subsection='0'>beats</a>",
+    "  <b>STEM Skills:</b>  <b>    <br />  </b>1. Review absolute value."
+  ],
+  "objNames": [
+    "wb_fourier",
+    "wb_beats"
+  ]
+}

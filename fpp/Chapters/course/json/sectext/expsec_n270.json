@@ -1,0 +1,26 @@
+{
+  "cards": [
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Source, listener both moving"
+        },
+        {
+          "type": "headline",
+          "text": "  <span class=\"math\">    <i>f</i>    <sub>L </sub>= listener frequency,</span> </br>  <span class=\"math\">    <i>f</i>    <sub>S</sub> = source frequency,</span>  <span class=\"math\">    <i>v</i>    <sub>L</sub> = speed of listener,</span> <br> <span class=\"math\">    <i>v</i>    <sub>S</sub> = speed of source,</span>  <span class=\"math\">    <i>v</i> = speed of sound</span>"
+        }
+      ]
+    }
+  ],
+  "definitions": [],
+  "secText": [
+    "A more complicated equation calculates the Doppler effect when source and listener are both moving.  ",
+    "We use the plus or minus sign to describe the situation in a single equation.  In the numerator, add the fraction when the listener approaches the source, and subtract the fraction if the listener is moving away.",
+    "In the denominator, add the fraction if the source is moving away from the listener, and subtract the fraction if the source is moving toward the listener. ",
+    "You can note that if either the listener or the source’s speed is zero, then the equation simplifies to one of the equations shown earlier.  For instance, if the sound source is stationary, then the denominator equals one and the equation simplifies to just the numerator."
+  ],
+  "objNames": [
+    "wb_doppler_equation5"
+  ]
+}

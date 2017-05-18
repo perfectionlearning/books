@@ -1,0 +1,42 @@
+{
+  "cards": [
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Lenz’s law"
+        },
+        {
+          "type": "headline",
+          "text": "Determines direction of induced current"
+        }
+      ]
+    },
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Lenz’s law"
+        },
+        {
+          "type": "headline",
+          "text": "Magnetic field of induced current opposes change in flux"
+        }
+      ]
+    }
+  ],
+  "definitions": [
+    {
+      "term": "Lenz’s law",
+      "def": "An induced current flows so that the direction of its magnetic field opposes the change in magnetic flux that causes the current."
+    }
+  ],
+  "secText": [
+    "Lenz’s law enables you to determine the direction of the current caused by an induced emf. For instance, in the illustration, a magnetic field directed away from you is increasing in strength over time, meaning there is a change in magnetic flux through the area bounded by the wire loop. This will induce an emf that will cause a current to flow in the loop, but in which direction? ",
+    "To answer the question, we have to consider the magnetic field of the <b>induced</b> current. Lenz’s law says that the induced magnetic field will oppose the change in magnetic flux that caused it. Since the external field is increasing in this case, the magnetic field of the induced current must point in the direction opposite to the increasing external field. Using the right-hand rule, we determine the direction the current must flow to cause the induced field, as we show in the diagram. "
+  ],
+  "objNames": [
+    "wb_Lenz_law_concepts1",
+    "wb_Lenz_law_concepts2"
+  ]
+}

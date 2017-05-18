@@ -1,0 +1,34 @@
+{
+  "cards": [
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Ideal gas law"
+        },
+        {
+          "type": "headline",
+          "text": "Pressure times volume proportional to:"
+        },
+        {
+          "type": "bullet",
+          "text": "Molar quantity of gas"
+        },
+        {
+          "type": "bullet",
+          "text": "Kelvin temperature of gas"
+        }
+      ]
+    }
+  ],
+  "definitions": [],
+  "secText": [
+    "  <b class=\"object-name\">Supplemental Material: </b>  <span class=\"object-name\">AP</span>",
+    "  <b>Essential Question: </b>  <b>    <br />  </b>What is the relationship between pressure, temperature, and volume of a gas?",
+    "  <b>Enduring Understandings:</b>  <b>    <br />  </b>1. <a class='pjumpToTopic' href='javascript:void(0)' data-chap='12' data-topic='3' data-subtopic='1' data-subsection='0'>Boyle's law</a> shows the relationship between the pressure and volume of a gas when temperature is held constant. <a class='pjumpToTopic' href='javascript:void(0)' data-chap='12' data-topic='3' data-subtopic='1' data-subsection='0'>Charles' law</a> shows the relationship between the volume and temperature of a gas when pressure is held constant.<br />2. The <a class='pjumpToTopic' href='javascript:void(0)' data-chap='12' data-topic='3' data-subtopic='2' data-subsection='0'>ideal gas law</a> shows the relationship between pressure, volume, amount of the gas (in moles or particles), and the temperature of the gas.",
+    "  <b>STEM Skills:</b>  <b>    <br />  </b>1. <a class='pjumpToTopic' href='javascript:void(0)' data-chap='1' data-topic='0' data-subtopic='5' data-subsection='0'>Solve</a> for an equation for a variable."
+  ],
+  "objNames": [
+    "wb_ideal_concept"
+  ]
+}

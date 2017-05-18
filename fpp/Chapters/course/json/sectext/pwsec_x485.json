@@ -1,0 +1,29 @@
+{
+  "cards": [
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Transmission electron microscope"
+        },
+        {
+          "type": "headline",
+          "text": "Takes advantage of electrons’ small wavelength"
+        },
+        {
+          "type": "headline",
+          "text": "Resolves details at a scale of 10<sup class=\"\">−10</sup> meters"
+        }
+      ]
+    }
+  ],
+  "definitions": [],
+  "secText": [
+    "In a matter of decades, matter waves changed from a theoretical concept to an applied technology. ",
+    "The laws of wave optics dictate a limit on the resolution of an image that is created by “viewing” at a given wavelength. Microscopes that use visible light cannot resolve objects much smaller than the wavelength of visible light, roughly 1000 nanometers. Electrons can have a wavelength much smaller than that of visible light. A transmission electron microscope takes advantage of this smaller wavelength and can resolve objects with sizes on the order of 0.1 nanometer!",
+    "  <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='wb_matter_waves1'>Typical wavelengths of electrons</a> used in a transmission electron microscope are about 10,000 times smaller than that of visible light, which means an electron microscope can theoretically <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='wb_resolving_concepts1'>resolve</a> details 10,000 times smaller than an optical microscope can. In the TEM image, you see the salivary gland of a mosquito that has been infected by the Eastern equine encephalitis virus, which causes sleeping sickness. The individual viruses are artificially colored red and are about 60 nanometers in diameter. Even smaller details are visible in the image. "
+  ],
+  "objNames": [
+    "wb_tem"
+  ]
+}

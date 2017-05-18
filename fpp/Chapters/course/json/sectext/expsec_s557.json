@@ -1,0 +1,42 @@
+{
+  "cards": [
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Radio waves"
+        },
+        {
+          "type": "headline",
+          "text": "Radio waves in AM, FM bands"
+        }
+      ]
+    },
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Visible light"
+        },
+        {
+          "type": "headline",
+          "text": "Consists of spectrum of colors"
+        },
+        {
+          "type": "bullet",
+          "text": "Frequency in the trillions hertz"
+        }
+      ]
+    }
+  ],
+  "definitions": [],
+  "secText": [
+    "Radio waves and light are two examples of electromagnetic radiation.  ",
+    "AM radio waves have frequencies ranging from 530 kHz to 1,710 kHz, with wavelengths ranging from 566 meters to 175 meters. AM radio stations announce their frequencies in kilohertz: “710 AM on your radio dial” means a frequency of 710 kHz. FM radio waves have higher frequencies and shorter wavelengths than AM radio waves. ",
+    "Visible light has far higher frequencies than radio signals, ranging from over 400 trillion Hz for red light to almost 800 trillion Hz for violet light. Wavelengths of light are often expressed in nanometers: The wavelength of red light is around 650 nanometers. Everything you see in the world is brought to you by electromagnetic radiation − light − in this frequency range. <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='wb_double_slit_white_concepts'>“White”</a> light consists of a mixture of all the visible light frequencies."
+  ],
+  "objNames": [
+    "wb_electromagnetic_spectrum2",
+    "wb_electromagnetic_spectrum3"
+  ]
+}

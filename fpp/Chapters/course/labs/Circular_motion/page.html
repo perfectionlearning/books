@@ -1,0 +1,507 @@
+<!-- <div class="pActivityHeader">Circular motion</div> -->
+<div class="pLabPageIntro">
+	You are a race car driver, prepared to accelerate your vehicle around a track at rates up to three times greater than freefall acceleration.
+	</br></br>
+	But how close to the edge are you willing to go?
+	</br></br>
+	Pushing it to the limit is the key to beating your rival, the computer car. But accelerate a little too much and you will spin off the track and crash.
+	</br></br>
+	The key to your success: Understanding the relationship between speed, velocity and acceleration as you go around turns on a race track. 
+	</br></br>
+	<span style='font-weight:bold;line-height: 22px;'>
+		This lab covers the following topics:
+		<ul style='list-style-type:disc;padding-left: 18px;'>
+			<i><li> The difference between speed, velocity and acceleration</li>
+			<li> How you can accelerate without changing speed</li>
+			<li>Centripetal acceleration</li>
+			<li>The effect of turn radius on centripetal acceleration</li>
+			<li>The relationship between your speed on a turn and centripetal acceleration</li></i>
+		</ul>
+	</span>
+</div>
+
+<div class="pExerciseContainer">
+	<div class="pExcersiseTitle">Exercise 1: Speed, velocity and acceleration</div>
+	</br>
+	Race car drivers live in a world of <b>speed</b>, <b>velocity</b> and <b>acceleration</b>. What is the difference among the three? Let's review. Before you drive the perilous turns of a speedway, you first need to get your driver's license on a straightaway. 
+	</br>
+	<figure style="padding-top:20px;padding-bottom:10px;">
+		<img class="pExcersiseThumb" src="course/labs/Circular_motion/assets/Ex_01.png" style="width:70%;"/>
+		</br></br>
+		<figcaption style="font-family: AvenirNextLTPro-Demi;">Exercise 1. Win the drag race against the computer.</figcaption>
+	</figure>
+	Consider the track above, a snapshot of the simulation you are about to enter. You drive the red car.
+	</br></br>
+	Your challenge: beat the computer car − the blue car − in a drag race.
+	</br></br>
+	The track is divided into two segments. In the first segment, your car’s speed increases. Here, your car will go from rest (0 m/s) to the speed you select for it, up to a maximum of 30 m/s. In the second segment, the car will maintain the selected speed until the finish line, at which point the simulation will pause.
+	</br></br>
+	No calculations are required in this simulation. You will have to try setting some speeds and see what happens. The primary purpose of this exercise is to familiarize you with the simulation controls and to review the concepts of speed, velocity and acceleration.
+	</br></br>
+	When you enter the simulation, notice the gauges for your car (the red car) on the control panel:
+	</br></br>
+	<img src= "course/labs/Circular_motion/assets/image54.png"></br></br>
+	</br>
+	<ul style='list-style-type:disc;padding-left: 18px;'>
+		<li>On the left is a <b>speed</b> gauge. It resembles a standard car speedometer, although the readout is in meters per second. 10 m/s equals 36 km/hr, which is about 22 mph. </li>
+		<li>The next gauge shows <b>acceleration</b>. It indicates the magnitude of your car's acceleration, in m/s<sup>2</sup>. </li>
+		<li style="padding-top: 5px;">To the right of that is a horizontally-shaped gauge for <b>x velocity</b>. It shows the component of your car's velocity along the x axis, that is, in the horizontal direction on your screen. </li>
+		<li style="padding-top: 5px;">The final, verticall y-shaped gauge is for <b>y velocity</b>. It shows the component of the car’s velocity along the y axis, which is the vertical direction on your screen. </li>
+	</ul>
+	</br>
+	<b>Observe the gauge readings as you race</b>. Use what you observe to answer the questions below. 
+	</br>
+	<div class="pLabQASection">
+		Open the simulation and enter a value for speed in the entry box in the control panel. Press GO to start the race.
+		</br></br>
+		During the race, observe the gauges described above. Note the values for speed, x and y velocity and acceleration in the first segment of the race, marked “Speed change zone,” as well as the second segment, marked “Constant speed zone.” If you have trouble viewing the gauges, use the PAUSE button to temporarily stop the simulation. Press PAUSE again to restart it.
+		</br></br>
+		Use the simulation and the gauges to answer the questions below which review some fundamentals of speed, velocity and acceleration. You can run the race as many times as you want by pressing RESET, entering a new value for speed and pressing GO again. 
+		</br></br>
+		Click here to enter the <span class="pExerciseButton" data-href="http://mitrlearning.com/perfection_learning/Labs/1_Using%20one-dimensional%20motion%20equations/1_Intro%20to%20Skee-Ball/">Exercise 1 Simulation</span>
+		</br></br>
+		<div class="pLabQuestion">
+			<div class="pLabQNumber">1.</div><div class="pLabQText"> In the first segment of the race track (the Speed change zone), the car speeds up as it travels left to right across the screen. Does the car’s x velocity change? Its y velocity? </div><div class="pLabQuestionArrow"></div>
+			<div class="pLabAnswerWrapper">
+				<textarea class="pLabAnswerBox" placeholder="Enter your answer here"></textarea>
+				<div class="pLabSaveButton" style="right: 40px;margin-top: -44px;"></div>
+			</div>
+		</div>
+		<div class="pLabQuestion">
+			<div class="pLabQNumber">2.</div><div class="pLabQText"> Acceleration is defined as the change in velocity per unit time. In the first segment of the race track, does the car accelerate?</div><div class="pLabQuestionArrow"></div>
+			<div class="pLabAnswerWrapper">
+				<textarea class="pLabAnswerBox" placeholder="Enter your answer here"></textarea>
+				<div class="pLabSaveButton" style="right: 40px;margin-top: -44px;"></div>
+			</div>
+		</div>
+		<div class="pLabQuestion">
+			<div class="pLabQNumber">3.</div><div class="pLabQText"> In the second segment of the race track (the Constant speed zone), does the car’s x velocity change? Its y velocity? </div><div class="pLabQuestionArrow"></div>
+			<div class="pLabAnswerWrapper">
+				<textarea class="pLabAnswerBox" placeholder="Enter your answer here"></textarea>
+				<div class="pLabSaveButton" style="right: 40px;margin-top: -44px;"></div>
+			</div>
+		</div>
+		<div class="pLabQuestion">
+			<div class="pLabQNumber">4.</div><div class="pLabQText">  In the second segment of the race track, does the car accelerate? In other words, does its velocity change?</div><div class="pLabQuestionArrow"></div>
+			<div class="pLabAnswerWrapper">
+				<textarea class="pLabAnswerBox" placeholder="Enter your answer here"></textarea>
+				<div class="pLabSaveButton" style="right: 40px;margin-top: -44px;"></div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="pExerciseContainer">
+	<div class="pExcersiseTitle">Exercise 2: Racing around a curve</div>
+	</br>
+	In Exercise 1, you controlled only the speed of your car. In physics and in car racing, direction matters, too. Most race tracks and roads have curves, and the driver must change the car’s direction to navigate around them. Velocity is a vector, and it reflects both speed and direction. 50 meters per second is speed, while 50 meters per second to the right is velocity.
+	</br></br>
+	Your car has two gauges that show the x and y components of the velocity. These gauges will help you understand the relationship between speed, velocity and acceleration when your car is traveling around a curve.
+	</br></br>
+	Consider the next race on the track shown below. This race begins the same as the first, with a straight Speed change zone. But the second segment, the Constant speed zone, has been bent into a curve. 
+	</br>
+	<figure style="padding-top:20px;padding-bottom:10px;">
+		<img class="pExcersiseThumb" src="course/labs/Circular_motion/assets/Ex_02_Racing around a curve_1.png" style="width:70%;"/>
+		</br></br>
+		<figcaption style="font-family: AvenirNextLTPro-Demi;">Exercise 2. Race against the computer around a curve.</figcaption>
+		</br></br>
+		Again, you drive the red car, and again, you set your speed. As before, this will be the speed at which you enter the Constant speed zone.
+		</br></br>
+		The track is divided into two segments. The Speed change zone is for speeding up: Here, your car will go from rest (0 m/s) to the speed you enter. In the Constant speed zone the car will maintain the speed you entered until the finish line, at which point the simulation will pause.
+		</br></br>
+		You do not know how fast your car will have to go to beat the blue car. As in Exercise 1, you must try various speeds until you win. This time, if your car’s speed is too high, it will spin off the track on the curve. Your primary goal in this exercise is to observe the gauges in your car and answer questions about speed, velocity and acceleration. Soon, you will use your knowledge of physics to move faster than the computer car without spinning off the track. 
+		</br></br>
+	</figure>
+	<div class="pLabQASection">
+		Open the simulation and enter a value for speed in the entry box in the control panel. Press GO to start the race.
+		</br></br>
+		During the race, observe the gauges in the control panel. Note some values for speed, x and y velocity and acceleration, particularly during the curved segment of the race. The simulation also shows you a velocity vector on the red car, indicating the car’s speed and direction of travel. Use the simulation and the gauges to answer the questions below.
+		</br></br>
+		You can run the race as many times as you want by pressing RESET, entering a new value for speed and pressing GO again.
+		</br></br>
+		(Because of the turn, the red car starts in front of the blue car so that they travel the same distance to the finish line.)
+		</br></br>
+		Click here to enter the <span class="pExerciseButton" data-href="http://mitrlearning.com/perfection_learning/Labs/1_Using%20one-dimensional%20motion%20equations/2A_Velocity/">Exercise 2 Simulation</span>
+		</br></br>
+		<div class="pLabQuestion">
+			<div class="pLabQNumber">5.</div><div class="pLabQText"> The car moves with a constant speed on the curve. Does the car’s x velocity change on the curve? Its y velocity? </div><div class="pLabQuestionArrow"></div>
+			<div class="pLabAnswerWrapper">
+				<textarea class="pLabAnswerBox" placeholder="Enter your answer here"></textarea>
+				<div class="pLabSaveButton" style="right: 40px;margin-top: -44px;"></div>
+			</div>
+		</div>
+		<div class="pLabQuestion">
+			<div class="pLabQNumber">6.</div><div class="pLabQText"> Does the car accelerate as it moves around the curve?</div><div class="pLabQuestionArrow"></div>
+			<div class="pLabAnswerWrapper">
+				<textarea class="pLabAnswerBox" placeholder="Enter your answer here"></textarea>
+				<div class="pLabSaveButton" style="right: 40px;margin-top: -44px;"></div>
+			</div>
+		</div>
+		<div class="pLabQuestion">
+			<div class="pLabQNumber">7.</div><div class="pLabQText"> In Exercise 2, a car traveling at constant speed accelerates. Explain, using the definition of velocity.</div><div class="pLabQuestionArrow"></div>
+			<div class="pLabAnswerWrapper">
+				<textarea class="pLabAnswerBox" placeholder="Enter your answer here"></textarea>
+				<div class="pLabSaveButton" style="right: 40px;margin-top: -44px;"></div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="pExerciseContainer">
+	<div class="pExcersiseTitle">Exercise 3: The velocity vector</div>
+	</br>
+	You saw in the last exercise that your car can be accelerating even when its speed is constant.
+	</br></br>
+	How can that be? We are going to elaborate on this point here because it is so important.
+	</br></br>
+	Unlike speed, velocity is a vector. It has both magnitude and direction. In a turn, the direction of the velocity vector constantly changes, even though the magnitude of the velocity − the speed − may be constant. When velocity changes, either in magnitude, direction, or both, there is acceleration.
+	</br></br>
+	We will use the track in this next exercise to explore this distinction. This track has three straight segments, as shown below. 
+	</br>
+	<figure style="padding-top:20px;padding-bottom:10px;">
+		<img class="pExcersiseThumb" src="course/labs/Circular_motion/assets/Ex_04.png" style="width:70%;"/>
+		</br></br>
+		<figcaption style="font-family: AvenirNextLTPro-Demi;">Exercise 3. Use x and y velocity vectors to navigate this course.</figcaption>
+	</figure>
+	In the previous exercises, you controlled only your car’s final speed, and the computer chose a rate of acceleration to reach that speed and turned your car automatically to keep it on the track.
+	</br></br>
+	In the simulation below, you control the x and y components of the car’s velocity for each segment of the track. This means you will have control over both the speed and the direction of the car. You have to use these components to keep the car on the track. On the first segment A→B, your task is to pick a number for the x velocity and a number for the y velocity that, taken together, will cause your red car to move horizontally from left to right without leaving the track.
+	</br></br>
+	For segment B→C, the track turns southeast, to an angle of 45 degrees below the horizontal. You need to determine another set of values for the x and y components of velocity that will keep your car on the track. Your car will automatically use those components when it reaches this segment of the track. You have to perform a similar exercise on segment C→D. That segment runs at an angle of 225° from the positive x axis.
+	</br></br>
+	The keys to succeeding along all these segments is to pick a combination of x and y velocity components that both keep your car on the track (direction) and go faster than the computer car (magnitude). We use the standard conventions that up and to the right are positive, and down and to the left are negative. 
+	</br></br>
+	<div class="pLabQASection">
+		Open the simulation and enter values in the control panel for both x and y velocities for your red car for each of the three track segments. Press GO to start the race.
+		</br></br>
+		Observe your car to see whether it stays on the track and, if not, where and why it went awry. If you err, press RESET, adjust your x and y velocity component settings, and press GO to race again. Also, use the simulation to answer the questions below. 
+		</br></br>
+		Click here to enter the <span class="pExerciseButton" data-href="http://mitrlearning.com/perfection_learning/Labs/1_Using%20one-dimensional%20motion%20equations/3_Acceleration/">Exercise 3 Simulation</span>
+		</br></br>
+		<div class="pLabQuestion">
+			<div class="pLabQNumber">8.</div><div class="pLabQText"> Referring to the definition of acceleration, at what points on the track do you think the car accelerated? Why?</div><div class="pLabQuestionArrow"></div>
+			<div class="pLabAnswerWrapper">
+				<textarea class="pLabAnswerBox" placeholder="Enter your answer here"></textarea>
+				<div class="pLabSaveButton" style="right: 40px;margin-top: -44px;"></div>
+			</div>
+		</div>
+		<div class="pLabQuestion">
+			<div class="pLabQNumber">9.</div><div class="pLabQText"> What is the mathematical relationship between the speed and the x and y velocity components? Between the velocity components and the angle of the velocity? You will have to use words to answer this question (e.g. it equals the square root of ….) since you are limited to entering standard text. </div><div class="pLabQuestionArrow"></div>
+			<div class="pLabAnswerWrapper">
+				<textarea class="pLabAnswerBox" placeholder="Enter your answer here"></textarea>
+				<div class="pLabSaveButton" style="right: 40px;margin-top: -44px;"></div>
+			</div>
+		</div>
+		<div class="pLabQuestion">
+			<div class="pLabQNumber">10.</div><div class="pLabQText"> As an extra credit or optional exercise, can you determine three pairs of components so that the speed of the car is approximately constant as it navigates this course? You should be able to pick velocity components so that the speed is the same on the last two segments, and within 0.1 m/s of the speed along the first segment. </div><div class="pLabQuestionArrow"></div>
+			<div class="pLabAnswerWrapper">
+				<textarea class="pLabAnswerBox" placeholder="Enter your answer here"></textarea>
+				<div class="pLabSaveButton" style="right: 40px;margin-top: -44px;"></div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="pExerciseContainer">
+	<div class="pExcersiseTitle">Exercise 4: Centripetal acceleration</div>
+	</br>
+	You have seen that a car moving at a constant speed accelerates when it changes direction. When a car travels along a circular path, the acceleration due to its change in direction is called <b>centripetal acceleration</b>.
+	</br></br>
+	You know how to determine the amount of <b>linear acceleration</b>. It is the change in instantaneous velocity divided by change in time as an object moves in a straight line. It results from a change in the speed, the magnitude of velocity.
+	</br></br>
+	Centripetal acceleration also is change in velocity divided by change in time but it results from the change in the direction of the velocity, not a change in magnitude.
+	</br></br>
+	<img src= "course/labs/Circular_motion/assets/image55.gif">
+	</br></br>
+	(Linear and centripetal acceleration can also occur simultaneously on a curve, for instance if the car speeds up or slows down along a curve, but that is a more advanced topic not covered in this lab.)
+	</br></br>
+	In the diagram shown here, you see the velocity vector <b>v<sub>i</sub></b> for a car in a turn at an initial time, and then the velocity vector <b>v<sub>f</sub></b> at a later time.
+	</br></br>
+	Note that the two vectors are the same length, indicating that the magnitude of velocity, or speed, is unchanged. The direction of the velocity vector clearly has changed.
+	</br></br>
+	Acceleration can be determined by the change in velocity per unit time. The change in velocity, <b>Δv</b>, is determined by subtracting the <b>vi</b> vector from the <b>v<sub>f</sub></b> vector.
+	</br></br>
+	In the lower diagram we graphically show the subtraction that yields the change in the velocity vector, <b>Δv</b>.
+	</br></br>
+	Note that the change in velocity (acceleration) points inward, toward the center of the circle. The centripetal acceleration vector always points to the center of the circle.
+	</br></br>
+	What determines the amount of centripetal acceleration?
+	</br></br>
+	In the next two exercises, you will investigate the two factors that determine the amount of centripetal acceleration. The first exercise explores the relationship between the tightness of a turn (its radius) and a car’s centripetal acceleration on that turn.
+	</br></br>
+	Later, you will use the equation for centripetal acceleration to calculate how to beat the computer car every time!
+	</br></br>
+	Consider the next track, in which the cars navigate a course with two turns. The two turns are sections of circles with different radii, as you can see: 
+	</br>
+	<figure style="padding-top:20px;padding-bottom:10px;">
+		<img class="pExcersiseThumb" src="course/labs/Circular_motion/assets/Ex_04.png" style="width:70%;"/>
+		</br></br>
+		<figcaption style="font-family: AvenirNextLTPro-Demi;">Exercise 4. Find the relationship between turn radius and centripetal acceleration.</figcaption>
+	</figure>
+	In this race, you pick a speed for the red car, and it will travel at that same speed for the entire race.
+	</br></br>
+	The computer car also maintains a constant speed for the entire race.
+	</br></br>
+	The game challenge is to beat the computer car to the finish. If your centripetal acceleration is too great on either curve, you will spin off the track and lose. You are accelerating too much for the frictional force between the tires and the road to keep you on the track. You have to use trial and error to beat the race car.
+	</br></br>
+	The physics question posed by this simulation is: What is the relationship between the radius of a turn and the car’s centripetal acceleration? 
+	</br></br>
+	<div class="pLabQASection">
+		Open the simulation and choose a speed for your red car. The car will travel this speed for the entire race unless it leaves the track. Press GO to start the race.
+		</br></br>
+		Record a few data points asked for in the table below. Press PAUSE to stop the car in a turn, and press PAUSE again to restart it.
+		</br></br>
+		You can race as many times as you want by pressing RESET and then GO. You will likely need to try racing at several speeds to determine the winning speed.
+		</br></br>
+		When you are done, return here to analyze your data and answer a few questions.
+		</br></br>
+		Click here to enter the <span class="pExerciseButton" data-href="http://mitrlearning.com/perfection_learning/Labs/1_Using%20one-dimensional%20motion%20equations/3_Acceleration/">Exercise 4 Simulation</span>
+		</br></br>
+		<div class="pLabQuestion">
+			<div class="pLabQNumber">11.</div><div class="pLabQText"> For any race in which your car completed the course, enter the data points below:</div><div class="pLabQuestionArrow"></div>
+			<div class="pLabAnswerWrapper" style="height:100px">
+				<table class="pLabAnswerTable">
+					<tr>
+						<td>car speed</td><td>radius turn 1</td><td>centripetal acceleration turn 1</td><td>radius turn 2	</td><td>centripetal acceleration turn 2</td>
+					</tr>
+					<tr>
+						<td><input type="text" class="pLabAnswerInput"/></td>
+						<td>15.0m</td>
+						<td><input type="text" class="pLabAnswerInput"/></td>
+						<td>7.5m</td>
+						<td><input type="text" class="pLabAnswerInput"/></td>
+					</tr>
+				</table>
+				<div class="pLabSaveButton" style="right:260px;margin-top: 58px;"></div>
+			</div>
+		</div>
+		<div class="pLabQuestion">
+			<div class="pLabQNumber">12.</div><div class="pLabQText"> What is the relationship, if any, between the radius of a turn and the centripetal acceleration of the car? Does centripetal acceleration increase when the radius increases, Does it decrease, or does the centripetal acceleration stay the same?</div><div class="pLabQuestionArrow"></div>
+			<div class="pLabAnswerWrapper">
+				<textarea class="pLabAnswerBox" placeholder="Enter your answer here"></textarea>
+				<div class="pLabSaveButton" style="right: 40px;margin-top: -44px;"></div>
+			</div>
+		</div>
+		<div class="pLabQuestion">
+			<div class="pLabQNumber">13.</div><div class="pLabQText">  If you said there was a relationship between turn radius and centripetal acceleration, explain what might cause this relationship, using the definition of acceleration. </div><div class="pLabQuestionArrow"></div>
+			<div class="pLabAnswerWrapper">
+				<textarea class="pLabAnswerBox" placeholder="Enter your answer here"></textarea>
+				<div class="pLabSaveButton" style="right: 40px;margin-top: -44px;"></div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="pExerciseContainer">
+	<div class="pExcersiseTitle">Exercise 5: Speed and centripetal acceleration</div>
+	</br>
+	In this exercise, you will investigate the effect of speed on centripetal acceleration by driving at different speeds around the circular course pictured below. 
+	</br>
+	<figure style="padding-top:20px;padding-bottom:10px;">
+		<img class="pExcersiseThumb" src="course/labs/Circular_motion/assets/Ex_05.png" style="width:70%;"/>
+		</br></br>
+		<figcaption style="font-family: AvenirNextLTPro-Demi;">Exercise 5. Find the relationship between speed and centripetal acceleration.</figcaption>
+	</figure>
+	There is no race in this exercise − your task is to record and interpret data. Do a lap around the track at three different speeds and note the centripetal acceleration for each speed. Enter these data points in the table below. 
+	</br></br>
+	<div class="pLabQASection">
+		Open the simulation and enter a speed in the input box provided in the control panel. Press GO. Record the centripetal acceleration. Select two more speeds and repeat. Make the values vary in a logical sequence − for example, try doubling the speed each time. 
+		</br></br>
+		Return here to record your data when you are done.
+		</br></br>
+		Click here to enter the <span class="pExerciseButton" data-href="http://mitrlearning.com/perfection_learning/Labs/1_Using%20one-dimensional%20motion%20equations/3_Acceleration/">Exercise 5 Simulation</span>
+		</br></br>
+		<div class="pLabQuestion">
+			<div class="pLabQNumber">14.</div><div class="pLabQText"> Fill in the table below</div><div class="pLabQuestionArrow"></div>
+			<div class="pLabAnswerWrapper" style="height:205px">
+				<table class="pLabAnswerTable">
+					<tr>
+						<td> </td><td>speed of car</td><td>centripetal acceleration</td>
+					</tr>
+					<tr>
+						<td>Trial 1</td>
+						<td><input type="text" class="pLabAnswerInput"/>m/s</td>
+						<td><input type="text" class="pLabAnswerInput"/>m/s<sup>2</sup></td>
+					</tr>
+					<tr>
+						<td>Trial 2</td>
+						<td><input type="text" class="pLabAnswerInput"/>m/s</td>
+						<td><input type="text" class="pLabAnswerInput"/>m/s<sup>2</sup></td>
+					</tr>
+					<tr>
+						<td>Trial 3</td>
+						<td><input type="text" class="pLabAnswerInput"/>m/s</td>
+						<td><input type="text" class="pLabAnswerInput"/>m/s<sup>2</sup></td>
+					</tr>
+				</table>
+				<div class="pLabSaveButton" style="right:410px;margin-top: 125px;"></div>
+			</div>
+		</div>
+		<div class="pLabQuestion">
+			<div class="pLabQNumber">15.</div><div class="pLabQText"> Graph the data, centripetal acceleration versus speed. From the graph, can you determine the relationship between the centripetal acceleration of the car and its speed? Does the centripetal acceleration increase when the speed increases, decrease, or does the centripetal acceleration not change at all? If you see a relationship, is it linear, inverse, or does it vary with the square of the speed? </div><div class="pLabQuestionArrow"></div>
+			<div class="pLabAnswerWrapper">
+				<textarea class="pLabAnswerBox" placeholder="Enter your answer here"></textarea>
+				<div class="pLabSaveButton" style="right: 40px;margin-top: -44px;"></div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="pExerciseContainer">
+	<div class="pExcersiseTitle">Exercise 6: Grand Prix of physics</div>
+	</br>
+	In the previous two exercises, you explored the relationship between centripetal acceleration and two variables: the radius of a circular curve, r, and the speed with which an object negotiates the curve, v.
+	</br></br>
+	Your data showed that centripetal acceleration varies <b>inversely</b> with the curve radius.
+	</br></br>
+	Centripetal acceleration is also proportional to the square of the speed.
+	</br></br>
+	The equation for centripetal acceleration is provided in the box to the right.
+	</br></br>
+	<img src= "course/labs/Circular_motion/assets/image56.gif">
+	</br></br>
+	You already intuitively understand these relationships − on skis, in a car, or on a bicycle, you know to slow down when entering a tight curve. You may not have known it at the time, but you were reducing your centripetal acceleration.
+	</br></br>
+	It is time to put your physics knowledge to the test in a high-speed car race!
+	</br></br>
+	In the course pictured below, you will use your knowledge of centripetal acceleration to go as fast as possible in the turns without crashing. 
+	</br></br>
+	<figure style="padding-top:20px;padding-bottom:10px;">
+		<img class="pExcersiseThumb" src="course/labs/Circular_motion/assets/Ex_06_Grand Prix of physics_1.png" style="width:70%;"/>
+		</br></br>
+		<figcaption style="font-family: AvenirNextLTPro-Demi;">Exercise 6. Use your physics knowledge to beat the computer car to the finish.</figcaption>
+	</figure>
+	</br></br>
+	The radius of each turn is listed on the track. In this race, the maximum centripetal acceleration you can attain before crashing is 3 g's, or 29.4 m/s<sup>2</sup>. This roughly corresponds to the maximum centripetal acceleration experienced by drivers in the Daytona 500 as they speed around the track’s steeply-banked turns.
+	</br></br>
+	If you exceed 29.4 m/s<sup>2</sup> centripetal acceleration in any turn, your car will spin off the track. The cars have staggered starts to compensate for the different distances they travel due to the curves.
+	</br></br>
+	Your challenge: Select a speed in the control panel so your acceleration is slightly below 29.4 m/s<sup>2</sup>.
+	</br></br>
+	We have programmed the cars so they will speed up and slow down in the straight-aways to attain the turn speeds at the beginning of each turn. Once in a turn, the cars will travel at the speed you set.
+	</br></br>
+	The computer car is calibrated to run the race at more than 95 percent of the maximum safe speed for each turn. Only a well-programmed car will beat the computer. 
+	</br></br>
+	<div class="pLabQASection">
+		Open the simulation. Use the turn radii to calculate the maximum speeds your car can travel in each curve without exceeding a centripetal acceleration of 29.4 m/s<sup>2</sup>.
+		</br></br>
+		Enter these speeds in the entry boxes marked Turn 1, Turn 2 and Turn 3. When you think you have programmed your car for top racing performance, press GO to start the race. (Note: your car will not start the race instantaneously with the speed you specify. Instead, like the computer’s car, it will start with zero velocity and accelerate to its specified speed for the first curve over the length of the first straightaway. Both cars will likewise adjust their specified speeds for entering the other two curves while they are on the intervening straightaways.)
+		</br></br>
+		If you crash, you exceeded the maximum acceleration in one of the turns. If you lose, you were too slow in one or more of the turns. In either case, press RESET to try again.
+		</br></br>
+		Return here when you are finished to fill in the answers below.
+		</br></br>
+		Click here to enter the <span class="pExerciseButton" data-href="http://mitrlearning.com/perfection_learning/Labs/1_Using%20one-dimensional%20motion%20equations/3_Acceleration/">Exercise 6 Simulation</span>
+		</br></br>
+		<div class="pLabQuestion">
+			<div class="pLabQNumber">16.</div><div class="pLabQText">  Enter the speed for your car in each turn that enabled you to win the race.</div><div class="pLabQuestionArrow"></div>
+			<div class="pLabAnswerWrapper" style="height:205px">
+				<table class="pLabAnswerTable">
+					<tr>
+						<td> </td><td>radius</td><td>speed</td>
+					</tr>
+					<tr>
+						<td>Turn 1</td>
+						<td>8.00 m</td>
+						<td><input type="text" class="pLabAnswerInput"/>m/s</td>
+					</tr>
+					<tr>
+						<td>Turn 2</td>
+						<td>16.75 m</td>
+						<td><input type="text" class="pLabAnswerInput"/>m/s</td>
+					</tr>
+					<tr>
+						<td>Turn 3</td>
+						<td>8.75 m</td>
+						<td><input type="text" class="pLabAnswerInput"/>m/s</td>
+					</tr>
+				</table>
+				<div class="pLabSaveButton" style="right:413px;margin-top: 125px;"></div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="pExerciseContainer">
+	<div class="pExcersiseTitle">Exercise 7: Control the car with keys</div>
+	</br>
+	Here you can have some fun and test your basic driving skills. So far, you have been experimenting with uniform circular motion, motion in two dimensions in which the speed and radius are constant. This is a special case of motion that occurs along two or three dimensions.
+	</br></br>
+	Here, we relax the constraints. You attempt to drive your car along a circular path, but it is unlikely you will achieve perfectly uniform circular motion. You control the horizontal and vertical velocity using the arrow keys on your keyboard. The right arrow increases the horizontal velocity component and the left arrow decreases it. The up arrow key increases the vertical velocity, and yes, the down arrow decreases it. Your mission is to stay on the course and if possible, complete a lap, using these keys. 
+	</br></br>
+	<figure style="padding-top:20px;padding-bottom:10px;">
+		<img class="pExcersiseThumb" src="course/labs/Circular_motion/assets/Ex_07_Control the car with keys_1.png" style="width:70%;"/>
+		</br></br>
+		<figcaption style="font-family: AvenirNextLTPro-Demi;">Exercise 7. Stay on track!</figcaption>
+	</figure>
+	</br></br>
+	<div class="pLabQASection">
+		Your car will start moving when you press any of the arrow keys. There is no penalty for driving your car off the track, though striking a wall is not good for your insurance rates. Press RESET to start over. Happy motoring! 
+		</br></br>
+		Click here to enter the <span class="pExerciseButton" data-href="http://mitrlearning.com/perfection_learning/Labs/1_Using%20one-dimensional%20motion%20equations/3_Acceleration/">Exercise 7 Simulation</span>
+		</br></br>
+	</div>
+</div>
+
+<div class="pExerciseContainer">
+	<div class="pExcersiseTitle">Exercise 8 (optional): Use the force</div>
+	</br>
+	Now you have to use what you know about the force of friction and apply Newton’s second law to win the race. Each turn has a section where the heat of the day has caused the pavement to start to melt, as you can see in the illustration below. The coefficient of friction for your tires on these slick sections is 0.75. Your car has better traction everywhere else. The mass of your car is 1724 kg.
+	</br></br>
+	The friction supplies the centripetal force, the force that keeps the car moving around a turn instead of flying off the track along a straight line. By multiplying your car’s centripetal acceleration by its mass, you can determine the centripetal force required to keep the car on the track. (You are applying Newton’s second law, multiplying mass by acceleration to determine force.)
+	</br></br>
+	Since you want to go as fast as possible, determine the maximum frictional force, and from that, determine the maximum speed at which your car can move. Set the speed of your car to that value, or slightly below if necessary, to win the race. You will move at the same speed in this simulation through both turns. You only need to determine the maximum speed for one of the turns, if you pick the right turn. 
+	</br></br>
+	<figure style="padding-top:20px;padding-bottom:10px;">
+		<img class="pExcersiseThumb" src="course/labs/Circular_motion/assets/Ex_08.png" style="width:70%;"/>
+		</br></br>
+		<figcaption style="font-family: AvenirNextLTPro-Demi;">Exercise 8. Navigate the hazards on the curves.</figcaption>
+	</figure>
+	</br></br>
+	<div class="pLabQASection">
+		Calculate your maximum speed and enter it into the simulation. Press GO to see if you both stay on the race track and beat the computer race car.
+		</br></br>
+		Click here to enter the <span class="pExerciseButton" data-href="http://mitrlearning.com/perfection_learning/Labs/1_Using%20one-dimensional%20motion%20equations/3_Acceleration/">Exercise 8 Simulation</span>
+		</br></br>
+		<div class="pLabQuestion">
+			<div class="pLabQNumber">17.</div><div class="pLabQText"> What is the maximum force of friction while the car is on the oil slick?</div><div class="pLabQuestionArrow"></div>
+			<div class="pLabAnswerWrapper">
+				<textarea class="pLabAnswerBox" placeholder="Enter your answer here"></textarea>
+				<div class="pLabSaveButton" style="right: 40px;margin-top: -44px;"></div>
+			</div>
+		</div>
+		<div class="pLabQuestion">
+			<div class="pLabQNumber">18.</div><div class="pLabQText"> Around which turn will the car undergo more centripetal acceleration?</div><div class="pLabQuestionArrow"></div>
+			<div class="pLabAnswerWrapper">
+				<textarea class="pLabAnswerBox" placeholder="Enter your answer here"></textarea>
+				<div class="pLabSaveButton" style="right: 40px;margin-top: -44px;"></div>
+			</div>
+		</div>
+		<div class="pLabQuestion">
+			<div class="pLabQNumber">19.</div><div class="pLabQText"> What is the maximum speed the car can move along the turns?</div><div class="pLabQuestionArrow"></div>
+			<div class="pLabAnswerWrapper">
+				<textarea class="pLabAnswerBox" placeholder="Enter your answer here"></textarea>
+				<div class="pLabSaveButton" style="right: 40px;margin-top: -44px;"></div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="pExerciseContainer">
+	<div class="pExcersiseTitle">Exercise 9 (optional): Race against time</div>
+	</br>
+	In this exercise you will be controlling the car with the arrow keys again, but this time you have to stay on the track. If you stray off, you are on a section where your tires have no traction and you move in a straight line. 
+	</br></br>
+	<figure style="padding-top:20px;padding-bottom:10px;">
+		<img class="pExcersiseThumb" src="course/labs/Circular_motion/assets/Ex_08.png" style="width:70%;"/>
+		</br></br>
+		<figcaption style="font-family: AvenirNextLTPro-Demi;">Exercise 9. Don’t go off the track.</figcaption>
+	</figure>
+	</br></br>
+	<div class="pLabQASection">
+		Now race yourself against time. First try to make it around the track once to the finish line. Then press RESET and try to do it faster if you like. If you are not a computer game aficionado, not to worry − even if you do not complete a lap, if you remember your experience with velocity components, you will have won. 
+		</br></br>
+		Click here to enter the <span class="pExerciseButton" data-href="http://mitrlearning.com/perfection_learning/Labs/1_Using%20one-dimensional%20motion%20equations/3_Acceleration/">Exercise 9 Simulation</span>
+		</br></br>
+	</div>
+</div>

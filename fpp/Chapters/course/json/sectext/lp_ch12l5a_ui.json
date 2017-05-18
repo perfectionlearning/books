@@ -1,0 +1,26 @@
+{
+  "cards": [
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Pressure-volume graphs"
+        },
+        {
+          "type": "headline",
+          "text": "Describe a “path” between states in a cycle"
+        }
+      ]
+    }
+  ],
+  "definitions": [],
+  "secText": [
+    "  <b class=\"object-name\">Supplemental Material: </b>  <span class=\"object-name\">Advanced Topic</span>",
+    "  <b>Essential Question: </b>  <br />How can we analyze pressure-volume graphs of engine cycles for the amount of work done by the system?",
+    "  <b>Enduring Understandings:</b>  <b>    <br />  </b>1. <a class='pjumpToTopic' href='javascript:void(0)' data-chap='12' data-topic='4' data-subtopic='1' data-subsection='0'>Pressure-volume graphs</a> describe the pressure and volume within a system during an engine cycle. The area under the graph is the amount of <a class='pjumpToTopic' href='javascript:void(0)' data-chap='12' data-topic='4' data-subtopic='1' data-subsection='2'>work</a> done by the system.",
+    "  <b>STEM Skills:</b>  <br />1. Analyze <a class='pjumpToTopic' href='javascript:void(0)' data-chap='2' data-topic='0' data-subtopic='2' data-subsection='0'>graphs</a>."
+  ],
+  "objNames": [
+    "wb_PV_graphs_concepts1"
+  ]
+}

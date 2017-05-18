@@ -1,0 +1,36 @@
+{
+  "cards": [
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Match the situation"
+        }
+      ]
+    },
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Drag the vectors"
+        },
+        {
+          "type": "headline",
+          "text": "To create the correct free-body diagram"
+        }
+      ]
+    }
+  ],
+  "definitions": [],
+  "secText": [
+    "Starting in this section, you need <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='wb_math_trig_basics'>trigonometry</a> to solve the problems.  We start you with a problem you may find challenging − if so, <a class='pjumpToTopic' href='javascript:void(0)' data-video='true' data-vref='app_climber_answer'>review</a> the sample problems in the sections ahead.  In particular, the problem involving the crate uses the method we describe below. The key to solving the problem is to note all the forces, separate them into their <i>x</i>- and <i>y</i>-components, and then work with each direction separately.",
+    "You see an illustration of a block that is being pulled up a ramp by a rope in the upper graph. In the simulation, which is launched by the lower graphic in this section, the force vectors on the block are drawn, but they are initially in the wrong directions, have the wrong magnitudes, or both. Your job is to fix the force vectors. If you do this correctly, the block will accelerate up the ramp at a rate of 4.3 m/s<sup class=\"\">2</sup>.",
+    "Determine the directions and calculate (to the nearest newton) the magnitudes of the weight, normal force, and friction force. ",
+    "We strongly recommend using the direction of the ramp as the <i>x</i>-direction and the direction perpendicular to the ramp as the <i>y</i>-direction.  In other words, rotate the axes so the force of the rope is parallel to the <i>x</i>-axis, and the normal force is perpendicular to the <i>y</i>-axis.  Imagine the coordinates being drawn on a clear piece of graph paper, and rotate the paper so the graph axes line up as described. This means that many forces are acting directly along an axis, so their components along the other axis will be zero.  This method is commonly used to solve this type of problem. ",
+    "Drag the head of a vector to set its magnitude and direction. You can also set the magnitudes in the control panel. The vectors will “snap” to angles."
+  ],
+  "objNames": [
+    "wb_Chapter_5_24",
+    "jsact_Chapter_5_24"
+  ]
+}

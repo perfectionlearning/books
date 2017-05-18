@@ -1,0 +1,51 @@
+{
+  "cards": [
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "A force"
+        },
+        {
+          "type": "headline",
+          "text": "Pushing or pulling that can cause acceleration"
+        },
+        {
+          "type": "bullet",
+          "text": "Does <u>not</u> require contact"
+        },
+        {
+          "type": "headline",
+          "text": "Is a vector"
+        },
+        {
+          "type": "headline",
+          "text": "Unit: newton"
+        }
+      ]
+    },
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Newton’s first law"
+        },
+        {
+          "type": "headline",
+          "text": "Objects move at constant velocity unless acted on by a net force"
+        }
+      ]
+    }
+  ],
+  "definitions": [],
+  "secText": [
+    "  <b>Essential Question: </b>  <b>    <br />  </b>How can we define force?",
+    "  <b>Enduring Understandings:</b>  <b>    <br />  </b>1. A <a class='pjumpToTopic' href='javascript:void(0)' data-chap='5' data-topic='0' data-subtopic='1' data-subsection='1'>force</a> causes the acceleration of an object. <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='wb_force_examples'>Examples of forces</a> include friction, gravity, and tension.<br />2. Forces can be added to calculate the <a class='pjumpToTopic' href='javascript:void(0)' data-chap='5' data-topic='0' data-subtopic='2'>net force</a> on an object.<br />3. <a class='pjumpToTopic' href='javascript:void(0)' data-chap='5' data-topic='0' data-subtopic='3' data-subsection='1'>Newton's first law</a> states that an object will continue to move at a constant velocity unless a net force acts upon it.",
+    "  <b>Vocabulary:</b>  <a class='pjumpToTopic' href='javascript:void(0)' data-chap='5' data-topic='0' data-subtopic='1' data-subsection='1'>force</a>, <a class='pjumpToTopic' href='javascript:void(0)' data-chap='5' data-topic='0' data-subtopic='2' data-subsection='0'>net force</a>, <a class='pjumpToTopic' href='javascript:void(0)' data-chap='5' data-topic='0' data-subtopic='3' data-subsection='0'>Sir Isaac Newton</a>, <a class='pjumpToTopic' href='javascript:void(0)' data-chap='5' data-topic='0' data-subtopic='3' data-subsection='1'>Newton's first law</a>",
+    "  <b>STEM Skills:</b>  <b>    <br />  </b>1. Review <a class='pjumpToTopic' href='javascript:void(0)' data-chap='1' data-topic='2' data-subtopic='1'>constant velocity</a>.<b><br /></b>"
+  ],
+  "objNames": [
+    "wb_force_concept",
+    "wb_Newton_first_law_definition"
+  ]
+}

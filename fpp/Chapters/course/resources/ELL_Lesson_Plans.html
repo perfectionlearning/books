@@ -1,0 +1,96 @@
+
+<style type='text/css'>
+
+
+#hyperlink3
+{
+	display: inline-block;
+	margin-top:2%;
+}
+.std_act_wrap {
+    display: inline-block;
+    text-align: left;
+    clear: both;
+    float: left;
+}
+
+
+.std_act_link
+{
+display:inline-block;
+text-align:center;
+color:#2B99BA;
+cursor: pointer;
+}
+
+.std_act_link.pHover
+{
+    text-decoration:underline;
+}
+
+.std_act_link.pDown
+{
+    text-decoration:underline;
+}
+
+.txt_bold
+{
+	font-weight:bold;
+}
+</style>
+
+
+<div style="position:relative;text-align:center;margin-bottom:10px;"><img src="assets\images\fpp_logo.gif"></div>
+<div style="position:relative;margin:auto;border:2px ;text-align: center;   width: 100%;line-height:1.7">
+
+    <div style="position:relative;margin-bottom:10px;text-align:center;">ELL Lesson Plans</div>
+    <div style="position:relative;text-align:center;color:#2B99BA; "><b>Table of Contents</b></div>
+    <div id="hyperlink3"  style="position:relative;">
+
+        <div class="std_act_wrap"><b>Chapter 1: </b><div class="std_act_link" >One-dimensional Motion</div></div>
+        <div class="std_act_wrap"><b>Chapter 2: </b><div class="std_act_link" > Analyzing 1-D Motion</div></div>
+        <div class="std_act_wrap"><b>Chapter 3: </b><div class="std_act_link" > Physics and Science Essentials</div></div>
+        <div class="std_act_wrap"><b>Chapter 4: </b><div class="std_act_link" >Two-dimensional Motion </div></div>
+        <div class="std_act_wrap"><b>Chapter 5: </b><div class="std_act_link" >Force </div></div>
+        <div class="std_act_wrap"><b>Chapter 6: </b><div class="std_act_link" >Work, Energy and Power</div></div>
+        <div class="std_act_wrap"><b>Chapter 7: </b><div class="std_act_link" >Momentum </div></div>
+        <div class="std_act_wrap"><b>Chapter 8: </b><div class="std_act_link" >Circular Motion and Gravity </div></div>
+        <div class="std_act_wrap"><b>Chapter 9: </b><div class="std_act_link" >Rotational Motion</div></div>
+        <div class="std_act_wrap"><b>Chapter 10: </b><div class="std_act_link" >Fluids</div></div>
+        <div class="std_act_wrap"><b>Chapter 11: </b><div class="std_act_link" >Temperature and Heat</div></div>
+        <div class="std_act_wrap"><b>Chapter 12: </b><div class="std_act_link" >Thermodynamics and Engines</div></div>
+        <div class="std_act_wrap"><b>Chapter 13: </b><div class="std_act_link" >SHM and Waves</div></div>
+        <div class="std_act_wrap"><b>Chapter 14: </b><div class="std_act_link" >Sound </div></div>
+        <div class="std_act_wrap"><b>Chapter 15: </b><div class="std_act_link" >Electric Charge </div></div>
+        <div class="std_act_wrap"><b>Chapter 16: </b><div class="std_act_link" >Electric Circuits </div></div>
+        <div class="std_act_wrap"><b>Chapter 17: </b><div class="std_act_link" >Magnets and Charge</div></div>
+        <div class="std_act_wrap"><b>Chapter 18: </b><div class="std_act_link" >Interference and Diffraction </div></div>
+        <div class="std_act_wrap"><b>Chapter 19: </b><div class="std_act_link" >Light </div></div>
+        <div class="std_act_wrap"><b>Chapter 20: </b><div class="std_act_link" >Reflection</div></div>
+        <div class="std_act_wrap"><b>Chapter 21: </b><div class="std_act_link" >Refraction and Lenses</div></div>
+        <div class="std_act_wrap"><b>Chapter 22: </b><div class="std_act_link" >Nuclear Physics</div></div>
+        <div class="std_act_wrap"><b>Chapter 23: </b><div class="std_act_link" >Quantum Physics</div></div>
+        <div class="std_act_wrap" style="margin-bottom:10%"><b>Chapter 24: </b><div class="std_act_link"> Advances in Physics</div></div>
+
+    </div>
+</div>
+
+<script>
+
+
+
+
+function std_act_link()
+{
+	$(".std_act_link").each(function(i){
+	
+		$($(".std_act_link")[i]).attr('data-href','assets\\lessonplans\\lesson_phys'+(i+1)+'.html');
+	})
+}
+
+
+std_act_link()
+</script>
+
+
+

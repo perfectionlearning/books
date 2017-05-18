@@ -1,0 +1,49 @@
+{
+  "cards": [
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "“Rainbow” in thin films"
+        },
+        {
+          "type": "headline",
+          "text": "Caused by interference"
+        }
+      ]
+    },
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Interference “rainbow” caused by:"
+        },
+        {
+          "type": "headline",
+          "text": "Change of phase on first reflection"
+        },
+        {
+          "type": "headline",
+          "text": "Difference in travel distance of waves"
+        },
+        {
+          "type": "headline",
+          "text": "Varying thickness of film"
+        }
+      ]
+    }
+  ],
+  "definitions": [],
+  "secText": [
+    "In materials from soap bubbles to butterfly wings to <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='wb_interference_water_peacock'>peacock feathers</a>, we frequently witness the results of thin-film interference. ",
+    "In the photograph, you see the rainbowlike effect that occurs with bubbles and other thin films, which arises from thin-film interference.",
+    "In the lower diagram, we show why the interference occurs.  We start with a single incoming ray  from the upper left. It travels through air and reaches the top surface of the film, where it reflects and refracts. <span class=\"math\">Ray 1</span> is the reflected ray. This reflected light will change phase by 180°, since the second medium has a higher index of refraction than the first. ",
+    "Some of the light refracts into the film and reflects off the bottom surface. When this ray, Ray 2, reflects, it does not change phase because at the lower interface, it is striking a medium that has a lower index of refraction. Ray 2 travels back up through the film, refracts at the top surface, and emerges parallel to Ray 1.",
+    "You see that Ray 2 travels farther than Ray 1 by about twice the thickness of the film. The differing reflection behaviors and the differing path lengths combine to cause a phase difference between the two rays as they reflect back.",
+    "So why do you see soap-bubble “rainbows”? A soap bubble’s thickness varies, so some colors experience constructive interference in a particular region of the bubble, and you see those colors. Other colors experience destructive interference there, and you do not see them in that region."
+  ],
+  "objNames": [
+    "wb_thin_film_1",
+    "wb_thin_film_2"
+  ]
+}

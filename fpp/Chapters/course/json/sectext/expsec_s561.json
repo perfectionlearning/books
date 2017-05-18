@@ -1,0 +1,52 @@
+{
+  "cards": [
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "How speed of radio waves was measured"
+        },
+        {
+          "type": "headline",
+          "text": "Wavelength measured by interference"
+        },
+        {
+          "type": "headline",
+          "text": "Equipment setup determined frequency"
+        },
+        {
+          "type": "headline",
+          "text": "Speed equals product of wavelength, frequency"
+        }
+      ]
+    },
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Speed was consistent with speed of light"
+        },
+        {
+          "type": "headline",
+          "text": "Provided evidence that radio signal and light were two forms of same phenomenon"
+        },
+        {
+          "type": "bullet",
+          "text": "Both are electromagnetic radiation"
+        }
+      ]
+    }
+  ],
+  "definitions": [],
+  "secText": [
+    "In 1887, the German scientist Heinrich Hertz created the first radio waves and measured their speed.",
+    "To calculate their speed, Hertz used the <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='wb_wave_speed_equation'>equation</a> that a wave’s speed equals the product of its frequency and wavelength. He set about measuring the wavelength of his radio signal while using his equipment to control the frequency.",
+    "Hertz also knew that the wave would first <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='wb_destructive'>destructively interfere</a> − cancel out − when the sources of the waves were half a wavelength apart, so he set up his equipment so the waves that were generated cancelled. He doubled that distance, and calculated the signal’s wavelength.  (If you remember that the wavelength of a radio signal is on the order of meters, this part of the experiment was not as difficult to conduct as it may sound.)",
+    "Hertz could configure his transmitter so that he knew its broadcast frequency.  (We will skip the details of how he did this.)  With frequency and wavelength both known, now it was just multiplication.  Hertz multiplied the wavelength by frequency, and he had the speed of his radio broadcast.",
+    "Hertz’s experiment also provided evidence in another debate. His value for the speed for radio signals equaled the measured speed of light.  Although this similarity in speed was not proof, it was more support for the hypothesis that the light and radio signals were two forms of the same phenomenon, what we now call electromagnetic radiation."
+  ],
+  "objNames": [
+    "wb_radio_wave_speed1",
+    "wb_radio_speed2"
+  ]
+}

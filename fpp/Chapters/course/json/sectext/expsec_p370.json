@@ -1,0 +1,48 @@
+{
+  "cards": [
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Circuit energy analysis"
+        },
+        {
+          "type": "headline",
+          "text": "  <i>PE</i> of charge is unchanged after any complete loop"
+        },
+        {
+          "type": "bullet",
+          "text": "Energy increase in battery equals"
+        },
+        {
+          "type": "bullet",
+          "text": "Energy decrease in resistor"
+        }
+      ]
+    },
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Electric potential changes in circuit"
+        },
+        {
+          "type": "headline",
+          "text": "Potential changes around circuit sum to zero"
+        }
+      ]
+    }
+  ],
+  "definitions": [],
+  "secText": [
+    "Energy conservation plays a key role in understanding circuits.  The electric potential energy of charge in a circuit is unchanged, or conserved, when it makes a complete loop.",
+    "We document the energy changes of a positive charge as it completes a circuit in the first diagram. Although the charge’s potential energy rises and falls as it moves, it ends with the same potential energy<i></i>it started with. We use a 0.5-C positive charge that is moving clockwise and calculate its change in <i>PE</i>.",
+    "We discuss the charge’s changes in energy as it moves from the negative terminal to the positive terminal. It takes <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='wb_electric_potential_energy_eq'>work</a> by the battery to move the positive charge toward the positive terminal. The <i>PE</i> of the charge increases by 0.75 J. The change in <i>PE</i> equals the product of the charge and emf of the battery. ",
+    "As the positive charge returns to where it started, its potential energy decreases by 0.75 J as it passes through the resistor. Overall, its <i>PE</i> is unchanged. Consider it like a round-trip hike in the woods: your gravitational <i>PE</i> is the same at the start and end of the hike.",
+    "It is not a coincidence that the changes in electric potential around a complete circuit also sum to zero. Choosing a clockwise path, the electric potential increases by 1.5 V across the battery and decreases by 1.5 V across the resistor in the second diagram. Why? The <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='wb_electric_potential_eq'>electric potential</a> equals the change in <i>PE</i> divided by the amount of the charge. We discussed earlier how the <i>PE</i> is unchanged after a loop, and the charge is constant. This means the potential changes also sum to zero."
+  ],
+  "objNames": [
+    "wb_PE_circuit_concepts1",
+    "wb_PE_circuit_concepts2"
+  ]
+}

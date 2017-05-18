@@ -1,0 +1,23 @@
+{
+  "cards": [
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Drive in two dimensions"
+        }
+      ]
+    }
+  ],
+  "definitions": [],
+  "secText": [
+    "When you click on the graphic on the left, you drive a car around a city. This activity marks your start to physics in two dimensions.  ",
+    "You control the car using the arrow keys.  The up and down keys control your speed − up is your accelerator, and down is your brake.  (It’s sort of a funny brake − if you press it long enough, then you will go in the opposite direction…).  The left and right arrow keys turn the car left and right.  ",
+    "The gauges are as important as the steering wheel.  Your car has velocity gauges for motion in each direction − along the <br><i>x</i>-axis and the <i>y</i>-axis.  ",
+    "You start at the origin, 0 X-street and 0 Y-avenue.  As you drive, you will see the X-street and Y-avenue numbers change as they would on a standard coordinate graph. ",
+    "A few questions:  If you move directly along a Y-avenue, what is your <i>x</i>-velocity?  your <i>y</i>-velocity?  Also answer these questions for motion directly along an X-street.  How about your speed when you are moving around a curve − does it equal the sum of the velocity vectors, or something else? "
+  ],
+  "objNames": [
+    "unityact_disp2d_v1"
+  ]
+}

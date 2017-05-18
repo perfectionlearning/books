@@ -1,0 +1,56 @@
+{
+  "cards": [
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Angular position"
+        },
+        {
+          "type": "headline",
+          "text": "Is measured in radians"
+        },
+        {
+          "type": "bullet",
+          "text": "Counterclockwise rotation: positive"
+        },
+        {
+          "type": "bullet",
+          "text": "Clockwise rotation: negative"
+        }
+      ]
+    },
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Angular displacement"
+        },
+        {
+          "type": "headline",
+          "text": "Change in angular position"
+        },
+        {
+          "type": "headline",
+          "text": "Counterclockwise rotation is positive"
+        },
+        {
+          "type": "headline",
+          "text": "Clockwise rotation is negative"
+        }
+      ]
+    }
+  ],
+  "definitions": [],
+  "secText": [
+    "  <b class=\"object-name\">Supplemental Material: </b>  <span class=\"object-name\">Advanced Topic</span>",
+    "  <b>Essential Question: </b>  <b>    <br />  </b>How can we calculate rotational motion?",
+    "  <b>Enduring Understandings:</b>  <b>    <br />  </b>1. <a class='pjumpToTopic' href='javascript:void(0)' data-chap='9' data-topic='1' data-subtopic='1' data-subsection='0'>Angular position</a> is calculated by measuring the arc length divided by the radius. It is measured in radians. Counterclockwise rotation is positive, while clockwise rotation is negative.<br />2. <a class='pjumpToTopic' href='javascript:void(0)'  data-chap='9' data-topic='1' data-subtopic='2' data-subsection='0'>Angular displacement</a> is the change in angular position. It is calculated by subtracting the initial angular position from the final angular position. It is measured in radians.<br />3. <a class='pjumpToTopic' href='javascript:void(0)'  data-chap='9' data-topic='1' data-subtopic='3' data-subsection='0'>Angular velocity</a> is the angular displacement per elapsed time. It is measured in radians per second.<br />4. The <a class='pjumpToTopic' href='javascript:void(0)'  data-chap='9' data-topic='1' data-subtopic='4' data-subsection='0'>angular acceleration</a> is the change in angular velocity per the elapsed time. It is measured in radians per second squared.",
+    "  <b>Vocabulary:</b>  <a class='pjumpToTopic' href='javascript:void(0)' data-chap='9' data-topic='1' data-subtopic='1' data-subsection='0'>angular position</a>, <a class='pjumpToTopic' href='javascript:void(0)' data-chap='9' data-topic='1' data-subtopic='2' data-subsection='0'>angular displacement</a>, <a class='pjumpToTopic' href='javascript:void(0)' data-chap='9' data-topic='1' data-subtopic='3' data-subsection='0'>angular velocity</a>, <a class='pjumpToTopic' href='javascript:void(0)' data-chap='9' data-topic='1' data-subtopic='4' data-subsection='0'>angular acceleration</a>",
+    "  <b>STEM Skills:</b>  <b>    <br />  </b>1. Review <a class='pjumpToTopic' href='javascript:void(0)' data-chap='9' data-topic='0' data-subtopic='2' data-subsection='0'>radians</a>."
+  ],
+  "objNames": [
+    "wb_angular_rotation_concept",
+    "wb_angular_position_concept"
+  ]
+}

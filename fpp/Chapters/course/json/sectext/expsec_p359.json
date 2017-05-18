@@ -1,0 +1,56 @@
+{
+  "cards": [
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Resistivity"
+        },
+        {
+          "type": "headline",
+          "text": "A material’s opposition to current flow"
+        },
+        {
+          "type": "bullet",
+          "text": "Conductors have low resistivity"
+        },
+        {
+          "type": "bullet",
+          "text": "Insulators have high resistivity"
+        }
+      ]
+    },
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Resistance of bar/wire"
+        },
+        {
+          "type": "headline",
+          "text": "  <math>    <mrow>      <mi>R</mi>      <mo>=</mo>      <mi>ρ</mi>      <mfrac linethickness=\"thin\">        <mi>L</mi>        <mi>A</mi>      </mfrac>    </mrow>  </math>"
+        },
+        {
+          "type": "headline",
+          "text": "  <span class=\"math\">    <i>R</i> = resistance</span> of component,  <span class=\"math\"><i>ρ</i> = resistivity </span>of material, <span class=\"math\"><i>L</i> = length </span>of component, <span class=\"math\"><i>A</i> = cross-</span>sectional area"
+        }
+      ]
+    }
+  ],
+  "definitions": [
+    {
+      "term": "Resistivity",
+      "def": "How much a material opposes the flow of a current."
+    }
+  ],
+  "secText": [
+    "Resistance measures a <b>component’s</b> opposition to current flow.  Resistivity measures the opposition to current flow of a <b>particular </b><b>material</b>.   ",
+    "Resistivity is the inverse of conductivity, how easily current flows through a material. Typical conductors, such as copper, have low resistivity. Insulators, such as rubber or glass, have high resistivity. ",
+    "The resistance of a component is a function of its geometry as well as the resistivity of the material from which it is made. ",
+    "The equation lets you see how geometry and resistivity determine resistance.  For instance, the equation reflects that a short, fat resistor will have less resistance than a long, thin one.  And for a particular shape, the resistance will be less if it is made from a good conductor, such as copper.  "
+  ],
+  "objNames": [
+    "wb_resistivity_concepts",
+    "wb_resistance_components"
+  ]
+}

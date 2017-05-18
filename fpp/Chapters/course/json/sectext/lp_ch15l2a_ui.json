@@ -1,0 +1,51 @@
+{
+  "cards": [
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Electric force attracts or repels"
+        },
+        {
+          "type": "headline",
+          "text": "Opposites attract"
+        },
+        {
+          "type": "headline",
+          "text": "Likes repel"
+        }
+      ]
+    },
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Coulomb’s law"
+        },
+        {
+          "type": "headline",
+          "text": "Unit: newton"
+        },
+        {
+          "type": "headline",
+          "text": "  <i>k</i> = Coulomb’s constant"
+        },
+        {
+          "type": "headline",
+          "text": "  <i>k </i>= 8.99 × 10<sup class=\"\">9</sup> newton  · meter<sup class=\"\">2</sup> / C<sup class=\"\">2</sup>"
+        }
+      ]
+    }
+  ],
+  "definitions": [],
+  "secText": [
+    "  <b>Essential Question: </b>  <b>    <br />  </b>How can we calculate the force between charged particles?",
+    "  <b>Enduring Understandings:</b>  <b>    <br />  </b>1. The <a class='pjumpToTopic' href='javascript:void(0)' data-chap='15' data-topic='1' data-subtopic='1' data-subsection='2'>electric force</a> is the attraction or repulsion between charged particles. Like charges repel, while opposite charges attract. <br />2. <a class='pjumpToTopic' href='javascript:void(0)' data-chap='15' data-topic='1' data-subtopic='2' data-subsection='0'>Coulomb's law</a> calculates the force between two charged particles. To find the electric force, multiply Coulomb's constant by the charge of particle 1 by the charge of particle 2 divided by the square of the distance between the charged particles.",
+    "  <b>Vocabulary:</b>  <a class='pjumpToTopic' href='javascript:void(0)' data-chap='15' data-topic='1' data-subtopic='1' data-subsection='2'>electric force</a>, <a class='pjumpToTopic' href='javascript:void(0)' data-chap='15' data-topic='1' data-subtopic='2' data-subsection='0'>Coulomb’s law</a>",
+    "  <b>STEM Skills:</b>  <b>    <br />  </b>1. Review <a class='pjumpToTopic' href='javascript:void(0)' data-chap='5' data-topic='0' data-subtopic='1' data-subsection='1'>force</a>.<br />2. Review <a class='pjumpToTopic' href='javascript:void(0)' data-chap='8' data-topic='2' data-subtopic='1' data-subsection='1'>Newton's law of gravity</a>."
+  ],
+  "objNames": [
+    "wb_electrostatic_forces_concepts2",
+    "wb_electrostatic_force_equation"
+  ]
+}

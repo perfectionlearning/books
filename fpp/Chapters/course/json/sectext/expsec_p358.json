@@ -1,0 +1,49 @@
+{
+  "cards": [
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Current equals"
+        },
+        {
+          "type": "headline",
+          "text": "Potential difference divided by resistance"
+        }
+      ]
+    },
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Ohm’s law"
+        },
+        {
+          "type": "headline",
+          "text": "  <span class=\"math\">    <i>I</i> = current,</span>  <span class=\"math\">    <span class=\"Symbols\">∆</span>    <i>V</i> = potential difference,</span> </br> <span class=\"math\">    <i>R</i> = resistance</span>"
+        },
+        {
+          "type": "headline",
+          "text": "Resistance unit: ohm (Ω)"
+        }
+      ]
+    }
+  ],
+  "definitions": [
+    {
+      "term": "Ohm’s law",
+      "def": "The current in a conductor equals the potential difference divided by the resistance."
+    }
+  ],
+  "secText": [
+    "Potential difference determines amount of “the pull” that the electric charges that make up a current will experience. The potential difference divided by the resistance equals the current.  The greater the resistance, the smaller the current.",
+    "Ohm’s law states the relationship between current, potential difference, and resistance. The current through a conductor increases with the potential difference across the two endpoints of the conductor and decreases with the conductor’s resistance.",
+    "This law holds true, and the resistance remains constant, for materials that are called “ohmic.” Very important substances, like semiconductors, are non-ohmic. ",
+    "The unit for resistance is the ohm.  It is represented by the capital Greek letter omega, Ω. ",
+    "Ohm’s law is used often, so we also solve the equation for the potential difference and the resistance.  "
+  ],
+  "objNames": [
+    "wb_resistance_concepts",
+    "wb_ohm_equation"
+  ]
+}

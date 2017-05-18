@@ -1,0 +1,28 @@
+{
+  "cards": [
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Magnetic flux at an angle"
+        },
+        {
+          "type": "headline",
+          "text": "  <i>Φ</i>  <sub class=\"\">B</sub> = <i>BA</i> cos <i><math xmlns:xsl=\"http://www.w3.org/1999/XSL/Transform\"><mi>θ</mi></math></i>"
+        },
+        {
+          "type": "headline",
+          "text": "  <span class=\"math\">    <i>Φ</i>    <sub>B</sub> = magnetic flux,</span>  <span class=\"math\">    <i>B</i> = magnetic field,</span> </br>  <span class=\"math\">    <i>A</i> = area vector,</span>  <span class=\"math\">    <i>      <math xmlns:xsl=\"http://www.w3.org/1999/XSL/Transform\">        <mi>θ</mi>      </math>    </i> = angle between <i>B</i> and <i>A</i></span>"
+        }
+      ]
+    }
+  ],
+  "definitions": [],
+  "secText": [
+    "The magnetic flux is the product of the magnetic field with the area of the surface and the cosine of the angle between the field and area vectors. The area vector is perpendicular to the surface of the area, and its length is proportional to the surface area. ",
+    "The cosine of the angle between these vectors computes the field that is perpendicular to the surface area (and parallel to the area vector).  If the two vectors are parallel, then the cosine equals 1, the field lines are passing through the surface perpendicularly, and the expression for the flux simplifies to <i>BA</i>.  If they are perpendicular, the cosine equals 0, no field lines pass through the surface, and the flux is zero."
+  ],
+  "objNames": [
+    "wb_trig_flux"
+  ]
+}

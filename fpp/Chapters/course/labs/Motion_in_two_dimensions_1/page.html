@@ -1,0 +1,571 @@
+<div class="pLabPageIntro">
+	Artillery has a proud history. Napoleon and Harry Truman labored in the artillery before going on to lead their countries.
+	</br></br>
+	Being an officer in the artillery is hard work. Aiming a cannon requires a detailed understanding of <b>projectile motion</b>.
+	</br></br>
+	In this lab, you will use <b>trigonometry</b>, <b>vectors</b> and fundamental <b>motion equations</b> to aim a cannon. Master these skills and destroy the enemy castle before its cannon destroys yours!
+	</br></br>
+	<span style='font-weight:bold;line-height: 22px;'>
+		You will learn:
+		<ul style='list-style-type:disc;padding-left: 18px;'>
+			<i><li>The principles of projectile motion</li>
+			<li>How velocity can be analyzed as separate vertical and horizontal components</li>
+			<li>How to determine the range of a projectile</li></i>
+		</ul>
+	</span>
+	
+</div>
+<div class="pExerciseContainer">
+	<div class="pExcersiseTitle">Exercise 1: Tower height</div>
+	Your cannon rests on top of a castle tower, as shown in the picture below.
+	<figure style="padding-top:20px;padding-bottom:10px;">
+		<img class="pExcersiseThumb" src="course/labs/Motion_in_two_dimensions_1/assets/Ex_01_Tower height_1.png" style="width:70%;"/>
+		</br></br>
+		<figcaption style="font-family: AvenirNextLTPro-Demi;">Exercise 1. Use the cannonball to determine the height of the tower.</figcaption>
+	</figure>
+	You would like to know the height of your tower. Your challenge is to use the cannonball and a stopwatch to determine the tower’s height.
+	</br></br>
+	You can drop the cannonball straight down from the top of the tower. Using a stopwatch, can you think of a brief experiment to determine the height of the tower?
+	</br></br>
+	<div style="padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    background: #cccccc;
+    margin-left: 20px;
+    width: 280px;
+    margin-bottom: 15px;">
+		<b><i>v</i><sub>f</sub> = <i>v</i><sub>i</sub> + <i>at</i>
+		</br>
+		Δ<i>y</i> = <i>v</i><sub>i</sub><i>t</i> + ½ <i>at</i><sup>2</sup>
+		</br>
+		<i>v</i><sub>f</sub><sup>2</sup> = <i>v</i><sub>i</sub><sup>2</sup> + 2<i>a</i>Δ<i>y</i>
+		</br>
+		Δ<i>y</i> = ½ (<i>v</i><sub>i</sub> + <i>v</i><sub>f</sub>)<i>t</i></b>
+		</br>
+		</br>
+
+
+		<i>a</i> = −9.80 m/s<sup>2</sup>
+		</br>
+		Δ<i>y</i> = vertical displacement
+		</br>
+		<i>v</i><sub>i</sub> = initial velocity
+		</br>
+		<i>v</i><sub>f</sub> = final velocity
+		</br>
+		<i>t</i> = elapsed time
+	</div>
+	You may need to use one of the equations above, which describe one-dimensional motion with constant acceleration.
+	</br></br>
+	In applying these equations to this exercise, a is the rate of acceleration due to gravity. It is the constant rate at which objects accelerate near the Earth’s surface. Because the motion is in the vertical direction, we use Δ<i>y</i> to represent displacement. 
+	</br></br>
+	The acceleration a is given as a negative number because we use the convention that downward displacement is negative and upward displacement is positive. 
+	</br></br>
+	Throughout this lab, the effect of air resistance is ignored. 
+	<div class="pLabQASection">
+		<div class="pLabQuestion">
+			<div class="pLabQNumber">1.</div><div class="pLabQText">In a sentence or two, describe your proposed experiment for determining the height of the tower.</div><div class="pLabQuestionArrow"></div>
+			<div class="pLabAnswerWrapper">
+				<textarea class="pLabAnswerBox" placeholder="Enter your answer here"></textarea>
+				<div class="pLabSaveButton" style="right: 40px;margin-top: -44px;"></div>
+			</div>
+		</div>
+		Try your experiment in the simulation.
+		</br></br>
+		Once you open the simulation, you can start the action by pressing FIRE. The cannonball will drop straight down.
+		</br></br>
+		When you press FIRE, the stopwatch will start automatically. The stopwatch will stop automatically when the cannonball hits the ground. Note how long it takes for the cannonball to hit the ground.
+		</br></br>
+		The simulation also contains gauges that show the cannonball’s velocity and acceleration at every instant. These gauges will be used more in later exercises, and we will explain them in more depth then. For ease in taking data, these gauges also stop automatically when the cannonball hits the ground. You can also pause the simulation at any time by pressing PAUSE. 
+		</br></br>
+		When you are done, close the simulation and return here to record your answers.
+		</br></br>
+		Click here to open the <span class="pExerciseButton" data-href="http://mitrlearning.com/perfection_learning/Labs/1_Using%20one-dimensional%20motion%20equations/1_Intro%20to%20Skee-Ball/">Exercise 1 Simulation</span>
+		</br></br>
+		<div class="pLabQuestion">
+			<div class="pLabQNumber">2.</div><div class="pLabQText">How long does it take for the cannonball to reach the ground?</div><div class="pLabQuestionArrow"></div>
+			<div class="pLabAnswerWrapper">
+				<textarea class="pLabAnswerBox" placeholder="Enter your answer here"></textarea>
+				<div class="pLabSaveButton" style="right: 40px;margin-top: -44px;"></div>
+			</div>
+		</div>
+		<div class="pLabQuestion">
+			<div class="pLabQNumber" >3.</div><div class="pLabQText" >The acceleration due to gravity is −9.80 m/s<sup style= "vertical-align: top; position: relative; top: -0.5em;">2</sup>. &nbsp What is the height of the tower, in meters? </div><div class="pLabQuestionArrow"></div>
+			<div class="pLabAnswerWrapper">
+				<textarea class="pLabAnswerBox" placeholder="Enter your answer here"></textarea>
+				<div class="pLabSaveButton" style="right: 40px;margin-top: -44px;"></div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="pExerciseContainer">
+	<div class="pExcersiseTitle">Exercise 2: Firing a cannon horizontally</div>
+	You can analyze the <b>velocity</b> of the cannonball you dropped in Exercise 1 in terms of its horizontal and vertical components. 
+	</br></br>
+	The cannon gave the cannonball zero horizontal velocity, which is why the cannonball dropped straight down.
+	</br></br>
+	The cannonball also had zero initial vertical velocity, but the magnitude of the vertical velocity increased as the ball fell.
+	</br></br>
+	The cannonball’s <b>acceleration</b> had horizontal and vertical components, too. It had zero horizontal acceleration (which, combined with zero horizontal velocity, explains why the cannon is not yet particularly useful, except for “welcoming” uninvited guests at the front door). 
+	</br></br>
+	The cannonball did have a vertical acceleration: It accelerated in the negative direction, toward the ground, at </br>a = −9.80 m/s<sup>2</sup>. The cannonball’s vertical acceleration was constant. 
+	</br></br>
+	The acceleration and velocity gauges in this lab are divided into vertical and horizontal components to help demonstrate these points. You can observe the vertical and horizontal velocity components as they change, or stay constant, over time. 
+	</br></br>
+	Now you get to fire a more useful cannon − one that supplies an initial horizontal velocity to the cannonball. Your goal is to hit the haystack at the 50-meter mark, as shown in the picture below.
+	</br></br>
+	<figure style="padding-top:20px;padding-bottom:10px;">
+		<img class="pExcersiseThumb" src="course/labs/Motion_in_two_dimensions_1/assets/Ex_02_Firing a cannon horizontally_1.png" style="width:70%;"/>
+		</br></br>
+		<figcaption style="font-family: AvenirNextLTPro-Demi;">Exercise 2. Choose the firing velocity to hit the haystack.</figcaption>
+	</figure>
+	Firing horizontally means that you set the cannon’s initial horizontal velocity. The cannonball will have zero vertical velocity when it leaves the mouth of the cannon. 
+	<div class="pLabQASection">
+		Try to hit the haystack. In addition to adjusting the velocity, take note of how long it takes for each cannon shot to hit the ground. Be prepared to answer the two questions below (you may want to look at them before you open the simulation). 
+		</br></br>
+		You set the horizontal firing velocity of the cannon by dragging the arrow (the vector) that emanates from the cannon’s mouth. You can fine-tune the firing velocity by clicking on the up and down buttons in the control panel. 
+		</br></br>
+		As before, press the FIRE button to shoot the cannon. You can shoot as many times as you like.
+		</br></br>
+		Try a range of firing velocities, and for each shot note how long it takes for the ball to hit the ground. Also keep an eye on the vertical velocity and acceleration of your cannon shots. Do they change based on the horizontal velocity? 
+		</br></br>
+		When you are done, return here to answer the questions below.
+		</br></br>
+		Click here to enter the <span class="pExerciseButton" data-href="http://mitrlearning.com/perfection_learning/Labs/1_Using%20one-dimensional%20motion%20equations/2A_Velocity/">Exercise 2 Simulation</span>
+		</br></br>
+		<div class="pLabQuestion">
+			<div class="pLabQNumber">4.</div><div class="pLabQText">Does the horizontal firing velocity of the cannon affect how long it takes for each cannon shot to hit the ground? Explain your finding, referring to the component nature of velocity and acceleration.  </div><div class="pLabQuestionArrow"></div>
+			<div class="pLabAnswerWrapper">
+				<textarea class="pLabAnswerBox" placeholder="Enter your answer here"></textarea>
+				<div class="pLabSaveButton" style="right: 40px;margin-top: -44px;"></div>
+			</div>
+		</div>
+		<div class="pLabQuestion">
+			<div class="pLabQNumber">5.</div><div class="pLabQText">Does the horizontal velocity affect the vertical velocity of the cannonball? The vertical acceleration of the cannonball? Explain. </div><div class="pLabQuestionArrow"></div>
+			<div class="pLabAnswerWrapper">
+				<textarea class="pLabAnswerBox" placeholder="Enter your answer here"></textarea>
+				<div class="pLabSaveButton" style="right: 40px;margin-top: -44px;"></div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="pExerciseContainer">
+	<div class="pExcersiseTitle">Exercise 3: Blast away!</div>
+	Test your physics skills by firing against an opponent (such as a classmate), or by taking on the computer.
+	</br></br>
+	In this section, you must use your physics knowledge to calculate how to hit the opposing targets. As in Exercise 2, your cannon fires horizontally and you control only that velocity component. Your challenge is to calculate which firing velocity will hit the opponents’ targets before the opposing player, or the computer, destroys yours. 
+	</br></br>
+	<figure style="padding-top:20px;padding-bottom:10px;">
+		<img class="pExcersiseThumb" src="course/labs/Motion_in_two_dimensions_1/assets/Ex_03_Blast away_1.png" style="width:70%;"/>
+		</br></br>
+		<figcaption style="font-family: AvenirNextLTPro-Demi;">Exercise 3. Hit the opposing flag and drop a shot through the castle door.</figcaption>
+	</figure>
+	When calculating how to hit a target, it is helpful to think about what information you have at your disposal:
+	</br></br>
+	<ul style='list-style-type:disc;padding-left: 18px;'>
+		<li>
+		By looking at the distance scale, you know exactly where the targets lie along the x axis from the mouth of your cannon atop the tower. In the diagram above, the blue cannon on the left is trying to hit the red flag located 45 m away. The location of the flag will change when you restart the game. The other goal is to fire a cannonball through the door opening by aiming at the point 105 meters away. 
+		</li>
+		</br>
+		<li>
+		You know how much time it will take any cannonball to hit the ground (by observation from Exercises 1 and 2). The two towers are the same height. 
+		</li>
+	</ul>
+	</br>
+	Your challenge is to fire the cannonball with a velocity that will cause it to fly the horizontal displacement to a target in the time that it also drops vertically to the ground. 
+	</br></br>
+	You know how long it will take the cannonball to reach the ground, and how far away the targets are in the horizontal dimension. If you know displacement and time, can you determine velocity? The answer is yes! 
+	<div class="pLabQASection">
+		Test yourself in the simulation. You rule the blue-flagged castle and control the cannon on top of it. You can set the horizontal velocity of the cannonball by dragging the head of the vector arrow emanating from the cannon’s mouth, or by clicking the up and down buttons in the control panel. 
+		</br></br>
+		Either the computer or a classmate will run the cannon on top of the red-flagged castle. Whoever hits all the opposing targets first wins the game. The computer hits a target about two out of three times it fires. 
+		</br></br>
+		Each side is trying to hit two targets. The positions of these targets on the horizontal axis are marked by the triangle locaters that appear beneath the number line. 
+		</br></br>
+		If you guess − if you do not use your physics knowledge − you may lose.
+		</br></br>
+		When you open the simulation, choose either PLAY COMPUTER or PLAY CLASSMATE. You may play as many times as you wish by pressing PLAY AGAIN. If you want to start over, press RESET. 
+		</br></br>
+		Click here to enter the <span class="pExerciseButton" data-href="http://mitrlearning.com/perfection_learning/Labs/1_Using%20one-dimensional%20motion%20equations/3_Acceleration/">Exercise 3 Simulation</span>
+	</div>
+</div>
+
+<div class="pExerciseContainer">
+	<div class="pExcersiseTitle">Exercise 4: Fire straight up </div>
+	In this exercise, you are starting your next stage of artillery training: shooting with a vertical velocity component. Your castle-top cannon has run out of cannonballs, and a battering ram is advancing to destroy your castle! 
+	</br></br>
+	Fortunately, you have another cannon on the ground, pointed straight up. If you can fire cannonballs to the top of the tower so that they arrive there with zero velocity, the gunner at the top can catch them and use them to fend off the advancing battering ram.  
+	</br></br>
+	<figure style="padding-top:20px;padding-bottom:10px;">
+		<img class="pExcersiseThumb" src="course/labs/Motion_in_two_dimensions_1/assets/Ex_04_Fire straight up_1.png" style="width:70%;"/>
+		</br></br>
+		<figcaption style="font-family: AvenirNextLTPro-Demi;">Exercise 4. Shoot the cannonball so it reaches the tower top with zero velocity.</figcaption>
+	</figure>
+	<div style="padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    background: #cccccc;
+    margin-left: 20px;
+    width: 280px;
+    margin-bottom: 15px;">
+		<b><i>v</i><sub>f</sub> = <i>v</i><sub>i</sub> + <i>at</i>
+		</br>
+		Δ<i>y</i> = <i>v</i><sub>i</sub><i>t</i> + ½ <i>at</i><sup>2</sup>
+		</br>
+		<i>v</i><sub>f</sub><sup>2</sup> = <i>v</i><sub>i</sub><sup>2</sup> + 2<i>a</i>Δ<i>y</i>
+		</br>
+		Δ<i>y</i> = ½ (<i>v</i><sub>i</sub> + <i>v</i><sub>f</sub>)<i>t</i></b>
+		</br>
+		</br>
+
+
+		<i>a</i> = −9.80 m/s<sup>2</sup>
+		</br>
+		Δ<i>y</i> = vertical displacement
+		</br>
+		<i>v</i><sub>i</sub> = initial velocity
+		</br>
+		<i>v</i><sub>f</sub> = final velocity
+		</br>
+		<i>t</i> = elapsed time
+	</div>
+	You determined the tower height in Exercise 1.
+	</br></br>
+	You can shoot with any vertical velocity you want. The mouth of the cannon is at ground level.
+	</br></br>
+	What initial velocity must you choose so that the ball arrives at the top of the castle with zero velocity?
+	</br></br>
+	Again, you may need one or more of the equations on the right.
+	</br></br>
+	These equations describe one-dimensional motion with constant acceleration.
+	</br></br>
+	<div class="pLabQASection">
+		<div class="pLabQuestion">
+			<div class="pLabQNumber">6.</div><div class="pLabQText">Make a calculation in advance: What initial vertical velocity will propel the cannonball upward so that it arrives with zero velocity at the top of the castle? </div><div class="pLabQuestionArrow"></div>
+			<div class="pLabAnswerWrapper">
+				<textarea class="pLabAnswerBox" placeholder="Enter your answer here"></textarea>
+				<div class="pLabSaveButton" style="right: 40px;margin-top: -44px;"></div>
+			</div>
+		</div>
+		Now test your answer in the simulation. You control only the vertical velocity of the cannon. Your challenge is to propel the cannonball so that it reaches the peak of its flight at the same height as the top of the tower. At its peak, the cannonball’s velocity must equal zero for your comrade to be able to catch the cannonball. 
+		</br></br>
+		Enter an initial vertical velocity, in m/s, by dragging the head of the vector arrow or clicking the up and down buttons in the control panel. Press FIRE to try your shot. 
+		</br></br>
+		Each time you shoot, the battering ram gets closer to your castle!
+		</br></br>
+		After you have succeeded, press RESET. Now fire the cannonball at a velocity other than the correct answer, like 20.0 m/s. Record how long it takes for the cannonball to reach the peak of its motion and how long it takes to make the other half of the journey (back to the cannon mouth). It may prove effective to push PAUSE when the velocity equals 0.0 m/s in order to record the time at the peak. If you cannot pause the simulation exactly at a peak, consider recording a few data points and calculating an average percentage for the time spent traveling up, versus time spent traveling down. Even though this is a computerized lab, techniques used in traditional labs apply here. Also record the cannonball’s velocity at the end of its journey (the simulation pauses when the cannonball returns to the cannon). 
+		</br></br>
+		When you are done, return here to answer a follow-up question.
+		</br></br>
+		Click here to enter the <span class="pExerciseButton" data-href="http://mitrlearning.com/perfection_learning/Labs/1_Using%20one-dimensional%20motion%20equations/3_Acceleration/">Exercise 4 Simulation</span>
+		</br></br>
+		<div class="pLabQuestion">
+			<div class="pLabQNumber">7.</div><div class="pLabQText">When you fire the cannonball so your colleague does not catch it, what percentage of the time does the cannonball spend going up versus down? What is the relationship of the initial and final velocities of the cannonball? </div><div class="pLabQuestionArrow"></div>
+			<div class="pLabAnswerWrapper">
+				<textarea class="pLabAnswerBox" placeholder="Enter your answer here"></textarea>
+				<div class="pLabSaveButton" style="right: 40px;margin-top: -44px;"></div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="pExerciseContainer">
+	<div class="pExcersiseTitle">Exercise 5: The symmetry of a projectile </div>
+	Up until now, you have fired projectiles with the following characteristics:
+	</br></br>
+	<ul style='list-style-type:disc;padding-left: 18px;'>
+		<li>
+		Zero initial horizontal velocity and zero initial vertical velocity (Exercise 1).
+		</li>
+		</br>
+		<li>
+		Positive initial horizontal velocity and zero initial vertical velocity (Exercises 2 and 3). 
+		</li>
+		</br>
+		<li>
+		Zero horizontal velocity and positive initial vertical velocity (Exercise 4).
+		</li>
+	</ul>
+	</br>
+	In this exercise, you get to fire a more flexible cannon − one that supplies the cannonball with initial horizontal and vertical velocity components. You will see a parabolic arc traced out by the cannonball as it flies through the air.
+	</br></br>
+	<figure style="padding-top:20px;padding-bottom:10px;">
+		<img class="pExcersiseThumb" src="course/labs/Motion_in_two_dimensions_1/assets/Ex_05.png" style="width:70%;"/>
+		</br></br>
+		<figcaption style="font-family: AvenirNextLTPro-Demi;">Exercise 5. Use the cannon to explore projectile motion.</figcaption>
+	</figure>
+	You control the cannonball's initial horizontal and vertical velocities separately. As before, you also have the velocity and acceleration gauges, a stopwatch, and the PAUSE button (which makes collecting data convenient). 
+	</br></br>
+	We have placed the cannon at a location such that the cannonball will leave the barrel at ground level. Assume the cannonball begins its trajectory at the 0 point on the x axis. When you swivel the cannon’s barrel there will be slight changes in launch location, but they will not significantly affect the range or flight-time of your cannonball. Enter a value for horizontal velocity and a value for vertical velocity, press FIRE, and observe what happens. Try several velocities to see what happens to the ball throughout its arcing flight across the field. The goal of this exercise is to take some data and analyze the flight of a projectile. 
+	</br></br>
+	Answer the following questions based on your knowledge of physics. Use the simulation either to confirm your answers when you are done, or to obtain some help. 
+	</br></br>
+	<div class="pLabQASection">
+		<div class="pLabQuestion">
+			<div class="pLabQNumber">8.</div><div class="pLabQText">For any projectile that launches and lands at the same height, what percentage of the total flight time passes on the way up and what percentage passes on the way down? Use the PAUSE button and the stopwatch to find out. Explain your answer. (This question and the one that follows resemble those in the prior exercise; the conclusions you reach here are important so we stress this point with a little repetition.)</div><div class="pLabQuestionArrow"></div>
+			<div class="pLabAnswerWrapper">
+				<textarea class="pLabAnswerBox" placeholder="Enter your answer here"></textarea>
+				<div class="pLabSaveButton" style="right: 40px;margin-top: -44px;"></div>
+			</div>
+		</div>
+		<div class="pLabQuestion">
+			<div class="pLabQNumber">9.</div><div class="pLabQText">For a given firing of the cannon, how does the initial vertical velocity of the cannonball compare to the vertical velocity immediately before the cannonball hits the ground? </div><div class="pLabQuestionArrow"></div>
+			<div class="pLabAnswerWrapper">
+				<textarea class="pLabAnswerBox" placeholder="Enter your answer here"></textarea>
+				<div class="pLabSaveButton" style="right: 40px;margin-top: -44px;"></div>
+			</div>
+		</div>
+		<div class="pLabQuestion">
+			<div class="pLabQNumber">10.</div><div class="pLabQText">For a given firing of the cannon, how does the initial horizontal velocity of the cannonball compare to the horizontal velocity immediately before the cannonball hits the ground?</div><div class="pLabQuestionArrow"></div>
+			<div class="pLabAnswerWrapper">
+				<textarea class="pLabAnswerBox" placeholder="Enter your answer here"></textarea>
+				<div class="pLabSaveButton" style="right: 40px;margin-top: -44px;"></div>
+			</div>
+		</div>
+		As before, you can select a firing velocity by dragging the head of the vector arrow that emanates from the cannon’s mouth. In the control panel for this simulation, you will see two firing velocity controls, one for the horizontal component of the cannonball's velocity and the other for the vertical component. Both are in m/s. 
+		</br></br>
+		As before, you also have a stopwatch and the usual gauges and buttons.
+		</br></br>
+		Choose a vertical and horizontal velocity and fire the cannonball. The gauges display the final values for velocity and acceleration when the cannonball hits the ground. 
+		</br></br>
+		To answer the question about the percentage of time spent moving up as opposed to down, use the PAUSE button to freeze the cannonball at various points. You will know the cannonball has reached its peak when its vertical velocity equals 0 m/s; it may be more effective to note the cannonball has reached the peak of its motion by looking at this gauge as opposed to the cannonball itself.  
+		</br></br>
+		Try several combinations of horizontal and vertical velocities. Then return here and answer the above questions.
+		</br></br>
+		Click here to enter the <span class="pExerciseButton" data-href="http://mitrlearning.com/perfection_learning/Labs/1_Using%20one-dimensional%20motion%20equations/3_Acceleration/">Exercise 5 Simulation</span>
+		</br></br>
+	</div>
+</div>
+
+<div class="pExerciseContainer">
+	<div class="pExcersiseTitle">Exercise 6: Artillery fire! </div>
+	It is time to put what you have learned about projectile motion to the test. In this exercise, you will again pit your skills against the computer or a classmate, using your knowledge of projectile motion to calculate how to hit the opposing targets on the first try. 
+	</br></br>
+	<figure style="padding-top:20px;padding-bottom:10px;">
+		<img class="pExcersiseThumb" src="course/labs/Motion_in_two_dimensions_1/assets/Ex_06.png" style="width:70%;"/>
+		</br></br>
+		<figcaption style="font-family: AvenirNextLTPro-Demi;">Exercise 6. Choose horizontal and vertical velocity components to hit the targets.</figcaption>
+	</figure>
+	The cannonballs exit the cannons at ground level. To strike the enemy targets, you must set the initial horizontal and vertical velocity components for your cannonball. 
+	</br></br>
+	Think again about what determines the arc of your cannonball, and whether it will hit the target. The vertical velocity component determines how long the cannonball remains in the air (from Exercise 4). 
+	</br></br>
+	The horizontal velocity component determines the cannonball’s range (from Exercises 2 and 3).
+	</br></br>
+	You can calculate the combination of vertical and horizontal velocities needed to hit any target. Note: The cannon has a minimum vertical velocity of 35 m/s. 
+	</br></br>
+	If you have trouble hitting these targets, here is a hint. Pick a reasonable value for the vertical component of velocity (again, the minimum is 35 m/s). You can calculate how long the cannonball will be in the air, and then use that time to determine the required horizontal velocity. There are two ways you can determine this flight time; either by considering the relationship between the initial and final velocities of the cannonball, or by considering the vertical velocity at the peak of the cannonball’s motion, and what percentage of the flight time it spends reaching the peak. Applying either of these concepts, and motion equations that have been shown to you in this lab, you can calculate the flight time. 
+	</br></br>
+	<div class="pLabQASection">
+		In this simulation, you again rule the blue-flagged castle and control the cannon on the ground in front of it. You choose a combination of horizontal and vertical velocity components for this cannon. Drag the head of the vector arrow emanating from the cannon around until the values you want appear in the control panel. You can also adjust these values using the buttons in the control panel. 
+		</br></br>
+		Either the computer or a classmate will control the cannon in front of the red-flagged castle. Whoever hits all the opposing targets first wins the game. If you play the computer, you play against a formidable, but not perfect, competitor. 
+		</br></br>
+		Each side is trying to hit two targets. One is the base of the opposing flag. The other challenge is to fire the ball through the opening in the door to the opposing castle. The horizontal range required to hit these targets is marked with the triangle locaters beneath them. 
+		</br></br>
+		When you open the simulation, choose either PLAY COMPUTER or PLAY CLASSMATE. You may play as many times as you wish by pressing PLAY AGAIN. If you want to start over, press RESET. 
+		</br></br>
+		Click here to enter the <span class="pExerciseButton" data-href="http://mitrlearning.com/perfection_learning/Labs/1_Using%20one-dimensional%20motion%20equations/3_Acceleration/">Exercise 6 Simulation</span>
+	</div>
+</div>
+
+<div class="pExerciseContainer">
+	<div class="pExcersiseTitle">Exercise 7: Use trigonometry to destroy the castle!</div>
+	In the earlier exercises, you separately specified two parameters: the horizontal and vertical components of the cannonball’s velocity. It is more common for a cannon to fire a cannonball at a fixed speed, and the artillery officer controls the angle at which it is fired. 
+	</br></br>
+	Using trigonometry, we can determine the velocity components from the firing speed (the magnitude of the velocity vector) and the angle at which the cannon is fired. 
+	</br></br>
+	In the picture below, note that the cannons again feature vector arrows that can be used to set the initial velocity. As you rotate the vector, a display reads out the angle above the horizontal. By lengthening or shortening the aiming vector, you can change the firing speed. 
+	</br></br>
+	<figure style="padding-top:20px;padding-bottom:10px;">
+		<img class="pExcersiseThumb" src="course/labs/Motion_in_two_dimensions_1/assets/Ex_07_Use trigonometry to destroy the castle_1.png" style="width:70%;"/>
+		</br></br>
+		<figcaption style="font-family: AvenirNextLTPro-Demi;">Exercise 7. Select a firing angle to hit the opposing targets.</figcaption>
+	</figure>
+	Your challenge in this exercise is to enter a speed and firing angle to hit the opposing targets before your opponent hits all of yours. 
+	</br></br>
+	This is similar to Exercise 6, except now your answers must be expressed in terms of firing speed and angle, rather than velocity components. You can convert between velocity components and speed and angle using the following equations: 
+	</br></br>
+	<i>v</i><sub>y</sub> = <i>v</i>&nbsp;sin<i>θ</i>
+	</br>
+	<i>v</i><sub>x</sub> = <i>v</i>&nbsp;cos<i>θ</i>
+	</br></br>
+	<i>v</i> = firing speed</br>
+	<i>θ</i> = firing angle</br>
+	<i>v</i><sub>x</sub> and <i>v</i><sub>x</sub> = velocity components 
+	</br></br>
+	The cannon in this simulation can rotate between 45 degrees and 90 degrees (for the cannon on the left), or 135 degrees to 90 degrees (for the cannon on the right). 
+	</br></br>
+	This time, each player has a battering ram. Every time a shot misses, the battering rams advance on the opposing castle. This means the battering rams are moving targets; they adjust their position after each miss. If you do not hit your opponent’s battering ram before it reaches your castle − look out!
+	</br></br>
+	<div class="pLabQASection">
+		You rule the blue castle and control the cannon on the ground in front of it. Click on the head of the vector arrow and swivel it around until the value for the angle you want appears in the control panel. Shorten or lengthen the vector to change the firing speed. 
+		</br></br>
+		Either the computer or a classmate will run the cannon for the red castle. Whoever hits all the opposing targets first wins the game. 
+		</br></br>
+		Each side is trying to hit <b>two targets</b>: 1) an opening of the front door of the opposing castle, and 2) a battering ram team that advances on its mission of smashing your castle. 
+		</br></br>
+		Record your answers. Note the target, where it was located, and the firing angle used for your cannon to hit the targets. Record those values in the table below. 
+		</br></br>
+		When you open the simulation, choose either PLAY COMPUTER or PLAY CLASSMATE. You may play as many times as you wish by pressing PLAY AGAIN. If you get stuck, press RESET. 
+		</br></br>
+		Click here to enter the <span class="pExerciseButton" data-href="http://mitrlearning.com/perfection_learning/Labs/1_Using%20one-dimensional%20motion%20equations/3_Acceleration/">Exercise 7 Simulation</span>
+		</br></br>
+		
+		<div class="pLabQuestion">
+			<div class="pLabQNumber">11.</div><div class="pLabQText">Record the horizontal distance to each target and the firing angle you used to hit the targets in the box below.</div><div class="pLabQuestionArrow"></div>
+			<div class="pLabAnswerWrapper" style="height:125px;">
+				<table class="pLabAnswerTable">
+					<tr>
+						<td style="width:100px;"></td>
+						<td style="width:156px;">Distance from cannon</td>
+						<td style="width:100px;">Firing speed</td>
+						<td style="width:100px;">Firing angle</td>
+					</tr>
+					<tr>
+						<td>Castle door</td>
+						<td>
+							<input type="text" class="pLabAnswerInput"/> m
+						</td>
+						<td>
+							<input type="text" class="pLabAnswerInput"/> m/s
+						</td>
+						<td>
+							<input type="text" class="pLabAnswerInput"/> °
+						</td>
+					</tr>
+					<tr>
+						<td>Battering ram</td>
+						<td>
+							<input type="text" class="pLabAnswerInput"/> m
+						</td>
+						<td>
+							<input type="text" class="pLabAnswerInput"/> m/s
+						</td>
+						<td>
+							<input type="text" class="pLabAnswerInput"/> °
+						</td>
+					</tr>
+				</table>
+				<div class="pLabSaveButton" style="left: 465px;margin-top: 84px;"></div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="pExerciseContainer">
+	<div class="pExcersiseTitle">Exercise 8 (optional): Establishing a range equation</div>
+	Determining the correct firing speed and angle to hit a target requires a series of calculations. Is there a general approach (equation) for the case when the projectile begins and ends at the same height? 
+	</br></br>
+	It would help if you had an equation in which the cannon's range − how far the cannonball travels in the horizontal direction − is calculated from the initial firing speed and the cannon angle. If you knew the distance to the target, you could choose a firing angle and solve for the speed (or vice-versa), then blast away! 
+	</br></br>
+	But what is the equation? In this exercise, your challenge is to establish a range equation for your cannon. You can fire the cannonball at the small lake 225 meters away. 
+	</br></br>
+	<figure style="padding-top:20px;padding-bottom:10px;">
+		<img class="pExcersiseThumb" src="course/labs/Motion_in_two_dimensions_1/assets/Ex_08.png" style="width:70%;"/>
+		</br></br>
+		<figcaption style="font-family: AvenirNextLTPro-Demi;">Exercise 8. Use the cannon to validate a range equation.</figcaption>
+	</figure>
+	Here are some hints on how to proceed:
+	</br></br>
+	<ul style='list-style-type:disc;padding-left: 18px;'>
+		<li>
+		Your goal is to write an equation so that the range, or horizontal distance, is dependent on initial speed and cannon angle. There can be other factors in the equation, but they must not vary with the shot (for instance, mass or a). The equation will be of a form so that range (Δx) is set equal to an expression in which the unknown variables are firing speed and aiming angle. 
+		</li>
+		</br>
+		<li>
+		Remember that range is calculated by knowing the horizontal component of the velocity and the time the cannonball stays in the air. 
+		</li>
+		</br>
+		<li>
+		You do not want time as a variable in this equation. You need to find a way to eliminate the time variable. (Extra hint: What determines the time the cannonball stays in the air? Consider writing a second equation and solving that equation for time. Remember that you do know the acceleration of the cannonball in both the horizontal and vertical dimensions.) 
+		</li>
+		</br>
+		<li>
+		Some of the standard motion equations might help!
+		</li>
+	</ul>
+	</br>
+	<div class="pLabQASection">
+		You can use the cannon simulation to take data, and to experiment with the relationship between firing speed, cannon angle and range. 
+		</br></br>
+		As before, you can change the firing speed and angle by clicking on the vector arrow emanating from the cannon and swiveling it around until the desired speed and angle appear in the window. 
+		</br></br>
+		You also have a stopwatch, gauges and the usual buttons − FIRE, PAUSE and RESET.
+		</br></br>
+		If you succeed in writing an equation, make sure you use the simulation to test it. Enter some values in your equation and then see if the cannon in the simulation reproduces those results.  
+		</br></br>
+		If you cannot succeed in deriving this equation during the lab, you might ask your teacher or professor whether you can make it a homework assignment to turn in later. If so, fire the cannon a few times, and record the angle, speed and range. Use this data to confirm your equation.  
+		</br></br>
+		When you are done, return here to answer some follow-up questions.
+		</br></br>
+		Click here to enter the <span class="pExerciseButton" data-href="http://mitrlearning.com/perfection_learning/Labs/1_Using%20one-dimensional%20motion%20equations/3_Acceleration/">Exercise 8 Simulation (optional)</span>
+		</br></br>
+		
+		<div class="pLabQuestion">
+			<div class="pLabQNumber">12.</div><div class="pLabQText">Write an equation you could use to calculate projectile range (horizontal distance) for any initial velocity and cannon angle. Since you are using a computer to write an equation, you may need to use words to describe the equation (for example, the range equals the square root of the cosine of the firing angle). </div><div class="pLabQuestionArrow"></div>
+			<div class="pLabAnswerWrapper">
+				<textarea class="pLabAnswerBox" placeholder="Enter your answer here"></textarea>
+				<div class="pLabSaveButton" style="right: 40px;margin-top: -44px;"></div>
+			</div>
+		</div>
+		<div class="pLabQuestion">
+			<div class="pLabQNumber">13.</div><div class="pLabQText">Even if you do not succeed in determining the equation, try this additional exercise. Pick a speed and an angle (other than 45°) and determine the range. With the speed constant, can you determine another angle which will result at the same range? Try experimenting until you can do so. How are these two angles related? If you succeeded in deriving the equation, can you briefly explain how the equation confirms that two angles will yield a given range for a particular speed? </div><div class="pLabQuestionArrow"></div>
+			<div class="pLabAnswerWrapper">
+				<textarea class="pLabAnswerBox" placeholder="Enter your answer here"></textarea>
+				<div class="pLabSaveButton" style="right: 40px;margin-top: -44px;"></div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="pExerciseContainer">
+	<div class="pExcersiseTitle">Exercise 9 (optional): Establishing a range equation for different elevations</div>
+	Consider the simulation pictured here, in which the challenge is to fire the cannon so that the cannonball goes through the window of the large castle at the right, 100 meters above the ground, or through the door located at ground-level. The cannon sits 50 meters above the ground. That means the targets are 50 m above and 50 m below the cannon, respectively. 
+	</br></br>
+	<figure style="padding-top:20px;padding-bottom:10px;">
+		<img class="pExcersiseThumb" src="course/labs/Motion_in_two_dimensions_1/assets/Ex_07_Use trigonometry to destroy the castle_1.png" style="width:70%;"/>
+		</br></br>
+		<figcaption style="font-family: AvenirNextLTPro-Demi;">Exercise 9. Write a range equation for different elevations.</figcaption>
+	</figure>
+	Your challenge in this exercise is to write an equation for calculating the horizontal range of a cannon shot in which the elevation of the target is different than the elevation of the cannon.
+	</br></br>
+	In Exercise 8, the key to establishing a range equation was to eliminate the time variable from the motion equations. But here, time is no longer symmetrical − that is, the cannonball no longer spends half its time going up and the other half going down. When the target is above the cannon, will the ball spend more time rising or more time dropping? How about when the target is below the cannon?
+	</br></br>
+	Can you think of a way to write a generalized range equation that is dependent on initial firing speed, cannon angle, and the elevation difference between the target and the cannon? <b>Important note</b>: You can write the equation, but solving for the angle requires techniques that you are not expected to know. It is still a useful equation, but one that cannot be used as simply as many others. 
+	</br></br>
+	<div class="pLabQASection">
+		After you write an equation, make sure you use the simulation to test it. Enter some values in your equation and then see if the cannon on the screen reproduces the results predicted by your equation.
+		</br></br>
+		When you are done, return here to answer some follow-up questions.
+		</br></br>
+		Click here to go to the <span class="pExerciseButton" data-href="http://mitrlearning.com/perfection_learning/Labs/1_Using%20one-dimensional%20motion%20equations/3_Acceleration/">Exercise 9 Simulation (optional)</span>
+		</br></br>
+		
+		<div class="pLabQuestion">
+			<div class="pLabQNumber">14.</div><div class="pLabQText">Write an equation for calculating horizontal range for any initial speed, cannon angle, and elevation difference between target and cannon. Since you are using a computer to write an equation, you may need to use words to describe the equation (for example, the range equals the square root of the cosine of the firing angle).</div><div class="pLabQuestionArrow"></div>
+			<div class="pLabAnswerWrapper">
+				<textarea class="pLabAnswerBox" placeholder="Enter your answer here"></textarea>
+				<div class="pLabSaveButton" style="right: 40px;margin-top: -44px;"></div>
+			</div>
+		</div>
+		<div class="pLabQuestion">
+			<div class="pLabQNumber">15.</div><div class="pLabQText">Explain how you arrived at your equation. What basic physics principles did you apply?</div><div class="pLabQuestionArrow"></div>
+			<div class="pLabAnswerWrapper">
+				<textarea class="pLabAnswerBox" placeholder="Enter your answer here"></textarea>
+				<div class="pLabSaveButton" style="right: 40px;margin-top: -44px;"></div>
+			</div>
+		</div>
+		<div class="pLabQuestion">
+			<div class="pLabQNumber">16.</div><div class="pLabQText">  If you were to use a product like Excel to test the precise values in this and the previous simulation, you would notice some “noise” in the data you recorded as you fired the cannon at different angles. The simulation itself is quite accurate, but there is an assumption being made in the lab write-up that causes the data to appear slightly off. Can you identify that assumption? Hint: Consider how changing the angle at which the cannon is fired affects the launch point of the cannonball. This “noise” is not usually noticeable, but the scale of this simulation makes it apparent. </div><div class="pLabQuestionArrow"></div>
+			<div class="pLabAnswerWrapper">
+				<textarea class="pLabAnswerBox" placeholder="Enter your answer here"></textarea>
+				<div class="pLabSaveButton" style="right: 40px;margin-top: -44px;"></div>
+			</div>
+		</div>
+	</div>
+</div>

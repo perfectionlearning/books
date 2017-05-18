@@ -1,0 +1,59 @@
+{
+  "cards": [
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Batteries "
+        },
+        {
+          "type": "headline",
+          "text": "Are source of emf in DC circuit"
+        },
+        {
+          "type": "headline",
+          "text": "Have internal resistance"
+        },
+        {
+          "type": "headline",
+          "text": "Can be described as “energy pump”"
+        }
+      ]
+    },
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Batteries described by "
+        },
+        {
+          "type": "headline",
+          "text": "Potential difference across terminals"
+        },
+        {
+          "type": "headline",
+          "text": "Amount of energy supplied over battery’s lifetime"
+        }
+      ]
+    }
+  ],
+  "definitions": [
+    {
+      "term": "Electromotive force (emf)",
+      "def": "The potential difference that drives the current in a circuit. (Despite the name, emf is a potential difference, not a force.)"
+    }
+  ],
+  "secText": [
+    "The abbreviation emf stands for “electromotive force.” Although emf includes the word “force,” it is a measure of potential difference, and its unit is the volt.",
+    "Batteries are a common source of emf in a direct current circuit. They typically create energy from complex chemical reactions.  ",
+    "Like all devices, batteries are not “ideal” but lose some of their emf over time − something you note every time you recharge a cell phone. Batteries also are a source of resistance in a circuit, which is called a battery’s internal resistance.  ",
+    "Batteries are often described as the “energy pump” in a circuit.  They raise the energy of the electrons, just like a pump could raise the gravitational potential energy of water.",
+    "Batteries have two terminals − connection points with different electric potential. One terminal is positively charged and the other is negatively charged. The potential difference of the battery, often called the voltage or emf, is the potential difference between the two terminals. ",
+    "For instance, an AAA battery supplies 1.5 volts, while a typical car battery operates at 12 volts. The voltage is the potential difference between them.",
+    "Batteries also differ by how much energy they can supply over their lifetimes.  Both AAA and D batteries supply 1.5 volts, but the larger D batteries last longer.  "
+  ],
+  "objNames": [
+    "wb_batteries1",
+    "wb_batteries2"
+  ]
+}

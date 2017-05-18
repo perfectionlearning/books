@@ -1,0 +1,47 @@
+{
+  "cards": [
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Galileo’s experiment on the Moon"
+        },
+        {
+          "type": "headline",
+          "text": "Performed by Apollo 15 astronaut"
+        }
+      ]
+    },
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Freefall acceleration images"
+        },
+        {
+          "type": "headline",
+          "text": "Pictures taken every fifteenth of a second"
+        },
+        {
+          "type": "headline",
+          "text": "Greater distances between images"
+        },
+        {
+          "type": "bullet",
+          "text": "Egg is accelerating"
+        }
+      ]
+    }
+  ],
+  "definitions": [],
+  "secText": [
+    "Commander David R. Scott, an astronaut with Apollo 15, showed that two objects with different masses do accelerate at the same rate toward the ground in a vacuum. ",
+    "To quote the commander: “Well, in my left hand, I have a feather; in my right hand, a hammer. And I guess one of the reasons we got here today was because of a gentleman named Galileo a long time ago, who made a rather significant discovery about falling objects in gravity fields. And we thought that where would be a better place to confirm his findings than on the Moon. And so we thought we'd try it here for you. And the feather happens to be appropriately a falcon feather, for our Falcon [lunar module]. And I’ll drop the two of them here and hopefully they’ll hit the ground at the same time. How ’bout that?!” − Commander David R. Scott, Apollo 15, 1971",
+    "We also show the effect of freefall acceleration on an egg in the second diagram. The egg was not dropped in a vacuum, but its motion is close to that of freefall in a vacuum. Typically, we ignore <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='wb_air_resistance_concept2'>air resistance</a> in this textbook.",
+    "The camera took a picture fifteen times a second. We chose to show the velocity of the egg at two different times after being dropped, <math><mrow><mfrac linethickness=\"thin\"><mn>2</mn><mrow><mn>15</mn></mrow></mfrac></mrow></math> of a second and <math><mrow><mfrac linethickness=\"thin\"><mn>4</mn><mrow><mn>15</mn></mrow></mfrac></mrow></math> of a second. The velocity of the egg changes at a constant rate because freefall acceleration is constant.  The increasing distance between the images reflects the egg’s increasing velocity, its freefall acceleration. "
+  ],
+  "objNames": [
+    "wb_free_fall_nasa",
+    "wb_egg_drop"
+  ]
+}

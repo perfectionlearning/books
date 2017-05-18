@@ -1,0 +1,25 @@
+var resources = {
+	basePath:"assets/",
+	manifest:[
+		{src:"images/blur_bg.png", id:"blur_bg"},
+		{src:"images/bg.png", id:"bg"},
+		{src:"images/pauseIconC.png", id:"pauseIconC"},
+		{src:"images/pauseIconO.png", id:"pauseIconO"},
+		{src:"images/pauseIconN.png", id:"pauseIconN"},
+		{src:"images/playIconC.png", id:"playIconC"},
+		{src:"images/playIconO.png", id:"playIconO"},
+		{src:"images/playIconN.png", id:"playIconN"},
+		{src:"images/replayIconC.png", id:"replayIconC"},
+		{src:"images/replayIconO.png", id:"replayIconO"},
+		{src:"images/replayIconN.png", id:"replayIconN"},
+		{src:"images/fireIconC.png", id:"fireIconC"},
+		{src:"images/fireIconN.png", id:"fireIconN"},
+		{src:"images/fireIconO.png", id:"fireIconO"},
+		{src:"images/decD.png", id:"decD"},
+		{src:"images/decN.png", id:"decN"},
+		{src:"images/decO.png", id:"decO"},
+		{src:"images/incD.png", id:"incD"},
+		{src:"images/incN.png", id:"incN"},
+		{src:"images/incO.png", id:"incO"},
+	]
+}

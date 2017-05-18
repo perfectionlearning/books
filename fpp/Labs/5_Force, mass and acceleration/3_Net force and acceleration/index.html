@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Lab</title>
+		<link rel="stylesheet" href="../../common/css/font.css">
+		
+        <script src="../../common/libs/createjs/easeljs-0.8.1.js"></script>
+        <script src="../../common/libs/createjs/tweenjs-0.6.1.js"></script>
+        <script src="../../common/libs/createjs/preloadjs-0.6.1.js"></script>
+        <script src="../../common/libs/createjs/movieclip-0.8.1.js"></script>
+        
+		<script src="../../common/js/utils.js"></script>
+        <script src="../../common/js/components.js"></script>
+        <script src="../../common/js/Ticker.js"></script>
+        <script src="../../common/js/main.js"></script>
+		
+        <script src="assets/animations/Net force and acceleration.js"></script>
+		
+        <script src="js/resourceList.js"></script>
+        <script src="js/layout.js"></script>
+        <script src="js/Lab.js"></script>
+		<script>
+			window.onload = main;
+		</script>
+		<style>
+		#loader{
+			background-image:url(../../common/images/loading.gif);
+		}
+		.fontloader{
+			position:absolute;
+			width:-1000px;
+			opacity:0;
+		}
+		#font1{
+			font-family:CentraleSansBook;
+		}
+		#font2{
+			font-family:CentraleSansBold;
+		}
+		#font3{
+			font-family:CentraleSansBookItalic;
+		}
+		</style>
+    </head>
+    <body>
+		<canvas id="background" width="480" height="320" style="position:absolute;"></canvas>
+		<canvas id="foreground" width="480" height="320" style="position:absolute;"></canvas>
+		<div id="loader"></div>
+		<span calss="fontloader" id="font1"></span>
+		<span calss="fontloader" id="font2"></span>
+		<span calss="fontloader" id="font3"></span>
+    </body>
+</html>

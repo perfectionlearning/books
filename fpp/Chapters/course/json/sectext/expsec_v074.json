@@ -1,0 +1,43 @@
+{
+  "cards": [
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Half-life"
+        },
+        {
+          "type": "headline",
+          "text": "Average time for one-half of a group of radioactive atoms to decay"
+        }
+      ]
+    },
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Half-life"
+        }
+      ]
+    }
+  ],
+  "definitions": [
+    {
+      "term": "Half-life",
+      "def": "The time it takes for half the radioactive atoms of an isotope to decay."
+    }
+  ],
+  "secText": [
+    "We have discussed how an element can decay.  In this section, we discuss how fast they can decay.  The half-life of elements can be used as a “clock” to measure elapsed time.  For instance, carbon dating is used to measure the age of once-living materials. ",
+    "The first diagram shows 16 radioactive iodine nuclei, represented by the orange circles. Though the number of atoms in this sample is very small, we can use it to illustrate the concept of half-life.",
+    "The timer in the diagram measures in periods of 8.04 days. Each tick mark means that 8.04 days have passed.",
+    "As 8.04 days pass, one-half of the iodine-131 nuclei transmute via beta decay into xenon-131. Xenon atoms are represented by the red circles.",
+    "8.04 days is the half-life of iodine-131. The half-life is the average time it takes for one-half of the radioactive material present to decay. ",
+    "The process continues.  After another 8.04 days, half of the remaining iodine-131 transmutes.  This means three-fourths of the original material is now </br>xenon-131. ",
+    "And the process does not stop.  After yet another 8.04 days, another half of the remaining iodine-131 transmutes, meaning the material is now </br>seven-eighths xenon-131. "
+  ],
+  "objNames": [
+    "wb_half_life_1",
+    "wb_half_life_2"
+  ]
+}

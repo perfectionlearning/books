@@ -1,0 +1,40 @@
+{
+  "cards": [
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Communicating, applying scientific information "
+        },
+        {
+          "type": "headline",
+          "text": "Be specific about the question and your hypothesis"
+        },
+        {
+          "type": "headline",
+          "text": "Be clear about your sources"
+        },
+        {
+          "type": "headline",
+          "text": "State the data you use "
+        },
+        {
+          "type": "headline",
+          "text": "List sources of uncertainty"
+        }
+      ]
+    }
+  ],
+  "definitions": [],
+  "secText": [
+    "In your studies and in your career, you may be asked to communicate or apply scientific information gathered from various sources.  In this section, we explain one way to go about this.  It uses ideas we have presented in other sections about analyzing such information and also about designing and conducting laboratory experiments.",
+    "We start with “what” − tell your audience what well-defined question you seek to answer.  And what is your <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='wb_hypothesis'>hypothesis</a>? ",
+    "Who or what are your sources of information?  Experiments you conducted?  An article from a science journal?  A YouTube video?   ",
+    "What data do you have to support your hypothesis?  Presenting this as a chart or graph often makes it easier for your audience to understand.  We show that with a chart that breaks down the composition of the Universe. ",
+    "What are some sources of uncertainty, such as inaccurate models, theory that is not well-understood or accepted, reasons the instruments might be inaccurate, or other explanations for the data being off from expected values?  Can you quantify the effects of uncertainty, stating the amount by which the data might deviate from the accepted or true value? ",
+    "Consider also presenting the other side of the debate if the conclusions are uncertain.  The audience should hear alternate theories that are scientifically and logically well supported."
+  ],
+  "objNames": [
+    "wb_communicating_scientific_info"
+  ]
+}

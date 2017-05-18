@@ -1,0 +1,30 @@
+{
+  "cards": [
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "The case of the missing energy"
+        },
+        {
+          "type": "headline",
+          "text": "Beta radiation: Source of electron was mysterious"
+        },
+        {
+          "type": "headline",
+          "text": "Perhaps energy was not being conserved? "
+        }
+      ]
+    }
+  ],
+  "definitions": [],
+  "secText": [
+    "As is common in many great discoveries, some puzzling observations that could not be explained led to the discovery of the weak force. This force was more difficult to discover than the strong force, and it was linked to the hypothesis of a new type of particle with strange properties.",
+    "  <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='wb_radiation_4'>Beta radiation</a>, where a nucleus emits an electron, was difficult to explain because the source of electrons was not obvious. Where did they come from?",
+    "Scientists of the day used the mass-energy equivalence equation <i>E = mc</i><sup class=\"\">2</sup> to predict the final mass of the atom. The atom had emitted some energy, and that should have reduced its mass.  However, the final mass was even smaller than would be expected by the emission of energy.  Where was the missing mass-energy going? ",
+    "Niels Bohr, perhaps the most famous atomic theorist of his day, hypothesized that perhaps the law of conservation of energy did not apply to these subatomic particles.  Though this was logically valid to explain the observation, it was born of desperation. Physicists were almost ready to give up a fundamental law of physics!  (It would be like saying that two plus two is four most, but not all, of the time.)  This would be a high price to pay to explain the radiation, and fortunately, a better hypothesis was stated and later proven to be true."
+  ],
+  "objNames": [
+    "wb_troublesome_data_2"
+  ]
+}

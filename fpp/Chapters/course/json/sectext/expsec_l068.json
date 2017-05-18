@@ -1,0 +1,44 @@
+{
+  "cards": [
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Process 1"
+        },
+        {
+          "type": "headline",
+          "text": "Volume increases as pressure decreases; temperature does not change"
+        }
+      ]
+    },
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Process 2"
+        },
+        {
+          "type": "headline",
+          "text": "Volume increases at constant pressure; </br>temperature increases "
+        },
+        {
+          "type": "headline",
+          "text": "Pressure decreases at constant volume; temperature returns to initial"
+        }
+      ]
+    }
+  ],
+  "definitions": [],
+  "secText": [
+    "In this section, we define two processes that have the same initial and final pressure and volume points, but move between them in different fashions. ",
+    "In process 1, the gas’s pressure decreases as its volume increases. Both occur simultaneously. Heat flows from the hot reservoir to the gas, supplying the energy for the gas to do the work of raising the lid. The gas’s thermal energy is not the source of this energy in this process. The gas’s temperature remains constant, so its thermal energy is unchanged. ",
+    "We now look at process 2, a two-step process that changes the gas between the <b>same</b> two states as the first process. In other words, the gas starts and ends with the same pressure and volume as in the first process. ",
+    "Heat flows into the gas, causing it to do work and expand in volume. The gas’s pressure remains constant. On the graph, this step is a horizontal line, indicating increased volume but constant pressure. ",
+    "We lock the lid in place, modeling a piston at the top of its motion. We allow heat to flow out, reducing the pressure and temperature. This causes the gas’s properties to arrive at the same final pressure-volume point as in the other process, but in a different manner. We have illustrated two ways for a gas to change between the same initial and final states. "
+  ],
+  "objNames": [
+    "wb_PV_graphs_concept2",
+    "wb_PV_graphs_concept3"
+  ]
+}

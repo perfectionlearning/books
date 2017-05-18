@@ -1,0 +1,26 @@
+{
+  "cards": [
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Dividing numbers in scientific notation"
+        }
+      ]
+    }
+  ],
+  "definitions": [
+    {
+      "term": "Dividing numbers in scientific notation",
+      "def": "Divide the leading values and subtract the exponents of the powers.  Adjust, if needed, to have a leading value from 1 to less than 10."
+    }
+  ],
+  "secText": [
+    "Here, we divide the amount of mass the Sun turns into energy each minute, by the total mass of the Sun.",
+    "The first step in dividing numbers in scientific notation is to divide the leading values. We divide 2.7 by 2.0 to get 1.35. ",
+    "Next, we subtract the exponents of the powers of 10 in the fraction. In the example, we are dividing 10<sup class=\"\">11</sup> by 10<sup class=\"\">30</sup>. 11 minus 30 equals −<span class=\"math\">19</span>, so the result is 10<sup class=\"\">−19</sup>."
+  ],
+  "objNames": [
+    "wb_math_divideInSN"
+  ]
+}

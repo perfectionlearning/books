@@ -1,0 +1,27 @@
+{
+  "Title": "Velocity",
+  "Slides": [
+    {
+      "startTime": "0",
+      "endTime": "23933",
+      "startMarkerName": "Introduction",
+      "endMarkerName": "Marker 3",
+      "headlines": [
+        "Speed <u>and</u> direction"
+      ],
+      "bullets": [
+        "A vector"
+      ]
+    },
+    {
+      "startTime": "24933",
+      "endTime": "-1",
+      "startMarkerName": "Marker 8",
+      "endMarkerName": "End",
+      "headlines": [
+        "Can be negative, zero, or positive"
+      ],
+      "bullets": []
+    }
+  ]
+}

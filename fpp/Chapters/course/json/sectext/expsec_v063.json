@@ -1,0 +1,40 @@
+{
+  "cards": [
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Graph of stable and unstable nuclides"
+        },
+        {
+          "type": "headline",
+          "text": "Stable nuclides clustered near “band of stability”"
+        },
+        {
+          "type": "headline",
+          "text": "Ratio of neutrons to protons increases with nuclear size"
+        },
+        {
+          "type": "headline",
+          "text": "Larger nuclei: More neutrons required to dilute protons"
+        }
+      ]
+    }
+  ],
+  "definitions": [
+    {
+      "term": "Nuclide",
+      "def": "A specific combination of protons and neutrons in the nucleus."
+    }
+  ],
+  "secText": [
+    "To gain an understanding of stable and unstable nuclei, it is helpful to plot the combinations of neutrons and protons on a graph. A specific combination of protons and neutrons is called a “nuclide.”   ",
+    "We use a graph where the number of neutrons, <i>N</i>, is plotted on the vertical axis and the number of protons (the atomic number), <i>Z</i>, is plotted on the horizontal axis.  ",
+    "You see both stable and unstable nuclei on the graph. The stable nuclides cluster around a band that passes through the center of the graph. The unstable nuclides, identified as <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='wb_radioactive_2'>radioactive</a> isotopes, exist on either side of this band.",
+    "As you can see, the band of stable nuclides lies on the line <i>N</i> = <i>Z</i> &nbsp;for light nuclei, but as the nuclear size increases, the band of stability rises above this line. This means that the ratio of neutrons to protons increases with nuclear size. For instance, the ratio is 1 to 1 for light nuclei, but near <i>Z</i> = 80 the ratio is about 1.5 to 1. ",
+    "Why does the ratio increase? An excess of neutrons helps to dilute the proton concentration and contribute to stability. The neutrons increase the average distance between protons, reducing the average electrostatic force between them that tends to push them apart. In addition, neutrons, which are not affected by the electrostatic force, attract all other nucleons due to the strong nuclear force."
+  ],
+  "objNames": [
+    "wb_nuclear_stability_concepts"
+  ]
+}

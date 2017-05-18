@@ -1,0 +1,30 @@
+{
+  "cards": [
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Conservation of momentum"
+        },
+        {
+          "type": "headline",
+          "text": "System’s total momentum stays constant"
+        },
+        {
+          "type": "bullet",
+          "text": "When system is isolated"
+        }
+      ]
+    }
+  ],
+  "definitions": [],
+  "secText": [
+    "  <b>Essential Question: </b>  <b>    <br />  </b>How does the momentum of a system change?",
+    "  <b>Enduring Understandings:</b>  <b>    <br />  </b>1. The final and initial momentum of a system is <a class='pjumpToTopic' href='javascript:void(0)' data-chap='7' data-topic='1' data-subtopic='1' data-subsection='1'>conserved</a>.",
+    "  <b>Vocabulary:</b>  <a class='pjumpToTopic' href='javascript:void(0)' data-chap='7' data-topic='1' data-subtopic='1' data-subsection='1'>conservation of momentum</a>",
+    "  <b>STEM Skills:</b>  <b>    <br />  </b>1. Review <a class='pjumpToTopic' href='javascript:void(0)' data-chap='6' data-topic='4' data-subtopic='1' data-subsection='0'>conservation of energy</a>."
+  ],
+  "objNames": [
+    "wb_conservation_of_momentum_concept"
+  ]
+}

@@ -1,0 +1,110 @@
+*{
+	box-sizing:border-box;
+}
+
+body{
+	margin:0;
+}
+
+#fwrapper{
+	transform-origin:left top;
+	position:absolute;
+	font-family: AvenirNextLTPro-Demi;
+}
+
+.title{
+	padding: 10px 0px 11px 100px;
+    color: #787C87;
+    font-size: 16px;
+}
+
+.tabswrapper{
+	position: absolute;
+    left: 72px;
+    top: 40px;
+    width: 698px;
+    height: 37px;
+    background-color: #388CA4;
+    font-family: AvenirNextLTPro-Regular;
+    font-weight: bold;
+	padding: 2px 0px 2px 0px;
+}
+
+td.tabs {
+    width: 137px;
+    padding-left: 5px;
+    padding-right: 5px;
+    text-align: center;
+    border-right: 1px solid white;
+    color: white;
+    font-size: 14px;
+	cursor:pointer;
+}
+
+td.tabs:last-child {
+    border-right: 0px;
+}
+
+td.tabs:last-child  ul{
+    margin-left: -79px;
+}
+
+td.tabs.pHover {
+    background-color: #ffa500;
+    /* border-bottom: 2px solid; */
+}
+.tabs ul {
+    position: absolute;
+    text-align: left;
+    top: 100%;
+    list-style: none;
+    margin: 0px 0px 0px -5px;
+    background: #666666;
+    font-weight: normal;
+    padding: 0px 2px 0px 2px;
+	display:none;
+	z-index:50;
+}
+.tabs ul  li{
+	padding: 6px 10px 6px 7px;
+    border-bottom: 1px solid #B3B3B3;
+}
+.tabs ul  li.pHover{
+	background-color: #ffa500;
+}
+.tabs ul  li:last-child{
+    border-bottom: none;
+}
+
+.tabborder {
+    width: 140px;
+    height: 2px;
+    margin-left: -5px;
+    background: #666666;
+    position: absolute;
+    top: 95%;
+	display:none;
+}
+
+.contentWrapper{
+	position: absolute;
+    left: 0px;
+    top: 78px;
+    width: 100%;
+    height: 515px;
+    background: #DDE2E6;
+    border-top: 2px solid #566A83;
+    border-bottom: 6px solid #566A83;
+	font-family: AvenirNextLTPro-Regular;
+}
+
+.contentTitle{
+	padding: 5px 0px 5px 100px;
+    background-color: #C6C7CB;
+    color: #6C737B;
+}
+
+.content{
+	height: calc(100% - 29px);
+	padding: 20px 0px 20px 0px;
+}

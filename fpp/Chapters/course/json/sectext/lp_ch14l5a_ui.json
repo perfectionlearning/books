@@ -1,0 +1,43 @@
+{
+  "cards": [
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Nodes and antinodes"
+        },
+        {
+          "type": "headline",
+          "text": "Determine possible wave lengths in string"
+        }
+      ]
+    },
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Standing waves in open-ended pipes"
+        },
+        {
+          "type": "headline",
+          "text": "Are created by reflection from the ends"
+        },
+        {
+          "type": "headline",
+          "text": "Harmonics match those of  string attached at both ends"
+        }
+      ]
+    }
+  ],
+  "definitions": [],
+  "secText": [
+    "  <b>Essential Question: </b>  <b>    <br />  </b>How do harmonics relate to instruments?",
+    "  <b>Enduring Understandings:</b>  <b>    <br />  </b>1. <a class='pjumpToTopic' href='javascript:void(0)' data-chap='14' data-topic='4' data-subtopic='1' data-subsection='0'>Harmonics</a> are frequencies that occur in instruments. If the <a class='pjumpToTopic' href='javascript:void(0)' data-chap='14' data-topic='4' data-subtopic='2' data-subsection='0'>wave speed, length</a>, and <a class='pjumpToTopic' href='javascript:void(0)' data-chap='14' data-topic='4' data-subtopic='3' data-subsection='0'>wavelength</a> are known for the instrument, then the harmonic can be <a class='pjumpToTopic' href='javascript:void(0)' data-chap='14' data-topic='4' data-subtopic='1' data-subsection='3'>calculated</a>.<br />2. The harmonics produced depend on whether <a class='pjumpToTopic' href='javascript:void(0)' data-chap='14' data-topic='4' data-subtopic='2' data-subsection='1'>one end</a>  or <a class='pjumpToTopic' href='javascript:void(0)' data-chap='14' data-topic='4' data-subtopic='2' data-subsection='0'>both ends</a> of the sound-producing column are open or closed. Examples of instruments with two closed ends are stringed instruments, because both ends of the strings are fixed. Examples of instruments with two open ends are pipe organs and flutes. An example of an instrument with one closed end is a clarinet.",
+    "  <b>Vocabulary:</b>  <a class='pjumpToTopic' href='javascript:void(0)' data-chap='13' data-topic='3' data-subtopic='4' data-subsection='0'>harmonic</a>, <a class='pjumpToTopic' href='javascript:void(0)' data-chap='14' data-topic='4' data-subtopic='1' data-subsection='2'>fundamental frequency</a>",
+    "  <b>STEM Skills:</b>  <b>    <br />  </b>1. Review <a class='pjumpToTopic' href='javascript:void(0)' data-chap='13' data-topic='3' data-subtopic='4' data-subsection='0'>wavelength</a>. <br />2. Review <a class='pjumpToTopic' href='javascript:void(0)' data-chap='13' data-topic='5' data-subtopic='1' data-subsection='0'>wave speed</a>."
+  ],
+  "objNames": [
+    "wb_harmonics_nodes",
+    "wb_wind_instruments_concepts1"
+  ]
+}

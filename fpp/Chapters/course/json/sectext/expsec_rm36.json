@@ -1,0 +1,44 @@
+{
+  "cards": [
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Analyzing the data and drawing conclusions"
+        },
+        {
+          "type": "headline",
+          "text": "Make calculations"
+        },
+        {
+          "type": "headline",
+          "text": "Graph or chart data"
+        },
+        {
+          "type": "headline",
+          "text": "Look for outliers"
+        },
+        {
+          "type": "headline",
+          "text": "Evaluate data for reasonableness "
+        },
+        {
+          "type": "headline",
+          "text": "Confirm or reject your hypothesis"
+        }
+      ]
+    }
+  ],
+  "definitions": [],
+  "secText": [
+    "We discuss in this section how to analyze the data. ",
+    "You should have identified the variables and summarized the data in an organized fashion, such as in a table.  Then you need to do any required calculations.  For instance, if the lab is about linear momentum, that equals the product of mass and velocity, two values you measured. ",
+    "Often a <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='wb_math_organize_data'>graph</a> is an excellent way to show the <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='wb_math_trendline'>relationship</a> between an independent variable and a dependent variable.  The independent variable is the one you control and change.  The dependent variable is the variable (or variables) you observe. Do you observe a relationship between the variables, such as a linear relationship?  An inverse or direct relationship?",
+    "Look for any data point that seems to be an outlier − way outside the normal pattern or trend.  Could it have been recorded incorrectly?  If there is some expectation, say that a collision cannot increase kinetic energy by a factor of 100, does any data defy that expectation?  If you are graphing the data, are any of the data points far, far off a line or curve that passes through many other points?",
+    "You can also evaluate whether answers make sense. For instance, you would not expect a battery labeled 9 volts to have a voltage of 90,000 volts.  You can also check that the sign of an answer is correct − for instance, resistors cannot have negative resistances. ",
+    "You have data and have analyzed it.  Your experiment tests your hypothesis. It should cause you to either accept your hypothesis, or to reject it.  If rejected, you might consider what alternate hypothesis the data does support.  "
+  ],
+  "objNames": [
+    "wb_analyze_data"
+  ]
+}

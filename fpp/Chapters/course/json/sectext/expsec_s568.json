@@ -1,0 +1,61 @@
+{
+  "cards": [
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Encoding analog information"
+        },
+        {
+          "type": "headline",
+          "text": "Continuous information is sampled"
+        },
+        {
+          "type": "headline",
+          "text": "Information converted to digital form"
+        },
+        {
+          "type": "headline",
+          "text": "Sampling occurs tens of thousands or more times per second"
+        }
+      ]
+    },
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Decoding information "
+        },
+        {
+          "type": "headline",
+          "text": "Information is returned to its original analog format"
+        }
+      ]
+    }
+  ],
+  "definitions": [
+    {
+      "term": "Encode",
+      "def": "Convert information from its original format to another format."
+    },
+    {
+      "term": "Decode",
+      "def": "Convert information back to its original format."
+    },
+    {
+      "term": "Sampling",
+      "def": "A process by which continuous information is measured and represented in a digital form."
+    }
+  ],
+  "secText": [
+    "Technology is used in billions of cell phones, not to mention portable music devices, to encode analog information into a digital format. The information is then decoded back to its original analog format.",
+    "To convert analog information to digital format, a sound wave’s changes in pressure are turned into changes in electric voltage by a microphone.  The sound wave becomes an electrical signal with the same frequency. A device called an analog-to-digital converter measures the potential difference at regular intervals.  ",
+    "The device then converts the samples into a digital form.  In other words, the original analog signal is now represented with the 0s and 1s of digital bits, grouped together in <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='wb_digital_bits'>bytes</a>.",
+    "The converter samples the signal frequently, with 8 kHz being a typical frequency for sampling voice communication, and higher rates for music.",
+    "The digital information is stored or transmitted. When playback is desired, the information is decoded − it is returned to its original format.  We will discuss both <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='wb_sampling_rate'>sampling rates</a> and decoding in more depth shortly."
+  ],
+  "objNames": [
+    "wb_encode",
+    "wb_decode"
+  ]
+}

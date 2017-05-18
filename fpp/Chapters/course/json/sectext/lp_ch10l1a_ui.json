@@ -1,0 +1,44 @@
+{
+  "cards": [
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Fluids"
+        },
+        {
+          "type": "headline",
+          "text": "Liquids and gases are fluids"
+        },
+        {
+          "type": "bullet",
+          "text": "Fluids flow"
+        }
+      ]
+    },
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Density"
+        },
+        {
+          "type": "headline",
+          "text": "Ratio of mass to volume"
+        }
+      ]
+    }
+  ],
+  "definitions": [],
+  "secText": [
+    "  <b class=\"object-name\">Supplemental Material: </b>  <span class=\"object-name\">AP</span>",
+    "  <b>Essential Question: </b>  <b>    <br />  </b>How can we use force, pressure, volume, and mass to calculate properties of fluids?",
+    "  <b>Enduring Understandings:</b>  <b>    <br />  </b>1. Liquids, gases, and plasmas are all examples of <a class='pjumpToTopic' href='javascript:void(0)' data-chap='10' data-topic='0' data-subtopic='1' data-subsection='0'>fluids</a>. Fluids flow and match the shape of their container.<br />2. <a class='pjumpToTopic' href='javascript:void(0)' data-chap='10' data-topic='0' data-subtopic='2' data-subsection='0'>Pressure</a> is calculated by dividing the force being applied by the area over which the force is applied.<br />3. The <a class='pjumpToTopic' href='javascript:void(0)' data-chap='10' data-topic='0' data-subtopic='3' data-subsection='0'>density</a> of an object is calculated by dividing the mass of an object by its volume.",
+    "  <b>Vocabulary:</b>  <a class='pjumpToTopic' href='javascript:void(0)' data-chap='10' data-topic='0' data-subtopic='1' data-subsection='0'>fluids</a>, <a class='pjumpToTopic' href='javascript:void(0)' data-chap='10' data-topic='0' data-subtopic='2' data-subsection='0'>pressure</a>, <a class='pjumpToTopic' href='javascript:void(0)' data-chap='10' data-topic='0' data-subtopic='3' data-subsection='0'>density</a>",
+    "  <b>STEM Skills:</b>  <b>    <br />  </b>1. Review <a class='pjumpToTopic' href='javascript:void(0)' data-chap='5' data-topic='0' data-subtopic='1' data-subsection='1'>force.</a><br /><br />"
+  ],
+  "objNames": [
+    "wb_fluid_concepts",
+    "wb_density_concepts"
+  ]
+}

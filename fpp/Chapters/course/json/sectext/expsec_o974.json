@@ -1,0 +1,25 @@
+{
+  "cards": [
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Coulomb’s law: Permittivity constant"
+        },
+        {
+          "type": "headline",
+          "text": "  <span class=\"math\">    <i>F</i> = force,</span>  <span class=\"math\">    <i>q</i>    <sub>1</sub> = charge 1,</span>  <span class=\"math\">    <i>q</i>    <sub>2</sub> = charge 2,</span> </br> <span class=\"math\">    <i>r</i> = distance,</span>  <span class=\"math\">    <i>ε</i>    <sub>0</sub> = permittivity constant,</span> </br>  <span class=\"math\">    <i>ε</i>    <sub>0</sub> = 8.85×10<sup>−12</sup> C<sup>2</sup>/N·m<sup>2</sup></span>"
+        }
+      ]
+    }
+  ],
+  "definitions": [],
+  "secText": [
+    "Another way to express Coulomb’s law is to use the permittivity constant.   ",
+    "This equation shows Coulomb’s law written with the permittivity constant.  Of course, the force calculated by either this equation, or the other one you have seen using Coulomb’s constant, is the same. Both equations show that the magnitude of the electric force between two objects depends on the product of the charges, and inversely on the square of the distance between them.",
+    "The permittivity constant, represented with <i>ε</i><sub class=\"\">0</sub>, equals 8.85×10<sup class=\"\">−12</sup>, with the units we show. We prefer to use the version of the equation stated with <i>k</i> in the textbook, but as mentioned, the equations are equivalent. "
+  ],
+  "objNames": [
+    "wb_permittivity_concepts"
+  ]
+}

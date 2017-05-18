@@ -1,0 +1,51 @@
+{
+  "cards": [
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Ammeter"
+        },
+        {
+          "type": "headline",
+          "text": "Measures current"
+        }
+      ]
+    },
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Voltmeter"
+        },
+        {
+          "type": "headline",
+          "text": "Measures potential difference"
+        }
+      ]
+    }
+  ],
+  "definitions": [
+    {
+      "term": "Ammeter",
+      "def": "Device for measuring current."
+    },
+    {
+      "term": "Voltmeter",
+      "def": "Device for measuring potential difference."
+    },
+    {
+      "term": "Multimeter",
+      "def": "Device that measures current and potential difference."
+    }
+  ],
+  "secText": [
+    "We show the central mechanism of an ammeter, a device used for measuring current, and a voltmeter, which measures potential difference. These devices often are combined into a single device called a multimeter. We discuss them separately to explain how they work.",
+    "An ammeter measures the current at a specific location in a circuit. Ammeters are inserted into circuits so the <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='wb_electric_current_concepts1'>current</a> flows through them. Ammeters are designed to have very low resistance so that they do not decrease the current that they are measuring. The diagram shows how an ammeter can determine a current by measuring the strength of the <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='wb_bfields_wires_concepts1'>magnetic field</a> it creates.",
+    "Voltmeters are used to measure the potential difference between two points in a circuit. For example, the potential difference across the terminals of a battery is determined by placing the two leads of the voltmeter on the battery, one on each terminal. Voltmeters have high internal resistance so little current passes through them, and they have minimal effect on the functioning of the rest of the circuit. "
+  ],
+  "objNames": [
+    "wb_ammeter_concepts",
+    "wb_voltmeter_concepts2"
+  ]
+}

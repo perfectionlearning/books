@@ -1,0 +1,23 @@
+{
+  "Title": "Calculating distance",
+  "Slides": [
+    {
+      "startTime": "0",
+      "endTime": "10867",
+      "startMarkerName": "Introduction",
+      "endMarkerName": "Marker 1",
+      "headlines": [],
+      "bullets": []
+    },
+    {
+      "startTime": "11867",
+      "endTime": "-1",
+      "startMarkerName": "Marker 2",
+      "endMarkerName": "End",
+      "headlines": [
+        "Absolute value of change in position"
+      ],
+      "bullets": []
+    }
+  ]
+}

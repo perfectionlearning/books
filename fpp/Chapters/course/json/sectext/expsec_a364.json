@@ -1,0 +1,36 @@
+{
+  "cards": [
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Convert 42 kilometers to miles"
+        },
+        {
+          "type": "headline",
+          "text": "Write conversion factor so units cancel"
+        }
+      ]
+    },
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Conversions between units"
+        }
+      ]
+    }
+  ],
+  "definitions": [],
+  "secText": [
+    "We show how to convert between British and metric units.  We use the same process as we did with <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='wb_table_unitPrefixes'>prefixes</a>. ",
+    "We use the conversion factor 1 mile equals 1.61 kilometers.",
+    "We multiply by the conversion factor so the units will cancel.  ",
+    "When we multiply, the kilometer units cancel since they are in the numerator and denominator, leaving us with 26.1 miles.",
+    "The table shows some common conversion factors."
+  ],
+  "objNames": [
+    "wb_math_convertUnits",
+    "wb_table_unit_conversions"
+  ]
+}

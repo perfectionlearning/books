@@ -1,0 +1,54 @@
+{
+  "cards": [
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Lightning rods"
+        },
+        {
+          "type": "headline",
+          "text": "Conduct lightning’s charge to ground"
+        }
+      ]
+    },
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Conductors and insulators"
+        },
+        {
+          "type": "headline",
+          "text": "Conductor: charge flows freely"
+        },
+        {
+          "type": "headline",
+          "text": "Insulator: charge flows with great difficulty "
+        }
+      ]
+    }
+  ],
+  "definitions": [
+    {
+      "term": "Conductor",
+      "def": "A material in which charge can flow freely."
+    },
+    {
+      "term": "Insulator",
+      "def": "A material in which charge flows with great difficulty."
+    }
+  ],
+  "secText": [
+    "Conductors and insulators are two terms used to describe the movement of charge in different materials. A lightning rod mounted atop a roof is a system that uses those two properties and introduces the concept of an electric ground.  ",
+    "The lightning rod stands atop a building, attracts lightning, and it conducts the lightning’s electric charge to the ground through an insulated wire.  Earth is an example of a ground, a neutral object that can accept or supply an effectively unlimited number of charges, causing whatever objects it touches to become electrically neutral.",
+    "Charge moves relatively freely through conductors. Copper wire allows electrons to flow relatively easily. The lightning rod may have a copper wire at its core. Other conductors, like a liquid solution, might have positive ions flowing through them.  ",
+    "We say “relatively freely,” since there is some <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='wb_resistivity_concepts'>resistance</a> to the flow of the charge in conductors.  Superconductors are the only materials that have no resistance.",
+    "An insulator is the opposite of a conductor. Charge moves through insulators only with great difficulty. Vinyl is an example of an insulator. The copper wire in an electrical cord is surrounded by vinyl so that the electrons moving through the wire do not escape.",
+    "Another type of electrical material, semiconductors, is at the core of crucial components such as microprocessors.  A semiconductor can act as a conductor or insulator depending on specific conditions. "
+  ],
+  "objNames": [
+    "wb_conductor_concepts1",
+    "wb_conductor_concepts"
+  ]
+}

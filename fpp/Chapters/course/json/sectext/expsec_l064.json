@@ -1,0 +1,47 @@
+{
+  "cards": [
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Three processes"
+        },
+        {
+          "type": "headline",
+          "text": "Each with one property held constant"
+        }
+      ]
+    },
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Adiabatic"
+        },
+        {
+          "type": "headline",
+          "text": "No heat transfer"
+        },
+        {
+          "type": "headline",
+          "text": "  <span class=\"math\">    <span class=\"Symbols\">∆</span>    <i>U</i> = change in thermal energy,</span> <br> <span class=\"math\">    <i>W</i> = work done by the engine</span>"
+        }
+      ]
+    }
+  ],
+  "definitions": [
+    {
+      "term": "Adiabatic",
+      "def": "A process with no heat transfer."
+    }
+  ],
+  "secText": [
+    "We describe three engine processes where one property is constant. When combined with the <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='wb_first_law_thermo_concepts' >first law of thermodynamics</a>, certain relationships become clear. For instance, with the adiabatic process, which we describe in this section, there is no heat transfer.  The first law reduces to ∆<i>U = −W</i>.",
+    "An adiabatic process can occur in the case of perfect heat insulation, or when a process occurs too quickly for heat transfer to occur.  When you realize a car engine completes several thousand cycles per minute, it makes sense that heat transfer may not occur during particularly rapid parts of that cycle.    ",
+    "In an adiabatic process, since there is no heat transfer, then any reduction in thermal energy goes to the engine doing work.  The equation shown here for adiabatic processes is the first law of thermodynamics, with net heat flow equal to zero.   "
+  ],
+  "objNames": [
+    "wb_table_first_law_review",
+    "wb_adiabatic_concept"
+  ]
+}

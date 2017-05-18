@@ -1,0 +1,44 @@
+{
+  "cards": [
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Center of mass"
+        },
+        {
+          "type": "headline",
+          "text": "Average location of mass"
+        }
+      ]
+    },
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Center of mass and motion"
+        },
+        {
+          "type": "headline",
+          "text": "Laws of motion apply to center of mass"
+        },
+        {
+          "type": "headline",
+          "text": "Shifting center of mass creates floating illusion"
+        }
+      ]
+    }
+  ],
+  "definitions": [],
+  "secText": [
+    "  <b class=\"object-name\">Supplemental Material: </b>  <span class=\"object-name\">Advanced Topic</span>",
+    "  <b>Essential Question: </b>  <br />How is the center of mass of an object affected by movement and collisions?",
+    "  <b>Enduring Understandings:</b>  <b>    <br />  </b>1. The <a class='pjumpToTopic' href='javascript:void(0)' data-chap='7' data-topic='3' data-subtopic='1' data-subsection='0'>center of mass</a> is the <a class='pjumpToTopic' href='javascript:void(0)' data-chap='7' data-topic='3' data-subtopic='1' data-subsection='1'>average location of mass of an object</a>.<br />2. Apply physics principles such as <a class='pjumpToTopic' href='javascript:void(0)' data-chap='7' data-topic='3' data-subtopic='2' data-subsection='0'>motion</a>, <a class='pjumpToTopic' href='javascript:void(0)' data-chap='7' data-topic='3' data-subtopic='2' data-subsection='1'>momentum</a>, and <a class='pjumpToTopic' href='javascript:void(0)' data-chap='7' data-topic='3' data-subtopic='2' data-subsection='1'>velocity</a> to an object's center of mass.",
+    "  <b>Vocabulary:</b>  <a class='pjumpToTopic' href='javascript:void(0)' data-chap='7' data-topic='3' data-subtopic='1' data-subsection='0'>center of mass</a>",
+    "  <b>STEM Skills:</b>  <b>    <br />  </b>1. Review <a class='pjumpToTopic' href='javascript:void(0)' data-chap='3' data-topic='6' data-subtopic='1' data-subsection='3'>fraction bars</a>."
+  ],
+  "objNames": [
+    "wb_center_concept1",
+    "wb_center_and_motion1"
+  ]
+}

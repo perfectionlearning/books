@@ -1,0 +1,48 @@
+{
+  "cards": [
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Vertical projectile motion properties"
+        },
+        {
+          "type": "headline",
+          "text": "Projectile accelerates at −<i>g</i>"
+        },
+        {
+          "type": "bullet",
+          "text": "Horizontal line "
+        },
+        {
+          "type": "headline",
+          "text": "Velocity in freefall"
+        },
+        {
+          "type": "bullet",
+          "text": "Line with negative slope"
+        },
+        {
+          "type": "headline",
+          "text": "Vertical position"
+        },
+        {
+          "type": "bullet",
+          "text": "A parabola"
+        }
+      ]
+    }
+  ],
+  "definitions": [],
+  "secText": [
+    "We show the graphs of the<i> y</i>-position, the <i>y</i>-velocity, and the <i>y</i>-acceleration of a projectile, such as a ball, that is fired straight up. The acceleration, with its sign (direction), is −<i>g</i>. ",
+    "The three properties we graph − acceleration, velocity, and position − have different units.  A point on one graph cannot be directly compared to another − for instance, velocity does not equal acceleration where those graphs intersect. But we think showing all three of these properties in the same location provides a good way to show how they relate for a single projectile.  ",
+    "The ball’s acceleration is constant: It is <span class=\"math\">−9.81 m/s<sup>2</sup></span>.  This makes it the horizontal blue line you see. ",
+    "Acceleration is the rate of change of velocity.  This means it is the <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='wb_math_rate_aquarium2'>slope</a> of a velocity-time graph. The red line represents the graph of velocity. With constant negative acceleration, the velocity is a straight line with a negative slope.  The velocity starts positive, since the projectile is fired up.  Any point on the line is the instantaneous velocity at the time shown on the horizontal axis.",
+    "The velocity becomes zero at the peak of the motion as the ball stops rising and starts falling. It then becomes negative as the ball falls, becoming increasingly negative over time.",
+    "The <i>y</i>-position over time is a shape described as a parabola. The <i>y</i>-position-time graph is represented by the green parabola. If you draw a tangent to the curve − a line that only touches the curve at one point − and calculate its slope, you get the velocity at that point."
+  ],
+  "objNames": [
+    "wb_projectile_3_graphs1"
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "cards": [
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Moment of inertia"
+        },
+        {
+          "type": "headline",
+          "text": "Sum of each particle’s"
+        },
+        {
+          "type": "bullet",
+          "text": "Mass times"
+        },
+        {
+          "type": "bullet",
+          "text": "Distance squared from axis"
+        }
+      ]
+    },
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Baton inertia determined by"
+        },
+        {
+          "type": "headline",
+          "text": "Axis of rotation"
+        },
+        {
+          "type": "bullet",
+          "text": "Point about which baton is rotated"
+        },
+        {
+          "type": "headline",
+          "text": "Amount of mass "
+        }
+      ]
+    }
+  ],
+  "definitions": [],
+  "secText": [
+    "More than mass determines an object’s moment of inertia.  The shape of the object and how the mass is distributed within the object also determines an object’s resistance to changes in its rotational velocity − its moment of inertia.   ",
+    "You see an object rotating around an axis of rotation. One of the many particles that make up the object is highlighted in red. Each particle that makes up the object adds to the moment of inertia. The moment of inertia in part depends on the mass of each of these particles.",
+    "The other factor that affects the moment of inertia is how far each particle is from the axis of rotation. The particle’s mass, times the square of its distance from the axis, equals its contribution to the total moment of inertia.",
+    "We use the baton you see on the left to discuss the principles behind the moment of inertia. If you twirl a baton around its center, it is easier to start twirling than if you twirl at one end. Why is it easier to twirl at its center?  Because more of the mass is closer to its axis of rotation.",
+    "A very massive baton − say made of lead − would be harder to twirl than a less massive one made of aluminum.  The other factor in the moment of inertia is the mass."
+  ],
+  "objNames": [
+    "wb_moment_inertia_concepts",
+    "wb_moment_inertia_example"
+  ]
+}

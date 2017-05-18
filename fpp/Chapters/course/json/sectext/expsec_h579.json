@@ -1,0 +1,40 @@
+{
+  "cards": [
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Kepler’s third law"
+        }
+      ]
+    },
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Kepler’s third law"
+        },
+        {
+          "type": "headline",
+          "text": "Orbital size versus period for planets, Sun"
+        }
+      ]
+    }
+  ],
+  "definitions": [
+    {
+      "term": "The law of periods",
+      "def": "The square of the ratio of the orbital periods of two planets is equal to the cube of the ratio of their average distances to the Sun."
+    }
+  ],
+  "secText": [
+    "Kepler’s third law relates orbital period and distance to the Sun.  ",
+    "For any two satellites orbiting a common body, such as planets orbiting the Sun, the law of periods states the square of the ratio of the orbital periods equals the cube of the ratio of their average distances to the body that they orbit. ",
+    "We use planets in this example, but the law of periods applies to satellites orbiting any given body, such as communication satellites orbiting Earth.   ",
+    "The graph illustrates Kepler’s third law as applied to the solar system. For each planet, it plots the semimajor axis on the <br><i>y</i>-axis versus the period on the <i>x</i>-axis. (For an elliptical orbit, the semimajor axis is one half the width of the orbit at its widest. For a circular orbit, this is the same as the radius <i class=\"math0\">r</i>.) You can see that the smaller the orbit, the shorter the period, and the larger the orbit, the longer the period. The graph axes here are logarithmic."
+  ],
+  "objNames": [
+    "wb_kepler_third_law_concept",
+    "wb_kepler_third_law_graph"
+  ]
+}

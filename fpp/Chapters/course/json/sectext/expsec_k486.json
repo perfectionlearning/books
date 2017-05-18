@@ -1,0 +1,55 @@
+{
+  "cards": [
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Convection"
+        },
+        {
+          "type": "headline",
+          "text": "Heat transfer due to circulation in fluids"
+        }
+      ]
+    },
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Natural and forced convection examples"
+        },
+        {
+          "type": "headline",
+          "text": "Natural convection"
+        },
+        {
+          "type": "bullet",
+          "text": "Warm air rises, cooler air sinks"
+        },
+        {
+          "type": "headline",
+          "text": "Forced convection"
+        },
+        {
+          "type": "bullet",
+          "text": "Pump pushing hot liquid "
+        }
+      ]
+    }
+  ],
+  "definitions": [
+    {
+      "term": "Convection",
+      "def": "Heat transfer due to movement and circulation of molecules within fluids."
+    }
+  ],
+  "secText": [
+    "Convection is another way for heat to flow. Convection is heat flow due to the large movement and circulation of warmer and cooler parts of a gas or liquid. Ovens rely on convection for baking: the hotter air near the heating element rises and the cooler air along the sides sinks. In fact, “convection ovens” have fans to accelerate this flow process. ",
+    "Natural convection generally happens due to expansion and gravity, without any outside work being required.  For instance, warm air naturally rises, since it is less <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='wb_density_concepts'>dense</a> than cooler air.",
+    "Convection can also be assisted.  For instance, a pump can push hot liquid in a heating system, forcing it to go more quickly to locations where heat is desired. "
+  ],
+  "objNames": [
+    "wb_convection_concepts1",
+    "wb_convection_concepts2"
+  ]
+}

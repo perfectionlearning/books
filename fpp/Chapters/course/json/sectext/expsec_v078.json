@@ -1,0 +1,33 @@
+{
+  "cards": [
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Fission and chain reactions"
+        },
+        {
+          "type": "headline",
+          "text": "Neutrons can cause fission"
+        },
+        {
+          "type": "headline",
+          "text": "Fission can be self-sustaining"
+        },
+        {
+          "type": "headline",
+          "text": "Releases energy"
+        }
+      ]
+    }
+  ],
+  "definitions": [],
+  "secText": [
+    "Bombarding a large nucleus with a neutron can cause fission. Neutrons are a natural choice to cause fission, since they are electrically neutral. This means they can approach and hit the nucleus without being repelled by electrostatic forces. Too many neutrons can make a <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='wb_unstable_concepts'>nucleus unstable</a>. ",
+    "When a neutron enters a nucleus, the nucleus can capture it. This makes the nucleus unstable and it splits, releasing a number of neutrons. These neutrons are now free and may be captured by other nuclei. When there are enough atoms so that at least one freed neutron, on average, is captured by another atom, critical mass has been reached. The process is self-sustaining and is called a “chain reaction.” You do not want to be nearby!",
+    "The heavier nuclei release energy as they split apart. This explains the tremendous power output of a nuclear power plant. "
+  ],
+  "objNames": [
+    "wb_fission_concepts2"
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "cards": [
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Radioactive decay is probabilistic"
+        },
+        {
+          "type": "headline",
+          "text": "Cannot be predicted for an individual atom"
+        },
+        {
+          "type": "headline",
+          "text": "The probability of any atom decaying within a certain time can be stated"
+        },
+        {
+          "type": "headline",
+          "text": "Half of particles within large sample will decay"
+        }
+      ]
+    }
+  ],
+  "definitions": [],
+  "secText": [
+    "Here is a group of radioactive iodine-131 atoms, with one indicated by an arrow. When will that particular atom decay? There is no definite answer for that or any other atom − it is impossible to know exactly when a specific atom will decay. ",
+    "It is only possible to state the probability of a particular particle decaying.  With a large number of particles, one can confidently state that very close to half of those particles will decay during a half-life period. ",
+    "  <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='wb_quantum_concepts'>Quantum mechanics</a> governs radioactive decay. A person cannot state exactly when any one atom will decay, only the probability of it decaying within a certain time interval. For example, for any atom of iodine-131, the probability is one-half that it will decay within the next 8.04 days. To emphasize a point, with a large sample of iodine, say a trillion of them, one could confidently predict that about 500 billion (one half) of them would decay in those 8.04 days."
+  ],
+  "objNames": [
+    "wb_half_life_3"
+  ]
+}

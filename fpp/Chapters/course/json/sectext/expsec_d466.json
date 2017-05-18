@@ -1,0 +1,58 @@
+{
+  "cards": [
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Velocity in two dimensions"
+        },
+        {
+          "type": "headline",
+          "text": "Velocity has <i>x-</i> and <i>y</i>-components"
+        },
+        {
+          "type": "headline",
+          "text": "  <i>x-</i> and <i>y</i>-components can be independent"
+        }
+      ]
+    },
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Components of a velocity vector"
+        },
+        {
+          "type": "headline",
+          "text": "  <math>    <mrow>      <msub>        <mi>v</mi>        <mtext>x</mtext>      </msub>    </mrow>  </math> is horizontal component"
+        },
+        {
+          "type": "headline",
+          "text": "  <math>    <mrow>      <msub>        <mi>v</mi>        <mtext>y</mtext>      </msub>    </mrow>  </math> is vertical component"
+        },
+        {
+          "type": "headline",
+          "text": "Written <math><mrow><mtext>v</mtext><mo>=</mo><mo stretchy=\"false\">(</mo><msub><mi>v</mi><mtext>x</mtext></msub><mo>,</mo><msub><mi>v</mi><mtext>y</mtext></msub><mo stretchy=\"false\">)</mo></mrow></math>"
+        }
+      ]
+    }
+  ],
+  "definitions": [
+    {
+      "term": "Velocity (in two dimensions)",
+      "def": "Velocity that has two components, such as horizontal and vertical."
+    }
+  ],
+  "secText": [
+    "Since displacement can occur in two dimensions, it follows that velocity can as well.   Watch the gauges in the video as the car moves first along, or parallel to, the <i>x</i>-axis, then into a curve, and finally parallel to the <i>y</i>-axis. The gauge on the left displays the car’s velocity in the <i>x</i>-direction; and the other gauge displays the car’s velocity in the <i>y</i>-direction. In the curve, notice that the <i>x</i>-velocity <b>de</b>creases while the <i>y</i>-velocity <b>in</b>creases. ",
+    "Each gauge displays only the velocity in its direction.  For instance, <i>x</i>-velocity is along one line and <i>y</i>-velocity is along another, just like the <i>x-</i> and <i>y</i>-axes on a graph.  ",
+    "If you know the components of the car’s velocity, you can <a class='pjumpToTopic' href='javascript:void(0)' data-chap='4' data-topic='3' data-subtopic='1'>combine</a> them to determine the car’s overall velocity. We show how the component vectors are combined graphically in the illustrations. Be careful: You cannot simply add the numerical components to find the car’s overall velocity. The components must be combined as vectors.",
+    "With any vector, we would represent the horizontal component with the subscript <i>x</i>. With velocity, the variable is <i>v</i>. This means the horizontal velocity component is denoted <i>v</i><sub class=\"\">x</sub>.  ",
+    "We represent the vertical component with the subscript <i>y</i>. With velocity, its vertical component is <i>v</i><sub class=\"\">y</sub>.",
+    "We can describe the velocity vector in rectangular coordinates. The velocity vector shown in the second diagram would be about <span class=\"math\">(18, 12) m/s.</span>"
+  ],
+  "objNames": [
+    "wb_velocity_twod_principles",
+    "wb_vector_velocity_fundamentals1"
+  ]
+}

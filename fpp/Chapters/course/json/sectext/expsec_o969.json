@@ -1,0 +1,57 @@
+{
+  "cards": [
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Electric force magnitude is"
+        },
+        {
+          "type": "headline",
+          "text": "Proportional to product of charges"
+        },
+        {
+          "type": "headline",
+          "text": "Inversely proportional to square of distance"
+        }
+      ]
+    },
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Coulomb’s law"
+        },
+        {
+          "type": "headline",
+          "text": "Unit: newton"
+        },
+        {
+          "type": "headline",
+          "text": "  <i>k</i> = Coulomb’s constant"
+        },
+        {
+          "type": "headline",
+          "text": "  <i>k </i>= 8.99 × 10<sup class=\"\">9</sup> newton  · meter<sup class=\"\">2</sup> / C<sup class=\"\">2</sup>"
+        }
+      ]
+    }
+  ],
+  "definitions": [
+    {
+      "term": "Coulomb’s law",
+      "def": "An equation for the electric force charged objects exert on one another."
+    }
+  ],
+  "secText": [
+    "Coulomb’s law is used to calculate the magnitude of the electrical force between two charged objects.  In the diagram, F<sub class=\"\">12</sub> is the force that charge 1 exerts on charge 2, and F<sub class=\"\">21</sub> is the force that charge 2 exerts on charge 1. The amounts of force are equal. The magnitude of the electrical force that two charged objects apply to each other will always be equal, by Newton’s third law.  ",
+    "The magnitude of the force one charged object applies on another is proportional to the product of the charges. If one charge doubles, and the other triples, the force’s magnitude is six times larger.",
+    "The magnitude of the force weakens with distance. It is <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='wb_math_inversely_proportional'>inversely proportional</a> to the distance squared between the objects. This means that if you triple the distance between charged objects, the force’s magnitude will be one-ninth as strong. ",
+    "If the charges are very small, they are called point charges, and the distance is measured between the points.  If the charges are uniformly distributed on spheres, the distance is measured between the centers of the objects. ",
+    "The equation shows that the magnitude of the electrical force is proportional to the product of the charges divided by the distance between them squared. In the equation, the charge <i>q</i> is the magnitude of the charge, which is to say it is positive. Scientists have experimentally determined the constant <i>k</i> to be about 8.99×10<sup class=\"\">9</sup> newton·meter squared per coulomb squared. The distance <i>r</i> in Coulomb’s law must be measured in meters, and the charges in coulombs. "
+  ],
+  "objNames": [
+    "wb_electrostatic_force_concepts3",
+    "wb_electrostatic_force_equation"
+  ]
+}

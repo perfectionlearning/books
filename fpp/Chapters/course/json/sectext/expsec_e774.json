@@ -1,0 +1,54 @@
+{
+  "cards": [
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Air resistance"
+        },
+        {
+          "type": "headline",
+          "text": "Force that opposes motion in air"
+        },
+        {
+          "type": "headline",
+          "text": "Amount of air resistance proportional to"
+        },
+        {
+          "type": "bullet",
+          "text": "Drag coefficient, air density, surface area, speed squared"
+        }
+      ]
+    },
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Air resistance equation"
+        },
+        {
+          "type": "headline",
+          "text": "  <span class=\"math\">    <i>F</i> = drag force,</span>  <span class=\"math\">    <i>C</i> = drag coefficient for object,</span> <br> <span class=\"math\">    <i>ρ</i> = air density,</span>  <span class=\"math\">    <i>A</i> = surface </span>area facing direction of motion, <span class=\"math\"><i>v</i> = speed</span>"
+        }
+      ]
+    }
+  ],
+  "definitions": [
+    {
+      "term": "Air resistance",
+      "def": "A force that opposes motion in air."
+    }
+  ],
+  "secText": [
+    "Air resistance is the force due to air that opposes motion.  Air resistance changes with speed.  Air resistance plays a large role in many sports, from parachuting to bicycling.  The force is often called drag. ",
+    "The atmosphere is made up of molecules.  Although they are widely separated relative to their size and are small, there are many molecules!  When we collide with them, they oppose our motion, and the sum of all their resistance is called air resistance.  ",
+    "The amount of force due to air resistance is proportional to various factors, including the surface area facing the direction of motion.    ",
+    "For each object it is also proportional to a constant called the drag coefficient. A smooth, rounded surface has a lower drag coefficient than a rough, blocky one.  You can see this in car design, where smooth, curved surfaces are featured in most cars.",
+    "Drag also depends on the object’s speed, and is often modeled as being proportional to the speed squared.  You can experience this bicycling − feel how much harder it is to bicycle at 20 miles per hour than 10 miles per hour.",
+    "The equation for air resistance follows our description. The force equals the product of one-half the drag coefficient, the air density, the surface area facing the direction of motion, and the speed squared. "
+  ],
+  "objNames": [
+    "wb_air_resistance_concept2",
+    "wb_air_resistance_equation"
+  ]
+}

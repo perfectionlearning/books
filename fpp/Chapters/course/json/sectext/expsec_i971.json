@@ -1,0 +1,38 @@
+{
+  "cards": [
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Moment of inertia"
+        }
+      ]
+    },
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Moment of inertia equation"
+        },
+        {
+          "type": "headline",
+          "text": "  <span class=\"math\">    <i>I</i> = moment of inertia,</span>  <span class=\"math\">    <i>m</i> = mass,</span> <br> <span class=\"math\">    <i>r</i> = distance of particle from axis</span>"
+        },
+        {
+          "type": "headline",
+          "text": "Unit: kilogram • meter<sup class=\"\">2</sup>"
+        }
+      ]
+    }
+  ],
+  "definitions": [],
+  "secText": [
+    "The moment of inertia of any object can be computed with the equation in this section.   ",
+    "The moment of inertia of a single particle is its mass times the square of its distance from the axis of rotation. For a rigid system of particles rotating about an axis, the moment of inertia is the sum of the moments of inertia of all the particles in the system.",
+    "The unit used to measure moment of inertia is the product of the unit of mass and the square of the unit of distance."
+  ],
+  "objNames": [
+    "wb_moment_inertia_equation1",
+    "wb_moment_inertia_equation"
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "cards": [
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Heat engine"
+        },
+        {
+          "type": "headline",
+          "text": "Heat flows into engine from hot reservoir"
+        },
+        {
+          "type": "headline",
+          "text": "Engine uses heat to do work"
+        },
+        {
+          "type": "headline",
+          "text": "Heat also  flows out of engine"
+        },
+        {
+          "type": "headline",
+          "text": "Engine cycle: system returns to initial state"
+        }
+      ]
+    }
+  ],
+  "definitions": [
+    {
+      "term": "Heat engine",
+      "def": "Model used to explain many real-world engines by applying laws of thermodynamics."
+    }
+  ],
+  "secText": [
+    "The heat engine is the model used to explain important concepts such as engine cycles and <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='wb_efficiency_concepts'>efficiency</a>. ",
+    "We show a model of a heat engine. It includes hot and cold reservoirs, which are labeled in the diagram. A Bunsen burner is an example of a hot reservoir − a source of heat.  A chamber, topped by a piston and filled with gas, sits between the two reservoirs. ",
+    "Heat flows spontaneously into the engine from an external hot reservoir, which is at a higher temperature than the gas in the chamber. The change in color of the gas represents its increasing thermal energy.",
+    "Some of this heat energy can be used to do work, causing the piston to rise. That is the purpose of the engine: It uses heat as its energy source to do work. ",
+    "The rest of the heat flows out of the engine into the cold reservoir. A radiator in a car is an example of a cold reservoir. Heat flows spontaneously in this direction because the inside of the engine is warmer than the cold reservoir.  This is heat the engine cannot use to do work.  It means the engine is not 100% efficient − not all incoming heat goes to doing work. ",
+    "The piston then falls, completing an engine cycle. The engine is back to its initial state because the piston has returned to its initial position and the gas to its initial temperature and pressure. "
+  ],
+  "objNames": [
+    "wb_heat_engine_concepts"
+  ]
+}

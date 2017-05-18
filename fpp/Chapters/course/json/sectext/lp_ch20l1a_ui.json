@@ -1,0 +1,47 @@
+{
+  "cards": [
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Object and image"
+        },
+        {
+          "type": "headline",
+          "text": "Object: Source of light"
+        },
+        {
+          "type": "headline",
+          "text": "Image: Reproduction of object"
+        }
+      ]
+    },
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Law of reflection"
+        },
+        {
+          "type": "headline",
+          "text": "Incidence angle equals reflection angle"
+        },
+        {
+          "type": "headline",
+          "text": "Angles measured between light ray, normal line"
+        }
+      ]
+    }
+  ],
+  "definitions": [],
+  "secText": [
+    "  <b>Essential Question: </b>  <b>    <br />  </b>How can we describe objects reflected off of a plane mirror?",
+    "  <b>Enduring Understandings:</b>  <b>    <br />  </b>1. <a class='pjumpToTopic' href='javascript:void(0)' data-chap='20' data-topic='0' data-subtopic='1' data-subsection='1'>Reflection</a> can be applied to types of waves, such as light and water waves. Reflection is the change of direction of a wave at the boundary between two materials, with the wave continuing in the original material.<br />2. <a class='pjumpToTopic' href='javascript:void(0)' data-chap='20' data-topic='0' data-subtopic='2' data-subsection='0'>Plane mirrors</a> are flat mirrors. In reflection, an <a class='pjumpToTopic' href='javascript:void(0)' data-chap='20' data-topic='0' data-subtopic='2' data-subsection='0'>object</a> is the source of the light, while the <a class='pjumpToTopic' href='javascript:void(0)' data-chap='20' data-topic='0' data-subtopic='2' data-subsection='0'>image</a> is the reproduction of the object. <br />3. <a class='pjumpToTopic' href='javascript:void(0)' data-chap='20' data-topic='0' data-subtopic='3' data-subsection='0'>Virtual images</a> appear on the opposite side of the mirror as the object. <a class='pjumpToTopic' href='javascript:void(0)' data-chap='20' data-topic='0' data-subtopic='3' data-subsection='0'>Real images</a> appear on the same side of the mirror as the object.<br />4. The Law of Reflection states that the <a class='pjumpToTopic' href='javascript:void(0)' data-chap='20' data-topic='0' data-subtopic='4' data-subsection='1'>angle of incidence</a> of a ray is equal to the angle of reflection of a ray.<br />5. <a class='pjumpToTopic' href='javascript:void(0)' data-chap='20' data-topic='0' data-subtopic='5' data-subsection='0'>Ray diagrams</a> are used to determine the position and type of image formed by the mirror.",
+    "  <b>Vocabulary:</b>  <a class='pjumpToTopic' href='javascript:void(0)' data-chap='20' data-topic='0' data-subtopic='1' data-subsection='1'>reflection</a>, <a class='pjumpToTopic' href='javascript:void(0)' data-chap='20' data-topic='0' data-subtopic='1' data-subsection='2'>specular reflection</a>, <a class='pjumpToTopic' href='javascript:void(0)' data-chap='20' data-topic='0' data-subtopic='1' data-subsection='2'>diffuse reflection</a>, <a class='pjumpToTopic' href='javascript:void(0)' data-chap='20' data-topic='0' data-subtopic='2' data-subsection='0'>plane mirror</a>, <a class='pjumpToTopic' href='javascript:void(0)' data-chap='20' data-topic='0' data-subtopic='2' data-subsection='0'>object, image</a>, <a class='pjumpToTopic' href='javascript:void(0)' data-chap='20' data-topic='0' data-subtopic='3' data-subsection='0'>virtual image</a>, <a class='pjumpToTopic' href='javascript:void(0)' data-chap='20' data-topic='0' data-subtopic='3' data-subsection='0'>real image</a>, <a class='pjumpToTopic' href='javascript:void(0)' data-chap='20' data-topic='0' data-subtopic='3' data-subsection='1'>optical illusion</a>, <a class='pjumpToTopic' href='javascript:void(0)' data-chap='20' data-topic='0' data-subtopic='4' data-subsection='0'>light rays</a>, <a class='pjumpToTopic' href='javascript:void(0)' data-chap='20' data-topic='0' data-subtopic='4' data-subsection='1'>law of reflection</a>, <a class='pjumpToTopic' href='javascript:void(0)' data-chap='20' data-topic='0' data-subtopic='4' data-subsection='1'>incident ray</a>, <a class='pjumpToTopic' href='javascript:void(0)' data-chap='20' data-topic='0' data-subtopic='4' data-subsection='1'>normal</a>, <a class='pjumpToTopic' href='javascript:void(0)' data-chap='20' data-topic='0' data-subtopic='5' data-subsection='0'>ray diagram</a>, <a class='pjumpToTopic' href='javascript:void(0)' data-chap='20' data-topic='0' data-subtopic='5' data-subsection='0'>virtual ray</a>",
+    "  <b>STEM Skills:</b>  <b>    <br />  </b>1. Review <a class='pjumpToTopic' href='javascript:void(0)' data-chap='19' data-topic='0' data-subtopic='1' data-subsection='0'>light</a>.<br />"
+  ],
+  "objNames": [
+    "wb_image_concepts1",
+    "wb_law_reflection_concepts"
+  ]
+}

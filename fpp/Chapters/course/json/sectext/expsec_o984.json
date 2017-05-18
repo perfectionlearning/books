@@ -1,0 +1,42 @@
+{
+  "cards": [
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Force from a field"
+        },
+        {
+          "type": "headline",
+          "text": "Camera flash powered by field"
+        }
+      ]
+    },
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Calculating force from a field"
+        },
+        {
+          "type": "headline",
+          "text": "  <i>F = qE</i>"
+        },
+        {
+          "type": "headline",
+          "text": "  <span class=\"math\">    <i>F</i> = force,</span>  <span class=\"math\">    <i>q</i> = charge,</span>  <span class=\"math\">    <i>E</i> = electric field</span>"
+        }
+      ]
+    }
+  ],
+  "definitions": [],
+  "secText": [
+    "In this section, we shift our attention from the field caused <b>by</b> a charge to the force exerted <b>on</b> a charge by an external electric field. Such a field could be created by just one other charged particle, or it could be created by a much larger number of charged particles.",
+    "Fields are used in many everyday devices. For example, a field is used in some high-end inkjet printers to control the direction of charged ink droplets as they fly toward a sheet of paper. A charged camera flash can store energy in a field created by more than a trillion excess electrons. Given this huge number, determining the overall field by summing the individual fields created by each electron would be a bit tedious. Instead, placing a test charge in the field and observing the force that the field exerts on it can determine the nature of the field.",
+    "The equation allows you to calculate the force exerted on a charge by an electric field. The force <i>F</i> is equal to the charge <i>q</i> times the electric field <i>E</i>. Be careful: If <i>q</i> is negative, the force will be in the direction opposite that of the electric field. This equation comes from the definition of the <a class='pjumpToTopic' href='javascript:void(0)' data-chap='15' data-topic='2' data-subtopic='2' data-subsection='1' data-vIndex='1'>field</a>, solving for the force."
+  ],
+  "objNames": [
+    "wb_equation_force_efield1",
+    "wb_equation_force_efield"
+  ]
+}

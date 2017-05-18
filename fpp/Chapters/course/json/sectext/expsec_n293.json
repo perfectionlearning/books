@@ -1,0 +1,45 @@
+{
+  "cards": [
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Beats"
+        },
+        {
+          "type": "headline",
+          "text": "Periodic changes in amplitude produced by two waves of different frequencies"
+        }
+      ]
+    },
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Beat frequency equation"
+        },
+        {
+          "type": "headline",
+          "text": "  <span class=\"math\">    <i>f</i>    <sub>beat</sub> = beat frequency,</span>  <span class=\"math\">    <i>f</i>    <sub>1</sub> = frequency of sound 1,</span> <br> <span class=\"math\">    <i>f</i>    <sub>2</sub> = frequency of sound 2</span>"
+        }
+      ]
+    }
+  ],
+  "definitions": [
+    {
+      "term": "Beats",
+      "def": "The pattern of loud/soft sounds caused by combining two sound sources with similar but not identical frequencies."
+    }
+  ],
+  "secText": [
+    "Earlier in this chapter, we studied combinations of traveling waves with the same amplitude, frequency, and wavelength. You may wonder what happens if waves that have different properties are combined, and in this section we consider such a situation.",
+    "Beats are variations in amplitude produced by two waves. In the video, you see and hear a tone at a particular frequency.",
+    "In the video, you hear a second tone, whose frequency is slightly different. When the frequencies of two sound waves are slightly different, you can hear beats when the two sounds are combined. ",
+    "In the video, you can hear beats in the combined sound. You will hear periods of louder and softer sounds. A cycle of loud to soft and back is called a beat.",
+    "The frequency of the beats equals the difference in the frequency of the two sounds. To make this the required positive number, take the absolute value of the frequency difference. "
+  ],
+  "objNames": [
+    "wb_beats",
+    "wb_beats_equation"
+  ]
+}

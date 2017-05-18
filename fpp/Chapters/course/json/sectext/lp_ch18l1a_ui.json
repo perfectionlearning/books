@@ -1,0 +1,39 @@
+{
+  "cards": [
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Constructive interference"
+        },
+        {
+          "type": "headline",
+          "text": "Combined wave has greater amplitude"
+        }
+      ]
+    },
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Destructive interference"
+        },
+        {
+          "type": "headline",
+          "text": "Combined wave has less amplitude"
+        }
+      ]
+    }
+  ],
+  "definitions": [],
+  "secText": [
+    "  <b>Essential Question: </b>  <b>    <br />  </b>How can we describe constructive and destructive interference?",
+    "  <b>Enduring Understandings:</b>  <b>    <br />  </b>1. <a class='pjumpToTopic' href='javascript:void(0)' data-chap='18' data-topic='0' data-subtopic='1' data-subsection='0'>Interference</a> is the result of overlapping waves. Examples of interference are waves combining and color. Wave sources for interference can be <a class='pjumpToTopic' href='javascript:void(0)' data-chap='18' data-topic='0' data-subtopic='1' data-subsection='1'>coherent and incoherent</a>. Light waves combine to create <a class='pjumpToTopic' href='javascript:void(0)' data-chap='18' data-topic='0' data-subtopic='1' data-subsection='2'>light interference patterns</a>.<br />2. <a class='pjumpToTopic' href='javascript:void(0)' data-chap='18' data-topic='0' data-subtopic='2' data-subsection='0'>Constructive interference</a> is represented by the bright bands in light interference patterns. Constructive interference is when two waves combine to create one wave with greater amplitude than the two individual waves. <a class='pjumpToTopic' href='javascript:void(0)' data-chap='18' data-topic='0' data-subtopic='2' data-subsection='1'>Destructive interference</a> is represented by the dark bands in light interference patterns. Destructive interference is when two waves combine to create one with a lesser amplitude than the two individual waves.<br />3. Constructive interference has a <a class='pjumpToTopic' href='javascript:void(0)' data-chap='18' data-topic='0' data-subtopic='3' data-subsection='1'>phase difference</a> of 0 degrees. Destructive interference has a phase difference of 180 degrees.<br />4. There is no difference in the <a class='pjumpToTopic' href='javascript:void(0)' data-chap='18' data-topic='0' data-subtopic='4' data-subsection='0'>path length</a> between waves in constructive interference. There is a half a wavelength difference between path lengths in destructive interference.",
+    "  <b>Vocabulary:</b>  <a class='pjumpToTopic' href='javascript:void(0)' data-chap='18' data-topic='0' data-subtopic='1' data-subsection='0'>interference</a>, <a class='pjumpToTopic' href='javascript:void(0)' data-chap='18' data-topic='0' data-subtopic='1' data-subsection='1'>coherent wave source</a>, <a class='pjumpToTopic' href='javascript:void(0)' data-chap='18' data-topic='0' data-subtopic='2' data-subsection='0'>constructive interference</a>, <a class='pjumpToTopic' href='javascript:void(0)' data-chap='18' data-topic='0' data-subtopic='2' data-subsection='1'>destructive interference</a>, <a class='pjumpToTopic' href='javascript:void(0)' data-chap='18' data-topic='0' data-subtopic='3' data-subsection='1'>phase difference</a>",
+    "  <b>STEM Skills:</b>  <b>    <br />  </b>1. Review <a class='pjumpToTopic' href='javascript:void(0)' data-chap='13' data-topic='3' data-subtopic='3' data-subsection='0'>properties of waves</a>.<b><br /></b>"
+  ],
+  "objNames": [
+    "wb_constructive_interference",
+    "wb_destructive"
+  ]
+}

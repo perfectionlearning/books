@@ -1,0 +1,47 @@
+{
+  "cards": [
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Forced oscillations"
+        },
+        {
+          "type": "headline",
+          "text": "Force acts in direction of motion "
+        },
+        {
+          "type": "headline",
+          "text": "When natural frequency, driving frequency nearly equal "
+        },
+        {
+          "type": "bullet",
+          "text": "Amplitude increases "
+        },
+        {
+          "type": "bullet",
+          "text": "Result is called resonance"
+        }
+      ]
+    }
+  ],
+  "definitions": [
+    {
+      "term": "Natural frequency",
+      "def": "The rate at which a system naturally oscillates (vibrates)."
+    },
+    {
+      "term": "Resonance",
+      "def": "Increased amplitude of vibrations, occurring when the frequency of a driving force applied to a system matches its natural frequency."
+    }
+  ],
+  "secText": [
+    "Forced oscillations occur in <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='wb_harmonics_concepts1'>musical instruments</a> to create tones, and also in bridges and swings, as we discuss below.",
+    "In the illustration, a person pushes a child in the same direction as the child is moving on a swing. The person’s force acts in the direction of the motion.",
+    "The result of well-timed pushes is that the child goes higher and higher. The amplitude of the motion increases when the frequency of the external force is the same, or about the same, as that of the system it is acting on.  The external force’s frequency is called the “driving frequency.” ",
+    "The natural frequency is determined by physical factors of a system.  In this case, it includes factors such as the length of the swing’s rope and Earth’s freefall acceleration.  When the frequency of the driving force matches a natural frequency, it increases the amplitude of the motion.  This is called “resonance.”"
+  ],
+  "objNames": [
+    "wb_resonance1"
+  ]
+}

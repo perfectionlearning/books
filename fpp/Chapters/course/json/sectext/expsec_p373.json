@@ -1,0 +1,38 @@
+{
+  "cards": [
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Equivalent resistance"
+        },
+        {
+          "type": "headline",
+          "text": "Defines how to treat multiple resistors as though they were one resistor"
+        }
+      ]
+    },
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "  <u>Series</u> equivalent resistance"
+        }
+      ]
+    }
+  ],
+  "definitions": [
+    {
+      "term": "Equivalent resistance",
+      "def": "Describes the effect of multiple resistors as though they were one resistor."
+    }
+  ],
+  "secText": [
+    "Equivalent resistance describes how multiple resistors could be treated as a single resistor.  This makes it easier to apply Ohm’s law and use other tools to analyze the circuit.",
+    "To calculate the equivalent resistance of resistors wired in series, you add together the resistances of all the resistors.  A resistor with equivalent resistance could take the place of the multiple resistors that are wired in series without changing the rest of the circuit."
+  ],
+  "objNames": [
+    "wb_resistors_series_concepts1",
+    "wb_resistors_series_concepts"
+  ]
+}

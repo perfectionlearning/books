@@ -1,0 +1,53 @@
+{
+  "cards": [
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Doping"
+        },
+        {
+          "type": "headline",
+          "text": "Adding a material to increase conduction"
+        },
+        {
+          "type": "headline",
+          "text": "  <i>n</i>-type: inserts extra electron"
+        }
+      ]
+    },
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Creating holes with doping"
+        },
+        {
+          "type": "headline",
+          "text": "  <i>p</i>-type: an electron “short”"
+        },
+        {
+          "type": "headline",
+          "text": "Provides destination for mobile electrons"
+        }
+      ]
+    }
+  ],
+  "definitions": [
+    {
+      "term": "Doping",
+      "def": "Supplying selected impurities into a semiconducting material to increase its conductivity."
+    }
+  ],
+  "secText": [
+    "Engineers like to use silicon as a semiconductor since they can tune its properties by “doping” it. Specifically, they can make it a better conductor.",
+    "In the upper diagram, we show an arsenic atom being introduced into what was pure silicon. Arsenic has five valence electrons, as opposed to the four of a single silicon atom. ",
+    "With the addition of arsenic, there are nine electrons, one more than can “fit” in the valence band. The upper diagram shows the presence of this electron in the conduction band.  Doped materials with excess negatively charged electrons available for conduction are called “<i>n</i>-type” materials.",
+    "Doping can also create “holes,” vacancies in the valence band for electrons to move into.  A nearly-full valence band can be thought of as a completely empty band containing a positively charged particle.    This is why such materials are classified as <i>p</i>-type, with p for positive. This type of doping is done using atoms that have three valence electrons (one fewer than silicon’s four), such as gallium.",
+    "We use an energy band diagram to illustrate the result of adding gallium. You see that the valence band now has space for another electron because of the hole. This space can be filled by a mobile electron."
+  ],
+  "objNames": [
+    "wb_doping2",
+    "wb_doping3"
+  ]
+}

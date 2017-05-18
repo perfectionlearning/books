@@ -1,0 +1,43 @@
+{
+  "cards": [
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Diffraction grating causes interference patterns"
+        },
+        {
+          "type": "headline",
+          "text": "Caused by many, many slits"
+        }
+      ]
+    },
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "CD acts as diffraction grating"
+        },
+        {
+          "type": "headline",
+          "text": "Disperses white light into spectrum"
+        }
+      ]
+    }
+  ],
+  "definitions": [
+    {
+      "term": "Diffraction grating",
+      "def": "Material with many small, close slits or grooves. It produces an interference pattern that can be used to analyze light."
+    }
+  ],
+  "secText": [
+    "Diffraction gratings are used in scientific equipment. CDs and DVDs can also be used as diffraction gratings. The bright and dark bands produced by a diffraction grating are very crisp, as shown in the upper diagram. We discuss why diffraction gratings produce interference patterns.  ",
+    "The bright bands, which are narrow enough to be called lines, occur where waves from every slit interfere constructively. The bands are very narrow because as the number of slits is increased, an increased amount of destructive interference occurs closer to the peaks. Here we show just a few slits in the barrier, but typical diffraction gratings have many hundreds of slits per millimeter.",
+    "When white light passes through (or reflects off of) a diffraction grating, the interference pattern shows the light broken up into its component wavelengths. You see this happening in this photo of light reflecting off of a CD. This effect occurs because the location of the bands depends on wavelength, so light coming from the grating at a certain angle may be constructive interference for, say, red light, but not for other colors. This is similar to what occurs with white light in <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='wb_double_slit_white_concepts2'>double-slit interference</a>. "
+  ],
+  "objNames": [
+    "wb_gratings_concepts2",
+    "wb_gratings_concepts3"
+  ]
+}

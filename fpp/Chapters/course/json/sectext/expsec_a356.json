@@ -1,0 +1,62 @@
+{
+  "cards": [
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Order of operations: PEMDAS"
+        },
+        {
+          "type": "headline",
+          "text": "Parentheses first"
+        },
+        {
+          "type": "headline",
+          "text": "Exponents second"
+        },
+        {
+          "type": "headline",
+          "text": "Multiplication, division"
+        },
+        {
+          "type": "bullet",
+          "text": "Left to right"
+        },
+        {
+          "type": "headline",
+          "text": "Addition, subtraction"
+        },
+        {
+          "type": "bullet",
+          "text": "Left to right"
+        }
+      ]
+    },
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Evaluating using the order of operations "
+        }
+      ]
+    }
+  ],
+  "definitions": [
+    {
+      "term": "Order of operations",
+      "def": "Perform operations in parentheses first, then exponents, then multiplication and division from left to right, and finally addition and subtraction from left to right."
+    }
+  ],
+  "secText": [
+    "We use the order of operations to evaluate the first expression <span class=\"math\">7 − 3 (5 − 3) + 4<sup>2</sup> ÷ 8.</span> We do any operations in parentheses first.  This means we subtract 3 from 5. ",
+    "Exponents come second.  Four to the second power, which is four squared, equals 16.",
+    "Now we multiply and divide from left to right.  The first multiplication is shown by the 3 next to the parentheses.  The product of 3 and 2 is 6. There is still division: 16 divided by 8 is 2.",
+    "We add and subtract from left to right.  The first addition or subtraction we encounter is 7 − 6, which equals 1. We are left with the final operation: addition.  The expression equals 3.",
+    "We evaluate the second expression. The problem states that <span class=\"math\"><i>x</i> = 2</span>, so we substitute 2 for <span class=\"math\"><i>x</i></span>. Operations in parentheses come first, so we perform the addition that is in the parentheses. Terms with exponents are evaluated before other operations.  We square 2 to get 4.",
+    "With the exponents done, we multiply from left to right. If there were addition or subtraction operations remaining, we would perform them, but in this case we are finished. The expression equals <span class=\"math\">−12</span>."
+  ],
+  "objNames": [
+    "wb_math_pemdas",
+    "wb_math_orderOfOperationsUno"
+  ]
+}

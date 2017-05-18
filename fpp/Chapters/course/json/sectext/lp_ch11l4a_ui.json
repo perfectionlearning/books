@@ -1,0 +1,38 @@
+{
+  "cards": [
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Heat "
+        },
+        {
+          "type": "headline",
+          "text": "Thermal energy flows "
+        },
+        {
+          "type": "headline",
+          "text": "Flow changes an object’s thermal energy "
+        },
+        {
+          "type": "headline",
+          "text": "Represented by <i>Q</i>"
+        },
+        {
+          "type": "headline",
+          "text": "Unit: joule (J)"
+        }
+      ]
+    }
+  ],
+  "definitions": [],
+  "secText": [
+    "  <b>Essential Question: </b>  <br />How is heat transfer measured?",
+    "  <b>Enduring Understandings:</b>  <b>    <br />  </b>1. <a class='pjumpToTopic' href='javascript:void(0)' data-chap='11' data-topic='3' data-subtopic='1' data-subsection='0'>Thermal equilibrium</a> occurs when there is no net heat flow between two objects that are in contact with each other.<br />2. <a class='pjumpToTopic' href='javascript:void(0)' data-chap='11' data-topic='3' data-subtopic='2' data-subsection='0'>Heat</a> is the movement of thermal energy. Heat flows spontaneously from warmer objects to colder objects. Heat does not flow spontaneously from colder objects to warmer objects.<br />3. <a class='pjumpToTopic' href='javascript:void(0)' data-chap='11' data-topic='3' data-subtopic='3' data-subsection='0'>Specific heat</a> is the amount of heat needed to raise the temperature of one kilogram of a material by one degree Celsius.<br />4. <a class='pjumpToTopic' href='javascript:void(0)' data-chap='11' data-topic='3' data-subtopic='4' data-subsection='0'>Calorimetry</a> is the study of heat transfer. Calorimeters can be used to identify the specific heat of an unknown object.",
+    "  <b>Vocabulary:</b>  <a class='pjumpToTopic' href='javascript:void(0)' data-chap='11' data-topic='3' data-subtopic='1' data-subsection='0'>thermal equilibrium</a>, <a class='pjumpToTopic' href='javascript:void(0)' data-chap='11' data-topic='3' data-subtopic='2' data-subsection='0'>heat</a>, <a class='pjumpToTopic' href='javascript:void(0)' data-chap='11' data-topic='3' data-subtopic='3' data-subsection='0'>specific heat</a>, <a class='pjumpToTopic' href='javascript:void(0)' data-chap='11' data-topic='3' data-subtopic='4' data-subsection='0'>calorimeter</a>, <a class='pjumpToTopic' href='javascript:void(0)' data-chap='11' data-topic='3' data-subtopic='4' data-subsection='0'>calorimetry</a>",
+    "  <b>STEM Skills:</b>  <b>    <br />  </b>1. Review <a class='pjumpToTopic' href='javascript:void(0)' data-chap='11' data-topic='1' data-subtopic='2' data-subsection='0'>thermal energy</a>."
+  ],
+  "objNames": [
+    "wb_heat_concepts1"
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "cards": [
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "An example of dispersion"
+        }
+      ]
+    },
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Dispersion and prisms"
+        },
+        {
+          "type": "headline",
+          "text": "Creation of a spectrum by refraction"
+        },
+        {
+          "type": "headline",
+          "text": "Occurs because different wavelengths refract at different angles"
+        }
+      ]
+    }
+  ],
+  "definitions": [
+    {
+      "term": "Dispersion",
+      "def": "A wave’s speed depending on its wavelength/frequency, which causes light to separate into the wavelengths (and colors) that make it up."
+    }
+  ],
+  "secText": [
+    "Dispersion, the separation of light by wavelength, causes rainbows. And a topic you just studied, <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='wb_refraction_concepts'>refraction</a>, causes dispersion.",
+    "White light is made up of light of many wavelengths, which we see as different colors. Dispersion is a process in which white light is split into the colors that make it up. You may be familiar with dispersion through prisms, such as the one you see in the lower illustration, that “spread out” white light into a spectrum of many colors. ",
+    "Dispersion occurs because different wavelengths of light have different indices of refraction in a material. Shorter wavelengths refract more than longer wavelengths. As you can see in the diagram, white light is refracted and broken up into the wavelengths that make it up when it enters the prism. Then it is refracted and dispersed even more as it exits."
+  ],
+  "objNames": [
+    "wb_dispersion_concepts1",
+    "wb_dispersion_concepts"
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "cards": [
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Multiplying a vector by a scalar"
+        },
+        {
+          "type": "headline",
+          "text": "Multiply (<i>x</i>, <i>y</i>) by <i>c</i>"
+        }
+      ]
+    },
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Examples of multiplying a vector by a scalar "
+        }
+      ]
+    }
+  ],
+  "definitions": [],
+  "secText": [
+    "Multiplying a vector by a scalar using the coordinates can be easier, and more precise, than multiplying a vector by a scalar using a graphical method. ",
+    "To multiply a vector expressed in rectangular coordinates by a scalar, multiply each coordinate by the scalar. ",
+    "In our first example in the second diagram, we want to quadruple the vector’s length. We multiply each coordinate of the vector <span class=\"math\">(2, −7)</span> by the scalar 4.  The result is <span class=\"math\">(8, −28).</span>",
+    "To multiply by the scalar −2, we multiply each coordinate by −2. As the example shows, this <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='wb_math_multiply_vector_scalar_graphically2'>reverses the direction</a> of the vector, in addition to doubling its length."
+  ],
+  "objNames": [
+    "wb_math_multiply_vector_rectangular_scalar",
+    "wb_math_multiply_vector_rectangular_scalar_example"
+  ]
+}

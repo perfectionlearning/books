@@ -1,0 +1,25 @@
+{
+  "cards": [
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Calculating acceleration "
+        },
+        {
+          "type": "headline",
+          "text": "  <span class=\"math\">    <i>ā</i> = average acceleration,</span> <br> <span class=\"math\">    <span class=\"Symbols\">∆</span>    <i>v</i> = change in velocity,</span>  <span class=\"math\">    <span class=\"Symbols\">∆</span>    <i>t</i> = elapsed time</span>"
+        }
+      ]
+    }
+  ],
+  "definitions": [],
+  "secText": [
+    "As with velocity, there is instantaneous acceleration and average acceleration.  The definitions of velocity and acceleration are parallel in this regard.  Instantaneous acceleration is the acceleration at a moment of time, and average takes the change of velocity over a period of time, and divides it by that period of time.  ",
+    "In this text, when we use acceleration, we typically mean average or a constant acceleration.  For instance, in the motion equations we present later, a constant or average acceleration is assumed.    ",
+    "The equation we show defines average acceleration: It is the change in velocity divided by elapsed time.  The change in velocity is the final velocity minus the initial velocity."
+  ],
+  "objNames": [
+    "wb_acceleration_equation"
+  ]
+}

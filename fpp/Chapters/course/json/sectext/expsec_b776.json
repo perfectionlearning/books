@@ -1,0 +1,29 @@
+{
+  "cards": [
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Additional motion equations"
+        },
+        {
+          "type": "headline",
+          "text": "  <span class=\"math\">    <i>x</i>    <sub>f</sub> = final position,</span>  <span class=\"math\">    <i>x</i>    <sub>i</sub> = initial position,</span> </br> <span class=\"math\">    <i>v</i>    <sub>i</sub> = initial velocity,</span>  <span class=\"math\">    <i>a</i> = acceleration,</span>  </br>   <span class=\"math\">    <i>v</i>    <sub>f</sub> = final velocity,</span>  <span class=\"math\">    <span class=\"Symbols\">∆</span>    <i>t</i> = elapsed time</span>"
+        },
+        {
+          "type": "bullet",
+          "text": "Acceleration must be constant"
+        }
+      ]
+    }
+  ],
+  "definitions": [],
+  "secText": [
+    "We show three equations that were derived from the other motion equations you have seen.  All require that the acceleration is constant.  They enable you to calculate properties when certain values are not known. ",
+    "For instance, the second equation lets the final position be calculated for an object that is accelerating, even if its final velocity is <b>not</b> known. ",
+    "The final equation lets the final velocity be calculated, even if the time that passes between the initial and the final velocity is not known. <span class=\"Symbols\">∆</span><i>x</i> is the object’s displacement."
+  ],
+  "objNames": [
+    "wb_motion_equations2"
+  ]
+}

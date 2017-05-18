@@ -1,0 +1,43 @@
+{
+  "cards": [
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Wave superposition in a pond"
+        }
+      ]
+    },
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Resonance in waves"
+        },
+        {
+          "type": "headline",
+          "text": "Periodic force causes increase in amplitude of wave"
+        },
+        {
+          "type": "headline",
+          "text": "The wind effect was in resonance with the bridge’s natural frequency "
+        },
+        {
+          "type": "bullet",
+          "text": "Resulting standing wave destroyed bridge"
+        }
+      ]
+    }
+  ],
+  "definitions": [],
+  "secText": [
+    "  <b>Essential Question: </b>  <br />How can waves be combined?",
+    "  <b>Enduring Understandings:</b>  <b>    <br />  </b>1. <a class='pjumpToTopic' href='javascript:void(0)' data-chap='14' data-topic='3' data-subtopic='1' data-subsection='2'>Wave superposition</a> occurs when waves are combined. <br />2. In a <a class='pjumpToTopic' href='javascript:void(0)' data-chap='14' data-topic='3' data-subtopic='2' data-subsection='0'>traveling wave</a>, the disturbance moves from one location to another. In a <a class='pjumpToTopic' href='javascript:void(0)' data-chap='14' data-topic='3' data-subtopic='2' data-subsection='0'>standing wave</a>, the outline is constant.<br />3. <a class='pjumpToTopic' href='javascript:void(0)' data-chap='14' data-topic='3' data-subtopic='3' data-subsection='0'>Reflected waves</a> can create a standing wave.<br />4. <a class='pjumpToTopic' href='javascript:void(0)' data-chap='14' data-topic='3' data-subtopic='4' data-subsection='0'>Resonance</a> causes an increase in wave amplitude.",
+    "  <b>Vocabulary:</b>  <a class='pjumpToTopic' href='javascript:void(0)' data-chap='14' data-topic='3' data-subtopic='1' data-subsection='2'>superposition</a>, <a class='pjumpToTopic' href='javascript:void(0)' data-chap='14' data-topic='3' data-subtopic='2' data-subsection='0'>traveling wave</a>, <a class='pjumpToTopic' href='javascript:void(0)' data-chap='14' data-topic='3' data-subtopic='2' data-subsection='0'>standing wave</a>, <a class='pjumpToTopic' href='javascript:void(0)' data-chap='14' data-topic='3' data-subtopic='3' data-subsection='0'>inverted</a>",
+    "  <b>STEM Skills:</b>  <b>    <br />  </b>1. Review <a class='pjumpToTopic' href='javascript:void(0)' data-chap='13' data-topic='0' data-subtopic='3' data-subsection='0'>amplitude</a>.<br />2. Review <a class='pjumpToTopic' href='javascript:void(0)' data-chap='5' data-topic='2' data-subtopic='1' data-subsection='0'>Newton's third law</a>.<br />3. Review <a class='pjumpToTopic' href='javascript:void(0)' data-chap='13' data-topic='2' data-subtopic='4' data-subsection='0'>resonance</a>."
+  ],
+  "objNames": [
+    "wb_superposition_conceptspre1",
+    "wb_resonance2"
+  ]
+}

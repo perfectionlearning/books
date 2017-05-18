@@ -1,0 +1,40 @@
+{
+  "cards": [
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Before Einstein, scientists believed"
+        },
+        {
+          "type": "headline",
+          "text": "Light is a wave"
+        },
+        {
+          "type": "bullet",
+          "text": "Energy can vary continuously"
+        },
+        {
+          "type": "bullet",
+          "text": "More intense light has greater amplitude"
+        }
+      ]
+    }
+  ],
+  "definitions": [
+    {
+      "term": "Photon",
+      "def": "A packet of light that is the fundamental unit, or quantum, of light."
+    }
+  ],
+  "secText": [
+    "Einstein revolutionized science by showing that light can be thought of not only as a wave, but also as a stream of packets of energy, called photons. Photons travel and interfere like waves, but when they interact with matter, they act like particles. Light has a dual nature − it can be considered as a wave or as a stream of photons.",
+    "To understand why Einstein’s conclusion was so revolutionary, remember that by the beginning of the 20<sup class=\"\">th</sup> century, scientists had concluded that <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='wb_radio_speed2'>light is a wave</a>. For example, experiments with interference and diffraction had demonstrated the wavelike properties of light. ",
+    "Energy levels in waves are continuous. You can imagine a wave, like an ocean wave, of any amplitude and energy. The greater the amplitude, the greater the energy.",
+    "The diagram shows a model of light that reflects the thinking of scientists before Einstein’s work. The more intense (brighter) light, shown on top, is a wave of greater amplitude than the wave below it, which is less intense (dimmer) light. ",
+    "Scientists believed that a less intense light was a wave with smaller amplitude. Einstein showed that a different model was needed to explain an experiment called the <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='wb_photoelectric1'>photoelectric effect</a>, which we will discuss shortly. "
+  ],
+  "objNames": [
+    "wb_photon_1"
+  ]
+}

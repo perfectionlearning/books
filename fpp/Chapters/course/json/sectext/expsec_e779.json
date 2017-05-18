@@ -1,0 +1,34 @@
+{
+  "cards": [
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Equilibrium"
+        },
+        {
+          "type": "headline",
+          "text": "No net force"
+        },
+        {
+          "type": "bullet",
+          "text": "No acceleration"
+        }
+      ]
+    }
+  ],
+  "definitions": [
+    {
+      "term": "Equilibrium",
+      "def": "A situation in which there is no net force. There is no acceleration when there is no net force."
+    }
+  ],
+  "secText": [
+    "If there is no net force, there is no acceleration.  This situation is called equilibrium. ",
+    "Equilibrium can occur when forces are present − there can just be no <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='wb_net_force_concept1'>net force</a> present for equilibrium to occur. For instance, if a person pushes on a block resting on the floor, but with not enough force to cause it to overcome friction, there is no net force in any direction, and the block does not accelerate.",
+    "To stress <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='wb_Newton_first_law_definition'>a point we made earlier</a>: An object can be moving when there is no net force − it just cannot be accelerating.  For instance, a car moving along a flat road at a constant 25 meters per second (about 55 miles per hour) has no <b>net</b> force acting on it.  Its constant velocity, both speed and direction, means it is not accelerating."
+  ],
+  "objNames": [
+    "wb_equilibrium"
+  ]
+}

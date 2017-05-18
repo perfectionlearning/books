@@ -1,0 +1,48 @@
+{
+  "cards": [
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Quantum theory (and Einstein) to the rescue"
+        },
+        {
+          "type": "headline",
+          "text": "More intense light → more photons"
+        },
+        {
+          "type": "headline",
+          "text": "More photons → more ejected electrons"
+        }
+      ]
+    },
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Frequency/energy of light and electrons"
+        },
+        {
+          "type": "headline",
+          "text": "Lower-frequency light → photons less energetic"
+        },
+        {
+          "type": "headline",
+          "text": "Less-energetic photons cannot free electrons"
+        }
+      ]
+    }
+  ],
+  "definitions": [],
+  "secText": [
+    "Einstein’s work on quantum theory, his concept of photons, explained physicists’ observations. When light is conceived of as photons, brighter light means more photons, not larger amplitude waves. ",
+    "As the light gets more intense, more photons strike the metal, and more electrons fly off, with each photon ejecting an electron. Quantum theory explains what experimenters were observing: brighter light (of high enough frequency) causes more electrons to leave a material, since more photons are striking it. However, the electrons each have about the same energy as before, even as the intensity of the incoming light is increased − there are just more of them.",
+    "Quantum theory also explains why light below a certain frequency does not cause electrons to be emitted.  Photons of a lower-frequency light, such as red, are not energetic enough to free electrons from the atoms in the metal. Increasing the intensity of red light does not increase the energy of each photon. It just causes more photons to strike the metal, and none are energetic enough to free even a single electron. ",
+    "To use a physical model, throwing a baseball at 0.1 m/s at a bowling pin might not knock it over, nor will repeated attempts at the same speed. A baseball of that speed is akin to a photon of red light. A single baseball thrown at 20 m/s will knock over the pin, and that baseball is akin to a photon of violet light.  ",
+    "Einstein’s work also explained the specific colors of <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='wb_hydrogen_emission'>emission spectrums</a>.  The substance was emitting photons with specific energies, rather than waves that had continuous energy levels. "
+  ],
+  "objNames": [
+    "wb_photoelectric5",
+    "wb_photoelectric6"
+  ]
+}

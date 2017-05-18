@@ -1,0 +1,59 @@
+{
+  "cards": [
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Parts of a simple antenna"
+        },
+        {
+          "type": "headline",
+          "text": "Generator creates changing potential difference"
+        },
+        {
+          "type": "headline",
+          "text": "Two conducting rods for charge flow"
+        }
+      ]
+    },
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Generator creates changing charge on rods that"
+        },
+        {
+          "type": "headline",
+          "text": "Creates changing electric field"
+        },
+        {
+          "type": "bullet",
+          "text": "Induces changing magnetic field"
+        },
+        {
+          "type": "headline",
+          "text": "Changing fields are electromagnetic radiation"
+        }
+      ]
+    }
+  ],
+  "definitions": [
+    {
+      "term": "Antenna",
+      "def": "Device used to transmit or receive electromagnetic signals, such as a radio broadcast."
+    }
+  ],
+  "secText": [
+    "In this section, we explain how a simple antenna works.",
+    "The starting point for our discussion is a <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='wb_e_generator_concepts1'>generator</a>. It is used to create a potential difference that changes over time. ",
+    "The generator produces an alternating current (AC).  An AC generator produces currents that change periodically in both direction and strength, like a sine wave. The generator is connected to two conducting rods that point in opposite directions. ",
+    "The generator causes the rods to be charged. In one part of the cycle, the generator drives negative charges to the top and positive charges to the bottom. In a later part of the cycle, the charges on the antenna are reversed. The strength and orientation of the charge change constantly over time.",
+    "Charged objects create electric fields. The changing charge causes the electric field strength and direction to change. ",
+    "The changing electric field induces a changing magnetic field.  In the diagram, we show only the electric field for simplicity’s sake.",
+    "The combination of changing electric and magnetic fields forms an electromagnetic wave and radiation such as a <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='wb_radio_speed2'>radio signal</a>.  By varying the frequency or amplitude of the generator, a signal can be sent. "
+  ],
+  "objNames": [
+    "wb_simple_antenna_concepts1",
+    "wb_simple_antenna_concepts2"
+  ]
+}

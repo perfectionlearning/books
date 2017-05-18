@@ -1,0 +1,21 @@
+{
+  "cards": [
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Use vectors to visit three space attractions"
+        }
+      ]
+    }
+  ],
+  "definitions": [],
+  "secText": [
+    "The simulation lets you use vectors, in this case displacement vectors. In the simulation, you are the pilot of a small spaceship. There are three locations nearby that you want to visit. ",
+    "To reach any of these locations, you describe the displacement vector of the spaceship by setting its <i>x</i> (horizontal) and <br><i>y</i> (vertical) components. In other words, you set how far horizontally you want to travel, and how far vertically. ",
+    "See if you can reach all three places. "
+  ],
+  "objNames": [
+    "jsact_Chapter_3_0"
+  ]
+}

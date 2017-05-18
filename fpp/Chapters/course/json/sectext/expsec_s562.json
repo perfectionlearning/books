@@ -1,0 +1,25 @@
+{
+  "cards": [
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Maxwell’s equations and electromagnetic radiation"
+        },
+        {
+          "type": "headline",
+          "text": "Changing electric field induces a magnetic field"
+        }
+      ]
+    }
+  ],
+  "definitions": [],
+  "secText": [
+    "The Scottish scientist and mathematician James Maxwell summarized the properties of electromagnetic radiation with four equations.  His equations can be used to show that light is a wave consisting of changing electric and magnetic fields. ",
+    "You have already studied one of Maxwell’s equations: <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='wb_faraday_equation'>Faraday’s law</a>.  It says a changing magnetic field induces an electric field.  Another Maxwell equation says that a changing electric field induces a magnetic field.  Using this and other work, Maxwell showed that light, and electromagnetic radiation in general, consists of oscillating electric and magnetic fields. ",
+    "Maxwell also theoretically determined the speed of light using his equations. When it was measured, it matched his prediction."
+  ],
+  "objNames": [
+    "wb_maxwell"
+  ]
+}

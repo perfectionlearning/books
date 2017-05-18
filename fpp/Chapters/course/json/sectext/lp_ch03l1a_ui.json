@@ -1,0 +1,43 @@
+{
+  "cards": [
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Convert 22,000 grams to kilograms"
+        },
+        {
+          "type": "headline",
+          "text": "Use conversion factor"
+        },
+        {
+          "type": "headline",
+          "text": "Write conversion factor so units cancel!"
+        },
+        {
+          "type": "headline",
+          "text": "Then multiply"
+        }
+      ]
+    },
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Conversions between units"
+        }
+      ]
+    }
+  ],
+  "definitions": [],
+  "secText": [
+    "  <b>Essential Question: </b>  <br />How can we convert between units?",
+    "  <b>Enduring Understandings:</b>  <b>    <br />  </b>1. <a class='pjumpToTopic' href='javascript:void(0)' data-chap='3' data-topic='0' data-subtopic='1' data-subsection='0'>Exponents</a> state how many times to multiply the base of a power.<b><br /></b>2. In science, the <a class='pjumpToTopic' href='javascript:void(0)' data-chap='3' data-topic='0' data-subtopic='2'>metric system</a> is used to measure quantities.<b><br /></b>3. A <a class='pjumpToTopic' href='javascript:void(0)' data-chap='3' data-topic='0' data-subtopic='3'>conversion factor</a> is used to <a class='pjumpToTopic' href='javascript:void(0)' data-chap='3' data-topic='0' data-subtopic='3' data-subsection='1'>convert between unit and prefixes</a>.<b><br /></b>4. <a class='pjumpToTopic' href='javascript:void(0)' data-chap='3' data-topic='0' data-subtopic='4'>Dimensional analysis</a> can be used to confirm the correct units in a calculation.",
+    "  <b>Vocabulary:</b>  <a class='pjumpToTopic' href='javascript:void(0)' data-chap='3' data-topic='0' data-subtopic='1'>power</a>, <a class='pjumpToTopic' href='javascript:void(0)' data-chap='3' data-topic='0' data-subtopic='1'>exponent</a>, <a class='pjumpToTopic' href='javascript:void(0)' data-chap='3' data-topic='0' data-subtopic='2'>negative exponents</a>, <a class='pjumpToTopic' href='javascript:void(0)' data-chap='3' data-topic='0' data-subtopic='2'>metric system</a>, <a class='pjumpToTopic' href='javascript:void(0)' data-chap='3' data-topic='0' data-subtopic='2' data-subsection='0'>unit</a>, <a class='pjumpToTopic' href='javascript:void(0)' data-chap='3' data-topic='0' data-subtopic='2' data-subsection='2'>prefixes</a>, <a class='pjumpToTopic' href='javascript:void(0)' data-chap='3' data-topic='0' data-subtopic='3' data-subsection='0'>conversion factor</a>, <a class='pjumpToTopic' href='javascript:void(0)' data-chap='3' data-topic='0' data-subtopic='4' data-subsection='0'>dimensional analysis</a>",
+    "  <b>STEM Skills:</b>  <b>    <br />  </b>1. Review reciprocals."
+  ],
+  "objNames": [
+    "wb_math_unitPrefixes3",
+    "wb_table_unit_conversions"
+  ]
+}

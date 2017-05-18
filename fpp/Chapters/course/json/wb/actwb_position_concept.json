@@ -1,0 +1,25 @@
+{
+    "Title": "Position",
+    "Slides": [{
+            "startTime": "0",
+            "endTime": "13433",
+            "startMarkerName": "Introduction",
+            "endMarkerName": "  ",
+            "headlines": ["Is measured from 0 (the origin)"],
+            "bullets": []
+        }, {
+            "startTime": "14433",
+            "endTime": "25200",
+            "startMarkerName": "Marker 2",
+            "endMarkerName": "Marker 1",
+            "headlines": ["Positive positions: To right of origin"],
+            "bullets": []
+        }, {
+            "startTime": "26200",
+            "endTime": "-1",
+            "startMarkerName": " ",
+            "endMarkerName": "End",
+            "headlines": ["Negative positions: To left of origin"],
+            "bullets": []
+        }]
+}

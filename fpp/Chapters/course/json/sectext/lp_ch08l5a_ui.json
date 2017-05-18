@@ -1,0 +1,43 @@
+{
+  "cards": [
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Johannes Kepler"
+        },
+        {
+          "type": "headline",
+          "text": "December <span class=\"math\">27, 1571</span> − November <span class=\"math\">15, 1630</span>"
+        }
+      ]
+    },
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Obits and energy"
+        },
+        {
+          "type": "headline",
+          "text": "Satellites have kinetic and potential energy"
+        },
+        {
+          "type": "headline",
+          "text": "Since <i>PE</i> defined as 0 at infinite distance, orbital <i>PE</i> is always negative"
+        }
+      ]
+    }
+  ],
+  "definitions": [],
+  "secText": [
+    "  <b>Essential Question: </b>  <b>    <br />  </b>How can we determine how long and how much energy it will take a planet to rotate around the Sun?",
+    "  <b>Enduring Understandings:</b>  <b>    <br />  </b>1. <a class='pjumpToTopic' href='javascript:void(0)' data-chap='8' data-topic='4' data-subtopic='1' data-subsection='0'>Kepler's first law</a> states that planets move in elliptical orbits around the Sun. The Sun is at one focus of the ellipse.<br />2. <a class='pjumpToTopic' href='javascript:void(0)'data-chap='8' data-topic='4' data-subtopic='2' data-subsection='0'>Kepler's second law</a> states that planets sweep out equal areas in equal amounts of time.<br />3. <a class='pjumpToTopic' href='javascript:void(0)' data-chap='8' data-topic='4' data-subtopic='3' data-subsection='0'>Kepler's third law</a> states that the period of planets A and B squared is equal to the average distance to the Sun of planets A and B cubed.<br />4. <a class='pjumpToTopic' href='javascript:void(0)' data-chap='8' data-topic='4' data-subtopic='4' data-subsection='0'>Orbital energy</a> can be calculated using the gravitational constant, masses of the objects, and orbit radius.<br />5. Our understanding of <a class='pjumpToTopic' href='javascript:void(0)' data-chap='8' data-topic='4' data-subtopic='5' data-subsection='0'>gravity</a> has evolved with the help of Sir Isaac Newton, Johannes Kepler, Galileo, and Einstein.",
+    "  <b>Vocabulary:</b>  <a class='pjumpToTopic' href='javascript:void(0)' data-chap='8' data-topic='4' data-subtopic='1' data-subsection='0'>the law of orbits</a>, <a class='pjumpToTopic' href='javascript:void(0)' data-chap='8' data-topic='4' data-subtopic='1' data-subsection='0'>the law of areas</a>, <a class='pjumpToTopic' href='javascript:void(0)' data-chap='8' data-topic='4' data-subtopic='3' data-subsection='0'>the law of periods</a>",
+    "  <b>STEM Skills:</b>  <b>    <br />  </b>1. Review <a class='pjumpToTopic' href='javascript:void(0)' data-chap='8' data-topic='2' data-subtopic='1' data-subsection='1'>gravitational force</a>."
+  ],
+  "objNames": [
+    "wb_kepler_first_law1",
+    "wb_orbit_energy"
+  ]
+}

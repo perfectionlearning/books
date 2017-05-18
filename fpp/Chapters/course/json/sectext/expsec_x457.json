@@ -1,0 +1,43 @@
+{
+  "cards": [
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Particle theory of light"
+        },
+        {
+          "type": "headline",
+          "text": "Explains radiation pressure"
+        },
+        {
+          "type": "headline",
+          "text": "Radiation striking surface transfers momentum"
+        }
+      ]
+    },
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Photon equations"
+        },
+        {
+          "type": "headline",
+          "text": "  <span class=\"math\">    <i>p</i> = momentum,</span>  <span class=\"math\">    <i>U</i> = energy,</span>  <span class=\"math\">    <i>c</i> = speed of light</span>"
+        }
+      ]
+    }
+  ],
+  "definitions": [],
+  "secText": [
+    "Considering light as a particle is one way to explain the pressure that light exerts on surfaces that it strikes.  For instance, some deep-space spacecraft might have solar sails, and use light pressure for propulsion power. ",
+    "If light is thought of as consisting of a stream of particles, then light pressure can be explained by momentum transfer that takes place during the collisions of particles with the surface of an object.  When a photon is absorbed by a surface, momentum is transferred as in an inelastic collision.  ",
+    "Considering the collision as a momentum transfer yields two equations.  First, the change in the photon’s momentum equals the photon energy divided by the speed of light. ",
+    "We can also write the related equation, that the energy of the photon equals the product of the photon’s momentum and the speed of light."
+  ],
+  "objNames": [
+    "wb_radiation_pressure",
+    "wb_radiation_presssure_equations"
+  ]
+}

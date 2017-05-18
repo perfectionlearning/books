@@ -1,0 +1,29 @@
+{
+  "cards": [
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Projectile motion range and angle equations"
+        },
+        {
+          "type": "headline",
+          "text": "  <math>    <mrow>      <mi mathvariant=\"normal\">Δ</mi>      <mi>x</mi>      <mo>=</mo>      <mfrac linethickness=\"thin\">        <mrow>          <mrow>            <mo>(</mo>            <mrow>              <msub>                <mi>v</mi>                <mtext>i</mtext>              </msub>              <msup>                <mtext> </mtext>                <mtext>2</mtext>              </msup>            </mrow>            <mo>)</mo>          </mrow>          <mrow>            <mo>(</mo>            <mrow>              <mtext>sin </mtext>              <mrow>                <mo>(</mo>                <mrow>                  <mtext>2</mtext>                  <mi>θ</mi>                </mrow>                <mo>)</mo>              </mrow>            </mrow>            <mo>)</mo>          </mrow>        </mrow>        <mi>g</mi>      </mfrac>    </mrow>  </math>"
+        },
+        {
+          "type": "headline",
+          "text": "  <math>    <mrow>      <mi>θ</mi>      <mtext> = </mtext>      <mfrac linethickness=\"thin\">        <mn>1</mn>        <mn>2</mn>      </mfrac>      <mtext>arcsin</mtext>      <mrow>        <mo>(</mo>        <mrow>          <mfrac linethickness=\"thin\">            <mrow>              <mi>g</mi>              <mrow>                <mo>(</mo>                <mrow>                  <mi mathvariant=\"normal\">Δ</mi>                  <mi>x</mi>                </mrow>                <mo>)</mo>              </mrow>            </mrow>            <mrow>              <msub>                <mi>v</mi>                <mtext>i</mtext>              </msub>              <msup>                <mtext> </mtext>                <mn>2</mn>              </msup>            </mrow>          </mfrac>        </mrow>        <mo>)</mo>      </mrow>    </mrow>  </math>"
+        }
+      ]
+    }
+  ],
+  "definitions": [],
+  "secText": [
+    "The equations in this section are handy for people who want to aim cannons, and know a little trigonometry. ",
+    "The horizontal displacement of a fired cannonball that lands at the same height as it was fired can be calculated using the first equation. The displacement is called the range.  The angle <i><math xmlns:xsl=\"http://www.w3.org/1999/XSL/Transform\"><mi>θ</mi></math></i> is the angle the fired cannonball initially makes with the horizontal. The cannonball will land a horizontal displacement <span class=\"Symbols\">∆</span><i>x</i> from where it was fired. ",
+    "If you know the range and the initial speed, the second equation will calculate the angle at which the projectile needs to be aimed.  Big equations, but, hey, you can aim a cannon with them. "
+  ],
+  "objNames": [
+    "wb_math_components_to_polar"
+  ]
+}

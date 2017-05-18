@@ -1,0 +1,33 @@
+{
+  "cards": [
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Pressure underwater"
+        },
+        {
+          "type": "headline",
+          "text": "Equals sum of water and atmospheric pressures"
+        }
+      ]
+    },
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Atmospheric pressure = 101,325 pascals"
+        }
+      ]
+    }
+  ],
+  "definitions": [],
+  "secText": [
+    "The pressure underwater equals the sum of two pressures.  The pressure underwater equals the sum of atmospheric pressure applied on the water surface, and the pressure due solely to the weight of the water. We have discussed how to calculate the <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='wb_pressure_liquid_equation'>pressure</a> due solely to water. ",
+    "Atmospheric pressure (at Earth’s surface) is defined to be 101,325 pascals. Generally, the sum of the atmospheric pressure and the pressure of the fluid is called “absolute pressure.”  Gauge pressure is the pressure due solely to the fluid.  Some bicycle pumps have gauges that measure gauge pressure."
+  ],
+  "objNames": [
+    "wb_pressures_sum",
+    "wb_pressures_sum1"
+  ]
+}

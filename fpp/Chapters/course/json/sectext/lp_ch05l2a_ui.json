@@ -1,0 +1,47 @@
+{
+  "cards": [
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Newton’s second law"
+        },
+        {
+          "type": "headline",
+          "text": "Acceleration increases with net force"
+        },
+        {
+          "type": "headline",
+          "text": "And decreases in with mass"
+        }
+      ]
+    },
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Equilibrium"
+        },
+        {
+          "type": "headline",
+          "text": "No net force"
+        },
+        {
+          "type": "bullet",
+          "text": "No acceleration"
+        }
+      ]
+    }
+  ],
+  "definitions": [],
+  "secText": [
+    "  <b>Essential Question: </b>  <b>    <br />  </b>How does Newton's second law describe the relationship between net force, mass, and acceleration?",
+    "  <b>Enduring Understandings:</b>  <b>    <br />  </b>1. <a class='pjumpToTopic' href='javascript:void(0)' data-chap='5' data-topic='1' data-subtopic='1' data-subsection='0'>Mass</a> is the property that a body has that causes it to resist acceleration.<br />2. <a class='pjumpToTopic' href='javascript:void(0)' data-chap='5' data-topic='1' data-subtopic='2' data-subsection='0'>Newton's second law</a> states that net force is equal to mass multiplied by acceleration. Acceleration is in the direction of the net force.<br />3. <a class='pjumpToTopic' href='javascript:void(0)' data-chap='5' data-topic='1' data-subtopic='3' data-subsection='0'>Equilibrium</a> is reached when there is no net force (and therefore no net acceleration) on an object.<br />4. <a class='pjumpToTopic' href='javascript:void(0)' data-chap='1' data-topic='4' data-subtopic='1' data-subsection='0'>Motion equations</a> can be used to <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='app_forceonfighter_question'>solve for acceleration</a>. Acceleration can then be substituted into Newton's second law to solve for mass or net force.",
+    "  <b>Vocabulary:</b>  <a class='pjumpToTopic' href='javascript:void(0)' data-chap='5' data-topic='1' data-subtopic='1' data-subsection='0'>mass</a>, <a class='pjumpToTopic' href='javascript:void(0)' data-chap='5' data-topic='1' data-subtopic='2' data-subsection='0'>Newton's second law</a>, <a class='pjumpToTopic' href='javascript:void(0)' data-chap='5' data-topic='1' data-subtopic='3' data-subsection='0'>equilibrium</a>",
+    "  <b>STEM Skills:</b>  <b>    <br />  </b>1. Review <a class='pjumpToTopic' href='javascript:void(0)' data-chap='5' data-topic='0' data-subtopic='2' data-subsection='0'>net force</a>.<br />2. Review <a class='pjumpToTopic' href='javascript:void(0)' data-chap='1' data-topic='4' data-subtopic='1' data-subsection='0'>motion equations</a>."
+  ],
+  "objNames": [
+    "wb_newton_second_law_concept",
+    "wb_equilibrium"
+  ]
+}

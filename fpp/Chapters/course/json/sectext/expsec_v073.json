@@ -1,0 +1,30 @@
+{
+  "cards": [
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Neutrinos and weak force explained mystery of electron"
+        },
+        {
+          "type": "headline",
+          "text": "25 years after their existence was hypothesized, neutrinos were observed"
+        },
+        {
+          "type": "headline",
+          "text": "Observation of W and Z particles confirmed existence of weak force"
+        }
+      ]
+    }
+  ],
+  "definitions": [],
+  "secText": [
+    "Pauli’s hypothesis of the neutrino was an essential step in proving the existence of the weak force.  About 25 years passed before a neutrino was observed, providing strong empirical evidence to confirm the scientific theory. This delay is ironic, since hundreds of billions of neutrinos from the Sun pass through each of us every second.",
+    "Since neutrinos have no charge, almost no mass, and can pass through matter without being deflected, it took incredibly sensitive detection equipment to note their presence.  ",
+    "A large supply of neutrinos also proves helpful for detection. Later experiments took advantage of the amount of neutrinos created by nuclear fission to confirm their existence.  Fission caused billions of neutrinos to pass through every square centimeter of the detector every second. Even so, neutrinos are so difficult to observe that only one was noted every few hours.",
+    "A fundamental step in proving the existence of the weak force was discovering the particles that transmit the force.  Forces that act at a distance do so by exchanging particles.  For the electromagnetic force, it is <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='wb_photon_1'>photons</a>.  For the strong force, it is pions and gluons. For the weak force, force is transmitted by particles called W and Z <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='wb_standard_model3'>bosons</a>.  These were discovered at the CERN accelerator in Switzerland in 1983 and 1984. The 1984 Nobel Prize in physics was awarded for this key discovery."
+  ],
+  "objNames": [
+    "wb_troublesome_data_4"
+  ]
+}

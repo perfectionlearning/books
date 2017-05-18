@@ -1,0 +1,47 @@
+{
+  "cards": [
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Electric fields"
+        },
+        {
+          "type": "headline",
+          "text": "Test charge is used to measure force and field"
+        },
+        {
+          "type": "headline",
+          "text": "Field equals force per unit charge"
+        }
+      ]
+    },
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Electric field diagrams"
+        },
+        {
+          "type": "headline",
+          "text": "Lines show force on <u>positive</u> test charge"
+        },
+        {
+          "type": "headline",
+          "text": "Away from “+” charge, toward “−” charge"
+        }
+      ]
+    }
+  ],
+  "definitions": [],
+  "secText": [
+    "  <b>Essential Question: </b>  <b>    <br />  </b>How can we calculate electric fields?",
+    "  <b>Enduring Understandings:</b>  <b>    <br />  </b>1. <a class='pjumpToTopic' href='javascript:void(0)' data-chap='15' data-topic='2' data-subtopic='1' data-subsection='0'>Fields</a> describe forces that act at a distance. Gravitational and electric forces can be modeled using fields. Field lines show the direction of forces acting on test masses. The closer the field lines are to each other, the stronger the field is.<br />2. <a class='pjumpToTopic' href='javascript:void(0)' data-chap='15' data-topic='2' data-subtopic='2' data-subsection='1'>Electric fields</a> describe the amount of electric force that a charged particle experiences. The direction of the electric field is the direction of the force the field exerts on a positive test charge.<br />3. <a class='pjumpToTopic' href='javascript:void(0)' data-chap='15' data-topic='2' data-subtopic='3' data-subsection='0'>Electric field diagrams</a> show the strength of electric fields at any location.<br />4. The <a class='pjumpToTopic' href='javascript:void(0)' data-chap='15' data-topic='2' data-subtopic='4' data-subsection='1'>force from an electric field</a> can be calculated by multiplying the charge by the electric field.",
+    "  <b>Vocabulary:</b>  <a class='pjumpToTopic' href='javascript:void(0)' data-chap='15' data-topic='2' data-subtopic='1' data-subsection='0'>field</a>, <a class='pjumpToTopic' href='javascript:void(0)' data-chap='15' data-topic='2' data-subtopic='2' data-subsection='1'>electric field</a>, <a class='pjumpToTopic' href='javascript:void(0)' data-chap='15' data-topic='2' data-subtopic='4' data-subsection='4'>electrostatic equilibrium</a>",
+    "  <b>STEM Skills:</b>  <b>    <br />  </b>1. Review <a class='pjumpToTopic' href='javascript:void(0)' data-chap='15' data-topic='0' data-subtopic='1' data-subsection='1'>charge</a>.<br />2. Review <a class='pjumpToTopic' href='javascript:void(0)' data-chap='5' data-topic='0' data-subtopic='1' data-subsection='1'>force</a>."
+  ],
+  "objNames": [
+    "wb_efields_concepts",
+    "wb_efield_diagrams_concepts"
+  ]
+}

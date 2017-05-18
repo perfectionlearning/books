@@ -1,0 +1,48 @@
+{
+  "cards": [
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Power"
+        },
+        {
+          "type": "headline",
+          "text": "Rate of energy transfer "
+        }
+      ]
+    },
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Power equation"
+        },
+        {
+          "type": "headline",
+          "text": "  <span class=\"math\">    <i>P</i> = power</span>, <span class=\"math\"><i>W</i> = work</span>, <br><span class=\"math\"><span class=\"Symbols\">∆</span><i>E</i> = energy transfer</span>, <span class=\"math\"><i><span class=\"Symbols\">∆</span>t</i> = elapsed time</span>"
+        },
+        {
+          "type": "headline",
+          "text": "Unit: watt (joule/second)"
+        }
+      ]
+    }
+  ],
+  "definitions": [
+    {
+      "term": "Power",
+      "def": "Rate of energy transfer."
+    }
+  ],
+  "secText": [
+    "Light bulbs are often described in terms of their power consumption.  Their power rating, in watts, describes how many joules of electrical energy are turned into heat and light every second. In a 100-watt (100 W) bulb, 100 joules of electrical energy become heat and light every second. ",
+    "The equation is the same as the definition − energy transfer divided by elapsed time. ",
+    "We can also relate power to work. Power equals the work divided by the elapsed time. ",
+    "The unit for power is the watt. One watt is one joule per second. "
+  ],
+  "objNames": [
+    "wb_power_concept",
+    "wb_power_equation10"
+  ]
+}
