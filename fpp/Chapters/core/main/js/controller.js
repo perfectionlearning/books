@@ -2,23 +2,78 @@
     var view = new View();
     var p = {};
     p.subSection = 0;
+    p.userId;
+    p.usertype;
+    var coreData;
+    var lessonFlag = false;
     this.init = function () {
+      showLoader();
       eventListener();
     };
     function eventListener() {
       $(document).off("loadNext", loadNext).on("loadNext", loadNext);
       $(document).off("loadPrev", loadPrev).on("loadPrev", loadPrev);
+      $(document).off("changePassword", changePassword).on("changePassword", changePassword);
+      $(document).off("changeEmail", changeEmail).on("changeEmail", changeEmail);
       $(document).off("loadSpecificTopic", loadSpecificTopic).on("loadSpecificTopic", loadSpecificTopic);
+      $(document).off("updateBook", updateBook).on("updateBook", updateBook);
       loadBookData();
     }
     function loadBookData(e, data) {
       httpRequest("course/json/toc/BookDefinition.json", "json", function (_data) {
+        coreData = _data;
         p.bookData = _data.chapters;
+        p.quizboard_get_link = _data.quizboard_get_link;
         p.get_link = _data.get_link;
         p.set_link = _data.put_link;
+        p.session_info = _data.session_info;
+        p.setting = _data.setting;
+        getUserId();
         $(document).trigger("getBookData", {bookData: _data});
-        $(document).trigger("createShell");
+
+
       });
+    }
+    function getUserId() {
+      var request = $.ajax({
+        url: "https://qa1.perfectionlearning.com/api/endpoint/output/wrapping/set",
+        xhrFields: {
+          withCredentials: true
+        },
+        crossDomain: true,
+        data: '{"wrap_output": false}',
+        method: "PUT",
+        complete: function (jqXHR, textStatus) {
+          httpRequest(p.session_info, "json", function (data) {
+            console.log(data);
+            if (data.hasOwnProperty("user_id")) {
+              p.userId = data.user_id;
+              p.usertype = data.homedisplay;
+            } else if (data.hasOwnProperty("data")) {
+              p.userId = data.data.user_id;
+              p.usertype = data.data.homedisplay;
+            }
+
+            view.setUserType(p.usertype);
+            $(document).trigger("createShell");
+          }, function () {
+
+          });
+
+        }
+      });
+
+    }
+
+    function updateBook(e, book) {
+      if (book.book) {
+        lessonFlag = false;
+        p.bookData = coreData.chapters;
+      } else {
+        lessonFlag = true;
+        p.bookData = coreData.lessonPlan.chapters;
+      }
+
     }
     function manageNavigationState() {
       var unit = p.bookData[p.chap]["unit"].length - 1;
@@ -79,16 +134,33 @@
     }
     this.hashChange = function (data) {
       if (data.type == "chapter") {
-
         p.chap = data.chap;
         p.unit = data.unit;
         p.section = data.section;
         p.subSection = data.subsection;
-        if (data.hasOwnProperty("v_index")) {
-          loadScreen(data.v_index);
+
+        if (data.lessonFlag == "true") {
+          if (p.usertype != "Student") {
+            if (lessonFlag != data.lessonFlag) {
+              lessonFlag = true;
+              p.bookData = coreData.lessonPlan.chapters;
+              view.updateBook(false);
+              loadScreen();
+            }
+          } else {
+            view.loadScreen({type: "book", data: {type: "book"}})
+          }
         } else {
+          if (data.lessonFlag == "false") {
+            lessonFlag = false;
+            p.bookData = coreData.chapters;
+            view.updateBook(true);
+          }
           loadScreen();
         }
+
+      } else if(data.type == "search"){
+        $(document).trigger("showSearchBox", {searchKey:data.searchKey});
       } else {
         view.loadScreen({type: data.type, data: data})
       }
@@ -97,28 +169,53 @@
     function loadScreen(vIndex) {
       manageNavigationState();
       var _data = p.bookData[p.chap]["unit"][p.unit]["section"][p.section]["subsection"][p.subSection];
+      $(document).trigger("loadSubMenu", {"chap": p.chap});
       updateBreadCrumb();
-      console.log(_data.type);
-      location.hash = 'type_chapter/chapter_' + p.chap + '/unit_' + p.unit + '/section_' + p.section + '/subsection_' + p.subSection + "/v_index_" + vIndex;
-      $(document).trigger("loadSubMenu", {"chap": p.chap, unit: p.unit, section: p.section, subsection: p.subSection});
-
+      updateSubMenu();
+      var screenNo;
+      blockHashEvent = true;
+      location.hash = 'lesson_' + lessonFlag + '/type_chapter/chapter_' + p.chap + '/unit_' + p.unit + '/section_' + p.section + '/subsection_' + p.subSection;
+      setTimeout(function () {
+        blockHashEvent = false;
+      }, 500);
+      if (lessonFlag) {
+        if (p.bookData[p.chap]["unit"][p.unit]["section"][p.section]["subsection"].length <= 1) {
+          screenNo = (Number(p.unit) + 1) + "." + (Number(p.section));
+        } else {
+          var chr = String.fromCharCode(97 + Number(p.subSection));
+          if (p.section == 1) {
+            screenNo = "";
+          } else {
+            screenNo = "Lesson" + (Number(p.section) - 1) + "." + (chr);
+          }
+        }
+      } else {
+        if (p.bookData[p.chap]["unit"][p.unit]["section"][p.section]["subsection"].length <= 1) {
+          screenNo = (Number(p.unit) + 1) + "." + (Number(p.section));
+        } else {
+          var chr = String.fromCharCode(97 + Number(p.subSection));
+          screenNo = (Number(p.unit) + 1) + "." + (Number(p.section)) + "." + (chr);
+        }
+      }
       switch (_data.type) {
         case "summary":
-          $(document).trigger("loadSummaryScreen", {screenData: _data});
+          $(document).trigger("loadSummaryScreen", {screenData: _data, screenNo: screenNo});
           break;
         case "quizboard":
           $('.activityLoader').show();
           getQuizboardData(_data, function (data1) {
             var _temp = {};
+            _temp.screenNo = screenNo;
             _temp.screenData = data1;
             _temp.instance_id = p.bookData[p.chap]["quizBoard_id"];
             $(document).trigger("loadQuizBoard", _temp);
           });
           break;
         case "quizcheck":
-          $('.activityLoader').show();
+          showLoader();
           getQuizData(_data, function (data1) {
             var _temp = {};
+            _temp.screenNo = screenNo;
             _temp.screenData = data1;
             _temp.instance_id = p.bookData[p.chap]["instance_id"];
             _temp.problem_inst_id = p.bookData[p.chap]["unit"][p.unit]["section"][p.section]["subsection"][p.subSection]["problem_inst_id"];
@@ -126,23 +223,26 @@
           });
           break;
         case "labmenu":
-          $(document).trigger("loadLabMenu", {screenData: _data})
+          $(document).trigger("loadLabMenu", {screenData: _data, screenNo: screenNo})
           break;
         case "playVideo":
-          $(document).trigger("loadOnlyVideo", {screenData: _data, playFree: true});
+          $(document).trigger("loadOnlyVideo", {screenData: _data, playFree: true, screenNo: screenNo});
           break;
         case "onlyVideo":
-          $(document).trigger("loadOnlyVideo", {screenData: _data});
+          $(document).trigger("loadOnlyVideo", {screenData: _data, screenNo: screenNo});
           break;
         case "additonal_resource":
-          $(document).trigger("loadAdditionalResource", {screenData: _data})
+          $(document).trigger("loadAdditionalResource", {screenData: _data, screenNo: screenNo})
           break;
 
         case "videoScreen":
         default:
           httpRequest("course/json/sectext/" + _data.ref, "json", function (_temp) {
             _temp.SectionHeading = _data["SectionHeading"];
-            var _tempdata = {screenData: _temp}
+
+
+
+            var _tempdata = {screenData: _temp, screenNo: screenNo}
             _tempdata.type = _data.type;
             if (typeof vIndex != "undefined") {
               _tempdata.vPlay = vIndex
@@ -156,27 +256,62 @@
 
     }
     function updateBreadCrumb() {
-      var txt;
-      if (p.section == 0) {
-        txt = p.bookData[p.chap]["title"] + " > " + p.bookData[p.chap]["unit"][p.unit]["section"][p.section]["SectionTitle"] + " > " + p.bookData[p.chap]["unit"][p.unit]["section"][p.section]["SectionTitle"];
+      var txt, section;
+      if (lessonFlag) {
+        if (p.section == 0) {
+          section = (Number(p.unit) + 1) + "." + (Number(p.section));
+          txt = "CH " + p.chap + ": " + p.bookData[p.chap]["title"] + " > " + p.bookData[p.chap]["unit"][p.unit]["section"][p.section]["SectionTitle"] + " >  " + p.bookData[p.chap]["unit"][p.unit]["section"][p.section]["SectionTitle"];
+        } else {
+          section = (Number(p.unit) + 1) + "." + (Number(p.section));
+          txt = "CH " + p.chap + ": " + p.bookData[p.chap]["title"] + " > " + p.bookData[p.chap]["unit"][p.unit]["section"][0]["SectionTitle"] + " >  " + p.bookData[p.chap]["unit"][p.unit]["section"][p.section]["SectionTitle"];
+        }
       } else {
-        txt = p.bookData[p.chap]["title"] + " > " + p.bookData[p.chap]["unit"][p.unit]["section"][p.section]["SectionTitle"] + " > " + p.bookData[p.chap]["unit"][p.unit]["section"][p.section]["subsection"][p.subSection]["SectionHeading"];
+        if (p.section == 0) {
+          section = (Number(p.unit) + 1) + "." + (Number(p.section));
+          txt = "CH " + p.chap + ": " + p.bookData[p.chap]["title"] + " > LESSON " + (Number(p.unit) + 1) + ": " + p.bookData[p.chap]["unit"][p.unit]["section"][p.section]["SectionTitle"] + " >  " + p.bookData[p.chap]["unit"][p.unit]["section"][p.section]["SectionTitle"];
+        } else {
+          section = (Number(p.unit) + 1) + "." + (Number(p.section));
+          txt = "CH " + p.chap + ": " + p.bookData[p.chap]["title"] + " > LESSON " + (Number(p.unit) + 1) + ": " + p.bookData[p.chap]["unit"][p.unit]["section"][0]["SectionTitle"] + " >  " + p.bookData[p.chap]["unit"][p.unit]["section"][p.section]["SectionTitle"];
+        }
       }
       $('.pBreadCrumb').show().html(txt);
     }
+    function updateSubMenu() {
+      $('.accSysmbol').html("+");
+      $('.sopen').removeClass("sopen");
+      $('.tActive').removeClass("tActive");
+      $('.pSubTopicInnerMainWrap').hide();
+      $('.pSubMenuHeader').html("Ch " + (Number(p.chap)) + ": " + p.bookData[p.chap]["title"])
+      var elem = $(".pSubMenuTopic[data-chap='" + p.chap + "'][data-topic='" + p.unit + "'][data-subtopic='" + p.section + "'][data-subsection='" + p.subSection + "'] ");
+      elem.addClass("tActive");
+      if (elem.parent().parent().hasClass("child")) {
+        elem.parent().parent().parent().parent().find('.pSubTopicName .accSysmbol').not('.pSubTopicInnerWrap .accSysmbol').html("-");
+        elem.parent().parent().find('.pSubTopicName .accSysmbol').html("-");
+        elem.parent().parent().parent().parent().addClass("sopen");
+        elem.parent().parent().parent().show();
+        elem.parent().parent().addClass("sopen");
+        elem.parent().show();
+      } else {
+        elem.parent().parent().find('.pSubTopicName .accSysmbol').not('.pSubTopicInnerWrap .accSysmbol').html("-");
+        elem.parent().parent().addClass("sopen");
+        elem.parent().show();
+      }
+
+
+      $(".pSubMenuTopic[data-chap='" + p.chap + "'][data-topic='" + p.unit + "'][data-subtopic='" + p.section + "'][data-subsection='" + p.subSection + "'] ").prevUntil('.pSubMenuTopicHeader').prev().show();
+    }
     function getQuizData(_data, cb) {
       httpRequest(p.get_link + p.bookData[p.chap]["instance_id"], "json", function (data) {
-
+        console.log(data);
         data = data[p.bookData[p.chap]["unit"][p.unit]["section"][p.section]["subsection"][p.subSection]["problem_inst_id"]];
         data = cleanMML(data);
-        console.log(data);
         cb(data);
       }, function () {
         cb({json: false})
       });
     }
     function getQuizboardData(_data, cb) {
-      httpRequest(p.get_link + p.bookData[p.chap]["quizBoard_id"], "json", function (data) {
+      httpRequest(p.quizboard_get_link + p.bookData[p.chap]["quizBoard_id"], "json", function (data) {
         for (var i in data) {
           data[i] = cleanMML(data[i]);
         }
@@ -185,6 +320,65 @@
       }, function () {
         cb({json: false})
       });
+
+    }
+    function changePassword(e, data) {
+      var _data = {"old_password": data.old_password, "new_password": data.new_password};
+      _data = JSON.stringify(_data);
+      var request = $.ajax({
+        url: p.setting + p.userId + '/password',
+        xhrFields: {
+          withCredentials: true
+        },
+        crossDomain: true,
+        data: _data,
+        method: "PUT",
+        complete: function (jqXHR, textStatus) {
+          if (jqXHR.responseText == "Array") {
+            $('.changePassBody .feedback').css("color", "green").html("Your password has been changed. ").fadeIn();
+
+          } else {
+            $('.changePassBody .feedback').css("color", "red").html("That password doesn't meet our security requirements.").fadeIn();
+          }
+          hideLoader();
+        }
+      });
+
+      request.done(function (data) {
+        request = null;
+
+      });
+
+      request.fail(function (jqXHR, textStatus) {
+        request = null;
+      });
+
+    }
+
+    function changeEmail(e, data) {
+
+      var _data = {"email": data.email};
+      _data = JSON.stringify(_data);
+      var request = $.ajax({
+        url: p.setting + p.userId + '/email',
+        xhrFields: {
+          withCredentials: true
+        },
+        crossDomain: true,
+        data: _data,
+        method: "PUT",
+        complete: function (jqXHR, textStatus) {
+          var response = JSON.parse(jqXHR.responseText);
+          if (response.status == "success") {
+            $('.changeEmailBody .feedback').css("color", "green").html("Your email address has been changed. ").fadeIn();
+
+          } else {
+            $('.changeEmailBody .feedback').css("color", "red").html("That password doesn't meet our security requirements.").fadeIn();
+          }
+          hideLoader();
+        }
+      });
+
 
     }
     this.init();

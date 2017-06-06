@@ -5,9 +5,12 @@
     var quizCheck = new QuizCheck();
     var quizBoard = new QuizBoard();
     var p = new Object();
+    var coreData;
+    p.usertype;
     p.mShell = null; //html shell
     p.bookData = {};
     eventListener();
+    var lessonFlag = false;
     function eventListener() {
       //location.hash = "type_book";
       $(document).off("createShell", createShell).on("createShell", createShell);
@@ -22,14 +25,28 @@
       $(document).off("loadSubMenu", loadSubMenu).on("loadSubMenu", loadSubMenu);
       $(document).off("loadOnlyVideo", loadOnlyVideo).on("loadOnlyVideo", loadOnlyVideo);
       $(document).off("loadAdditionalResource", loadAdditionalResource).on("loadAdditionalResource", loadAdditionalResource);
-      $(document).off(mouseEvents.down).on(mouseEvents.down, function () {
-        overlayDown();
+      $(document).off("showSearchBox", showSearchBox).on("showSearchBox", showSearchBox);
+      $(document).off(mouseEvents.down).on(mouseEvents.down, function (e) {
+        overlayDown(e);
       });
     }
     function getBookData(e, data) {
       p.bookData = data.bookData;
+      coreData = data;
     }
+    this.updateBook = function (book) {
+      if (book) {
+        lessonFlag = false;
+        p.bookData = coreData.bookData;
+      } else {
+        lessonFlag = true;
+        p.bookData = coreData.bookData.lessonPlan;
+      }
 
+    }
+    this.setUserType = function (type) {
+      p.usertype = type;
+    }
     function createShell(e) {
       //create shell dom
       if (p.mShell != null) {
@@ -50,7 +67,10 @@
         }
       });
       $(p.mContainer).appendTo(p.mShell);
-      createPlayer("header");
+      $.getJSON("course/json/searchBook/searchBook.json", function (data) {
+        p.searchBook = data.data;
+        createPlayer("header");
+      });
     }
     function createPlayer(_str) {
       switch (_str) {
@@ -113,15 +133,50 @@
           loadHtml({
             src: "course/template/labpage.html",
             parent: p.mContainer,
+            next: "setting",
             callback: function () {
               $(p.mShell).find(".pLabSubMenuButton").click(openCloseLabSubMenu);
-              updateUrl();
             }
           });
           break; //---->
+        case "setting":
+          loadHtml({
+            src: "course/template/setting.html",
+            parent: ".pActivityWrapper",
+            callback: function () {
+              console.log("hide loader called");
+
+              $(".pSettingBody").mCustomScrollbar({
+                theme: "dark-3",
+                axis: "y",
+                scrollInertia: 0, mouseWheelPixels: 50,
+                scrollButtons: {enable: false}
+              });
+              $('.activityLoader').hide();
+              updateView();
+              updateUrl();
+              playerEvent();
+
+            }
+          });
+          break;
       }
     }
+    function updateView() {
+      switch (p.usertype) {
+        case "Student":
+          $('.lessonPlans').next('.pMenuSeperator').remove();
+          $('.lessonPlans').remove();
+          $('.admin').next('.pMenuSeperator').remove();
+          $('.admin').remove();
+          $('.pGrades').next('.pMenuSeperator').remove();
+          $('.pGrades').remove();
+          $(".pSettingComp[data-type='email']").remove();
+          $(".pChapName[data-chapter='27']").remove();
+          break;
 
+      }
+    }
     function openCloseLabSubMenu() {
       var state = $(p.mShell).find(".pLabSubMenu").data("open");
       if (!state) {
@@ -167,16 +222,29 @@
       labsWrapper.mCustomScrollbar({
         theme: "dark-3",
         axis: "y",
-        scrollInertia: 0,
+        scrollInertia: 0, mouseWheelPixels: 50,
         scrollButtons: {enable: false}
       });
     }//---->
 
     function initBook() {
-      var _chapWrap = $('.pChapBody');
-      var _chapMain = $('.pChapName');
-      var _sep = $('.pChapBody .pChapSeperator');
+      $(p.mShell).find('.pChapBody').mCustomScrollbar("destroy");
+      var _chapWrap = $('.pChapBody')[0];
+      _chapWrap = $(_chapWrap);
+      var _chapMain = $('.pChapName')[0];
+      _chapMain = $(_chapMain);
+      var _sep = $('.pChapBody .pChapSeperator')[0];
+      _sep = $(_sep);
+      if (lessonFlag) {
+        $('.pChapHeader').html("Lesson Plans")
+      } else {
+        $('.pChapHeader').html("Table of Contents")
+      }
+
       p.bookData;
+      $('.pChapName').removeClass('active');
+      $('.pChapName').not(":first").remove();
+      $('.pChapBody .pChapSeperator').not(":first").remove();
       for (var i in p.bookData.chapters) {
         if (i > 0) {
           _chapMain.clone().appendTo(_chapWrap)
@@ -190,44 +258,98 @@
         $(this).html("Ch " + (i + 1) + ": " + p.bookData.chapters[i + 1]["title"]);
       });
       loadTopic(1);
+      $(document).trigger("loadSubMenu", {"chap": 1});
       $(p.mShell).find('.pChapBody').mCustomScrollbar({
         theme: "dark-3",
         axis: "y",
-        scrollInertia: 0,
+        scrollInertia: 0, mouseWheelPixels: 50,
         scrollButtons: {enable: false}
       });
     }
-    function loadSubMenu(e, data) {
 
-      var _subchapWrap = $('.pSubMenuWrap')[0];
+    function loadSubMenu(e, data) {
+      $(p.mShell).find('.innerMenuWrap').mCustomScrollbar("destroy");
+      var _html = "<div class='pSubTopicWrapper pSubMenuTopicHeader'> <div class='pSubTopicName'>Ch 1 : One-Dimensional</div><div class='pChapSeperator'></div><div class='pSubTopicInnerMainWrap'> <div class='pSubTopicInnerWrap'> <div class='pSubTopicName'>Ch 1 : One-Dimensional</div><div class='pChapSeperator'></div></div></div></div>";
+      var _subchapWrap = $('.innerMenuWrap')[0];
+      $(_subchapWrap).html(_html);
       var _subchapMain = $('.pSubTopicWrapper')[0];
-      var _subsep = $('.pSubMenuWrap .pChapSeperator')[0];
       $('.pSubMenuWrap,.pSubmenuButton').removeClass("open");
       $(p.mShell).find(".pSubTopicWrapper").removeClass("tActive").not(":first").remove();
-      var _tempData = p.bookData.chapters[data["chap"]]["unit"][data["unit"]]["section"]
-      for (var i in _tempData) {
-        $(_subchapMain).clone().appendTo(_subchapWrap)
+      var temp = p.bookData.chapters[data["chap"]];
+      for (var i in temp.unit) {
+        for (var j in temp.unit[i]["section"]) {
+          if (j == 0) {
+            $(_subchapMain).clone().addClass("pSubMenuTopicHeader").appendTo(_subchapWrap).html()
+          }
+
+        }
       }
       $('.pSubTopicName').removeClass("pHover");
       $('.pSubTopicWrapper').removeClass("pHover").last().remove();
+      var _pSubTopicInnerWrap = $('.pSubTopicInnerWrap')[0];
+      var _pSubTopicInnerMainWrap = $('.pSubTopicInnerMainWrap')[0];
       $('.pSubTopicWrapper').each(function (i) {
-
-        $(this).find('.pSubTopicName').html(_tempData[i]["SectionTitle"]);
-        if (!_tempData[i].hasOwnProperty("link") && !_tempData[i].hasOwnProperty("hyperLink") && _tempData[i]["subsection"].length > 1) {
-          $(this).attr("data-subsection", '');
-          $(this).append("<div class='psubsectionWrapper'></div>").addClass("child");
-          $(this).find('.pSubTopicName').prepend("<span class='accSysmbol'>+</span>")
-          for (var j in _tempData[i]["subsection"]) {
-            var temp = '<div class="pSubTopicName">' + _tempData[i]["subsection"][j]["SectionHeading"] + '</div><div class="pChapSeperator"></div>';
-            $(_subchapMain).clone().appendTo($(this).find('.psubsectionWrapper')).attr("data-chap", data["chap"]).attr("data-topic", data["unit"]).attr("data-subtopic", i).attr("data-subsection", j).html(temp);
-          }
+        if (!lessonFlag) {
+          $(this).find('.pSubTopicName').html("<span class='accSysmbol'>+</span> Lesson " + (Number(i) + 1) + ": " + temp.unit[i]["section"][0]["SectionTitle"])
         } else {
-          $(this).attr("data-chap", data["chap"]).attr("data-topic", data["unit"]).attr("data-subtopic", i).attr("data-subsection", 0);
-          $(this).find('.psubsectionWrapper').remove();
+          $(this).find('.pSubTopicName').html("<span class='accSysmbol'>+</span> " + temp.unit[i]["section"][0]["SectionTitle"])
+        }
+        var _mainWrpa = $(this).find('.pSubTopicInnerMainWrap');
+        for (var j in temp.unit[i]["section"]) {
+
+          if (j == 0) {
+            if (!lessonFlag) {
+              $(_pSubTopicInnerWrap).clone().appendTo(_mainWrpa).attr("data-subsection", 0).attr("data-chap", data["chap"]).attr("data-topic", i).attr("data-subtopic", j).addClass("pSubMenuTopic").find('.pSubTopicName').html("Lesson Overview");
+            }
+          } else {
+            if (!lessonFlag) {
+              if (temp.unit[i]['section'][j]["subsection"].length > 1) {
+                $(_pSubTopicInnerWrap).clone().appendTo(_mainWrpa).addClass("pSubMenuTopicHeader").addClass("child").attr("data-chap", data["chap"]).attr("data-topic", i).attr("data-subtopic", j).find('.pSubTopicName').html("<span class='accSysmbol'>+</span>" + (i + 1) + "." + j + " " + temp.unit[i]['section'][j]["SectionTitle"]);
+              } else {
+                $(_pSubTopicInnerWrap).clone().appendTo(_mainWrpa).addClass("pSubMenuTopic").attr("data-chap", data["chap"]).attr("data-subsection", 0).attr("data-topic", i).attr("data-subtopic", j).find('.pSubTopicName').html((i + 1) + "." + j + " " + temp.unit[i]['section'][j]["SectionTitle"]);
+              }
+            } else {
+              if (temp.unit[i]['section'][j]["subsection"].length > 1) {
+                $(_pSubTopicInnerWrap).clone().appendTo(_mainWrpa).addClass("pSubMenuTopicHeader").addClass("child").attr("data-chap", data["chap"]).attr("data-topic", i).attr("data-subtopic", j).find('.pSubTopicName').html("<span class='accSysmbol'>+</span>" + temp.unit[i]['section'][j]["SectionTitle"]);
+              } else {
+                $(_pSubTopicInnerWrap).clone().appendTo(_mainWrpa).addClass("pSubMenuTopic").attr("data-chap", data["chap"]).attr("data-subsection", 0).attr("data-topic", i).attr("data-subtopic", j).find('.pSubTopicName').html(temp.unit[i]['section'][j]["SectionTitle"]);
+              }
+            }
+          }
         }
 
+        $(this).find('.pSubTopicInnerMainWrap .pSubTopicInnerWrap').first().remove();
       });
-      $(p.mShell).find(".pSubTopicWrapper[data-chap='" + data["chap"] + "'][data-topic='" + data['unit'] + "'][data-subtopic='" + data["section"] + "'][data-subsection='" + data["subsection"] + "']").addClass("tActive");
+      $(p.mShell).find('.pSubTopicInnerWrap.child').each(function () {
+        var chap, unit, section;
+        chap = Number($(this).attr("data-chap"));
+        unit = Number($(this).attr("data-topic"));
+        section = Number($(this).attr("data-subtopic"));
+        $(_pSubTopicInnerMainWrap).clone().appendTo($(this));
+        $(this).find('.pSubTopicInnerMainWrap .pSubTopicInnerWrap').not(":first").removeClass("child").remove();
+        var _mainWrpa = $(this).find('.pSubTopicInnerMainWrap');
+        for (var i in temp.unit[unit]['section'][section]["subsection"]) {
+          i = Number(i);
+          var chr = String.fromCharCode(97 + i);
+          if (!lessonFlag) {
+            $(_pSubTopicInnerWrap).clone().appendTo(_mainWrpa).addClass("pSubMenuTopic").attr("data-chap", data["chap"]).attr("data-topic", unit).attr("data-subtopic", section).attr('data-subsection', i).find('.pSubTopicName').html((unit + 1) + "." + section + "." + chr + " " + temp.unit[unit]['section'][section]["subsection"][i]["SectionHeading"]);
+          } else {
+            if (section == 1) {
+              $(_pSubTopicInnerWrap).clone().appendTo(_mainWrpa).addClass("pSubMenuTopic").attr("data-chap", data["chap"]).attr("data-topic", unit).attr("data-subtopic", section).attr('data-subsection', i).find('.pSubTopicName').html(temp.unit[unit]['section'][section]["subsection"][i]["SectionHeading"]);
+            } else {
+              $(_pSubTopicInnerWrap).clone().appendTo(_mainWrpa).addClass("pSubMenuTopic").attr("data-chap", data["chap"]).attr("data-topic", unit).attr("data-subtopic", section).attr('data-subsection', i).find('.pSubTopicName').html("Lesson " + (section - 1) + "." + chr + "  " + temp.unit[unit]['section'][section]["subsection"][i]["SectionHeading"]);
+            }
+          }
+        }
+        $(this).find('.pSubTopicInnerMainWrap .pSubTopicInnerWrap').first().remove();
+      });
+
+      $(p.mShell).find('.innerMenuWrap').mCustomScrollbar({
+        theme: "dark-3",
+        axis: "y",
+        scrollInertia: 0, mouseWheelPixels: 50,
+        scrollButtons: {enable: false}
+      });
       playerEvent();
     }
     function navigationState(e, data) {
@@ -248,32 +370,49 @@
       $(p.mShell).find('.pTopicBody').mCustomScrollbar("destroy");
       $(p.mShell).find(".pTopicHeading").removeClass('hyperLink').removeClass('noLink').not(":first").remove();
       $(p.mShell).find(".pSubtopic").not(":first").remove();
-      $(p.mShell).find('.pTopicName').html(temp.title);
+      $(p.mShell).find('.pTopicName').html("Ch " + (topic_no) + ": " + temp.title);
       var _pTopicHeading = $('.pTopicHeading');
       var _pSubtopic = $(".pSubtopic");
       var _pTopicBody = $('.pTopicBody');
       var _index = 0;
       for (var i in temp.unit) {
-
+        var _index = 0;
         for (var j in temp.unit[i]["section"]) {
-
-          if (j == 0) {
-            if (temp.unit[i]["section"][j].hasOwnProperty("link")) {
-              _pTopicHeading.clone().appendTo(_pTopicBody).addClass("noLink").attr("data-chap", topic_no).attr("data-topic", i).attr("data-subtopic", j).html((Number(i) + 1) + ": " + temp.unit[i]["section"][j]["SectionTitle"])
+          if (!lessonFlag) {
+            if (j == 0) {
+              if (temp.unit[i]["section"][j].hasOwnProperty("link")) {
+                _pTopicHeading.clone().appendTo(_pTopicBody).addClass("noLink").attr("data-chap", topic_no).attr("data-topic", i).attr("data-subtopic", j).html(temp.unit[i]["section"][j]["SectionTitle"])
+              } else {
+                _pTopicHeading.clone().appendTo(_pTopicBody).attr("data-chap", topic_no).attr("data-topic", i).attr("data-subtopic", j).html("Lesson " + (Number(i) + 1) + ": " + temp.unit[i]["section"][j]["SectionTitle"])
+              }
             } else {
-              _pTopicHeading.clone().appendTo(_pTopicBody).attr("data-chap", topic_no).attr("data-topic", i).attr("data-subtopic", j).html((Number(i) + 1) + ": " + temp.unit[i]["section"][j]["SectionTitle"])
+              _index++;
+              if (temp.unit[i]["section"][j].hasOwnProperty("hyperLink")) {
+                _pSubtopic.clone().appendTo(_pTopicBody).addClass("hyperLink").html(temp.unit[i]["section"][j]["href"])
+              } else {
+                if (temp.unit[i]["section"][j].hasOwnProperty("number")) {
+                  _pSubtopic.clone().appendTo(_pTopicBody).attr("data-chap", topic_no).attr("data-topic", i).attr("data-subtopic", j).html(temp.unit[i]["section"][j]["SectionTitle"])
+                } else {
+                  _pSubtopic.clone().appendTo(_pTopicBody).attr("data-chap", topic_no).attr("data-topic", i).attr("data-subtopic", j).html((Number(i) + 1) + "." + _index + ": " + temp.unit[i]["section"][j]["SectionTitle"])
+                }
+              }
             }
           } else {
-            _index++;
-            if (temp.unit[i]["section"][j].hasOwnProperty("hyperLink")) {
-              console.log("in");
-              console.log();
-              _pSubtopic.clone().appendTo(_pTopicBody).addClass("hyperLink").html(temp.unit[i]["section"][j]["href"])
+            if (j == 0) {
+              if (temp.unit[i]["section"][j].hasOwnProperty("link")) {
+                _pTopicHeading.clone().appendTo(_pTopicBody).addClass("noLink").attr("data-chap", topic_no).attr("data-topic", i).attr("data-subtopic", j).html(temp.unit[i]["section"][j]["SectionTitle"])
+              } else {
+                _pTopicHeading.clone().appendTo(_pTopicBody).attr("data-chap", topic_no).attr("data-topic", i).attr("data-subtopic", j).html(temp.unit[i]["section"][j]["SectionTitle"])
+              }
             } else {
-              _pSubtopic.clone().appendTo(_pTopicBody).attr("data-chap", topic_no).attr("data-topic", i).attr("data-subtopic", j).html(_index + ": " + temp.unit[i]["section"][j]["SectionTitle"])
+              _index++;
+              if (temp.unit[i]["section"][j].hasOwnProperty("hyperLink")) {
+                _pSubtopic.clone().appendTo(_pTopicBody).addClass("hyperLink").html(temp.unit[i]["section"][j]["href"])
+              } else {
+                _pSubtopic.clone().appendTo(_pTopicBody).attr("data-chap", topic_no).attr("data-topic", i).attr("data-subtopic", j).html(temp.unit[i]["section"][j]["SectionTitle"])
+              }
             }
           }
-
         }
       }
       _pTopicHeading.first().remove();
@@ -281,7 +420,7 @@
       $(p.mShell).find('.pTopicBody').mCustomScrollbar({
         theme: "dark-3",
         axis: "y",
-        scrollInertia: 0,
+        scrollInertia: 0, mouseWheelPixels: 50,
         scrollButtons: {enable: false}
       });
       playerEvent();
@@ -340,11 +479,11 @@
         }
         //$(p.mShell).find(".pVideoIcon").css("height", maxHeight + "px")
         $(p.mShell).find(".pActivityDesc").html(desc);
-        $(p.mShell).find(".pActivityHeader").html(_tempScreenData.SectionHeading);
+        $(p.mShell).find(".pActivityHeader").html(data.screenNo + " " + _tempScreenData.SectionHeading);
         $(p.mShell).find('.pActivityArea .pActivityBody').mCustomScrollbar({
           theme: "dark-3",
           axis: "y",
-          scrollInertia: 0,
+          scrollInertia: 0, mouseWheelPixels: 50,
           scrollButtons: {enable: false}
         });
       } else {
@@ -373,22 +512,20 @@
       $('.pVideoIconWrap').hide();
       $('.pActivityDesc').css("width", "100%");
       $('.pActivityDesc').html(" ");
+      $(p.mShell).find(".pActivityHeader").html(data.screenNo + " " + data.screenData.SectionHeading);
       $(p.mShell).find(".pActivityHeader").html(data.screenData.SectionHeading);
       hideLoader();
-      console.log(data);
       httpRequest(data.screenData.ref, "html", function (_data) {
         $(".pActivityDesc").html(_data);
-
         $(p.mShell).find('.pActivityArea .pActivityBody').mCustomScrollbar("destroy");
         $(p.mShell).find('.pActivityArea .pActivityBody').mCustomScrollbar({
           theme: "dark-3",
           axis: "y",
-          scrollInertia: 0,
+          scrollInertia: 0, mouseWheelPixels: 50,
           scrollButtons: {enable: false}
         });
         playerEvent();
       });
-
       p.currentType = "videoScreen";
       manageScreen("videoScreen");
       $('.pSubmenuButton').hide();
@@ -400,6 +537,7 @@
       p.cSrc = _tempScreenData.objectNames;
       var vIconWrap = $(p.mShell).find(".pSummaryIconWrap")[0];
       var pVideoIconWrap = $(p.mShell).find(".pSummaryBody");
+      $(p.mShell).find(".pSummaryHeader").html(data.screenNo + " " + "Summary");
       $(p.mShell).find(".pSummaryIconWrap").not(":first").remove();
       for (var i in _tempScreenData.objectNames) {
         $(vIconWrap).clone().appendTo(pVideoIconWrap);
@@ -429,7 +567,11 @@
         chapWrapper.appendTo(chapter.left ? labsWrapper.find(".pLeftWrapper") : labsWrapper.find(".pRightWrapper"));
         $(createElement({tagName: "div"})).addClass("pLabChapterTitle").appendTo(chapWrapper).html(chapter.title).css(chapter.icon ? chapter.icon : {});
         chapter.labs.forEach(function (lab) {
-          $(createElement({tagName: "div"})).addClass("pLabTitle").appendTo(chapWrapper).html(lab.title).attr("data-href", lab.href).attr("data-pageTitle", lab.pageTitle);
+          if (chapter.hasOwnProperty("video")) {
+            $(createElement({tagName: "div"})).addClass("pLabTitle pjumpToVideo").appendTo(chapWrapper).html(lab.title).attr("data-video", true).attr("data-vref", lab.href).attr("data-pageTitle", lab.pageTitle);
+          } else {
+            $(createElement({tagName: "div"})).addClass("pLabTitle").appendTo(chapWrapper).html(lab.title).attr("data-href", lab.href).attr("data-pageTitle", lab.pageTitle);
+          }
         });
         if (chapter.bottomGap) {
           $(createElement({tagName: "div"})).addClass("pLabBottomGap").appendTo(chapWrapper).css("padding-bottom", chapter.bottomGap);
@@ -438,14 +580,16 @@
       labsWrapper.mCustomScrollbar({
         theme: "dark-3",
         axis: "y",
-        scrollInertia: 0,
+        scrollInertia: 0, mouseWheelPixels: 50,
         scrollButtons: {enable: false}
       });
+      p.currentType = "labmenu";
       playerbtnManager({type: "labmenu"});
       playerEvent();
     }
     function loadQuizCheck(e, data) {
       data.videoPlayer = videoPlayer;
+      $(p.mShell).find(".pSummaryHeader").html(data.screenNo + " " + "Quickcheck");
       if (data.screenData.hasOwnProperty('json')) {
         $('.pQuizCheck .pQuizStepWrap').hide();
         $('.pQuizCheck .pAnsWrap').hide();
@@ -459,6 +603,7 @@
     function loadQuizBoard(e, data) {
       data.videoPlayer = videoPlayer;
       p.currentType = "quizboard";
+      $(p.mShell).find(".pSummaryHeader").html(data.screenNo + " " + "Quizboard");
       if (data.screenData.hasOwnProperty('json')) {
 
         hideLoader();
@@ -468,6 +613,7 @@
       manageScreen("quizboard");
     }
     function manageScreen(type) {
+      $(".pSearchAreaWrapper").hide();
       $('.pSubmenuButton').show();
       $('.navButtons').show();
       $('.pActivityWrapper').show();
@@ -481,6 +627,7 @@
           $(p.mShell).find('.pQuizCheck').hide();
           $(p.mShell).find('.pActivityArea').hide();
           $(p.mShell).find('.pJsActWrapper').hide();
+          $(p.mShell).find('.pSettingArea').hide();
           break;
         case "quizboard":
 
@@ -491,6 +638,7 @@
           $(p.mShell).find('.pActivityArea').hide();
           $(p.mShell).find('.pActivitySummary').hide();
           $(p.mShell).find('.pJsActWrapper').hide();
+          $(p.mShell).find('.pSettingArea').hide();
           break;
         case "quizcheck":
           $(p.mShell).find('.pQuizCheck').show();
@@ -498,6 +646,7 @@
           $(p.mShell).find('.pActivityArea').hide();
           $(p.mShell).find('.pActivitySummary').hide();
           $(p.mShell).find('.pJsActWrapper').hide();
+          $(p.mShell).find('.pSettingArea').hide();
           break;
         case "videoScreen":
           $(p.mShell).find('.pActivityArea').show();
@@ -505,13 +654,15 @@
           $(p.mShell).find('.pQuizCheck').hide();
           $(p.mShell).find('.pActivitySummary').hide();
           $(p.mShell).find('.pJsActWrapper').hide();
+          $(p.mShell).find('.pSettingArea').hide();
           break;
         case "labmenu":
-          $(p.mShell).find('.pActivityArea').hide();
-          $(p.mShell).find('.pQuizBoard').hide();
-          $(p.mShell).find('.pQuizCheck').hide();
-          $(p.mShell).find('.pActivitySummary').hide();
+          $('.pActivityWrapper').hide();
           $(p.mShell).find('.pJsActWrapper').hide();
+          $('.pBookWrapper').hide();
+          $('.pLabsWrapper').show();
+          $(p.mShell).find(".pLabPageWrapper").hide();
+          $(p.mShell).find(".pLabSubmitButton").hide();
           break;
         case "jsact":
           $('.pActivityWrapper').hide();
@@ -519,6 +670,7 @@
           $(p.mShell).find('.pQuizBoard').hide();
           $(p.mShell).find('.pQuizCheck').hide();
           $(p.mShell).find('.pActivitySummary').hide();
+          $(p.mShell).find('.pSettingArea').hide();
           $(p.mShell).find('.pJsActWrapper').show();
           break;
       }
@@ -529,8 +681,8 @@
         $(p.mShell).find(".pButtons,.pTopic").not('.noLink').off("mouseout", mouseout).on("mouseout", mouseout);
         $(p.mShell).find(".std_act_link").off("mouseover", mouseover).on("mouseover", mouseover);
         $(p.mShell).find(".std_act_link").off("mouseout", mouseout).on("mouseout", mouseout);
-        $(p.mShell).find(".pChapName,.pSubTopicName").off("mouseover", mouseover).on("mouseover", mouseover);
-        $(p.mShell).find(".pChapName,.pSubTopicName").off("mouseout", mouseout).on("mouseout", mouseout);
+        $(p.mShell).find(".pChapName,.pSubTopicName,.pSubMenuHeader").off("mouseover", mouseover).on("mouseover", mouseover);
+        $(p.mShell).find(".pChapName,.pSubTopicName,.pSubMenuHeader").off("mouseout", mouseout).on("mouseout", mouseout);
         $(p.mShell).find(".videoWrapper").off("mouseover", mouseover).on("mouseover", mouseover);
         $(p.mShell).find(".videoWrapper").off("mouseout", mouseout).on("mouseout", mouseout);
         $(p.mShell).find(".pVolume").off("mouseover", mouseover).on("mouseover", mouseover);
@@ -543,48 +695,222 @@
         $(p.mShell).find(".pLabSubMenuButton").off("mouseout", mouseout).on("mouseout", mouseout); //---->
       }
       $(p.mShell).find(".std_act_link").off(mouseEvents.up, std_act_linkUp).on(mouseEvents.up, std_act_linkUp);
-      $(p.mShell).find(".pButtons").off(mouseEvents.down, mousedown).on(mouseEvents.down, mousedown);
-      $(p.mShell).find(".pButtons").off(mouseEvents.up, mouseup).on(mouseEvents.up, mouseup);
+      $(p.mShell).find(".pButtons,.pSubMenuHeader").off(mouseEvents.down, mousedown).on(mouseEvents.down, mousedown);
+      $(p.mShell).find(".pButtons,.sbt_btn").off(mouseEvents.up, mouseup).on(mouseEvents.up, mouseup);
       $(p.mShell).find(".pChapName").off(mouseEvents.down, mousedown).on(mouseEvents.down, mousedown);
       $(p.mShell).find(".pChapName").off(mouseEvents.up, chapterUp).on(mouseEvents.up, chapterUp);
       $(p.mShell).find(".pLabTitle").off(mouseEvents.down, mousedown).on(mouseEvents.down, mousedown); //---->
-      $(p.mShell).find(".pLabTitle").off("click", labChapterUp).on("click", labChapterUp); //---->
+      $(p.mShell).find(".pLabTitle").not(".pjumpToVideo").off("click", labChapterUp).on("click", labChapterUp); //---->
+      $(p.mShell).find(".pSearch").off("click", showSearchBox).on("click", showSearchBox); //---->
       $(p.mShell).find(".pLabSubMenuTopic").off(mouseEvents.down, mousedown).on(mouseEvents.down, mousedown); //---->
       $(p.mShell).find(".pLabSubMenuTopic").off("click", labSubTopicUp).on("click", labSubTopicUp); //---->
-      $(p.mShell).find(".pTopic,.pSubTopicWrapper").not('.noLink,.hyperLink').off(mouseEvents.up, topicUp).on(mouseEvents.up, topicUp);
+      $(p.mShell).find(".pTopic,.pSubMenuTopic").not('.noLink,.hyperLink').off(mouseEvents.up, topicUp).on(mouseEvents.up, topicUp);
       $(p.mShell).find(".pVideoIcon,.pSummaryIconWrap,.pjumpToVideo").off(mouseEvents.up, VideoIconUp).on(mouseEvents.up, VideoIconUp);
       $(p.mShell).find(".pjumpToTopic").off(mouseEvents.up, topicUp).on(mouseEvents.up, topicUp);
+      // $(p.mShell).find(".pSettingCompHeader").off(mouseEvents.up, settingComp).on(mouseEvents.up, settingComp);
+      $(p.mShell).find(".pSubMenuTopicHeader").off(mouseEvents.up, subMenuTopicDown).on(mouseEvents.up, subMenuTopicDown);
+      $(p.mShell).find(".pSubMenuHeader").off(mouseEvents.up, gotoBook).on(mouseEvents.up, gotoBook);
       if (device) {
         $(p.mShell).find(".videoWrapper").off(mouseEvents.up, videoUp).on(mouseEvents.up, videoUp);
       }
     }
+
+    function showSearchBox(e, data) {
+      if ($(e.target).hasClass("pSearch")) {
+        window.location.hash = "type_search";
+        return false;
+      }
+      $(".pSearchAreaWrapper").show();
+      $(".searchButton").off("click").on("click", updateSearchHash);
+      $(".searchResults").mCustomScrollbar("destroy").empty();
+      if (data && data.searchKey) {
+        $("#searchField").val(data.searchKey.split("%20").join(" "));
+        searchResults();
+      } else {
+        $("#searchField").val("");
+        $(".searchResultCount").text("");
+      }
+      $("#searchField").off("keyup").on('keyup', function (e) {
+        if (e.keyCode == 13) {
+          updateSearchHash();
+        }
+      });
+    }
+
+    function updateSearchHash() {
+      var a = window.location.hash.split("#")[1];
+      a = a.split("/");
+      a[1] = "searchKey_" + $("#searchField").val().split(" ").join("%20");
+      a.length = 2;
+      window.location.hash = a.join("/");
+    }
+
+    function searchResults() {
+      if (!p.searchBook) {
+        return false;
+      }
+      $(".activityLoader").show();
+      var keywords = $("#searchField").val().split(" ").map(function (key) {
+        return " " + key + " ";
+      });
+      var links = [], found, text;
+      var div = $(document.createElement("div"));
+      p.searchBook.forEach(function (obj) {
+        found = false;
+        if (obj.text) {
+          text = div.html(obj.text).text();
+          for (var i = 0; i < keywords.length; i++) {
+            if (text.match(keywords[i])) {
+              push(links, obj);
+              found = true;
+            }
+          }
+        }
+        if (!found && obj.title) {
+          for (var i = 0; i < keywords.length; i++) {
+            if (obj.title.match(keywords[i])) {
+              push(links, obj);
+              found = true;
+            }
+          }
+        }
+        if (!found && obj.sectionTitle) {
+          for (var i = 0; i < keywords.length; i++) {
+            if (obj.sectionTitle.match(keywords[i])) {
+              push(links, obj);
+              found = true;
+            }
+          }
+        }
+        if (!found && obj.sectionHeading) {
+          for (var i = 0; i < keywords.length; i++) {
+            if (obj.sectionHeading.match(keywords[i])) {
+              push(links, obj);
+              found = true;
+            }
+          }
+        }
+      });
+
+      function push(a, obj) {
+        a.push({
+          src: obj.src,
+          type: obj.type,
+          href: obj.href,
+          title: obj.title + ", " + obj.sectionTitle + ", " + obj.sectionHeading
+        });
+      }
+
+      var count = 0;
+      links.forEach(function (obj) {
+        if (p.usertype.toLowerCase() == "student" && obj.type == "lessonPlan") {
+          return false;
+        }
+        count++;
+        if (obj.type == "labPage") {
+          $(".searchResults").append("<div class='searchResult' data-type='" + obj.type + "' data-src='" + obj.src + "' data-href='" + obj.href.split("/").join("~").split("_").join("-") + "'>" + obj.title + "</div>");
+        } else {
+          $(".searchResults").append("<div class='searchResult' data-type='" + obj.type + "' data-src='" + obj.src + "'>" + obj.src + " " + obj.title + "</div>");
+        }
+
+      });
+      $(".searchResults").mCustomScrollbar({
+        theme: "dark-3",
+        axis: "y",
+        scrollInertia: 0, mouseWheelPixels: 50,
+        scrollButtons: {enable: false}
+      });
+      $(".searchResultCount").text(count + " results");
+      $(".searchResult").off("click").on("click", function (e) {
+        var src = $(this).attr("data-src").split(":");
+        var type = $(this).attr("data-type");
+        if (type == "labPage") {
+          var src = $(this).text().split(", ");
+          var href = $(this).attr("data-href");
+          window.location.hash = "type_labPage/title_" + src[2] + "/href_" + (href);
+          // location.hash = "type_labPage/title_Using one-dimensional motion equations/href_course~labs~Using-one-dimensional-equations~page.html";
+          console.log("type_labPage/title_" + src[2] + "/href_" + (href))
+        } else {
+          window.location.hash = "lesson_" + (type == "lessonPlan") + "/type_chapter/chapter_" + src[0] + "/unit_" + (src[1] - 1) + "/section_" + src[2] + "/subsection_0";
+        }
+
+      });
+
+      setTimeout(function () {
+        $(".activityLoader").hide();
+      }, 500);
+    }
+
+    function gotoBook() {
+      $(this).removeClass("pDown").removeClass("pHover");
+      playerbtnManager({type: "book"});
+    }
+    function subMenuTopicDown(e) {
+      e.stopPropagation();
+      if ($(e.target).parent().hasClass('pSubTopicWrapper')) {
+        $('.accSysmbol').html("+");
+        $('.pSubTopicInnerMainWrap').slideUp();
+      }
+      if (!$(this).hasClass("sopen")) {
+        $(this).find('.pSubTopicName .accSysmbol').not('.pSubTopicInnerWrap .accSysmbol').html("-");
+        if (!$(this).hasClass('child')) {
+          $('.sopen').removeClass("sopen");
+        } else {
+          $(this).find('.pSubTopicName .accSysmbol').html("-");
+        }
+        $(this).addClass("sopen")
+
+        $(this).children('.pSubTopicInnerMainWrap').slideDown();
+      } else {
+        if ($(this).hasClass('child')) {
+          $(this).find('.pSubTopicName .accSysmbol').html("+");
+          $(this).removeClass("sopen");
+        } else {
+          $('.accSysmbol').html("+");
+          $('.sopen').removeClass("sopen");
+        }
+        $(this).children('.pSubTopicInnerMainWrap').slideUp();
+      }
+    }
+    function settingComp(e) {
+
+//      if ($(this).hasClass("open")) {
+//        $(this).next(".pSettingCompBody").slideUp();
+//        $(this).removeClass("open");
+//      } else {
+//        $(".open").removeClass("open");
+//        $(".pSettingCompBody").slideUp();
+//        $(this).addClass("open");
+//        $(this).next(".pSettingCompBody").slideDown();
+//      }
+    }
+
     function topicUp(e) {
+      if ($(e.target).hasClass('pjumpToTopic') && lessonFlag) {
+        $(document).trigger("updateBook", {book: true});
+        thisObj.updateBook(true);
+      }
+      $('.pSubMenuWrap').removeClass("open");
+      $('.pSubmenuButton').removeClass("open");
       var chap, unit, section, data, subsection, vIndex;
       chap = $(this).attr("data-chap");
       unit = $(this).attr("data-topic");
       section = $(this).attr("data-subtopic");
       subsection = $(this).attr("data-subsection");
       vIndex = $(this).attr("data-vIndex");
-      if (!$(this).hasClass("child")) {
-        e.stopImmediatePropagation();
-        $('.tActive').removeClass('tActive');
-        $(this).addClass('tActive');
-        if (!$(this).hasClass("pSubTopicWrapper")) {
-          $(document).trigger("loadSubMenu", {"chap": chap, unit: unit, section: section});
-        }
-        if (typeof subsection == typeof undefined || subsection == false) {
-          subsection = 0;
-        }
-
-        if (typeof vIndex == typeof undefined || (vIndex == false && vIndex != "0")) {
-          data = {"chap": chap, unit: unit, section: section, subSection: subsection};
-        } else {
-          data = {"chap": chap, unit: unit, section: section, subSection: subsection, vIndex: vIndex};
-        }
-        $(document).trigger("loadSpecificTopic", data);
-      } else {
-        $(this).find(".psubsectionWrapper").slideToggle();
+      e.stopImmediatePropagation();
+      $('.tActive').removeClass('tActive');
+      $(this).addClass('tActive');
+      if (typeof subsection == typeof undefined || subsection == false) {
+        subsection = 0;
       }
+
+      if (typeof vIndex == typeof undefined || (vIndex == false && vIndex != "0")) {
+        data = {"chap": chap, unit: unit, section: section, subSection: subsection};
+      } else {
+        data = {"chap": chap, unit: unit, section: section, subSection: subsection, vIndex: vIndex};
+      }
+      $(document).trigger("loadSpecificTopic", data);
     }
     function std_act_linkUp(e) {
       showLoader();
@@ -610,7 +936,7 @@
       var dimensions = JSActivityDimensions.hasOwnProperty(ref) ? JSActivityDimensions[ref] : {width: 760, height: 600}
       $("#pJSActFrame").attr("src", "course/JSActivities/" + ref + "/index.html").css("width", dimensions.width).css("height", dimensions.height);
       $(".jsClose").off("click").on("click", function () {
-        $("#pJSActFrame").attr("src", "");
+        $("#pJSActFrame").attr("src", "about:blank");
         playerbtnManager("jsClose");
       });
       manageScreen("jsact");
@@ -619,7 +945,6 @@
     }
 
     function VideoIconUp() {
-
       if ($(this).attr("data-jsact")) {
         loadJSActivity($(this).attr("data-jsact"));
       } else if ($(this).hasClass("activity")) {
@@ -718,7 +1043,8 @@
       var topic_no = $(this).attr('data-chapter');
       $(p.mShell).find(".pChapName").removeClass("active");
       $(this).addClass("active");
-      loadTopic(topic_no)
+      loadTopic(topic_no);
+      $(document).trigger("loadSubMenu", {"chap": topic_no});
     }
     function labChapterUp(e) {//---->
       $('.pLabsWrapper').hide();
@@ -730,6 +1056,7 @@
       $(p.mShell).find(".pLabPageContentWrapper").mCustomScrollbar("scrollTo", ele);
     }//---->
     function loadLabPage(title, href, type) {//---->
+      $(".pSearchAreaWrapper").hide();
       if (href.split(".")[1] != "html") {
         $('.pLabsWrapper').show();
         window.open(href/* .split("~").join("/") */);
@@ -741,7 +1068,12 @@
       $(p.mShell).find(".lab_bck").show();
       //
       blockHashEvent = true;
-      location.hash = "type_labPage/title_" + title + "/href_" + _href + "/labtype_" + type;
+
+      if (typeof type == "undefined") {
+        location.hash = "type_labPage/title_" + title + "/href_" + _href;
+      } else {
+        location.hash = "type_labPage/title_" + title + "/href_" + _href + "/labtype_" + type;
+      }
       setTimeout(function () {
         blockHashEvent = false;
       }, 500);
@@ -749,6 +1081,9 @@
       if (type && type.toLowerCase() == "popup") {
 
       } else {
+        if (href.split("/")[1] == "labs") {
+          $(p.mShell).find(".pLabSubmitButton").show().off("click", printLabAnswer).on("click", printLabAnswer);
+        }
         var mainWrapper = $(p.mShell).find(".pLabPageWrapper");
         $(p.mShell).find(".pLabPageWrapper").show();
         var contentWrapper = $(p.mShell).find(".pLabPageContentWrapper");
@@ -791,7 +1126,7 @@
             contentWrapper.mCustomScrollbar({
               theme: "dark-3",
               axis: "y",
-              scrollInertia: 0,
+              scrollInertia: 0, mouseWheelPixels: 50,
               scrollButtons: {enable: false}
             });
             playerEvent();
@@ -799,6 +1134,60 @@
         });
       }
     }//---->
+
+    function printLabAnswer() {
+      var containers = $(p.mShell).find(".pLabPageWrapper").find(".pExerciseContainer");
+      // console.log(containers);
+      var str = "";
+      containers.each(function (i, element) {
+        element = $(element);
+        // exercise title
+        str += "<h2 class=\"SectionName\">" + element.find(".pExcersiseTitle").text() + "</h2>\r\n";
+        //
+        // question and answers
+        element.find(".pLabQuestion").each(function (j, qEle) {
+          qEle = $(qEle);
+          // console.log(qEle)
+          str += "<p class=\"ExerciseBody\" style='color:#FF0000; padding-left:20px;'>" + qEle.find(".pLabQNumber").text() + " " + qEle.find(".pLabQText").html() + "</p>\r\n";
+          if (qEle.find("textarea").length != 0) {
+            if (qEle.find("textarea")[0].value != "") {
+              str += "<p style='padding-left:35px;'>" + qEle.find("textarea")[0].value + "</p>\r\n";
+            } else {
+              str += "<p style='font-size:18px;'>Answer not submitted</p>\r\n";
+            }
+          } else {
+            // console.log("table");
+            // console.log(qEle.find("table")[0].outerHTML);
+            var table = qEle.find("table").clone();
+            table.find("input").each(function (k, input) {
+              var parent = $(input).parent();
+              if (input.value != "") {
+                parent.prepend(input.value);
+              } else {
+                parent.prepend("Answer not submitted ");
+              }
+
+              $(input).remove();
+            });
+            table.find("td").each(function () {
+              $(this).css("text-align", "center").css("width", "auto").css("border", "1px solid orange");
+            });
+            table.width(qEle.find("table").outerWidth() + 40).css("border", "1px solid orange").css("color", "orange").attr("cellSpacing", 0);
+            str += table[0].outerHTML;
+          }
+        });
+        //
+      });
+      // console.log(str)
+      var OpenWindow = window.open('course/template/printPage.html', '_blank', 'width=630,height=470,resizable=1');
+      // OpenWindow.document.getElementById("container").innerHTML = str;
+
+      OpenWindow.onload = function () {
+        OpenWindow.document.getElementById("container").innerHTML = str;
+        OpenWindow.print();
+      }
+    }
+
     function btnStateReset() {
       $(p.mShell).find(".pButtons").removeClass("pHover").removeClass("pDown");
       $(p.mShell).find(".pChapName").removeClass("pHover").removeClass("pDown");
@@ -809,7 +1198,8 @@
       btnStateReset();
       switch (_obj.type) {
         case "menu":
-
+          $('.pSubMenuWrap').removeClass("open");
+          $('.pSubmenuButton').removeClass("open");
           if (!_obj._this.hasClass("pSelected")) {
             $(p.mShell).find(".pMenu").addClass('pSelected')
             $(p.mShell).find(".pMenuWrap").slideDown();
@@ -827,6 +1217,11 @@
           overlayDown()
           break;
         case "book":
+          if (lessonFlag) {
+            $(document).trigger("updateBook", {book: true});
+            thisObj.updateBook(true);
+            initBook();
+          }
           $(p.mShell).find(".pMenu").removeClass('pDisable');
           $(p.mShell).find(".book_bck").hide();
           location.hash = "type_" + _obj.type;
@@ -834,12 +1229,15 @@
             videoPlayer.stopVideo();
           }
           $(p.mShell).find('.pQuizBoard_bck').hide();
-          $('.pActivityWrapper').hide();
+          $(p.mShell).find('.pActivityWrapper').hide();
           $(p.mShell).find('.pJsActWrapper').hide();
-          $('.pLabsWrapper').hide();
-          $('.pBreadCrumb').hide();
+          $(p.mShell).find('.pLabsWrapper').hide();
+          $(p.mShell).find('.pBreadCrumb').hide();
           $(p.mShell).find(".pLabPageWrapper").hide();
-          $('.pBookWrapper').show();
+          $(p.mShell).find(".pLabSubmitButton").hide();
+          $(p.mShell).find('.pBookWrapper').show();
+
+          $(".pSearchAreaWrapper").hide();
           overlayDown()
           break;
         case "labmenu"://---->
@@ -848,23 +1246,49 @@
           $('.pBookWrapper').hide();
           $('.pLabsWrapper').show();
           $(p.mShell).find(".pLabPageWrapper").hide();
+          $(p.mShell).find(".pLabSubmitButton").hide();
+          $(".pSearchAreaWrapper").hide();
           overlayDown()
           break; //---->
+        case "admin":
+          overlayDown();
+          location.href = "https://qa1.perfectionlearning.com/admin/class-wizard/list";
+          //window.open("https://qa1.kineticmath.com/admin/class-wizard/list");
+          break;
         case "homework":
-          location.hash = "type_" + _obj.type;
-          $('.pActivityWrapper').show();
-          $(p.mShell).find('.pJsActWrapper').hide();
-          $('.pBookWrapper').hide();
-          overlayDown()
+          overlayDown();
+          location.href = "https://qa1.perfectionlearning.com/assignments/list";
+          //window.open("https://qa1.kineticmath.com/assignments/list");
           break;
         case "grades":
-          overlayDown()
+          overlayDown();
+          location.href = "https://qa1.perfectionlearning.com/reports/overview";
+          //window.open("https://qa1.kineticmath.com/reports/overview");
           break;
         case "factbook":
+          window.open("course/factbook/index.html", "factbook", "toolbar=yes,scrollbars=yes,resizable=yes,top=0,left=0,width=760,height=593");
           overlayDown()
           break;
         case "setting":
-          overlayDown()
+          $(".pSearchAreaWrapper").hide();
+          location.hash = "type_" + _obj.type;
+          if ($(p.mShell).find(".videoWrapper").hasClass("vOpen")) {
+            videoPlayer.stopVideo();
+          }
+          $('.pActivityWrapper').show();
+          $(p.mShell).find(".book_bck").hide();
+          $(p.mShell).find('.pLabsWrapper').hide();
+          $(p.mShell).find('.pBreadCrumb').hide();
+          $(p.mShell).find('.pBookWrapper').hide();
+          $(p.mShell).find(".pLabPageWrapper").hide();
+          $(p.mShell).find(".pLabSubmitButton").hide();
+          $(p.mShell).find('.pActivitySummary').hide();
+          $(p.mShell).find('.pQuizBoard').hide();
+          $(p.mShell).find('.pQuizCheck').hide();
+          $(p.mShell).find('.pActivityArea').hide();
+          $(p.mShell).find('.pJsActWrapper').hide();
+          $(p.mShell).find('.pSettingArea').show();
+          overlayDown();
           break;
         case "help":
           overlayDown()
@@ -900,6 +1324,8 @@
           videoPlayer.nextVideo();
           break;
         case "Next":
+          $('.pSubMenuWrap').removeClass("open");
+          $('.pSubmenuButton').removeClass("open");
           overlayDown()
           if ($(p.mShell).find(".videoWrapper").hasClass("vOpen")) {
             videoPlayer.stopVideo();
@@ -907,6 +1333,8 @@
           $(document).trigger("loadNext");
           break;
         case "Back":
+          $('.pSubMenuWrap').removeClass("open");
+          $('.pSubmenuButton').removeClass("open");
           overlayDown()
           if ($(p.mShell).find(".videoWrapper").hasClass("vOpen")) {
             videoPlayer.stopVideo();
@@ -920,8 +1348,12 @@
           break;
         case "vClose":
           overlayDown()
-          videoPlayer.stopVideo();
-          manageScreen(p.currentType);
+          if ($('.pVideoMainWrapper').hasClass('quizboardOpen')) {
+            videoPlayer.stopVideo();
+          } else {
+            videoPlayer.stopVideo();
+            manageScreen(p.currentType);
+          }
           break;
         case "jsClose":
           overlayDown()
@@ -935,16 +1367,119 @@
           $(p.mShell).find(".book_bck").show();
           $('.pLabsWrapper').show();
           $(p.mShell).find(".pLabPageWrapper").hide();
+          $(p.mShell).find(".pLabSubmitButton").hide();
+          break;
+        case"password":
+          validatePassword();
+          break;
+        case"email":
+          validateEmail();
+          break;
+        case "lessonPlans":
+          $(document).trigger("updateBook", {book: false});
+          thisObj.updateBook(false);
+          initBook();
+          $(p.mShell).find(".pMenu").removeClass('pDisable');
+          $(p.mShell).find(".book_bck").hide();
+          location.hash = "type_" + _obj.type;
+          if ($(p.mShell).find(".videoWrapper").hasClass("vOpen")) {
+            videoPlayer.stopVideo();
+          }
+          $(p.mShell).find('.pQuizBoard_bck').hide();
+          $(p.mShell).find('.pActivityWrapper').hide();
+          $(p.mShell).find('.pJsActWrapper').hide();
+          $(p.mShell).find('.pLabsWrapper').hide();
+          $(p.mShell).find('.pBreadCrumb').hide();
+          $(p.mShell).find(".pLabPageWrapper").hide();
+          $(p.mShell).find(".pLabSubmitButton").hide();
+          $(p.mShell).find('.pBookWrapper').show();
+          overlayDown()
           break;
       }
     }
-    function overlayDown() {
+    function validatePassword() {
+      $(p.mShell).find('.changePassBody .feedback').hide();
+      var oldpassword = $('.oldPassword').val();
+      var newPassword = $('.newPassword').val();
+      var confPassword = $('.confPassword').val();
+      var valFlag = false;
+      var patt = new RegExp("^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9]).{6,}$");
+      var res = patt.test(confPassword);
+      var oldPass = patt.test(oldpassword);
+      checkValidation();
+      if (!valFlag) {
+        if (newPassword == confPassword && res && oldPass) {
+          showLoader();
+          $(document).trigger("changePassword", {"old_password": oldpassword, "new_password": newPassword});
+        } else {
+          if (!res) {
+            $(p.mShell).find('.changePassBody .feedback').css("color", "red").html("That password doesn't meet our security requirements.").fadeIn();
+          } else {
+            $(p.mShell).find('.changePassBody .feedback').css("color", "red").html("That two password does'nt match").fadeIn();
+          }
+        }
+      }
+      function checkValidation() {
 
+        $(p.mShell).find('.changePassBody .loginInput').each(function (e) {
+          if ($(this).val() == "") {
+            valFlag = true;
+            $(p.mShell).find('.changePassBody .feedback').css("color", "red").html("Please fill in all of the fields.").fadeIn();
+            return false;
+          }
+        });
+      }
+
+
+    }
+    function validateEmail() {
+
+      $(p.mShell).find('.changeEmailBody .feedback').hide();
+      var newEmail = $('.newEmail').val();
+      var confEmail = $('.confEmail').val();
+      var valFlag = false;
+      checkValidation();
+      var newEmailFlag = isEmail(newEmail);
+      if (!valFlag) {
+        if (newEmailFlag) {
+          if (newEmail == confEmail) {
+            $(document).trigger("changeEmail", {"email": newEmail});
+          } else {
+            $(p.mShell).find('.changeEmailBody .feedback').css("color", "red").html("The two email fields don't match.").fadeIn();
+          }
+        } else {
+          $(p.mShell).find('.changeEmailBody .feedback').css("color", "red").html("Enter proper Email-Id.").fadeIn();
+        }
+      }
+      function checkValidation() {
+
+        $(p.mShell).find('.changeEmailBody .loginInput').each(function (e) {
+          if ($(this).val() == "") {
+            valFlag = true;
+            $(p.mShell).find('.changeEmailBody .feedback').css("color", "red").html("Please fill in all of the fields.").fadeIn();
+            return false;
+          }
+        });
+      }
+      function isEmail(email) {
+        var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+        return regex.test(email);
+      }
+    }
+    function overlayDown(e) {
+      if (typeof e != "undefined") {
+        if (!$(e.target).hasClass('accSysmbol') && !$(e.target).hasClass('pSubTopicName') && !$(e.target).hasClass('pSubMenuTopicHeader') && !$(e.target).hasClass('pSubmenuButton')) {
+          $('.pSubMenuWrap').removeClass("open");
+          $('.pSubmenuButton').removeClass("open");
+        }
+      } else {
+        //$('.pSubMenuWrap').removeClass("open");
+        // $('.pSubmenuButton').removeClass("open");
+      }
       $(p.mShell).find(".pMenu").removeClass('pSelected');
       $(p.mShell).find(".pMenuWrap").slideUp();
     }
     this.loadScreen = function (data) {
-      console.log(data);
       if (data.type != "labPage") {
         playerbtnManager(data);
       } else {

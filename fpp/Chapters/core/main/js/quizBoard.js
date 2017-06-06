@@ -9,20 +9,23 @@
     q.instance_id;
     q.problem_inst_id;
     q.currentQues = 0;
+    q.submitCnt = 0;
     q.Id = [];
     q.totalQues = 0;
+    q.videoRef = "https://qa1.perfectionlearning.com/books/content/video/";
     var feedback = {
-      "correct": "Great work! You've correctly solved this problem before, so you keep your perfect score.",
-      "incorrect": "Try again. Check your work or click a help option. Enter a new answer whenever you're ready.",
-      "step_correct": "That is correct!",
-      "step_incorrect": "Try again. Click one of the help options for more clues on how to solve the problem."
-    }
+      "correct": ["Great work! You've correctly solved this problem before, so you keep your perfect score", "Great work! You get 5 out of 5 for this problem."],
+      "incorrect": [
+        "Try again. Check your work or click a help option. Enter a new answer whenever you're ready.",
+        "Try again. Check your work or click a help option. Enter a new answer whenever you're ready.",
+        "It looks like you need to review this material. Click one of the help options for additional assistance."
+      ]}
 
     this.init = function (data) {
       videoPlayer = data.videoPlayer;
       q.screenData = data.screenData;
       q.instance_id = data.instance_id;
-
+      console.log(data);
       reset();
       loadScreen()
       bindEvents();
@@ -30,7 +33,10 @@
 
     }
     function loadScreen() {
+      q.submitCnt = 0;
       var cnt = 0;
+      q.totalQues = 0;
+      q.Id = [];
       var alpha = ["a", "b", "c", "d", "e", "f"]
       for (var i in  q.screenData) {
         q.totalQues++;
@@ -50,14 +56,14 @@
         $(q.mShell).find('.pActivityBody').mCustomScrollbar({
           theme: "dark-3",
           axis: "y",
-          scrollInertia: 0,
+          scrollInertia: 0, mouseWheelPixels: 50,
           scrollButtons: {enable: false}
         });
         $(q.mShell).find('.pQuizboard_ques_wrap').mCustomScrollbar("destroy");
         $(q.mShell).find('.pQuizboard_ques_wrap').mCustomScrollbar({
           theme: "dark-3",
           axis: "y",
-          scrollInertia: 0,
+          scrollInertia: 0, mouseWheelPixels: 50,
           scrollButtons: {enable: false}
         });
 
@@ -66,10 +72,14 @@
       bindEvents();
     }
     function loadQuestion(data) {
+      $('.pQuizButtons').removeClass('pDisable');
+      $('.pQuizBoard .pQuizFeedback').removeClass('correct').removeClass('incorrect').hide();
+
       $('.pQuizBoard_bck').show();
       $('.pSubmenuButton').hide();
       $('.navButtons').hide();
       $('.quizNavButtons').show();
+      $(".pQuizButtons.helpVideo").attr("data-ref", "");
       $(q.mShell).find('.pActivityBody').hide();
       $(q.mShell).find('.pQuizStepWrap').hide();
       $(q.mShell).find('.pQuizboard_ques_wrap').show();
@@ -81,11 +91,11 @@
         q.currentQues = data.ques;
       }
       q.problem_inst_id = id;
-      q.url = "https://test-ohw.kineticmath.com/rest/rest.php/submit/" + q.instance_id + "/" + q.problem_inst_id;
+      q.url = "https://qa1.perfectionlearning.com/api/rest/submit/" + q.instance_id + "/" + q.problem_inst_id;
       $(q.mShell).find('.pQues').html(q.screenData[id].q);
       $(q.mShell).find('.userInputWrap').html(q.screenData[id].inputBox).attr('data-type', q.screenData[id].ansType);
-      ;
       $(q.mShell).find('.pAnsWrap .uSubmit').attr('data-type', q.screenData[id].ansType);
+
       quiznavigationState(q.currentQues);
       bindEvents();
     }
@@ -94,11 +104,15 @@
         $(".pQuizButtons,.qVideo,.bOptionRow").off("mouseover", mouseover).on("mouseover", mouseover);
         $(".pQuizButtons,.qVideo,.bOptionRow").off("mouseout", mouseout).on("mouseout", mouseout);
       }
-      $(".pQuizButtons,.qVideo,.bOptionRow").off(mouseEvents.down, mousedown).on(mouseEvents.down, mousedown);
-      $(".pQuizButtons,.qVideo").off(mouseEvents.up, mouseup).on(mouseEvents.up, mouseup);
-      $(".bOptionRow").off(mouseEvents.up, radioUp).on(mouseEvents.up, radioUp);
-      $(".pDisabler").off(mouseEvents.up, overlayDown).on(mouseEvents.up, overlayDown);
-      $(".bquestionWrapper").off(mouseEvents.up, loadQuestion).on(mouseEvents.up, loadQuestion);
+      console.log("binding eventd");
+      $(".pQuizBoard .pQuizButtons,.qVideo,.bOptionRow").off(mouseEvents.down).on(mouseEvents.down, mousedown);
+      $(".pQuizBoard .pQuizButtons,.qVideo").off(mouseEvents.up).on(mouseEvents.up, mouseup);
+      $(".pHelpWrapper.quizboardHelp .pQuizButtons").off(mouseEvents.down).on(mouseEvents.down, mousedown);
+      $(".pHelpWrapper.quizboardHelp .pQuizButtons").off(mouseEvents.up).on(mouseEvents.up, mouseup);
+      $(".quizNavButtons").off(mouseEvents.up).on(mouseEvents.up, mouseup);
+      $(".pQuizBoard .bOptionRow").off(mouseEvents.up).on(mouseEvents.up, radioUp);
+      $(".pDisabler").off(mouseEvents.up).on(mouseEvents.up, overlayDown);
+      $(".bquestionWrapper").off(mouseEvents.up).on(mouseEvents.up, loadQuestion);
 
     }
     function radioUp() {
@@ -127,13 +141,17 @@
     }
     function mousedown() {
       btnStateReset();
+
       if (!$(this).hasClass("pDisable")) {
         $(this).addClass("pDown");
       }
     }
     function mouseup(e) {
+
       e.stopImmediatePropagation();
+      console.log("in quiz board Mouse Up");
       btnStateReset();
+
       if (!$(this).hasClass("pDisable")) {
         playerbtnManager({
           type: $(this).attr("data-type"),
@@ -150,17 +168,28 @@
 
     this.loadSolution = function () {
       $('.step').remove();
-      $('.pQuizButtons').addClass('pDisable');
-      $(".step").find("input").css("background-color", "#ebebe4");
-      $('.pAnsWrap').find("input").css("background-color", "#ebebe4");
-      $('.pAnsWrap').find("input").attr("disabled", true);
-      $('.step').find("input").attr("disabled", true);
+      $('.pQuizBoard .pQuizFeedback').hide()
+      $('.pQuizBoard .pQuizButtons').not('.quizNavButtons').addClass('pDisable');
+      $(".pQuizBoard .step").find("input").css("background-color", "#ebebe4");
+      $('.pQuizBoard .pAnsWrap').find("input").css("background-color", "#ebebe4");
+      $('.pQuizBoard .pAnsWrap').find("input").attr("disabled", true);
+      $('.pQuizBoard .step').find("input").attr("disabled", true);
+      $(".pQuizBoard .bOptionRow.selected").removeClass("selected");
+      if (q.screenData[q.problem_inst_id]['ansType'] == "radio") {
+
+        $(".pQuizBoard .bOptionRow[data-id='" + q.screenData[q.problem_inst_id]['a'] + "']").addClass("selected");
+      } else if (q.screenData[q.problem_inst_id]['ansType'] == "check") {
+        var ans = q.screenData[q.problem_inst_id]['a'].split(',');
+        for (var i in ans) {
+          $(".pQuizBoard .bOptionRow[data-id='" + ans[i] + "']").addClass("selected");
+        }
+      }
       if (q.screenData[q.problem_inst_id]["solve"].length > 0) {
         for (var i in q.screenData[q.problem_inst_id]["solve"]) {
           q.stepIndex = i;
           var temp = document.createElement("div");
           $(temp).attr("id", "step_" + q.stepIndex);
-          $(temp).addClass("step").appendTo($('.pQuizStepWrap'));
+          $(temp).addClass("step").appendTo($('.pQuizBoard .pQuizStepWrap'));
           $(temp).css({
             "overflow": "hidden",
             "display": "block",
@@ -176,15 +205,16 @@
           var qPrefix = "<div class='qPrefix'>" + q.screenData[q.problem_inst_id]["solve"][q.stepIndex]["q_prefix"] + "</div>";
           var userInput = '<div class="userInputWrap">' + q.screenData[q.problem_inst_id]["solve"][q.stepIndex]["a"] + '</div>';
           $(temp).html("<div style='display:table'>" + qPrefix + userInput + "</div>");
+
           if (q.screenData[q.problem_inst_id]["solve"][q.stepIndex]["ansType"] == "radio") {
-            $(".bOptionRow[data-id='" + q.screenData[q.problem_inst_id]["solve"][q.stepIndex]['a'] + "']").eq(q.screenData[q.problem_inst_id]["solve"][q.stepIndex]['a']).addClass("selected");
+            $(".pQuizBoard .bOptionRow[data-id='" + q.screenData[q.problem_inst_id]["solve"][q.stepIndex]['a'] + "']").eq(q.screenData[q.problem_inst_id]["solve"][q.stepIndex]['a']).addClass("selected");
             // $(".bOptionRow[data-id='0']").addClass("selected");
           }
-          $(".bOptionRow").off();
+          $(".pQuizBoard .bOptionRow").addClass('pDisable').off();
           var math = $(temp).find(".userInputWrap")[0];
           MathJax.Hub.Queue(["Typeset", MathJax.Hub, math]);
         }
-        $('.pQuizStepWrap').fadeIn();
+        $('.pQuizBoard .pQuizStepWrap').fadeIn();
       }
       hideLoader();
     }
@@ -193,34 +223,46 @@
       btnStateReset();
       switch (_obj.type) {
         case "check":
+
           showLoader();
           var _temp = {};
           var _parent = _obj._this.parent().parent();
           var _arr = [];
-          $('.selected').each(function () {
-            var _this = $(this);
-            _arr.push(_this.attr("data-id"));
-          })
+          if ($('.pQuizBoard .bOptionRow.selected').length > 0) {
 
-          _temp.data = _arr;
-          _temp.url = q.url;
-          sendUserResponse(_temp, function (data) {
-            checkUserResponse(data)
-          });
+            $('.selected').each(function () {
+              var _this = $(this);
+              _arr.push(_this.attr("data-id"));
+            })
+
+            _temp.data = _arr;
+            _temp.url = q.url;
+            sendQuizBoardResponse(_temp, function (data) {
+              checkUserResponse(data)
+            });
+          } else {
+            hideLoader();
+            console.log("No INput");
+          }
           break;
         case "radio":
+
           showLoader();
           var _temp = {};
           var _parent = _obj._this.parent().parent();
           var _arr = [];
+          if ($('.pQuizBoard .bOptionRow.selected').length > 0) {
 
-          _arr.push($('.selected').attr("data-id"));
-          _temp.data = _arr;
-          _temp.url = q.url;
-          sendUserResponse(_temp, function (data) {
-            checkUserResponse(data)
-          });
-
+            _arr.push($('.selected').attr("data-id"));
+            _temp.data = _arr;
+            _temp.url = q.url;
+            sendQuizBoardResponse(_temp, function (data) {
+              checkUserResponse(data)
+            });
+          } else {
+            hideLoader();
+            console.log("No INput");
+          }
           break;
         case "MultKinetic":
           showLoader();
@@ -234,7 +276,7 @@
             })
             _temp.data = _arr;
             _temp.url = q.url + "/" + _parent.attr("data-step");
-            sendUserResponse(_temp, function (data) {
+            sendQuizBoardResponse(_temp, function (data) {
               data.step = true;
               checkUserResponse(data)
             });
@@ -242,7 +284,7 @@
             var _val = _obj._this.parent().parent().find("input").val();
             _temp.data = [_val];
             _temp.url = q.url;
-            sendUserResponse(_temp, function (data) {
+            sendQuizBoardResponse(_temp, function (data) {
               checkUserResponse(data)
             });
           }
@@ -275,11 +317,14 @@
           _this.loadStep();
           break;
         case "solution":
+          manageButtons(true);
+
           showLoader();
           overlayDown();
           _this.loadSolution();
           break;
         case "inputBoxHelpVideo":
+          manageButtons(false);
           $(q.mShell).find('.inputBoxHelp').fadeIn();
           $(q.mShell).find('.pHelpWrapper').hide();
           $(q.mShell).find('.pDisabler').fadeIn();
@@ -291,21 +336,37 @@
           videoPlayer.playVideo(0);
           break;
         case "hint":
-          $(q.mShell).find(".pQuizFeedback").css("color", "blue").html(q.screenData[q.problem_inst_id]["hint"][0]).show();
+          manageButtons(false);
+          q.submitCnt = 0;
+          $(".pQuizBoard .pQuizFeedback").css("color", "blue").html(q.screenData[q.problem_inst_id]["hint"][0]).show();
           q.screenData[q.problem_inst_id]["hint"].push(q.screenData[q.problem_inst_id]["hint"].shift());
           overlayDown();
           break;
         case "quizNext":
+          manageButtons(false);
+          q.submitCnt = 0;
           console.log("next quiz");
           q.currentQues++;
 
           loadQuestion({custom: true, ques: q.currentQues, id: q.Id[q.currentQues]});
           break;
         case "quizBack":
+          manageButtons(false);
+          q.submitCnt = 0;
           console.log("prev quiz");
           q.currentQues--;
 
           loadQuestion({custom: true, ques: q.currentQues, id: q.Id[q.currentQues]});
+          break;
+        case "helpVideo":
+          q.submitCnt = 0;
+          manageButtons(false);
+          if (q.screenData[q.problem_inst_id].hasOwnProperty("video")) {
+            $('.mShell').find(".pDisabler").hide();
+            $('.pVideoMainWrapper').addClass('quizVideo quizboardOpen');
+            videoPlayer.initiateVideo({src: [q.videoRef + q.screenData[q.problem_inst_id]["video"]]});
+            videoPlayer.playVideo(0, undefined, "qChk");
+          }
           break;
         case "helpClose":
         case "input_close":
@@ -318,28 +379,40 @@
 
     function checkUserResponse(data, cb) {
       console.log(data);
-      $('.pQuizFeedback').removeClass('correct').removeClass('incorrect')
+      $('.pQuizBoard .pQuizFeedback').removeClass('correct').removeClass('incorrect')
       if (data.iscorrect) {
+        var feedBackTxt;
+        if (data.new_status == "correct") {
+          feedBackTxt = feedback.correct[0];
+        } else {
+          feedBackTxt = feedback.correct[1];
+        }
         $(".step").find("input").css("background-color", "#ebebe4");
         $('.pAnsWrap').find("input").css("background-color", "#ebebe4");
         $('.pAnsWrap').find("input").attr("disabled", true);
         $('.step').find("input").attr("disabled", true);
-        $('.pQuizFeedback').html(feedback.correct).addClass("correct").fadeIn();
-        $(".bOptionRow").off();
-        $('.pQuizButtons').addClass('pDisable');
+        $('.pQuizBoard .pQuizFeedback').html(feedBackTxt).addClass("correct").fadeIn();
+        $(".bOptionRow").addClass('pDisable').off();
+        $('.pQuizBoard .pQuizButtons').not('.quizNavButtons').addClass('pDisable');
         hideLoader();
       } else {
+        var feedBackTxt = feedback["incorrect"][q.submitCnt];
+        q.submitCnt++;
+        if (q.submitCnt == 3) {
+          manageButtons(true);
+        }
         $('.pAnsWrap').find("input").css("background-color", "yellow");
-        $('.pQuizFeedback').html(feedback.incorrect).addClass("incorrect").fadeIn();
+        $('.pQuizBoard .pQuizFeedback').html(feedBackTxt).addClass("incorrect").fadeIn();
         hideLoader();
       }
 
 
     }
 
-    function sendUserResponse(_temp, cb) {
+    function sendQuizBoardResponse(_temp, cb) {
       console.log("user response");
       console.log(_temp.data);
+      console.log(_temp.url);
       var _data = JSON.stringify({"studentResponse": _temp.data});
       var request = $.ajax({
         url: _temp.url,
@@ -388,12 +461,23 @@
       $(q.mShell).find('.pQuizboard_ques_wrap').hide();
       $(q.mShell).find('.pActivityBody').show();
       $(q.mShell).find('.pQuizStep').show();
-      $(q.mShell).find('.bquestionWrapper').remove()
-      $('.pQuizFeedback').removeClass('correct').removeClass('incorrect').hide();
+      $(q.mShell).find('.bquestionWrapper').remove();
+      $(".pQuizBoard .bOptionRow").removeClass('pDisable');
+      $('.pQuizBoard .pQuizFeedback').removeClass('correct').removeClass('incorrect').hide();
       $(q.mShell).find('.pQuizStepWrap').hide();
       $('.pHelpWrapper').addClass("quizboardHelp")
       $('.pQuizBoardHeader').html("Click on a question, then select your answer.");
 
+    }
+    function manageButtons(disable) {
+      if (disable) {
+        $('.pQuizButtons.uSubmit').addClass('pDisable');
+        $(".pQuizBoard .bOptionRow").addClass('pDisable').off();
+      } else {
+        $('.pQuizButtons.uSubmit').removeClass('pDisable');
+        $(".pQuizBoard .bOptionRow").removeClass('pDisable').off();
+        $(".pQuizBoard .bOptionRow").off(mouseEvents.up).on(mouseEvents.up, radioUp);
+      }
     }
 
   }
