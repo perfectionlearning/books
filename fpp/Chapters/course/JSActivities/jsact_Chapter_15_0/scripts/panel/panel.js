@@ -11,18 +11,18 @@
 		dashBoardEle[dashBoardEle.length] = ['well100',    		530,  0];
 		dashBoardEle[dashBoardEle.length] = ['well100',    		630,  0];
 		dashBoardEle[dashBoardEle.length] = ['wellright',  		730,  0];
-		dashBoardEle[dashBoardEle.length] = ['incrBgMed',  		540,  30];
-		dashBoardEle[dashBoardEle.length] = ['incrBgMed',  		540,  50];
+		//dashBoardEle[dashBoardEle.length] = ['incrBgMed',  		540,  30];
+		//dashBoardEle[dashBoardEle.length] = ['incrBgMed',  		540,  50];
 		dashBoardEle[dashBoardEle.length] = ['wellBottom',      10,   80];
 	
 	//dashBoard text
 	var dashBoardTxt = [];
 		dashBoardTxt[dashBoardTxt.length] = ['Amplitude', 		'bold 13px arial', 'left', 459, 33, 'amp_txt'];
 		dashBoardTxt[dashBoardTxt.length] = ['Period', 			'bold 13px arial', 'left', 482, 54, 'period_txt'];
-		dashBoardTxt[dashBoardTxt.length] = ['m', 				'bold 13px arial', 'left', 600, 32, 'm_txt'];
-		dashBoardTxt[dashBoardTxt.length] = ['s', 				'bold 13px arial', 'left', 600, 50, 's_txt'];
-		dashBoardTxt[dashBoardTxt.length] = ['0.40', 			'bold 13px arial', 'left', 560, 33, 'amp_val'];//initial Amplitude id 
-		dashBoardTxt[dashBoardTxt.length] = ['1.5', 			'bold 13px arial', 'left', 560, 53, 'period_val'];//Period id 
+		dashBoardTxt[dashBoardTxt.length] = ['m', 				'bold 13px arial', 'left', 567, 32, 'm_txt'];
+		dashBoardTxt[dashBoardTxt.length] = ['s', 				'bold 13px arial', 'left', 567, 53, 's_txt'];
+		dashBoardTxt[dashBoardTxt.length] = ['0.40', 			'bold 13px arial', 'left', 535, 33, 'amp_val'];//initial Amplitude id 
+		dashBoardTxt[dashBoardTxt.length] = ['1.5', 			'bold 13px arial', 'left', 535, 53, 'period_val'];//Period id 
 		
 	//banner text
 	var bannerContentTxt = [];
@@ -150,27 +150,27 @@
 	//=======================================================
 	function __createIncDecButton( dashBG ){
 		var _director = game.getDirector();
-		var incDecBtnImg = new CAAT.Foundation.SpriteImage().initialize( _director.getImage('incre_decre_btn'), 2, 1);
+		var incDecBtnImg = new CAAT.Foundation.SpriteImage().initialize( _director.getImage('incre_decre_btn'), 1, 2);
 		var ampIncBtn = new CAAT.Foundation.Actor().
 								setId('amp_Inc').
 								setAsButton(incDecBtnImg.getRef(), 0, 0, 0, 0, function(button){
 									game.incDecHandler(this);
-								}).setLocation(531, 30);
+								}).setLocation(594, 20);
 		var ampDecBtn = new CAAT.Foundation.Actor().
 								setId('amp_Dec').
 								setAsButton(incDecBtnImg.getRef(), 1, 1, 1, 1, function(button){
 									game.incDecHandler(this);
-								}).setLocation(531, 39);
+								}).setLocation(624, 20);
 		var periodIncBtn = new CAAT.Foundation.Actor().
 								setId('period_Inc').
 								setAsButton(incDecBtnImg.getRef(), 0, 0, 0, 0, function(button){
 									game.incDecHandler(this);
-								}).setLocation(531, 50);
+								}).setLocation(594, 50);
 		var periodDecBtn = new CAAT.Foundation.Actor().
 								setId('period_Dec').
 								setAsButton(incDecBtnImg.getRef(), 1, 1, 1, 1, function(button){
 									game.incDecHandler(this);
-								}).setLocation(531, 59);
+								}).setLocation(624, 50);
 								
 		dashBG.addChild(ampIncBtn);
 		dashBG.addChild(ampDecBtn);

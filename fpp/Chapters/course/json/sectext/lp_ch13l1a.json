@@ -1,1 +1,47 @@
-{"cards":[{"lines":[{"type":"title","text":"Simple harmonic motion (SHM)"},{"type":"headline","text":"Repeated, consistent back-and-forth motion"}]},{"lines":[{"type":"title","text":"Graph of simple harmonic motion"},{"type":"headline","text":"Motion is represented by a curve"},{"type":"headline","text":"Maximum distance from equilibrium is constant"},{"type":"headline","text":"Motion is periodic"}]}],"definitions":[],"secText":["  <b>Essential Question: </b>  <b>    <br />  </b>How can we describe objects in simple harmonic motion in terms of cycle, amplitude, period, and frequency?","  <b>Enduring Understandings:</b>  <b>    <br />  </b>1. [OBJ:expsec_m355:Simple harmonic motion] is the movement of an object in a repeated pattern. In simple harmonic motion, the restoring force points toward equilibrium.<br />2. The [OBJ:expsec_m356:cycle] of an object in simple harmonic motion returns the object to its initial state.<br />3. The [OBJ:expsec_m358:amplitude] of an object in simple harmonic is the maximum distance the object is from equilibrium.<br />4. The [OBJ:expsec_m360:period] of an object in simple harmonic motion is the amount of time it takes to complete one cycle.<br />5. The [OBJ:expsec_m362:frequency] of an object in simple harmonic motion is the number of cycles per second that an object completes.<br />6. An object in simple harmonic motion can be [OBJ:actsec_m361:graphed] as a position-time graph. Using the position-time graph, the amplitude, period, and frequency of the object can be calculated.","  <b>Vocabulary:</b>  [OBJ:expsec_m355:simple harmonic motion (SHM)], [OBJ:expsec_m355:restoring force], [OBJ:expsec_m356:cycle], [OBJ:expsec_m358:amplitude], [OBJ:expsec_m360:period], [OBJ:expsec_m362:frequency]","  <b>STEM Skills:</b>  <b>    <br />  </b>1. Review [OBJ:expsec_c357:analyzing graphs].<br />"],"objNames":["wb_shm_concept","wb_SHM_graph_no_trig"]}
+{
+  "cards": [
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Simple harmonic motion (SHM)"
+        },
+        {
+          "type": "headline",
+          "text": "Repeated, consistent back-and-forth motion"
+        }
+      ]
+    },
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Graph of simple harmonic motion"
+        },
+        {
+          "type": "headline",
+          "text": "Motion is represented by a curve"
+        },
+        {
+          "type": "headline",
+          "text": "Maximum distance from equilibrium is constant"
+        },
+        {
+          "type": "headline",
+          "text": "Motion is periodic"
+        }
+      ]
+    }
+  ],
+  "definitions": [],
+  "secText": [
+    "  <b>Essential Question: </b>  <b>    <br />  </b>How can we describe objects in simple harmonic motion in terms of cycle, amplitude, period, and frequency?",
+    "  <b>Enduring Understandings:</b>  <b>    <br />  </b>1. <a class='pjumpToTopic' href='javascript:void(0)' data-chap='13' data-topic='0' data-subtopic='1' data-subsection='1'>Simple harmonic motion</a> is the movement of an object in a repeated pattern. In simple harmonic motion, the restoring force points toward equilibrium.<br />2. The <a class='pjumpToTopic' href='javascript:void(0)' data-chap='13' data-topic='0' data-subtopic='2' data-subsection='0'>cycle</a> of an object in simple harmonic motion returns the object to its initial state.<br />3. The <a class='pjumpToTopic' href='javascript:void(0)' data-chap='13' data-topic='0' data-subtopic='3' data-subsection='0'>amplitude</a> of an object in simple harmonic is the maximum distance the object is from equilibrium.<br />4. The <a class='pjumpToTopic' href='javascript:void(0)' data-chap='13' data-topic='0' data-subtopic='4' data-subsection='0'>period</a> of an object in simple harmonic motion is the amount of time it takes to complete one cycle.<br />5. The <a class='pjumpToTopic' href='javascript:void(0)' data-chap='13' data-topic='0' data-subtopic='5' data-subsection='0'>frequency</a> of an object in simple harmonic motion is the number of cycles per second that an object completes.<br />6. An object in simple harmonic motion can be <a class='pjumpToTopic' href='javascript:void(0)' data-chap='13' data-topic='0' data-subtopic='6' data-subsection='0'>graphed</a> as a position-time graph. Using the position-time graph, the amplitude, period, and frequency of the object can be calculated.",
+    "  <b>Vocabulary:</b>  <a class='pjumpToTopic' href='javascript:void(0)' data-chap='13' data-topic='0' data-subtopic='1' data-subsection='1'>simple harmonic motion (SHM)</a>, <a class='pjumpToTopic' href='javascript:void(0)' data-chap='13' data-topic='0' data-subtopic='1' data-subsection='1'>restoring force</a>, <a class='pjumpToTopic' href='javascript:void(0)' data-chap='13' data-topic='0' data-subtopic='2' data-subsection='0'>cycle</a>, <a class='pjumpToTopic' href='javascript:void(0)' data-chap='13' data-topic='0' data-subtopic='3' data-subsection='0'>amplitude</a>, <a class='pjumpToTopic' href='javascript:void(0)' data-chap='13' data-topic='0' data-subtopic='4' data-subsection='0'>period</a>, <a class='pjumpToTopic' href='javascript:void(0)' data-chap='13' data-topic='0' data-subtopic='5' data-subsection='0'>frequency</a>",
+    "  <b>STEM Skills:</b>  <b>    <br />  </b>1. Review <a class='pjumpToTopic' href='javascript:void(0)' data-chap='2' data-topic='0' data-subtopic='2' data-subsection='1'>analysing graphs</a>.<br />"
+  ],
+  "objNames": [
+    "wb_shm_concept",
+    "wb_SHM_graph_no_trig"
+  ]
+}

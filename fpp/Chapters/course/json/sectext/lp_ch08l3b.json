@@ -1,1 +1,22 @@
-{"cards":[{"lines":[{"type":"title","text":"Experiment with gravity"}]}],"definitions":[],"secText":["  <b>Lesson:</b>  <b>    <br />  </b>1. Experiment with [OBJ:actsec_h562:gravitational force] between two masses.<br />2. Define and calculate [OBJ:expsec_h564:Newton's law of gravity].<br />3. Observe [OBJ:expsec_h565:examples of the gravitational force].<br />4. [OBJ:expsec_h566:Compare and contrast] the gravitational constant versus freefall acceleration.<br />5. Determine how [OBJ:expsec_h567:g varies] based on Earth's shape and composition.<br />6. Work through a sample problem to [OBJ:app_find_g_from_G_question:calculate the acceleration] near the Earth's surface.","  <b>In-class assessment:</b>  <b>    <br />  </b>1. [OBJ:qc_36941:Calculate] the gravitational force.","  <b>Homework:</b>  <span class=\"KBInternalLink\"><a href=\"assign.html#OHW 8.03\">OHW 8.03</a></span>","  <b>Quick Review:</b>  [OBJ:sum_gravity_concepts:Gravity]"],"objNames":["jsact_Chapter_13_0"]}
+{
+  "cards": [
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Experiment with gravity"
+        }
+      ]
+    }
+  ],
+  "definitions": [],
+  "secText": [
+    "  <b>Lesson:</b>  <b>    <br />  </b>1. Experiment with <a class='pjumpToTopic' href='javascript:void(0)' data-chap='8' data-topic='2' data-subtopic='1' data-subsection='0'>gravitational force</a> between two masses.<br />2. Define and calculate <a class='pjumpToTopic' href='javascript:void(0)' data-chap='8' data-topic='2' data-subtopic='1' data-subsection='1'>Newton's law of gravity</a>.<br />3. Observe <a class='pjumpToTopic' href='javascript:void(0)' data-chap='8' data-topic='2' data-subtopic='1' data-subsection='2'>examples of the gravitational force</a>.<br />4. <a class='pjumpToTopic' href='javascript:void(0)' data-chap='8' data-topic='2' data-subtopic='2' data-subsection='0'>Compare and contrast</a> the gravitational constant versus freefall acceleration.<br />5. Determine how <a class='pjumpToTopic' href='javascript:void(0)' data-chap='8' data-topic='2' data-subtopic='3' data-subsection='1'>g varies</a> based on Earth's shape and composition.<br />6. Work through a sample problem to <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='app_find_g_from_G_question'>calculate the acceleration</a> near the Earth's surface.",
+    "  <b>In-class assessment:</b>  <b>    <br />  </b>1. <a class='pjumpToTopic' href='javascript:void(0)' data-chap='8' data-topic='2' data-subtopic='1' data-subsection='3'>Calculate</a> the gravitational force.",
+    
+    "  <b>Quick Review:</b>  <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='sum_gravity_concepts'>Gravity</a>"
+  ],
+  "objNames": [
+    "jsact_Chapter_13_0"
+  ]
+}

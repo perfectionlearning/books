@@ -464,7 +464,7 @@ var IncDecArrow = function(action,btn){
 	 var aActorCarR1 =  game.textActor(director, 'r = 21.0 m', 'bold 14px Arial', 'left', '#ffffff').setLocation(430, 220);
 	 var aActorCarSp =  game.textActor(director, 'Blue car Speed', 'bold 14px Arial', 'left', '#ffffff').setLocation(398, 540);
 	 var aActorCarSpd =  game.textActor(director, ' 0.00', 'bold 14px Arial', 'left', '#000000').setLocation(89, 565);
-	 var aActorM =  game.textActor(director, 'm/s', 'bold 14px Arial', 'left', '#ffffff').setLocation(570, 538);
+	 var aActorM =  game.textActor(director, 'm/s', 'bold 14px Arial', 'left', '#ffffff').setLocation(538, 540);
 	 
 	 //Gauge_x values
 	var aActorGauge1 =  game.textActor(director, '10', 'bold 12px Arial', 'left', '#ffffff').setLocation(215, 558);
@@ -474,7 +474,7 @@ var IncDecArrow = function(action,btn){
 	var aActorGauge5 =  game.textActor(director, '0', 'bold 12px Arial', 'left', '#ffffff').setLocation(258, 543);
 	var aActorGauge6 =  game.textActor(director, '-10', 'bold 12px Arial', 'left', '#ffffff').setLocation(248, 565);
 	var aLabelWeight =  game.textActor(director, '60', 'Bold 14px Arial', 'left', '#ffffff').setLocation(580, 512);
-	var aLabelSp =  game.textActor(director, '5.0', 'Bold 14px Arial', 'left', '#ffffff').setLocation(534, 540);//Speed TextActor
+	var aLabelSp =  game.textActor(director, '5.0', 'Bold 14px Arial', 'left', '#ffffff').setLocation(511, 540);//Speed TextActor
 	
 	var boxvrline = new CAAT.exemplarr().setBounds(0, 0, 1, 25).setId('vrline');
 		boxvrline.paint = function(director, time){
@@ -632,17 +632,17 @@ var IncDecArrow = function(action,btn){
 						}).setLocation(598, 531);
 						
 	/*Speed Increment*/
-	var btnImg = new CAAT.Foundation.SpriteImage().initialize(director.getImage('incre_decre_btn'), 2, 1)
+	var btnImg = new CAAT.Foundation.SpriteImage().initialize(director.getImage('incre_decre_btn'), 1, 2)
 	var btnSpeedInc = new CAAT.exemplarr().setAsButton(btnImg.getRef(), 0, 0, 0, 0, 
 						function(button){
 									
-						}).setLocation(507, 538);
+						}).setLocation(568, 518);
 	/*Speed Decrement*/
-	var btnImg = new CAAT.Foundation.SpriteImage().initialize(director.getImage('incre_decre_btn'), 2, 1)
+	var btnImg = new CAAT.Foundation.SpriteImage().initialize(director.getImage('incre_decre_btn'), 1, 2)
 	var btnSpeedDec = new CAAT.exemplarr().setAsButton(btnImg.getRef(), 1, 1, 1, 1, 
 						function(button){
 							
-						}).setLocation(507, 547).setSpriteIndex(1);
+						}).setLocation(567, 548).setSpriteIndex(1);
 	
 	IncDecArrow("-",btnSpeedDec);
 	IncDecArrow("+",btnSpeedInc);

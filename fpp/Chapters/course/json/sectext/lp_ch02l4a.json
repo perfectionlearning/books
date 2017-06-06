@@ -1,1 +1,30 @@
-{"cards":[{"lines":[{"type":"title","text":"Galileo’s experiment"},{"type":"headline","text":"Freefall acceleration"},{"type":"bullet","text":"Acceleration due to gravity"}]}],"definitions":[],"secText":["  <b>Essential Question: </b>  <br />How can we use our surroundings to understand freefall acceleration?","  <b>Enduring Understandings:</b>  <b>    <br />  </b>1. [OBJ:expsec_c372:Freefall acceleration] is a constant value, but it has different values depending on your location in the universe.","  <b>Vocabulary:</b>  [OBJ:expsec_c372:freefall acceleration]","  <b>STEM Skills:</b>  <b>    <br />  </b>1. Review [OBJ:expsec_b762:vectors].<b><br /></b>2. Use [OBJ:expsec_b776:motion equations]."],"objNames":["wb_free_fall_acceleration_concept"]}
+{
+  "cards": [
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Galileo’s experiment"
+        },
+        {
+          "type": "headline",
+          "text": "Freefall acceleration"
+        },
+        {
+          "type": "bullet",
+          "text": "Acceleration due to gravity"
+        }
+      ]
+    }
+  ],
+  "definitions": [],
+  "secText": [
+  "  <b>Essential Question: </b>  <br />How can we use our surroundings to understand freefall acceleration?",
+    "  <b>Enduring Understandings:</b>  <b>    <br />  </b>1. <a class='pjumpToTopic' href='javascript:void(0)' data-chap='2' data-topic='3' data-subtopic='1'>Freefall acceleration</a> is a constant value, but it has different values depending on your location in the universe.",
+    "  <b>Vocabulary:</b>  <a class='pjumpToTopic' href='javascript:void(0)' data-chap='2' data-topic='3' data-subtopic='1'>freefall acceleration</a>",
+    "  <b>STEM Skills:</b>  <b>    <br />  </b>1. Review <a class='pjumpToTopic' href='javascript:void(0)' data-chap='1' data-topic='1' data-subtopic='2'>vectors</a>.<b><br /></b>2. Use <a class='pjumpToTopic' href='javascript:void(0)' data-chap='1' data-topic='4' data-subtopic='1'>motion equations</a>."
+  ],
+  "objNames": [
+    "wb_free_fall_acceleration_concept"
+  ]
+}

@@ -1,1 +1,33 @@
-{"cards":[{"lines":[{"type":"title","text":"Double-slit: white light"},{"type":"headline","text":"Overlapping patterns give rainbow effect"}]},{"lines":[{"type":"title","text":"Interference “rainbow” caused by:"},{"type":"headline","text":"Change of phase on first reflection"},{"type":"headline","text":"Difference in travel distance of waves"},{"type":"headline","text":"Varying thickness of film"}]}],"definitions":[],"secText":["  <b>Lesson:</b>  <b>    <br />  </b>1. Calculate [OBJ:expsec_r961:bright band locations] for two-slit interference.<br />2. Calculate [OBJ:expsec_r9612321:dark band locations] for two-slit interference.<br />3. Work through a sample problem to [OBJ:app_basic_double_slit_question:calculate how far apart two slits are] using dark band locations.<br />4. Calculate [OBJ:expsec_r9651:wavelength] using bright band locations.<br />5. Work through a sample problem to [OBJ:app_find_wavelength_no_trig_question:calculate the wavelength of light] using bright band locations.<br />6. Apply the concept of bright and dark bands to [OBJ:expsec_r969:white light].<br />7. Apply the concepts of constructive and destructive interference to [OBJ:expsec_r970:thin films].","  <b>In-class assessment:</b>  <b>    <br />  </b>1. [OBJ:qc_37159:Calculate] wavelength using bright band locations.","  <b>Homework:</b>  <span class=\"KBInternalLink\"><a href=\"assign.html#OHW 18.02\">OHW 18.02</a></span>","  <b>Quick Review:</b>  [OBJ:sum_interference_equation:Calculating Interference], [OBJ:sum_white_interference:White Light Interference], [OBJ:sum_thin_film:Thin Film Interference]"],"objNames":["wb_double_slit_white_concepts2","wb_thin_film_2"]}
+{
+	"cards": [{
+			"lines": [{
+					"type": "title",
+					"text": "Double-slit: white light"
+				}, {
+					"type": "headline",
+					"text": "Overlapping patterns give rainbow effect"
+				}
+			]
+		}, {
+			"lines": [{
+					"type": "title",
+					"text": "Interference “rainbow” caused by:"
+				}, {
+					"type": "headline",
+					"text": "Change of phase on first reflection"
+				}, {
+					"type": "headline",
+					"text": "Difference in travel distance of waves"
+				}, {
+					"type": "headline",
+					"text": "Varying thickness of film"
+				}
+			]
+		}
+	],
+	"definitions": [],
+	"secText": ["  <b>Lesson:</b>  <b>    <br />  </b>1. Calculate <a class='pjumpToTopic' href='javascript:void(0)' data-chap='18' data-topic='1' data-subtopic='1' data-subsection='0'>bright band locations</a> for two-slit interference.<br />2. Calculate <a class='pjumpToTopic' href='javascript:void(0)' data-chap='18' data-topic='1' data-subtopic='1' data-subsection='1'>dark band locations</a> for two-slit interference.<br />3. Work through a sample problem to <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='app_basic_double_slit_question'>calculate how far apart two slits are</a> using dark band locations.<br />4. Calculate <a class='pjumpToTopic' href='javascript:void(0)' data-chap='18' data-topic='1' data-subtopic='1' data-subsection='3'>wavelength</a> using bright band locations.<br />5. Work through a sample problem to <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='app_find_wavelength_no_trig_question'>calculate the wavelength of light</a> using bright band locations.<br />6. Apply the concept of bright and dark bands to <a class='pjumpToTopic' href='javascript:void(0)' data-chap='18' data-topic='1' data-subtopic='2' data-subsection='0'>white light</a>.<br />7. Apply the concepts of constructive and destructive interference to <a class='pjumpToTopic' href='javascript:void(0)' data-chap='18' data-topic='1' data-subtopic='3' data-subsection='0'>thin films</a>.", "  <b>In-class assessment:</b>  <b>    <br />  </b>1. <a class='pjumpToTopic' href='javascript:void(0)' data-chap='18' data-topic='1' data-subtopic='1' data-subsection='5'>Calculate</a> wavelength using bright band locations.", 
+	
+	"  <b>Quick Review:</b>  <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='sum_interference_equation'>Calculating Interference</a>, <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='sum_white_interference'>White Light Interference</a>,<a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='sum_thin_film'>Thin Film Interference</a>"],
+	"objNames": ["wb_double_slit_white_concepts2", "wb_thin_film_2"]
+}

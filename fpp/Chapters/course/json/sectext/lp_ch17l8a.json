@@ -1,1 +1,37 @@
-{"cards":[{"lines":[{"type":"title","text":"History of science of the electric force "},{"type":"headline","text":"It starts with the Greeks, as always "},{"type":"headline","text":"And Newton contributes, as is often the case"},{"type":"headline","text":"The science is applied"},{"type":"bullet","text":"Volta and battery"}]}],"definitions":[],"secText":["  <b>Essential Question: </b>  <b>    <br />  </b>How has our understanding of the electric and magnetic force evolved over time?","  <b>Enduring Understandings:</b>  <b>    <br />  </b>1. The concept of [OBJ:expsec_rm27:electric force] and [OBJ:expsec_rm28:magnetic force] were added to throughout history. Every discovery made by scientists such as Joseph Priestly, Charles Coulomb, Christian Oerstad, and James Clerk Maxwell was added to over years of hypotheses and experiments.","  <b>STEM Skills:</b>  <b>    <br />  </b>1. Review [OBJ:expsec_o968:electric force].<br />2. Review [OBJ:expsec_q761:magnetic force]."],"objNames":["wb_e_and_m_forces1"]}
+{
+  "cards": [
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "History of science of the electric force "
+        },
+        {
+          "type": "headline",
+          "text": "It starts with the Greeks, as always "
+        },
+        {
+          "type": "headline",
+          "text": "And Newton contributes, as is often the case"
+        },
+        {
+          "type": "headline",
+          "text": "The science is applied"
+        },
+        {
+          "type": "bullet",
+          "text": "Volta and battery"
+        }
+      ]
+    }
+  ],
+  "definitions": [],
+  "secText": [
+    "  <b>Essential Question: </b>  <b>    <br />  </b>How has our understanding of the electric and magnetic force evolved over time?",
+    "  <b>Enduring Understandings:</b>  <b>    <br />  </b>1. The concept of <a class='pjumpToTopic' href='javascript:void(0)' data-chap='17' data-topic='7' data-subtopic='1' data-subsection='0'>electric force</a> and <a class='pjumpToTopic' href='javascript:void(0)' data-chap='17' data-topic='7' data-subtopic='1' data-subsection='1'>magnetic force</a> were added to throughout history. Every discovery made by scientists such as Joseph Priestly, Charles Coulomb, Christian Oerstad, and James Clerk Maxwell was added to over years of hypotheses and experiments.",
+    "  <b>STEM Skills:</b>  <b>    <br />  </b>1. Review <a class='pjumpToTopic' href='javascript:void(0)' data-chap='15' data-topic='1' data-subtopic='1' data-subsection='2'>electric force</a>.<br />2. Review <a class='pjumpToTopic' href='javascript:void(0)' data-chap='17' data-topic='0' data-subtopic='3' data-subsection='3'>magnetic force</a>."
+  ],
+  "objNames": [
+    "wb_e_and_m_forces1"
+  ]
+}

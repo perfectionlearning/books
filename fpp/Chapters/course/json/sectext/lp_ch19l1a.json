@@ -1,1 +1,55 @@
-{"cards":[{"lines":[{"type":"title","text":"Electromagnetic radiation waves"},{"type":"headline","text":"Are made up of electric, magnetic fields"},{"type":"bullet","text":"Fields are perpendicular to <u>each other</u>"},{"type":"headline","text":"Are transverse waves so"},{"type":"bullet","text":"Fields also perpendicular to <u>wave direction</u>"}]},{"lines":[{"type":"title","text":"Speed of light"},{"type":"headline","text":"Early scientists thought it was infinite"},{"type":"headline","text":"Galileo attempted to measure its speed"}]}],"definitions":[],"secText":["  <b>Essential Question: </b>  <b>    <br />  </b>How can we quantify the electric and magnetic fields that compose light?","  <b>Enduring Understandings:</b>  <b>    <br />  </b>1. [OBJ:expsec_s554:Electromagnetic radiation] is composed of magnetic and electric fields. The strength of each field [OBJ:expsec_s555:changes] over time. The electric and magnetic fields have the same frequency, are in phase, and are perpendicular to each other.<br />2. The [OBJ:expsec_s559:speed of light] is equal to 3.0×10<sup class=\"\">8</sup> m/s.","  <b>Vocabulary:</b>  [OBJ:expsec_s554:electromagnetic radiation], [OBJ:expsec_s556:electromagnetic spectrum], [OBJ:expsec_s559:speed of light]","  <b>STEM Skills:</b>  <b>    <br />  </b>1. Review [OBJ:expsec_o977:electric fields].<br />2. Review [OBJ:expsec_q755:magnetic fields].<br />3. Review [OBJ:expsec_m380:transverse waves]."],"objNames":["wb_em_waves_concepts1","wb_light_speed1"]}
+{
+  "cards": [
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Electromagnetic radiation waves"
+        },
+        {
+          "type": "headline",
+          "text": "Are made up of electric, magnetic fields"
+        },
+        {
+          "type": "bullet",
+          "text": "Fields are perpendicular to <u>each other</u>"
+        },
+        {
+          "type": "headline",
+          "text": "Are transverse waves so"
+        },
+        {
+          "type": "bullet",
+          "text": "Fields also perpendicular to <u>wave direction</u>"
+        }
+      ]
+    },
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Speed of light"
+        },
+        {
+          "type": "headline",
+          "text": "Early scientists thought it was infinite"
+        },
+        {
+          "type": "headline",
+          "text": "Galileo attempted to measure its speed"
+        }
+      ]
+    }
+  ],
+  "definitions": [],
+  "secText": [
+    "  <b>Essential Question: </b>  <b>    <br />  </b>How can we quantify the electric and magnetic fields that compose light?",
+    "  <b>Enduring Understandings:</b>  <b>    <br />  </b>1. <a class='pjumpToTopic' href='javascript:void(0)' data-chap='19' data-topic='0' data-subtopic='1' data-subsection='0'>Electromagnetic radiation</a> is composed of magnetic and electric fields. The strength of each field <a class='pjumpToTopic' href='javascript:void(0)' data-chap='19' data-topic='0' data-subtopic='1' data-subsection='1'>changes</a> over time. The electric and magnetic fields have the same frequency, are in phase, and are perpendicular to each other.<br />2. The <a class='pjumpToTopic' href='javascript:void(0)' data-chap='19' data-topic='0' data-subtopic='2' data-subsection='0'>speed of light</a> is equal to 3.0×10<sup class=\"\">8</sup> m/s.",
+    "  <b>Vocabulary:</b>  <a class='pjumpToTopic' href='javascript:void(0)' data-chap='19' data-topic='0' data-subtopic='1' data-subsection='0'>electromagnetic radiation</a>, <a class='pjumpToTopic' href='javascript:void(0)' data-chap='19' data-topic='0' data-subtopic='1' data-subsection='2'>electromagnetic spectrum</a>, <a class='pjumpToTopic' href='javascript:void(0)' data-chap='19' data-topic='0' data-subtopic='2' data-subsection='0'>speed of light</a>",
+    "  <b>STEM Skills:</b>  <b>    <br />  </b>1. Review <a class='pjumpToTopic' href='javascript:void(0)' data-chap='15' data-topic='2' data-subtopic='2' data-subsection='1'>electric fields</a>.<br />2. Review <a class='pjumpToTopic' href='javascript:void(0)' data-chap='17' data-topic='0' data-subtopic='1' data-subsection='1'>magnetic fields</a>.<br />3. Review <a class='pjumpToTopic' href='javascript:void(0)' data-chap='13' data-topic='4' data-subtopic='1' data-subsection='0'>transverse waves</a>."
+  ],
+  "objNames": [
+    "wb_em_waves_concepts1",
+    "wb_light_speed1"
+  ]
+}

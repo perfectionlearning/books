@@ -10,8 +10,8 @@
 		dashBoardEle[dashBoardEle.length] = ['well100',    		'555',  '0'];
 		dashBoardEle[dashBoardEle.length] = ['well50',     		'655',  '0'];
 		dashBoardEle[dashBoardEle.length] = ['wellright',  		'705',  '0'];
-		dashBoardEle[dashBoardEle.length] = ['incrBgMed',  		'485',  '25'];
-		dashBoardEle[dashBoardEle.length] = ['incrBgMed',  		'485',  '50'];
+		//dashBoardEle[dashBoardEle.length] = ['incrBgMed',  		'485',  '25'];
+		//dashBoardEle[dashBoardEle.length] = ['incrBgMed',  		'485',  '50'];
 	
 	//dashBoard text
 	var dashBoardTxt = [];
@@ -23,13 +23,13 @@
 		dashBoardTxt[dashBoardTxt.length] = ['m/s', 				'bold 14px Arial', 'left', 285, 15, 5];
 		dashBoardTxt[dashBoardTxt.length] = ['m/s', 				'bold 14px Arial', 'left', 285, 35, 6];
 		dashBoardTxt[dashBoardTxt.length] = ['2', 					'10px Arial', 'left', 308, 32, 7];
-		dashBoardTxt[dashBoardTxt.length] = ['Initial velocity', 	'bold 14px Arial', 'left', 368, 25, 8];
-		dashBoardTxt[dashBoardTxt.length] = ['Acceleration', 		'bold 14px Arial', 'left', 368, 50, 9];
-		dashBoardTxt[dashBoardTxt.length] = ['m/s', 				'bold 14px Arial', 'left', 560, 25, 10];
-		dashBoardTxt[dashBoardTxt.length] = ['m/s', 				'bold 14px Arial', 'left', 560, 50, 11];
-		dashBoardTxt[dashBoardTxt.length] = ['2', 					'10px Arial', 'left', 585, 48, 12];
-		dashBoardTxt[dashBoardTxt.length] = ['3.0', 				'bold 13px Arial', 'left', 505, 28, 'initVelTxt'];//initial velocity id 
-		dashBoardTxt[dashBoardTxt.length] = ['-1.0', 				'bold 13px Arial', 'left', 505, 53, 'accTxt'];//acceleration id 
+		dashBoardTxt[dashBoardTxt.length] = ['Initial velocity', 	'bold 14px Arial', 'left', 360, 20, 8];
+		dashBoardTxt[dashBoardTxt.length] = ['Acceleration', 		'bold 14px Arial', 'left', 360, 55, 9];
+		dashBoardTxt[dashBoardTxt.length] = ['m/s', 				'bold 14px Arial', 'left', 510, 22, 10];
+		dashBoardTxt[dashBoardTxt.length] = ['m/s', 				'bold 14px Arial', 'left', 510, 55, 11];
+		dashBoardTxt[dashBoardTxt.length] = ['2', 					'10px Arial', 'left', 535, 52, 12];
+		dashBoardTxt[dashBoardTxt.length] = ['3.0', 				'bold 16px Arial', 'left', 465, 20, 'initVelTxt'];//initial velocity id 
+		dashBoardTxt[dashBoardTxt.length] = ['-1.0', 				'bold 16px Arial', 'left', 465, 53, 'accTxt'];//acceleration id 
 		
 	//banner text
 	var bannerContentTxt = [];
@@ -155,27 +155,27 @@
 	//Create Increment and Decrement button
 	//=======================================================
 	function __createIncDecButton(){
-		var incDecBtnImg = new CAAT.Foundation.SpriteImage().initialize( game._director.getImage('incre_decre_btn'), 2, 1);
+		var incDecBtnImg = new CAAT.Foundation.SpriteImage().initialize( game._director.getImage('incre_decre_btn'), 1, 2);
 		var iniVelIncBtn = new CAAT.Foundation.Actor().
 								setId('iniVelInc').
 								setAsButton(incDecBtnImg.getRef(), 0, 0, 0, 0, function(button){									
 									//incDecHandler(this);
-								}).setLocation(477, 25);
+								}).setLocation(550, 15);
 		var iniVelDecBtn = new CAAT.Foundation.Actor().
 								setId('iniVelDec').
 								setAsButton(incDecBtnImg.getRef(), 1, 1, 1, 1, function(button){
 									//incDecHandler(this);
-								}).setLocation(477, 34);
+								}).setLocation(585, 15);
 		var accIncBtn = new CAAT.Foundation.Actor().
 								setId('accInc').
 								setAsButton(incDecBtnImg.getRef(), 0, 0, 0, 0, function(button){
 									//incDecHandler(this);
-								}).setLocation(477, 50);
+								}).setLocation(550, 50);
 		var accDecBtn = new CAAT.Foundation.Actor().
 								setId('accDec').
 								setAsButton(incDecBtnImg.getRef(), 1, 1, 1, 1, function(button){
 									//incDecHandler(this);
-								}).setLocation(477, 59);
+								}).setLocation(585, 50);
 								
 		dashBG.addChild(iniVelIncBtn);
 		dashBG.addChild(iniVelDecBtn);

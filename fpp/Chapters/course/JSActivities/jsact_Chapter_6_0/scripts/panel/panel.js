@@ -12,8 +12,8 @@
 		dashBoardEle[dashBoardEle.length] = ['well100',    		510,  0];
 		dashBoardEle[dashBoardEle.length] = ['well100',    		550,  0];
 		dashBoardEle[dashBoardEle.length] = ['wellright',  		650,  0];
-		dashBoardEle[dashBoardEle.length] = ['incrBgMed',  		370,  15];
-		dashBoardEle[dashBoardEle.length] = ['incrBgMed',  		370,  35];
+		//dashBoardEle[dashBoardEle.length] = ['incrBgMed',  		370,  15];
+		//dashBoardEle[dashBoardEle.length] = ['incrBgMed',  		370,  35];
 		
 	
 	//dashBoard text
@@ -27,13 +27,13 @@
 		dashBoardTxt[dashBoardTxt.length] = ['2', 				'10px arial', 'left', 225, 50, 5];
 		dashBoardTxt[dashBoardTxt.length] = ['F', 				'Italic bold 14px arial', 'left', 330, 15, 6];
 		dashBoardTxt[dashBoardTxt.length] = ['1', 				'10px arial', 'left', 338, 24, 7];
-		dashBoardTxt[dashBoardTxt.length] = ['10', 				'bold 14px arial', 'left', 400, 17, 'F1Txt'];
+		dashBoardTxt[dashBoardTxt.length] = ['10', 				'bold 14px arial', 'left', 365, 15, 'F1Txt'];
 		dashBoardTxt[dashBoardTxt.length] = ['F', 				'italic bold 14px arial', 'left', 330, 35, 8];
 		dashBoardTxt[dashBoardTxt.length] = ['2', 				'10px arial', 'left', 338, 42, 9];
-		dashBoardTxt[dashBoardTxt.length] = ['20', 				'bold 14px arial', 'left', 400, 37, 'F1Txt'];
-		dashBoardTxt[dashBoardTxt.length] = ['N', 				'bold 14px arial', 'left', 430, 15, 10];
-		dashBoardTxt[dashBoardTxt.length] = ['N', 				'bold 14px arial', 'left', 430, 35, 11];
-		dashBoardTxt[dashBoardTxt.length] = ['Display vectors head to tail', 			'bold 14px arial', 'left', 330, 58, 12];
+		dashBoardTxt[dashBoardTxt.length] = ['20', 				'bold 14px arial', 'left', 365, 35, 'F1Txt'];
+		dashBoardTxt[dashBoardTxt.length] = ['N', 				'bold 14px arial', 'left', 400, 15, 10];
+		dashBoardTxt[dashBoardTxt.length] = ['N', 				'bold 14px arial', 'left', 400, 35, 11];
+		dashBoardTxt[dashBoardTxt.length] = ['Display vectors head to tail', 			'bold 14px arial', 'left', 330, 66, 12];
 		
 	//banner text
 	var bannerContentTxt = [];
@@ -133,7 +133,7 @@
 		game.SVGToggleBtn = game.__addImageOnScene(game._director.getImage('checkonoff'), 1, 2);
 		game.SVGToggleBtn.
 			setAnimationImageIndex([0]).
-			setLocation(525, 558);		
+			setLocation(525, 565);		
 		mainPanel.addChild(game.SVGToggleBtn);
 		
 		game.SVGToggleBtn.mouseDown = function(e){
@@ -178,27 +178,27 @@
 	//Create Increment and Decrement button
 	//=======================================================
 	 game.__createIncDecButton =function(mainPanel){
-		var incDecBtnImg = new CAAT.Foundation.SpriteImage().initialize( game._director.getImage('incre_decre_btn'), 2, 1);
+		var incDecBtnImg = new CAAT.Foundation.SpriteImage().initialize( game._director.getImage('incre_decre_btn'), 1, 2);
 		var iniVelIncBtn = new CAAT.Foundation.Actor().
 								setId('iniF1Inc').
 								setAsButton(incDecBtnImg.getRef(), 0, 0, 0, 0, function(button){
 									game.incDecHandler(this);
-								}).setLocation(362, 515);
+								}).setLocation(442, 510);
 		var iniVelDecBtn = new CAAT.Foundation.Actor().
 								setId('iniF1Dec').
 								setAsButton(incDecBtnImg.getRef(), 1, 1, 1, 1, function(button){
 									game.incDecHandler(this);
-								}).setLocation(362, 524);
+								}).setLocation(472, 510);
 		var accIncBtn = new CAAT.Foundation.Actor().
 								setId('iniF2Inc').
 								setAsButton(incDecBtnImg.getRef(), 0, 0, 0, 0, function(button){
 									game.incDecHandler(this);
-								}).setLocation(362, 535);
+								}).setLocation(442, 537);
 		var accDecBtn = new CAAT.Foundation.Actor().
 								setId('iniF2Dec').
 								setAsButton(incDecBtnImg.getRef(), 1, 1, 1, 1, function(button){
 									game.incDecHandler(this);
-								}).setLocation(362, 544);
+								}).setLocation(472, 537);
 								
 		mainPanel.addChild(iniVelIncBtn);
 		mainPanel.addChild(iniVelDecBtn);

@@ -1,1 +1,47 @@
-{"cards":[{"lines":[{"type":"title","text":"Baton inertia determined by"},{"type":"headline","text":"Axis of rotation"},{"type":"bullet","text":"Point about which baton is rotated"},{"type":"headline","text":"Amount of mass "}]},{"lines":[{"type":"title","text":"Moments of inertia"},{"type":"headline","text":"Solid figures, rotated about axis passing through center"}]}],"definitions":[],"secText":["  <b>Lesson:</b>  <b>    <br />  </b>1. Calculate net torque using the [OBJ:expsec_i969:moment of inertia and angular acceleration].<br />2. Define [OBJ:expsec_i970:moment of inertia].<br />3. Calculate the [OBJ:expsec_i970:moment of inertia].<br />4. Calculate the [OBJ:expsec_i972:moment of inertia for common shapes].","  <b>In-class assessment:</b>  <b>    <br />  </b>1. [OBJ:qc_37196:Calculate] torque using moment of inertia and angular acceleration.","  <b>Homework:</b>  <span class=\"KBInternalLink\"><a href=\"assign.html#OHW 9.05\">OHW 9.05</a></span>","  <b>Quick Review:</b>  [OBJ:sum_torque_law_concepts:Torque, Moment of Inertia, and Angular Acceleration], [OBJ:sum_torque_inertia:Moment of Inertia]"],"objNames":["wb_moment_inertia_example","wb_moments_cylinders1"]}
+{
+  "cards": [
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Baton inertia determined by"
+        },
+        {
+          "type": "headline",
+          "text": "Axis of rotation"
+        },
+        {
+          "type": "bullet",
+          "text": "Point about which baton is rotated"
+        },
+        {
+          "type": "headline",
+          "text": "Amount of mass "
+        }
+      ]
+    },
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Moments of inertia"
+        },
+        {
+          "type": "headline",
+          "text": "Solid figures, rotated about axis passing through center"
+        }
+      ]
+    }
+  ],
+  "definitions": [],
+  "secText": [
+    "  <b>Lesson:</b>  <b>    <br />  </b>1. Calculate net torque using the <a class='pjumpToTopic' href='javascript:void(0)' data-chap='9' data-topic='4' data-subtopic='1' data-subsection='0'>moment of inertia and angular acceleration</a>.<br />2. Define <a class='pjumpToTopic' href='javascript:void(0)' data-chap='9' data-topic='4' data-subtopic='2' data-subsection='0'>moment of inertia</a>.<br />3. Calculate the <a class='pjumpToTopic' href='javascript:void(0)' data-chap='9' data-topic='4' data-subtopic='2' data-subsection='0'>moment of inertia</a>.<br />4. Calculate the <a class='pjumpToTopic' href='javascript:void(0)' data-chap='9' data-topic='4' data-subtopic='3' data-subsection='0'>moment of inertia for common shapes</a>.",
+    "  <b>In-class assessment:</b>  <b>    <br />  </b>1. <a class='pjumpToTopic' href='javascript:void(0)' data-chap='9' data-topic='4' data-subtopic='1' data-subsection='1'>Calculate</a> torque using moment of inertia and angular acceleration.",
+    
+    "  <b>Quick Review:</b>  <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='sum_torque_law_concepts'>Torque, Moment of Inertia, and Angular Acceleration</a>, <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='sum_torque_inertia'>Moment of Inertia</a>"
+  ],
+  "objNames": [
+    "wb_moment_inertia_example",
+    "wb_moments_cylinders1"
+  ]
+}

@@ -8,10 +8,26 @@
 
         <link rel="stylesheet" href="core/main/css/jquery.mCustomScrollbar.css">
         <link rel="stylesheet" href="course/css/fonts.css">
-         <link rel="stylesheet" href="assets/lessonplans/style.css?v=1.0">
-        <link rel="stylesheet" href="core/main/css/style.css?v=1.0">
+         <link rel="stylesheet" href="assets/lessonplans/style.css?">
+        <link rel="stylesheet" href="core/main/css/style.css">
+<script type="text/x-mathjax-config">
   
-<script type="text/javascript" async src="core/lib/MathJax/MathJax.js?config=MML_CHTML"></script>
+			MathJax.Hub.Config({
+                             jax: ["output/HTML-CSS"],
+				"HTML-CSS": {
+					availableFonts: ["STIX-Web"],
+					preferredFont: "STIX-Web", // force Web fonts
+					webFont: "STIX-Web",
+					matchFontHeight: false
+				},
+
+				skipStartupTypeset: true
+			});
+
+	
+    </script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.3/MathJax.js?config=MML_HTMLorMML-full.js"></script>
+  <script src="core/lib/MathJax/MathJax.js?config=MML_HTMLorMML-full.js"></script>
 
         <script type="text/javascript" src="core/lib/jquery-1.9.1.js"></script>
         <script src="core/lib/jquery-3.1.0.min.js"></script>
@@ -26,11 +42,93 @@
         <script src="core/main/js/helper.js"></script>
         <script src="core/main/js/view.js"></script>
         <script src="core/main/js/controller.js"></script>
-       
+            
+		
+<style type="text/css">.MathJax_Hover_Frame {border-radius: .25em; -webkit-border-radius: .25em; -moz-border-radius: .25em; -khtml-border-radius: .25em; box-shadow: 0px 0px 15px #83A; -webkit-box-shadow: 0px 0px 15px #83A; -moz-box-shadow: 0px 0px 15px #83A; -khtml-box-shadow: 0px 0px 15px #83A; border: 1px solid #A6D ! important; display: inline-block; position: absolute}
+.MathJax_Hover_Arrow {position: absolute; width: 15px; height: 11px; cursor: pointer}
+</style><style type="text/css">#MathJax_About {position: fixed; left: 50%; width: auto; text-align: center; border: 3px outset; padding: 1em 2em; background-color: #DDDDDD; color: black; cursor: default; font-family: message-box; font-size: 120%; font-style: normal; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; border-radius: 15px; -webkit-border-radius: 15px; -moz-border-radius: 15px; -khtml-border-radius: 15px; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+.MathJax_Menu {position: absolute; background-color: white; color: black; width: auto; padding: 2px; border: 1px solid #CCCCCC; margin: 0; cursor: default; font: menu; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+.MathJax_MenuItem {padding: 2px 2em; background: transparent}
+.MathJax_MenuArrow {position: absolute; right: .5em; color: #666666}
+.MathJax_MenuActive .MathJax_MenuArrow {color: white}
+.MathJax_MenuCheck {position: absolute; left: .7em}
+.MathJax_MenuRadioCheck {position: absolute; left: 1em}
+.MathJax_MenuLabel {padding: 2px 2em 4px 1.33em; font-style: italic}
+.MathJax_MenuRule {border-top: 1px solid #CCCCCC; margin: 4px 1px 0px}
+.MathJax_MenuDisabled {color: GrayText}
+.MathJax_MenuActive {background-color: Highlight; color: HighlightText}
+.MathJax_Menu_Close {position: absolute; width: 31px; height: 31px; top: -15px; left: -15px}
+</style><style type="text/css">#MathJax_Zoom {position: absolute; background-color: #F0F0F0; overflow: auto; display: block; z-index: 301; padding: .5em; border: 1px solid black; margin: 0; font-weight: normal; font-style: normal; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; box-shadow: 5px 5px 15px #AAAAAA; -webkit-box-shadow: 5px 5px 15px #AAAAAA; -moz-box-shadow: 5px 5px 15px #AAAAAA; -khtml-box-shadow: 5px 5px 15px #AAAAAA; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_ZoomOverlay {position: absolute; left: 0; top: 0; z-index: 300; display: inline-block; width: 100%; height: 100%; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+#MathJax_ZoomFrame {position: relative; display: inline-block; height: 0; width: 0}
+#MathJax_ZoomEventTrap {position: absolute; left: 0; top: 0; z-index: 302; display: inline-block; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+</style><style type="text/css">.MathJax_Preview {color: #888}
+#MathJax_Message {position: fixed; left: 1em; bottom: 1.5em; background-color: #E6E6E6; border: 1px solid #959595; margin: 0px; padding: 2px 8px; z-index: 102; color: black; font-size: 80%; width: auto; white-space: nowrap}
+#MathJax_MSIE_Frame {position: absolute; top: 0; left: 0; width: 0px; z-index: 101; border: 0px; margin: 0px; padding: 0px}
+.MathJax_Error {color: #CC0000; font-style: italic}
+</style><style type="text/css">div.MathJax_MathML {text-align: center; margin: .75em 0px; display: block}
+.MathJax_MathML {font-style: normal; font-weight: normal; line-height: normal; font-size: 100%; font-size-adjust: none; text-indent: 0; text-align: left; text-transform: none; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; direction: ltr; border: 0; padding: 0; margin: 0}
+span.MathJax_MathML {display: inline}
+.MathJax_mmlExBox {display: block; overflow: hidden; height: 1px; width: 60ex; padding: 0; border: 0; margin: 0}
+[mathvariant="double-struck"] {font-family: MathJax_AMS, MathJax_AMS-WEB}
+[mathvariant="script"] {font-family: MathJax_Script, MathJax_Script-WEB}
+[mathvariant="fraktur"] {font-family: MathJax_Fraktur, MathJax_Fraktur-WEB}
+[mathvariant="bold-script"] {font-family: MathJax_Script, MathJax_Caligraphic-WEB; font-weight: bold}
+[mathvariant="bold-fraktur"] {font-family: MathJax_Fraktur, MathJax_Fraktur-WEB; font-weight: bold}
+[mathvariant="monospace"] {font-family: monospace}
+[mathvariant="sans-serif"] {font-family: sans-serif}
+[mathvariant="bold-sans-serif"] {font-family: sans-serif; font-weight: bold}
+[mathvariant="sans-serif-italic"] {font-family: sans-serif; font-style: italic}
+[mathvariant="sans-serif-bold-italic"] {font-family: sans-serif; font-style: italic; font-weight: bold}
+[class="MJX-tex-oldstyle"] {font-family: MathJax_Caligraphic, MathJax_Caligraphic-WEB}
+[class="MJX-tex-oldstyle-bold"] {font-family: MathJax_Caligraphic, MathJax_Caligraphic-WEB; font-weight: bold}
+[class="MJX-tex-caligraphic"] {font-family: MathJax_Caligraphic, MathJax_Caligraphic-WEB}
+[class="MJX-tex-caligraphic-bold"] {font-family: MathJax_Caligraphic, MathJax_Caligraphic-WEB; font-weight: bold}
+@font-face /*1*/ {font-family: MathJax_AMS-WEB; src: url('core/lib/fonts/HTML-CSS/TeX/otf/MathJax_AMS-Regular.otf')}
+@font-face /*2*/ {font-family: MathJax_Script-WEB; src: url('core/lib/fonts/HTML-CSS/TeX/otf/MathJax_Script-Regular.otf')}
+@font-face /*3*/ {font-family: MathJax_Fraktur-WEB; src: url('core/lib/fonts/HTML-CSS/TeX/otf/MathJax_Fraktur-Regular.otf')}
+@font-face /*4*/ {font-family: MathJax_Caligraphic-WEB; src: url('core/lib/fonts/HTML-CSS/TeX/otf/MathJax_Caligraphic-Regular.otf')}
+@font-face /*5*/ {font-family: MathJax_Fraktur-WEB; font-weight: bold; src: url('core/lib/fonts/HTML-CSS/TeX/otf/MathJax_Fraktur-Bold.otf')}
+@font-face /*6*/ {font-family: MathJax_Caligraphic-WEB; font-weight: bold; src: url('core/lib/fonts/HTML-CSS/TeX/otf/MathJax_Caligraphic-Bold.otf')}
+</style>
+<style type="text/css">.MathJax_Display {text-align: center; margin: 1em 0em; position: relative; display: block; width: 100%}
+.MathJax .merror {background-color: #FFFF88; color: #CC0000; border: 1px solid #CC0000; padding: 1px 3px; font-style: normal; font-size: 90%}
+#MathJax_Tooltip {background-color: InfoBackground; color: InfoText; border: 1px solid black; box-shadow: 2px 2px 5px #AAAAAA; -webkit-box-shadow: 2px 2px 5px #AAAAAA; -moz-box-shadow: 2px 2px 5px #AAAAAA; -khtml-box-shadow: 2px 2px 5px #AAAAAA; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true'); padding: 3px 4px; z-index: 401; position: absolute; left: 0; top: 0; width: auto; height: auto; display: none}
+.MathJax {display: inline; font-style: normal; font-weight: normal; line-height: normal; font-size: 100%; font-size-adjust: none; text-indent: 0; text-align: left; text-transform: none; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; direction: ltr; border: 0; padding: 0; margin: 0}
+.MathJax img, .MathJax nobr, .MathJax a {border: 0; padding: 0; margin: 0; max-width: none; max-height: none; vertical-align: 0; line-height: normal; text-decoration: none}
+img.MathJax_strut {border: 0 !important; padding: 0 !important; margin: 0 !important; vertical-align: 0 !important}
+.MathJax span {display: inline; position: static; border: 0; padding: 0; margin: 0; vertical-align: 0; line-height: normal; text-decoration: none}
+.MathJax nobr {white-space: nowrap ! important}
+.MathJax img {display: inline ! important; float: none ! important}
+.MathJax * {transition: none; -webkit-transition: none; -moz-transition: none; -ms-transition: none; -o-transition: none}
+.MathJax_Processing {visibility: hidden; position: fixed; width: 0; height: 0; overflow: hidden}
+.MathJax_Processed {display: none!important}
+.MathJax_ExBox {display: block; overflow: hidden; width: 1px; height: 60ex}
+.MathJax .MathJax_EmBox {display: block; overflow: hidden; width: 1px; height: 60em}
+.MathJax .MathJax_HitBox {cursor: text; background: white; opacity: 0; filter: alpha(opacity=0)}
+.MathJax .MathJax_HitBox * {filter: none; opacity: 1; background: transparent}
+#MathJax_Tooltip * {filter: none; opacity: 1; background: transparent}
+@font-face {font-family: MathJax_Blank; src: url('about:blank')}
+</style><style type="text/css">@font-face {font-family: STIXMathJax_Main; src: url('core/lib/fonts/HTML-CSS/STIX-Web/woff/STIXMathJax_Main-Italic.woff') format('woff'), url('core/lib/fonts/HTML-CSS/STIX-Web/otf/STIXMathJax_Main-Italic.otf') format('opentype'); font-style: italic}
+</style><style type="text/css">@font-face {font-family: STIXMathJax_Main; src: url('core/lib/fonts/HTML-CSS/STIX-Web/woff/STIXMathJax_Main-Regular.woff') format('woff'), url('core/lib/fonts/HTML-CSS/STIX-Web/otf/STIXMathJax_Main-Regular.otf') format('opentype')}
+</style><style type="text/css">@font-face {font-family: STIXMathJax_Monospace; src: url('core/lib/fonts/HTML-CSS/STIX-Web/woff/STIXMathJax_Monospace-Regular.woff') format('woff'), url('core/lib/fonts/HTML-CSS/STIX-Web/otf/STIXMathJax_Monospace-Regular.otf') format('opentype')}
+</style><style type="text/css">@font-face {font-family: STIXMathJax_Latin; src: url('core/lib/fonts/HTML-CSS/STIX-Web/woff/STIXMathJax_Latin-Regular.woff') format('woff'), url('core/lib/fonts/HTML-CSS/STIX-Web/otf/STIXMathJax_Latin-Regular.otf') format('opentype')}
+</style><style type="text/css">@font-face {font-family: STIXMathJax_Alphabets; src: url('core/lib/fonts/HTML-CSS/STIX-Web/woff/STIXMathJax_Alphabets-Regular.woff') format('woff'), url('core/lib/fonts/HTML-CSS/STIX-Web/otf/STIXMathJax_Alphabets-Regular.otf') format('opentype')}
+</style><style type="text/css">@font-face {font-family: STIXMathJax_Marks; src: url('core/lib/fonts/HTML-CSS/STIX-Web/woff/STIXMathJax_Marks-Regular.woff') format('woff'), url('core/lib/fonts/HTML-CSS/STIX-Web/otf/STIXMathJax_Marks-Regular.otf') format('opentype')}
+</style><style type="text/css">@font-face {font-family: STIXMathJax_Arrows; src: url('core/lib/fonts/HTML-CSS/STIX-Web/woff/STIXMathJax_Arrows-Regular.woff') format('woff'), url('core/lib/fonts/HTML-CSS/STIX-Web/otf/STIXMathJax_Arrows-Regular.otf') format('opentype')}
+</style><style type="text/css">@font-face {font-family: STIXMathJax_Operators; src: url('core/lib/fonts/HTML-CSS/STIX-Web/woff/STIXMathJax_Operators-Regular.woff') format('woff'), url('core/lib/fonts/HTML-CSS/STIX-Web/otf/STIXMathJax_Operators-Regular.otf') format('opentype')}
+</style><style type="text/css">@font-face {font-family: STIXMathJax_Symbols; src: url('core/lib/fonts/HTML-CSS/STIX-Web/woff/STIXMathJax_Symbols-Regular.woff') format('woff'), url('core/lib/fonts/HTML-CSS/STIX-Web/otf/STIXMathJax_Symbols-Regular.otf') format('opentype')}
+</style><style type="text/css">@font-face {font-family: STIXMathJax_Shapes; src: url('core/lib/fonts/HTML-CSS/STIX-Web/woff/STIXMathJax_Shapes-Regular.woff') format('woff'), url('core/lib/fonts/HTML-CSS/STIX-Web/otf/STIXMathJax_Shapes-Regular.otf') format('opentype')}
+</style><style type="text/css">@font-face {font-family: STIXMathJax_Misc; src: url('core/lib/fonts/HTML-CSS/STIX-Web/woff/STIXMathJax_Misc-Regular.woff') format('woff'), url('core/lib/fonts/HTML-CSS/STIX-Web/otf/STIXMathJax_Misc-Regular.otf') format('opentype')}
+</style><style type="text/css">@font-face {font-family: STIXMathJax_Variants; src: url('core/lib/fonts/HTML-CSS/STIX-Web/woff/STIXMathJax_Variants-Regular.woff') format('woff'), url('core/lib/fonts/HTML-CSS/STIX-Web/otf/STIXMathJax_Variants-Regular.otf') format('opentype')}
+</style><style type="text/css">@font-face {font-family: STIXMathJax_Size1; src: url('core/lib/fonts/HTML-CSS/STIX-Web/woff/STIXMathJax_Size1-Regular.woff') format('woff'), url('core/lib/fonts/HTML-CSS/STIX-Web/otf/STIXMathJax_Size1-Regular.otf') format('opentype')}
+</style>
     </head>
 
     <body>
+        <div class="activityLoader"></div>
     <script>
+        	
         var ctrl;
         $(document).ready(function () {
              ctrl = new Controller({/* arguments */});

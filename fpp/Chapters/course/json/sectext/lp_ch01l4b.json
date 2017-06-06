@@ -1,1 +1,22 @@
-{"cards":[{"lines":[{"type":"title","text":"Acceleration and velocity"}]}],"definitions":[],"secText":["  <b>Lesson:</b>  <b>    <br />  </b>1. [OBJ:actsec_c45123:Drive a car] using acceleration.<br />2. Define [OBJ:expsec_b772:acceleration].<br />3. Calculate [OBJ:expsec_di2153:average acceleration and instantaneous acceleration].<br />3. Define [OBJ:actsec_ya43:constant acceleration] by observing rabbits.<br />4. Determine the [OBJ:expsec_b774:effect of changing the acceleration] on the magnitude and direction of velocity.<br />5. Drive a car and collect data to [OBJ:actsec_c45552d:determine the car’s constant acceleration].","  <b>In-class assessment:</b>  <b>    <br />  </b>1. [OBJ:qc_37421:Calculate] acceleration.<br />2. [OBJ:qc_57031:Calculate] constant acceleration using the driving activity.","  <b>Homework:</b>  <span class=\"KBExternalLink\"><a href=\"assign.html#OHW 1.04\">OHW 1.04</a></span>","  <b>Quick Review:</b>  [OBJ:sum_acceleration:Acceleration]"],"objNames":["unityact_disp1d_v3"]}
+{
+  "cards": [
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Acceleration and velocity"
+        }
+      ]
+    }
+  ],
+  "definitions": [],
+  "secText": [
+    "  <b>Lesson:</b>  <b>    <br />  </b>1. <a class='pjumpToTopic' href='javascript:void(0)' data-chap='1' data-topic='3' data-subtopic='1' data-subsection='0'>Drive a car</a> using acceleration.<br />2. Define <a class='pjumpToTopic' href='javascript:void(0)' data-chap='1' data-topic='3' data-subtopic='1' data-subsection='1'>acceleration</a>.<br />3. Calculate <a class='pjumpToTopic' href='javascript:void(0)' data-chap='1' data-topic='3' data-subtopic='1' data-subsection='2'>average acceleration and instantaneous acceleration</a>.<br />3. Define <a class='pjumpToTopic' href='javascript:void(0)' data-chap='1' data-topic='3' data-subtopic='1' data-subsection='4'>constant acceleration</a> by observing rabbits.<br />4. Determine the <a class='pjumpToTopic' href='javascript:void(0)' data-chap='1' data-topic='3' data-subtopic='2' data-subsection='0'>effect of changing the acceleration</a> on the magnitude and direction of velocity.<br />5. Drive a car and collect data to <a class='pjumpToTopic' href='javascript:void(0)' data-chap='1' data-topic='3' data-subtopic='2' data-subsection='1'>determine the car’s constant acceleration</a>.",
+    "  <b>In-class assessment:</b>  <b>    <br />  </b>1. <a class='pjumpToTopic' href='javascript:void(0)' data-chap='1' data-topic='3' data-subtopic='1' data-subsection='3'>Calculate</a> acceleration.<br />2. <a class='pjumpToTopic' href='javascript:void(0)' data-chap='1' data-topic='3' data-subtopic='2' data-subsection='2'>Calculate</a> constant acceleration using the driving activity.",
+    
+    "  <b>Quick Review:</b>  <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='sum_acceleration'>Acceleration</a>"
+  ],
+  "objNames": [
+    "unityact_disp1d_v3"
+  ]
+}

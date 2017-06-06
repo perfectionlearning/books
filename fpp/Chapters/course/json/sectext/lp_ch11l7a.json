@@ -1,1 +1,52 @@
-{"cards":[{"lines":[{"type":"title","text":"Linear thermal expansion"},{"type":"headline","text":"Measured along a line (one dimension)"},{"type":"headline","text":"Expansion constant  depends on material "}]},{"lines":[{"type":"title","text":"Thermal volume expansion"},{"type":"headline","text":"Volume increases with temperature"},{"type":"headline","text":"Expansion constant varies by material "},{"type":"headline","text":"Increase is proportional to initial volume"}]}],"definitions":[],"secText":["  <b class=\"object-name\">Supplemental Material: </b>  <span class=\"object-name\">AP</span>","  <b>Essential Question: </b>  <b>    <br />  </b>How can heat change the volume and length of an object?","  <b>Enduring Understandings:</b>  <b>    <br />  </b>1. [OBJ:expsec_k492:Thermal expansion] is when a material expands because the material's temperature has increased or decreased.<br />2. [OBJ:expsec_k493:Linear thermal] expansion is the increase or decrease in the length of an object due to a change in temperature.<br />3. [OBJ:expsec_k494:Thermal volume expansion] is the increase or decrease in the volume of an object due to a change in temperature.","  <b>Vocabulary:</b>  [OBJ:expsec_k492:thermal expansion], [OBJ:expsec_k493:linear thermal expansion]","  <b>STEM Skills:</b>  <b>    <br />  </b>1. Review [OBJ:expsec_k464:temperature]."],"objNames":["wb_linear_thermal_concepts1","wb_thermal_volume_expansion_concepts"]}
+{
+  "cards": [
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Linear thermal expansion"
+        },
+        {
+          "type": "headline",
+          "text": "Measured along a line (one dimension)"
+        },
+        {
+          "type": "headline",
+          "text": "Expansion constant  depends on material "
+        }
+      ]
+    },
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Thermal volume expansion"
+        },
+        {
+          "type": "headline",
+          "text": "Volume increases with temperature"
+        },
+        {
+          "type": "headline",
+          "text": "Expansion constant varies by material "
+        },
+        {
+          "type": "headline",
+          "text": "Increase is proportional to initial volume"
+        }
+      ]
+    }
+  ],
+  "definitions": [],
+  "secText": [
+    "  <b class=\"object-name\">Supplemental Material: </b>  <span class=\"object-name\">AP</span>",
+    "  <b>Essential Question: </b>  <b>    <br />  </b>How can heat change the volume and length of an object?",
+    "  <b>Enduring Understandings:</b>  <b>    <br />  </b>1. <a class='pjumpToTopic' href='javascript:void(0)' data-chap='11' data-topic='6' data-subtopic='1' data-subsection='0'>Thermal expansion</a> is when a material expands because the material's temperature has increased or decreased.<br />2. <a class='pjumpToTopic' href='javascript:void(0)' data-chap='11' data-topic='6' data-subtopic='2' data-subsection='0'>Linear thermal</a> expansion is the increase or decrease in the length of an object due to a change in temperature.<br />3. <a class='pjumpToTopic' href='javascript:void(0)' data-chap='11' data-topic='6' data-subtopic='3' data-subsection='0'>Thermal volume expansion</a> is the increase or decrease in the volume of an object due to a change in temperature.",
+    "  <b>Vocabulary:</b>  <a class='pjumpToTopic' href='javascript:void(0)' data-chap='11' data-topic='6' data-subtopic='1' data-subsection='0'>thermal expansion</a>, <a class='pjumpToTopic' href='javascript:void(0)' data-chap='11' data-topic='6' data-subtopic='2' data-subsection='0'>linear thermal expansion</a>",
+    "  <b>STEM Skills:</b>  <b>    <br />  </b>1. Review <a class='pjumpToTopic' href='javascript:void(0)' data-chap='11' data-topic='1' data-subtopic='3' data-subsection='0'>temperature</a>."
+  ],
+  "objNames": [
+    "wb_linear_thermal_concepts1",
+    "wb_thermal_volume_expansion_concepts"
+  ]
+}

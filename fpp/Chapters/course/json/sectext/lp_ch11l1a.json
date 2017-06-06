@@ -1,1 +1,38 @@
-{"cards":[{"lines":[{"type":"title","text":"Thermal energy, temperature and heat"},{"type":"headline","text":"Thermal energy: Energy of molecules that make up matter"},{"type":"headline","text":"Temperature: Measure of average kinetic energy of molecules"},{"type":"headline","text":"Heat: Transfer of thermal energy"},{"type":"bullet","text":"Heat flows spontaneously from hot to cold"}]}],"definitions":[],"secText":["  <b>Essential Question: </b>  <b>    <br />  </b>How can we measure thermal energy, temperature, and heat within matter?","  <b>Enduring Understandings:</b>  <b>    <br />  </b>1. [OBJ:expsec_k455:Thermal energy] is the energy due to the energy of molecules within an object. Temperature is the measure of kinetic energy (motion) of molecules. Heat is the transfer of thermal energy.<br />2. The four states of matter are [OBJ:expsec_k457:solids], [OBJ:expsec_k458:liquids], [OBJ:expsec_k459:gases], and [OBJ:expsec_k460:plasma].","  <b>Vocabulary:</b>  [OBJ:expsec_k455:thermal energy], [OBJ:expsec_k455:temperature], [OBJ:expsec_k455:heat], [OBJ:expsec_k457:solid], [OBJ:expsec_k458:liquid], [OBJ:expsec_k459:gas], [OBJ:expsec_k460:plasma]","  <b>STEM Skills:</b>  <b>    <br />  </b>1. Review [OBJ:expsec_f962:kinetic energy].<b><br /></b>"],"objNames":["wb_heat_thermal_temp"]}
+{
+  "cards": [
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Thermal energy, temperature and heat"
+        },
+        {
+          "type": "headline",
+          "text": "Thermal energy: Energy of molecules that make up matter"
+        },
+        {
+          "type": "headline",
+          "text": "Temperature: Measure of average kinetic energy of molecules"
+        },
+        {
+          "type": "headline",
+          "text": "Heat: Transfer of thermal energy"
+        },
+        {
+          "type": "bullet",
+          "text": "Heat flows spontaneously from hot to cold"
+        }
+      ]
+    }
+  ],
+  "definitions": [],
+  "secText": [
+    "  <b>Essential Question: </b>  <b>    <br />  </b>How can we measure thermal energy, temperature, and heat within matter?",
+    "  <b>Enduring Understandings:</b>  <b>    <br />  </b>1. <a class='pjumpToTopic' href='javascript:void(0)' data-chap='11' data-topic='0' data-subtopic='1' data-subsection='0'>Thermal energy</a> is the energy due to the energy of molecules within an object. Temperature is the measure of kinetic energy (motion) of molecules. Heat is the transfer of thermal energy.<br />2. The four states of matter are <a class='pjumpToTopic' href='javascript:void(0)' data-chap='11' data-topic='0' data-subtopic='2' data-subsection='0'>solids</a>, <a class='pjumpToTopic' href='javascript:void(0)' data-chap='11' data-topic='0' data-subtopic='2' data-subsection='1'>liquid</a>, <a class='pjumpToTopic' href='javascript:void(0)' data-chap='11' data-topic='0' data-subtopic='2' data-subsection='2'>gases</a>, and <a class='pjumpToTopic' href='javascript:void(0)' data-chap='11' data-topic='0' data-subtopic='2' data-subsection='3'>plasma</a>.",
+    "  <b>Vocabulary:</b>  <a class='pjumpToTopic' href='javascript:void(0)' data-chap='11' data-topic='0' data-subtopic='1' data-subsection='0'>thermal energy</a>, <a class='pjumpToTopic' href='javascript:void(0)' data-chap='11' data-topic='0' data-subtopic='1' data-subsection='0'>temperature</a>, <a class='pjumpToTopic' href='javascript:void(0)' data-chap='11' data-topic='0' data-subtopic='1' data-subsection='0'>heat</a>, <a class='pjumpToTopic' href='javascript:void(0)' data-chap='11' data-topic='0' data-subtopic='2' data-subsection='0'>solid</a>, <a class='pjumpToTopic' href='javascript:void(0)' data-chap='11' data-topic='0' data-subtopic='2' data-subsection='1'>liquid</a>, <a class='pjumpToTopic' href='javascript:void(0)' data-chap='11' data-topic='0' data-subtopic='2' data-subsection='2'>gas</a>, <a class='pjumpToTopic' href='javascript:void(0)' data-chap='11' data-topic='0' data-subtopic='2' data-subsection='3'>plasma</a>",
+    "  <b>STEM Skills:</b>  <b>    <br />  </b>1. Review <a class='pjumpToTopic' href='javascript:void(0)' data-chap='6' data-topic='2' data-subtopic='2' data-subsection='0'>kinetic energy</a>.<b><br /></b>"
+  ],
+  "objNames": [
+    "wb_heat_thermal_temp"
+  ]
+}

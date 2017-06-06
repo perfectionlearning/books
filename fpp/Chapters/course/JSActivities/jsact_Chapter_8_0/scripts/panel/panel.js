@@ -12,8 +12,8 @@
 		dashBoardEle[dashBoardEle.length] = ['well100',    		'590',  '0'];
 		//dashBoardEle[dashBoardEle.length] = ['well100',    		'700',  '0'];
 		dashBoardEle[dashBoardEle.length] = ['wellright',  		'680',  '0'];
-		dashBoardEle[dashBoardEle.length] = ['incrBgMed',  		'470',  '30'];
-		dashBoardEle[dashBoardEle.length] = ['incrBgMed',  		'470',  '50'];		
+		//dashBoardEle[dashBoardEle.length] = ['incrBgMed',  		'470',  '30'];
+		//dashBoardEle[dashBoardEle.length] = ['incrBgMed',  		'470',  '50'];		
 		dashBoardEle[dashBoardEle.length] = ['Blue',  		'102',  '30'];		
 		dashBoardEle[dashBoardEle.length] = ['Blue',  		'252',  '30'];		
 		dashBoardEle[dashBoardEle.length] = ['Blue',  		'414',  '30'];
@@ -35,10 +35,10 @@
 		dashBoardTxt[dashBoardTxt.length] = ['- -', 		 	'bold 14px Arial',  'left', 280,  50, 'momRedTxt'];//Text, font_style, alignment, xPos, yPos, id
 		dashBoardTxt[dashBoardTxt.length] = ['kg.m/s', 		 	'bold 14px Arial',  'left', 320,  50, 4];//Text, font_style, alignment, xPos, yPos, id
 		dashBoardTxt[dashBoardTxt.length] = ['Initial velocity', 'bold 14px Arial',  'left', 405,  10, 3];
-		dashBoardTxt[dashBoardTxt.length] = ['0.3', 		 	'bold 14px Arial',  'left', 480,  31, 'iniVelBlueTxt'];//Text, font_style, alignment, xPos, yPos, id
-		dashBoardTxt[dashBoardTxt.length] = ['m/s', 		 	'bold 14px Arial',  'left', 535,  30, 4];//Text, font_style, alignment, xPos, yPos, id
-		dashBoardTxt[dashBoardTxt.length] = ['0.0', 		 	'bold 14px Arial',  'left', 480,  51, 'iniVelRedTxt'];//Text, font_style, alignment, xPos, yPos, id
-		dashBoardTxt[dashBoardTxt.length] = ['m/s', 		 	'bold 14px Arial',  'left', 535,  50, 4];//Text, font_style, alignment, xPos, yPos, id
+		dashBoardTxt[dashBoardTxt.length] = ['0.3', 		 	'bold 14px Arial',  'left', 450,  31, 'iniVelBlueTxt'];//Text, font_style, alignment, xPos, yPos, id
+		dashBoardTxt[dashBoardTxt.length] = ['m/s', 		 	'bold 14px Arial',  'left', 480,  30, 4];//Text, font_style, alignment, xPos, yPos, id
+		dashBoardTxt[dashBoardTxt.length] = ['0.0', 		 	'bold 14px Arial',  'left', 450,  51, 'iniVelRedTxt'];//Text, font_style, alignment, xPos, yPos, id
+		dashBoardTxt[dashBoardTxt.length] = ['m/s', 		 	'bold 14px Arial',  'left', 480,  50, 4];//Text, font_style, alignment, xPos, yPos, id
 				
 	var bannerImg,
 		bannerContainer,
@@ -137,27 +137,27 @@
 	//Create Increment and Decrement button
 	//=======================================================
 	function __createIncDecButton(){
-		var incDecBtnImg = new CAAT.Foundation.SpriteImage().initialize( game._director.getImage('incre_decre_btn'), 2, 1);
+		var incDecBtnImg = new CAAT.Foundation.SpriteImage().initialize( game._director.getImage('incre_decre_btn'), 1, 2);
 		var iniBlueIncBtn = new CAAT.Foundation.Actor().
 								setId('iniBlueInc').
 								setAsButton(incDecBtnImg.getRef(), 0, 0, 0, 0, function(button){
 									game.incDecHandler(this);
-								}).setLocation(450, 30);
+								}).setLocation(520, 20);
 		var iniBlueDecBtn = new CAAT.Foundation.Actor().
 								setId('iniBlueDec').
 								setAsButton(incDecBtnImg.getRef(), 1, 1, 1, 1, function(button){
 									game.incDecHandler(this);
-								}).setLocation(450, 39);
+								}).setLocation(550, 20);
 		var iniRedIncBtn = new CAAT.Foundation.Actor().
 								setId('iniRedInc').
 								setAsButton(incDecBtnImg.getRef(), 0, 0, 0, 0, function(button){
 									game.incDecHandler(this);
-								}).setLocation(450, 50);
+								}).setLocation(520, 50);
 		var iniRedDecBtn = new CAAT.Foundation.Actor().
 								setId('iniRedDec').
 								setAsButton(incDecBtnImg.getRef(), 1, 1, 1, 1, function(button){
 									game.incDecHandler(this);
-								}).setLocation(450, 59);						
+								}).setLocation(550, 50);						
 								
 		dashBG.addChild(iniBlueIncBtn);
 		dashBG.addChild(iniBlueDecBtn);

@@ -1,1 +1,24 @@
-{"cards":[{"lines":[{"type":"title","text":"Resistivity"},{"type":"headline","text":"A material’s opposition to current flow"},{"type":"bullet","text":"Conductors have low resistivity"},{"type":"bullet","text":"Insulators have high resistivity"}]}],"definitions":[],"secText":["  <b>Lesson:</b>  <b>    <br />  </b>1. Define and calculate [OBJ:expsec_p354:electric current] using charge and elapsed time.<br />2. Describe the direction of [OBJ:expsec_p355:conventional current].<br />3. Describe [OBJ:expsec_p356:drift speed].<br />4. Define [OBJ:expsec_p357:resistors].<br />5. Define and calculate current, potential difference, and resistance using [OBJ:expsec_p358:Ohm's law].<br />6. Define [OBJ:expsec_p359:resistivity]. Describe the properties that define resistance. Calculate resistance.","  <b>In-class assessment:</b>  <b>    <br />  </b>1. [OBJ:qc_36248:Calculate] electric current.<br />2. [OBJ:qc_36252:Calculate] resistance using Ohm’s law.","  <b>Homework:</b>  <span class=\"KBInternalLink\"><a href=\"assign.html#OHW 16.01\">OHW 16.01</a></span>","  <b>Quick Review:</b>  [OBJ:sum_current:Electric Current], [OBJ:sum_resistor:Resistor], [OBJ:sum_ohm_law:Ohm's Law], [OBJ:sum_resistance_components:Resistivity and Resistance]"],"objNames":["wb_resistivity_concepts"]}
+{
+	"cards": [{
+			"lines": [{
+					"type": "title",
+					"text": "Resistivity"
+				}, {
+					"type": "headline",
+					"text": "A material’s opposition to current flow"
+				}, {
+					"type": "bullet",
+					"text": "Conductors have low resistivity"
+				}, {
+					"type": "bullet",
+					"text": "Insulators have high resistivity"
+				}
+			]
+		}
+	],
+	"definitions": [],
+	"secText": ["  <b>Lesson:</b>  <b>    <br />  </b>1. Define and calculate <a class='pjumpToTopic' href='javascript:void(0)' data-chap='16' data-topic='0' data-subtopic='1' data-subsection='0'>electric current</a> using charge and elapsed time.<br />2. Describe the direction of <a class='pjumpToTopic' href='javascript:void(0)' data-chap='16' data-topic='0' data-subtopic='1' data-subsection='2'>conventional current</a>.<br />3. Describe <a class='pjumpToTopic' href='javascript:void(0)' data-chap='16' data-topic='0' data-subtopic='1' data-subsection='3'>drift speed</a>.<br />4. Define <a class='pjumpToTopic' href='javascript:void(0)' data-chap='16' data-topic='0' data-subtopic='2' data-subsection='0'>resistors</a>.<br />5. Define and calculate current, potential difference, and resistance using <a class='pjumpToTopic' href='javascript:void(0)' data-chap='16' data-topic='0' data-subtopic='3' data-subsection='0'>Ohm's law</a>.<br />6. Define <a class='pjumpToTopic' href='javascript:void(0)' data-chap='16' data-topic='0' data-subtopic='4' data-subsection='0'>resistivity</a>. Describe the properties that define resistance. Calculate resistance.", "  <b>In-class assessment:</b>  <b>    <br />  </b>1. <a class='pjumpToTopic' href='javascript:void(0)' data-chap='16' data-topic='0' data-subtopic='1' data-subsection='1'>Calculate</a> electric current.<br />2. <a class='pjumpToTopic' href='javascript:void(0)' data-chap='16' data-topic='0' data-subtopic='3' data-subsection='1'>Calculate</a> resistance using Ohm’s law.", 
+	
+	"  <b>Quick Review:</b>  <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='sum_current'>Electric Current</a>, <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='sum_resistor'>Resistor</a>, <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='sum_ohm_law'>Ohm's Law</a>, <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='sum_resistance_components'>Resistivity and Resistance</a>"],
+	"objNames": ["wb_resistivity_concepts"]
+}

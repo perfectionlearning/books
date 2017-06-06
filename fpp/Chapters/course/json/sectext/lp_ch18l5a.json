@@ -1,1 +1,40 @@
-{"cards":[{"lines":[{"type":"title","text":"Resolving power"},{"type":"headline","text":"Measures ability to distinguish between two objects"}]},{"lines":[{"type":"title","text":"Rayleigh’s criterion"},{"type":"headline","text":"Two objects just resolved when first dark bands overlap central bright bands"}]}],"definitions":[],"secText":["  <b class=\"object-name\">Supplemental Material: </b>  <span class=\"object-name\">Advanced Topic</span>","  <b>Essential Question: </b>  <b>    <br />  </b>What occurs when two diffraction patterns overlap?","  <b>Enduring Understandings:</b>  <b>    <br />  </b>1. [OBJ:expsec_r980:Resolving power] is the ability to distinguish between two objects. In objects that [OBJ:expsec_r981:appear separate], the diffraction patterns are separate from each other. In objects that are [OBJ:expsec_r981:blurry], the diffraction patterns are overlapping. Diffraction is crucial to resolving power.<br />2. [OBJ:pwsec_r989:Computer displays] are made of pixels. The number of pixels in computer and cell phone displays is increasing, leading to greater pixel density and greater resolution.<br />3. To calculate the approximate minimum angle needed to resolve an image, use [OBJ:expsec_r983:Rayleigh's criterion]. Multiply 1.22 by the wavelength, divided by the aperture diameter.","  <b>Vocabulary:</b>  [OBJ:expsec_r980:resolving power], [OBJ:pwsec_r989:pixel], [OBJ:pwsec_r989:pixel density], [OBJ:expsec_r985:diffraction gratings], [OBJ:pwsec_r987:grating spectroscope], [OBJ:expsec_r983:Rayleigh's criterion]","  <b>STEM Skills:</b>  <b>    <br />  </b>1. Review [OBJ:expsec_r978:diffraction patterns].<br />2. Review [OBJ:expsec_x455:emission spectrum]."],"objNames":["wb_resolving_concepts1","wb_rayleigh_concepts"]}
+{
+  "cards": [
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Resolving power"
+        },
+        {
+          "type": "headline",
+          "text": "Measures ability to distinguish between two objects"
+        }
+      ]
+    },
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Rayleigh’s criterion"
+        },
+        {
+          "type": "headline",
+          "text": "Two objects just resolved when first dark bands overlap central bright bands"
+        }
+      ]
+    }
+  ],
+  "definitions": [],
+  "secText": [
+    "  <b class=\"object-name\">Supplemental Material: </b>  <span class=\"object-name\">Advanced Topic</span>",
+    "  <b>Essential Question: </b>  <b>    <br />  </b>What occurs when two diffraction patterns overlap?",
+    "  <b>Enduring Understandings:</b>  <b>    <br />  </b>1. <a class='pjumpToTopic' href='javascript:void(0)' data-chap='18' data-topic='4' data-subtopic='1' data-subsection='0'>Resolving power</a> is the ability to distinguish between two objects. In objects that <a class='pjumpToTopic' href='javascript:void(0)' data-chap='18' data-topic='4' data-subtopic='1' data-subsection='1'>appear separate</a>, the diffraction patterns are separate from each other. In objects that are <a class='pjumpToTopic' href='javascript:void(0)' data-chap='18' data-topic='4' data-subtopic='1' data-subsection='1'>blurry</a>, the diffraction patterns are overlapping. Diffraction is crucial to resolving power.<br />2. <a class='pjumpToTopic' href='javascript:void(0)' data-chap='18' data-topic='4' data-subtopic='2' data-subsection='0'>Computer displays</a> are made of pixels. The number of pixels in computer and cell phone displays is increasing, leading to greater pixel density and greater resolution.<br />3. To calculate the approximate minimum angle needed to resolve an image, use <a class='pjumpToTopic' href='javascript:void(0)' data-chap='18' data-topic='4' data-subtopic='3' data-subsection='0'>Rayleigh's criterion</a>. Multiply 1.22 by the wavelength, divided by the aperture diameter.",
+    "  <b>Vocabulary:</b>  <a class='pjumpToTopic' href='javascript:void(0)' data-chap='18' data-topic='4' data-subtopic='1' data-subsection='0'>resolving power</a>, <a class='pjumpToTopic' href='javascript:void(0)' data-chap='18' data-topic='4' data-subtopic='2' data-subsection='0'>pixel</a>, <a class='pjumpToTopic' href='javascript:void(0)' data-chap='18' data-topic='4' data-subtopic='2' data-subsection='0'>pixel density</a>, <a class='pjumpToTopic' href='javascript:void(0)' data-chap='18' data-topic='4' data-subtopic='2' data-subsection='1'>diffraction gratings</a>, <a class='pjumpToTopic' href='javascript:void(0)' data-chap='18' data-topic='4' data-subtopic='2' data-subsection='3'>grating spectroscope</a>, <a class='pjumpToTopic' href='javascript:void(0)' data-chap='18' data-topic='4' data-subtopic='3' data-subsection='0'>Rayleigh's criterion</a>",
+    "  <b>STEM Skills:</b>  <b>    <br />  </b>1. Review <a class='pjumpToTopic' href='javascript:void(0)' data-chap='18' data-topic='3' data-subtopic='1' data-subsection='1'>diffraction patterns</a>.<br />2. Review <a class='pjumpToTopic' href='javascript:void(0)' data-chap='23' data-topic='0' data-subtopic='2' data-subsection='0'>emission spectrum</a>."
+  ],
+  "objNames": [
+    "wb_resolving_concepts1",
+    "wb_rayleigh_concepts"
+  ]
+}

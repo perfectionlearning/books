@@ -439,7 +439,7 @@ function chargesMovement( obj )
 				obj.x=destination.x+(20*Math.cos(distanceDirection1[1]));
 				obj.y=destination.y+(20*Math.sin(distanceDirection1[1]));
 			}
-		}	}
+		}	}
 }
 game.__createLineContainer=function(parent)
 {

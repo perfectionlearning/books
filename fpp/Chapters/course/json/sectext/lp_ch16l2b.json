@@ -1,1 +1,21 @@
-{"cards":[{"lines":[{"type":"title","text":"Energy in a capacitor"},{"type":"headline","text":"Battery’s field causes electrons to move"},{"type":"headline","text":"Work done by battery equals <i>PE</i> of capacitor"}]}],"definitions":[],"secText":["  <b>Lesson:</b>  <b>    <br />  </b>1. Define and calculate [OBJ:expsec_p360:electric power].<br />2. Work through a sample problem to form an opinion about [OBJ:app_high_V_powerline_question:utility bills] using power equations.<br />3. Work through a sample problem to [OBJ:app_kilowatt_units_question:decipher an electric bill].<br />4. [OBJ:actsec_p399:Experiment] with capacitors using two charged plates.<br />5. Define and calculate [OBJ:expsec_p361:capacitance].<br />6. Calculate the [OBJ:expsec_p362:potential energy] in a capacitor.<br />7. Apply the concept of potential energy in capacitors to [OBJ:pwsec_p364:defibrillators].","  <b>In-class assessment:</b>  <b>    <br />  </b>1. [OBJ:qc_36257:Calculate] the electric power of a hot plate.<br />2. [OBJ:qc_36261:Calculate] the capacitance of a capacitor.<br />3. [OBJ:qc_36265:Calculate] the electric potential energy in a capacitor.","  <b>Homework:</b>  <span class=\"KBInternalLink\"><a href=\"assign.html#OHW 16.02\">OHW 16.02</a></span>","  <b>Quick Review:</b>  [OBJ:sum_power:Electric Power], [OBJ:sum_capacitor:Capacitor and Capacitance], [OBJ:sum_cap_energy:Capacitor Energy]"],"objNames":["wb_energy_capacitor_concepts1"]}
+{
+	"cards": [{
+			"lines": [{
+					"type": "title",
+					"text": "Energy in a capacitor"
+				}, {
+					"type": "headline",
+					"text": "Battery’s field causes electrons to move"
+				}, {
+					"type": "headline",
+					"text": "Work done by battery equals <i>PE</i> of capacitor"
+				}
+			]
+		}
+	],
+	"definitions": [],
+	"secText": ["  <b>Lesson:</b>  <b>    <br />  </b>1. Define and calculate <a class='pjumpToTopic' href='javascript:void(0)' data-chap='16' data-topic='1' data-subtopic='1' data-subsection='0'>electric power</a>.<br />2. Work through a sample problem to form an opinion about <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='app_high_V_powerline_question'>utility bills</a> using power equations.<br />3. Work through a sample problem to <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='app_kilowatt_units_question'>decipher an electric bill</a>.<br />4. <a class='pjumpToTopic' href='javascript:void(0)' data-chap='16' data-topic='1' data-subtopic='2' data-subsection='0'>Experiment</a> with capacitors using two charged plates.<br />5. Define and calculate <a class='pjumpToTopic' href='javascript:void(0)' data-chap='16' data-topic='1' data-subtopic='2' data-subsection='1'>capacitance</a>.<br />6. Calculate the <a class='pjumpToTopic' href='javascript:void(0)' data-chap='16' data-topic='1' data-subtopic='3' data-subsection='0'>potential energy</a> in a capacitor.<br />7. Apply the concept of potential energy in capacitors to <a class='pjumpToTopic' href='javascript:void(0)' data-chap='16' data-topic='1' data-subtopic='3' data-subsection='2'>defibrillators</a>.", "  <b>In-class assessment:</b>  <b>    <br />  </b>1. <a class='pjumpToTopic' href='javascript:void(0)' data-chap='16' data-topic='1' data-subtopic='1' data-subsection='1'>Calculate</a> the electric power of a hot plate.<br />2. <a class='pjumpToTopic' href='javascript:void(0)' data-chap='16' data-topic='1' data-subtopic='2' data-subsection='2'>Calculate</a> the capacitance of a capacitor.<br />3. <a class='pjumpToTopic' href='javascript:void(0)' data-chap='16' data-topic='1' data-subtopic='3' data-subsection='1'>Calculate</a> the electric potential energy in a capacitor.", 
+
+	"  <b>Quick Review:</b>  <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='sum_power'>Electric Power</a>, <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='sum_capacitor'>Capacitor and Capacitance</a>, <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='sum_cap_energy'>Capacitor Energy</a>"],
+	"objNames": ["wb_energy_capacitor_concepts1"]
+}

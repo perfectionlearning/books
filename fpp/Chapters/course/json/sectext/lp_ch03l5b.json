@@ -1,1 +1,54 @@
-{"cards":[{"lines":[{"type":"title","text":"Conducting the lab"},{"type":"headline","text":"Identify variables"},{"type":"headline","text":"Design system to record data"},{"type":"headline","text":"Write down the series of steps"},{"type":"headline","text":"Consider precision and accuracy"}]},{"lines":[{"type":"title","text":"Precision versus accuracy"},{"type":"headline","text":"Left: Accurate shots"},{"type":"headline","text":"Right: Precise shots"}]}],"definitions":[],"secText":["  <b>Lesson:</b>  <b>    <br />  </b>1. Create a testable question and determine the equipment and technology needed when [OBJ:expsec_rm31:conducting an experiment].<b><br /></b>2. Identify the [OBJ:expsec_rm33:variables in the lab], write a procedure, record data, and be mindful of accuracy and precision when conducting an experiment.<b><br /></b>3. [OBJ:expsec_rm333451:Determine ways to recycle] when designing an experiment.<b><br /></b>4. [OBJ:expsec_rm34:Determine ways to be safe] during an experiment.<b><br /></b>5. Define [OBJ:expsec_a380:precision and accuracy].<b><br /></b>6. Compare [OBJ:expsec_a381:precision versus accuracy].<b><br /></b>7. Determine [OBJ:expsec_a382:methods to be more precise and accurate] in experiments. Determine if [OBJ:expsec_rm35:data gathered in an experiment is reasonable].<b><br /></b>8. [OBJ:expsec_rm35:Analyze the data] collected in an experiment.<b><br /></b>9. [OBJ:expsec_rm37:Present the findings] from an experiment.","  <b>Homework:</b>  <span class=\"KBExternalLink\"><a href=\"assign.html#OHW 3.05\">OHW 3.05</a></span>","  <b>Quick Review:</b>  [OBJ:sum_sci_lab_procedures:Lab Procedures], [OBJ:sum_precision_accuracy:Precision versus Accuracy], [OBJ:sum_lab_part_2:Lab Data and Presentation]"],"objNames":["wb_conduct_lab","wb_precision_accuracy_concepts2"]}
+{
+  "cards": [
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Conducting the lab"
+        },
+        {
+          "type": "headline",
+          "text": "Identify variables"
+        },
+        {
+          "type": "headline",
+          "text": "Design system to record data"
+        },
+        {
+          "type": "headline",
+          "text": "Write down the series of steps"
+        },
+        {
+          "type": "headline",
+          "text": "Consider precision and accuracy"
+        }
+      ]
+    },
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Precision versus accuracy"
+        },
+        {
+          "type": "headline",
+          "text": "Left: Accurate shots"
+        },
+        {
+          "type": "headline",
+          "text": "Right: Precise shots"
+        }
+      ]
+    }
+  ],
+  "definitions": [],
+  "secText": [
+    "  <b>Lesson:</b>  <b>    <br />  </b>1. Create a testable question and determine the equipment and technology needed when <a class='pjumpToTopic' href='javascript:void(0)' data-chap='3' data-topic='4' data-subtopic='1' data-subsection='0'>conducting an experiment</a>.<b><br /></b>2. Identify the <a class='pjumpToTopic' href='javascript:void(0)' data-chap='3' data-topic='4' data-subtopic='2' data-subsection='0'>variables in the lab</a>, write a procedure, record data, and be mindful of accuracy and precision when conducting an experiment.<b><br /></b>3. <a class='pjumpToTopic' href='javascript:void(0)' data-chap='3' data-topic='4' data-subtopic='2' data-subsection='1'>Determine ways to recycle</a> when designing an experiment.<b><br /></b>4. <a class='pjumpToTopic' href='javascript:void(0)' data-chap='3' data-topic='4' data-subtopic='2' data-subsection='2'>Determine ways to be safe</a> during an experiment.<b><br /></b>5. Define <a class='pjumpToTopic' href='javascript:void(0)' data-chap='3' data-topic='4' data-subtopic='3' data-subsection='0'>precision and accuracy</a>.<b><br /></b>6. Compare <a class='pjumpToTopic' href='javascript:void(0)' data-chap='3' data-topic='4' data-subtopic='3' data-subsection='1'>precision versus accuracy</a>.<b><br /></b>7. Determine <a class='pjumpToTopic' href='javascript:void(0)' data-chap='3' data-topic='4' data-subtopic='3' data-subsection='2'>methods to be more precise and accurate</a> in experiments. Determine if <a class='pjumpToTopic' href='javascript:void(0)' data-chap='3' data-topic='4' data-subtopic='4' data-subsection='0'>data gathered in an experiment is reasonable</a>.<b><br /></b>8. <a class='pjumpToTopic' href='javascript:void(0)' data-chap='3' data-topic='4' data-subtopic='4' data-subsection='0'>Analyze the data</a> collected in an experiment.<b><br /></b>9. <a class='pjumpToTopic' href='javascript:void(0)' data-chap='3' data-topic='4' data-subtopic='5' data-subsection='0'>Present the findings</a> from an experiment.",
+    
+    "  <b>Quick Review:</b>  <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='sum_sci_lab_procedures'>Lab Procedures</a>, <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='sum_precision_accuracy'>Precision versus Accuracy</a>, <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='sum_lab_part_2'>Lab Data and Presentation</a>"
+  ],
+  "objNames": [
+    "wb_conduct_lab",
+    "wb_precision_accuracy_concepts2"
+  ]
+}

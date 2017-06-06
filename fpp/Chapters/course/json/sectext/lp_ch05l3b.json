@@ -1,1 +1,38 @@
-{"cards":[{"lines":[{"type":"title","text":"Weight"},{"type":"headline","text":"Force of gravity on an object"}]},{"lines":[{"type":"title","text":"Friction"},{"type":"headline","text":"Force that opposes one object sliding past another"}]}],"definitions":[],"secText":["  <b>In-class assessment:</b>  <b>    <br />  </b>1. [OBJ:qc_37439:Calculate] an equal and opposite force using Newton's third law and weight.<b><br /></b>2. [OBJ:qc_37437:Calculate] an object's weight on Earth.<b><br /></b>3. [OBJ:qc_37440:Calculate] the normal force acting on an object at rest.<b><br /></b>4. [OBJ:qc_37441:Calculate] the tension due to a rope on an object at rest.<b><br /></b>5. [OBJ:qc_37442:Calculate] the static friction acting on an object at rest.<b><br /></b>6. [OBJ:qc_37443:Calculate] the kinetic friction acting on a moving object.","  <b>Homework:</b>  <span class=\"KBInternalLink\"><a href=\"assign.html#OHW 5.03\">OHW 5.03</a></span>","  <b>Quick Review:</b>  [OBJ:sum_newton_laws_third:Newton's Third Law], [OBJ:sum_weight_equation:Weight], [OBJ:sum_normal_force_direction:Normal Force], [OBJ:sum_friction:Friction]"],"objNames":["wb_weight_definition","wb_friction_definition"]}
+{
+  "cards": [
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Weight"
+        },
+        {
+          "type": "headline",
+          "text": "Force of gravity on an object"
+        }
+      ]
+    },
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Friction"
+        },
+        {
+          "type": "headline",
+          "text": "Force that opposes one object sliding past another"
+        }
+      ]
+    }
+  ],
+  "definitions": [],
+  "secText": [
+    "  <b>In-class assessment:</b>  <b>    <br />  </b>1. <a class='pjumpToTopic' href='javascript:void(0)' data-chap='5' data-topic='2' data-subtopic='2' data-subsection='3'>Calculate</a> an equal and opposite force using Newton's third law and weight.<b><br /></b>2. <a class='pjumpToTopic' href='javascript:void(0)' data-chap='5' data-topic='2' data-subtopic='2' data-subsection='4'>Calculate</a> an object's weight on Earth.<b><br /></b>3. <a class='pjumpToTopic' href='javascript:void(0)' data-chap='5' data-topic='2' data-subtopic='3' data-subsection='1'>Calculate</a> the normal force acting on an object at rest.<b><br /></b>4. <a class='pjumpToTopic' href='javascript:void(0)' data-chap='5' data-topic='2' data-subtopic='4' data-subsection='1'>Calculate</a> the tension due to a rope on an object at rest.<b><br /></b>5. <a class='pjumpToTopic' href='javascript:void(0)' data-chap='5' data-topic='2' data-subtopic='5' data-subsection='4'>Calculate</a> the static friction acting on an object at rest.<b><br /></b>6. <a class='pjumpToTopic' href='javascript:void(0)' ata-chap='5' data-topic='2' data-subtopic='5' data-subsection='5'>Calculate</a> the kinetic friction acting on a moving object.",
+    
+    "  <b>Quick Review:</b>  <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='sum_newton_laws_third'>Newton's Third Law</a>, <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='sum_weight_equation'>Weight</a>, <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='sum_normal_force_direction'>Normal Force</a>, <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='sum_friction'>Friction</a>"
+  ],
+  "objNames": [
+    "wb_weight_definition",
+    "wb_friction_definition"
+  ]
+}

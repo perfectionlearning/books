@@ -15,7 +15,7 @@
 		dashBoardEle[dashBoardEle.length] = ['well50b',  	'700', 	'0'];		
 		dashBoardEle[dashBoardEle.length] = ['wellright2', 	'750', 	'0'];
 		dashBoardEle[dashBoardEle.length] = ['endright',  	'760', 	'0'];		
-		dashBoardEle[dashBoardEle.length] = ['incrBgMed',  	'600', 	'30'];
+	//	dashBoardEle[dashBoardEle.length] = ['incrBgMed',  	'600', 	'30'];
 
 		
 	game.isGameOver = false;
@@ -128,12 +128,12 @@
 		var angDegree = String.fromCharCode(176);
 		var oActorTxt = game.__addTextOnImage('#FFF', angDegree, '14px Arial', 'left', game._director );
 			oActorTxt.
-			setLocation(655, 32);
+			setLocation(615, 32);
 		dashBG.addChild(oActorTxt);	
 
 		game.angleTxt = game.__addTextOnImage('#FFF', '0.0', 'Bold 14px Arial', 'center', game._director );
 		game.angleTxt		
-			.setLocation(630 , 32);
+			.setLocation(600 , 32);
 		dashBG.addChild(game.angleTxt);
 	}	
 	function __createDashBoardButton(){
@@ -162,15 +162,15 @@
 	//Create Increment and Decrement button
 	//=======================================================
 	function __createIncDecButton(){
-		var incDecBtnImg = new CAAT.Foundation.SpriteImage().initialize( _director.getImage('incre_decre_btn'), 2, 1);
+		var incDecBtnImg = new CAAT.Foundation.SpriteImage().initialize( _director.getImage('incre_decre_btn'), 1, 2);
 		var iniVelIncBtn = new CAAT.Foundation.Actor().
 								setId('iniVelInc').
 								setAsButton(incDecBtnImg.getRef(), 0, 0, 0, 0, function(button){									
-								}).setLocation(590, 30);
+								}).setLocation(630, 13);
 		var iniVelDecBtn = new CAAT.Foundation.Actor().
 								setId('iniVelDec').
 								setAsButton(incDecBtnImg.getRef(), 1, 1, 1, 1, function(button){
-								}).setLocation(590, 39);
+								}).setLocation(630, 45);
 						
 		dashBG.addChild(iniVelIncBtn);
 		dashBG.addChild(iniVelDecBtn);

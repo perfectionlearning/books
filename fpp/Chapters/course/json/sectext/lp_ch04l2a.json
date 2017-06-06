@@ -1,1 +1,46 @@
-{"cards":[{"lines":[{"type":"title","text":"Vertical projectile motion properties"},{"type":"headline","text":"Projectile accelerates at −<i>g</i>"},{"type":"bullet","text":"Horizontal line "},{"type":"headline","text":"Velocity in freefall"},{"type":"bullet","text":"Line with negative slope"},{"type":"headline","text":"Vertical position"},{"type":"bullet","text":"A parabola"}]}],"definitions":[],"secText":["  <b>Essential Question: </b>  <b>    <br />  </b>How can we graph and calculate projectile motion?","  <b>Enduring Understandings:</b>  <b>    <br />  </b>1. [OBJ:expsec_d468:Projectile motion] is determined by initial velocity and freefall acceleration. <b><br /></b>2.  The [OBJ:expsec_c385:projectile motion graph] of acceleration versus time is a horizontal line. The projectile motion graph of velocity versus time is a line with a negative slope. The projectile motion graph for position versus time is a parabola.<b><br /></b>3.  [OBJ:expsec_d470:Projectile motion can be calculated] using <math><mrow><mi mathvariant=\"normal\">Δ</mi><mi>t</mi><mtext>= </mtext><msqrt><mrow><mfrac linethickness=\"thin\"><mrow><mtext>2</mtext><mrow><mo>(</mo><mrow><mi mathvariant=\"normal\">Δ</mi><mi>y</mi></mrow><mo>)</mo></mrow></mrow><mrow><mo>−</mo><mi>g</mi></mrow></mfrac></mrow></msqrt></mrow></math> and <math><mrow><mi mathvariant=\"normal\">Δ</mi><mi>x</mi><mtext> = </mtext><mrow><mo>(</mo><mrow><msub><mi>v</mi><mrow><mtext>xi</mtext></mrow></msub></mrow><mo>)</mo></mrow><mrow><mo>(</mo><mrow><mi mathvariant=\"normal\">Δ</mi><mi>t</mi></mrow><mo>)</mo></mrow></mrow></math>.","  <b>Vocabulary:</b>  [OBJ:expsec_d468:projectile]","  <b>STEM Skills:</b>  <b>    <br />  </b>1. Review [OBJ:wb_vector_velocity_fundamentals1:velocity components].<b><br /></b>2. Review [OBJ:expsec_c360:position-time graphs]."],"objNames":["wb_projectile_3_graphs1"]}
+{
+  "cards": [
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Vertical projectile motion properties"
+        },
+        {
+          "type": "headline",
+          "text": "Projectile accelerates at −<i>g</i>"
+        },
+        {
+          "type": "bullet",
+          "text": "Horizontal line "
+        },
+        {
+          "type": "headline",
+          "text": "Velocity in freefall"
+        },
+        {
+          "type": "bullet",
+          "text": "Line with negative slope"
+        },
+        {
+          "type": "headline",
+          "text": "Vertical position"
+        },
+        {
+          "type": "bullet",
+          "text": "A parabola"
+        }
+      ]
+    }
+  ],
+  "definitions": [],
+  "secText": [
+   "  <b>Essential Question: </b>  <b>    <br />  </b>How can we graph and calculate projectile motion?",
+    "  <b>Enduring Understandings:</b>  <b>    <br />  </b>1. <a class='pjumpToTopic' href='javascript:void(0)' data-chap='4' data-topic='1' data-subtopic='1' data-subsection='1'>Projectile motion</a> is determined by initial velocity and freefall acceleration. <b><br /></b>2.  The <a class='pjumpToTopic' href='javascript:void(0)' data-chap='4' data-topic='1' data-subtopic='2' data-subsection='0'>projectile motion graph</a> of acceleration versus time is a horizontal line. The projectile motion graph of velocity versus time is a line with a negative slope. The projectile motion graph for position versus time is a parabola.<b><br /></b>3.  <a class='pjumpToTopic' href='javascript:void(0)' data-chap='4' data-topic='1' data-subtopic='3' data-subsection='0'>Projectile motion can be calculated</a> using <math><mrow><mi mathvariant=\"normal\">Δ</mi><mi>t</mi><mtext>= </mtext><msqrt><mrow><mfrac linethickness=\"thin\"><mrow><mtext>2</mtext><mrow><mo>(</mo><mrow><mi mathvariant=\"normal\">Δ</mi><mi>y</mi></mrow><mo>)</mo></mrow></mrow><mrow><mo>−</mo><mi>g</mi></mrow></mfrac></mrow></msqrt></mrow></math> and <math><mrow><mi mathvariant=\"normal\">Δ</mi><mi>x</mi><mtext> = </mtext><mrow><mo>(</mo><mrow><msub><mi>v</mi><mrow><mtext>xi</mtext></mrow></msub></mrow><mo>)</mo></mrow><mrow><mo>(</mo><mrow><mi mathvariant=\"normal\">Δ</mi><mi>t</mi></mrow><mo>)</mo></mrow></mrow></math>.",
+    "  <b>Vocabulary:</b>  <a class='pjumpToTopic' href='javascript:void(0)' data-chap='4' data-topic='1' data-subtopic='1' data-subsection='1'>projectile</a>",
+    "  <b>STEM Skills:</b>  <b>    <br />  </b>1. Review <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='wb_vector_velocity_fundamentals1'>velocity components</a>.<b><br /></b>2. Review <a class='pjumpToTopic' href='javascript:void(0)' data-chap='2' data-topic='1' data-subtopic='1' data-subsection='0'>position-time graphs</a>."
+  ],
+  "objNames": [
+    "wb_projectile_3_graphs1"
+  ]
+}

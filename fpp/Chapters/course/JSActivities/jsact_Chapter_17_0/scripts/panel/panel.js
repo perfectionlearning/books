@@ -82,13 +82,13 @@ game.screening = function(director, scene){
 		text3.setLocation(182,40);
 		conBottom.addChild(text3);
 		var text3 = game.textActor(director, 'm', ' Bold 14px arial', 'left', '#FFFFFF');
-		text3.setLocation(544,40);
+		text3.setLocation(529,40);
 		conBottom.addChild(text3);
 		var text3 = game.textActor(director, String.fromCharCode(181), 'Italic Bold 14px arial', 'left', '#FFFFFF');
-		text3.setLocation(535,40);
+		text3.setLocation(520,40);
 		conBottom.addChild(text3);
 		var text3 = game.textActor(director, 'Hz', 'Bold 14px arial', 'left', '#FFFFFF');
-		text3.setLocation(535,62);
+		text3.setLocation(520,62);
 		conBottom.addChild(text3);	
 	
 		var aActor = new CAAT.exemplarr().setBackgroundImage(
@@ -96,14 +96,14 @@ game.screening = function(director, scene){
 											initialize(director.getImage('incrbgmed'), 1, 1),true).
 											enableEvents(false);
 		aActor.setLocation(475, 40);
-		conBottom.addChild(aActor);
+		//conBottom.addChild(aActor);
 		
 		var aActor = new CAAT.exemplarr().setBackgroundImage(
 										new CAAT.Foundation.SpriteImage().
 											initialize(director.getImage('incrbgmed'), 1, 1),true).
 											enableEvents(false);
 		aActor.setLocation(475, 60);
-		conBottom.addChild(aActor);
+		//conBottom.addChild(aActor);
 	
 	
 	

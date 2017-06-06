@@ -11,8 +11,8 @@
 		dashBoardEle[dashBoardEle.length] = ['well100',    		510,  0];
 		dashBoardEle[dashBoardEle.length] = ['well50',    		610,  0];
 		dashBoardEle[dashBoardEle.length] = ['wellright',  		650,  0];
-		dashBoardEle[dashBoardEle.length] = ['exponentbox',  	413,  30];
-		dashBoardEle[dashBoardEle.length] = ['incrBgMed',  		445,  30];	
+		//dashBoardEle[dashBoardEle.length] = ['exponentbox',  	413,  30];
+		//dashBoardEle[dashBoardEle.length] = ['incrBgMed',  		445,  30];	
 		
 	//dashBoard test
 	var dashBoardTxt = [];//Text, font_style, alignment, xPos, yPos, id, color
@@ -24,10 +24,10 @@
 		dashBoardTxt[dashBoardTxt.length] = ['-19', 		     'Bold 10px Arial', 	   'left', 233, 30, 5, 	'white'];
 		dashBoardTxt[dashBoardTxt.length] = ['=           	 cm','Bold 14px Arial', 	   'left', 165, 55, 6, 	'white'];
 		dashBoardTxt[dashBoardTxt.length] = ['Speed', 		     'Bold 14px Arial', 	   'left', 340, 32, 7, 	'white'];
-		dashBoardTxt[dashBoardTxt.length] = ['4.0', 		 	 'Bold 14px Arial', 	   'left', 436, 32, 'speedTxt', 'white'];
-		dashBoardTxt[dashBoardTxt.length] = [String.fromCharCode('215')+' 10',		 	     'Bold 14px Arial', 	   'left', 459, 32, 9, 'white'];
-		dashBoardTxt[dashBoardTxt.length] = ['m/s', 			 'Bold 14px Arial', 	   'left', 505, 32, 10, 'white'];
-		dashBoardTxt[dashBoardTxt.length] = ['4', 				 'Bold 10px Arial', 	   'left', 489, 31, 'ten2power', 'white'];
+		dashBoardTxt[dashBoardTxt.length] = ['4.0', 		 	 'Bold 14px Arial', 	   'left', 397, 32, 'speedTxt', 'white'];
+		dashBoardTxt[dashBoardTxt.length] = [String.fromCharCode('215')+' 10',		 	     'Bold 14px Arial', 	   'left', 422, 32, 9, 'white'];
+		dashBoardTxt[dashBoardTxt.length] = ['m/s', 			 'Bold 14px Arial', 	   'left', 465, 32, 10, 'white'];
+		dashBoardTxt[dashBoardTxt.length] = ['4', 				 'Bold 10px Arial', 	   'left', 453, 31, 'ten2power', 'white'];
 		dashBoardTxt[dashBoardTxt.length] = ['--', 				 'Bold 14px Arial', 	   'left', 185, 55, 'raduisTxt', 'white'];
 	
 	var popupTxt = [];
@@ -131,17 +131,17 @@
 	//Create Increment and Decrement button
 	//=======================================================
 	function __createIncDecButton(){
-		var incDecBtnImg = new CAAT.Foundation.SpriteImage().initialize( game._director.getImage('incre_decre_btn'), 2, 1);
+		var incDecBtnImg = new CAAT.Foundation.SpriteImage().initialize( game._director.getImage('incre_decre_btn'), 1, 2);
 		var iniVelIncBtn = new CAAT.Foundation.Actor().
 								setId('incSpeed').
 								setAsButton(incDecBtnImg.getRef(), 0, 0, 0, 0, function(button){
 									game.incDecHandler('incSpeed');									
-								}).setLocation(410, 30+100);
+								}).setLocation(500, 126);
 		var iniVelDecBtn = new CAAT.Foundation.Actor().
 								setId('decSpeed').
 								setAsButton(incDecBtnImg.getRef(), 1, 1, 1, 1, function(button){
 									game.incDecHandler('decSpeed');
-								}).setLocation(410, 38+100);
+								}).setLocation(530, 36+90);
 								
 		dashBG.addChild(iniVelIncBtn);
 		dashBG.addChild(iniVelDecBtn);

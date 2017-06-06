@@ -37,14 +37,14 @@ game.screening = function(director, scene){
 	(function(){
 	
 		var dashBoardEle = [];										//img id, left, top, width
-		dashBoardEle.push({id:'dash', left:0, top:0, width:760});
-		dashBoardEle.push({id:'wellleft', left:300, top:0, width:10});
-		dashBoardEle.push({id:'well100', left:310, top:0, width:100});
-		dashBoardEle.push({id:'well100', left:410, top:0, width:100});
-		dashBoardEle.push({id:'well100', left:510, top:0, width:100});
-		dashBoardEle.push({id:'well100', left:610, top:0, width:100});
-		dashBoardEle.push({id:'well50', left:700, top:0, width:50});
-		dashBoardEle.push({id:'wellright', left:750, top:0, width:10});
+		dashBoardEle.push({id:'dash', left:0, top:-27, width:760});
+		dashBoardEle.push({id:'wellleft', left:300, top:-27, width:10});
+		dashBoardEle.push({id:'well100', left:310, top:-27, width:100});
+		dashBoardEle.push({id:'well100', left:410, top:-27, width:100});
+		dashBoardEle.push({id:'well100', left:510, top:-27, width:100});
+		dashBoardEle.push({id:'well100', left:610, top:-27, width:100});
+		dashBoardEle.push({id:'well50', left:700, top:-27, width:50});
+		dashBoardEle.push({id:'wellright', left:750, top:-27, width:10});
 		dashBoardEle.push({id:'arrows', left:450, top:-10, width:100});
 		
 		for (var i = 0; i < dashBoardEle.length; i++) {
@@ -69,30 +69,30 @@ game.screening = function(director, scene){
 		conBottom.addChild(text3);
 	    
 		var text3 = game.textActor(director, 'Weight:', 'Bold 14px arial', 'left', '#FFFFFF');
-		text3.setLocation(320,10);
+		text3.setLocation(320,-10);
 		conBottom.addChild(text3);
 		var text3 = game.textActor(director, 'Normal force:', 'Bold 14px arial', 'left', '#FFFFFF');
-		text3.setLocation(320,30);
+		text3.setLocation(320,15);
 		conBottom.addChild(text3);
 		var text3 = game.textActor(director, 'Friction:', 'Bold 14px arial', 'left', '#FFFFFF');
-		text3.setLocation(320,50);
+		text3.setLocation(320,40);
 		conBottom.addChild(text3);
 		var text3 = game.textActor(director, 'Tension:', 'Bold 14px arial', 'left', '#FFFFFF');
-		text3.setLocation(320,70);
+		text3.setLocation(320,65);
 		conBottom.addChild(text3);
 
 			
 		var text1 = game.textActor(director, 'N', 'Bold 14px arial', 'left', '#FFFFFF');
-		text1.setLocation(620,52);
+		text1.setLocation(560,40);
 		conBottom.addChild(text1);
 		var text1 = game.textActor(director, 'N', 'Bold 14px arial', 'left', '#FFFFFF');
-		text1.setLocation(620,12);
+		text1.setLocation(560,-10);
 		conBottom.addChild(text1);
 		var text1 = game.textActor(director, 'N', 'Bold 14px arial', 'left', '#FFFFFF');
-		text1.setLocation(620,32);
+		text1.setLocation(560,15);
 		conBottom.addChild(text1);
 		var text1 = game.textActor(director, 'N', 'Bold 14px arial', 'left', '#FFFFFF');
-		text1.setLocation(620,72);
+		text1.setLocation(560,65);
 		conBottom.addChild(text1);
 	
 		var aActor = new CAAT.exemplarr().setBackgroundImage(
@@ -100,26 +100,26 @@ game.screening = function(director, scene){
 											initialize(director.getImage('incrbgmed'), 1, 1),true).
 											enableEvents(false);
 		aActor.setLocation(550, 10);
-		conBottom.addChild(aActor);
+		//conBottom.addChild(aActor);
 		
 		var aActor = new CAAT.exemplarr().setBackgroundImage(
 										new CAAT.Foundation.SpriteImage().
 											initialize(director.getImage('incrbgmed'), 1, 1),true).
 											enableEvents(false);
 		aActor.setLocation(550, 30);
-		conBottom.addChild(aActor);
+		//conBottom.addChild(aActor);
 		var aActor = new CAAT.exemplarr().setBackgroundImage(
 										new CAAT.Foundation.SpriteImage().
 											initialize(director.getImage('incrbgmed'), 1, 1),true).
 											enableEvents(false);
 		aActor.setLocation(550, 50);
-		conBottom.addChild(aActor);
+		//conBottom.addChild(aActor);
 		var aActor = new CAAT.exemplarr().setBackgroundImage(
 										new CAAT.Foundation.SpriteImage().
 											initialize(director.getImage('incrbgmed'), 1, 1),true).
 											enableEvents(false);
 		aActor.setLocation(550, 70);
-		conBottom.addChild(aActor);	
+		//conBottom.addChild(aActor);	
 	
 	
 		conBottom.addChild(conBanner);

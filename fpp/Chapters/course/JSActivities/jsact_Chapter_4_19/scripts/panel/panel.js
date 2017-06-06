@@ -14,8 +14,8 @@
 		 dashBoardEle[dashBoardEle.length] = ['well100',    		560,  0];
 		 dashBoardEle[dashBoardEle.length] = ['well50',    			650,  0];
 		 dashBoardEle[dashBoardEle.length] = ['wellright',  		700,  0];
-		 dashBoardEle[dashBoardEle.length] = ['incrBgMed',  		508,  30];
-		 dashBoardEle[dashBoardEle.length] = ['incrBgMed',  		508,  50];
+		// dashBoardEle[dashBoardEle.length] = ['incrBgMed',  		508,  30];
+		 //dashBoardEle[dashBoardEle.length] = ['incrBgMed',  		508,  50];
 		 dashBoardEle[dashBoardEle.length] = ['smalljuggballred',  		100,  8];
 		 //dashBoardEle[dashBoardEle.length] = ['banner',  		525,  -118];
 	
@@ -35,12 +35,12 @@
 		dashBoardTxt[dashBoardTxt.length] = ['m/s', 				'bold 14px arial', 'left', 254, 57, 8];
 		dashBoardTxt[dashBoardTxt.length] = ['2', 					'10px arial', 'left', 195, 50, 9];
 		dashBoardTxt[dashBoardTxt.length] = ['2', 					'10px arial', 'left', 275, 50, 10];
-		dashBoardTxt[dashBoardTxt.length] = ['Initial y velocity', 	'bold 14px arial', 'left', 384, 30, 11];
-		dashBoardTxt[dashBoardTxt.length] = ['Initial x velocity', 	'bold 14px arial', 'left', 384, 53, 12];
-		dashBoardTxt[dashBoardTxt.length] = ['0.0', 				'bold 14px arial', 'left', 530, 32, 'initialyVelTxt'];
-		dashBoardTxt[dashBoardTxt.length] = ['0.0', 				'bold 14px arial', 'left', 530, 52, 'initialxVelTxt'];
-		dashBoardTxt[dashBoardTxt.length] = ['m/s', 				'bold 14px arial', 'left', 566, 31, 13];
-		dashBoardTxt[dashBoardTxt.length] = ['m/s', 				'bold 14px arial', 'left', 566, 51, 14];
+		dashBoardTxt[dashBoardTxt.length] = ['Initial y velocity', 	'bold 14px arial', 'left', 369, 30, 11];
+		dashBoardTxt[dashBoardTxt.length] = ['Initial x velocity', 	'bold 14px arial', 'left', 369, 53, 12];
+		dashBoardTxt[dashBoardTxt.length] = ['0.0', 				'bold 14px arial', 'left', 491, 32, 'initialyVelTxt'];
+		dashBoardTxt[dashBoardTxt.length] = ['0.0', 				'bold 14px arial', 'left', 491, 52, 'initialxVelTxt'];
+		dashBoardTxt[dashBoardTxt.length] = ['m/s', 				'bold 14px arial', 'left', 517, 31, 13];
+		dashBoardTxt[dashBoardTxt.length] = ['m/s', 				'bold 14px arial', 'left', 517, 51, 14];
 	/*banner text
 	var bannerContentTxt = [];
 		bannerContentTxt[bannerContentTxt.length] = ['Set the initial x, y', 'velocity to juggle from', 'one hand to another.', 'Press GO. Press RESET', 'to try new values.'];*/
@@ -147,27 +147,27 @@
 	//Create Increment and Decrement button
 	//=======================================================
 	game.__createIncDecButton=function (){
-		var incDecBtnImg = new CAAT.Foundation.SpriteImage().initialize( game._director.getImage('incre_decre_btn'), 2, 1);
+		var incDecBtnImg = new CAAT.Foundation.SpriteImage().initialize( game._director.getImage('incre_decre_btn'), 1, 2);
 		var iniyVelIncBtn = new CAAT.Foundation.Actor().
 								setId('yVelInc').
 								setAsButton(incDecBtnImg.getRef(), 0, 0, 0, 0, function(button){
 									//game.incDecHandler(this);
-								}).setLocation(500, 530);
+								}).setLocation(550, 520);
 		var iniyValDecBtn = new CAAT.Foundation.Actor().
 								setId('yVelDec').
 								setAsButton(incDecBtnImg.getRef(), 1, 1, 1, 1, function(button){
 									//game.incDecHandler(this);
-								}).setLocation(500, 539);
+								}).setLocation(580, 520);
 		var inixVelIncBtn = new CAAT.Foundation.Actor().
 								setId('xVelInc').
 								setAsButton(incDecBtnImg.getRef(), 0, 0, 0, 0, function(button){
 									//game.incDecHandler(this);
-								}).setLocation(500, 550);
+								}).setLocation(550, 550);
 		var inixValDecBtn = new CAAT.Foundation.Actor().
 								setId('xVelDec').
 								setAsButton(incDecBtnImg.getRef(), 1, 1, 1, 1, function(button){
 									//game.incDecHandler(this);
-								}).setLocation(500, 559);						
+								}).setLocation(580, 550);						
 								
 		game.mainPanel .addChild(iniyVelIncBtn);
 		game.mainPanel .addChild(iniyValDecBtn);

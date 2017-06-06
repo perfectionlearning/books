@@ -198,25 +198,25 @@ nav a:hover {
 	
 
 
-a:link {
+#wrapper a:link {
 	color: #247591;
 	text-decoration: none;
 	}
-a:visited {
+#wrapper a:visited {
 	color: #ef732e;
 	text-decoration: none;
 	}
-a:hover {
+#wrapper a:hover {
 	text-decoration: underline;
 	}
-a:active {
+#wrapper a:active {
 	text-decoration: none;
 	}
 	
-a:visited, 
-a:active,
-a:focus,
-select {
+#wrapper a:visited, 
+#wrapper a:active,
+#wrapper a:focus,
+#wrapper select {
 	outline: none;
 	}
 	

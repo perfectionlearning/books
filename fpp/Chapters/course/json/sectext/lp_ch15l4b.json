@@ -1,1 +1,22 @@
-{"cards":[{"lines":[{"type":"title","text":"  <i>PE</i> of a system of two positive charges"}]}],"definitions":[],"secText":["  <b>Lesson:</b>  <b>    <br />  </b>1. [OBJ:actsec_jr33:Experiment] with the electric potential energy between two charges.<br />2. Define and describe the [OBJ:expsec_o991:electric potential energy] between two like charges and two unlike charges.<br />3. Define and calculate [OBJ:expsec_o993:electric potential].<br />4. Define and calculate [OBJ:expsec_o996:electric potential difference].<br />5. Apply the concepts of electric potential energy and electric potential to a [OBJ:pwsec_o9102:rocket engine].","  <b>In-class assessment:</b>  <b>    <br />  </b>1. [OBJ:qc_36719:Calculate] the electric potential of a test charge.<br />2. [OBJ:qc_36723:Calculate] the electric potential difference between two plates.","  <b>Homework:</b>  <span class=\"KBInternalLink\"><a href=\"assign.html#OHW 15.04\">OHW 15.04</a></span>","  <b>Quick Review:</b>  [OBJ:sum_e_potential_energy:Electric Potential Energy], [OBJ:sum_e_potential:Electric Potential], [OBJ:sum_e_po_difference:Electric Potential Difference]"],"objNames":["jsact_Chapter_25_0"]}
+{
+  "cards": [
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "  <i>PE</i> of a system of two positive charges"
+        }
+      ]
+    }
+  ],
+  "definitions": [],
+  "secText": [
+    "  <b>Lesson:</b>  <b>    <br />  </b>1. <a class='pjumpToTopic' href='javascript:void(0)' data-chap='15' data-topic='3' data-subtopic='1' data-subsection='0'>Experiment</a> with the electric potential energy between two charges.<br />2. Define and describe the <a class='pjumpToTopic' href='javascript:void(0)' data-chap='15' data-topic='3' data-subtopic='1' data-subsection='1'>electric potential energy</a> between two like charges and two unlike charges.<br />3. Define and calculate <a class='pjumpToTopic' href='javascript:void(0)' data-chap='15' data-topic='3' data-subtopic='1' data-subsection='2'>electric potential</a>.<br />4. Define and calculate <a class='pjumpToTopic' href='javascript:void(0)' data-chap='15' data-topic='3' data-subtopic='2' data-subsection='0'>electric potential difference</a>.<br />5. Apply the concepts of electric potential energy and electric potential to a <a class='pjumpToTopic' href='javascript:void(0)' data-chap='15' data-topic='3' data-subtopic='2' data-subsection='2'>rocket engine</a>.",
+    "  <b>In-class assessment:</b>  <b>    <br />  </b>1. <a class='pjumpToTopic' href='javascript:void(0)' data-chap='15' data-topic='3' data-subtopic='1' data-subsection='3'>Calculate</a> the electric potential of a test charge.<br />2. <a class='pjumpToTopic' href='javascript:void(0)' data-chap='15' data-topic='3' data-subtopic='2' data-subsection='1'>Calculate</a> the electric potential difference between two plates.",
+    
+    "  <b>Quick Review:</b>  <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='sum_e_potential_energy'>Electric Potential Energy</a>, <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='sum_e_potential'>Electric Potential</a>, <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='sum_e_po_difference'>Electric Potential Difference</a>"
+  ],
+  "objNames": [
+    "jsact_Chapter_25_0"
+  ]
+}

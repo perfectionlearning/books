@@ -24,11 +24,11 @@
 	dashBoardEle[dashBoardEle.length] = ['ele_8', 670, 0, 10];	//well right
 	dashBoardEle[dashBoardEle.length] = ['ele_4', 680, 0, 100];	//gray100
 	dashBoardEle[dashBoardEle.length] = ['ele_10', 755, 0, 2];	//right end	
-	dashBoardEle[dashBoardEle.length] = ['ele_17', 515, 33, 55];//valPlace
+	//dashBoardEle[dashBoardEle.length] = ['ele_17', 515, 33, 55];//valPlace
 
 	var dashBoardTxt = [];
 	dashBoardTxt[dashBoardTxt.length] = ['Blue car speed', 395, 35, 'bold 14px Arial', 'left'];
-	dashBoardTxt[dashBoardTxt.length] = ['m/s', 573, 35, 'bold 14px Arial', 'left'];
+	dashBoardTxt[dashBoardTxt.length] = ['m/s', 538, 35, 'bold 14px Arial', 'left'];
 	dashBoardTxt[dashBoardTxt.length] = ['-10', 165, 60,'bold 12px Arial', 'left'];
 	dashBoardTxt[dashBoardTxt.length] = ['0', 198, 60, 'bold 12px Arial', 'left'];
 	dashBoardTxt[dashBoardTxt.length] = ['10', 216, 60, 'bold 12px Arial', 'left'];
@@ -141,7 +141,7 @@
 						_dir.getImage('buttons'), 2, 3 
 					);
 			var incre_decre_btnImg= new CAAT.Foundation.SpriteImage().initialize(
-						_dir.getImage('ele_18'), 2, 1 
+						_dir.getImage('ele_18'), 1, 2 
 					);
 			
 			//go button 
@@ -183,7 +183,7 @@
 								}
 							).
 							setId('_increBtn').
-							setLocation(505, 33);
+							setLocation(570, 23);
 			//decrement button
 			var decreBtn = new CAAT.Foundation.Actor().
 							setAsButton(
@@ -203,7 +203,7 @@
 								}
 							).
 							setId('_decreBtn').
-							setLocation(505, 43);
+							setLocation(568, 51);
 			content.addChild( b1 );
 			content.addChild( b2 );
 			content.addChild( b3 );
@@ -226,7 +226,7 @@
 				setText('0.0').
 				setOutline( false ).
 				cacheAsBitmap();
-			game.currentSpeedDisp.setLocation(535, 35);
+			game.currentSpeedDisp.setLocation(510, 35);
 			game.currentCarSpeed = (parseFloat(game.currentCarSpeed)).toFixed(1);
 			game.updateTxtContent(game.currentSpeedDisp, game.currentCarSpeed);
 			

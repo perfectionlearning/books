@@ -15,10 +15,10 @@
 		dashBoardEle[dashBoardEle.length] = ['well100b',    	575,  0];
 		dashBoardEle[dashBoardEle.length] = ['wellleft2',  	 75,  0];
 		dashBoardEle[dashBoardEle.length] = ['wellright2',  	675,  0];
-		dashBoardEle[dashBoardEle.length] = ['incrBgMed',  	200,  54];
-		dashBoardEle[dashBoardEle.length] = ['incrBgMed',  	400,  54];
-		dashBoardEle[dashBoardEle.length] = ['incrBgMed',  	400,  33];
-		dashBoardEle[dashBoardEle.length] = ['incrBgMed',  	200,  33];		
+		//dashBoardEle[dashBoardEle.length] = ['incrBgMed',  	200,  54];
+		//dashBoardEle[dashBoardEle.length] = ['incrBgMed',  	400,  54];
+		//dashBoardEle[dashBoardEle.length] = ['incrBgMed',  	400,  33];
+		//dashBoardEle[dashBoardEle.length] = ['incrBgMed',  	200,  33];		
 		/*dashBoardEle[dashBoardEle.length] = ['arrowLeftUp',  	540,  65];
 		dashBoardEle[dashBoardEle.length] = ['arrowRightUp', 	555,  65];		*/
 	
@@ -29,17 +29,17 @@
 		dashBoardTxt[dashBoardTxt.length] = ['Right moving wave', 	'bold 14px Arial',  'left', 104,  14, 1];
 		dashBoardTxt[dashBoardTxt.length] = ['Left moving wave', 	'bold 14px Arial',  'left', 304,  14, 2];
 		dashBoardTxt[dashBoardTxt.length] = ['Amplitude', 			'bold 14px Arial',  'left', 104,  33, 3];
-		dashBoardTxt[dashBoardTxt.length] = ['0.50', 		 		'bold 14px Arial',  'left', 217,  35, 'lampTxt'];
-		dashBoardTxt[dashBoardTxt.length] = ['m', 		 			'bold 14px Arial',  'left', 262,  33, 4];
+		dashBoardTxt[dashBoardTxt.length] = ['0.50', 		 		'bold 14px Arial',  'left', 195,  35, 'lampTxt'];
+		dashBoardTxt[dashBoardTxt.length] = ['m', 		 			'bold 14px Arial',  'left', 230,  35, 4];
 		dashBoardTxt[dashBoardTxt.length] = ['Amplitude', 			'bold 14px Arial',  'left', 304,  33, 5];
-		dashBoardTxt[dashBoardTxt.length] = ['1.0', 		 		'bold 14px Arial',  'left', 417,  35, 'rampTxt'];
-		dashBoardTxt[dashBoardTxt.length] = ['m', 		 			'bold 14px Arial',  'left', 464,  33, 6];
+		dashBoardTxt[dashBoardTxt.length] = ['1.0', 		 		'bold 14px Arial',  'left', 394,  35, 'rampTxt'];
+		dashBoardTxt[dashBoardTxt.length] = ['m', 		 			'bold 14px Arial',  'left', 431,  35, 6];
 		dashBoardTxt[dashBoardTxt.length] = ['Wavelength', 			'bold 14px Arial',  'left', 104,  53, 7];
-		dashBoardTxt[dashBoardTxt.length] = ['6.00', 		 		'bold 14px Arial',  'left', 217,  55, 'lwidthTxt'];
-		dashBoardTxt[dashBoardTxt.length] = ['m', 		 			'bold 14px Arial',  'left', 262,  56, 8];
+		dashBoardTxt[dashBoardTxt.length] = ['6.00', 		 		'bold 14px Arial',  'left', 195,  55, 'lwidthTxt'];
+		dashBoardTxt[dashBoardTxt.length] = ['m', 		 			'bold 14px Arial',  'left', 230,  56, 8];
 		dashBoardTxt[dashBoardTxt.length] = ['Wavelength', 			'bold 14px Arial',  'left', 304,  53, 9];
-		dashBoardTxt[dashBoardTxt.length] = ['4.00', 		 		'bold 14px Arial',  'left', 417,  55, 'rwidthTxt'];
-		dashBoardTxt[dashBoardTxt.length] = ['m', 		 			'bold 14px Arial',  'left', 464,  56, 10];
+		dashBoardTxt[dashBoardTxt.length] = ['4.00', 		 		'bold 14px Arial',  'left', 397,  55, 'rwidthTxt'];
+		dashBoardTxt[dashBoardTxt.length] = ['m', 		 			'bold 14px Arial',  'left', 431,  56, 10];
 		dashBoardTxt[dashBoardTxt.length] = ['Time step', 			'bold 14px Arial',  'left', 515,  40, 11];
 				
 	//banner text
@@ -133,47 +133,47 @@
 	//=======================================================
 	function __createIncDecButton( dashBG ){
 		var _director = game.getDirector();
-		var incDecBtnImg = new CAAT.Foundation.SpriteImage().initialize( _director.getImage('incre_decre_btn'), 2, 1);
+		var incDecBtnImg = new CAAT.Foundation.SpriteImage().initialize( _director.getImage('incre_decre_btn'), 1, 2);
 		var leftAmpIncBtn = new CAAT.Foundation.Actor().
 								setId('leftAmp_Inc').
 								setAsButton(incDecBtnImg.getRef(), 0, 0, 0, 0, function(button){
 									game.incDecHandler(this);
-								}).setLocation(190, 33);
+								}).setLocation(246, 23);
 		var leftAmpDecBtn = new CAAT.Foundation.Actor().
 								setId('leftAmp_Dec').
 								setAsButton(incDecBtnImg.getRef(), 1, 1, 1, 1, function(button){
 									game.incDecHandler(this);
-								}).setLocation(190, 42);
+								}).setLocation(271, 23);
 		var leftWaveLengthIncBtn = new CAAT.Foundation.Actor().
 								setId('leftWaveLength_Inc').
 								setAsButton(incDecBtnImg.getRef(), 0, 0, 0, 0, function(button){
 									game.incDecHandler(this);
-								}).setLocation(190, 53);
+								}).setLocation(246, 52);
 		var leftWaveLengthDecBtn = new CAAT.Foundation.Actor().
 								setId('leftWaveLength_Dec').
 								setAsButton(incDecBtnImg.getRef(), 1, 1, 1, 1, function(button){
 									game.incDecHandler(this);
-								}).setLocation(190, 62);
+								}).setLocation(271, 52);
 		var rightAmpIncBtn = new CAAT.Foundation.Actor().
 								setId('rightAmp_Inc').
 								setAsButton(incDecBtnImg.getRef(), 0, 0, 0, 0, function(button){
 									game.incDecHandler(this);
-								}).setLocation(390, 33);
+								}).setLocation(450, 23);
 		var rightAmpDecBtn = new CAAT.Foundation.Actor().
 								setId('rightAmp_Dec').
 								setAsButton(incDecBtnImg.getRef(), 1, 1, 1, 1, function(button){
 									game.incDecHandler(this);
-								}).setLocation(390, 42);
+								}).setLocation(480, 23);
 		var rightWaveLengthIncBtn = new CAAT.Foundation.Actor().
 								setId('rightWaveLength_Inc').
 								setAsButton(incDecBtnImg.getRef(), 0, 0, 0, 0, function(button){
 									game.incDecHandler(this);
-								}).setLocation(390, 53);
+								}).setLocation(450, 52);
 		var rightWaveLengthDecBtn = new CAAT.Foundation.Actor().
 								setId('rightWaveLength_Dec').
 								setAsButton(incDecBtnImg.getRef(), 1, 1, 1, 1, function(button){
 									game.incDecHandler(this);
-								}).setLocation(390, 62);								
+								}).setLocation(480, 52);								
 
 								
 		dashBG.addChild(leftAmpIncBtn);

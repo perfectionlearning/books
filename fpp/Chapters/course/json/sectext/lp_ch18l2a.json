@@ -1,1 +1,30 @@
-{"cards":[{"lines":[{"type":"title","text":"Two-slit interference: Bright bands"}]},{"lines":[{"type":"title","text":"Two-slit interference: Dark bands"}]}],"definitions":[],"secText":["  <b>Essential Question: </b>  <b>    <br />  </b>How can we calculate the position of light and dark bands in interference?","  <b>Enduring Understandings:</b>  <b>    <br />  </b>1. Knowing the fringe number, wavelength, distance between slits' midpoints, angle between normal and path to fringe, the location of [OBJ:expsec_r961:bright] and [OBJ:expsec_r9612321:dark bands] in two-slit interference can be calculated. To calculate the [OBJ:expsec_r9651:wavelength] of bright bands, multiply the distance between the central fringe and first bright fringe by the distance between the slits' midpoints, then divide by the distance between the slit and the screen.<br />2. [OBJ:expsec_r969:White light] is composed of all visible wavelengths of light. When white light passes through a two-slit barrier, it creates a rainbow-like pattern of bands.<br />3. [OBJ:expsec_r970:Thin-film] interference is a result of both constructive and destructive interference.","  <b>STEM Skills:</b>  <b>    <br />  </b>1. Review [OBJ:expsec_t563:ray diagrams].<br />2. Review [OBJ:expsec_u256:indexes of refraction]."],"objNames":["wb_calculating_wavelength_concepts1","wb_calculating_wavelength_concepts1_dark"]}
+{
+  "cards": [
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Two-slit interference: Bright bands"
+        }
+      ]
+    },
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Two-slit interference: Dark bands"
+        }
+      ]
+    }
+  ],
+  "definitions": [],
+  "secText": [
+    "  <b>Essential Question: </b>  <b>    <br />  </b>How can we calculate the position of light and dark bands in interference?",
+    "  <b>Enduring Understandings:</b>  <b>    <br />  </b>1. Knowing the fringe number, wavelength, distance between slits' midpoints, angle between normal and path to fringe, the location of <a class='pjumpToTopic' href='javascript:void(0)' data-chap='18' data-topic='1' data-subtopic='1' data-subsection='0'>bright</a> and <a class='pjumpToTopic' href='javascript:void(0)' data-chap='18' data-topic='1' data-subtopic='1' data-subsection='1'>dark bands</a> in two-slit interference can be calculated. To calculate the <a class='pjumpToTopic' href='javascript:void(0)' data-chap='18' data-topic='1' data-subtopic='1' data-subsection='3'>wavelength</a> of bright bands, multiply the distance between the central fringe and first bright fringe by the distance between the slits' midpoints, then divide by the distance between the slit and the screen.<br />2. <a class='pjumpToTopic' href='javascript:void(0)' data-chap='18' data-topic='1' data-subtopic='2' data-subsection='0'>White light</a> is composed of all visible wavelengths of light. When white light passes through a two-slit barrier, it creates a rainbow-like pattern of bands.<br />3. <a class='pjumpToTopic' href='javascript:void(0)' data-chap='18' data-topic='1' data-subtopic='3' data-subsection='0'>Thin-film</a> interference is a result of both constructive and destructive interference.",
+    "  <b>STEM Skills:</b>  <b>    <br />  </b>1. Review <a class='pjumpToTopic' href='javascript:void(0)' data-chap='20' data-topic='0' data-subtopic='5' data-subsection='0'>ray diagrams</a>.<br />2. Review <a class='pjumpToTopic' href='javascript:void(0)' data-chap='21' data-topic='0' data-subtopic='2' data-subsection='0'>indexes of refraction</a>."
+  ],
+  "objNames": [
+    "wb_calculating_wavelength_concepts1",
+    "wb_calculating_wavelength_concepts1_dark"
+  ]
+}

@@ -37,9 +37,9 @@
   "secText": [
     "  <b>Supplemental Material: </b>Math Review",
     "  <b>Essential Question: </b>  <b>    <br />  </b>How can we evaluate algebraic expressions?",
-    "  <b>Enduring Understandings:</b>  <b>    <br />  </b>1. When evaluating expressions, first evaluate the parentheses, exponents, multiplication, division, addition, and then subtraction ([OBJ:expsec_a356:PEMDAS]).",
-    "  <b>Vocabulary:</b>  [OBJ:expsec_a356:order of operations]",
-    "  <b>STEM Skills:</b>  <b>    <br />  </b>1. Review [OBJ:expsec_a354:exponents]."
+    "  <b>Enduring Understandings:</b>  <b>    <br />  </b>1. When evaluating expressions, first evaluate the parentheses, exponents, multiplication, division, addition, and then subtraction (<a class='pjumpToTopic' href='javascript:void(0)' data-chap='3' data-topic='6' data-subtopic='1'>PEMDAS</a>).",
+    "  <b>Vocabulary:</b>  <a class='pjumpToTopic' href='javascript:void(0)' data-chap='3' data-topic='6' data-subtopic='1'>order of operations</a>",
+    "  <b>STEM Skills:</b>  <b>    <br />  </b>1. Review <a class='pjumpToTopic' href='javascript:void(0)' data-chap='3' data-topic='0' data-subtopic='1'>exponents</a>."
   ],
   "objNames": [
     "wb_math_pemdas"

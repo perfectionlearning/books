@@ -1,1 +1,47 @@
-{"cards":[{"lines":[{"type":"title","text":"Diverging lens"},{"type":"headline","text":"Thinner at center, light “spreads out”"}]},{"lines":[{"type":"title","text":"Converging lens ray diagram"},{"type":"headline","text":"Ray 1: Parallel to axis, then passes through far focal point"},{"type":"headline","text":"Ray 2: Passes unchanged through center of lens"},{"type":"headline","text":"Ray 3: Passes through near focal point, then parallel to axis"}]}],"definitions":[],"secText":["  <b>Essential Question: </b>  <b>    <br />  </b>How can we describe converging and diverging lenses?","  <b>Enduring Understandings:</b>  <b>    <br />  </b>1. [OBJ:expsec_u271:Converging lenses] are shaped like two triangles stacked with bases together. The thickest part of a converging lens is its midpoint. A [OBJ:expsec_u271:diverging lens] is in the shape of two triangles pointed toward each other. The thinnest part of a diverging lens is its midpoint.","  <b>Vocabulary:</b>  [OBJ:expsec_u271:lens]","  <b>STEM Skills:</b>  <b>    <br />  </b>1. Review [OBJ:expsec_t563:ray diagrams]."],"objNames":["wb_lenses_concepts2","wb_converging_lenses_rays_concepts2"]}
+{
+  "cards": [
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Diverging lens"
+        },
+        {
+          "type": "headline",
+          "text": "Thinner at center, light “spreads out”"
+        }
+      ]
+    },
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Converging lens ray diagram"
+        },
+        {
+          "type": "headline",
+          "text": "Ray 1: Parallel to axis, then passes through far focal point"
+        },
+        {
+          "type": "headline",
+          "text": "Ray 2: Passes unchanged through center of lens"
+        },
+        {
+          "type": "headline",
+          "text": "Ray 3: Passes through near focal point, then parallel to axis"
+        }
+      ]
+    }
+  ],
+  "definitions": [],
+  "secText": [
+    "  <b>Essential Question: </b>  <b>    <br />  </b>How can we describe converging and diverging lenses?",
+    "  <b>Enduring Understandings:</b>  <b>    <br />  </b>1. <a class='pjumpToTopic' href='javascript:void(0)' data-chap='21' data-topic='4' data-subtopic='1' data-subsection='1'>Converging lenses</a> are shaped like two triangles stacked with bases together. The thickest part of a converging lens is its midpoint. A <a class='pjumpToTopic' href='javascript:void(0)' data-chap='21' data-topic='4' data-subtopic='1' data-subsection='1'>diverging lens</a> is in the shape of two triangles pointed toward each other. The thinnest part of a diverging lens is its midpoint.",
+    "  <b>Vocabulary:</b>  <a class='pjumpToTopic' href='javascript:void(0)' data-chap='21' data-topic='4' data-subtopic='1' data-subsection='1'>lens</a>",
+    "  <b>STEM Skills:</b>  <b>    <br />  </b>1. Review <a class='pjumpToTopic' href='javascript:void(0)' data-chap='20' data-topic='0' data-subtopic='5' data-subsection='0'>ray diagrams</a>."
+  ],
+  "objNames": [
+    "wb_lenses_concepts2",
+    "wb_converging_lenses_rays_concepts2"
+  ]
+}

@@ -10,7 +10,7 @@
 		dashBoardEle[dashBoardEle.length] = ['well100', 410, 0, 100];
 		dashBoardEle[dashBoardEle.length] = ['wellleft', 200, 0, 10];	//well left
 		dashBoardEle[dashBoardEle.length] = ['wellright', 510, 0, 10];	//well right
-		dashBoardEle[dashBoardEle.length] = ['incrBgMed', 320, 27, 10];	
+		//dashBoardEle[dashBoardEle.length] = ['incrBgMed', 320, 27, 10];	
 		//dashBoard test
 	var dashBoardTxt = [];
 		
@@ -18,8 +18,8 @@
 		dashBoardTxt[dashBoardTxt.length] = ['0.00', 				'bold 14px Arial', 'left', 128, 31, 'qTxt', '#fff'];//Text, font_style, alignment, xPos, yPos, id
 		dashBoardTxt[dashBoardTxt.length] = ['  nC', 				'bold 14px Arial', 'left', 154, 31, 'qTxt', '#fff'];//Text, font_style, alignment, xPos, yPos, id
 		dashBoardTxt[dashBoardTxt.length] = ['Distance', 			'bold 14px Arial', 'left', 240, 30, 2, '#fff'];//Text, font_style, alignment, xPos, yPos, id
-		dashBoardTxt[dashBoardTxt.length] = ['7.50', 				'bold 14px Arial', 'left', 342, 29, 'distanceTxt', '#fff'];//Text, font_style, alignment, xPos, yPos, id
-		dashBoardTxt[dashBoardTxt.length] = ['mm', 				'bold 14px Arial', 'left', 383, 29, 3, '#fff'];
+		dashBoardTxt[dashBoardTxt.length] = ['7.50', 				'bold 14px Arial', 'left', 312, 30, 'distanceTxt', '#fff'];//Text, font_style, alignment, xPos, yPos, id
+		dashBoardTxt[dashBoardTxt.length] = ['mm', 				'bold 14px Arial', 'left', 347, 30, 3, '#fff'];
 		
 	var bannerImg,
 		bannerContainer,
@@ -124,17 +124,17 @@
 	//Create Increment and Decrement button
 	//=======================================================
 	function __createIncDecButton(){
-		var incDecBtnImg = new CAAT.Foundation.SpriteImage().initialize( game._director.getImage('incre_decre_btn'), 2, 1);
+		var incDecBtnImg = new CAAT.Foundation.SpriteImage().initialize( game._director.getImage('incre_decre_btn'), 1, 2);
 		var inidistanceIncBtn = new CAAT.Foundation.Actor().
 								setId('inidistanceInc').
 								setAsButton(incDecBtnImg.getRef(), 0, 0, 0, 0, function(button){
 									game.incDecHandler(this);
-								}).setLocation(315, 27);
+								}).setLocation(377, 27);
 		var inidistanceDecBtn = new CAAT.Foundation.Actor().
 								setId('inidistanceDec').
 								setAsButton(incDecBtnImg.getRef(), 1, 1, 1, 1, function(button){
 									game.incDecHandler(this);
-								}).setLocation(315, 36);
+								}).setLocation(405, 27);
 							
 								
 		dashBG.addChild(inidistanceIncBtn);

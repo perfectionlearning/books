@@ -1,1 +1,42 @@
-{"cards":[{"lines":[{"type":"title","text":"Close-up of Newton’s cannon"},{"type":"headline","text":"At high speeds, Earth’s curvature affects whether projectile lands"},{"type":"headline","text":"At 8,000 m/s, ground curves away at same rate that object falls"}]},{"lines":[{"type":"title","text":"Circular orbits"},{"type":"headline","text":"Satellites in circular orbit have constant speed"}]}],"definitions":[],"secText":["  <b>Lesson:</b>  <b>    <br />  </b>1. Describe [OBJ:expsec_h570:Newton's cannon].<br />2. Define [OBJ:expsec_h570:circular orbits] and identify objects that revolve in circular orbits.<br />3. Experiment with [OBJ:actsec_jz42:orbit speed].<br />4. Calculate the [OBJ:expsec_h572:speed of a circular orbit].<br />5. [OBJ:der_derive_orbital_speed:Derive] the equation for circular orbit.<br />6. Define and calculate [OBJ:expsec_h575:escape speed].","  <b>Homework:</b>  <span class=\"KBInternalLink\"><a href=\"assign.html#OHW 8.04\">OHW 8.04</a></span>","  <b>Quick Review:</b>  [OBJ:sum_circular_orbits:Circular Orbits], [OBJ:sum_escape_speed:Escape Speed]"],"objNames":["wb_newton_cannon_concept2","wb_circular_orbit_concept1"]}
+{
+  "cards": [
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Close-up of Newton’s cannon"
+        },
+        {
+          "type": "headline",
+          "text": "At high speeds, Earth’s curvature affects whether projectile lands"
+        },
+        {
+          "type": "headline",
+          "text": "At 8,000 m/s, ground curves away at same rate that object falls"
+        }
+      ]
+    },
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Circular orbits"
+        },
+        {
+          "type": "headline",
+          "text": "Satellites in circular orbit have constant speed"
+        }
+      ]
+    }
+  ],
+  "definitions": [],
+  "secText": [
+    "  <b>Lesson:</b>  <b>    <br />  </b>1. Describe <a class='pjumpToTopic' href='javascript:void(0)' data-chap='8' data-topic='3' data-subtopic='1' data-subsection='0'>Newton's cannon</a>.<br />2. Define <a class='pjumpToTopic' href='javascript:void(0)' data-chap='8' data-topic='3' data-subtopic='1' data-subsection='0'>circular orbits</a> and identify objects that revolve in circular orbits.<br />3. Experiment with <a class='pjumpToTopic' href='javascript:void(0)' data-chap='8' data-topic='3' data-subtopic='2' data-subsection='1'>orbit speed</a>.<br />4. Calculate the <a class='pjumpToTopic' href='javascript:void(0)' data-chap='8' data-topic='3' data-subtopic='3' data-subsection='0'>speed of a circular orbit</a>.<br />5. <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='der_derive_orbital_speed'>Derive</a> the equation for circular orbit.<br />6. Define and calculate <a class='pjumpToTopic' href='javascript:void(0)' data-chap='8' data-topic='3' data-subtopic='4' data-subsection='0'>escape speed</a>.",
+    
+    "  <b>Quick Review:</b>  <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='sum_circular_orbits'>Circular Orbits</a>, <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='sum_escape_speed'>Escape Speed</a>"
+  ],
+  "objNames": [
+    "wb_newton_cannon_concept2",
+    "wb_circular_orbit_concept1"
+  ]
+}

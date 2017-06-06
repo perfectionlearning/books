@@ -1,1 +1,30 @@
-{"cards":[{"lines":[{"type":"title","text":"Additional motion equations"},{"type":"headline","text":"  <span class=\"math\">    <i>x</i>    <sub>f</sub> = final position,</span>  <span class=\"math\">    <i>x</i>    <sub>i</sub> = initial position,</span>  <span class=\"math\">    <i>v</i>    <sub>i</sub> = initial velocity,</span>  <span class=\"math\">    <i>a</i> = acceleration,</span>  <span class=\"math\">    <i>v</i>    <sub>f</sub> = final velocity,</span>  <span class=\"math\">    <span class=\"Symbols\">∆</span>    <i>t</i> = elapsed time</span>"},{"type":"bullet","text":"Acceleration must be constant"}]}],"definitions":[],"secText":["  <b>Lesson:</b>  <b>    <br />  </b>1. Introduce motion equations and define the variables in [OBJ:expsec_b776:motion equations].<br />2. [OBJ:actsec_c4512d:Determine the acceleration of a car using motion equations].<br />3. Work through a sample problem to [OBJ:app_sprinter_question:determine a runner’s final velocity].","  <b>In-class assessment:</b>  <b>    <br />  </b>1. [OBJ:qc_40068:Calculate] displacement using motion equations.","  <b>Homework:</b>  <span class=\"KBExternalLink\"><a href=\"assign.html#OHW 1.05\">OHW 1.05</a></span>","  <b>Quick Review:</b>  [OBJ:sum_motion_equations:Motion Equations]"],"objNames":["wb_motion_equations2"]}
+{
+  "cards": [
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Additional motion equations"
+        },
+        {
+          "type": "headline",
+          "text": "  <span class=\"math\">    <i>x</i>    <sub>f</sub> = final position,</span>  <span class=\"math\">    <i>x</i>    <sub>i</sub> = initial position,</span>  </br><span class=\"math\">    <i>v</i>    <sub>i</sub> = initial velocity,</span>  <span class=\"math\">    <i>a</i> = acceleration,</span> </br> <span class=\"math\">    <i>v</i>    <sub>f</sub> = final velocity,</span>  <span class=\"math\">    <span class=\"Symbols\">∆</span>    <i>t</i> = elapsed time</span>"
+        },
+        {
+          "type": "bullet",
+          "text": "Acceleration must be constant"
+        }
+      ]
+    }
+  ],
+  "definitions": [],
+  "secText": [
+    "  <b>Lesson:</b>  <b>    <br />  </b>1. Introduce motion equations and define the variables in <a class='pjumpToTopic' href='javascript:void(0)' data-chap='1' data-topic='4' data-subtopic='1' data-subsection='0'>motion equations</a>.<br />2. <a class='pjumpToTopic' href='javascript:void(0)' data-chap='1' data-topic='4' data-subtopic='1' data-subsection='2'>Determine the acceleration of a car using motion equations</a>.<br />3. Work through a sample problem to <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='app_sprinter_question'>determine a runner’s final velocity</a>.",
+    "  <b>In-class assessment:</b>  <b>    <br />  </b>1. <a class='pjumpToTopic' href='javascript:void(0)' data-chap='1' data-topic='4' data-subtopic='1' data-subsection='1'>Calculate</a> displacement using motion equations.",
+    
+    "  <b>Quick Review:</b>  <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='sum_motion_equations'>Motion Equations</a>"
+  ],
+  "objNames": [
+    "wb_motion_equations2"
+  ]
+}

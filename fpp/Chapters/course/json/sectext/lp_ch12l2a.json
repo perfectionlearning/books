@@ -1,1 +1,51 @@
-{"cards":[{"lines":[{"type":"title","text":"Heat engine"},{"type":"headline","text":"Heat flows into engine from hot reservoir"},{"type":"headline","text":"Engine uses heat to do work"},{"type":"headline","text":"Heat also  flows out of engine"},{"type":"headline","text":"Engine cycle: system returns to initial state"}]},{"lines":[{"type":"title","text":"Heat engine cycle and the first law"},{"type":"headline","text":"Engine returns to initial thermal energy"}]}],"definitions":[],"secText":["  <b>Essential Question: </b>  <b>    <br />  </b>How do engines use heat to do work?","  <b>Enduring Understandings:</b>  <b>    <br />  </b>1. [OBJ:expsec_l059:Engines] use energy to do work. Engines complete repeating cycles to do work. Engines are not 100% efficient.<br />2. [OBJ:expsec_l060:Heat engines] are used as models of real-world engines. Heat is transferred into the engine, causing work to be done. Heat also flows out of the engine, which contributes to the engine not being 100% efficient.<br />3.  In an engine, the [OBJ:expsec_l061:work done by the engine] is equal to the net heat transfer to the engine.<br />4. [OBJ:expsec_l078:Heat pumps] and [OBJ:expsec_l077:refrigerators] are examples of engines. Refrigerators force heat from a colder environment into a warmer environment. Heat pumps transfer heat from a warmer environment into a colder environment.","  <b>Vocabulary:</b>  [OBJ:expsec_l059:engine], [OBJ:expsec_l060:heat engine], [OBJ:expsec_l077:refrigerator], [OBJ:expsec_l078:heat pump]","  <b>STEM Skills:</b>  <b>    <br />  </b>1. Review the [OBJ:expsec_f973:work-energy theorem]."],"objNames":["wb_heat_engine_concepts","wb_heat_engine_concepts3"]}
+{
+  "cards": [
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Heat engine"
+        },
+        {
+          "type": "headline",
+          "text": "Heat flows into engine from hot reservoir"
+        },
+        {
+          "type": "headline",
+          "text": "Engine uses heat to do work"
+        },
+        {
+          "type": "headline",
+          "text": "Heat also  flows out of engine"
+        },
+        {
+          "type": "headline",
+          "text": "Engine cycle: system returns to initial state"
+        }
+      ]
+    },
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Heat engine cycle and the first law"
+        },
+        {
+          "type": "headline",
+          "text": "Engine returns to initial thermal energy"
+        }
+      ]
+    }
+  ],
+  "definitions": [],
+  "secText": [
+    "  <b>Essential Question: </b>  <b>    <br />  </b>How do engines use heat to do work?",
+    "  <b>Enduring Understandings:</b>  <b>    <br />  </b>1. <a class='pjumpToTopic' href='javascript:void(0)' data-chap='12' data-topic='1' data-subtopic='1' data-subsection='0'>Engines</a> use energy to do work. Engines complete repeating cycles to do work. Engines are not 100% efficient.<br />2. <a class='pjumpToTopic' href='javascript:void(0)' data-chap='12' data-topic='1' data-subtopic='2' data-subsection='0'>Heat engines</a> are used as models of real-world engines. Heat is transferred into the engine, causing work to be done. Heat also flows out of the engine, which contributes to the engine not being 100% efficient.<br />3.  In an engine, the <a class='pjumpToTopic' href='javascript:void(0)' data-chap='12' data-topic='1' data-subtopic='3' data-subsection='0'>work done by the engine</a> is equal to the net heat transfer to the engine.<br />4. <a class='pjumpToTopic' href='javascript:void(0)' data-chap='12' data-topic='1' data-subtopic='4' data-subsection='1'>Heat pumps</a> and <a class='pjumpToTopic' href='javascript:void(0)' data-chap='12' data-topic='1' data-subtopic='4' data-subsection='0'>refrigerators</a> are examples of engines. Refrigerators force heat from a colder environment into a warmer environment. Heat pumps transfer heat from a warmer environment into a colder environment.",
+    "  <b>Vocabulary:</b>  <a class='pjumpToTopic' href='javascript:void(0)' data-chap='12' data-topic='1' data-subtopic='1' data-subsection='0'>engine</a>, <a class='pjumpToTopic' href='javascript:void(0)' data-chap='12' data-topic='1' data-subtopic='2' data-subsection='0'>heat engine</a>, <a class='pjumpToTopic' href='javascript:void(0)' data-chap='12' data-topic='1' data-subtopic='4' data-subsection='0'>refrigerators</a>, <a class='pjumpToTopic' href='javascript:void(0)' data-chap='12' data-topic='1' data-subtopic='4' data-subsection='1'>heat pump</a>",
+    "  <b>STEM Skills:</b>  <b>    <br />  </b>1. Review the <a class='pjumpToTopic' href='javascript:void(0)' data-chap='6' data-topic='3' data-subtopic='2' data-subsection='0'>work-energy theorem</a>."
+  ],
+  "objNames": [
+    "wb_heat_engine_concepts",
+    "wb_heat_engine_concepts3"
+  ]
+}

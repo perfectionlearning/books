@@ -14,17 +14,17 @@
 		dashBoardEle[dashBoardEle.length] = ['well100b',    350,  0];
 		dashBoardEle[dashBoardEle.length] = ['wellleft2',   340,  0];
 		dashBoardEle[dashBoardEle.length] = ['wellright2',  700,  0];
-		dashBoardEle[dashBoardEle.length] = ['incrBgMed',  	490,  10];
-		dashBoardEle[dashBoardEle.length] = ['incrBgMed',  	490,  30];
-		dashBoardEle[dashBoardEle.length] = ['incrBgMed',  	490,  50];
+		//dashBoardEle[dashBoardEle.length] = ['incrBgMed',  	490,  10];
+		//dashBoardEle[dashBoardEle.length] = ['incrBgMed',  	490,  30];
+		//dashBoardEle[dashBoardEle.length] = ['incrBgMed',  	490,  50];
 
 	var inc_button = [];
-		inc_button[inc_button.length] = [488, 10];//x and y pos of the increment button
-		inc_button[inc_button.length] = [488, 19];
-		inc_button[inc_button.length] = [488, 30];
-		inc_button[inc_button.length] = [488, 39];
-		inc_button[inc_button.length] = [488, 50];
-		inc_button[inc_button.length] = [488, 59];
+		inc_button[inc_button.length] = [540, 8];//x and y pos of the increment button
+		inc_button[inc_button.length] = [575, 8];
+		inc_button[inc_button.length] = [540, 35];
+		inc_button[inc_button.length] = [575, 35];
+		inc_button[inc_button.length] = [540, 62];
+		inc_button[inc_button.length] = [575, 62];
 
 	//dashBoard text
 	var dashBoardTxt = [];
@@ -40,14 +40,14 @@
 		//dashBoardTxt[dashBoardTxt.length] = ['2', 'bold 11px arial', 'left', 308, 32, '2_txt'];
 		dashBoardTxt[dashBoardTxt.length] = [' ', 'bold 11px arial', 'left', 308, 32, '2_txt'];
 		dashBoardTxt[dashBoardTxt.length] = ['Velocity, 0-3 s', 'bold 13px arial', 'left', 365, 13, 'vel_0-3_txt'];
-		dashBoardTxt[dashBoardTxt.length] = ['Velocity, 3-7 s', 'bold 13px arial', 'left', 365, 33, 'vel_3-7_txt'];
-		dashBoardTxt[dashBoardTxt.length] = ['Velocity, 7-10 s', 'bold 13px arial', 'left', 365, 53, 'vel_7-10_txt'];
-		dashBoardTxt[dashBoardTxt.length] = ['m/s', 'bold 13px arial', 'left', 555, 13, 'vel_0-3_ms'];
-		dashBoardTxt[dashBoardTxt.length] = ['m/s', 'bold 13px arial', 'left', 555, 33, 'vel_3-7_ms'];
-		dashBoardTxt[dashBoardTxt.length] = ['m/s', 'bold 13px arial', 'left', 555, 53, 'vel_7-10_ms'];
-		dashBoardTxt[dashBoardTxt.length] = ['0', 'bold 13px arial', 'left', 513, 13, 'vel_val_1'];	//velocity value in 0-3
-		dashBoardTxt[dashBoardTxt.length] = ['0', 'bold 13px arial', 'left', 513, 33, 'vel_val_2'];	//velocity value in 3-7
-		dashBoardTxt[dashBoardTxt.length] = ['0', 'bold 13px arial', 'left', 513, 53, 'vel_val_3'];	//velocity value in 7-10
+		dashBoardTxt[dashBoardTxt.length] = ['Velocity, 3-7 s', 'bold 13px arial', 'left', 365, 40, 'vel_3-7_txt'];
+		dashBoardTxt[dashBoardTxt.length] = ['Velocity, 7-10 s', 'bold 13px arial', 'left', 365, 67, 'vel_7-10_txt'];
+		dashBoardTxt[dashBoardTxt.length] = ['m/s', 'bold 13px arial', 'left', 503, 13, 'vel_0-3_ms'];
+		dashBoardTxt[dashBoardTxt.length] = ['m/s', 'bold 13px arial', 'left', 503, 40, 'vel_3-7_ms'];
+		dashBoardTxt[dashBoardTxt.length] = ['m/s', 'bold 13px arial', 'left', 503, 67, 'vel_7-10_ms'];
+		dashBoardTxt[dashBoardTxt.length] = ['0', 'bold 13px arial', 'left', 475, 13, 'vel_val_1'];	//velocity value in 0-3
+		dashBoardTxt[dashBoardTxt.length] = ['0', 'bold 13px arial', 'left', 475, 40, 'vel_val_2'];	//velocity value in 3-7
+		dashBoardTxt[dashBoardTxt.length] = ['0', 'bold 13px arial', 'left', 475, 67, 'vel_val_3'];	//velocity value in 7-10
 
 	//banner text
 	var bannerContentTxt = [];
@@ -420,7 +420,7 @@
 	//=======================================================
 	function __createIncDecButton(dashBG){
 		var _director = game.getDirector();
-		var incDecBtnImg = new CAAT.Foundation.SpriteImage().initialize( _director.getImage('incre_decre_btn'), 2, 1);
+		var incDecBtnImg = new CAAT.Foundation.SpriteImage().initialize( _director.getImage('incre_decre_btn'), 1, 2);
 
 		var vel_inc_butt1 = new CAAT.Foundation.Actor().
 								setId('velocity_Inc_1').

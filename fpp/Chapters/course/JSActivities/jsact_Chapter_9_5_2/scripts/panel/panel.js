@@ -69,7 +69,7 @@ game.screening = function(director, scene){
 											initialize(director.getImage('incrBgMed'), 1, 1),true).
 											enableEvents(false);
 		aActor.setLocation(510, 38);
-		conBottom.addChild(aActor);	
+		//conBottom.addChild(aActor);	
 		
 		
 		conBottom.setZOrder(conBanner, Number.MIN_VALUE); //z-index for banner

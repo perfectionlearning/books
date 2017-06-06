@@ -1,1 +1,31 @@
-{"cards":[{"lines":[{"type":"title","text":"Write large numbers in scientific notation"}]},{"lines":[{"type":"title","text":"Convert small numbers into scientific notation"}]}],"definitions":[],"secText":["  <b>Lesson:</b>  <b>    <br />  </b>1. Define [OBJ:expsec_a372:scientific notation].<b><br /></b>2. Convert [OBJ:expsec_a373:large numbers into scientific notation].<b><br /></b>3. Work through a sample problem to [OBJ:app_french_fries_question:convert large numbers into scientific notation].<br />4. Convert [OBJ:expsec_a374:small numbers into scientific notation].<b><br /></b>5. Work through a sample problem to [OBJ:app_particle_accelerates_question:convert small numbers into scientific notation].<b><br /></b>6. Multiply and divide powers using the [OBJ:expsec_a371:product and quotient rules].<b><br /></b>7. [OBJ:expsec_a375:Multiply numbers in scientific notation] using the product rule.<b><br /></b>8. [OBJ:expsec_a376:Divide numbers in scientific notation] using the quotient rule.","  <b>In-class assessment:</b>  <b>    <br />  </b>1. [OBJ:qc_37412:Convert] large numbers into scientific notation.<br />2. [OBJ:qc_37413:Convert] small numbers into scientific notation.<br />3. [OBJ:qc_37415:Multiply] numbers in scientific notation.<br />4. [OBJ:qc_37416:Divide] numbers in scientific notation.","  <b>Homework:</b>  <span class=\"KBExternalLink\"><a href=\"assign.html#OHW 3.02\">OHW 3.02</a></span>","  <b>Quick Review:</b>  [OBJ:sum_exponents_power:Power Rules], [OBJ:sum_scientific_notation:Scientific Notation]"],"objNames":["wb_math_largeNumberSN","wb_math_smallNumberSN"]}
+{
+  "cards": [
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Write large numbers in scientific notation"
+        }
+      ]
+    },
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Convert small numbers into scientific notation"
+        }
+      ]
+    }
+  ],
+  "definitions": [],
+  "secText": [
+    "  <b>Lesson:</b>  <b>    <br />  </b>1. Define <a class='pjumpToTopic' href='javascript:void(0)' data-chap='3' data-topic='1' data-subtopic='1' data-subsection='0'>scientific notation</a>.<b><br /></b>2. Convert <a class='pjumpToTopic' href='javascript:void(0)' data-chap='3' data-topic='1' data-subtopic='1' data-subsection='1'>large numbers into scientific notation</a>.<b><br /></b>3. Work through a sample problem to <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='app_french_fries_question'>convert large numbers into scientific notation</a>.<br />4. Convert <a class='pjumpToTopic' href='javascript:void(0)' data-chap='3' data-topic='1' data-subtopic='1' data-subsection='4'>small numbers into scientific notation</a>.<b><br /></b>5. Work through a sample problem to <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='app_particle_accelerates_question'>convert small numbers into scientific notation</a>.<b><br /></b>6. Multiply and divide powers using the <a class='pjumpToTopic' href='javascript:void(0)' data-chap='3' data-topic='1' data-subtopic='2' data-subsection='0'>product and quotient rules</a>.<b><br /></b>7. <a class='pjumpToTopic' href='javascript:void(0)' data-chap='3' data-topic='1' data-subtopic='3' data-subsection='0'>Multiply numbers in scientific notation</a> using the product rule.<b><br /></b>8. <a class='pjumpToTopic' href='javascript:void(0)' data-chap='3' data-topic='1' data-subtopic='3' data-subsection='2'>Divide numbers in scientific notation</a> using the quotient rule.",
+    "  <b>In-class assessment:</b>  <b>    <br />  </b>1. <a class='pjumpToTopic' href='javascript:void(0)' data-chap='3' data-topic='1' data-subtopic='1' data-subsection='2'>Convert</a> large numbers into scientific notation.<br />2. <a class='pjumpToTopic' href='javascript:void(0)' data-chap='3' data-topic='1' data-subtopic='1' data-subsection='6'>Convert</a> small numbers into scientific notation.<br />3. <a class='pjumpToTopic' href='javascript:void(0)' data-chap='3' data-topic='1' data-subtopic='3' data-subsection='1'>Multiply</a> numbers in scientific notation.<br />4. <a class='pjumpToTopic' href='javascript:void(0)' data-chap='3' data-topic='1' data-subtopic='3' data-subsection='3'>Divide</a> numbers in scientific notation.",
+    
+    "  <b>Quick Review:</b> <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='sum_exponents_power'>Power Rules</a>, <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='sum_scientific_notation'>Scientific Notation</a>"
+  ],
+  "objNames": [
+    "wb_math_largeNumberSN",
+    "wb_math_smallNumberSN"
+  ]
+}

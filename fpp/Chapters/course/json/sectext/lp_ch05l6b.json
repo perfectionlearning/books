@@ -1,1 +1,21 @@
-{"cards":[{"lines":[{"type":"title","text":"Set the correct engine force to land the lunar module"}]}],"definitions":[],"secText":["  <b>Lesson:</b>  <b>    <br />  </b>1. [OBJ:actsec_ka50:Explore free-body diagrams] by creating a free-body diagram for an object with forces not acting on a line.<br />2. Work through a sample problem to [OBJ:app_climber_question:solve for the force] acting on an object using a free-body diagram and trigonometric ratios. <br />3. Work through a sample problem to [OBJ:app_eggslide_question:solve for the coefficient of static friction] using a free-body diagram and trigonometric ratios.<br />4. Work through a sample problem to [OBJ:app_crate_question:solve for acceleration] of an object using a free-body diagram and trigonometric ratios.<br />5. Work through a sample problem to [OBJ:app_asteroid_question:solve for force] using vector components and trigonometric ratios.<br />6. [OBJ:actsec_ka45:Land a lunar module] using Newton's laws, free-body diagrams, and trigonometric ratios.","  <b>Homework:</b>  <span class=\"KBInternalLink\"><a href=\"assign.html#OHW 5.06\">OHW 5.06</a></span>","  <b>Quick Review:</b>  [OBJ:sum_freebody_trig:Forces and Trigonometry]"],"objNames":["jsact_Chapter_6_13"]}
+{
+  "cards": [
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Set the correct engine force to land the lunar module"
+        }
+      ]
+    }
+  ],
+  "definitions": [],
+  "secText": [
+    "  <b>Lesson:</b>  <b>    <br />  </b>1. <a class='pjumpToTopic' href='javascript:void(0)' data-chap='5' data-topic='5' data-subtopic='1' data-subsection='0'>Explore free-body diagrams</a> by creating a free-body diagram for an object with forces not acting on a line.<br />2. Work through a sample problem to <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='app_climber_question'>solve for the force</a> acting on an object using a free-body diagram and trigonometric ratios. <br />3. Work through a sample problem to <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='app_eggslide_question'>solve for the coefficient of static friction</a> using a free-body diagram and trigonometric ratios.<br />4. Work through a sample problem to <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='app_crate_question'>solve for acceleration</a> of an object using a free-body diagram and trigonometric ratios.<br />5. Work through a sample problem to <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='app_asteroid_question'>solve for force</a> using vector components and trigonometric ratios.<br />6. <a class='pjumpToTopic' href='javascript:void(0)' data-chap='5' data-topic='5' data-subtopic='1' data-subsection='5'>Land a lunar module</a> using Newton's laws, free-body diagrams, and trigonometric ratios.",
+    
+    "  <b>Quick Review:</b>  <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='sum_freebody_trig'>Forces and Trigonometry</a>"
+  ],
+  "objNames": [
+    "jsact_Chapter_6_13"
+  ]
+}

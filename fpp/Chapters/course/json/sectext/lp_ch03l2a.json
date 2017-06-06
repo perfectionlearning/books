@@ -1,1 +1,31 @@
-{"cards":[{"lines":[{"type":"title","text":"Multiplying numbers in scientific notation"}]},{"lines":[{"type":"title","text":"Dividing numbers in scientific notation"}]}],"definitions":[],"secText":["  <b>Essential Question: </b>  <br />How can we use scientific notation to perform operations on large or small numbers?","  <b>Enduring Understandings:</b>  <b>    <br />  </b>1. [OBJ:expsec_a372:Scientific notation] is used to write both [OBJ:expsec_a373:large] and [OBJ:expsec_a374:small numbers].<b><br /></b>2. The [OBJ:expsec_a371:product and quotient rules] are used to multiply and divide powers.<b><br /></b>3. Numbers in scientific notation can be [OBJ:expsec_a375:multiplied] and [OBJ:expsec_a376:divided] using the product and quotient rules.","  <b>Vocabulary:</b>  [OBJ:expsec_a372:scientific notation], [OBJ:expsec_a371:product rule], [OBJ:expsec_a371:quotient rule], [OBJ:expsec_a375:multiplying numbers in scientific notation], [OBJ:expsec_a376:dividing numbers in scientific notation]","  <b>STEM Skills:</b>  <b>    <br />  </b>1. Review [OBJ:expsec_a354:exponents]."],"objNames":["wb_math_multiplyInSN","wb_math_divideInSN"]}
+{
+  "cards": [
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Multiplying numbers in scientific notation"
+        }
+      ]
+    },
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Dividing numbers in scientific notation"
+        }
+      ]
+    }
+  ],
+  "definitions": [],
+  "secText": [
+    "  <b>Essential Question: </b>  <br />How can we use scientific notation to perform operations on large or small numbers?",
+    "  <b>Enduring Understandings:</b>  <b>    <br />  </b>1. <a class='pjumpToTopic' href='javascript:void(0)' data-chap='3' data-topic='1' data-subtopic='1'>Scientific notation</a> is used to write both <a class='pjumpToTopic' href='javascript:void(0)' data-chap='3' data-topic='1' data-subtopic='1' data-subsection='1'>large</a> and <a class='pjumpToTopic' href='javascript:void(0)' data-chap='3' data-topic='1' data-subtopic='1' data-subsection='4'>small numbers</a>.<b><br /></b>2. The <a class='pjumpToTopic' href='javascript:void(0)' data-chap='3' data-topic='1' data-subtopic='2'>product and quotient rules</a> are used to multiply and divide powers.<b><br /></b>3. Numbers in scientific notation can be <a class='pjumpToTopic' href='javascript:void(0)' data-chap='3' data-topic='1' data-subtopic='3'>multiplied</a> and <a class='pjumpToTopic' href='javascript:void(0)' data-chap='3' data-topic='1' data-subtopic='3' data-subsection='2'>divided</a> using the product and quotient rules.",
+    "  <b>Vocabulary:</b>  <a class='pjumpToTopic' href='javascript:void(0)' data-chap='3' data-topic='1' data-subtopic='1'>scientific notation</a>, <a class='pjumpToTopic' href='javascript:void(0)' data-chap='3' data-topic='1' data-subtopic='2'>product rule</a>, <a class='pjumpToTopic' href='javascript:void(0)' data-chap='3' data-topic='1' data-subtopic='2'>quotient rule</a>, <a class='pjumpToTopic' href='javascript:void(0)' data-chap='3' data-topic='1' data-subtopic='3' data-subsection='0'>multiplying numbers in scientific notation</a>, <a class='pjumpToTopic' href='javascript:void(0)' data-chap='3' data-topic='1' data-subtopic='3' data-subsection='2'>dividing numbers in scientific notation</a>",
+    "  <b>STEM Skills:</b>  <b>    <br />  </b>1. Review <a class='pjumpToTopic' href='javascript:void(0)' data-chap='3' data-topic='0' data-subtopic='1'>exponents</a>."
+  ],
+  "objNames": [
+    "wb_math_multiplyInSN",
+    "wb_math_divideInSN"
+  ]
+}

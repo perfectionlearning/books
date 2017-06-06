@@ -61,7 +61,7 @@ game.screening = function(director, scene){
 		var lbl1 = game.textActor(director, 'Initial speed', '14px Arial', 'left', '#ffffff');
 		lbl1.setLocation(580,25);
 		var lbl2 = game.textActor(director, 'm/s', '12px Arial', 'left', '#ffffff');
-		lbl2.setLocation(635,50);
+		lbl2.setLocation(620,50);
 		conBottom.addChild(lbl1);
 		conBottom.addChild(lbl2);
 		

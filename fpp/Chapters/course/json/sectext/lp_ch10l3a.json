@@ -1,1 +1,44 @@
-{"cards":[{"lines":[{"type":"title","text":"As altitude increases"},{"type":"headline","text":"Pressure, density, temperature decrease"}]},{"lines":[{"type":"title","text":"Surface tension"},{"type":"headline","text":"Contraction of surface of liquid"},{"type":"headline","text":"Due to mutual attraction of molecules"}]}],"definitions":[],"secText":["  <b class=\"object-name\">Supplemental Material: </b>  <span class=\"object-name\">AP</span>","  <b>Essential Question: </b>  <b>    <br />  </b>How can we understand Earth's atmosphere using pressure?","  <b>Enduring Understandings:</b>  <b>    <br />  </b>1. The properties of [OBJ:expsec_j365:Earth's atmosphere], such as air density, and pressure, change as altitude increases.<br />2. The absolute [OBJ:expsec_j368:pressure] when submerged under a liquid on Earth can on be calculated by summing the pressure due to a liquid and the atmospheric pressure on Earth.<br />3. [OBJ:expsec_j370:Surface tension] is due to the attraction of atoms and molecules at the surface of a liquid.","  <b>Vocabulary:</b>  [OBJ:expsec_j365:atmosphere], [OBJ:expsec_j366:atmospheric pressure], [OBJ:expsec_j366:standard atmospheric pressure], [OBJ:pwsec_j367:barometer], [OBJ:expsec_j370:surface tension]","  <b>STEM Skills:</b>  <b>    <br />  </b>1. Review [OBJ:expsec_c372:freefall acceleration]."],"objNames":["wb_atmospheric_pressure_concept","wb_surface_tension_concepts"]}
+{
+  "cards": [
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "As altitude increases"
+        },
+        {
+          "type": "headline",
+          "text": "Pressure, density, temperature decrease"
+        }
+      ]
+    },
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Surface tension"
+        },
+        {
+          "type": "headline",
+          "text": "Contraction of surface of liquid"
+        },
+        {
+          "type": "headline",
+          "text": "Due to mutual attraction of molecules"
+        }
+      ]
+    }
+  ],
+  "definitions": [],
+  "secText": [
+    "  <b class=\"object-name\">Supplemental Material: </b>  <span class=\"object-name\">AP</span>",
+    "  <b>Essential Question: </b>  <b>    <br />  </b>How can we understand Earth's atmosphere using pressure?",
+    "  <b>Enduring Understandings:</b>  <b>    <br />  </b>1. The properties of <a class='pjumpToTopic' href='javascript:void(0)' data-chap='10' data-topic='2' data-subtopic='1' data-subsection='0'>Earth's atmosphere</a>, such as air density, and pressure, change as altitude increases.<br />2. The absolute <a class='pjumpToTopic' href='javascript:void(0)' data-chap='10' data-topic='2' data-subtopic='2' data-subsection='0'>pressure</a> when submerged under a liquid on Earth can on be calculated by summing the pressure due to a liquid and the atmospheric pressure on Earth.<br />3. <a class='pjumpToTopic' href='javascript:void(0)' data-chap='10' data-topic='2' data-subtopic='3' data-subsection='0'>Surface tension</a> is due to the attraction of atoms and molecules at the surface of a liquid.",
+    "  <b>Vocabulary:</b>  <a class='pjumpToTopic' href='javascript:void(0)' data-chap='10' data-topic='2' data-subtopic='1' data-subsection='0'>atmosphere</a>, <a class='pjumpToTopic' href='javascript:void(0)' data-chap='10' data-topic='2' data-subtopic='1' data-subsection='1'>atmospheric pressure</a>, <a class='pjumpToTopic' href='javascript:void(0)' data-chap='10' data-topic='2' data-subtopic='1' data-subsection='1'>standard atmospheric pressure</a>, <a class='pjumpToTopic' href='javascript:void(0)' data-chap='10' data-topic='2' data-subtopic='1' data-subsection='2'>barometer</a>, <a class='pjumpToTopic' href='javascript:void(0)' data-chap='10' data-topic='2' data-subtopic='3' data-subsection='0'>surface tension</a>",
+    "  <b>STEM Skills:</b>  <b>    <br />  </b>1. Review <a class='pjumpToTopic' href='javascript:void(0)' data-chap='2' data-topic='3' data-subtopic='1' data-subsection='0'>freefall acceleration</a>."
+  ],
+  "objNames": [
+    "wb_atmospheric_pressure_concept",
+    "wb_surface_tension_concepts"
+  ]
+}

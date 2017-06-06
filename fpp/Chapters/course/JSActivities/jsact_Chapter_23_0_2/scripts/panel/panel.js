@@ -16,9 +16,9 @@
 	var dashBoardTxt = [];
 		
 		dashBoardTxt[dashBoardTxt.length] = ['Charge on putter', 			'bold 14px Arial', 'left', 330, 30, 1, '#fff'];//Text, font_style, alignment, xPos, yPos, id
-		dashBoardTxt[dashBoardTxt.length] = [String.fromCharCode(215)+' (1.60  '+String.fromCharCode(215)+' 10', 			'bold 14px Arial', 'left', 537, 30, 2, '#fff'];//Text, font_style, alignment, xPos, yPos, id
-		dashBoardTxt[dashBoardTxt.length] = [String.fromCharCode(45)+'19','10px Arial', 'left', 620, 24, 3, '#fff'];//Text, font_style, alignment, xPos, yPos, id
-		dashBoardTxt[dashBoardTxt.length] = [' C)', 			'bold 14px Arial', 'left', 635, 30, 2, '#fff'];//Text, font_style, alignment, xPos, yPos, id
+		dashBoardTxt[dashBoardTxt.length] = [String.fromCharCode(215)+' (1.60  '+String.fromCharCode(215)+' 10', 			'bold 14px Arial', 'left', 487, 30, 2, '#fff'];//Text, font_style, alignment, xPos, yPos, id
+		dashBoardTxt[dashBoardTxt.length] = [String.fromCharCode(45)+'19','10px Arial', 'left', 570, 24, 3, '#fff'];//Text, font_style, alignment, xPos, yPos, id
+		dashBoardTxt[dashBoardTxt.length] = [' C)', 			'bold 14px Arial', 'left', 580, 30, 2, '#fff'];//Text, font_style, alignment, xPos, yPos, id
 		dashBoardTxt[dashBoardTxt.length] = ['Ball to putter distance', 	'bold 14px Arial', 'left', 30,  15, 4, '#fff'];//Text, font_style, alignment, xPos, yPos, id
 		dashBoardTxt[dashBoardTxt.length] = ['0.238 m', 					'bold 14px Arial', 'left', 200, 15, 'IncDecputterTxt', '#fff'];
 		dashBoardTxt[dashBoardTxt.length] = ['Charge on ball     +1.60 '+String.fromCharCode(215)+' 10', 	'bold 14px Arial', 'left', 30,  35, 5, '#fff'];

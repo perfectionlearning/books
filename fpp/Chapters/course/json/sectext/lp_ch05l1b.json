@@ -1,1 +1,22 @@
-{"cards":[{"lines":[{"type":"title","text":"Force, mass, and acceleration"}]}],"definitions":[],"secText":["  <b>Lesson:</b>  <b>    <br />  </b>1. Explore force, mass, and acceleration by [OBJ:actsec_ka47:piloting a helicopter].<br />2. Define [OBJ:expsec_e754:force] and observe examples of force.<br />3. Define and calculate [OBJ:expsec_e756:net force].<br />4. [OBJ:actsec_ka46:Explore net force] using forces acting on balls.<br />5. Get to know [OBJ:expsec_e757:Sir Isaac Newton].<br />6. Define [OBJ:expsec_e758:Newton's first law].<br />7. [OBJ:ppsec_e759:Observe real-world examples] of Newton's first law.","  <b>In-class assessment:</b>  <b>    <br />  </b>1. [OBJ:qc_37445:Calculate] net force.","  <b>Homework:</b>  <span class=\"KBInternalLink\"><a href=\"assign.html#OHW 5.01\">OHW 5.01</a></span>","  <b>Quick Review:</b>  [OBJ:sum_force_basics:Forces], [OBJ:sum_newton_laws_first:Newton's First Law]"],"objNames":["jsact_Chapter_05_0"]}
+{
+  "cards": [
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Force, mass, and acceleration"
+        }
+      ]
+    }
+  ],
+  "definitions": [],
+  "secText": [
+    "  <b>Lesson:</b>  <b>    <br />  </b>1. Explore force, mass, and acceleration by <a class='pjumpToTopic' href='javascript:void(0)' data-chap='5' data-topic='0' data-subtopic='1' data-subsection='0'>piloting a helicopter</a>.<br />2. Define <a class='pjumpToTopic' href='javascript:void(0)' data-chap='5' data-topic='0' data-subtopic='1' data-subsection='1'>force</a> and observe examples of force.<br />3. Define and calculate <a class='pjumpToTopic' href='javascript:void(0)' data-chap='5' data-topic='0' data-subtopic='2' data-subsection='0'>net force</a>.<br />4. <a class='pjumpToTopic' href='javascript:void(0)' data-chap='5' data-topic='0' data-subtopic='2' data-subsection='1'>Explore net force</a> using forces acting on balls.<br />5. Get to know <a class='pjumpToTopic' href='javascript:void(0)' data-chap='5' data-topic='0' data-subtopic='3' data-subsection='0'>Sir Isaac Newton</a>.<br />6. Define <a class='pjumpToTopic' href='javascript:void(0)' data-chap='5' data-topic='0' data-subtopic='3' data-subsection='1'>Newton's first law</a>.<br />7. <a class='pjumpToTopic' href='javascript:void(0)' data-chap='5' data-topic='0' data-subtopic='3' data-subsection='2'>Observe real-world examples</a> of Newton's first law.",
+    "  <b>In-class assessment:</b>  <b>    <br />  </b>1. <a class='pjumpToTopic' href='javascript:void(0)' data-chap='5' data-topic='0' data-subtopic='2' data-subsection='2'>Calculate</a> net force.",
+    
+    "  <b>Quick Review:</b>  <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='sum_force_basics'>Forces</a>, <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='sum_newton_laws_first'>Newton's First Law</a>"
+  ],
+  "objNames": [
+    "jsact_Chapter_05_0"
+  ]
+}

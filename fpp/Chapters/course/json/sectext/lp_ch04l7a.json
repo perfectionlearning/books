@@ -1,1 +1,47 @@
-{"cards":[{"lines":[{"type":"title","text":"Converting vectors from components to polar"},{"type":"headline","text":"  <math>    <mrow>      <mi>θ</mi>      <mo>=</mo>      <mi>arctan</mi>      <mo> </mo>      <mrow>        <mo>(</mo>        <mrow>          <mfrac linethickness=\"thin\">            <mrow>              <msub>                <mi>r</mi>                <mtext>y</mtext>              </msub>            </mrow>            <mrow>              <msub>                <mi>r</mi>                <mtext>x</mtext>              </msub>            </mrow>          </mfrac>        </mrow>        <mo>)</mo>      </mrow>    </mrow>  </math>"},{"type":"headline","text":"  <math>    <mrow>      <mi>r</mi>      <mo>=</mo>      <mtext> </mtext>      <msqrt>        <mrow>          <msup>            <mrow>              <mrow>                <mo>(</mo>                <mrow>                  <msub>                    <mi>r</mi>                    <mtext>x</mtext>                  </msub>                </mrow>                <mo>)</mo>              </mrow>            </mrow>            <mn>2</mn>          </msup>          <mo>+</mo>          <msup>            <mrow>              <mrow>                <mo>(</mo>                <mrow>                  <msub>                    <mi>r</mi>                    <mtext>y</mtext>                  </msub>                </mrow>                <mo>)</mo>              </mrow>            </mrow>            <mn>2</mn>          </msup>        </mrow>      </msqrt>    </mrow>  </math>"}]},{"lines":[{"type":"title","text":"Pythagorean theorem"},{"type":"headline","text":"Applies to right triangles"},{"type":"headline","text":"Theorem: <i>a</i><sup class=\"\">2</sup> + <i>b</i><sup class=\"\">2</sup> = <i>c</i><sup class=\"\">2</sup>"}]}],"definitions":[],"secText":["  <b>Supplemental Material:</b> Advanced Math","  <b>Essential Question: </b>  <b>    <br />  </b>How can we convert from rectangular form to polar form and vice versa?","  <b>Enduring Understandings:</b>  <b>    <br />  </b>1. To [OBJ:expsec_d495:convert from rectangular form to polar form], use the Pythagorean theorem to find the angle between the <i>x</i>-axis and vector and the vector magnitude.<b><br /></b>2. To [OBJ:expsec_d4955:convert from polar form to rectangular form], use trigonometric functions to find the <i>x</i>- and <i>y</i>-coordinates.","  <b>STEM Skills:</b>  <b>    <br />  </b>1. Review [OBJ:expsec_d466:vector components].<b><br /></b>2. Review the [OBJ:expsec_d490:Pythagorean theorem]."],"objNames":["wb_math_components_to_polar_another","wb_math_pythag_theorem_defined"]}
+{
+  "cards": [
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Converting vectors from components to polar"
+        },
+        {
+          "type": "headline",
+          "text": "  <math>    <mrow>      <mi>θ</mi>      <mo>=</mo>      <mi>arctan</mi>      <mo> </mo>      <mrow>        <mo>(</mo>        <mrow>          <mfrac linethickness=\"thin\">            <mrow>              <msub>                <mi>r</mi>                <mtext>y</mtext>              </msub>            </mrow>            <mrow>              <msub>                <mi>r</mi>                <mtext>x</mtext>              </msub>            </mrow>          </mfrac>        </mrow>        <mo>)</mo>      </mrow>    </mrow>  </math>"
+        },
+        {
+          "type": "headline",
+          "text": "  <math>    <mrow>      <mi>r</mi>      <mo>=</mo>      <mtext> </mtext>      <msqrt>        <mrow>          <msup>            <mrow>              <mrow>                <mo>(</mo>                <mrow>                  <msub>                    <mi>r</mi>                    <mtext>x</mtext>                  </msub>                </mrow>                <mo>)</mo>              </mrow>            </mrow>            <mn>2</mn>          </msup>          <mo>+</mo>          <msup>            <mrow>              <mrow>                <mo>(</mo>                <mrow>                  <msub>                    <mi>r</mi>                    <mtext>y</mtext>                  </msub>                </mrow>                <mo>)</mo>              </mrow>            </mrow>            <mn>2</mn>          </msup>        </mrow>      </msqrt>    </mrow>  </math>"
+        }
+      ]
+    },
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Pythagorean theorem"
+        },
+        {
+          "type": "headline",
+          "text": "Applies to right triangles"
+        },
+        {
+          "type": "headline",
+          "text": "Theorem: <i>a</i><sup class=\"\">2</sup> + <i>b</i><sup class=\"\">2</sup> = <i>c</i><sup class=\"\">2</sup>"
+        }
+      ]
+    }
+  ],
+  "definitions": [],
+  "secText": [
+    "  <b>Supplemental Material:</b> Advanced Math",
+    "  <b>Essential Question: </b>  <b>    <br />  </b>How can we convert from rectangular form to polar form and vice versa?",
+    "  <b>Enduring Understandings:</b>  <b>    <br />  </b>1. To <a class='pjumpToTopic' href='javascript:void(0)' data-chap='4' data-topic='6' data-subtopic='1'>convert from rectangular form to polar form</a>, use the Pythagorean theorem to find the angle between the <i>x</i>-axis and vector and the vector magnitude.<b><br /></b>2. To <a class='pjumpToTopic' href='javascript:void(0)' data-chap='4' data-topic='6' data-subtopic='2'>convert from polar form to rectangular form</a>, use trigonometric functions to find the <i>x</i>- and <i>y</i>-coordinates.",
+    "  <b>STEM Skills:</b>  <b>    <br />  </b>1. Review <a class='pjumpToTopic' href='javascript:void(0)' data-chap='4' data-topic='0' data-subtopic='2'>vector components</a>.<b><br /></b>2. Review the <a class='pjumpToTopic' href='javascript:void(0)' data-chap='4' data-topic='2' data-subtopic='3'>Pythagorean theorem</a>."
+  ],
+  "objNames": [
+    "wb_math_components_to_polar_another",
+    "wb_math_pythag_theorem_defined"
+  ]
+}

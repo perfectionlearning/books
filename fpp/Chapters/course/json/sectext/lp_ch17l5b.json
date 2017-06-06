@@ -1,1 +1,22 @@
-{"cards":[{"lines":[{"type":"title","text":"Magnetic force on charge"},{"type":"headline","text":"  <i>F</i> = <i>q</i><i>vB</i> sin <i><math xmlns:xsl=\"http://www.w3.org/1999/XSL/Transform\"><mi>θ</mi></math></i>"},{"type":"headline","text":"  <span class=\"math\">    <i>F</i> = force,</span>  <span class=\"math\">    <i>q</i> = charge,</span>  <span class=\"math\">    <i>v</i> = velocity,</span>  <span class=\"math\">    <i>B</i> = magnetic field,</span>  <span class=\"math\">    <i>      <math xmlns:xsl=\"http://www.w3.org/1999/XSL/Transform\">        <mi>θ</mi>      </math>    </i> = angle between <i>v</i> and <i>B</i></span>"}]}],"definitions":[],"secText":["  <b>Lesson:</b>  <b>    <br />  </b>1. [OBJ:expsec_45nm:Calculate the force] of a charge moving through a magnetic field when the velocity is not perpendicular to the magnetic field. Calculate the force of a current-carrying wire when the magnetic field is not perpendicular to the force.<br />2. Calculate the [OBJ:expsec_hj3l:magnetic flux] acting at an angle to the magnetic field.","  <b>In-class assessment:</b>  <b>    <br />  </b>1. [OBJ:qc_38624:Calculate] the force on a current-carrying wire when the force is not perpendicular to the magnetic field.<br />2. [OBJ:qc_38625:Calculate] the magnetic flux acting at an angle to the magnetic field.","  <b>Homework:</b>  <span class=\"KBInternalLink\"><a href=\"assign.html#OHW 17.05\">OHW 17.05</a></span>","  <b>Quick Review:</b>  [OBJ:sum_b_force_trig:Magnetic Force with Angle], [OBJ:sum_flux_angle:Flux and Angle]"],"objNames":["wb_trig_bfield_charge"]}
+{
+	"cards": [{
+			"lines": [{
+					"type": "title",
+					"text": "Magnetic force on charge"
+				}, {
+					"type": "headline",
+					"text": "  <i>F</i> = <i>q</i><i>vB</i> sin <i><math xmlns:xsl=\"http://www.w3.org/1999/XSL/Transform\"><mi>θ</mi></math></i>"
+				}, {
+					"type": "headline",
+					"text": "  <span class=\"math\">    <i>F</i> = force,</span>  <span class=\"math\">    <i>q</i> = charge,</span>  <span class=\"math\">    <i>v</i> = velocity,</span>  </br><span class=\"math\">    <i>B</i> = magnetic field,</span>  </br><span class=\"math\">    <i>      <math xmlns:xsl=\"http://www.w3.org/1999/XSL/Transform\">        <mi>θ</mi>      </math>    </i> = angle between <i>v</i> and <i>B</i></span>"
+				}
+			]
+		}
+	],
+	"definitions": [],
+	"secText": ["  <b>Lesson:</b>  <b>    <br />  </b>1. <a class='pjumpToTopic' href='javascript:void(0)' data-chap='17' data-topic='4' data-subtopic='1' data-subsection='0'>Calculate the force</a> of a charge moving through a magnetic field when the velocity is not perpendicular to the magnetic field. Calculate the force of a current-carrying wire when the magnetic field is not perpendicular to the force.<br />2. Calculate the <a class='pjumpToTopic' href='javascript:void(0)' data-chap='17' data-topic='4' data-subtopic='2' data-subsection='0'>magnetic flux</a> acting at an angle to the magnetic field.", 
+	"  <b>In-class assessment:</b>  <b>    <br />  </b>1. <a class='pjumpToTopic' href='javascript:void(0)' data-chap='17' data-topic='4' data-subtopic='1' data-subsection='1'>Calculate</a> the force on a current-carrying wire when the force is not perpendicular to the magnetic field.<br />2. <a class='pjumpToTopic' href='javascript:void(0)' data-chap='17' data-topic='4' data-subtopic='2' data-subsection='1'>Calculate</a> the magnetic flux acting at an angle to the magnetic field.", 
+	
+	"  <b>Quick Review:</b>  <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='sum_b_force_trig'>Magnetic Force with Angle</a>, <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='sum_flux_angle'>Flux and Angle</a>"],
+	"objNames": ["wb_trig_bfield_charge"]
+}

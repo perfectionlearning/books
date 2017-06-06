@@ -12,15 +12,15 @@
 		dashBoardEle[dashBoardEle.length] = ['well100',  630,  0];
 		dashBoardEle[dashBoardEle.length] = ['wellleft', 430,  0];
 		dashBoardEle[dashBoardEle.length] = ['wellright',725,  0];
-		dashBoardEle[dashBoardEle.length] = ['incDecMed',550,  32];
+		//dashBoardEle[dashBoardEle.length] = ['incDecMed',550,  32];
 		dashBoardEle[dashBoardEle.length] = ['bottom',   5,    80];
 
 
 	//dashBoard text
 	var dashBoardTxt = [], bannerImg = null, bannerContainer = null, incDecTimer = null;
 		dashBoardTxt[dashBoardTxt.length] = ['Charge value', 'bold 13px Arial', 'left', 449, 440+35, 0];//Text, font_style, alignment, xPos, yPos, id
-		dashBoardTxt[dashBoardTxt.length] = ['nC', 			 'bold 13px Arial', 'left', 610, 440+35, 0];
-		dashBoardTxt[dashBoardTxt.length] = ['1.00',         'bold 13px Arial', 'left', 573, 440+35 , 0];
+		dashBoardTxt[dashBoardTxt.length] = ['nC', 			 'bold 13px Arial', 'left', 580, 440+35, 0];
+		dashBoardTxt[dashBoardTxt.length] = ['1.00',         'bold 13px Arial', 'left', 543, 440+35 , 0];
 
 	//banner text
 	var bannerContentTxt = [];
@@ -144,17 +144,17 @@
 	//=======================================================
 	game.__createIncDecButton = function( dashBG ){
 		var _director = game.getDirector();
-		var incDecBtnImg = new CAAT.Foundation.SpriteImage().initialize( _director.getImage('incDecBtn'), 2, 1);
+		var incDecBtnImg = new CAAT.Foundation.SpriteImage().initialize( _director.getImage('incDecBtn'), 1, 2);
 		var chargeIncBtn = new CAAT.Foundation.Actor().
 								setId('charge_Inc').
 								setAsButton(incDecBtnImg.getRef(), 0, 0, 0, 0, function(button){
 									game.incDecHandler(this);
-								}).setLocation(545, 440+32);
+								}).setLocation(610, 462);
 		var chargeDecBtn = new CAAT.Foundation.Actor().
 								setId('charge_Dec').
 								setAsButton(incDecBtnImg.getRef(), 1, 1, 1, 1, function(button){
 									game.incDecHandler(this);
-								}).setLocation(545, 440+41);
+								}).setLocation(609, 490);
 		dashBG.addChild(chargeIncBtn);
 		dashBG.addChild(chargeDecBtn);
 		//the increment and decrement buttons MouseDown functions are called when long press

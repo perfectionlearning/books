@@ -1,1 +1,51 @@
-{"cards":[{"lines":[{"type":"title","text":"Atmospheric pressure "},{"type":"headline","text":"The experiment:"},{"type":"bullet","text":"Near vacuum inside sphere"},{"type":"bullet","text":"Horses pull against air pressure"},{"type":"headline","text":"The result:"},{"type":"bullet","text":"Air pressure creates great force!"}]},{"lines":[{"type":"title","text":"Atmospheric pressure = 101,325 pascals"}]}],"definitions":[],"secText":["  <b>Lesson:</b>  <b>    <br />  </b>1. Determine the changes that occur in [OBJ:expsec_j365:Earth's atmosphere] due to altitude.<br />2. Describe the [OBJ:expsec_j366:experiment] that tested atmospheric pressure.<br />3. Determine how atmospheric pressure can be [OBJ:pwsec_j367:measured].<br />4. Calculate [OBJ:expsec_j368:combined pressures].<br />5. Define and identify examples of [OBJ:expsec_j370:surface tension].","  <b>In-class assessment:</b>  <b>    <br />  </b>1. [OBJ:qc_34963:Calculate] combined pressures.","  <b>Homework:</b>  <span class=\"KBInternalLink\"><a href=\"assign.html#OHW 10.03\">OHW 10.03</a></span>","  <b>Quick Review:</b>  [OBJ:sum_pressures_sum:Earth's Atmosphere]"],"objNames":["wb_air_pressure_concept","wb_pressures_sum1"]}
+{
+  "cards": [
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Atmospheric pressure "
+        },
+        {
+          "type": "headline",
+          "text": "The experiment:"
+        },
+        {
+          "type": "bullet",
+          "text": "Near vacuum inside sphere"
+        },
+        {
+          "type": "bullet",
+          "text": "Horses pull against air pressure"
+        },
+        {
+          "type": "headline",
+          "text": "The result:"
+        },
+        {
+          "type": "bullet",
+          "text": "Air pressure creates great force!"
+        }
+      ]
+    },
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Atmospheric pressure = 101,325 pascals"
+        }
+      ]
+    }
+  ],
+  "definitions": [],
+  "secText": [
+    "  <b>Lesson:</b>  <b>    <br />  </b>1. Determine the changes that occur in <a class='pjumpToTopic' href='javascript:void(0)' data-chap='10' data-topic='2' data-subtopic='1' data-subsection='0'>Earth's atmosphere</a> due to altitude.<br />2. Describe the <a class='pjumpToTopic' href='javascript:void(0)' data-chap='10' data-topic='2' data-subtopic='1' data-subsection='1'>experiment</a> that tested atmospheric pressure.<br />3. Determine how atmospheric pressure can be <a class='pjumpToTopic' href='javascript:void(0)' data-chap='10' data-topic='2' data-subtopic='1' data-subsection='2'>measured</a>.<br />4. Calculate <a class='pjumpToTopic' href='javascript:void(0)' data-chap='10' data-topic='2' data-subtopic='2' data-subsection='0'>combined pressures</a>.<br />5. Define and identify examples of <a class='pjumpToTopic' href='javascript:void(0)' data-chap='10' data-topic='2' data-subtopic='3' data-subsection='0'>surface tension</a>",
+    "  <b>In-class assessment:</b>  <b>    <br />  </b>1. <a class='pjumpToTopic' href='javascript:void(0)' data-chap='10' data-topic='2' data-subtopic='2' data-subsection='1'>Calculate</a> combined pressures.",
+    
+    "  <b>Quick Review:</b>  <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='sum_pressures_sum'>Earth's Atmosphere</a>"
+  ],
+  "objNames": [
+    "wb_air_pressure_concept",
+    "wb_pressures_sum1"
+  ]
+}

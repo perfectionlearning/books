@@ -29,7 +29,7 @@ game.StartGame = function(){
 		game.mainEleImg[game.mainEleImg.length] = ['line',  		344,   200];//image_id, image_X_Position, image_Y_Position
 		game.mainEleImg[game.mainEleImg.length] = ['mark',  		224,   260];//image_id, image_X_Position, image_Y_Position
 		game.mainEleImg[game.mainEleImg.length] = ['delta',  		180,   270];//image_id, image_X_Position, image_Y_Position
-		game.mainEleImg[game.mainEleImg.length] = ['incrBgMed',  	255,   280];//image_id, image_X_Position, image_Y_Position
+		//game.mainEleImg[game.mainEleImg.length] = ['incrBgMed',  	255,   280];//image_id, image_X_Position, image_Y_Position
 	
 		var assets = [
 			{id:'background',   	url:game.actPath+'background.gif' },	
@@ -118,17 +118,17 @@ game.__createMainTxt = function(){
 }
 
 game.__createIncDecButton =function(){
-	var incDecBtnImg = new CAAT.Foundation.SpriteImage().initialize( game._director.getImage('incre_decre_btn'), 2, 1);
+	var incDecBtnImg = new CAAT.Foundation.SpriteImage().initialize( game._director.getImage('incre_decre_btn'), 1, 2);
 	var IncBtn = new CAAT.Foundation.Actor().
 							setId('Inc').
 							setAsButton(incDecBtnImg.getRef(), 0, 0, 0, 0, function(button){
 								game.incDecHandler(this);
-							}).setLocation(247, 280);
+							}).setLocation(247, 300);
 	var DecBtn = new CAAT.Foundation.Actor().
 							setId('Dec').
 							setAsButton(incDecBtnImg.getRef(), 1, 1, 1, 1, function(button){
 								game.incDecHandler(this);
-							}).setLocation(247, 289);
+							}).setLocation(277, 300);
 							
 	game.mainPanel.addChild(IncBtn);
 	game.mainPanel.addChild(DecBtn);

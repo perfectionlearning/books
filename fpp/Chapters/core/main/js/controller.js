@@ -159,8 +159,8 @@
           loadScreen();
         }
 
-      } else if(data.type == "search"){
-        $(document).trigger("showSearchBox", {searchKey:data.searchKey});
+      } else if (data.type == "search") {
+        $(document).trigger("showSearchBox", {searchKey: data.searchKey});
       } else {
         view.loadScreen({type: data.type, data: data})
       }
@@ -186,7 +186,7 @@
           if (p.section == 1) {
             screenNo = "";
           } else {
-            screenNo = "Lesson" + (Number(p.section) - 1) + "." + (chr);
+            screenNo = "Lesson " + (Number(p.section) - 1) + "." + (chr);
           }
         }
       } else {

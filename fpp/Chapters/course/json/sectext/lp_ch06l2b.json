@@ -1,1 +1,42 @@
-{"cards":[{"lines":[{"type":"title","text":"Work equation when force is at an angle"},{"type":"headline","text":"  <i>F</i> cos <i><math xmlns:xsl=\"http://www.w3.org/1999/XSL/Transform\"><mi>θ</mi></math></i> = component parallel to displacement"}]},{"lines":[{"type":"title","text":"Work: Changing force "},{"type":"headline","text":"Equals area under force-displacement curve"},{"type":"headline","text":"Rectangles approximate area"}]}],"definitions":[],"secText":["  <b>Lesson:</b>  <b>    <br />  </b>1. Calculate the [OBJ:expsec_f957:work] done on an object when the force and displacement are not parallel.<br />2. Work through a sample problem to [OBJ:app_inclined_plane_saves_work_question:calculate the work] done on an object being pushed up a slope.<br />3. Prove that work can be [OBJ:expsec_f958:negative].<br />4. Determine how to calculate the amount of [OBJ:expsec_f960:work done on an object] when the force on the object changes.","  <b>Homework:</b>  <span class=\"KBInternalLink\"><a href=\"assign.html#OHW 6.02\">OHW 6.02</a></span>","  <b>Quick Review:</b>  [OBJ:sum_work_angle:Work: Force at Angle to Displacement]"],"objNames":["wb_work_trig_equation","wb_work_changing_force"]}
+{
+  "cards": [
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Work equation when force is at an angle"
+        },
+        {
+          "type": "headline",
+          "text": "  <i>F</i> cos <i><math xmlns:xsl=\"http://www.w3.org/1999/XSL/Transform\"><mi>θ</mi></math></i> = component parallel to displacement"
+        }
+      ]
+    },
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Work: Changing force "
+        },
+        {
+          "type": "headline",
+          "text": "Equals area under force-displacement curve"
+        },
+        {
+          "type": "headline",
+          "text": "Rectangles approximate area"
+        }
+      ]
+    }
+  ],
+  "definitions": [],
+  "secText": [
+    "  <b>Lesson:</b>  <b>    <br />  </b>1. Calculate the <a class='pjumpToTopic' href='javascript:void(0)' data-chap='6' data-topic='1' data-subtopic='1' data-subsection='0'>work</a> done on an object when the force and displacement are not parallel.<br />2. Work through a sample problem to <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='app_inclined_plane_saves_work_question'>calculate the work</a> done on an object being pushed up a slope.<br />3. Prove that work can be <a class='pjumpToTopic' href='javascript:void(0)' data-chap='6' data-topic='1' data-subtopic='2' data-subsection='0'>negative</a>.<br />4. Determine how to calculate the amount of <a class='pjumpToTopic' href='javascript:void(0)' data-chap='6' data-topic='1' data-subtopic='3' data-subsection='0'>work done on an object</a> when the force on the object changes.",
+    
+    "  <b>Quick Review:</b>  <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='sum_work_angle'>Work: Force at Angle to Displacement</a>"
+  ],
+  "objNames": [
+    "wb_work_trig_equation",
+    "wb_work_changing_force"
+  ]
+}

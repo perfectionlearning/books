@@ -1,1 +1,27 @@
-{"cards":[{"lines":[{"type":"title","text":"Variables in mirror equations"},{"type":"headline","text":"Interpretation of signs"}]}],"definitions":[],"secText":["  <b class=\"object-name\">Supplemental Material: </b>  <span class=\"object-name\">AP</span>","  <b>Essential Question: </b>  <b>    <br />  </b>How can we quantify the distances, focal lengths and magnifications of objects and images reflected in both concave and convex mirrors?","  <b>Enduring Understandings:</b>  <b>    <br />  </b>1. The reciprocal of the [OBJ:expsec_t577:focal length] is equal to the reciprocal of the image distance plus the reciprocal of the object distance.<br />2. The [OBJ:expsec_t579:magnification] of an object is equal to the image height divided by the object height or the negative of the image distance from the midpoint of the mirror divided by the object distance from the midpoint of the mirror.<br />3. The [OBJ:expsec_t575:focal length of a concave mirror] can be calculated by dividing the radius of curvature by two. The [OBJ:expsec_t575:focal length of a convex mirror] can be calculated by dividing the negative radius of curvature by two.","  <b>Vocabulary:</b>  [OBJ:expsec_t579:magnification]","  <b>STEM Skills:</b>  <b>    <br />  </b>1. Review reciprocal."],"objNames":["wb_table_mirror_equation1"]}
+{
+  "cards": [
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Variables in mirror equations"
+        },
+        {
+          "type": "headline",
+          "text": "Interpretation of signs"
+        }
+      ]
+    }
+  ],
+  "definitions": [],
+  "secText": [
+    "  <b class=\"object-name\">Supplemental Material: </b>  <span class=\"object-name\">AP</span>",
+    "  <b>Essential Question: </b>  <b>    <br />  </b>How can we quantify the distances, focal lengths and magnifications of objects and images reflected in both concave and convex mirrors?",
+    "  <b>Enduring Understandings:</b>  <b>    <br />  </b>1. The reciprocal of the <a class='pjumpToTopic' href='javascript:void(0)' data-chap='20' data-topic='2' data-subtopic='1' data-subsection='1'>focal length</a> is equal to the reciprocal of the image distance plus the reciprocal of the object distance.<br />2. The <a class='pjumpToTopic' href='javascript:void(0)' data-chap='20' data-topic='2' data-subtopic='2' data-subsection='0'>magnification</a> of an object is equal to the image height divided by the object height or the negative of the image distance from the midpoint of the mirror divided by the object distance from the midpoint of the mirror.<br />3. The <a class='pjumpToTopic' href='javascript:void(0)' data-chap='20' data-topic='2' data-subtopic='3' data-subsection='0'>focal length of a concave mirror</a> can be calculated by dividing the radius of curvature by two. The <a class='pjumpToTopic' href='javascript:void(0)' data-chap='20' data-topic='2' data-subtopic='3' data-subsection='0'>focal length of a convex mirror</a> can be calculated by dividing the negative radius of curvature by two.",
+    "  <b>Vocabulary:</b>  <a class='pjumpToTopic' href='javascript:void(0)' data-chap='20' data-topic='2' data-subtopic='2' data-subsection='0'>magnification</a>",
+    "  <b>STEM Skills:</b>  <b>    <br />  </b>1. Review reciprocal."
+  ],
+  "objNames": [
+    "wb_table_mirror_equation1"
+  ]
+}

@@ -49,7 +49,7 @@ game.StartGame = function(){
 		{id:'buttons',     url:game.sharedPath+'buttons.png' },
 
 		//Banner Image
-		{id:'banner',      url:game.actPath+'banner.png' }
+		{id:'banner',      url:game.actPath+'banner.png' }		
 	];
 
 	// Start the game.  Loads the assets, creates the canvas, and starts it all running.

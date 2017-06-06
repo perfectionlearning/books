@@ -1,1 +1,39 @@
-{"cards":[{"lines":[{"type":"title","text":"Total internal reflection"},{"type":"headline","text":"No light leaves material "},{"type":"headline","text":"Light reflects, not refracts"}]},{"lines":[{"type":"title","text":"Critical angle equation"}]}],"definitions":[],"secText":["  <b>Essential Question: </b>  <b>    <br />  </b>What causes total internal reflection?","  <b>Enduring Understandings:</b>  <b>    <br />  </b>1. The sine of the [OBJ:expsec_u266:critical angle] needed for [OBJ:expsec_u265:total internal reflection] is equal to the refraction index of the refracted material divided by the refraction index of the incident material.","  <b>Vocabulary:</b>  [OBJ:expsec_u265:total internal reflection], [OBJ:expsec_u266:critical angle]","  <b>STEM Skills:</b>  <b>    <br />  </b>1. Review [OBJ:expsec_d477:trigonometric functions]."],"objNames":["wb_total_internal_concepts","wb_critical_angle_equation"]}
+{
+  "cards": [
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Total internal reflection"
+        },
+        {
+          "type": "headline",
+          "text": "No light leaves material "
+        },
+        {
+          "type": "headline",
+          "text": "Light reflects, not refracts"
+        }
+      ]
+    },
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Critical angle equation"
+        }
+      ]
+    }
+  ],
+  "definitions": [],
+  "secText": [
+    "  <b>Essential Question: </b>  <b>    <br />  </b>What causes total internal reflection?",
+    "  <b>Enduring Understandings:</b>  <b>    <br />  </b>1. The sine of the <a class='pjumpToTopic' href='javascript:void(0)' data-chap='21' data-topic='2' data-subtopic='1' data-subsection='1'>critical angle</a> needed for <a class='pjumpToTopic' href='javascript:void(0)' data-chap='21' data-topic='2' data-subtopic='1' data-subsection='0'>total internal reflection</a> is equal to the refraction index of the refracted material divided by the refraction index of the incident material.",
+    "  <b>Vocabulary:</b>  <a class='pjumpToTopic' href='javascript:void(0)' data-chap='21' data-topic='2' data-subtopic='1' data-subsection='0'>total internal reflection</a>, <a class='pjumpToTopic' href='javascript:void(0)' data-chap='21' data-topic='2' data-subtopic='1' data-subsection='1'>critical angle</a>",
+    "  <b>STEM Skills:</b>  <b>    <br />  </b>1. Review <a class='pjumpToTopic' href='javascript:void(0)' data-chap='4' data-topic='4' data-subtopic='1' data-subsection='0'>trigonometric functions</a>."
+  ],
+  "objNames": [
+    "wb_total_internal_concepts",
+    "wb_critical_angle_equation"
+  ]
+}

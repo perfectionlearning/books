@@ -1,1 +1,33 @@
-{"cards":[{"lines":[{"type":"title","text":"Right-hand rule"},{"type":"headline","text":"Determines direction of force"},{"type":"bullet","text":"Fingers curl from v to B through smaller angle"},{"type":"bullet","text":"Thumb shows force on <u>positive</u> charge "}]},{"lines":[{"type":"title","text":"Magnetic field strength equation"},{"type":"headline","text":"  <math>    <mrow>      <mi>B</mi>      <mo>=</mo>      <mfrac linethickness=\"thin\">        <mi>F</mi>        <mrow>          <mi>q</mi>          <mi>v</mi>        </mrow>      </mfrac>    </mrow>  </math>"}]}],"definitions":[],"secText":["  <b>Lesson:</b>  <b>    <br />  </b>1. Describe the components of a [OBJ:expsec_q754:magnet].<br />2. Define [OBJ:expsec_q755:magnetic fields].<br />3. Describe the magnetic field around [OBJ:expsec_q757:Earth].<br />4. Apply the concept of magnetic fields to [OBJ:expsec_q758:compasses].<br />5. [OBJ:actsec_jrb1:Experiment] with charged particles in magnetic fields.<br />6. Determine the direction of the [OBJ:expsec_q759:force] that a magnetic field applies on a moving charge using diagrams.<br />7. Determine the direction of the force that a magnetic field applies on a moving charge using the [OBJ:expsec_q760:right-hand rule].<br />8. [OBJ:expsec_q761:Calculate] the force that a magnetic field applies on a moving charge. Calculate the strength of a magnetic field using force, velocity, and charge.<br />9. Work through a sample problem to [OBJ:app_force_on_e_in_B_question:calculate the direction of the force] acting on a moving charge in a magnetic field.","  <b>In-class assessment:</b>  <b>    <br />  </b>1. [OBJ:qc_37466:Calculate] the force of a magnetic field on a moving charge.","  <b>Homework:</b>  <span class=\"KBInternalLink\"><a href=\"assign.html#OHW 17.01\">OHW 17.01</a></span>","  <b>Quick Review:</b>  [OBJ:sum_magnets:Magnets and Their Fields], [OBJ:sum_magnet_charge:Magnetic Fields]"],"objNames":["wb_right_hand_rule_concepts","wb_bfield_strength_equation"]}
+{
+	"cards": [{
+			"lines": [{
+					"type": "title",
+					"text": "Right-hand rule"
+				}, {
+					"type": "headline",
+					"text": "Determines direction of force"
+				}, {
+					"type": "bullet",
+					"text": "Fingers curl from v to B through smaller angle"
+				}, {
+					"type": "bullet",
+					"text": "Thumb shows force on <u>positive</u> charge "
+				}
+			]
+		}, {
+			"lines": [{
+					"type": "title",
+					"text": "Magnetic field strength equation"
+				}, {
+					"type": "headline",
+					"text": "  <math>    <mrow>      <mi>B</mi>      <mo>=</mo>      <mfrac linethickness=\"thin\">        <mi>F</mi>        <mrow>          <mi>q</mi>          <mi>v</mi>        </mrow>      </mfrac>    </mrow>  </math>"
+				}
+			]
+		}
+	],
+	"definitions": [],
+	"secText": ["  <b>Lesson:</b>  <b>    <br />  </b>1. Describe the components of a <a class='pjumpToTopic' href='javascript:void(0)' data-chap='17' data-topic='0' data-subtopic='1' data-subsection='0'>magnet</a>.<br />2. Define <a class='pjumpToTopic' href='javascript:void(0)' data-chap='17' data-topic='0' data-subtopic='1' data-subsection='1'>magnetic fields</a>.<br />3. Describe the magnetic field around <a class='pjumpToTopic' href='javascript:void(0)' data-chap='17' data-topic='0' data-subtopic='2' data-subsection='0'>Earth</a>.<br />4. Apply the concept of magnetic fields to <a class='pjumpToTopic' href='javascript:void(0)' data-chap='17' data-topic='0' data-subtopic='2' data-subsection='1'>compasses</a>.<br />5. <a class='pjumpToTopic' href='javascript:void(0)' data-chap='17' data-topic='0' data-subtopic='3' data-subsection='0'>Experiment</a> with charged particles in magnetic fields.<br />6. Determine the direction of the <a class='pjumpToTopic' href='javascript:void(0)' data-chap='17' data-topic='0' data-subtopic='3' data-subsection='1'>force</a> that a magnetic field applies on a moving charge using diagrams.<br />7. Determine the direction of the force that a magnetic field applies on a moving charge using the <a class='pjumpToTopic' href='javascript:void(0)' data-chap='17' data-topic='0' data-subtopic='3' data-subsection='2'>right-hand rule</a>.<br />8. <a class='pjumpToTopic' href='javascript:void(0)' data-chap='17' data-topic='0' data-subtopic='3' data-subsection='3'>Calculate</a> the force that a magnetic field applies on a moving charge. Calculate the strength of a magnetic field using force, velocity, and charge.<br />9. Work through a sample problem to <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='app_force_on_e_in_B_question'>calculate the direction of the force</a> acting on a moving charge in a magnetic field.", "  <b>In-class assessment:</b>  <b>    <br />  </b>1. <a class='pjumpToTopic' href='javascript:void(0)' data-chap='17' data-topic='0' data-subtopic='3' data-subsection='5'>Calculate</a> the force of a magnetic field on a moving charge.", 
+	
+	"  <b>Quick Review:</b>  <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='sum_magnets'>Magnets and Their Fields</a>, <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='sum_magnet_charge'>Magnetic Fields</a>"],
+	"objNames": ["wb_right_hand_rule_concepts", "wb_bfield_strength_equation"]
+}

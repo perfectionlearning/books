@@ -11,8 +11,8 @@
 		dashBoardEle[dashBoardEle.length] = ['well100',    		560,  0];
 		dashBoardEle[dashBoardEle.length] = ['well50b',    		630,  0];
 		dashBoardEle[dashBoardEle.length] = ['wellright',  		680,  0];
-		dashBoardEle[dashBoardEle.length] = ['exponentbox',  	478,  33];
-		dashBoardEle[dashBoardEle.length] = ['incrBgMed',  		508,  33];
+		//dashBoardEle[dashBoardEle.length] = ['exponentbox',  	478,  33];
+		//dashBoardEle[dashBoardEle.length] = ['incrBgMed',  		508,  33];
 	
 	//dashBoard text
 	var dashBoardTxt = [];
@@ -28,9 +28,9 @@
 		dashBoardTxt[dashBoardTxt.length] = ['35,600', 					'bold 14px arial', 'left', 205, 60, 7];
 		dashBoardTxt[dashBoardTxt.length] = ['N', 						'bold 14px arial', 'left', 260, 60, 8];
 		
-		dashBoardTxt[dashBoardTxt.length] = ['Engine B force', 			'bold 14px arial', 'left', 360, 35, 9];
-		dashBoardTxt[dashBoardTxt.length] = ['34,500', 					'bold 14px arial', 'left', 508, 35, 'BForceTxt'];
-		dashBoardTxt[dashBoardTxt.length] = ['N', 						'bold 14px arial', 'left', 570, 35, 10];
+		dashBoardTxt[dashBoardTxt.length] = ['Engine B force', 			'bold 14px arial', 'left', 350, 35, 9];
+		dashBoardTxt[dashBoardTxt.length] = ['34,500', 					'bold 14px arial', 'left', 460, 35, 'BForceTxt'];
+		dashBoardTxt[dashBoardTxt.length] = ['N', 						'bold 14px arial', 'left', 515, 35, 10];
 		
 	//banner text
 	var bannerContentTxt = [];
@@ -138,17 +138,17 @@
 	//Create Increment and Decrement button
 	//=======================================================
 	function __createIncDecButton(){
-		var incDecBtnImg = new CAAT.Foundation.SpriteImage().initialize( game._director.getImage('incre_decre_btn'), 2, 1);
+		var incDecBtnImg = new CAAT.Foundation.SpriteImage().initialize( game._director.getImage('incre_decre_btn'), 1, 2);
 		var iniVelIncBtn = new CAAT.Foundation.Actor().
 								setId('iniVelInc').
 								setAsButton(incDecBtnImg.getRef(), 0, 0, 0, 0, function(button){//click handler
 									//game.incDecHandler(this);
-								}).setLocation(475, 33);
+								}).setLocation(540, 28);
 		var iniVelDecBtn = new CAAT.Foundation.Actor().
 								setId('iniVelDec').
 								setAsButton(incDecBtnImg.getRef(), 1, 1, 1, 1, function(button){//click handler
 									//game.incDecHandler(this);
-								}).setLocation(475, 42);
+								}).setLocation(570, 28);
 								
 		dashBG.addChild(iniVelIncBtn);
 		dashBG.addChild(iniVelDecBtn);

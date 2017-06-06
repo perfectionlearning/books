@@ -1,1 +1,55 @@
-{"cards":[{"lines":[{"type":"title","text":"Circuits usually contain:"},{"type":"headline","text":"An energy source"},{"type":"headline","text":"A load resistance "},{"type":"headline","text":"Wires connecting it all in a loop"}]},{"lines":[{"type":"title","text":"Batteries "},{"type":"headline","text":"Are source of emf in DC circuit"},{"type":"headline","text":"Have internal resistance"},{"type":"headline","text":"Can be described as “energy pump”"}]}],"definitions":[],"secText":["  <b>Essential Question: </b>  <b>    <br />  </b>How does current behave in an electric circuit?","  <b>Enduring Understandings:</b>  <b>    <br />  </b>1. [OBJ:expsec_p365:Electric circuits] allow current to flow in a loop. An example of an electric circuit is a flashlight. The [OBJ:expsec_p366:parts of an electric circuit], such as a battery, resistor, and capacitor, are each represented with a different symbol in an electric circuit diagram.<br />2. The electromotive force [OBJ:expsec_p369:(emf)] drives the energy in a circuit. An example of an emf source is a battery.<br />3. [OBJ:expsec_p370:Energy is conserved] in an electric circuit.","  <b>Vocabulary:</b>  [OBJ:expsec_p365:electric circuit], [OBJ:expsec_p367:direct current], [OBJ:expsec_p367:alternating current], [OBJ:expsec_p369:electromotive force (emf)], [OBJ:expsec_p371:ammeter], [OBJ:expsec_p371:voltmeter], [OBJ:expsec_p371:multimeter]","  <b>STEM Skills:</b>  <b>    <br />  </b>1. Review [OBJ:expsec_p358:Ohm's law].<br />2. Review [OBJ:expsec_p355:conventional current]."],"objNames":["wb_electric_circuit_concepts2","wb_batteries1"]}
+{
+  "cards": [
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Circuits usually contain:"
+        },
+        {
+          "type": "headline",
+          "text": "An energy source"
+        },
+        {
+          "type": "headline",
+          "text": "A load resistance "
+        },
+        {
+          "type": "headline",
+          "text": "Wires connecting it all in a loop"
+        }
+      ]
+    },
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Batteries "
+        },
+        {
+          "type": "headline",
+          "text": "Are source of emf in DC circuit"
+        },
+        {
+          "type": "headline",
+          "text": "Have internal resistance"
+        },
+        {
+          "type": "headline",
+          "text": "Can be described as “energy pump”"
+        }
+      ]
+    }
+  ],
+  "definitions": [],
+  "secText": [
+    "  <b>Essential Question: </b>  <b>    <br />  </b>How does current behave in an electric circuit?",
+    "  <b>Enduring Understandings:</b>  <b>    <br />  </b>1. <a class='pjumpToTopic' href='javascript:void(0)' data-chap='16' data-topic='2' data-subtopic='1' data-subsection='1'>Electric circuits</a> allow current to flow in a loop. An example of an electric circuit is a flashlight. The <a class='pjumpToTopic' href='javascript:void(0)' data-chap='16' data-topic='2' data-subtopic='1' data-subsection='2'>parts of an electric circuit</a>, such as a battery, resistor, and capacitor, are each represented with a different symbol in an electric circuit diagram.<br />2. The electromotive force <a class='pjumpToTopic' href='javascript:void(0)' data-chap='16' data-topic='2' data-subtopic='2' data-subsection='0'>(emf)</a> drives the energy in a circuit. An example of an emf source is a battery.<br />3. <a class='pjumpToTopic' href='javascript:void(0)' data-chap='16' data-topic='2' data-subtopic='3' data-subsection='0'>Energy is conserved</a> in an electric circuit.",
+    "  <b>Vocabulary:</b>  <a class='pjumpToTopic' href='javascript:void(0)' data-chap='16' data-topic='2' data-subtopic='1' data-subsection='1'>electric circuit</a>, <a class='pjumpToTopic' href='javascript:void(0)' data-chap='16' data-topic='2' data-subtopic='1' data-subsection='3'>direct current</a>, <a class='pjumpToTopic' href='javascript:void(0)' data-chap='16' data-topic='2' data-subtopic='1' data-subsection='3'>alternating current</a>, <a class='pjumpToTopic' href='javascript:void(0)' data-chap='16' data-topic='2' data-subtopic='2' data-subsection='0'>electromotive force (emf)</a>, <a class='pjumpToTopic' href='javascript:void(0)' data-chap='16' data-topic='2' data-subtopic='3' data-subsection='1'>ammeter</a>, <a class='pjumpToTopic' href='javascript:void(0)' data-chap='16' data-topic='2' data-subtopic='3' data-subsection='1'>voltmeter</a>, <a class='pjumpToTopic' href='javascript:void(0)' data-chap='16' data-topic='2' data-subtopic='3' data-subsection='1'>multimeter</a>",
+    "  <b>STEM Skills:</b>  <b>    <br />  </b>1. Review <a class='pjumpToTopic' href='javascript:void(0)' data-chap='16' data-topic='0' data-subtopic='3' data-subsection='0'>Ohm's law</a>.<br />2. Review <a class='pjumpToTopic' href='javascript:void(0)' data-chap='16' data-topic='0' data-subtopic='1' data-subsection='2'>conventional current</a>."
+  ],
+  "objNames": [
+    "wb_electric_circuit_concepts2",
+    "wb_batteries1"
+  ]
+}

@@ -1,1 +1,40 @@
-{"cards":[{"lines":[{"type":"title","text":"Satellite speed and orbital radius"},{"type":"headline","text":"Satellite speed and radius are related"},{"type":"headline","text":"The smaller the orbit, the greater the speed"}]},{"lines":[{"type":"title","text":"Orbital speeds"}]}],"definitions":[],"secText":["  <b class=\"object-name\">Supplemental Material: </b>  <span class=\"object-name\">Advanced Topic</span>","  <b>Essential Question: </b>  <br />How does an object remain in circular orbit?","  <b>Enduring Understandings:</b>  <b>    <br />  </b>1. Newton hypothesized that if a [OBJ:expsec_h570:cannonball] were fired fast enough from a cannon, the cannonball would remain in circular orbit around the Earth.<br />2. Examples of [OBJ:expsec_h570:circular orbits] include satellites rotating around planets, and planets rotating around the Sun.<br />3. The [OBJ:expsec_h572:speed of an object in circular orbit] can be calculated by taking the square root of the gravitational constant multiplied by the mass of the body being orbited, divided by the radius of the orbit.<br />4. The speed at which an object can [OBJ:expsec_h575:escape] a planet's gravity can be calculated by taking the square root of two times the gravitational constant, times the planet's mass, divided by the radius.","  <b>Vocabulary:</b>  [OBJ:expsec_h570:Newton's cannon], [OBJ:expsec_h570:satellite], [OBJ:expsec_h570:orbit], [OBJ:expsec_h575:escape speed]","  <b>STEM Skills:</b>  <b>    <br />  </b>1. Review [OBJ:expsec_e757:Sir Isaac Newton]."],"objNames":["wb_circular_orbit_concept2","wb_table_circular_orbit"]}
+{
+  "cards": [
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Satellite speed and orbital radius"
+        },
+        {
+          "type": "headline",
+          "text": "Satellite speed and radius are related"
+        },
+        {
+          "type": "headline",
+          "text": "The smaller the orbit, the greater the speed"
+        }
+      ]
+    },
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Orbital speeds"
+        }
+      ]
+    }
+  ],
+  "definitions": [],
+  "secText": [
+    "  <b class=\"object-name\">Supplemental Material: </b>  <span class=\"object-name\">Advanced Topic</span>",
+    "  <b>Essential Question: </b>  <br />How does an object remain in circular orbit?",
+    "  <b>Enduring Understandings:</b>  <b>    <br />  </b>1. Newton hypothesized that if a <a class='pjumpToTopic' href='javascript:void(0)' data-chap='8' data-topic='3' data-subtopic='1' data-subsection='0'>cannonball</a> were fired fast enough from a cannon, the cannonball would remain in circular orbit around the Earth.<br />2. Examples of <a class='pjumpToTopic' href='javascript:void(0)' data-chap='8' data-topic='3' data-subtopic='1' data-subsection='0'>circular orbits</a> include satellites rotating around planets, and planets rotating around the Sun.<br />3. The <a class='pjumpToTopic' href='javascript:void(0)' data-chap='8' data-topic='3' data-subtopic='3' data-subsection='0'>speed of an object in circular orbit</a> can be calculated by taking the square root of the gravitational constant multiplied by the mass of the body being orbited, divided by the radius of the orbit.<br />4. The speed at which an object can <a class='pjumpToTopic' href='javascript:void(0)' data-chap='8' data-topic='3' data-subtopic='4' data-subsection='0'>escape</a> a planet's gravity can be calculated by taking the square root of two times the gravitational constant, times the planet's mass, divided by the radius.",
+    "  <b>Vocabulary:</b>  <a class='pjumpToTopic' href='javascript:void(0)' data-chap='8' data-topic='3' data-subtopic='1' data-subsection='0'>Newton's cannon</a>, <a class='pjumpToTopic' href='javascript:void(0)' data-chap='8' data-topic='3' data-subtopic='1' data-subsection='0'>satellite</a>, <a class='pjumpToTopic' href='javascript:void(0)' data-chap='8' data-topic='3' data-subtopic='1' data-subsection='0'>orbit</a>, <a class='pjumpToTopic' href='javascript:void(0)' data-chap='8' data-topic='3' data-subtopic='4' data-subsection='0'>escape speed</a>",
+    "  <b>STEM Skills:</b>  <b>    <br />  </b>1. Review <a class='pjumpToTopic' href='javascript:void(0)' data-chap='5' data-topic='0' data-subtopic='3' data-subsection='0'>Sir Isaac Newton</a>."
+  ],
+  "objNames": [
+    "wb_circular_orbit_concept2",
+    "wb_table_circular_orbit"
+  ]
+}

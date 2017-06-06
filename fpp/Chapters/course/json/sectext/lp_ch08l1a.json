@@ -1,1 +1,51 @@
-{"cards":[{"lines":[{"type":"title","text":"Uniform circular motion"},{"type":"headline","text":"Motion along a circular path at constant speed"},{"type":"headline","text":"Velocity changes because <u>direction</u> changes"},{"type":"bullet","text":"Velocity is speed and <u>direction</u>"}]},{"lines":[{"type":"title","text":"Centripetal acceleration"},{"type":"headline","text":"Acceleration due to circular motion"},{"type":"bullet","text":"Acceleration is solely due to change in direction"}]}],"definitions":[],"secText":["  <b>Essential Question: </b>  <b>    <br />  </b>How can we determine the rotational period and centripetal acceleration of an object in circular motion?","  <b>Enduring Understandings:</b>  <b>    <br />  </b>1. [OBJ:expsec_h556:Uniform circular motion] is motion along a circular path at a constant speed.<b><br /></b>2. The rotational [OBJ:expsec_5180:period] for the orbit of an object can be calculated by dividing 2πr, by the constant speed that the object is moving.<b><br /></b>3. The [OBJ:expsec_h557:centripetal acceleration] of an object can be calculated by dividing the speed of an object moving in circular motion squared, by the radius of the circle.","  <b>Vocabulary:</b>  [OBJ:expsec_h556:uniform circular motion], [OBJ:expsec_5180:period], [OBJ:expsec_h557:centripetal acceleration]","  <b>STEM Skills:</b>  <b>    <br />  </b>1. Review [OBJ:expsec_b764:velocity] and [OBJ:expsec_b756:speed].<b><br /></b>"],"objNames":["wb_UCM_concept","wb_centripetal_acceleration_concept"]}
+{
+  "cards": [
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Uniform circular motion"
+        },
+        {
+          "type": "headline",
+          "text": "Motion along a circular path at constant speed"
+        },
+        {
+          "type": "headline",
+          "text": "Velocity changes because <u>direction</u> changes"
+        },
+        {
+          "type": "bullet",
+          "text": "Velocity is speed and <u>direction</u>"
+        }
+      ]
+    },
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Centripetal acceleration"
+        },
+        {
+          "type": "headline",
+          "text": "Acceleration due to circular motion"
+        },
+        {
+          "type": "bullet",
+          "text": "Acceleration is solely due to change in direction"
+        }
+      ]
+    }
+  ],
+  "definitions": [],
+  "secText": [
+    "  <b>Essential Question: </b>  <b>    <br />  </b>How can we determine the rotational period and centripetal acceleration of an object in circular motion?",
+    "  <b>Enduring Understandings:</b>  <b>    <br />  </b>1. <a class='pjumpToTopic' href='javascript:void(0)' data-chap='8' data-topic='0' data-subtopic='1' data-subsection='2'>Uniform circular motion</a> is motion along a circular path at a constant speed.<b><br /></b>2. The rotational <a class='pjumpToTopic' href='javascript:void(0)' data-chap='8' data-topic='0' data-subtopic='2' data-subsection='0'>period</a> for the orbit of an object can be calculated by dividing 2πr, by the constant speed that the object is moving.<b><br /></b>3. The <a class='pjumpToTopic' href='javascript:void(0)' data-chap='8' data-topic='0' data-subtopic='3' data-subsection='0'>centripetal acceleration</a> of an object can be calculated by dividing the speed of an object moving in circular motion squared, by the radius of the circle.",
+    "  <b>Vocabulary:</b>  <a class='pjumpToTopic' href='javascript:void(0)' data-chap='8' data-topic='0' data-subtopic='1' data-subsection='2'>uniform circular motion</a>, <a class='pjumpToTopic' href='javascript:void(0)' data-chap='8' data-topic='0' data-subtopic='2' data-subsection='0'>period</a>, <a class='pjumpToTopic' href='javascript:void(0)' data-chap='8' data-topic='0' data-subtopic='3' data-subsection='0'>centripetal acceleration</a>",
+    "  <b>STEM Skills:</b>  <b>    <br />  </b>1. Review <a class='pjumpToTopic' href='javascript:void(0)' data-chap='1' data-topic='1' data-subtopic='4' data-subsection='0'>velocity</a> and <a class='pjumpToTopic' href='javascript:void(0)' data-chap='1' data-topic='0' data-subtopic='4' data-subsection='0'>speed</a>.<b><br /></b>"
+  ],
+  "objNames": [
+    "wb_UCM_concept",
+    "wb_centripetal_acceleration_concept"
+  ]
+}

@@ -1,1 +1,39 @@
-{"cards":[{"lines":[{"type":"title","text":"Acceleration"},{"type":"headline","text":"Change in velocity per unit time"}]},{"lines":[{"type":"title","text":"Constants and counts"},{"type":"headline","text":"Do not determine significant digits"}]}],"definitions":[],"secText":["  <b>Essential Question: </b>  <b>    <br />  </b>How does acceleration affect velocity?","  <b>Enduring Understandings:</b>  <b>    <br />  </b>1. [OBJ:expsec_b772:Acceleration] is a vector. It can be calculated using the change in velocity and elapsed time.<br />2. [OBJ:expsec_b774:Changes in acceleration] affect an object’s velocity.","  <b>Vocabulary:</b>  [OBJ:expsec_b772:acceleration]","  <b>STEM Skills:</b>  <b>    <br />  </b>1. Review [OBJ:expsec_a384:constants] in equations.<br />2. Analyze an equation for relationships between variables.<br />3. Recognize [OBJ:expsec_b762:vectors]."],"objNames":["actwb_acceleration_definition","wb_math_significant_figures_constants_counts"]}
+{
+  "cards": [
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Acceleration"
+        },
+        {
+          "type": "headline",
+          "text": "Change in velocity per unit time"
+        }
+      ]
+    },
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Constants and counts"
+        },
+        {
+          "type": "headline",
+          "text": "Do not determine significant digits"
+        }
+      ]
+    }
+  ],
+  "definitions": [],
+  "secText": [
+    "  <b>Essential Question: </b>  <b>    <br />  </b>How does acceleration affect velocity?",
+    "  <b>Enduring Understandings:</b>  <b>    <br />  </b>1. <a class='pjumpToTopic' href='javascript:void(0)' data-chap='1' data-topic='3' data-subtopic='1' data-subsection='1'>Acceleration</a> is a vector. It can be calculated using the change in velocity and elapsed time.<br />2. <a class='pjumpToTopic' href='javascript:void(0)' data-chap='1' data-topic='3' data-subtopic='2' data-subsection='0'>Changes in acceleration</a> affect an object’s velocity.",
+    "  <b>Vocabulary:</b>  <a class='pjumpToTopic' href='javascript:void(0)' data-chap='1' data-topic='3' data-subtopic='1' data-subsection='1'>acceleration</a>",
+    "  <b>STEM Skills:</b>  <b>    <br />  </b>1. Review <a class='pjumpToTopic' href='javascript:void(0)' data-chap='3' data-topic='2' data-subtopic='1' data-subsection='1'>constants</a> in equations.<br />2. Analyze an equation for relationships between variables.<br />3. Recognize <a class='pjumpToTopic' href='javascript:void(0)' data-chap='1' data-topic='1' data-subtopic='2' data-subsection='0'>vectors</a>."
+  ],
+  "objNames": [
+    "actwb_acceleration_definition",
+    "wb_math_significant_figures_constants_counts"
+  ]
+}

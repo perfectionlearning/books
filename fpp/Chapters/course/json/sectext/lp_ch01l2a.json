@@ -1,1 +1,55 @@
-{"cards":[{"lines":[{"type":"title","text":"Velocity"},{"type":"headline","text":"Speed <u>and</u> direction"},{"type":"bullet","text":"A vector"},{"type":"headline","text":"Can be negative, zero, or positive"}]},{"lines":[{"type":"title","text":"Vector"},{"type":"headline","text":"Magnitude and direction"},{"type":"bullet","text":"Can be represented with an arrow"},{"type":"headline","text":"Length of arrow proportional to magnitude"}]}],"definitions":[],"secText":["  <b>Essential Question:</b>  <br />How do displacement and elapsed time relate to velocity?","  <b>Essential Understandings:</b>  <b>    <br />  </b>1. [OBJ:expsec_b763:Displacement] is a [OBJ:expsec_b762:vector]. Its magnitude is distance and its direction can be positive or negative. The magnitude of the distance can be positive or zero.<br />2. [OBJ:expsec_b764:Velocity] is a [OBJ:expsec_b762:vector]. Its magnitude is speed and its direction can be positive or negative. The magnitude of the speed can be positive or zero.","  <b>Vocabulary:</b>  [OBJ:expsec_b761:scalar], [OBJ:expsec_b762:vector], [OBJ:expsec_b762:magnitude], [OBJ:expsec_b763:displacement], [OBJ:expsec_b764:velocity]","  <b>STEM Skills:</b>  <b>    <br />  </b>1. Analyze an equation for relationships between variables.<br />2. Recognize [OBJ:expsec_b762:vectors]."],"objNames":["actwb_velocity_definition","wb_vector_definition"]}
+{
+  "cards": [
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Velocity"
+        },
+        {
+          "type": "headline",
+          "text": "Speed <u>and</u> direction"
+        },
+        {
+          "type": "bullet",
+          "text": "A vector"
+        },
+        {
+          "type": "headline",
+          "text": "Can be negative, zero, or positive"
+        }
+      ]
+    },
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Vector"
+        },
+        {
+          "type": "headline",
+          "text": "Magnitude and direction"
+        },
+        {
+          "type": "bullet",
+          "text": "Can be represented with an arrow"
+        },
+        {
+          "type": "headline",
+          "text": "Length of arrow proportional to magnitude"
+        }
+      ]
+    }
+  ],
+  "definitions": [],
+  "secText": [
+    "  <b>Essential Question:</b>  <br />How do displacement and elapsed time relate to velocity?",
+    "  <b>Essential Understandings:</b>  <b>    <br />  </b>1. <a class='pjumpToTopic' href='javascript:void(0)' data-chap='1' data-topic='1' data-subtopic='3' data-subsection='0'>Displacement</a> is a <a class='pjumpToTopic' href='javascript:void(0)' data-chap='1' data-topic='1' data-subtopic='2' data-subsection='0'>vector</a>. Its magnitude is distance and its direction can be positive or negative. The magnitude of the distance can be positive or zero.<br />2. <a class='pjumpToTopic' href='javascript:void(0)' data-chap='1' data-topic='1' data-subtopic='4' data-subsection='0'>Velocity</a> is a <a class='pjumpToTopic' href='javascript:void(0)' data-chap='1' data-topic='1' data-subtopic='2' data-subsection='0'>vector</a>. Its magnitude is speed and its direction can be positive or negative. The magnitude of the speed can be positive or zero.",
+    "  <b>Vocabulary:</b>  <a class='pjumpToTopic' href='javascript:void(0)' data-chap='1' data-topic='1' data-subtopic='1' data-subsection='0'>scalar</a>, <a class='pjumpToTopic' href='javascript:void(0)' data-chap='1' data-topic='1' data-subtopic='2' data-subsection='0'>vector</a>, <a class='pjumpToTopic' href='javascript:void(0)' data-chap='1' data-topic='1' data-subtopic='2' data-subsection='0'>magnitude</a>, <a class='pjumpToTopic' href='javascript:void(0)' data-chap='1' data-topic='1' data-subtopic='3' data-subsection='0'>displacement</a>, <a class='pjumpToTopic' href='javascript:void(0)' data-chap='1' data-topic='1' data-subtopic='4' data-subsection='0'>velocity</a>",
+    "  <b>STEM Skills:</b>  <b>    <br />  </b>1. Analyze an equation for relationships between variables.<br />2. Recognize <a class='pjumpToTopic' href='javascript:void(0)' data-chap='1' data-topic='1' data-subtopic='2' data-subsection='0'>vectors</a>."
+  ],
+  "objNames": [
+    "actwb_velocity_definition",
+    "wb_vector_definition"
+  ]
+}

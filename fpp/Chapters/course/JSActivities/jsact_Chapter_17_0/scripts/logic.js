@@ -932,8 +932,8 @@ var AmpIncDecArrow = function(action,btn){
 	 var aLabelWaveLen =  game.textActor(director, '--', 'Bold 14px Arial', 'left', '#ffffff').setLocation(150, 540);
 	 var aLabelSpeed =  game.textActor(director, '0 ms', 'Bold 14px Arial', 'left', '#000000').setLocation(280, 542);
 	 var aLabelMute =  game.textActor(director, 'Mute', 'Bold 14px Arial', 'left', '#000000').setLocation(620, 480);
-	 var aLabelAmp =  game.textActor(director, '0.08', 'Bold 14px Arial', 'left', '#ffffff').setLocation(497, 542);
-	 var aLabelFreq =  game.textActor(director, '200', 'Bold 14px Arial', 'left', '#ffffff').setLocation(497, 562);
+	 var aLabelAmp =  game.textActor(director, '0.08', 'Bold 14px Arial', 'left', '#ffffff').setLocation(482, 542);
+	 var aLabelFreq =  game.textActor(director, '200', 'Bold 14px Arial', 'left', '#ffffff').setLocation(482, 562);
 	 var aLabelWave =  game.textActor(director, 'Continuous wave', 'Bold 14px Arial', 'left', '#ffffff').setLocation(496, 562);
 	 
  	 var aActorClock = getActor(false, 255, 518, 'clock', 'clock', 1, 1);
@@ -1054,28 +1054,28 @@ var AmpIncDecArrow = function(action,btn){
 		}
 		
 	/*Frequency Increment*/
-	var btnImg = new CAAT.Foundation.SpriteImage().initialize(director.getImage('incre_decre_btn'), 2, 1)
+	var btnImg = new CAAT.Foundation.SpriteImage().initialize(director.getImage('incre_decre_btn'), 1, 2)
 	var btnAmpInc = new CAAT.exemplarr().setAsButton(btnImg.getRef(), 0, 0, 0, 0, 
 						function(button){
 							
-						}).setLocation(470, 540);
+						}).setLocation(552, 535);
 	/*Frequency Decrement*/
 	var btnAmpDec = new CAAT.exemplarr().setAsButton(btnImg.getRef(), 1, 1, 1, 1, 
 						function(button){
 						
-						}).setLocation(470, 549).setSpriteIndex(1);
+						}).setLocation(580, 535).setSpriteIndex(1);
 	
 	/*Amplitude Increment*/
 	var btnFreqInc = new CAAT.exemplarr().setAsButton(btnImg.getRef(), 0, 0, 0, 0, 
 						function(button){
 						
-						}).setLocation(470, 560);
+						}).setLocation(552, 565);
 	
 	/*Amplitude Decrement*/
 	var btnFreqDec = new CAAT.exemplarr().setAsButton(btnImg.getRef(), 1, 1, 1, 1, 
 						function(button){
 						
-						}).setLocation(470, 569).setSpriteIndex(1);
+						}).setLocation(580, 565).setSpriteIndex(1);
 						
 	FreqIncDecArrow("-",btnFreqDec);
 	FreqIncDecArrow("+",btnFreqInc);

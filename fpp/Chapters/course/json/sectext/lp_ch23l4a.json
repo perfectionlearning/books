@@ -1,1 +1,43 @@
-{"cards":[{"lines":[{"type":"title","text":"Matter waves"},{"type":"headline","text":"Electron interference pattern"},{"type":"headline","text":"Pattern also created by projecting electrons at crystal"}]},{"lines":[{"type":"title","text":"De Broglie and electron orbits"},{"type":"headline","text":"Wavelike properties explain quantized orbits"}]}],"definitions":[],"secText":["  <b class=\"object-name\">Supplemental Material: </b>  <span class=\"object-name\">Advanced Topic</span>","  <b>Essential Question: </b>  <br />How do the properties of matter compare to the properties of light?","  <b>Enduring Understandings:</b>  <b>    <br />  </b>1. [OBJ:expsec_x482:Matter waves] defined particles as having wavelike properties.<br />2. Light interference patterns look similar to [OBJ:expsec_x484:electron interference patterns].<br />3. The [OBJ:expsec_x487:Heisenberg uncertainty principle] states that observations can only be so precise. Applying the theory to electrons and orbitals, the precise location of an electron in an orbital is a [OBJ:expsec_x486:probability], and not an exact determination of the location.<br />4. [OBJ:expsec_x489:Erwin Schrödinger's] thought experiment paralleled the idea that the position of a particle can be predicted, but only once the position is observed does it become known.<br />5. To calculate the [OBJ:expsec_x483:wavelength of a matter wave], divide Planck's constant by momentum.","  <b>STEM Skills:</b>  <b>    <br />  </b>1. Review [OBJ:expsec_r959111:light interference patterns].<br />2. Review [OBJ:expsec_g655:momentum]."],"objNames":["wb_observe_matter2","wb_matterwaves2"]}
+{
+  "cards": [
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Matter waves"
+        },
+        {
+          "type": "headline",
+          "text": "Electron interference pattern"
+        },
+        {
+          "type": "headline",
+          "text": "Pattern also created by projecting electrons at crystal"
+        }
+      ]
+    },
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "De Broglie and electron orbits"
+        },
+        {
+          "type": "headline",
+          "text": "Wavelike properties explain quantized orbits"
+        }
+      ]
+    }
+  ],
+  "definitions": [],
+  "secText": [
+    "  <b class=\"object-name\">Supplemental Material: </b>  <span class=\"object-name\">Advanced Topic</span>",
+    "  <b>Essential Question: </b>  <br />How do the properties of matter compare to the properties of light?",
+    "  <b>Enduring Understandings:</b>  <b>    <br />  </b>1. <a class='pjumpToTopic' href='javascript:void(0)' data-chap='23' data-topic='3' data-subtopic='1' data-subsection='0'>Matter waves</a> defined particles as having wavelike properties.<br />2. Light interference patterns look similar to <a class='pjumpToTopic' href='javascript:void(0)' data-chap='23' data-topic='3' data-subtopic='2' data-subsection='0'>electron interference patterns</a>.<br />3. The <a class='pjumpToTopic' href='javascript:void(0)' data-chap='23' data-topic='3' data-subtopic='3' data-subsection='0'>Heisenberg uncertainty principle</a> states that observations can only be so precise. Applying the theory to electrons and orbitals, the precise location of an electron in an orbital is a <a class='pjumpToTopic' href='javascript:void(0)' data-chap='23' data-topic='3' data-subtopic='3' data-subsection='1'>probability</a>, and not an exact determination of the location.<br />4. <a class='pjumpToTopic' href='javascript:void(0)' data-chap='23' data-topic='3' data-subtopic='4' data-subsection='0'>Erwin Schrödinger's</a> thought experiment paralleled the idea that the position of a particle can be predicted, but only once the position is observed does it become known.<br />5. To calculate the <a class='pjumpToTopic' href='javascript:void(0)' data-chap='23' data-topic='3' data-subtopic='5' data-subsection='0'>wavelength of a matter wave</a>, divide Planck's constant by momentum.",
+    "  <b>STEM Skills:</b>  <b>    <br />  </b>1. Review <a class='pjumpToTopic' href='javascript:void(0)' data-chap='18' data-topic='0' data-subtopic='1' data-subsection='2'>light interference patterns</a>.<br />2. Review <a class='pjumpToTopic' href='javascript:void(0)' data-chap='7' data-topic='0' data-subtopic='1' data-subsection='1'>momentum</a>."
+  ],
+  "objNames": [
+    "wb_observe_matter2",
+    "wb_matterwaves2"
+  ]
+}

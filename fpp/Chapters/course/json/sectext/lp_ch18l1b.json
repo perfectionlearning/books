@@ -1,1 +1,24 @@
-{"cards":[{"lines":[{"type":"title","text":"Interference explains peacock’s colors"}]},{"lines":[{"type":"title","text":"Light interference"},{"type":"headline","text":"Bright and dark bands"}]}],"definitions":[],"secText":["  <b>Lesson:</b>  <b>    <br />  </b>1. Describe real-world examples of [OBJ:expsec_r954:interference].<br />2. Define [OBJ:expsec_r959:coherent and incoherent] wave sources.<br />3. Describe a [OBJ:expsec_r959111:light interference pattern].<br />4. Describe [OBJ:expsec_r957:constructive interference] and apply it to a light interference pattern.<br />5. Describe [OBJ:expsec_r960:destructive interference] and apply it to a light interference pattern.<br />6. [OBJ:actsec_r96012:Experiment] with phase differences by observing combined waves.<br />7. Describe [OBJ:expsec_r955:constant phase difference] in waves.<br />8. Define and calculate the [OBJ:expsec_r967:path length] for constructive and destructive interference.<br />9. Work through a sample problem to [OBJ:app_loudspeaker_minimum_question:calculate the path length] of a sound wave.","  <b>Homework:</b>  <span class=\"KBInternalLink\"><a href=\"assign.html#OHW 18.01\">OHW 18.01</a></span>","  <b>Quick Review:</b>  [OBJ:sum_wave_basics_interference:Interference], [OBJ:sum_explain_int_patterns:Requirements for Light Interference Patterns], [OBJ:sum_constructive_destructive:Interference and Path Length]"],"objNames":["wb_interference_water_peacock","wb_interference_concepts1"]}
+{
+	"cards": [{
+			"lines": [{
+					"type": "title",
+					"text": "Interference explains peacock’s colors"
+				}
+			]
+		}, {
+			"lines": [{
+					"type": "title",
+					"text": "Light interference"
+				}, {
+					"type": "headline",
+					"text": "Bright and dark bands"
+				}
+			]
+		}
+	],
+	"definitions": [],
+	"secText": ["  <b>Lesson:</b>  <b>    <br />  </b>1. Describe real-world examples of <a class='pjumpToTopic' href='javascript:void(0)' data-chap='18' data-topic='0' data-subtopic='1' data-subsection='0'>interference</a>.<br />2. Define <a class='pjumpToTopic' href='javascript:void(0)' data-chap='18' data-topic='0' data-subtopic='1' data-subsection='1'>coherent and incoherent</a> wave sources.<br />3. Describe a <a class='pjumpToTopic' href='javascript:void(0)' data-chap='18' data-topic='0' data-subtopic='1' data-subsection='2'>light interference pattern</a>.<br />4. Describe <a class='pjumpToTopic' href='javascript:void(0)' data-chap='18' data-topic='0' data-subtopic='2' data-subsection='0'>constructive interference</a> and apply it to a light interference pattern.<br />5. Describe <a class='pjumpToTopic' href='javascript:void(0)' data-chap='18' data-topic='0' data-subtopic='2' data-subsection='1'>destructive interference</a> and apply it to a light interference pattern.<br />6. <a class='pjumpToTopic' href='javascript:void(0)' data-chap='18' data-topic='0' data-subtopic='3' data-subsection='0'>Experiment</a> with phase differences by observing combined waves.<br />7. Describe <a class='pjumpToTopic' href='javascript:void(0)' data-chap='18' data-topic='0' data-subtopic='3' data-subsection='1'>constant phase difference</a> in waves.<br />8. Define and calculate the <a class='pjumpToTopic' href='javascript:void(0)' data-chap='18' data-topic='0' data-subtopic='4' data-subsection='0'>path length</a> for constructive and destructive interference.<br />9. Work through a sample problem to <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='app_loudspeaker_minimum_question'>calculate the path length</a> of a sound wave.",
+		
+	"  <b>Quick Review:</b>  <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='sum_wave_basics_interference'>Interference</a>, <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='sum_explain_int_patterns'>Requirements for Light Interference Patterns</a>, <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='sum_constructive_destructive'>Interference and Path Length</a>"],
+	"objNames": ["wb_interference_water_peacock", "wb_interference_concepts1"]
+}

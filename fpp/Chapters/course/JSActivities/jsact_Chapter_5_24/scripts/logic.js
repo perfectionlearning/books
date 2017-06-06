@@ -228,10 +228,10 @@ game.interaction = function(director, scene, banner){
 
 	var desktop = new CAAT.Foundation.ActorContainer().setBounds(0, 0, director.width, director.height);
 	var midPoint = {x:290, y:280};
-	var aLabelWeight =  game.textActor(director, '60', 'Bold 14px Arial', 'left', '#ffffff').setLocation(580, 512);
-	var aLabelForce =  game.textActor(director, '60', 'Bold 14px Arial', 'left', '#ffffff').setLocation(580, 532);
-	var aLabelFriction =  game.textActor(director, '60', 'Bold 14px Arial', 'left', '#ffffff').setLocation(580, 552);
-	var aLabelTension =  game.textActor(director, '60', 'Bold 14px Arial', 'left', '#ffffff').setLocation(580, 572);
+	var aLabelWeight =  game.textActor(director, '60', 'Bold 14px Arial', 'left', '#ffffff').setLocation(530, 490);
+	var aLabelForce =  game.textActor(director, '60', 'Bold 14px Arial', 'left', '#ffffff').setLocation(530, 515);
+	var aLabelFriction =  game.textActor(director, '60', 'Bold 14px Arial', 'left', '#ffffff').setLocation(530, 540);
+	var aLabelTension =  game.textActor(director, '60', 'Bold 14px Arial', 'left', '#ffffff').setLocation(530, 565);
 	var aLabelAcceleration =  game.textActor(director, '0.0', 'Bold 14px Arial', 'left', '#ffffff').setLocation(195, 535);
 	
 	var weightLabel =  game.textActor(director, 'mg', 'Bold 14px Arial', 'left', '#000000');
@@ -498,60 +498,60 @@ game.interaction = function(director, scene, banner){
 						}).setLocation(650, 560);
 		
 	/*Weight Increment*/
-	var btnImg = new CAAT.Foundation.SpriteImage().initialize(director.getImage('incre_decre_btn'), 2, 1)
+	var btnImg = new CAAT.Foundation.SpriteImage().initialize(director.getImage('incre_decre_btn'), 1, 2)
 	var btnWeightInc = new CAAT.exemplarr().setAsButton(btnImg.getRef(), 0, 0, 0, 0, 
 						function(button){
 							
-						}).setLocation(549, 510);
+						}).setLocation(589, 482);
 	/*Weight Decrement*/
-	var btnImg = new CAAT.Foundation.SpriteImage().initialize(director.getImage('incre_decre_btn'), 2, 1)
+	var btnImg = new CAAT.Foundation.SpriteImage().initialize(director.getImage('incre_decre_btn'), 1, 2)
 	var btnWeightDec = new CAAT.exemplarr().setAsButton(btnImg.getRef(), 1, 1, 1, 1, 
 						function(button){
 						
-						}).setLocation(549, 519).setSpriteIndex(1);
+						}).setLocation(619, 482).setSpriteIndex(1);
 
 	/*Normal force Increment*/
-	var btnImg = new CAAT.Foundation.SpriteImage().initialize(director.getImage('incre_decre_btn'), 2, 1)
+	var btnImg = new CAAT.Foundation.SpriteImage().initialize(director.getImage('incre_decre_btn'), 1, 2)
 	var btnForceInc = new CAAT.exemplarr().setAsButton(btnImg.getRef(), 0, 0, 0, 0, 
 						function(button){
 						
-						}).setLocation(549, 530);
+						}).setLocation(589, 509);
 
 	
 	/*Normal force Decrement*/
-	var btnImg = new CAAT.Foundation.SpriteImage().initialize(director.getImage('incre_decre_btn'), 2, 1)
+	var btnImg = new CAAT.Foundation.SpriteImage().initialize(director.getImage('incre_decre_btn'), 1, 2)
 	var btnForceDec = new CAAT.exemplarr().setAsButton(btnImg.getRef(), 1, 1, 1, 1, 
 						function(button){
-						}).setLocation(549, 539).setSpriteIndex(1);						
+						}).setLocation(619, 509).setSpriteIndex(1);						
     
 	/*Friction Increment*/
-	var btnImg = new CAAT.Foundation.SpriteImage().initialize(director.getImage('incre_decre_btn'), 2, 1)
+	var btnImg = new CAAT.Foundation.SpriteImage().initialize(director.getImage('incre_decre_btn'), 1, 2)
 	var btnFrictionInc = new CAAT.exemplarr().setAsButton(btnImg.getRef(), 0, 0, 0, 0, 
 						function(button){
 							
-						}).setLocation(549, 550);
+						}).setLocation(589, 536);
 
 	/*Friction Decrement*/
-	var btnImg = new CAAT.Foundation.SpriteImage().initialize(director.getImage('incre_decre_btn'), 2, 1)
+	var btnImg = new CAAT.Foundation.SpriteImage().initialize(director.getImage('incre_decre_btn'), 1, 2)
 	var btnFrictionDec = new CAAT.exemplarr().setAsButton(btnImg.getRef(), 1, 1, 1, 1, 
 						function(button){
 							
-						}).setLocation(549, 559).setSpriteIndex(1);						
+						}).setLocation(619, 536).setSpriteIndex(1);						
 						
 
 	/*Tension Increment*/
-	var btnImg = new CAAT.Foundation.SpriteImage().initialize(director.getImage('incre_decre_btn'), 2, 1)
+	var btnImg = new CAAT.Foundation.SpriteImage().initialize(director.getImage('incre_decre_btn'),1, 2)
 	var btnTensionInc = new CAAT.exemplarr().setAsButton(btnImg.getRef(), 0, 0, 0, 0, 
 						function(button){
 							
-						}).setLocation(549, 570);
+						}).setLocation(589, 564);
 
 	/*Tension Decrement*/
-	var btnImg = new CAAT.Foundation.SpriteImage().initialize(director.getImage('incre_decre_btn'), 2, 1)
+	var btnImg = new CAAT.Foundation.SpriteImage().initialize(director.getImage('incre_decre_btn'), 1, 2)
 	var btnTensionDec = new CAAT.exemplarr().setAsButton(btnImg.getRef(), 1, 1, 1, 1, 
 						function(button){
 							
-						}).setLocation(549, 579).setSpriteIndex(1);						
+						}).setLocation(619, 564).setSpriteIndex(1);						
 	
 	
 	IncDecArrow("+", arrow2, btnWeightInc);

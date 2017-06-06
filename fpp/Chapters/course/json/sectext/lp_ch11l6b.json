@@ -1,1 +1,50 @@
-{"cards":[{"lines":[{"type":"title","text":"Why does conduction occur?"},{"type":"headline","text":"Warmer object: molecules move faster"},{"type":"headline","text":"Molecules collide, exchanging energy"},{"type":"headline","text":"Cooler object gains, warmer object loses energy"},{"type":"bullet","text":"Until thermal equilibrium is reached"}]},{"lines":[{"type":"title","text":"Solar, terrestrial radiation"},{"type":"headline","text":"Sun’s radiation warms Earth"}]}],"definitions":[],"secText":["  <b>Lesson:</b>  <b>    <br />  </b>1. Define [OBJ:expsec_k484:conduction]. Determine why conduction occurs.<br />2. Determine the factors required to calculate the [OBJ:expsec_k485:rate of conduction].<br />3. Calculate the [OBJ:expsec_k490:rate of conduction].<br />4. Define [OBJ:expsec_k486:convection] and identify examples of convection.<br />5. Define [OBJ:expsec_k4872331:electromagnetic radiation] and identify examples of electromagnetic radiation.<br />6. Determine how electromagnetic radiation can be turned into [OBJ:expsec_k488:solar power].<br />7. Determine the effects of [OBJ:expsec_k489:global warming].<br />8. [OBJ:expsec_k48722:Compare and contrast] conduction, convection, and radiation.","  <b>Homework:</b>  <span class=\"KBInternalLink\"><a href=\"assign.html#OHW 11.06\">OHW 11.06</a></span>","  <b>Quick Review:</b>  [OBJ:sum_calculate_conduction_concepts:Conduction], [OBJ:sum_heat_rate_transfer_equation1:Rate of Heat Transfer], [OBJ:sum_convection_concepts1:Convection], [OBJ:sum_global_warming_concepts:Global Warming]"],"objNames":["wb_conduction_concepts2","wb_global_warming_concepts"]}
+{
+  "cards": [
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Why does conduction occur?"
+        },
+        {
+          "type": "headline",
+          "text": "Warmer object: molecules move faster"
+        },
+        {
+          "type": "headline",
+          "text": "Molecules collide, exchanging energy"
+        },
+        {
+          "type": "headline",
+          "text": "Cooler object gains, warmer object loses energy"
+        },
+        {
+          "type": "bullet",
+          "text": "Until thermal equilibrium is reached"
+        }
+      ]
+    },
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Solar, terrestrial radiation"
+        },
+        {
+          "type": "headline",
+          "text": "Sun’s radiation warms Earth"
+        }
+      ]
+    }
+  ],
+  "definitions": [],
+  "secText": [
+    "  <b>Lesson:</b>  <b>    <br />  </b>1. Define <a class='pjumpToTopic' href='javascript:void(0)' data-chap='11' data-topic='5' data-subtopic='1' data-subsection='0'>conduction</a>. Determine why conduction occurs.<br />2. Determine the factors required to calculate the <a class='pjumpToTopic' href='javascript:void(0)' data-chap='11' data-topic='5' data-subtopic='1' data-subsection='1'>rate of conduction</a>.<br />3. Calculate the <a class='pjumpToTopic' href='javascript:void(0)' data-chap='11' data-topic='5' data-subtopic='1' data-subsection='2'>rate of conduction</a>.<br />4. Define <a class='pjumpToTopic' href='javascript:void(0)' data-chap='11' data-topic='5' data-subtopic='2' data-subsection='0'>convection</a> and identify examples of convection.<br />5. Define <a class='pjumpToTopic' href='javascript:void(0)' data-chap='11' data-topic='5' data-subtopic='3' data-subsection='0'>electromagnetic radiation</a> and identify examples of electromagnetic radiation.<br />6. Determine how electromagnetic radiation can be turned into <a class='pjumpToTopic' href='javascript:void(0)' data-chap='11' data-topic='5' data-subtopic='3' data-subsection='1'>solar power</a>.<br />7. Determine the effects of <a class='pjumpToTopic' href='javascript:void(0)' data-chap='11' data-topic='5' data-subtopic='3' data-subsection='2'>global warming</a>.<br />8. <a class='pjumpToTopic' href='javascript:void(0)' data-chap='11' data-topic='5' data-subtopic='4' data-subsection='0'>Compare and contrast</a> conduction, convection, and radiation.",
+    
+    "  <b>Quick Review:</b>  <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='sum_calculate_conduction_concepts'>Conduction</a>, <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='sum_heat_rate_transfer_equation1'>Rate of Heat Transfer</a>, <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='sum_convection_concepts1'>Convection</a>, <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='sum_global_warming_concepts'>Global Warming</a>"
+  ],
+  "objNames": [
+    "wb_conduction_concepts2",
+    "wb_global_warming_concepts"
+  ]
+}

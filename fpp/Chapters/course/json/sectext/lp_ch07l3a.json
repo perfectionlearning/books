@@ -1,1 +1,47 @@
-{"cards":[{"lines":[{"type":"title","text":"Elastic collision"},{"type":"headline","text":"Kinetic energy is conserved"},{"type":"bullet","text":"Total <i>KE</i> of system remains constant"}]},{"lines":[{"type":"title","text":"Inelastic collision"},{"type":"headline","text":"Kinetic energy is <u>not</u> conserved"},{"type":"bullet","text":"  <i>KE</i> is reduced by collision"}]}],"definitions":[],"secText":["  <b>Essential Question: </b>  <b>    <br />  </b>How can we determine the difference between elastic and inelastic collisions?","  <b>Enduring Understandings:</b>  <b>    <br />  </b>1. In an [OBJ:expsec_g663:elastic collision], the momentum of a system remains constant and the total kinetic energy of a system does not change. Kinetic energy is conserved.<br />2. In an [OBJ:expsec_g664:inelastic collision], the momentum of a system remains constant, while the kinetic energy of a system changes. Kinetic energy is not conserved.","  <b>Vocabulary:</b>  [OBJ:expsec_g663:collision], [OBJ:expsec_g663:elastic collision], [OBJ:expsec_g664:inelastic collision], [OBJ:expsec_g666:completely inelastic collision]","  <b>STEM Skills:</b>  <b>    <br />  </b>1. Review [OBJ:expsec_f962:kinetic energy].<br />"],"objNames":["wb_elastic_collision_defined","wb_inelastic_collision_defined"]}
+{
+  "cards": [
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Elastic collision"
+        },
+        {
+          "type": "headline",
+          "text": "Kinetic energy is conserved"
+        },
+        {
+          "type": "bullet",
+          "text": "Total <i>KE</i> of system remains constant"
+        }
+      ]
+    },
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Inelastic collision"
+        },
+        {
+          "type": "headline",
+          "text": "Kinetic energy is <u>not</u> conserved"
+        },
+        {
+          "type": "bullet",
+          "text": "  <i>KE</i> is reduced by collision"
+        }
+      ]
+    }
+  ],
+  "definitions": [],
+  "secText": [
+    "  <b>Essential Question: </b>  <b>    <br />  </b>How can we determine the difference between elastic and inelastic collisions?",
+    "  <b>Enduring Understandings:</b>  <b>    <br />  </b>1. In an <a class='pjumpToTopic' href='javascript:void(0)' data-chap='7' data-topic='2' data-subtopic='1' data-subsection='0'>elastic collision</a>, the momentum of a system remains constant and the total kinetic energy of a system does not change. Kinetic energy is conserved.<br />2. In an <a class='pjumpToTopic' href='javascript:void(0)' data-chap='7' data-topic='2' data-subtopic='2' data-subsection='0'>inelastic collision</a>, the momentum of a system remains constant, while the kinetic energy of a system changes. Kinetic energy is not conserved.",
+    "  <b>Vocabulary:</b>  <a class='pjumpToTopic' href='javascript:void(0)' data-chap='7' data-topic='2' data-subtopic='1' data-subsection='0'>collision</a>, <a class='pjumpToTopic' href='javascript:void(0)' data-chap='7' data-topic='2' data-subtopic='1' data-subsection='0'>elastic collision</a>, <a class='pjumpToTopic' href='javascript:void(0)' data-chap='7' data-topic='2' data-subtopic='2' data-subsection='0'>inelastic collision</a>, <a class='pjumpToTopic' href='javascript:void(0)' data-chap='7' data-topic='2' data-subtopic='2' data-subsection='1'>completely inelastic collision</a>",
+    "  <b>STEM Skills:</b>  <b>    <br />  </b>1. Review <a class='pjumpToTopic' href='javascript:void(0)' data-chap='6' data-topic='2' data-subtopic='2' data-subsection='0'>kinetic energy</a>.<br />"
+  ],
+  "objNames": [
+    "wb_elastic_collision_defined",
+    "wb_inelastic_collision_defined"
+  ]
+}

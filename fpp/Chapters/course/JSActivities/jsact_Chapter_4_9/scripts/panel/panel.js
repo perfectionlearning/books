@@ -14,8 +14,8 @@
 		dashBoardEle[dashBoardEle.length] = ['well100',    		550,  0];
 		dashBoardEle[dashBoardEle.length] = ['well100',    		610,  0];
 		dashBoardEle[dashBoardEle.length] = ['wellright',  		710,  0];
-		dashBoardEle[dashBoardEle.length] = ['incrBgMed',  		505,  25];
-		dashBoardEle[dashBoardEle.length] = ['incrBgMed',  		505,  45];
+		//dashBoardEle[dashBoardEle.length] = ['incrBgMed',  		505,  25];
+		//dashBoardEle[dashBoardEle.length] = ['incrBgMed',  		505,  45];
 	
 	//dashBoard text
 	var dashBoardTxt = [];
@@ -36,10 +36,10 @@
 		
 		dashBoardTxt[dashBoardTxt.length] = ['Angle', 			'bold 14px arial', 'left', 373, 25, 8];
 		dashBoardTxt[dashBoardTxt.length] = ['Banana velocity', 'bold 14px arial', 'left', 373, 50, 9];
-		dashBoardTxt[dashBoardTxt.length] = ['degrees', 		'bold 14px arial', 'left', 565, 27, 10];
-		dashBoardTxt[dashBoardTxt.length] = ['m/s', 			'bold 14px arial', 'left', 565, 50, 11];
-		dashBoardTxt[dashBoardTxt.length] = ['-8.0', 			'bold 13px arial', 'left', 528, 28, 'angleTxt'];//initial Amplitude id 
-		dashBoardTxt[dashBoardTxt.length] = ['15.0', 			'bold 13px arial', 'left', 528, 48, 'initVelTxt'];//Period id 
+		dashBoardTxt[dashBoardTxt.length] = ['degrees', 		'bold 14px arial', 'left', 495, 27, 10];
+		dashBoardTxt[dashBoardTxt.length] = ['m/s', 			'bold 14px arial', 'left', 528, 50, 11];
+		dashBoardTxt[dashBoardTxt.length] = ['-8.0', 			'bold 13px arial', 'left', 465, 28, 'angleTxt'];//initial Amplitude id 
+		dashBoardTxt[dashBoardTxt.length] = ['15.0', 			'bold 13px arial', 'left', 495, 51, 'initVelTxt'];//Period id 
 		
 	//banner text
 	var bannerContentTxt = [];
@@ -146,27 +146,27 @@
 	//Create Increment and Decrement button
 	//=======================================================
 	function __createIncDecButton(){
-		var incDecBtnImg = new CAAT.Foundation.SpriteImage().initialize( game._director.getImage('incre_decre_btn'), 2, 1);
+		var incDecBtnImg = new CAAT.Foundation.SpriteImage().initialize( game._director.getImage('incre_decre_btn'), 1, 2);
 		var accIncBtn = new CAAT.Foundation.Actor().
 								setId('accInc').
 								setAsButton(incDecBtnImg.getRef(), 0, 0, 0, 0, function(button){
 									//game.incDecHandler(this);
-								}).setLocation(500, 25);
+								}).setLocation(560, 15);
 		var accDecBtn = new CAAT.Foundation.Actor().
 								setId('accDec').
 								setAsButton(incDecBtnImg.getRef(), 1, 1, 1, 1, function(button){
 									//game.incDecHandler(this);
-								}).setLocation(500, 34);
+								}).setLocation(590, 15);
 		var iniVelIncBtn = new CAAT.Foundation.Actor().
 								setId('iniVelInc').
 								setAsButton(incDecBtnImg.getRef(), 0, 0, 0, 0, function(button){
 									//game.incDecHandler(this);
-								}).setLocation(500, 45);
+								}).setLocation(560, 45);
 		var  iniVelDecBtn= new CAAT.Foundation.Actor().
 								setId('iniVelDec').
 								setAsButton(incDecBtnImg.getRef(), 1, 1, 1, 1, function(button){
 									//game.incDecHandler(this);
-								}).setLocation(500, 54);
+								}).setLocation(590, 45);
 								
 		dashBG.addChild(iniVelIncBtn);
 		dashBG.addChild(iniVelDecBtn);

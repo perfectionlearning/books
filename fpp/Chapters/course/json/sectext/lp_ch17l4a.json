@@ -1,1 +1,35 @@
-{"cards":[{"lines":[{"type":"title","text":"Magnetic force on current"},{"type":"headline","text":"Magnetic field applies force on current-carrying wire"},{"type":"headline","text":"Proportional to current, length of wire "},{"type":"headline","text":"Direction of force found with a right-hand rule"}]}],"definitions":[],"secText":["  <b class=\"object-name\">Supplemental Material: </b>  <span class=\"object-name\">Advanced Topic</span>","  <b>Essential Question: </b>  <br />How can we calculate the magnetic force and current of a current-carrying wire in a magnetic field?","  <b>Enduring Understandings:</b>  <b>    <br />  </b>1. A [OBJ:pwsec_q762:velocity selector] allows particles of certain speeds to move through the selector. The speed of the particles that can pass through the velocity selector is dependent on the strength of the electric and magnetic fields within the device.<br />2. When the velocity of a charged particle is perpendicular to the magnetic field it is moving in, then the [OBJ:expsec_q763:charged particle moves in circular motion]. To find the direction of the force acting on the charged particle, use the right-hand rule.<br />3. [OBJ:expsec_q765:Edwin Hall] determined which type of charged particle makes up electric current. By comparing the potential difference in the top and bottom of a current-carrying strip, he determined that [OBJ:expsec_q766:electrons are responsible for current].<br />4. To calculate the [OBJ:expsec_q767:magnetic force] on a current-carrying wire multiply the current by the length of the wire by the magnetic field.<br />5. To calculate the [OBJ:expsec_q774:magnetic field] around a current-carrying wire, multiply the permeability of free space by the current, then divide by the product of 2<i>π</i> and the distance the magnetic field is from the center of the wire.","  <b>Vocabulary:</b>  [OBJ:expsec_q765:Hall effect]","  <b>STEM Skills:</b>  <b>    <br />  </b>1. Review [OBJ:expsec_h555:circular motion].<br />2. Review [OBJ:expsec_p354:electric current]."],"objNames":["wb_bforce_current_wire_concepts"]}
+{
+  "cards": [
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Magnetic force on current"
+        },
+        {
+          "type": "headline",
+          "text": "Magnetic field applies force on </br>current-carrying wire"
+        },
+        {
+          "type": "headline",
+          "text": "Proportional to current, length of wire"
+        },
+        {
+          "type": "headline",
+          "text": "Direction of force found with a right-hand rule"
+        }
+      ]
+    }
+  ],
+  "definitions": [],
+  "secText": [
+    "  <b class=\"object-name\">Supplemental Material: </b>  <span class=\"object-name\">Advanced Topic</span>",
+    "  <b>Essential Question: </b>  <br />How can we calculate the magnetic force and current of a current-carrying wire in a magnetic field?",
+    "  <b>Enduring Understandings:</b>  <b>    <br />  </b>1. A <a class='pjumpToTopic' href='javascript:void(0)' data-chap='17' data-topic='3' data-subtopic='1' data-subsection='0'>velocity selector</a> allows particles of certain speeds to move through the selector. The speed of the particles that can pass through the velocity selector is dependent on the strength of the electric and magnetic fields within the device.<br />2. When the velocity of a charged particle is perpendicular to the magnetic field it is moving in, then the <a class='pjumpToTopic' href='javascript:void(0)' data-chap='17' data-topic='3' data-subtopic='2' data-subsection='0'>charged particle moves in circular motion</a>. To find the direction of the force acting on the charged particle, use the right-hand rule.<br />3. <a class='pjumpToTopic' href='javascript:void(0)' data-chap='17' data-topic='3' data-subtopic='3' data-subsection='0'>Edwin Hall</a> determined which type of charged particle makes up electric current. By comparing the potential difference in the top and bottom of a current-carrying strip, he determined that <a class='pjumpToTopic' href='javascript:void(0)' data-chap='17' data-topic='3' data-subtopic='3' data-subsection='1'>electrons are responsible for current</a>.<br />4. To calculate the <a class='pjumpToTopic' href='javascript:void(0)' data-chap='17' data-topic='3' data-subtopic='4' data-subsection='0'>magnetic force</a> on a current-carrying wire multiply the current by the length of the wire by the magnetic field.<br />5. To calculate the <a class='pjumpToTopic' href='javascript:void(0)' data-chap='17' data-topic='3' data-subtopic='5' data-subsection='0'>magnetic field</a> around a current-carrying wire, multiply the permeability of free space by the current, then divide by the product of 2<i>π</i> and the distance the magnetic field is from the center of the wire.",
+    "  <b>Vocabulary:</b>  <a class='pjumpToTopic' href='javascript:void(0)' data-chap='17' data-topic='3' data-subtopic='3' data-subsection='0'>Hall effect</a>",
+    "  <b>STEM Skills:</b>  <b>    <br />  </b>1. Review <a class='pjumpToTopic' href='javascript:void(0)' data-chap='8' data-topic='0' data-subtopic='1' data-subsection='1'>circular motion</a>.<br />2. Review <a class='pjumpToTopic' href='javascript:void(0)' data-chap='16' data-topic='0' data-subtopic='1' data-subsection='0'>electric current</a>."
+  ],
+  "objNames": [
+    "wb_bforce_current_wire_concepts"
+  ]
+}

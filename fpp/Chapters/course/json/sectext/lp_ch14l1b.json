@@ -1,1 +1,21 @@
-{"cards":[{"lines":[{"type":"title","text":"Sound waves"}]}],"definitions":[],"secText":["  <b>Lesson:</b>  <b>    <br />  </b>1. Explore the movement of air particles in a [OBJ:actsec_n254:sound wave].<br />2. Describe the structure of a [OBJ:expsec_n256:sound wave].<br />3. Compare the [OBJ:expsec_n257:frequencies of sounds].<br />4. Describe how [OBJ:expsec_n258:temperature] affects the speed of sounds.<br />5. Define [OBJ:pwsec_n259:supersonic speed].","  <b>Homework:</b>  <span class=\"KBInternalLink\"><a href=\"assign.html#OHW 14.01\">OHW 14.01</a></span>","  <b>Quick Review:</b>  [OBJ:sum_sound_waves:Sound Waves], [OBJ:sum_speed_sound:Speed of Sound]"],"objNames":["jsact_Chapter_17_0"]}
+{
+  "cards": [
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Sound waves"
+        }
+      ]
+    }
+  ],
+  "definitions": [],
+  "secText": [
+    "  <b>Lesson:</b>  <b>    <br />  </b>1. Explore the movement of air particles in a <a class='pjumpToTopic' href='javascript:void(0)' data-chap='14' data-topic='0' data-subtopic='1' data-subsection='0'>sound wave</a>.<br />2. Describe the structure of a <a class='pjumpToTopic' href='javascript:void(0)' data-chap='14' data-topic='0' data-subtopic='1' data-subsection='1'>sound wave</a>.<br />3. Compare the <a class='pjumpToTopic' href='javascript:void(0)' data-chap='14' data-topic='0' data-subtopic='2' data-subsection='0'>frequencies of sounds</a>.<br />4. Describe how <a class='pjumpToTopic' href='javascript:void(0)' data-chap='14' data-topic='0' data-subtopic='3' data-subsection='0'>temperature</a> affects the speed of sounds.<br />5. Define <a class='pjumpToTopic' href='javascript:void(0)' data-chap='14' data-topic='0' data-subtopic='3' data-subsection='1'>supersonic speed</a>.",
+    
+    "  <b>Quick Review:</b>  <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='sum_sound_waves'>Sound Waves</a>, <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='sum_speed_sound'>Speed of Sound</a>"
+  ],
+  "objNames": [
+    "jsact_Chapter_17_0"
+  ]
+}

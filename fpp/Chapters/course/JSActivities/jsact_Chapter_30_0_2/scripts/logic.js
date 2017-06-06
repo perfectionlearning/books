@@ -535,19 +535,19 @@ game.interaction = function (director, scene, banner) {
 
     /*InCrement and DeCrement*/
     var btnValBg = getActor(false, 420, 548, 'incrbgmed', 'incrbgmed', 1, 1);
-    var btnValImg = new CAAT.Foundation.SpriteImage().initialize(director.getImage('incdecbtn'), 2, 1);
+    var btnValImg = new CAAT.Foundation.SpriteImage().initialize(director.getImage('incdecbtn'), 1, 2);
     var aActorInc = new CAAT.exemplarr().setAsButton(btnValImg.getRef(), 0, 0, 0, 0, function (button) {
         IncDecArrow('+', aActorInc);
-    }).setLocation(410, 548);
+    }).setLocation(480, 548);
 	//the increment and decrement buttons MouseDown functions 
 	aActorInc.mouseDown = function(mouseEvent){
 		IncDecArrow('+', aActorInc);
 	}
 	
-    var btnValImg1 = new CAAT.Foundation.SpriteImage().initialize(director.getImage('incdecbtn'), 2, 1);
+    var btnValImg1 = new CAAT.Foundation.SpriteImage().initialize(director.getImage('incdecbtn'), 1, 2);
     var aActorDec = new CAAT.exemplarr().setAsButton(btnValImg1.getRef(), 1, 1, 1, 1, function (button) {
         IncDecArrow('-', aActorDec);
-    }).setLocation(410, 557);
+    }).setLocation(510, 548);
 	aActorDec.mouseDown = function(mouseEvent){
 		IncDecArrow('-', aActorDec);
 	}
@@ -565,7 +565,7 @@ game.interaction = function (director, scene, banner) {
 	};	
     /*Inc and Dec value*/
     var aActorIncDec = game.textActor(director, speedVal.toFixed(0), 'Bold 14px Arial', 'left', '#ffffff');
-    aActorIncDec.setLocation(440, 550);
+    aActorIncDec.setLocation(410, 552);
 
     /*Slider*/
     var sliderBg = getActor(false, 320, 510, 'slider', 'slider', 1, 1);
@@ -665,7 +665,7 @@ game.interaction = function (director, scene, banner) {
     desktop.addChild(aActorReset);
     desktop.addChild(aActorPause);
     desktop.addChild(aActorGo);
-    desktop.addChild(btnValBg);
+    //desktop.addChild(btnValBg);
     desktop.addChild(aActorIncDec);
     desktop.addChild(aActorInc);
     desktop.addChild(aActorDec);

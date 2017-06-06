@@ -10,17 +10,17 @@
 		dashBoardEle[dashBoardEle.length] = ['well100',    		'630',  '0'];
 		dashBoardEle[dashBoardEle.length] = ['well100',    		'700',  '0'];
 		dashBoardEle[dashBoardEle.length] = ['wellright',  		'750',  '0'];
-		dashBoardEle[dashBoardEle.length] = ['incrBgMed',  		'568',  '25'];
-		dashBoardEle[dashBoardEle.length] = ['incrBgMed',  		'568',  '55'];		
+		//dashBoardEle[dashBoardEle.length] = ['incrBgMed',  		'568',  '25'];
+		//dashBoardEle[dashBoardEle.length] = ['incrBgMed',  		'568',  '55'];		
 	
 	//dashBoard test
 	var dashBoardTxt = [];
 		dashBoardTxt[dashBoardTxt.length] = ['Power', 	'bold 14px Arial',  'left', 490,  27, 1];//Text, font_style, alignment, xPos, yPos, id
-		dashBoardTxt[dashBoardTxt.length] = ['5,000', 	'bold 14px Arial',  'left', 572,  27, 'powerTxt'];//Text, font_style, alignment, xPos, yPos, id
-		dashBoardTxt[dashBoardTxt.length] = ['W', 		'bold 14px Arial',  'left', 631,  27, 2];//Text, font_style, alignment, xPos, yPos, id
+		dashBoardTxt[dashBoardTxt.length] = ['5,000', 	'bold 14px Arial',  'left', 542,  27, 'powerTxt'];//Text, font_style, alignment, xPos, yPos, id
+		dashBoardTxt[dashBoardTxt.length] = ['W', 		'bold 14px Arial',  'left', 583,  27, 2];//Text, font_style, alignment, xPos, yPos, id
 		dashBoardTxt[dashBoardTxt.length] = ['Braking force', 'bold 14px Arial',  'left', 440,  56, 3];
-		dashBoardTxt[dashBoardTxt.length] = ['600', 		  'bold 14px Arial',  'left', 572,  57, 'brakTxt'];//Text, font_style, alignment, xPos, yPos, id
-		dashBoardTxt[dashBoardTxt.length] = ['N', 		 	  'bold 14px Arial',  'left', 631,  56, 4];//Text, font_style, alignment, xPos, yPos, id
+		dashBoardTxt[dashBoardTxt.length] = ['600', 		  'bold 14px Arial',  'left', 542,  57, 'brakTxt'];//Text, font_style, alignment, xPos, yPos, id
+		dashBoardTxt[dashBoardTxt.length] = ['N', 		 	  'bold 14px Arial',  'left', 583,  56, 4];//Text, font_style, alignment, xPos, yPos, id
 		
 		
 	var bannerImg,
@@ -150,27 +150,27 @@
 	//Create Increment and Decrement button
 	//=======================================================
 	function __createIncDecButton(){
-		var incDecBtnImg = new CAAT.Foundation.SpriteImage().initialize( game._director.getImage('incre_decre_btn'), 2, 1);
+		var incDecBtnImg = new CAAT.Foundation.SpriteImage().initialize( game._director.getImage('incre_decre_btn'), 1, 2);
 		var inipowerIncBtn = new CAAT.Foundation.Actor().
 								setId('inipowerInc').
 								setAsButton(incDecBtnImg.getRef(), 0, 0, 0, 0, function(button){
 									//game.incDecHandler(this);
-								}).setLocation(545, 25);
+								}).setLocation(605, 25);
 		var inipowerDecBtn = new CAAT.Foundation.Actor().
 								setId('inipowerDec').
 								setAsButton(incDecBtnImg.getRef(), 1, 1, 1, 1, function(button){
 									//game.incDecHandler(this);
-								}).setLocation(545, 34);
+								}).setLocation(635, 25);
 		var inibrakIncBtn = new CAAT.Foundation.Actor().
 								setId('inibrakInc').
 								setAsButton(incDecBtnImg.getRef(), 0, 0, 0, 0, function(button){
 									//game.incDecHandler(this);
-								}).setLocation(545, 55);
+								}).setLocation(605, 55);
 		var inibrakDecBtn = new CAAT.Foundation.Actor().
 								setId('inibrakDec').
 								setAsButton(incDecBtnImg.getRef(), 1, 1, 1, 1, function(button){
 									//game.incDecHandler(this);
-								}).setLocation(545, 64);						
+								}).setLocation(635, 55);						
 								
 		dashBG.addChild(inipowerIncBtn);
 		dashBG.addChild(inipowerDecBtn);

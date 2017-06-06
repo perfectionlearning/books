@@ -1,35 +1,11 @@
 {
-  "get_link": "http://test-ohw.kineticmath.com/rest/rest.php/pset/",
-  "set_link": "https://test-ohw.kineticmath.com/rest/rest.php/submit/",
-  "chapters": [
-    {
-      "title": "Help for students",
-      "unit": [
-        {
-          "section": [
-            {
-              "SectionTitle": "Help Topics",
-              "subsection": [
-                {
-                  "SectionHeading": "Help Topics",
-                  "ref": "temp.json"
-                }
-              ]
-            },
-            {
-              "SectionTitle": "Student Help Videos ",
-              "subsection": [
-                {
-                  "type": "videoScreen",
-                  "SectionHeading": " Student Help Videos ",
-                  "ref": "sumsec_shelp1.json"
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
+  "get_link": "https://qa1.perfectionlearning.com/api/rest/quickcheck/",
+  "quizboard_get_link": "https://qa1.perfectionlearning.com/api/rest/pset/",
+  "set_link": "https://qa1.perfectionlearning.com/api/rest/submit/",
+  "session_info":"https://qa1.perfectionlearning.com/api/endpoint/sessioninfo",
+  "setting":"https://qa1.perfectionlearning.com/api/endpoint/admin/user/",
+ "chapters": [{},
+    
     {
       "title": "One-dimensional Motion",
       "quizBoard_id": "B1U4BDu0XRl",
@@ -42,7 +18,7 @@
               "subsection": [
                 {
                   "type": "activity",
-                  "SectionHeading": "Unit Overview: Position, Distance and Speed",
+                  "SectionHeading": "Lesson Overview: Position, Distance and Speed",
                   "ref": "lp_ch01l1a_ui.json"
                 }
               ]
@@ -125,7 +101,7 @@
               "SectionTitle": "Displacement and Velocity",
               "subsection": [
                 {
-                  "SectionHeading": "Unit Overview: Displacement and Velocity",
+                  "SectionHeading": "Lesson Overview: Displacement and Velocity",
                   "ref": "lp_ch01l2a_ui.json"
                 }
               ]
@@ -208,7 +184,7 @@
               "SectionTitle": "Average and Instantaneous Velocity",
               "subsection": [
                 {
-                  "SectionHeading": "Unit Overview: Average and Instantaneous Velocity",
+                  "SectionHeading": "Lesson Overview: Average and Instantaneous Velocity",
                   "ref": "lp_ch01l3a_ui.json"
                 }
               ]
@@ -265,7 +241,7 @@
               "SectionTitle": "Acceleration",
               "subsection": [
                 {
-                  "SectionHeading": "Unit Overview: Acceleration",
+                  "SectionHeading": "Lesson Overview: Acceleration",
                   "ref": "lp_ch01l4a_ui.json"
                 }
               ]
@@ -342,7 +318,7 @@
               "SectionTitle": "Advanced Motion Equations",
               "subsection": [
                 {
-                  "SectionHeading": "Unit Overview: Advanced Motion Equations",
+                  "SectionHeading": "Lesson Overview: Advanced Motion Equations",
                   "ref": "lp_ch01l5a_ui.json"
                 }
               ]
@@ -411,7 +387,7 @@
               "SectionTitle": "Math Skills: Proportional and Linear Relationships",
               "subsection": [
                 {
-                  "SectionHeading": "Unit Overview: Proportional and Linear Relationships",
+                  "SectionHeading": "Lesson Overview: Proportional and Linear Relationships",
                   "ref": "lp_ch02l1a_ui.json"
                 }
               ]
@@ -468,7 +444,7 @@
               "SectionTitle": "Position-Time Graphs",
               "subsection": [
                 {
-                  "SectionHeading": "Unit Overview: Position-Time Graphs",
+                  "SectionHeading": "Lesson Overview: Position-Time Graphs",
                   "ref": "lp_ch02l2a_ui.json"
                 }
               ]
@@ -545,7 +521,7 @@
               "SectionTitle": "Scatter Plots and Trend Lines",
               "subsection": [
                 {
-                  "SectionHeading": "Unit Overview: Scatter Plots and Trend Lines",
+                  "SectionHeading": "Lesson Overview: Scatter Plots and Trend Lines",
                   "ref": "lp_ch02l3a_ui.json"
                 }
               ]
@@ -613,7 +589,7 @@
               "SectionTitle": "Freefall Acceleration",
               "subsection": [
                 {
-                  "SectionHeading": "Unit Overview: Freefall Acceleration",
+                  "SectionHeading": "Lesson Overview: Freefall Acceleration",
                   "ref": "lp_ch02l4a_ui.json"
                 }
               ]
@@ -677,7 +653,7 @@
               "SectionTitle": "Reference Frame",
               "subsection": [
                 {
-                  "SectionHeading": "Unit Overview: Reference Frame",
+                  "SectionHeading": "Lesson Overview: Reference Frame",
                   "ref": "lp_ch02l5a_ui.json"
                 }
               ]
@@ -751,7 +727,7 @@
               "SectionTitle": "Metric System and Conversions",
               "subsection": [
                 {
-                  "SectionHeading": "Unit Overview: Metric System and Conversions",
+                  "SectionHeading": "Lesson Overview: Metric System and Conversions",
                   "ref": "lp_ch03l1a_ui.json"
                 }
               ]
@@ -855,7 +831,7 @@
               "SectionTitle": "Scientific Notation",
               "subsection": [
                 {
-                  "SectionHeading": "Unit Overview: Scientific Notation",
+                  "SectionHeading": "Lesson Overview: Scientific Notation",
                   "ref": "lp_ch03l2a_ui.json"
                 }
               ]
@@ -962,7 +938,7 @@
               "SectionTitle": "Significant Figures",
               "subsection": [
                 {
-                  "SectionHeading": "Unit Overview: Significant Figures",
+                  "SectionHeading": "Lesson Overview: Significant Figures",
                   "ref": "lp_ch03l3a_ui.json"
                 }
               ]
@@ -1018,7 +994,7 @@
               "SectionTitle": "Nature of Science",
               "subsection": [
                 {
-                  "SectionHeading": "Unit Overview: Nature of Science",
+                  "SectionHeading": "Lesson Overview: Nature of Science",
                   "ref": "lp_ch03l4a_ui.json"
                 }
               ]
@@ -1103,7 +1079,7 @@
               "SectionTitle": "Science Experiments",
               "subsection": [
                 {
-                  "SectionHeading": "Unit Overview: Science Experiments",
+                  "SectionHeading": "Lesson Overview: Science Experiments",
                   "ref": "lp_ch03l5a_ui.json"
                 }
               ]
@@ -1205,7 +1181,7 @@
               "SectionTitle": "Science, News and Marketing",
               "subsection": [
                 {
-                  "SectionHeading": "Unit Overview: Science, News and Marketing",
+                  "SectionHeading": "Lesson Overview: Science, News and Marketing",
                   "ref": "lp_ch03l7a_ui.json"
                 }
               ]
@@ -1278,7 +1254,7 @@
               "SectionTitle": "Math Fundamentals Review",
               "subsection": [
                 {
-                  "SectionHeading": "Unit Overview: Math Fundamentals Review",
+                  "SectionHeading": "Lesson Overview: Math Fundamentals Review",
                   "ref": "lp_ch03l6a_ui.json"
                 }
               ]
@@ -1352,7 +1328,7 @@
               "SectionTitle": "Two-Dimensional Motion",
               "subsection": [
                 {
-                  "SectionHeading": "Unit Overview: Two-Dimensional Motion",
+                  "SectionHeading": "Lesson Overview: Two-Dimensional Motion",
                   "ref": "lp_ch04l1a_ui.json"
                 }
               ]
@@ -1441,7 +1417,7 @@
               "SectionTitle": "Projectile Motion",
               "subsection": [
                 {
-                  "SectionHeading": "Unit Overview: Projectile Motion",
+                  "SectionHeading": "Lesson Overview: Projectile Motion",
                   "ref": "lp_ch04l2a_ui.json"
                 }
               ]
@@ -1526,7 +1502,7 @@
               "SectionTitle": "Combining Vectors Graphically",
               "subsection": [
                 {
-                  "SectionHeading": "Unit Overview: Combining Vectors Graphically",
+                  "SectionHeading": "Lesson Overview: Combining Vectors Graphically",
                   "ref": "lp_ch04l3a_ui.json"
                 }
               ]
@@ -1613,7 +1589,7 @@
               "SectionTitle": "Combining Vector Components",
               "subsection": [
                 {
-                  "SectionHeading": "Unit Overview: Combining Vector Components",
+                  "SectionHeading": "Lesson Overview: Combining Vector Components",
                   "ref": "lp_ch04l4a_ui.json"
                 }
               ]
@@ -1654,7 +1630,7 @@
               "SectionTitle": "Vectors and Trigonometry",
               "subsection": [
                 {
-                  "SectionHeading": "Unit Overview: Vectors and Trigonometry",
+                  "SectionHeading": "Lesson Overview: Vectors and Trigonometry",
                   "ref": "lp_ch04l5a_ui.json"
                 }
               ]
@@ -1726,7 +1702,7 @@
               "SectionTitle": "Rectangular Vector Multiplied by Scalar",
               "subsection": [
                 {
-                  "SectionHeading": "Unit Overview: Rectangular Vector Multiplied by Scalar",
+                  "SectionHeading": "Lesson Overview: Rectangular Vector Multiplied by Scalar",
                   "ref": "lp_ch04l6a_ui.json"
                 }
               ]
@@ -1816,7 +1792,7 @@
               "SectionTitle": "Converting Between Vector Forms",
               "subsection": [
                 {
-                  "SectionHeading": "Unit Overview: Converting Between Vector Forms",
+                  "SectionHeading": "Lesson Overview: Converting Between Vector Forms",
                   "ref": "lp_ch04l7a_ui.json"
                 }
               ]
@@ -1891,7 +1867,7 @@
               "SectionTitle": "Force and Newton’s First Law",
               "subsection": [
                 {
-                  "SectionHeading": "Unit Overview: Force and Newton’s First Law",
+                  "SectionHeading": "Lesson Overview: Force and Newton’s First Law",
                   "ref": "lp_ch05l1a_ui.json"
                 }
               ]
@@ -1973,7 +1949,7 @@
               "SectionTitle": "Newton's Second Law",
               "subsection": [
                 {
-                  "SectionHeading": "Unit Overview: Newton's Second Law",
+                  "SectionHeading": "Lesson Overview: Newton's Second Law",
                   "ref": "lp_ch05l2a_ui.json"
                 }
               ]
@@ -2056,7 +2032,7 @@
               "SectionTitle": "Newton's Third Law and Types of Forces",
               "subsection": [
                 {
-                  "SectionHeading": "Unit Overview: Newton's Third Law and Types of Forces",
+                  "SectionHeading": "Lesson Overview: Newton's Third Law and Types of Forces",
                   "ref": "lp_ch05l3a_ui.json"
                 }
               ]
@@ -2195,7 +2171,7 @@
               "SectionTitle": "Forces that Change",
               "subsection": [
                 {
-                  "SectionHeading": "Unit Overview: Forces that Change",
+                  "SectionHeading": "Lesson Overview: Forces that Change",
                   "ref": "lp_ch05l4a_ui.json"
                 }
               ]
@@ -2252,7 +2228,7 @@
               "SectionTitle": "Free-body Diagrams",
               "subsection": [
                 {
-                  "SectionHeading": "Unit Overview: Free-body Diagrams",
+                  "SectionHeading": "Lesson Overview: Free-body Diagrams",
                   "ref": "lp_ch05l5a_ui.json"
                 }
               ]
@@ -2308,7 +2284,7 @@
               "SectionTitle": "Force Problems Using Trigonometry",
               "subsection": [
                 {
-                  "SectionHeading": "Unit Overview: Force Problems Using Trigonometry",
+                  "SectionHeading": "Lesson Overview: Force Problems Using Trigonometry",
                   "ref": "lp_ch05l6a_ui.json"
                 }
               ]
@@ -2389,7 +2365,7 @@
               "SectionTitle": "Work",
               "subsection": [
                 {
-                  "SectionHeading": "Unit Overview: Work",
+                  "SectionHeading": "Lesson Overview: Work",
                   "ref": "lp_ch06l1a_ui.json"
                 }
               ]
@@ -2441,7 +2417,7 @@
               "SectionTitle": "Work: Force at an Angle",
               "subsection": [
                 {
-                  "SectionHeading": "Unit Overview: Work: Force at an Angle",
+                  "SectionHeading": "Lesson Overview: Work: Force at an Angle",
                   "ref": "lp_ch06l2a_ui.json"
                 }
               ]
@@ -2502,7 +2478,7 @@
               "SectionTitle": "Kinetic Energy",
               "subsection": [
                 {
-                  "SectionHeading": "Unit Overview: Kinetic Energy",
+                  "SectionHeading": "Lesson Overview: Kinetic Energy",
                   "ref": "lp_ch06l3a_ui.json"
                 }
               ]
@@ -2581,7 +2557,7 @@
               "SectionTitle": "Potential Energy",
               "subsection": [
                 {
-                  "SectionHeading": "Unit Overview: Potential Energy",
+                  "SectionHeading": "Lesson Overview: Potential Energy",
                   "ref": "lp_ch06l4a_ui.json"
                 }
               ]
@@ -2649,7 +2625,7 @@
               "SectionTitle": "Energy Conservation and Energy Transfer",
               "subsection": [
                 {
-                  "SectionHeading": "Unit Overview: Energy Conservation and Energy Transfer",
+                  "SectionHeading": "Lesson Overview: Energy Conservation and Energy Transfer",
                   "ref": "lp_ch06l5a_ui.json"
                 }
               ]
@@ -2751,7 +2727,7 @@
               "SectionTitle": "Work and Systems",
               "subsection": [
                 {
-                  "SectionHeading": "Unit Overview: Work and Systems",
+                  "SectionHeading": "Lesson Overview: Work and Systems",
                   "ref": "lp_ch06l6a_ui.json"
                 }
               ]
@@ -2834,7 +2810,7 @@
               "SectionTitle": "Momentum",
               "subsection": [
                 {
-                  "SectionHeading": "Unit Overview: Momentum",
+                  "SectionHeading": "Lesson Overview: Momentum",
                   "ref": "lp_ch07l1a_ui.json"
                 }
               ]
@@ -2908,7 +2884,7 @@
               "SectionTitle": "Conservation of Momentum",
               "subsection": [
                 {
-                  "SectionHeading": "Unit Overview: Conservation of Momentum",
+                  "SectionHeading": "Lesson Overview: Conservation of Momentum",
                   "ref": "lp_ch07l2a_ui.json"
                 }
               ]
@@ -2966,7 +2942,7 @@
               "SectionTitle": "Collisions",
               "subsection": [
                 {
-                  "SectionHeading": "Unit Overview: Collisions",
+                  "SectionHeading": "Lesson Overview: Collisions",
                   "ref": "lp_ch07l3a_ui.json"
                 }
               ]
@@ -3033,7 +3009,7 @@
               "SectionTitle": "Center of Mass",
               "subsection": [
                 {
-                  "SectionHeading": "Unit Overview: Center of Mass",
+                  "SectionHeading": "Lesson Overview: Center of Mass",
                   "ref": "lp_ch07l4a_ui.json"
                 }
               ]
@@ -3111,7 +3087,7 @@
               "SectionTitle": "Circular Motion",
               "subsection": [
                 {
-                  "SectionHeading": "Unit Overview: Circular Motion",
+                  "SectionHeading": "Lesson Overview: Circular Motion",
                   "ref": "lp_ch08l1a_ui.json"
                 }
               ]
@@ -3195,7 +3171,7 @@
               "SectionTitle": "Centripetal Force",
               "subsection": [
                 {
-                  "SectionHeading": "Unit Overview: Centripetal Force",
+                  "SectionHeading": "Lesson Overview: Centripetal Force",
                   "ref": "lp_ch08l2a_ui.json"
                 }
               ]
@@ -3258,7 +3234,7 @@
               "SectionTitle": "Newton’s Law of Gravity",
               "subsection": [
                 {
-                  "SectionHeading": "Unit Overview: Newton’s Law of Gravity",
+                  "SectionHeading": "Lesson Overview: Newton’s Law of Gravity",
                   "ref": "lp_ch08l3a_ui.json"
                 }
               ]
@@ -3335,7 +3311,7 @@
               "SectionTitle": "Circular Orbits",
               "subsection": [
                 {
-                  "SectionHeading": "Unit Overview: Circular Orbits",
+                  "SectionHeading": "Lesson Overview: Circular Orbits",
                   "ref": "lp_ch08l4a_ui.json"
                 }
               ]
@@ -3411,7 +3387,7 @@
               "SectionTitle": "Kepler’s Laws",
               "subsection": [
                 {
-                  "SectionHeading": "Unit Overview: Kepler’s Laws",
+                  "SectionHeading": "Lesson Overview: Kepler’s Laws",
                   "ref": "lp_ch08l5a_ui.json"
                 }
               ]
@@ -3504,7 +3480,7 @@
               "SectionTitle": "Rotational Motion",
               "subsection": [
                 {
-                  "SectionHeading": "Unit Overview: Rotational Motion",
+                  "SectionHeading": "Lesson Overview: Rotational Motion",
                   "ref": "lp_ch09l1a_ui.json"
                 }
               ]
@@ -3555,7 +3531,7 @@
               "SectionTitle": "Fundamental Equations",
               "subsection": [
                 {
-                  "SectionHeading": "Unit Overview: Fundamental Equations",
+                  "SectionHeading": "Lesson Overview: Fundamental Equations",
                   "ref": "lp_ch09l2a_ui.json"
                 }
               ]
@@ -3635,7 +3611,7 @@
               "SectionTitle": "Advanced Equations",
               "subsection": [
                 {
-                  "SectionHeading": "Unit Overview: Advanced Equations",
+                  "SectionHeading": "Lesson Overview: Advanced Equations",
                   "ref": "lp_ch09l3a_ui.json"
                 }
               ]
@@ -3710,7 +3686,7 @@
               "SectionTitle": "Torque",
               "subsection": [
                 {
-                  "SectionHeading": "Unit Overview: Torque",
+                  "SectionHeading": "Lesson Overview: Torque",
                   "ref": "lp_ch09l4a_ui.json"
                 }
               ]
@@ -3785,7 +3761,7 @@
               "SectionTitle": "Torque and Angular Acceleration",
               "subsection": [
                 {
-                  "SectionHeading": "Unit Overview: Torque and Angular Acceleration",
+                  "SectionHeading": "Lesson Overview: Torque and Angular Acceleration",
                   "ref": "lp_ch09l5a_ui.json"
                 }
               ]
@@ -3852,7 +3828,7 @@
               "SectionTitle": "Angular Momentum",
               "subsection": [
                 {
-                  "SectionHeading": "Unit Overview: Angular Momentum",
+                  "SectionHeading": "Lesson Overview: Angular Momentum",
                   "ref": "lp_ch09l6a_ui.json"
                 }
               ]
@@ -3920,7 +3896,7 @@
               "SectionTitle": "Static Equilibrium",
               "subsection": [
                 {
-                  "SectionHeading": "Unit Overview: Static Equilibrium",
+                  "SectionHeading": "Lesson Overview: Static Equilibrium",
                   "ref": "lp_ch09l7a_ui.json"
                 }
               ]
@@ -3935,7 +3911,7 @@
                 },
                 {
                   "type": "activity",
-                  "SectionHeading": " Activity: Add a force",
+                  "SectionHeading": " Activity: Calculate the missing force",
                   "ref": "actsec_i975.json"
                 },
                 {
@@ -3966,7 +3942,7 @@
               "SectionTitle": "Machines",
               "subsection": [
                 {
-                  "SectionHeading": "Unit Overview: Machines",
+                  "SectionHeading": "Lesson Overview: Machines",
                   "ref": "lp_ch09l8a_ui.json"
                 }
               ]
@@ -4044,7 +4020,7 @@
               "SectionTitle": "Fluids, Pressure and Density",
               "subsection": [
                 {
-                  "SectionHeading": "Unit Overview: Fluids, Pressure and Density",
+                  "SectionHeading": "Lesson Overview: Fluids, Pressure and Density",
                   "ref": "lp_ch10l1a_ui.json"
                 }
               ]
@@ -4113,7 +4089,7 @@
               "SectionTitle": "Pressure in Liquids",
               "subsection": [
                 {
-                  "SectionHeading": "Unit Overview: Pressure in Liquids",
+                  "SectionHeading": "Lesson Overview: Pressure in Liquids",
                   "ref": "lp_ch10l2a_ui.json"
                 }
               ]
@@ -4170,7 +4146,7 @@
               "SectionTitle": "Pressure on Earth",
               "subsection": [
                 {
-                  "SectionHeading": "Unit Overview: Pressure on Earth",
+                  "SectionHeading": "Lesson Overview: Pressure on Earth",
                   "ref": "lp_ch10l3a_ui.json"
                 }
               ]
@@ -4241,7 +4217,7 @@
               "SectionTitle": "Archimedes’ Principle",
               "subsection": [
                 {
-                  "SectionHeading": "Unit Overview: Archimedes’ Principle",
+                  "SectionHeading": "Lesson Overview: Archimedes’ Principle",
                   "ref": "lp_ch10l4a_ui.json"
                 }
               ]
@@ -4309,7 +4285,7 @@
               "SectionTitle": "Pascal’s Principle and Fluid Continuity",
               "subsection": [
                 {
-                  "SectionHeading": "Unit Overview: Pascal’s Principle and Fluid Continuity",
+                  "SectionHeading": "Lesson Overview: Pascal’s Principle and Fluid Continuity",
                   "ref": "lp_ch10l5a_ui.json"
                 }
               ]
@@ -4377,7 +4353,7 @@
               "SectionTitle": "Bernoulli's Principle",
               "subsection": [
                 {
-                  "SectionHeading": "Unit Overview: Bernoulli's Principle",
+                  "SectionHeading": "Lesson Overview: Bernoulli's Principle",
                   "ref": "lp_ch10l6a_ui.json"
                 }
               ]
@@ -4446,7 +4422,7 @@
               "SectionTitle": "Types of Matter and Thermal Energy",
               "subsection": [
                 {
-                  "SectionHeading": "Unit Overview: Types of Matter and Thermal Energy",
+                  "SectionHeading": "Lesson Overview: Types of Matter and Thermal Energy",
                   "ref": "lp_ch11l1a_ui.json"
                 }
               ]
@@ -4507,7 +4483,7 @@
               "SectionTitle": "Temperature and Thermal Energy",
               "subsection": [
                 {
-                  "SectionHeading": "Unit Overview: Temperature and Thermal Energy",
+                  "SectionHeading": "Lesson Overview: Temperature and Thermal Energy",
                   "ref": "lp_ch11l2a_ui.json"
                 }
               ]
@@ -4574,7 +4550,7 @@
               "SectionTitle": "Temperature Scales and Conversions",
               "subsection": [
                 {
-                  "SectionHeading": "Unit Overview: Temperature Scales and Conversions",
+                  "SectionHeading": "Lesson Overview: Temperature Scales and Conversions",
                   "ref": "lp_ch11l3a_ui.json"
                 }
               ]
@@ -4637,7 +4613,7 @@
               "SectionTitle": "Heat",
               "subsection": [
                 {
-                  "SectionHeading": "Unit Overview: Heat",
+                  "SectionHeading": "Lesson Overview: Heat",
                   "ref": "lp_ch11l4a_ui.json"
                 }
               ]
@@ -4722,7 +4698,7 @@
               "SectionTitle": "State Changes",
               "subsection": [
                 {
-                  "SectionHeading": "Unit Overview: State Changes",
+                  "SectionHeading": "Lesson Overview: State Changes",
                   "ref": "lp_ch11l5a_ui.json"
                 }
               ]
@@ -4801,7 +4777,7 @@
               "SectionTitle": "How Heat Transfers",
               "subsection": [
                 {
-                  "SectionHeading": "Unit Overview: How Heat Transfers",
+                  "SectionHeading": "Lesson Overview: How Heat Transfers",
                   "ref": "lp_ch11l6a_ui.json"
                 }
               ]
@@ -4889,7 +4865,7 @@
               "SectionTitle": "Thermal Expansion",
               "subsection": [
                 {
-                  "SectionHeading": "Unit Overview: Thermal Expansion",
+                  "SectionHeading": "Lesson Overview: Thermal Expansion",
                   "ref": "lp_ch11l7a_ui.json"
                 }
               ]
@@ -4990,7 +4966,7 @@
               "SectionTitle": "First Law of Thermodynamics",
               "subsection": [
                 {
-                  "SectionHeading": "Unit Overview: First Law of Thermodynamics",
+                  "SectionHeading": "Lesson Overview: First Law of Thermodynamics",
                   "ref": "lp_ch12l1a_ui.json"
                 }
               ]
@@ -5041,7 +5017,7 @@
               "SectionTitle": "Heat Engines",
               "subsection": [
                 {
-                  "SectionHeading": "Unit Overview: Heat Engines",
+                  "SectionHeading": "Lesson Overview: Heat Engines",
                   "ref": "lp_ch12l2a_ui.json"
                 }
               ]
@@ -5086,9 +5062,10 @@
                   "ref": "qcsec_jz83.json"
                 },
                 {
-                  "type": "videoScreen",
+                  "type": "playVideo",
                   "SectionHeading": "Sample problem: Engine cycle",
-                  "ref": "appsec_mimi24.json"
+                  "quesref": "app_calc_heat_out_force_question",
+                  "ansref": "app_calc_heat_out_force_answer"
                 }
               ]
             },
@@ -5127,7 +5104,7 @@
               "SectionTitle": "Heat Engine Process in Detail",
               "subsection": [
                 {
-                  "SectionHeading": "Unit Overview: Heat Engine Process in Detail",
+                  "SectionHeading": "Lesson Overview: Heat Engine Process in Detail",
                   "ref": "lp_ch12l3a_ui.json"
                 }
               ]
@@ -5188,7 +5165,7 @@
               "SectionTitle": "Gas Laws",
               "subsection": [
                 {
-                  "SectionHeading": "Unit Overview: Gas Laws",
+                  "SectionHeading": "Lesson Overview: Gas Laws",
                   "ref": "lp_ch12l4a_ui.json"
                 }
               ]
@@ -5251,7 +5228,7 @@
               "SectionTitle": "Advanced: Pressure-Volume Graphs",
               "subsection": [
                 {
-                  "SectionHeading": "Unit Overview: Advanced: Pressure-Volume Graphs",
+                  "SectionHeading": "Lesson Overview: Advanced: Pressure-Volume Graphs",
                   "ref": "lp_ch12l5a_ui.json"
                 }
               ]
@@ -5296,7 +5273,7 @@
               "SectionTitle": "Second Law of Thermodynamics",
               "subsection": [
                 {
-                  "SectionHeading": "Unit Overview: Second Law of Thermodynamics",
+                  "SectionHeading": "Lesson Overview: Second Law of Thermodynamics",
                   "ref": "lp_ch12l6a_ui.json"
                 }
               ]
@@ -5364,7 +5341,7 @@
               "SectionTitle": "Entrorpy, um, Entropy",
               "subsection": [
                 {
-                  "SectionHeading": "Unit Overview: Entrorpy, um, Entropy",
+                  "SectionHeading": "Lesson Overview: Entrorpy, um, Entropy",
                   "ref": "lp_ch12l7a_ui.json"
                 }
               ]
@@ -5416,7 +5393,7 @@
               "SectionTitle": "Advanced: Kinetic Theory of Gas",
               "subsection": [
                 {
-                  "SectionHeading": "Unit Overview: Advanced: Kinetic Theory of Gas",
+                  "SectionHeading": "Lesson Overview: Advanced: Kinetic Theory of Gas",
                   "ref": "lp_ch12l8a_ui.json"
                 }
               ]
@@ -5491,7 +5468,7 @@
               "SectionTitle": "Simple Harmonic Motion",
               "subsection": [
                 {
-                  "SectionHeading": "Unit Overview: Simple Harmonic Motion",
+                  "SectionHeading": "Lesson Overview: Simple Harmonic Motion",
                   "ref": "lp_ch13l1a_ui.json"
                 }
               ]
@@ -5622,7 +5599,7 @@
               "SectionTitle": "SHM: Acceleration and Speed",
               "subsection": [
                 {
-                  "SectionHeading": "Unit Overview: SHM: Acceleration and Speed",
+                  "SectionHeading": "Lesson Overview: SHM: Acceleration and Speed",
                   "ref": "lp_ch13l2a_ui.json"
                 }
               ]
@@ -5683,7 +5660,7 @@
               "SectionTitle": "SHM in the World",
               "subsection": [
                 {
-                  "SectionHeading": "Unit Overview: SHM in the World",
+                  "SectionHeading": "Lesson Overview: SHM in the World",
                   "ref": "lp_ch13l3a_ui.json"
                 }
               ]
@@ -5755,7 +5732,7 @@
               "SectionTitle": "Wave Basics",
               "subsection": [
                 {
-                  "SectionHeading": "Unit Overview: Wave Basics",
+                  "SectionHeading": "Lesson Overview: Wave Basics",
                   "ref": "lp_ch13l4a_ui.json"
                 }
               ]
@@ -5860,7 +5837,7 @@
               "SectionTitle": "Types of Waves",
               "subsection": [
                 {
-                  "SectionHeading": "Unit Overview: Types of Waves",
+                  "SectionHeading": "Lesson Overview: Types of Waves",
                   "ref": "lp_ch13l5a_ui.json"
                 }
               ]
@@ -5915,7 +5892,7 @@
               "SectionTitle": "Wave Speed",
               "subsection": [
                 {
-                  "SectionHeading": "Unit Overview: Wave Speed",
+                  "SectionHeading": "Lesson Overview: Wave Speed",
                   "ref": "lp_ch13l6a_ui.json"
                 }
               ]
@@ -5978,7 +5955,7 @@
               "SectionTitle": "Sound Waves",
               "subsection": [
                 {
-                  "SectionHeading": "Unit Overview: Sound Waves",
+                  "SectionHeading": "Lesson Overview: Sound Waves",
                   "ref": "lp_ch14l1a_ui.json"
                 }
               ]
@@ -6044,7 +6021,7 @@
               "SectionTitle": "Sound Intensity",
               "subsection": [
                 {
-                  "SectionHeading": "Unit Overview: Sound Intensity",
+                  "SectionHeading": "Lesson Overview: Sound Intensity",
                   "ref": "lp_ch14l2a_ui.json"
                 }
               ]
@@ -6113,7 +6090,7 @@
               "SectionTitle": "Doppler Effect",
               "subsection": [
                 {
-                  "SectionHeading": "Unit Overview: Doppler Effect",
+                  "SectionHeading": "Lesson Overview: Doppler Effect",
                   "ref": "lp_ch14l3a_ui.json"
                 }
               ]
@@ -6187,7 +6164,7 @@
               "SectionTitle": "Combining Waves",
               "subsection": [
                 {
-                  "SectionHeading": "Unit Overview: Combining Waves",
+                  "SectionHeading": "Lesson Overview: Combining Waves",
                   "ref": "lp_ch14l4a_ui.json"
                 }
               ]
@@ -6273,7 +6250,7 @@
               "SectionTitle": "Harmonics and Musical Instruments",
               "subsection": [
                 {
-                  "SectionHeading": "Unit Overview: Harmonics and Musical Instruments",
+                  "SectionHeading": "Lesson Overview: Harmonics and Musical Instruments",
                   "ref": "lp_ch14l5a_ui.json"
                 }
               ]
@@ -6357,7 +6334,7 @@
               "SectionTitle": "Human Perception of Sound",
               "subsection": [
                 {
-                  "SectionHeading": "Unit Overview: Human Perception of Sound",
+                  "SectionHeading": "Lesson Overview: Human Perception of Sound",
                   "ref": "lp_ch14l6a_ui.json"
                 }
               ]
@@ -6444,7 +6421,7 @@
               "SectionTitle": "Electric Charge",
               "subsection": [
                 {
-                  "SectionHeading": "Unit Overview: Electric Charge",
+                  "SectionHeading": "Lesson Overview: Electric Charge",
                   "ref": "lp_ch15l1a_ui.json"
                 }
               ]
@@ -6554,7 +6531,7 @@
               "SectionTitle": "Electric Force",
               "subsection": [
                 {
-                  "SectionHeading": "Unit Overview: Electric Force",
+                  "SectionHeading": "Lesson Overview: Electric Force",
                   "ref": "lp_ch15l2a_ui.json"
                 }
               ]
@@ -6638,7 +6615,7 @@
               "SectionTitle": "Electric Fields",
               "subsection": [
                 {
-                  "SectionHeading": "Unit Overview: Electric Fields",
+                  "SectionHeading": "Lesson Overview: Electric Fields",
                   "ref": "lp_ch15l3a_ui.json"
                 }
               ]
@@ -6764,7 +6741,7 @@
               "SectionTitle": "Electric Potential Energy",
               "subsection": [
                 {
-                  "SectionHeading": "Unit Overview: Electric Potential Energy",
+                  "SectionHeading": "Lesson Overview: Electric Potential Energy",
                   "ref": "lp_ch15l4a_ui.json"
                 }
               ]
@@ -6838,7 +6815,7 @@
               "SectionTitle": "Advanced Topics",
               "subsection": [
                 {
-                  "SectionHeading": "Unit Overview: Advanced Topics",
+                  "SectionHeading": "Lesson Overview: Advanced Topics",
                   "ref": "lp_ch15l5a_ui.json"
                 }
               ]
@@ -6934,7 +6911,7 @@
               "SectionTitle": "Electric Current and Resistance",
               "subsection": [
                 {
-                  "SectionHeading": "Unit Overview: Electric Current and Resistance",
+                  "SectionHeading": "Lesson Overview: Electric Current and Resistance",
                   "ref": "lp_ch16l1a_ui.json"
                 }
               ]
@@ -7024,7 +7001,7 @@
               "SectionTitle": "Electric Power and Capacitors",
               "subsection": [
                 {
-                  "SectionHeading": "Unit Overview: Electric Power and Capacitors",
+                  "SectionHeading": "Lesson Overview: Electric Power and Capacitors",
                   "ref": "lp_ch16l2a_ui.json"
                 }
               ]
@@ -7121,7 +7098,7 @@
               "SectionTitle": "Electric Circuits",
               "subsection": [
                 {
-                  "SectionHeading": "Unit Overview: Electric Circuits",
+                  "SectionHeading": "Lesson Overview: Electric Circuits",
                   "ref": "lp_ch16l3a_ui.json"
                 }
               ]
@@ -7197,7 +7174,7 @@
               "SectionTitle": "Series and Parallel Wiring",
               "subsection": [
                 {
-                  "SectionHeading": "Unit Overview: Series and Parallel Wiring",
+                  "SectionHeading": "Lesson Overview: Series and Parallel Wiring",
                   "ref": "lp_ch16l4a_ui.json"
                 }
               ]
@@ -7338,7 +7315,7 @@
               "SectionTitle": "Mixed Circuits",
               "subsection": [
                 {
-                  "SectionHeading": "Unit Overview: Mixed Circuits",
+                  "SectionHeading": "Lesson Overview: Mixed Circuits",
                   "ref": "lp_ch16l5a_ui.json"
                 }
               ]
@@ -7379,7 +7356,7 @@
               "SectionTitle": "Advanced Topics in Capacitors",
               "subsection": [
                 {
-                  "SectionHeading": "Unit Overview: Advanced Topics in Capacitors",
+                  "SectionHeading": "Lesson Overview: Advanced Topics in Capacitors",
                   "ref": "lp_ch16l6a_ui.json"
                 }
               ]
@@ -7459,7 +7436,7 @@
               "SectionTitle": "Magnetic Fields and Charged Particles",
               "subsection": [
                 {
-                  "SectionHeading": "Unit Overview: Magnetic Fields and Charged Particles",
+                  "SectionHeading": "Lesson Overview: Magnetic Fields and Charged Particles",
                   "ref": "lp_ch17l1a_ui.json"
                 }
               ]
@@ -7552,7 +7529,7 @@
               "SectionTitle": "Currents and Magnetic Fields",
               "subsection": [
                 {
-                  "SectionHeading": "Unit Overview: Currents and Magnetic Fields",
+                  "SectionHeading": "Lesson Overview: Currents and Magnetic Fields",
                   "ref": "lp_ch17l2a_ui.json"
                 }
               ]
@@ -7617,7 +7594,7 @@
               "SectionTitle": "Electromagnetic Induction",
               "subsection": [
                 {
-                  "SectionHeading": "Unit Overview: Electromagnetic Induction",
+                  "SectionHeading": "Lesson Overview: Electromagnetic Induction",
                   "ref": "lp_ch17l3a_ui.json"
                 }
               ]
@@ -7699,7 +7676,7 @@
               "SectionTitle": "Advanced: Applications of Magnetic Fields",
               "subsection": [
                 {
-                  "SectionHeading": "Unit Overview: Applications of Magnetic Fields",
+                  "SectionHeading": "Lesson Overview: Applications of Magnetic Fields",
                   "ref": "lp_ch17l4a_ui.json"
                 }
               ]
@@ -7796,7 +7773,7 @@
               "SectionTitle": "Non-Perpendicular Magnetic Fields",
               "subsection": [
                 {
-                  "SectionHeading": "Unit Overview: Non-Perpendicular Magnetic Fields",
+                  "SectionHeading": "Lesson Overview: Non-Perpendicular Magnetic Fields",
                   "ref": "lp_ch17l5a_ui.json"
                 }
               ]
@@ -7854,7 +7831,7 @@
               "SectionTitle": "More Topics in Induction",
               "subsection": [
                 {
-                  "SectionHeading": "Unit Overview: More Topics in Induction",
+                  "SectionHeading": "Lesson Overview: More Topics in Induction",
                   "ref": "lp_ch17l6a_ui.json"
                 }
               ]
@@ -7915,7 +7892,7 @@
               "SectionTitle": "Mutual Induction",
               "subsection": [
                 {
-                  "SectionHeading": "Unit Overview: Mutual Induction",
+                  "SectionHeading": "Lesson Overview: Mutual Induction",
                   "ref": "lp_ch17l7a_ui.json"
                 }
               ]
@@ -7972,7 +7949,7 @@
               "SectionTitle": "History of Two Forces",
               "subsection": [
                 {
-                  "SectionHeading": "Unit Overview: History of Two Forces",
+                  "SectionHeading": "Lesson Overview: History of Two Forces",
                   "ref": "lp_ch17l8a_ui.json"
                 }
               ]
@@ -8022,7 +7999,7 @@
               "SectionTitle": "Interference",
               "subsection": [
                 {
-                  "SectionHeading": "Unit Overview: Interference",
+                  "SectionHeading": "Lesson Overview: Interference",
                   "ref": "lp_ch18l1a_ui.json"
                 }
               ]
@@ -8115,7 +8092,7 @@
               "SectionTitle": "Advanced: Calculating Band Locations",
               "subsection": [
                 {
-                  "SectionHeading": "Unit Overview: Advanced: Calculating Band Locations",
+                  "SectionHeading": "Lesson Overview: Advanced: Calculating Band Locations",
                   "ref": "lp_ch18l2a_ui.json"
                 }
               ]
@@ -8200,7 +8177,7 @@
               "SectionTitle": "Diffraction: Light",
               "subsection": [
                 {
-                  "SectionHeading": "Unit Overview: Diffraction: Light",
+                  "SectionHeading": "Lesson Overview: Diffraction: Light",
                   "ref": "lp_ch18l3a_ui.json"
                 }
               ]
@@ -8261,7 +8238,7 @@
               "SectionTitle": "Single-Slit Diffraction",
               "subsection": [
                 {
-                  "SectionHeading": "Unit Overview: Single-Slit Diffraction",
+                  "SectionHeading": "Lesson Overview: Single-Slit Diffraction",
                   "ref": "lp_ch18l4a_ui.json"
                 }
               ]
@@ -8301,7 +8278,7 @@
               "SectionTitle": "Resolution",
               "subsection": [
                 {
-                  "SectionHeading": "Unit Overview: Resolution",
+                  "SectionHeading": "Lesson Overview: Resolution",
                   "ref": "lp_ch18l5a_ui.json"
                 }
               ]
@@ -8398,7 +8375,7 @@
               "SectionTitle": "Electromagnetic Radiation",
               "subsection": [
                 {
-                  "SectionHeading": "Unit Overview: Electromagnetic Radiation",
+                  "SectionHeading": "Lesson Overview: Electromagnetic Radiation",
                   "ref": "lp_ch19l1a_ui.json"
                 }
               ]
@@ -8479,7 +8456,7 @@
               "SectionTitle": "Light Intensity",
               "subsection": [
                 {
-                  "SectionHeading": "Unit Overview: Light Intensity",
+                  "SectionHeading": "Lesson Overview: Light Intensity",
                   "ref": "lp_ch19l2a_ui.json"
                 }
               ]
@@ -8530,7 +8507,7 @@
               "SectionTitle": "Information and Electromagnetic Radiation",
               "subsection": [
                 {
-                  "SectionHeading": "Unit Overview: Information and Electromagnetic Radiation",
+                  "SectionHeading": "Lesson Overview: Information and Electromagnetic Radiation",
                   "ref": "lp_ch19l3a_ui.json"
                 }
               ]
@@ -8601,7 +8578,7 @@
               "SectionTitle": "Polarization and Scattering",
               "subsection": [
                 {
-                  "SectionHeading": "Unit Overview: Polarization and Scattering",
+                  "SectionHeading": "Lesson Overview: Polarization and Scattering",
                   "ref": "lp_ch19l4a_ui.json"
                 }
               ]
@@ -8674,7 +8651,7 @@
               "SectionTitle": "Reflection",
               "subsection": [
                 {
-                  "SectionHeading": "Unit Overview: Reflection",
+                  "SectionHeading": "Lesson Overview: Reflection",
                   "ref": "lp_ch20l1a_ui.json"
                 }
               ]
@@ -8782,7 +8759,7 @@
               "SectionTitle": "Spherical and Parabolic Mirrors",
               "subsection": [
                 {
-                  "SectionHeading": "Unit Overview: Spherical and Parabolic Mirrors",
+                  "SectionHeading": "Lesson Overview: Spherical and Parabolic Mirrors",
                   "ref": "lp_ch20l2a_ui.json"
                 }
               ]
@@ -8879,7 +8856,7 @@
               "SectionTitle": "Mirror Equations",
               "subsection": [
                 {
-                  "SectionHeading": "Unit Overview: Mirror Equations",
+                  "SectionHeading": "Lesson Overview: Mirror Equations",
                   "ref": "lp_ch20l3a_ui.json"
                 }
               ]
@@ -8983,7 +8960,7 @@
               "SectionTitle": "Snell’s Law",
               "subsection": [
                 {
-                  "SectionHeading": "Unit Overview: Snell’s Law",
+                  "SectionHeading": "Lesson Overview: Snell’s Law",
                   "ref": "lp_ch21l1a_ui.json"
                 }
               ]
@@ -9062,7 +9039,7 @@
               "SectionTitle": "More on Refraction",
               "subsection": [
                 {
-                  "SectionHeading": "Unit Overview: More on Refraction",
+                  "SectionHeading": "Lesson Overview: More on Refraction",
                   "ref": "lp_ch21l2a_ui.json"
                 }
               ]
@@ -9128,7 +9105,7 @@
               "SectionTitle": "Total Internal Reflection",
               "subsection": [
                 {
-                  "SectionHeading": "Unit Overview: Total Internal Reflection",
+                  "SectionHeading": "Lesson Overview: Total Internal Reflection",
                   "ref": "lp_ch21l3a_ui.json"
                 }
               ]
@@ -9174,7 +9151,7 @@
               "SectionTitle": "Dispersion",
               "subsection": [
                 {
-                  "SectionHeading": "Unit Overview: Dispersion",
+                  "SectionHeading": "Lesson Overview: Dispersion",
                   "ref": "lp_ch21l4a_ui.json"
                 }
               ]
@@ -9214,7 +9191,7 @@
               "SectionTitle": "Lenses: Ray Tracing",
               "subsection": [
                 {
-                  "SectionHeading": "Unit Overview: Lenses: Ray Tracing",
+                  "SectionHeading": "Lesson Overview: Lenses: Ray Tracing",
                   "ref": "lp_ch21l5a_ui.json"
                 }
               ]
@@ -9260,7 +9237,7 @@
               "SectionTitle": "Applications of Lenses",
               "subsection": [
                 {
-                  "SectionHeading": "Unit Overview: Applications of Lenses",
+                  "SectionHeading": "Lesson Overview: Applications of Lenses",
                   "ref": "lp_ch21l6a_ui.json"
                 }
               ]
@@ -9313,7 +9290,7 @@
               "SectionTitle": "Thin Lens Equation",
               "subsection": [
                 {
-                  "SectionHeading": "Unit Overview: Thin Lens Equation",
+                  "SectionHeading": "Lesson Overview: Thin Lens Equation",
                   "ref": "lp_ch21l7a_ui.json"
                 }
               ]
@@ -9412,7 +9389,7 @@
               "SectionTitle": "Elements and Atoms",
               "subsection": [
                 {
-                  "SectionHeading": "Unit Overview: Elements and Atoms",
+                  "SectionHeading": "Lesson Overview: Elements and Atoms",
                   "ref": "lp_ch22l1a_ui.json"
                 }
               ]
@@ -9484,7 +9461,7 @@
               "SectionTitle": "Forces and the Nucleus",
               "subsection": [
                 {
-                  "SectionHeading": "Unit Overview: Forces and the Nucleus",
+                  "SectionHeading": "Lesson Overview: Forces and the Nucleus",
                   "ref": "lp_ch22l2a_ui.json"
                 }
               ]
@@ -9561,7 +9538,7 @@
               "SectionTitle": "Radioactive Decay",
               "subsection": [
                 {
-                  "SectionHeading": "Unit Overview: Radioactive Decay",
+                  "SectionHeading": "Lesson Overview: Radioactive Decay",
                   "ref": "lp_ch22l3a_ui.json"
                 }
               ]
@@ -9662,7 +9639,7 @@
               "SectionTitle": "Fission and Fusion",
               "subsection": [
                 {
-                  "SectionHeading": "Unit Overview: Fission and Fusion",
+                  "SectionHeading": "Lesson Overview: Fission and Fusion",
                   "ref": "lp_ch22l4a_ui.json"
                 }
               ]
@@ -9729,7 +9706,7 @@
               "SectionTitle": "Quantum",
               "subsection": [
                 {
-                  "SectionHeading": "Unit Overview: Quantum",
+                  "SectionHeading": "Lesson Overview: Quantum",
                   "ref": "lp_ch23l1a_ui.json"
                 }
               ]
@@ -9797,7 +9774,7 @@
               "SectionTitle": "Evidence of Quantum",
               "subsection": [
                 {
-                  "SectionHeading": "Unit Overview: Evidence of Quantum",
+                  "SectionHeading": "Lesson Overview: Evidence of Quantum",
                   "ref": "lp_ch23l2a_ui.json"
                 }
               ]
@@ -9880,7 +9857,7 @@
               "SectionTitle": "Semiconductors and Lasers",
               "subsection": [
                 {
-                  "SectionHeading": "Unit Overview: Semiconductors and Lasers",
+                  "SectionHeading": "Lesson Overview: Semiconductors and Lasers",
                   "ref": "lp_ch23l3a_ui.json"
                 }
               ]
@@ -9977,7 +9954,7 @@
               "SectionTitle": "Matter Waves",
               "subsection": [
                 {
-                  "SectionHeading": "Unit Overview: Matter Waves",
+                  "SectionHeading": "Lesson Overview: Matter Waves",
                   "ref": "lp_ch23l4a_ui.json"
                 }
               ]
@@ -10084,7 +10061,7 @@
               "SectionTitle": "Special Relativity",
               "subsection": [
                 {
-                  "SectionHeading": "Unit Overview: Special Relativity",
+                  "SectionHeading": "Lesson Overview: Special Relativity",
                   "ref": "lp_ch24l1a_ui.json"
                 }
               ]
@@ -10185,7 +10162,7 @@
               "SectionTitle": "Standard Model",
               "subsection": [
                 {
-                  "SectionHeading": "Unit Overview: Standard Model",
+                  "SectionHeading": "Lesson Overview: Standard Model",
                   "ref": "lp_ch24l2a_ui.json"
                 }
               ]
@@ -10280,7 +10257,7 @@
               "SectionTitle": "Particle Accelerators",
               "subsection": [
                 {
-                  "SectionHeading": "Unit Overview: Particle Accelerators",
+                  "SectionHeading": "Lesson Overview: Particle Accelerators",
                   "ref": "lp_ch24l3a_ui.json"
                 }
               ]
@@ -10514,6 +10491,7 @@
               ]
             },
             {
+			"number":false,
               "SectionTitle": "Physical Labs and Demonstrations",
               "subsection": [
                 {
@@ -10657,89 +10635,110 @@
                         "background-repeat": "no-repeat"
                       },
                       "labs": [
-                        {
+                         {
                           "title": "Ballistics cart",
-                          "href": "course/demonstrations/Ballistics_cart/page.html"
+                          "href": "course/demonstrations/Ballistics_cart/page.html",
+						  "pageTitle": "Ballistics Cart Demonstration"
                         },
                         {
                           "title": "Ballistics pendulum",
-                          "href": "course/demonstrations/Ballistics_pendulum/page.html"
+                          "href": "course/demonstrations/Ballistics_pendulum/page.html",
+						  "pageTitle": "Ballistics Pendulum Demonstration"
                         },
                         {
                           "title": "Cathode ray tube",
-                          "href": "course/demonstrations/Cathode_ray_tube/page.html"
+                          "href": "course/demonstrations/Cathode_ray_tube/page.html",
+						  "pageTitle": "Cathode Ray Tube Demonstration"
                         },
                         {
                           "title": "Collision apparatus",
-                          "href": "course/demonstrations/Collision_apparatus/page.html"
+                          "href": "course/demonstrations/Collision_apparatus/page.html",
+						  "pageTitle": "Collision Apparatus Demonstration"
                         },
                         {
                           "title": "DC Circuits",
-                          "href": "course/demonstrations/DC_Circuits/page.html"
+                          "href": "course/demonstrations/DC_Circuits/page.html",
+						  "pageTitle": "DC Circuits Demonstration"
                         },
                         {
                           "title": "Discharge tube",
-                          "href": "course/demonstrations/Discharge_tube/page.html"
+                          "href": "course/demonstrations/Discharge_tube/page.html",
+						  "pageTitle": "Discharge Tube Demonstration"
                         },
                         {
                           "title": "Dynamics apparatus",
-                          "href": "course/demonstrations/Dynamics_apparatus/page.html"
+                          "href": "course/demonstrations/Dynamics_apparatus/page.html",
+						  "pageTitle": "Dynamics Apparatus Demonstration"
                         },
                         {
                           "title": "Electrostatics",
-                          "href": "course/demonstrations/Electrostatics/page.html"
+                          "href": "course/demonstrations/Electrostatics/page.html",
+						  "pageTitle": "Electrostatics Demonstration"
                         },
                         {
                           "title": "Friction block",
-                          "href": "course/demonstrations/Friction_block/page.html"
+                          "href": "course/demonstrations/Friction_block/page.html",
+						  "pageTitle": "Friction block Demonstration"
                         },
                         {
                           "title": "Lenses",
-                          "href": "course/demonstrations/Lenses/page.html"
+                          "href": "course/demonstrations/Lenses/page.html",
+						  "pageTitle": "Lenses Demonstration"
                         },
                         {
                           "title": "Magnetic fields",
-                          "href": "course/demonstrations/Magnetic_fields/page.html"
+                          "href": "course/demonstrations/Magnetic_fields/page.html",
+						  "pageTitle": "Magnetic fields Demonstration"
                         },
                         {
                           "title": "Mirrors",
-                          "href": "course/demonstrations/Mirrors/page.html"
+                          "href": "course/demonstrations/Mirrors/page.html",
+						  "pageTitle": "Plane mirrors Demonstration"
                         },
                         {
                           "title": "Motion sensor",
-                          "href": "course/demonstrations/Motion_sensor/page.html"
+                          "href": "course/demonstrations/Motion_sensor/page.html",
+						  "pageTitle": "Motion sensor Demonstration"
                         },
                         {
                           "title": "Observing Thermal Energy Transfer",
-                          "href": "course/demonstrations/Observing_Thermal_Energy_Transfer/page.html"
+                          "href": "course/demonstrations/Observing_Thermal_Energy_Transfer/page.html",
+						  "pageTitle": "Observing Thermal Energy Transfer Demonstration"
                         },
                         {
                           "title": "Pendulum",
-                          "href": "course/demonstrations/Pendulum/page.html"
+                          "href": "course/demonstrations/Pendulum/page.html",
+						  "pageTitle": "Pendulum Demonstration"
                         },
                         {
                           "title": "Polarized light",
-                          "href": "course/demonstrations/Polarized_light/page.html"
+                          "href": "course/demonstrations/Polarized_Light/page.html",
+						  "pageTitle": "Polarized Light Demonstration"
                         },
                         {
                           "title": "Radiation monitor",
-                          "href": "course/demonstrations/Radiation_monitor/page.html"
+                          "href": "course/demonstrations/Radiation_Monitor/page.html",
+						  "pageTitle": "Radiation Monitor Demonstration"
                         },
                         {
                           "title": "Ripple and wave generator",
-                          "href": "course/demonstrations/Ripple_and_wave_generator/page.html"
+                          "href": "course/demonstrations/Ripple_and_wave_generator/page.html",
+						  "pageTitle": "Ripple tanks and wave generator Demonstration"
                         },
                         {
                           "title": "Sound",
-                          "href": "course/demonstrations/Sound/page.html"
+                          "href": "course/demonstrations/Sound/page.html",
+						  "pageTitle": "Speed of Sound Demonstration"
                         },
                         {
                           "title": "Trajectory apparatus",
-                          "href": "course/demonstrations/Trajectory_apparatus/page.html"
+                          "href": "course/demonstrations/Trajectory_apparatus/page.html",
+						  "pageTitle": "Trajectory Apparatus Demonstration"
                         },
                         {
                           "title": "Wave essentials",
-                          "href": "course/demonstrations/Wave_essentials/page.html"
+                          "href": "course/demonstrations/Wave_essentials/page.html",
+						  "pageTitle": "Wave essentials Demonstration"
                         }
                       ]
                     }
@@ -10748,6 +10747,7 @@
               ]
             },
             {
+			"number":false,
               "SectionTitle": "Virtual Labs",
               "subsection": [
                 {
@@ -10823,10 +10823,6 @@
                         {
                           "title": "Force between charged particles",
                           "href": "course/labs/Force_between_charged_particles/page.html"
-                        },
-                        {
-                          "title": "Electromagnetic induction",
-                          "href": "course/labs/Electromagnetic_induction/page.html"
                         }
                       ]
                     },
@@ -10870,6 +10866,7 @@
               ]
             },
             {
+			"number":false, 
               "SectionTitle": "Course Apparatus",
              "subsection": [
                 {
@@ -10879,6 +10876,7 @@
                   "chapters": [
                     {
                       "left": true,
+					  "video":true,
                       "title": "General lab equipment",
                       "icon": {
                         "background-image": "url(core/main/assets/images/iconLab.png)",
@@ -10888,116 +10886,117 @@
                       "labs": [
                         {
                           "title": "Caliper",
-                          "href": "assets/video/course_apparatus/calipers.mp4"
+                          "href": "course_apparatus/calipers"
                         },
                         {
                           "title": "Carbon paper",
-                          "href": "assets/video/course_apparatus/carbonpaper.mp4"
+                          "href": "course_apparatus/carbonpaper"
                         },
                         {
                           "title": "Clamp",
-                          "href": "assets/video/course_apparatus/usingclamp.mp4"
+                          "href": "course_apparatus/usingclamp"
                         },
                         {
                           "title": "Computers",
-                          "href": "assets/video/course_apparatus/computer.mp4"
+                          "href": "course_apparatus/computer"
                         },
                         {
                           "title": "Data acquisition probes ",
-                          "href": "assets/video/course_apparatus/dataaquisition.mp4"
+                          "href": "course_apparatus/dataaquisition"
                         },
                         {
                           "title": "Electromagnetic chart",
-                          "href": "assets/video/course_apparatus/electromagneticchart.mp4"
+                          "href": "course_apparatus/electromagneticchart"
                         },
                         {
                           "title": "Four inch ring/ring stand screen/ring clamps, ring stands, clamps, 90-degree rod clamps",
-                          "href": "assets/video/course_apparatus/ringwithstand.mp4"
+                          "href": "course_apparatus/ringwithstand"
                         },
                         {
                           "title": "Graduated cylinders",
-                          "href": "assets/video/course_apparatus/graduatedcylinder.mp4"
+                          "href": "course_apparatus/graduatedcylinder"
                         },
                         {
                           "title": "Graph paper",
-                          "href": "assets/video/course_apparatus/graphpaper.mp4"
+                          "href": "course_apparatus/graphpaper"
                         },
                         {
                           "title": "Graphing",
-                          "href": "assets/video/course_apparatus/graphing.mp4"
+                          "href": "course_apparatus/graphing"
                         },
                         {
                           "title": "Hot plate",
-                          "href": "assets/video/course_apparatus/hotplate.mp4"
+                          "href": "course_apparatus/hotplate"
                         },
                         {
                           "title": "Incline",
-                          "href": "assets/video/course_apparatus/incline.mp4"
+                          "href": "course_apparatus/incline"
                         },
                         {
                           "title": "Micrometer",
-                          "href": "assets/video/course_apparatus/micrometer.mp4"
+                          "href": "course_apparatus/micrometer"
                         },
                         {
                           "title": "Paper roll",
-                          "href": "assets/video/course_apparatus/paper.mp4"
+                          "href": "course_apparatus/paper"
                         },
                         {
                           "title": "Periodic table",
-                          "href": "assets/video/course_apparatus/periodic.mp4"
+                          "href": "course_apparatus/periodic"
                         },
                         {
                           "title": "Photogate",
-                          "href": "assets/video/course_apparatus/photogate.mp4"
+                          "href": "course_apparatus/photogate"
                         },
                         {
                           "title": "Protractor",
-                          "href": "assets/video/course_apparatus/protractor.mp4"
+                          "href": "course_apparatus/protractor"
                         },
                         {
                           "title": "Pulley, table, and weights",
-                          "href": "assets/video/course_apparatus/pulleywithtable.mp4"
+                          "href": "course_apparatus/pulleywithtable"
                         },
                         {
                           "title": "Ring clamps, ring stands, clamps, 90-degree rod clamps",
-                          "href": "assets/video/course_apparatus/ringstands.mp4"
+                          "href": "course_apparatus/ringstands"
                         },
                         {
                           "title": "Rulers and metric sticks",
-                          "href": "assets/video/course_apparatus/rulersmetricsticks.mp4"
+                          "href": "course_apparatus/rulersmetricsticks"
                         },
                         {
                           "title": "Scientific calculators",
-                          "href": "assets/video/course_apparatus/calculators.mp4"
+                          "href": "course_apparatus/calculators"
                         },
                         {
                           "title": "Spring scales",
-                          "href": "assets/video/course_apparatus/springscale.mp4"
+                          "href": "course_apparatus/springscale"
                         },
                         {
                           "title": "Stopwatch",
-                          "href": "assets/video/course_apparatus/stopwatch.mp4"
+                          "href": "course_apparatus/stopwatch"
                         },
                         {
                           "title": "String and thread",
-                          "href": "assets/video/course_apparatus/stringthread.mp4"
+                          "href": "course_apparatus/stringthread"
                         },
                         {
                           "title": "Tape timer",
-                          "href": "assets/video/course_apparatus/tapetimer.mp4"
+                          "href": "course_apparatus/tapetimer"
                         },
                         {
                           "title": "Thermometer",
-                          "href": "assets/video/course_apparatus/thermometer.mp4"
+                          "href": "course_apparatus/thermometer"
                         },
                         {
                           "title": "Triple beam balances",
-                          "href": "assets/video/course_apparatus/triplebeambalance.mp4"
+                          "href": "course_apparatus/triplebeambalance"
                         }
                       ]
                     },
                     {
                       "left": true,
+					  "video":true,
                       "title": "Mechanics",
                       "icon": {
                        "background-image": "url(core/main/assets/images/iconLab.png)",
@@ -11008,32 +11007,33 @@
                         
 						{
                           "title": "Ballistics cart",
-                          "href": "assets/video/course_apparatus/ballisticscart.mp4"
+                          "href": "course_apparatus/ballisticscart"
                         },
 						{
                           "title": "Collision apparatus",
-                          "href": "assets/video/course_apparatus/collision.mp4"
+                          "href": "course_apparatus/collision"
                         },
 						{
                           "title": "Motion sensor",
-                          "href": "assets/video/course_apparatus/motionsensor.mp4"
+                          "href": "course_apparatus/motionsensor"
                         },
 						{
                           "title": "Pendulum support",
-                          "href": "assets/video/course_apparatus/pendulum.mp4"
+                          "href": "course_apparatus/pendulum"
                         },
 						{
                           "title": "Static friction",
-                          "href": "assets/video/course_apparatus/staticfriction.mp4"
+                          "href": "course_apparatus/staticfriction"
                         },
 						{
                           "title": "Trajectory",
-                          "href": "assets/video/course_apparatus/trajectory.mp4"
+                          "href": "course_apparatus/trajectory"
                         }
                       ]
                     },
                     {
                       "left": false,
+					  "video":true,
                       "bottomGap": 33,
                       "title": "Electricity and Magnetism",
                       "icon": {
@@ -11044,60 +11044,61 @@
                       "labs": [
                         {
                           "title": "Cathode",
-                          "href": "assets/video/course_apparatus/cathode.mp4"
+                          "href": "course_apparatus/cathode"
                         },
                         {
                           "title": "Cathode ray tube",
-                          "href": "assets/video/course_apparatus/cathode2.mp4"
+                          "href": "course_apparatus/cathode2"
                         },
                         {
                           "title": "Copper wires",
-                          "href": "assets/video/course_apparatus/wiring.mp4"
+                          "href": "course_apparatus/wiring"
                         },
                         {
                           "title": "Electromagnetic waves",
-                          "href": "assets/video/course_apparatus/electwaves.mp4"
+                          "href": "course_apparatus/electwaves"
                         },
                         {
                           "title": "Electrostatics kits",
-                          "href": "assets/video/course_apparatus/electrostatickit.mp4"
+                          "href": "course_apparatus/electrostatickit"
                         },
                         {
                           "title": "Horseshoe magnets/bar magnets/containers of iron filings",
-                          "href": "assets/video/course_apparatus/magnets.mp4"
+                          "href": "course_apparatus/magnets"
                         },
                         {
                           "title": "Knife blade switches/mini lamps (bulbs) and sockets",
-                          "href": "assets/video/course_apparatus/knifeswitch.mp4"
+                          "href": "course_apparatus/knifeswitch"
                         },
                         {
                           "title": "Magnetic compasses",
-                          "href": "assets/video/course_apparatus/compas.mp4"
+                          "href": "course_apparatus/compas"
                         },
                         {
                           "title": "Multimeters (voltage)",
-                          "href": "assets/video/course_apparatus/voltmeter.mp4"
+                          "href": "course_apparatus/voltmeter"
                         },
                         {
                           "title": "Multimeters (current)",
-                          "href": "assets/video/course_apparatus/currentmeter.mp4"
+                          "href": "course_apparatus/currentmeter"
                         },
                         {
                           "title": "Multimeters (resistance)",
-                          "href": "assets/video/course_apparatus/resistancemeter.mp4"
+                          "href": "course_apparatus/resistancemeter"
                         },
                         {
                           "title": "Power supply",
-                          "href": "assets/video/course_apparatus/powersupply.mp4"
+                          "href": "course_apparatus/powersupply"
                         },
                         {
                           "title": "Resistor",
-                          "href": "assets/video/course_apparatus/batteryresistor.mp4"
+                          "href": "course_apparatus/batteryresistor"
                         }
                       ]
                     },
                     {
                       "left": false,
+					  "video":true,
                       "bottomGap": 51,
                       "title": "Waves and Optics",
                       "icon": {
@@ -11108,51 +11109,52 @@
                       "labs": [
                         {
                           "title": "Hand-held laser",
-                          "href": "assets/video/course_apparatus/laser.mp4"
+                          "href": "course_apparatus/laser"
                         },
                         {
                           "title": "Hand-held visual spectroscopes",
-                          "href": "assets/video/course_apparatus/visualspectroscope.mp4"
+                          "href": "course_apparatus/visualspectroscope"
                         },
                         {
                           "title": "Optics bench",
-                          "href": "assets/video/course_apparatus/opticsbench.mp4"
+                          "href": "course_apparatus/opticsbench"
                         },
                         {
                           "title": "Optics kit/convex lenses/prisms",
-                          "href": "assets/video/course_apparatus/opticskit2.mp4"
+                          "href": "course_apparatus/opticskit2"
                         },
                         {
                           "title": "Polarized film ",
-                          "href": "assets/video/course_apparatus/linearpolarizer.mp4"
+                          "href": "course_apparatus/linearpolarizer"
                         },
                         {
                           "title": "Resonance tubes",
-                          "href": "assets/video/course_apparatus/resonance.mp4"
+                          "href": "course_apparatus/resonance"
                         },
                         {
                           "title": "Ripple tank",
-                          "href": "assets/video/course_apparatus/rippletank.mp4"
+                          "href": "course_apparatus/rippletank"
                         },
                         {
                           "title": "Slinky springs",
-                          "href": "assets/video/course_apparatus/slinky.mp4"
+                          "href": "course_apparatus/slinky"
                         },
                         {
                           "title": "Stroboscope",
-                          "href": "assets/video/course_apparatus/stroboscope.mp4"
+                          "href": "course_apparatus/stroboscope"
                         },
                         {
                           "title": "Tuning forks",
-                          "href": "assets/video/course_apparatus/tuningforks.mp4"
+                          "href": "course_apparatus/tuningforks"
                         },
                         {
                           "title": "Wave motion ropes",
-                          "href": "assets/video/course_apparatus/wavemotion.mp4"
+                          "href": "course_apparatus/wavemotion"
                         }
                       ]
                     },
                     {
+					"video":true,
                       "left": false,
                       "title": "Modern physics",
                       "icon": {
@@ -11163,11 +11165,11 @@
                       "labs": [
                         {
                           "title": "Gas discharge tubes",
-                          "href": "assets/video/course_apparatus/gasdischargetubes.mp4"
+                          "href": "course_apparatus/gasdischargetubes"
                         },
 						{
                           "title": "Radiation monitor",
-                          "href": "assets/video/course_apparatus/radiationmonitor.mp4"
+                          "href": "course_apparatus/radiationmonitor"
                         }
                       ]
                     }
@@ -11180,6 +11182,7 @@
       ]
     },
     {
+	"type":"teacher",
       "title": "Additional Resources",
 	  "unit": [
         {
@@ -11195,6 +11198,7 @@
               ]
             },
             {
+			"number":false,
               "SectionTitle": "ELL Student Activities",
              "subsection": [
                 {
@@ -11205,6 +11209,7 @@
               ]
             },
             {
+			"number":false,
               "SectionTitle": "ELL Lesson Plans",
               "subsection": [
                 {
@@ -11216,16 +11221,18 @@
               ]
             },
             {
+			"number":false,
               "SectionTitle": "Solutions for Virtual Labs",
 			  	"hyperLink":true,
-				 "href": "<a href='assets/pdf/Kinetic_Physics_Virtual_Lab_Solutions.pdf' download>3: Solutions for Virtual Labs</a>",
+				 "href": "<a href='assets/pdf/Kinetic_Physics_Virtual_Lab_Solutions.pdf' download>Solutions for Virtual Labs</a>",
 					  "subsection": []
 
             },
             {
+			"number":false,
               "SectionTitle": "Solutions for Physical Labs and Demonstrations",
 			  "hyperLink":true,
-			"href": "<a href='assets/pdf/Kinetic_Physics_Lab_Solutions.pdf' download>4: Solutions for Physical Labs and Demonstrations</a>",
+			"href": "<a href='assets/pdf/Kinetic_Physics_Lab_Solutions.pdf' download>Solutions for Physical Labs and Demonstrations</a>",
 					  "subsection": []
              
             }
@@ -11233,5 +11240,2939 @@
         }
       ]
     }
+  ],
+  "lessonPlan":{
+  "chapters": [{},
+    {
+      "title": "One-dimensional Motion ",
+      "unit": [
+        {
+          "section": [
+            {
+              "SectionTitle": "Chapter 1 Lesson Plans",
+			  "link":false,
+              "subsection": [
+                {
+                  "SectionHeading": "Chapter 1 Lesson Plans",
+                  "ref": "temp.json"
+                }
+              ]
+            },
+            {
+              "SectionTitle": "Chapter 1 Overview ",
+              "subsection": [
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": " Chapter 1 Overview Part 1 ",
+                  "ref": "lp_ch01a.json"
+                },
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": " Chapter 1 Overview Part 2 ",
+                  "ref": "lp_ch01b.json"
+                }
+              ]
+            },
+            {
+              "SectionTitle": "Lesson 1: Position, Distance and Speed",
+              "subsection": [
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Position, Distance and Speed ",
+                  "ref": "lp_ch01l1a_ui.json"
+                },
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Lesson and Assessment ",
+                  "ref": "lp_ch01l1b.json"
+                },
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Alternate Lessons",
+                  "ref": "lp_ch01l1c.json"
+                }
+              ]
+            },
+            {
+              "SectionTitle": "Lesson 2: Displacement and Velocity",
+              "subsection": [
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Displacement and Velocity",
+                  "ref": "lp_ch01l2a.json"
+                },
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Lesson and Assessment ",
+                  "ref": "lp_ch01l2b.json"
+                },
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Alternate Lessons",
+                  "ref": "lp_ch01l2c.json"
+                }
+              ]
+            },
+            {
+              "SectionTitle": "Lesson 3: Average and Instantaneous velocity",
+              "subsection": [
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Average and Instantaneous Velocity",
+                  "ref": "lp_ch01l3a.json"
+                },
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Lesson and Assessment ",
+                  "ref": "lp_ch01l3b.json"
+                },
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Alternate Lessons",
+                  "ref": "lp_ch01l3c.json"
+                }
+              ]
+            },
+            {
+              "SectionTitle": "Lesson 4: Acceleration",
+              "subsection": [
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Acceleration",
+                  "ref": "lp_ch01l4a.json"
+                },
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Lesson and Assessment ",
+                  "ref": "lp_ch01l4b.json"
+                },
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Alternate Lessons",
+                  "ref": "lp_ch01l4c.json"
+                }
+              ]
+            },
+            {
+              "SectionTitle": "Lesson 5: Advanced Motion Equations",
+              "subsection": [
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Advanced Motion Equations ",
+                  "ref": "lp_ch01l5a.json"
+                },
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Lesson and Assessment ",
+                  "ref": "lp_ch01l5b.json"
+                },
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Alternate Lessons",
+                  "ref": "lp_ch01l5c.json"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Analyzing 1-D Motion ",
+      "unit": [
+        {
+          "section": [
+            {
+              "SectionTitle": "Chapter 2 Lesson Plans",
+			  "link":false,
+              "subsection": [
+                {
+                  "SectionHeading": "Chapter 2 Lesson Plans",
+                  "ref": "temp.json"
+                }
+              ]
+            },
+            {
+              "SectionTitle": "Chapter 2 Overview ",
+              "subsection": [
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": " Chapter 2 Overview ",
+                  "ref": "lp_ch02.json"
+                }
+              ]
+            },
+            {
+              "SectionTitle": "Lesson 1: Proportional and Linear Relationships",
+              "subsection": [
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Proportional and Linear Relationships",
+                  "ref": "lp_ch02l1a.json"
+                },
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Lesson ",
+                  "ref": "lp_ch02l1b.json"
+                },
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Alternate Lessons",
+                  "ref": "lp_ch02l1c.json"
+                }
+              ]
+            },
+            {
+              "SectionTitle": "Lesson 2: Position-Time Graphs",
+              "subsection": [
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Position-Time Graphs ",
+                  "ref": "lp_ch02l2a.json"
+                },
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Lesson and Assessment ",
+                  "ref": "lp_ch02l2b.json"
+                }
+              ]
+            },
+            {
+              "SectionTitle": "Lesson 3: Scatter Plots and Trend Lines",
+              "subsection": [
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Scatter Plots and Trend Lines ",
+                  "ref": "lp_ch02l3a.json"
+                },
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Lesson ",
+                  "ref": "lp_ch02l3b.json"
+                }
+              ]
+            },
+            {
+              "SectionTitle": "Lesson 4: Freefall Acceleration",
+              "subsection": [
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Freefall Acceleration",
+                  "ref": "lp_ch02l4a.json"
+                },
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Lesson and Assessment ",
+                  "ref": "lp_ch02l4b.json"
+                }
+              ]
+            },
+            {
+              "SectionTitle": "Lesson 5: Reference Frame",
+              "subsection": [
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Reference Frame ",
+                  "ref": "lp_ch02l5a.json"
+                },
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Lesson and Assessment ",
+                  "ref": "lp_ch02l5b.json"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Physics and Science Essentials ",
+      "unit": [
+        {
+          "section": [
+            {
+			"link":false,
+              "SectionTitle": "Chapter 3 Lesson Plans",
+              "subsection": [
+                {
+                  "SectionHeading": "Chapter 3 Lesson Plans",
+                  "ref": "temp.json"
+                }
+              ]
+            },
+            {
+              "SectionTitle": "Chapter 3 Overview ",
+              "subsection": [
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": " Chapter 3 Overview Part 1",
+                  "ref": "lp_ch03a.json"
+                },
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": " Chapter 3 Overview Part 2",
+                  "ref": "lp_ch03b.json"
+                },
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": " Chapter 3 Overview Part 3",
+                  "ref": "lp_ch03c.json"
+                }
+              ]
+            },
+            {
+              "SectionTitle": "Lesson 1: Metric System and Conversions",
+              "subsection": [
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Metric System and Conversions",
+                  "ref": "lp_ch03l1a.json"
+                },
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Lesson and Assessment ",
+                  "ref": "lp_ch03l1b.json"
+                }
+              ]
+            },
+            {
+              "SectionTitle": "Lesson 2: Scientific Notation",
+              "subsection": [
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Scientific Notation ",
+                  "ref": "lp_ch03l2a.json"
+                },
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Lesson and Assessment ",
+                  "ref": "lp_ch03l2b.json"
+                }
+              ]
+            },
+            {
+              "SectionTitle": "Lesson 3: Significant Figures",
+              "subsection": [
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Significant Figures ",
+                  "ref": "lp_ch03l3a.json"
+                },
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Lesson",
+                  "ref": "lp_ch03l3b.json"
+                }
+              ]
+            },
+            {
+              "SectionTitle": "Lesson 4: Nature of Science ",
+              "subsection": [
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Nature of Science ",
+                  "ref": "lp_ch03l4a.json"
+                },
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Lesson and Assessment ",
+                  "ref": "lp_ch03l4b.json"
+                }
+              ]
+            },
+            {
+              "SectionTitle": "Lesson 5: Science Experiments",
+              "subsection": [
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Science Experiments ",
+                  "ref": "lp_ch03l5a.json"
+                },
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Lesson and Assessment ",
+                  "ref": "lp_ch03l5b.json"
+                }
+              ]
+            },
+            {
+              "SectionTitle": "Lesson 6: Science, News and Marketing",
+              "subsection": [
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Science, News and Marketing ",
+                  "ref": "lp_ch07l5a.json"
+                },
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Lesson and Assessment ",
+                  "ref": "lp_ch07l5b.json"
+                }
+              ]
+            },
+            {
+              "SectionTitle": "Lesson 7: Math Fundamentals Review",
+              "subsection": [
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Math Fundamentals Review ",
+                  "ref": "lp_ch03l6a.json"
+                },
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Lesson and Assessment ",
+                  "ref": "lp_ch03l6b.json"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Two-dimensional Motion ",
+      "unit": [
+        {
+          "section": [
+            {
+              "SectionTitle": "Chapter 4 Lesson Plans","link":false,
+              "subsection": [
+                {
+                  "SectionHeading": "Chapter 4 Lesson Plans",
+                  "ref": "temp.json"
+                }
+              ]
+            },
+            {
+              "SectionTitle": "Chapter 4 Overview ",
+              "subsection": [
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": " Chapter 4 Overview Part 1 ",
+                  "ref": "lp_ch04a.json"
+                },
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": " Chapter 4 Overview Part 2 ",
+                  "ref": "lp_ch04b.json"
+                },
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": " Chapter 4 Overview Part 3 ",
+                  "ref": "lp_ch04c.json"
+                }
+              ]
+            },
+            {
+              "SectionTitle": "Lesson 1: Two-Dimensional Motion",
+              "subsection": [
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Two-Dimensional Motion",
+                  "ref": "lp_ch04l1a.json"
+                },
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Lesson and Assessment ",
+                  "ref": "lp_ch04l1b.json"
+                }
+              ]
+            },
+            {
+              "SectionTitle": "Lesson 2: Projectile Motion ",
+              "subsection": [
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Projectile Motion",
+                  "ref": "lp_ch04l2a.json"
+                },
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Lesson and Assessment ",
+                  "ref": "lp_ch04l2b.json"
+                }
+              ]
+            },
+            {
+              "SectionTitle": "Lesson 3: Combining Vectors Graphically",
+              "subsection": [
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Combining Vectors Graphically ",
+                  "ref": "lp_ch04l3a.json"
+                },
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Lesson and Assessment ",
+                  "ref": "lp_ch04l3b.json"
+                }
+              ]
+            },
+            {
+              "SectionTitle": "Lesson 4: Combining Vector Components",
+              "subsection": [
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Combining Vector Components",
+                  "ref": "lp_ch04l4a.json"
+                },
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Lesson and Assessment ",
+                  "ref": "lp_ch04l4b.json"
+                }
+              ]
+            },
+            {
+              "SectionTitle": "Lesson 5: Vectors and Trigonometry ",
+              "subsection": [
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Vectors and Trigonometry",
+                  "ref": "lp_ch04l5a.json"
+                },
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Lesson and Assessment ",
+                  "ref": "lp_ch04l5b.json"
+                }
+              ]
+            },
+            {
+              "SectionTitle": "Lesson 6: Rectangular Vector Multiplied by Scalar",
+              "subsection": [
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Rectangular Vector Multiplied by Scalar ",
+                  "ref": "lp_ch04l6a.json"
+                },
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Lesson and Assessment ",
+                  "ref": "lp_ch04l6b.json"
+                }
+              ]
+            },
+            {
+              "SectionTitle": "Lesson 7: Converting Between Vector Forms",
+              "subsection": [
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Converting Between Vector Forms ",
+                  "ref": "lp_ch04l7a.json"
+                },
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Lesson and Assessment ",
+                  "ref": "lp_ch04l7b.json"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Force ",
+      "unit": [
+        {
+          "section": [
+            {
+              "SectionTitle": "Chapter 5 Lesson Plans","link":false,
+              "subsection": [
+                {
+                  "SectionHeading": "Chapter 5 Lesson Plans",
+                  "ref": "temp.json"
+                }
+              ]
+            },
+            {
+              "SectionTitle": "Chapter 5 Overview ",
+              "subsection": [
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": " Chapter 5 Overview Part 1 ",
+                  "ref": "lp_ch05a.json"
+                },
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": " Chapter 5 Overview Part 2 ",
+                  "ref": "lp_ch05b.json"
+                },
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": " Chapter 5 Overview Part 3 ",
+                  "ref": "lp_ch05c.json"
+                }
+              ]
+            },
+            {
+              "SectionTitle": "Lesson 1: Force and Newton’s First Law",
+              "subsection": [
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Force and Newton’s First Law ",
+                  "ref": "lp_ch05l1a.json"
+                },
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Lesson and Assessment ",
+                  "ref": "lp_ch05l1b.json"
+                }
+              ]
+            },
+            {
+              "SectionTitle": "Lesson 2: Newton’s Second Law",
+              "subsection": [
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Newton’s Second Law ",
+                  "ref": "lp_ch05l2a.json"
+                },
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Lesson and Assessment ",
+                  "ref": "lp_ch05l2b.json"
+                }
+              ]
+            },
+            {
+              "SectionTitle": "Lesson 3: Newton’s Third Law & Types of Forces",
+              "subsection": [
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Newton’s Third Law & Types of Forces ",
+                  "ref": "lp_ch05l3a.json"
+                },
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Lesson and Assessment ",
+                  "ref": "lp_ch05l3b.json"
+                }
+              ]
+            },
+            {
+              "SectionTitle": "Lesson 4: Forces that Change",
+              "subsection": [
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Forces that Change ",
+                  "ref": "lp_ch05l4a.json"
+                },
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Lesson and Assessment ",
+                  "ref": "lp_ch05l4b.json"
+                }
+              ]
+            },
+            {
+              "SectionTitle": "Lesson 5: Free-body Diagrams ",
+              "subsection": [
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Free-body Diagrams ",
+                  "ref": "lp_ch05l5a.json"
+                },
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Lesson and Assessment ",
+                  "ref": "lp_ch05l5b.json"
+                }
+              ]
+            },
+            {
+              "SectionTitle": "Lesson 6: Force Problems Using Trigonometry ",
+              "subsection": [
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Force Problems Using Trigonometry ",
+                  "ref": "lp_ch05l6a.json"
+                },
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Lesson and Assessment ",
+                  "ref": "lp_ch05l6b.json"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Work, Energy and Power ",
+      "unit": [
+        {
+          "section": [
+            {
+              "SectionTitle": "Chapter 6 Lesson Plans","link":false,
+              "subsection": [
+                {
+                  "SectionHeading": "Chapter 6 Lesson Plans",
+                  "ref": "temp.json"
+                }
+              ]
+            },
+            {
+              "SectionTitle": "Chapter 6 Overview ",
+              "subsection": [
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": " Chapter 6 Overview Part 1 ",
+                  "ref": "lp_ch06a.json"
+                },
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": " Chapter 6 Overview Part 2 ",
+                  "ref": "lp_ch06b.json"
+                },
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": " Chapter 6 Overview Part 3 ",
+                  "ref": "lp_ch06c.json"
+                }
+              ]
+            },
+            {
+              "SectionTitle": "Lesson 1: Work",
+              "subsection": [
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Work ",
+                  "ref": "lp_ch06l1a.json"
+                },
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Lesson and Assessment ",
+                  "ref": "lp_ch06l1b.json"
+                }
+              ]
+            },
+            {
+              "SectionTitle": "Lesson 2: Work: Force at an Angle",
+              "subsection": [
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Work: Force at an Angle",
+                  "ref": "lp_ch06l2a.json"
+                },
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Lesson and Assessment ",
+                  "ref": "lp_ch06l2b.json"
+                }
+              ]
+            },
+            {
+              "SectionTitle": "Lesson 3: Kinetic Energy",
+              "subsection": [
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Kinetic Energy ",
+                  "ref": "lp_ch06l3a.json"
+                },
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Lesson and Assessment ",
+                  "ref": "lp_ch06l3b.json"
+                }
+              ]
+            },
+            {
+              "SectionTitle": "Lesson 4: Potential Energy",
+              "subsection": [
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Potential Energy ",
+                  "ref": "lp_ch06l4a.json"
+                },
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Lesson and Assessment ",
+                  "ref": "lp_ch06l4b.json"
+                }
+              ]
+            },
+            {
+              "SectionTitle": "Lesson 5: Energy Conservation & Energy Transfer",
+              "subsection": [
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Energy Conservation & Energy Transfer ",
+                  "ref": "lp_ch06l5a.json"
+                },
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Lesson and Assessment ",
+                  "ref": "lp_ch06l5b.json"
+                }
+              ]
+            },
+            {
+              "SectionTitle": "Lesson 6: Work and Systems",
+              "subsection": [
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Work and Systems ",
+                  "ref": "lp_ch06l6a.json"
+                },
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Lesson",
+                  "ref": "lp_ch06l6b.json"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Momentum ",
+      "unit": [
+        {
+          "section": [
+            {
+              "SectionTitle": "Chapter 7 Lesson Plans","link":false,
+              "subsection": [
+                {
+                  "SectionHeading": "Chapter 7 Lesson Plans",
+                  "ref": "temp.json"
+                }
+              ]
+            },
+            {
+              "SectionTitle": "Chapter 7 Overview ",
+              "subsection": [
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": " Chapter 7 Overview Part 1",
+                  "ref": "lp_ch07a.json"
+                },
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": " Chapter 7 Overview Part 2 ",
+                  "ref": "lp_ch07b.json"
+                }
+              ]
+            },
+            {
+              "SectionTitle": "Lesson 1: Momentum",
+              "subsection": [
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Momentum ",
+                  "ref": "lp_ch07l1a.json"
+                },
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Lesson and Assessment ",
+                  "ref": "lp_ch07l1b.json"
+                }
+              ]
+            },
+            {
+              "SectionTitle": "Lesson 2: Conservation of Momentum",
+              "subsection": [
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Conservation of Momentum ",
+                  "ref": "lp_ch07l2a.json"
+                },
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Lesson and Assessment ",
+                  "ref": "lp_ch07l2b.json"
+                }
+              ]
+            },
+            {
+              "SectionTitle": "Lesson 3: Collisions",
+              "subsection": [
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Collisions",
+                  "ref": "lp_ch07l3a.json"
+                },
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Lesson and Assessment ",
+                  "ref": "lp_ch07l3b.json"
+                }
+              ]
+            },
+            {
+              "SectionTitle": "Lesson 4: Center of Mass",
+              "subsection": [
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": " Center of Mass",
+                  "ref": "lp_ch07l4a.json"
+                },
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Lesson and Assessment ",
+                  "ref": "lp_ch07l4b.json"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Circular Motion and Gravity ",
+      "unit": [
+        {
+          "section": [
+            {
+              "SectionTitle": "Chapter 8 Lesson Plans","link":false,
+              "subsection": [
+                {
+                  "SectionHeading": "Chapter 8 Lesson Plans",
+                  "ref": "temp.json"
+                }
+              ]
+            },
+            {
+              "SectionTitle": "Chapter 8 Overview ",
+              "subsection": [
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": " Chapter 8 Overview Part 1 ",
+                  "ref": "lp_ch08a.json"
+                },
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": " Chapter 8 Overview Part 2 ",
+                  "ref": "lp_ch08b.json"
+                },
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": " Chapter 8 Overview Part 3",
+                  "ref": "lp_ch08c.json"
+                }
+              ]
+            },
+            {
+              "SectionTitle": "Lesson 1: Circular Motion",
+              "subsection": [
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Circular Motion ",
+                  "ref": "lp_ch08l1a.json"
+                },
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Lesson and Assessment ",
+                  "ref": "lp_ch08l1b.json"
+                }
+              ]
+            },
+            {
+              "SectionTitle": "Lesson 2: Centripetal Force",
+              "subsection": [
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Centripetal Force ",
+                  "ref": "lp_ch08l2a.json"
+                },
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Lesson and Assessment ",
+                  "ref": "lp_ch08l2b.json"
+                }
+              ]
+            },
+            {
+              "SectionTitle": "Lesson 3: Newton’s Law of Gravity",
+              "subsection": [
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Newton’s Law of Gravity ",
+                  "ref": "lp_ch08l3a.json"
+                },
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Lesson and Assessment ",
+                  "ref": "lp_ch08l3b.json"
+                }
+              ]
+            },
+            {
+              "SectionTitle": "Lesson 4: Circular Orbits",
+              "subsection": [
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Circular Orbits ",
+                  "ref": "lp_ch08l4a.json"
+                },
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Lesson and Assessment ",
+                  "ref": "lp_ch08l4b.json"
+                }
+              ]
+            },
+            {
+              "SectionTitle": "Lesson 5: Kepler’s Laws",
+              "subsection": [
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Kepler’s Laws ",
+                  "ref": "lp_ch08l5a.json"
+                },
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Lesson",
+                  "ref": "lp_ch08l5b.json"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Rotational Motion ",
+      "unit": [
+        {
+          "section": [
+            {
+              "SectionTitle": "Chapter 9 Lesson Plans","link":false,
+              "subsection": [
+                {
+                  "SectionHeading": "Chapter 9 Lesson Plans",
+                  "ref": "temp.json"
+                }
+              ]
+            },
+            {
+              "SectionTitle": "Chapter 9 Overview ",
+              "subsection": [
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": " Chapter 9 Overview Part 1 ",
+                  "ref": "lp_ch09a.json"
+                },
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": " Chapter 9 Overview Part 2 ",
+                  "ref": "lp_ch09b.json"
+                },
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": " Chapter 9 Overview Part 3",
+                  "ref": "lp_ch09c.json"
+                }
+              ]
+            },
+            {
+              "SectionTitle": "Lesson 1: Rotational Motion",
+              "subsection": [
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Rotational Motion",
+                  "ref": "lp_ch09l1a.json"
+                },
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Lesson and Assessment ",
+                  "ref": "lp_ch09l1b.json"
+                }
+              ]
+            },
+            {
+              "SectionTitle": "Lesson 2: Fundamental Equations",
+              "subsection": [
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Fundamental Equations ",
+                  "ref": "lp_ch09l2a.json"
+                },
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Lesson and Assessment ",
+                  "ref": "lp_ch09l2b.json"
+                }
+              ]
+            },
+            {
+              "SectionTitle": "Lesson 3: Advanced Equations",
+              "subsection": [
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Advanced Equations",
+                  "ref": "lp_ch09l3a.json"
+                },
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Lesson and Assessment ",
+                  "ref": "lp_ch09l3b.json"
+                }
+              ]
+            },
+            {
+              "SectionTitle": "Lesson 4: Torque",
+              "subsection": [
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Torque",
+                  "ref": "lp_ch09l4a.json"
+                },
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Lesson and Assessment ",
+                  "ref": "lp_ch09l4b.json"
+                }
+              ]
+            },
+            {
+              "SectionTitle": "Lesson 5: Torque and Angular Acceleration",
+              "subsection": [
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Torque and Angular Acceleration ",
+                  "ref": "lp_ch09l5a.json"
+                },
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Lesson and Assessment ",
+                  "ref": "lp_ch09l5b.json"
+                }
+              ]
+            },
+            {
+              "SectionTitle": "Lesson 6: Angular Momentum",
+              "subsection": [
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Angular Momentum",
+                  "ref": "lp_ch09l6a.json"
+                },
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Lesson and Assessment ",
+                  "ref": "lp_ch09l6b.json"
+                }
+              ]
+            },
+            {
+              "SectionTitle": "Lesson 7: Static Equilibrium",
+              "subsection": [
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Static Equilibrium ",
+                  "ref": "lp_ch09l7a.json"
+                },
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Lesson ",
+                  "ref": "lp_ch09l7b.json"
+                }
+              ]
+            },
+            {
+              "SectionTitle": "Lesson 8: Machines",
+              "subsection": [
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Machines ",
+                  "ref": "lp_ch09l8a.json"
+                },
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Lesson ",
+                  "ref": "lp_ch09l8b.json"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Fluids ",
+      "unit": [
+        {
+          "section": [
+            {
+              "SectionTitle": "Chapter 10 Lesson Plans","link":false,
+              "subsection": [
+                {
+                  "SectionHeading": "Chapter 10 Lesson Plans",
+                  "ref": "temp.json"
+                }
+              ]
+            },
+            {
+              "SectionTitle": "Chapter 10 Overview ",
+              "subsection": [
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": " Chapter 10 Overview Part 1 ",
+                  "ref": "lp_ch10a.json"
+                },
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": " Chapter 10 Overview Part 2",
+                  "ref": "lp_ch10b.json"
+                }
+              ]
+            },
+            {
+              "SectionTitle": "Lesson 1: Fluids, Pressure and Density",
+              "subsection": [
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Fluids, Pressure and Density ",
+                  "ref": "lp_ch10l1a.json"
+                },
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Lesson and Assessment ",
+                  "ref": "lp_ch10l1b.json"
+                }
+              ]
+            },
+            {
+              "SectionTitle": "Lesson 2: Pressure in Liquids",
+              "subsection": [
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Pressure in Liquids ",
+                  "ref": "lp_ch10l2a.json"
+                },
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Lesson and Assessment ",
+                  "ref": "lp_ch10l2b.json"
+                }
+              ]
+            },
+            {
+              "SectionTitle": "Lesson 3: Pressure on Earth",
+              "subsection": [
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Pressure on Earth ",
+                  "ref": "lp_ch10l3a.json"
+                },
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Lesson and Assessment ",
+                  "ref": "lp_ch10l3b.json"
+                }
+              ]
+            },
+            {
+              "SectionTitle": "Lesson 4: Archimedes’ Principle",
+              "subsection": [
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Archimedes’ Principle ",
+                  "ref": "lp_ch10l4a.json"
+                },
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Lesson and Assessment ",
+                  "ref": "lp_ch10l4b.json"
+                }
+              ]
+            },
+            {
+              "SectionTitle": "Lesson 5: Pascal’s Principle and Fluid Continuity",
+              "subsection": [
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Pascal’s Principle and Fluid Continuity ",
+                  "ref": "lp_ch10l5a.json"
+                },
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Lesson and Assessment ",
+                  "ref": "lp_ch10l5b.json"
+                }
+              ]
+            },
+            {
+              "SectionTitle": "Lesson 6: Bernoulli’s Principle",
+              "subsection": [
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Bernoulli’s Principle ",
+                  "ref": "lp_ch10l6a.json"
+                },
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Lesson and Assessment ",
+                  "ref": "lp_ch10l6b.json"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Temperature and Heat ",
+      "unit": [
+        {
+          "section": [
+            {
+              "SectionTitle": "Chapter 11 Lesson Plans","link":false,
+              "subsection": [
+                {
+                  "SectionHeading": "Chapter 11 Lesson Plans",
+                  "ref": "temp.json"
+                }
+              ]
+            },
+            {
+              "SectionTitle": "Chapter 11 Overview ",
+              "subsection": [
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": " Chapter 11 Overview Part 1 ",
+                  "ref": "lp_ch11a.json"
+                },
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": " Chapter 11 Overview Part 2",
+                  "ref": "lp_ch11b.json"
+                },
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": " Chapter 11 Overview Part 3",
+                  "ref": "lp_ch11c.json"
+                }
+              ]
+            },
+            {
+              "SectionTitle": "Lesson 1: Types of Matter and Thermal Energy ",
+              "subsection": [
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Types of Matter and Thermal Energy ",
+                  "ref": "lp_ch11l1a.json"
+                },
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Lesson and Assessment ",
+                  "ref": "lp_ch11l1b.json"
+                }
+              ]
+            },
+            {
+              "SectionTitle": "Lesson 2: Temperature and Thermal Energy ",
+              "subsection": [
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Temperature and Thermal Energy ",
+                  "ref": "lp_ch11l2a.json"
+                },
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Lesson ",
+                  "ref": "lp_ch11l2b.json"
+                }
+              ]
+            },
+            {
+              "SectionTitle": "Lesson 3: Temperature Scales and Conversions",
+              "subsection": [
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Temperature Scales and Conversions ",
+                  "ref": "lp_ch11l3a.json"
+                },
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Lesson and Assessment ",
+                  "ref": "lp_ch11l3b.json"
+                }
+              ]
+            },
+            {
+              "SectionTitle": "Lesson 4: Heat",
+              "subsection": [
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Heat ",
+                  "ref": "lp_ch11l4a.json"
+                },
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Lesson and Assessment ",
+                  "ref": "lp_ch11l4b.json"
+                }
+              ]
+            },
+            {
+              "SectionTitle": "Lesson 5: State Changes ",
+              "subsection": [
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "State Changes ",
+                  "ref": "lp_ch11l5a.json"
+                },
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Lesson and Assessment ",
+                  "ref": "lp_ch11l5b.json"
+                }
+              ]
+            },
+            {
+              "SectionTitle": "Lesson 6: How Heat Transfers ",
+              "subsection": [
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "How Heat Transfers ",
+                  "ref": "lp_ch11l6a.json"
+                },
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Lesson and Assessment ",
+                  "ref": "lp_ch11l6b.json"
+                }
+              ]
+            },
+            {
+              "SectionTitle": "Lesson 7: Thermal Expansion",
+              "subsection": [
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Thermal Expansion ",
+                  "ref": "lp_ch11l7a.json"
+                },
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Lesson and Assessment ",
+                  "ref": "lp_ch11l7b.json"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Thermodynamics and Engines ",
+      "unit": [
+        {
+          "section": [
+            {
+              "SectionTitle": "Chapter 12 Lesson Plans","link":false,
+              "subsection": [
+                {
+                  "SectionHeading": "Chapter 12 Lesson Plans",
+                  "ref": "temp.json"
+                }
+              ]
+            },
+            {
+              "SectionTitle": "Chapter 12 Overview ",
+              "subsection": [
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": " Chapter 12 Overview Part 1 ",
+                  "ref": "lp_ch12a.json"
+                },
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": " Chapter 12 Overview Part 2 ",
+                  "ref": "lp_ch12b.json"
+                },
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": " Chapter 12 Overview Part 3 ",
+                  "ref": "lp_ch12c.json"
+                }
+              ]
+            },
+            {
+              "SectionTitle": "Lesson 1: First Law of Thermodynamics ",
+              "subsection": [
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "First Law of Thermodynamics ",
+                  "ref": "lp_ch12l1a.json"
+                },
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Lesson and Assessment ",
+                  "ref": "lp_ch12l1b.json"
+                }
+              ]
+            },
+            {
+              "SectionTitle": "Lesson 2: Heat Engines",
+              "subsection": [
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Heat Engines ",
+                  "ref": "lp_ch12l2a.json"
+                },
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Lesson and Assessment ",
+                  "ref": "lp_ch12l2b.json"
+                }
+              ]
+            },
+            {
+              "SectionTitle": "Lesson 3: Heat Engine Process in Detail",
+              "subsection": [
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Heat Engine Process in Detail ",
+                  "ref": "lp_ch12l3a.json"
+                },
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Lesson and Assessment ",
+                  "ref": "lp_ch12l3b.json"
+                }
+              ]
+            },
+            {
+              "SectionTitle": "Lesson 4: Gas Laws",
+              "subsection": [
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Gas Laws ",
+                  "ref": "lp_ch12l4a.json"
+                },
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Lesson and Assessment ",
+                  "ref": "lp_ch12l4b.json"
+                }
+              ]
+            },
+            {
+              "SectionTitle": "Lesson 5: Pressure-Volume Graphs",
+              "subsection": [
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Pressure-Volume Graphs ",
+                  "ref": "lp_ch12l5a.json"
+                },
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Lesson and Assessment ",
+                  "ref": "lp_ch12l5b.json"
+                }
+              ]
+            },
+            {
+              "SectionTitle": "Lesson 6: Second Law of Thermodynamics",
+              "subsection": [
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Second Law of Thermodynamics ",
+                  "ref": "lp_ch12l6a.json"
+                },
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Lesson and Assessment ",
+                  "ref": "lp_ch12l6b.json"
+                }
+              ]
+            },
+            {
+              "SectionTitle": "Lesson 7: Entrorpy, um, Entropy",
+              "subsection": [
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Entrorpy, um, Entropy ",
+                  "ref": "lp_ch12l7a.json"
+                },
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Lesson and Assessment ",
+                  "ref": "lp_ch12l7b.json"
+                }
+              ]
+            },
+            {
+              "SectionTitle": "Lesson 8: Kinetic Theory of Gas",
+              "subsection": [
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": " Kinetic Theory of Gas ",
+                  "ref": "lp_ch12l8a.json"
+                },
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Lesson and Assessment ",
+                  "ref": "lp_ch12l8b.json"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "SHM and Waves ",
+      "unit": [
+        {
+          "section": [
+            {
+              "SectionTitle": "Chapter 13 Lesson Plans","link":false,
+              "subsection": [
+                {
+                  "SectionHeading": "Chapter 13 Lesson Plans",
+                  "ref": "temp.json"
+                }
+              ]
+            },
+            {
+              "SectionTitle": "Chapter 13 Overview ",
+              "subsection": [
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": " Chapter 13 Overview Part 1 ",
+                  "ref": "lp_ch13a.json"
+                },
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": " Chapter 13 Overview Part 2 ",
+                  "ref": "lp_ch13b.json"
+                },
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": " Chapter 13 Overview Part 3 ",
+                  "ref": "lp_ch13c.json"
+                }
+              ]
+            },
+            {
+              "SectionTitle": "Lesson 1: Simple Harmonic Motion",
+              "subsection": [
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Simple Harmonic Motion ",
+                  "ref": "lp_ch13l1a.json"
+                },
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Lesson and Assessment ",
+                  "ref": "lp_ch13l1b.json"
+                }
+              ]
+            },
+            {
+              "SectionTitle": "Lesson 2: SHM: Acceleration and Speed",
+              "subsection": [
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "SHM: Acceleration and Speed ",
+                  "ref": "lp_ch13l2a.json"
+                },
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Lesson ",
+                  "ref": "lp_ch13l2b.json"
+                }
+              ]
+            },
+            {
+              "SectionTitle": "Lesson 3:SHM in the World",
+              "subsection": [
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "SHM in the World ",
+                  "ref": "lp_ch13l3a.json"
+                },
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Lesson and Assessment ",
+                  "ref": "lp_ch13l3b.json"
+                }
+              ]
+            },
+            {
+              "SectionTitle": "Lesson 4: Wave Basics",
+              "subsection": [
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Wave Basics ",
+                  "ref": "lp_ch13l4a.json"
+                },
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Lesson and Assessment ",
+                  "ref": "lp_ch13l4b.json"
+                }
+              ]
+            },
+            {
+              "SectionTitle": "Lesson 5: Types of Waves",
+              "subsection": [
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Types of Waves ",
+                  "ref": "lp_ch13l5a.json"
+                },
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Lesson ",
+                  "ref": "lp_ch13l5b.json"
+                }
+              ]
+            },
+            {
+              "SectionTitle": "Lesson 6: Wave Speed",
+              "subsection": [
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Wave Speed ",
+                  "ref": "lp_ch13l6a.json"
+                },
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Lesson and Assessment ",
+                  "ref": "lp_ch13l6b.json"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Sound ",
+      "unit": [
+        {
+          "section": [
+            {
+              "SectionTitle": "Chapter 14 Lesson Plans","link":false,
+              "subsection": [
+                {
+                  "SectionHeading": "Chapter 14 Lesson Plans",
+                  "ref": "temp.json"
+                }
+              ]
+            },
+            {
+              "SectionTitle": "Chapter 14 Overview ",
+              "subsection": [
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": " Chapter 14 Overview Part 1",
+                  "ref": "lp_ch14a.json"
+                },
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": " Chapter 14 Overview Part 2",
+                  "ref": "lp_ch14b.json"
+                },
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Chapter 14 Overview Part 3",
+                  "ref": "lp_ch14c.json"
+                }
+              ]
+            },
+            {
+              "SectionTitle": "Lesson 1: Sound Waves",
+              "subsection": [
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Sound Waves ",
+                  "ref": "lp_ch14l1a.json"
+                },
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Lesson and Assessment ",
+                  "ref": "lp_ch14l1b.json"
+                }
+              ]
+            },
+            {
+              "SectionTitle": "Lesson 2: Sound Intensity",
+              "subsection": [
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Sound Intensity ",
+                  "ref": "lp_ch14l2a.json"
+                },
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Lesson and Assessment ",
+                  "ref": "lp_ch14l2b.json"
+                }
+              ]
+            },
+            {
+              "SectionTitle": "Lesson 3: Doppler Effect",
+              "subsection": [
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Doppler Effect ",
+                  "ref": "lp_ch14l3a.json"
+                },
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Lesson and Assessment ",
+                  "ref": "lp_ch14l3b.json"
+                }
+              ]
+            },
+            {
+              "SectionTitle": "Lesson 4: Combining Waves",
+              "subsection": [
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Combining Waves ",
+                  "ref": "lp_ch14l4a.json"
+                },
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Lesson and Assessment ",
+                  "ref": "lp_ch14l4b.json"
+                }
+              ]
+            },
+            {
+              "SectionTitle": "Lesson 5: Harmonics and Musical Instruments",
+              "subsection": [
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Harmonics and Musical Instruments ",
+                  "ref": "lp_ch14l5a.json"
+                },
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Lesson and Assessment ",
+                  "ref": "lp_ch14l5b.json"
+                }
+              ]
+            },
+            {
+              "SectionTitle": "Lesson 6: Human Perception of Sound",
+              "subsection": [
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Human Perception of Sound ",
+                  "ref": "lp_ch14l6a.json"
+                },
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Lesson ",
+                  "ref": "lp_ch14l6b.json"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Electric Charge ",
+      "unit": [
+        {
+          "section": [
+            {
+              "SectionTitle": "Chapter 15 Lesson Plans","link":false,
+              "subsection": [
+                {
+                  "SectionHeading": "Chapter 15 Lesson Plans",
+                  "ref": "temp.json"
+                }
+              ]
+            },
+            {
+              "SectionTitle": "Chapter 15 Overview ",
+              "subsection": [
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": " Chapter 15 Overview Part 1",
+                  "ref": "lp_ch15a.json"
+                },
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": " Chapter 15 Overview Part 2 ",
+                  "ref": "lp_ch15b.json"
+                }
+              ]
+            },
+            {
+              "SectionTitle": "Lesson 1: Electric Charge",
+              "subsection": [
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Electric Charge ",
+                  "ref": "lp_ch15l1a.json"
+                },
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Lesson and Assessment ",
+                  "ref": "lp_ch15l1b.json"
+                }
+              ]
+            },
+            {
+              "SectionTitle": "Lesson 2: Electric Force",
+              "subsection": [
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Electric Force ",
+                  "ref": "lp_ch15l2a.json"
+                },
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Lesson and Assessment ",
+                  "ref": "lp_ch15l2b.json"
+                }
+              ]
+            },
+            {
+              "SectionTitle": "Lesson 3: Electric Fields",
+              "subsection": [
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Electric Fields ",
+                  "ref": "lp_ch15l3a.json"
+                },
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Lesson and Assessment ",
+                  "ref": "lp_ch15l3b.json"
+                }
+              ]
+            },
+            {
+              "SectionTitle": "Lesson 4: Electric Potential Energy",
+              "subsection": [
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Electric Potential Energy ",
+                  "ref": "lp_ch15l4a.json"
+                },
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Lesson and Assessment ",
+                  "ref": "lp_ch15l4b.json"
+                }
+              ]
+            },
+            {
+              "SectionTitle": "Lesson 5: Advanced Topics",
+              "subsection": [
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Advanced Topics ",
+                  "ref": "lp_ch15l5a.json"
+                },
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Lesson and Assessment ",
+                  "ref": "lp_ch15l5b.json"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Electric Circuits ",
+      "unit": [
+        {
+          "section": [
+            {
+              "SectionTitle": "Chapter 16 Lesson Plans","link":false,
+              "subsection": [
+                {
+                  "SectionHeading": "Chapter 16 Lesson Plans",
+                  "ref": "temp.json"
+                }
+              ]
+            },
+            {
+              "SectionTitle": "Chapter 16 Overview ",
+              "subsection": [
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": " Chapter 16 Overview Part 1 ",
+                  "ref": "lp_ch16a.json"
+                },
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": " Chapter 16 Overview Part 2 ",
+                  "ref": "lp_ch16b.json"
+                },
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": " Chapter 16 Overview Part 2",
+                  "ref": "lp_ch16c.json"
+                }
+              ]
+            },
+            {
+              "SectionTitle": "Lesson 1: Electric Current and Resistance",
+              "subsection": [
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Electric Current and Resistance ",
+                  "ref": "lp_ch16l1a.json"
+                },
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Lesson and Assessment ",
+                  "ref": "lp_ch16l1b.json"
+                }
+              ]
+            },
+            {
+              "SectionTitle": "Lesson 2: Electric Power and Capacitors",
+              "subsection": [
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Electric Power and Capacitors ",
+                  "ref": "lp_ch16l2a.json"
+                },
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Lesson and Assessment ",
+                  "ref": "lp_ch16l2b.json"
+                }
+              ]
+            },
+            {
+              "SectionTitle": "Lesson 3: Electric Circuits",
+              "subsection": [
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Electric Circuits ",
+                  "ref": "lp_ch16l3a.json"
+                },
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Lesson and Assessment ",
+                  "ref": "lp_ch16l3b.json"
+                }
+              ]
+            },
+            {
+              "SectionTitle": "Lesson 4: Series and Parallel Wiring",
+              "subsection": [
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Series and Parallel Wiring ",
+                  "ref": "lp_ch16l4a.json"
+                },
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Lesson and Assessment ",
+                  "ref": "lp_ch16l4b.json"
+                }
+              ]
+            },
+            {
+              "SectionTitle": "Lesson 5: Mixed Circuits",
+              "subsection": [
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Mixed Circuits ",
+                  "ref": "lp_ch16l5a.json"
+                },
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Lesson and Assessment ",
+                  "ref": "lp_ch16l5b.json"
+                }
+              ]
+            },
+            {
+              "SectionTitle": "Lesson 6: Advanced Topics in Capacitors",
+              "subsection": [
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Advanced Topics in Capacitors ",
+                  "ref": "lp_ch16l6a.json"
+                },
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Lesson and Assessment ",
+                  "ref": "lp_ch16l6b.json"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Magnets and Charge ",
+      "unit": [
+        {
+          "section": [
+            {
+              "SectionTitle": "Chapter 17 Lesson Plans","link":false,
+              "subsection": [
+                {
+                  "SectionHeading": "Chapter 17 Lesson Plans",
+                  "ref": "temp.json"
+                }
+              ]
+            },
+            {
+              "SectionTitle": "Chapter 17 Overview ",
+              "subsection": [
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": " Chapter 17 Overview Part 1",
+                  "ref": "lp_ch17a.json"
+                },
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": " Chapter 17 Overview Part 2",
+                  "ref": "lp_ch17b.json"
+                },
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": " Chapter 17 Overview Part 3 ",
+                  "ref": "lp_ch17c.json"
+                }
+              ]
+            },
+            {
+              "SectionTitle": "Lesson 1: Magnetic Fields and Charged Particles",
+              "subsection": [
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Magnetic Fields and Charged Particles ",
+                  "ref": "lp_ch17l1a.json"
+                },
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Lesson and Assessment ",
+                  "ref": "lp_ch17l1b.json"
+                }
+              ]
+            },
+            {
+              "SectionTitle": "Lesson 2: Currents and Magnetic Fields",
+              "subsection": [
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Currents and Magnetic Fields ",
+                  "ref": "lp_ch17l2a.json"
+                },
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Lesson",
+                  "ref": "lp_ch17l2b.json"
+                }
+              ]
+            },
+            {
+              "SectionTitle": "Lesson 3: Electromagnetic Induction",
+              "subsection": [
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Electromagnetic Induction ",
+                  "ref": "lp_ch17l3a.json"
+                },
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Lesson and Assessment ",
+                  "ref": "lp_ch17l3b.json"
+                }
+              ]
+            },
+            {
+              "SectionTitle": "Lesson 4: Applications of Magnetic Fields",
+              "subsection": [
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Applications of Magnetic Fields ",
+                  "ref": "lp_ch17l4a.json"
+                },
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Lesson and Assessment ",
+                  "ref": "lp_ch17l4b.json"
+                }
+              ]
+            },
+            {
+              "SectionTitle": "Lesson 5: Non-Perpendicular Magnetic Fields",
+              "subsection": [
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": " Non-Perpendicular Magnetic Fields",
+                  "ref": "lp_ch17l5a.json"
+                },
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Lesson and Assessment ",
+                  "ref": "lp_ch17l5b.json"
+                }
+              ]
+            },
+            {
+              "SectionTitle": "Lesson 6: More Topics in Induction",
+              "subsection": [
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "More Topics in Induction ",
+                  "ref": "lp_ch17l6a.json"
+                },
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Lesson and Assessment ",
+                  "ref": "lp_ch17l6b.json"
+                }
+              ]
+            },
+            {
+              "SectionTitle": "Lesson 7: Mutual Induction",
+              "subsection": [
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Mutual Induction ",
+                  "ref": "lp_ch17l7a.json"
+                },
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Lesson and Assessment ",
+                  "ref": "lp_ch17l7b.json"
+                }
+              ]
+            },
+            {
+              "SectionTitle": "Lesson 8: History of Two Forces",
+              "subsection": [
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "History of Two Forces ",
+                  "ref": "lp_ch17l8a.json"
+                },
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Lesson and Assessment ",
+                  "ref": "lp_ch17l8b.json"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Interference and Diffraction ",
+      "unit": [
+        {
+          "section": [
+            {
+              "SectionTitle": "Chapter 18 Lesson Plans","link":false,
+              "subsection": [
+                {
+                  "SectionHeading": "Chapter 18 Lesson Plans",
+                  "ref": "temp.json"
+                }
+              ]
+            },
+            {
+              "SectionTitle": "Chapter 18 Overview ",
+              "subsection": [
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": " Chapter 18 Overview Part 1 ",
+                  "ref": "lp_ch18a.json"
+                },
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": " Chapter 18 Overview Part 2 ",
+                  "ref": "lp_ch18b.json"
+                },
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": " Chapter 18 Overview Part 3",
+                  "ref": "lp_ch18c.json"
+                }
+              ]
+            },
+            {
+              "SectionTitle": "Lesson 1: Interference",
+              "subsection": [
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Interference ",
+                  "ref": "lp_ch18l1a.json"
+                },
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Lesson and Assessment ",
+                  "ref": "lp_ch18l1b.json"
+                }
+              ]
+            },
+            {
+              "SectionTitle": "Lesson 2: Calculating Band Locations",
+              "subsection": [
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Calculating Band Locations ",
+                  "ref": "lp_ch18l2a.json"
+                },
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Lesson and Assessment ",
+                  "ref": "lp_ch18l2b.json"
+                }
+              ]
+            },
+            {
+              "SectionTitle": "Lesson 3: Diffraction: Light",
+              "subsection": [
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Diffraction: Light ",
+                  "ref": "lp_ch18l3a.json"
+                },
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Lesson and Assessment ",
+                  "ref": "lp_ch18l3b.json"
+                }
+              ]
+            },
+            {
+              "SectionTitle": "Lesson 4: Single-Slit Diffraction",
+              "subsection": [
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Single-Slit Diffraction ",
+                  "ref": "lp_ch18l4a.json"
+                },
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Lesson ",
+                  "ref": "lp_ch18l4b.json"
+                }
+              ]
+            },
+            {
+              "SectionTitle": "Lesson 5: Resolution",
+              "subsection": [
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Resolution ",
+                  "ref": "lp_ch18l5a.json"
+                },
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Lesson and Assessment ",
+                  "ref": "lp_ch18l5b.json"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Light ",
+      "unit": [
+        {
+          "section": [
+            {
+              "SectionTitle": "Chapter 19 Lesson Plans","link":false,
+              "subsection": [
+                {
+                  "SectionHeading": "Chapter 19 Lesson Plans",
+                  "ref": "temp.json"
+                }
+              ]
+            },
+            {
+              "SectionTitle": "Chapter 19 Overview ",
+              "subsection": [
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": " Chapter 19 Overview Part 1 ",
+                  "ref": "lp_ch19a.json"
+                },
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": " Chapter 19 Overview Part 2 ",
+                  "ref": "lp_ch19b.json"
+                }
+              ]
+            },
+            {
+              "SectionTitle": "Lesson 1: Electromagnetic Radiation",
+              "subsection": [
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Electromagnetic Radiation ",
+                  "ref": "lp_ch19l1a.json"
+                },
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Lesson and Assessment ",
+                  "ref": "lp_ch19l1b.json"
+                }
+              ]
+            },
+            {
+              "SectionTitle": "Lesson 2: Light Intensity",
+              "subsection": [
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Light Intensity ",
+                  "ref": "lp_ch19l2a.json"
+                },
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Lesson and Assessment ",
+                  "ref": "lp_ch19l2b.json"
+                }
+              ]
+            },
+            {
+              "SectionTitle": "Lesson 3: Information & Radiation",
+              "subsection": [
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Information & Radiation ",
+                  "ref": "lp_ch19l3a.json"
+                },
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Lesson",
+                  "ref": "lp_ch19l3b.json"
+                }
+              ]
+            },
+            {
+              "SectionTitle": "Lesson 4: Polarization and Scattering",
+              "subsection": [
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Polarization and Scattering ",
+                  "ref": "lp_ch19l4a.json"
+                },
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Lesson ",
+                  "ref": "lp_ch19l4b.json"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Reflection ",
+      "unit": [
+        {
+          "section": [
+            {
+              "SectionTitle": "Chapter 20 Lesson Plans","link":false,
+              "subsection": [
+                {
+                  "SectionHeading": "Chapter 20 Lesson Plans",
+                  "ref": "temp.json"
+                }
+              ]
+            },
+            {
+              "SectionTitle": "Chapter 20 Overview ",
+              "subsection": [
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": " Chapter 20 Overview Part 1",
+                  "ref": "lp_ch20a.json"
+                },
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": " Chapter 20 Overview Part 2",
+                  "ref": "lp_ch20b.json"
+                },
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": " Chapter 20 Overview Part 3",
+                  "ref": "lp_ch20c.json"
+                }
+              ]
+            },
+            {
+              "SectionTitle": "Lesson 1: Reflection",
+              "subsection": [
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Reflection ",
+                  "ref": "lp_ch20l1a.json"
+                },
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Lesson and Assessment ",
+                  "ref": "lp_ch20l1b.json"
+                }
+              ]
+            },
+            {
+              "SectionTitle": "Lesson 2: Spherical and Parabolic Mirrors",
+              "subsection": [
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Spherical and Parabolic Mirrors ",
+                  "ref": "lp_ch20l2a.json"
+                },
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Lesson and Assessment ",
+                  "ref": "lp_ch20l2b.json"
+                }
+              ]
+            },
+            {
+              "SectionTitle": "Lesson 3: Mirror Equations",
+              "subsection": [
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Mirror Equations ",
+                  "ref": "lp_ch20l3a.json"
+                },
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Lesson and Assessment ",
+                  "ref": "lp_ch20l3b.json"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Refraction and Lenses ",
+      "unit": [
+        {
+          "section": [
+            {
+              "SectionTitle": "Chapter 21 Lesson Plans","link":false,
+              "subsection": [
+                {
+                  "SectionHeading": "Chapter 21 Lesson Plans",
+                  "ref": "temp.json"
+                }
+              ]
+            },
+            {
+              "SectionTitle": "Chapter 21 Overview ",
+              "subsection": [
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": " Chapter 21 Overview Part 1",
+                  "ref": "lp_ch21a.json"
+                },
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": " Chapter 21 Overview Part 2 ",
+                  "ref": "lp_ch21b.json"
+                },
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": " Chapter 21 Overview Part 3",
+                  "ref": "lp_ch21c.json"
+                }
+              ]
+            },
+            {
+              "SectionTitle": "Lesson 1: Snell’s Law",
+              "subsection": [
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Snell’s Law ",
+                  "ref": "lp_ch21l1a.json"
+                },
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Lesson and Assessment ",
+                  "ref": "lp_ch21l1b.json"
+                }
+              ]
+            },
+            {
+              "SectionTitle": "Lesson 2: More on Refraction",
+              "subsection": [
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "More on Refraction ",
+                  "ref": "lp_ch21l2a.json"
+                },
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Lesson and Assessment ",
+                  "ref": "lp_ch21l2b.json"
+                }
+              ]
+            },
+            {
+              "SectionTitle": "Lesson 3: Total Internal Reflection",
+              "subsection": [
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Total Internal Reflection ",
+                  "ref": "lp_ch21l3a.json"
+                },
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Lesson and Assessment ",
+                  "ref": "lp_ch21l3b.json"
+                }
+              ]
+            },
+            {
+              "SectionTitle": "Lesson 4: Dispersion",
+              "subsection": [
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Dispersion ",
+                  "ref": "lp_ch21l4a.json"
+                },
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Lesson ",
+                  "ref": "lp_ch21l4b.json"
+                }
+              ]
+            },
+            {
+              "SectionTitle": "Lesson 5: Lenses: Ray Tracing",
+              "subsection": [
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Lenses: Ray Tracing ",
+                  "ref": "lp_ch21l5a.json"
+                },
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Lesson and Assessment ",
+                  "ref": "lp_ch21l5b.json"
+                }
+              ]
+            },
+            {
+              "SectionTitle": "Lesson 6: Applications of Lenses",
+              "subsection": [
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Applications of Lenses ",
+                  "ref": "lp_ch21l6a.json"
+                },
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Lesson ",
+                  "ref": "lp_ch21l6b.json"
+                }
+              ]
+            },
+            {
+              "SectionTitle": "Lesson 7: Thin Lens Equation",
+              "subsection": [
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Thin Lens Equation ",
+                  "ref": "lp_ch21l7a.json"
+                },
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Lesson and Assessment ",
+                  "ref": "lp_ch21l7b.json"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Nuclear Physics ",
+      "unit": [
+        {
+          "section": [
+            {
+              "SectionTitle": "Chapter 22 Lesson Plans","link":false,
+              "subsection": [
+                {
+                  "SectionHeading": "Chapter 22 Lesson Plans",
+                  "ref": "temp.json"
+                }
+              ]
+            },
+            {
+              "SectionTitle": "Chapter 22 Overview ",
+              "subsection": [
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": " Chapter 22 Overview Part 1",
+                  "ref": "lp_ch22a.json"
+                },
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": " Chapter 22 Overview Part 2",
+                  "ref": "lp_ch22b.json"
+                },
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": " Chapter 22 Overview Part 3",
+                  "ref": "lp_ch22c.json"
+                }
+              ]
+            },
+            {
+              "SectionTitle": "Lesson 1: Elements and Atoms",
+              "subsection": [
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Elements and Atoms ",
+                  "ref": "lp_ch22l1a.json"
+                },
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Lesson and Assessment ",
+                  "ref": "lp_ch22l1b.json"
+                }
+              ]
+            },
+            {
+              "SectionTitle": "Lesson 2: Forces and the Nucleus",
+              "subsection": [
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Forces and the Nucleus ",
+                  "ref": "lp_ch22l2a.json"
+                },
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Lesson and Assessment ",
+                  "ref": "lp_ch22l2b.json"
+                }
+              ]
+            },
+            {
+              "SectionTitle": "Lesson 3: Radioactive Decay",
+              "subsection": [
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Radioactive Decay ",
+                  "ref": "lp_ch22l3a.json"
+                },
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Lesson and Assessment ",
+                  "ref": "lp_ch22l3b.json"
+                }
+              ]
+            },
+            {
+              "SectionTitle": "Lesson 4: Fission and Fusion",
+              "subsection": [
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Fission and Fusion ",
+                  "ref": "lp_ch22l4a.json"
+                },
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Lesson and Assessment ",
+                  "ref": "lp_ch22l4b.json"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Quantum Physics ",
+      "unit": [
+        {
+          "section": [
+            {
+              "SectionTitle": "Chapter 23 Lesson Plans","link":false,
+              "subsection": [
+                {
+                  "SectionHeading": "Chapter 23 Lesson Plans",
+                  "ref": "temp.json"
+                }
+              ]
+            },
+            {
+              "SectionTitle": "Chapter 23 Overview ",
+              "subsection": [
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": " Chapter 23 Overview Part 1",
+                  "ref": "lp_ch23a.json"
+                },
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": " Chapter 23 Overview Part 2",
+                  "ref": "lp_ch23b.json"
+                },
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": " Chapter 23 Overview Part 3 ",
+                  "ref": "lp_ch23c.json"
+                }
+              ]
+            },
+            {
+              "SectionTitle": "Lesson 1: Quantum",
+              "subsection": [
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Quantum ",
+                  "ref": "lp_ch23l1a.json"
+                },
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Lesson and Assessment ",
+                  "ref": "lp_ch23l1b.json"
+                }
+              ]
+            },
+            {
+              "SectionTitle": "Lesson 2: Evidence of Quantum",
+              "subsection": [
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Evidence of Quantum ",
+                  "ref": "lp_ch23l2a.json"
+                },
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Lesson and Assessment ",
+                  "ref": "lp_ch23l2b.json"
+                }
+              ]
+            },
+            {
+              "SectionTitle": "Lesson 3: Semiconductors and Lasers",
+              "subsection": [
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Semiconductors and Lasers ",
+                  "ref": "lp_ch23l3a.json"
+                },
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Lesson and Assessment ",
+                  "ref": "lp_ch23l3b.json"
+                }
+              ]
+            },
+            {
+              "SectionTitle": "Lesson 4: Matter Waves",
+              "subsection": [
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Matter Waves ",
+                  "ref": "lp_ch23l4a.json"
+                },
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Lesson and Assessment ",
+                  "ref": "lp_ch23l4b.json"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Advances in Physics ",
+      "unit": [
+        {
+          "section": [
+            {
+              "SectionTitle": "Chapter 24 Lesson Plans","link":false,
+              "subsection": [
+                {
+                  "SectionHeading": "Chapter 24 Lesson Plans",
+                  "ref": "temp.json"
+                }
+              ]
+            },
+            {
+              "SectionTitle": "Chapter 24 Overview ",
+              "subsection": [
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": " Chapter 24 Overview Part 1 ",
+                  "ref": "lp_ch24a.json"
+                },
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": " Chapter 24 Overview Part 2 ",
+                  "ref": "lp_ch24b.json"
+                }
+              ]
+            },
+            {
+              "SectionTitle": "Lesson 1: Special Relativity",
+              "subsection": [
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Special Relativity ",
+                  "ref": "lp_ch24l1a.json"
+                },
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Lesson and Assessment ",
+                  "ref": "lp_ch24l1b.json"
+                }
+              ]
+            },
+            {
+              "SectionTitle": "Lesson 2: Standard Model",
+              "subsection": [
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Standard Model ",
+                  "ref": "lp_ch24l2a.json"
+                },
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Lesson and Assessment ",
+                  "ref": "lp_ch24l2b.json"
+                }
+              ]
+            },
+            {
+              "SectionTitle": "Lesson 3: Particle Accelerators",
+              "subsection": [
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Particle Accelerators ",
+                  "ref": "lp_ch24l3a.json"
+                },
+                {
+                  "type": "videoScreen",
+                  "SectionHeading": "Lesson and Assessment ",
+                  "ref": "lp_ch24l3b.json"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
   ]
+}
 }

@@ -27,7 +27,10 @@
 		//In my Graph layout 50 meter is equal to 320 pixels so 1 meter is equal to 6.66 pixels.
 		distPerPixels = 6.66;
 	
-	game.incDecMDown = function(e){	
+	game.incDecMDown = function(e){
+		if(game.incDecTimer != null){
+			game.incDecTimer.cancel();
+		}	
 		game.incDecTimer = game._scene.createTimer(
 						game._scene.time, 
 						Number.MAX_VALUE,

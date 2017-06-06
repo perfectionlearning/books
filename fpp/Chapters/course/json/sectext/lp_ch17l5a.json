@@ -1,1 +1,47 @@
-{"cards":[{"lines":[{"type":"title","text":"Magnetic force on wire"},{"type":"headline","text":"  <i>F</i> = <i>IL</i><i>B</i> sin <i><math xmlns:xsl=\"http://www.w3.org/1999/XSL/Transform\"><mi>θ</mi></math></i>"},{"type":"headline","text":"  <span class=\"math\">    <i>F</i> = force,</span>  <span class=\"math\">    <i>I</i> = current,</span>  <span class=\"math\">    <i>L</i> = length of wire,</span>  <span class=\"math\">    <i>B</i> = magnetic field,</span>  <span class=\"math\">    <i>      <math xmlns:xsl=\"http://www.w3.org/1999/XSL/Transform\">        <mi>θ</mi>      </math>    </i> = angle between <i>I </i>and <i>B</i></span>"}]},{"lines":[{"type":"title","text":"Magnetic flux at an angle"},{"type":"headline","text":"  <i>Φ</i>  <sub class=\"\">B</sub> = <i>BA</i> cos <i><math xmlns:xsl=\"http://www.w3.org/1999/XSL/Transform\"><mi>θ</mi></math></i>"},{"type":"headline","text":"  <span class=\"math\">    <i>Φ</i>    <sub>B</sub> = magnetic flux,</span>  <span class=\"math\">    <i>B</i> = magnetic field,</span>  <span class=\"math\">    <i>A</i> = area vector,</span>  <span class=\"math\">    <i>      <math xmlns:xsl=\"http://www.w3.org/1999/XSL/Transform\">        <mi>θ</mi>      </math>    </i> = angle between <i>B</i> and <i>A</i></span>"}]}],"definitions":[],"secText":["  <b>Supplemental Material: </b>AP","  <b>Essential Question: </b>  <b>    <br />  </b>How can we calculate properties of particles in magnetic fields when the magnetic field is not perpendicular to the magnetic force, velocity of the particle, or magnetic flux?","  <b>Enduring Understandings:</b>  <b>    <br />  </b>1. When a magnetic field and a charged particle moving in the field are not perpendicular, the [OBJ:expsec_45nm:magnetic force] is the product of  the particle’s velocity, the magnetic field and the sine of the angle between the two. When the magnetic field and current are not perpendicular, the magnetic force is also calculated using the sine of the angle between the two.2. When the [OBJ:expsec_hj3l:magnetic flux] is perpendicular to the magnetic field, calculate the magnetic flux by multiplying the area vector by the magnetic field, by the cosine of the angle between the magnetic field and area vector.","  <b>STEM Skills:</b>  <b>    <br />  </b>1. Review [OBJ:expsec_d477:trigonometric functions]."],"objNames":["wb_trig_bfield_wire","wb_trig_flux"]}
+{
+  "cards": [
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Magnetic force on wire"
+        },
+        {
+          "type": "headline",
+          "text": "  <i>F</i> = <i>IL</i><i>B</i> sin <i><math xmlns:xsl=\"http://www.w3.org/1999/XSL/Transform\"><mi>θ</mi></math></i>"
+        },
+        {
+          "type": "headline",
+          "text": "  <span class=\"math\">    <i>F</i> = force,</span>  <span class=\"math\">    <i>I</i> = current,</span>  <span class=\"math\">    <i>L</i> = length of wire,</span> </br> <span class=\"math\">    <i>B</i> = magnetic field,</span>  </br><span class=\"math\">    <i>      <math xmlns:xsl=\"http://www.w3.org/1999/XSL/Transform\">        <mi>θ</mi>      </math>    </i> = angle between <i>I </i>and <i>B</i></span>"
+        }
+      ]
+    },
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Magnetic flux at an angle"
+        },
+        {
+          "type": "headline",
+          "text": "  <i>Φ</i>  <sub class=\"\">B</sub> = <i>BA</i> cos <i><math xmlns:xsl=\"http://www.w3.org/1999/XSL/Transform\"><mi>θ</mi></math></i>"
+        },
+        {
+          "type": "headline",
+          "text": "  <span class=\"math\">    <i>Φ</i>    <sub>B</sub> = magnetic flux,</span>  <span class=\"math\">    <i>B</i> = magnetic field,</span></br>  <span class=\"math\">    <i>A</i> = area vector,</span>  <span class=\"math\">    <i>      <math xmlns:xsl=\"http://www.w3.org/1999/XSL/Transform\">        <mi>θ</mi>      </math>    </i> = angle between <i>B</i> and <i>A</i></span>"
+        }
+      ]
+    }
+  ],
+  "definitions": [],
+  "secText": [
+    "  <b>Supplemental Material: </b>AP",
+    "  <b>Essential Question: </b>  <b>    <br />  </b>How can we calculate properties of particles in magnetic fields when the magnetic field is not perpendicular to the magnetic force, velocity of the particle, or magnetic flux?",
+    "  <b>Enduring Understandings:</b>  <b>    <br />  </b>1. When a magnetic field and a charged particle moving in the field are not perpendicular, the <a class='pjumpToTopic' href='javascript:void(0)' data-chap='17' data-topic='4' data-subtopic='1' data-subsection='0'>magnetic force</a> is the product of  the particle’s velocity, the magnetic field and the sine of the angle between the two. When the magnetic field and current are not perpendicular, the magnetic force is also calculated using the sine of the angle between the two.</br>2. When the <a class='pjumpToTopic' href='javascript:void(0)' data-chap='17' data-topic='4' data-subtopic='2' data-subsection='0'>magnetic flux</a> is perpendicular to the magnetic field, calculate the magnetic flux by multiplying the area vector by the magnetic field, by the cosine of the angle between the magnetic field and area vector.",
+    "  <b>STEM Skills:</b>  <b>    <br />  </b>1. Review <a class='pjumpToTopic' href='javascript:void(0)' data-chap='4' data-topic='4' data-subtopic='1' data-subsection='0'>trigonometric functions</a>."
+  ],
+  "objNames": [
+    "wb_trig_bfield_wire",
+    "wb_trig_flux"
+  ]
+}

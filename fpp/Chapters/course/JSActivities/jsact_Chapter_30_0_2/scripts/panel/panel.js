@@ -70,8 +70,8 @@ game.screening = function(director, scene){
 		lbl1.setLocation(320,32);
 		var lbl2 = game.textActor(director, 'Initial speed', '14px Arial', 'left', '#ffffff');
 		lbl2.setLocation(320,52);
-		var lbl3 = game.textActor(director, 'm/s', '14px Arial', 'left', '#ffffff');
-		lbl3.setLocation(480,52);
+		var lbl3 = game.textActor(director, 'm/s', 'Bold 14px Arial', 'left', '#ffffff');
+		lbl3.setLocation(440,52);
 		var lbl4 = game.textActor(director, 'Show velocity vector', '14px Arial', 'left', '#ffffff');
 		lbl4.setLocation(320,72);
 		game.lbl5 = game.textActor(director, 'Speed -- m/s', '14px Arial', 'left', '#ffffff');

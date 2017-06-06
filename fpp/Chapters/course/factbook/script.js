@@ -53,21 +53,71 @@ function bindEvents(){
 	}).on("mouseout", function(){
 		$(this).removeClass("pHover");
 	}).on("click", showPage);
+	
+	var clickedJ = 0, clickedI = 0;
+	var i,j;
+	
+		for(i=0;i<5;i++)
+	{
+		for(j=0;j<11;j++)
+		{
+			var str = (i+1)+''+(j+1);
+			$('.contentPage'+str).hide();
+		}
+	}
+	var strClicked = (clickedI+1)+''+(clickedJ+1);
+	$('.contentPage'+strClicked).show();
+	
+
 }
 
 function showPage(){
-	var j = $(this).index(), i = $(this).parent().parent().index();
+	var clickedJ = $(this).index(), clickedI = $(this).parent().parent().index();
+	var i,j;
+//var clickedJ = 0, clickedI = 0;
+		
+	
+	console.log("clickedJ===="+clickedJ);
+	console.log("clickedI===="+clickedI);	
+	for(i=0;i<5;i++)
+	{
+		for(j=0;j<11;j++)
+		{
+			var str = (i+1)+''+(j+1);
+			$('.contentPage'+str).hide();
+		}
+	}
+	var strClicked = (clickedI+1)+''+(clickedJ+1);
+	$('.contentPage'+strClicked).show();
+	
+	$('.content').css("height","515px");
+	$('.list').hide();
+	
+	if((clickedI==1)&&(clickedJ==0))
+	{
+		$('.content').css("height","435px");
+	}
+	
+	if((clickedI==3)&&(clickedJ==1))
+	{
+		$('#mCSB_10_container').css("left","0px");
+		
+	}
+
 }
 
 $(document).ready(function(){
 	$(window).on("resize", resize);
 	resize();
 	bindEvents();
+
 	$('#fwrapper').css("opacity", 1);
 	
 	$(".content").mCustomScrollbar({
 		theme: "dark-3",
-		axis: "y",
+		axis: "yx",
 		scrollButtons: {enable: false}
 	});
+	
+
 });

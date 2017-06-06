@@ -1,1 +1,33 @@
-{"cards":[{"lines":[{"type":"title","text":"Distance <i>d</i><sub class=\"\">i</sub> and signs"},{"type":"headline","text":"Positive: Image is real, <u>same</u> side as object"},{"type":"headline","text":"Negative: Image is virtual, <u>opposite</u> side from object"}]},{"lines":[{"type":"title","text":"Height <i>h</i><sub class=\"\">i</sub> and signs"},{"type":"headline","text":"Positive means image is <u>upright</u>"},{"type":"headline","text":"Negative means image is <u>inverted</u>"}]}],"definitions":[],"secText":["  <b>Lesson:</b>  <b>    <br />  </b>1. Determine the [OBJ:expsec_t574:signs] for distance and height in mirror equations.<br />2. [OBJ:expsec_t577:Calculate] focal length using image distance and object distance.<br />3. Calculate [OBJ:expsec_t579:magnification] using image and object height and distance.<br />4. Work through a sample problem [OBJ:app_mirror_image_character_question:to calculate focal length] and determine the type of image reflected in a concave mirror.<br />5. Work through a sample problem to [OBJ:app_mirror_look_for_f_m_question:calculate the focal length and magnification] of a convex mirror.<br />6. [OBJ:expsec_t575:Calculate] focal length using the radius of curvature in concave and convex mirrors.","  <b>In-class assessment:</b>  <b>    <br />  </b>1. [OBJ:qc_36205:Calculate] object distance using focal length.<br />2. [OBJ:qc_36188:Calculate] focal length using radius of curvature in a convex mirror.","  <b>Homework:</b>  <span class=\"KBInternalLink\"><a href=\"assign.html#OHW 20.03\">OHW 20.03</a></span>","  <b>Quick Review:</b>  [OBJ:sum_mirror_lenses_signs:Mirrors and Signs], [OBJ:sum_focal_length:Focal Length Equations], [OBJ:sum_mirror_equations:Mirror Equation], [OBJ:sum_magnification:Magnification Equations]"],"objNames":["wb_mirror_signs1","wb_mirror_signs2"]}
+{
+	"cards": [{
+			"lines": [{
+					"type": "title",
+					"text": "Distance <i>d</i><sub class=\"\">i</sub> and signs"
+				}, {
+					"type": "headline",
+					"text": "Positive: Image is real, <u>same</u> side as object"
+				}, {
+					"type": "headline",
+					"text": "Negative: Image is virtual, <u>opposite</u> side from object"
+				}
+			]
+		}, {
+			"lines": [{
+					"type": "title",
+					"text": "Height <i>h</i><sub class=\"\">i</sub> and signs"
+				}, {
+					"type": "headline",
+					"text": "Positive means image is <u>upright</u>"
+				}, {
+					"type": "headline",
+					"text": "Negative means image is <u>inverted</u>"
+				}
+			]
+		}
+	],
+	"definitions": [],
+	"secText": ["  <b>Lesson:</b>  <b>    <br />  </b>1. Determine the <a class='pjumpToTopic' href='javascript:void(0)' data-chap='20' data-topic='2' data-subtopic='1' data-subsection='0'>signs</a> for distance and height in mirror equations.<br />2. <a class='pjumpToTopic' href='javascript:void(0)' data-chap='20' data-topic='2' data-subtopic='1' data-subsection='1'>Calculate</a> focal length using image distance and object distance.<br />3. Calculate <a class='pjumpToTopic' href='javascript:void(0)' data-chap='20' data-topic='2' data-subtopic='2' data-subsection='0'>magnification</a> using image and object height and distance.<br />4. Work through a sample problem <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='app_mirror_image_character_question'>to calculate focal length</a> and determine the type of image reflected in a concave mirror.<br />5. Work through a sample problem to <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='app_mirror_look_for_f_m_question'>calculate the focal length and magnification</a> of a convex mirror.<br />6. <a class='pjumpToTopic' href='javascript:void(0)' data-chap='20' data-topic='2' data-subtopic='3' data-subsection='0'>Calculate</a> focal length using the radius of curvature in concave and convex mirrors.", "  <b>In-class assessment:</b>  <b>    <br />  </b>1. <a class='pjumpToTopic' href='javascript:void(0)' data-chap='20' data-topic='2' data-subtopic='1' data-subsection='2'>Calculate</a> object distance using focal length.<br />2. <a class='pjumpToTopic' href='javascript:void(0)' data-chap='20' data-topic='2' data-subtopic='3' data-subsection='1'>Calculate</a> focal length using radius of curvature in a convex mirror.", 
+	
+	"  <b>Quick Review:</b> <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='sum_mirror_lenses_signs'>Mirrors and Signs</a>, <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='sum_focal_length'>Focal Length Equations</a>, <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='sum_mirror_equations'>Mirror Equation</a>, <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='sum_magnification'>Magnification Equations</a>"],
+	"objNames": ["wb_mirror_signs1", "wb_mirror_signs2"]
+}

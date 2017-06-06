@@ -1,1 +1,30 @@
-{"cards":[{"lines":[{"type":"title","text":"Transformers"},{"type":"headline","text":"Increase or decrease potential difference as"},{"type":"bullet","text":"AC creates changing magnetic field which"},{"type":"bullet","text":"Induces potential difference on right"}]},{"lines":[{"type":"title","text":"Potential differences ratio =  turns ratio"}]}],"definitions":[],"secText":["  <b>Lesson:</b>  <b>    <br />  </b>1. Describe [OBJ:expsec_q786:mutual induction].<br />2. Apply the concept of mutual induction to [OBJ:expsec_q787:transformers].<br />3. Calculate the ratio of the [OBJ:expsec_q788:potential difference] for a transformer.","  <b>In-class assessment:</b>  <b>    <br />  </b>1. [OBJ:qc_37469:Calculate] the ratio of the number of turns for a transformer.","  <b>Homework:</b>  <span class=\"KBInternalLink\"><a href=\"assign.html#OHW 17.07\">OHW 17.07</a></span>","  <b>Quick Review:</b>  [OBJ:sum_mutual_transformers:Mutual Induction and Transformers], [OBJ:sum_loops_equation:Transformer: Loops]"],"objNames":["wb_transformer_concepts1","wb_loops_equation"]}
+{
+	"cards": [{
+			"lines": [{
+					"type": "title",
+					"text": "Transformers"
+				}, {
+					"type": "headline",
+					"text": "Increase or decrease potential difference as"
+				}, {
+					"type": "bullet",
+					"text": "AC creates changing magnetic field which"
+				}, {
+					"type": "bullet",
+					"text": "Induces potential difference on right"
+				}
+			]
+		}, {
+			"lines": [{
+					"type": "title",
+					"text": "Potential differences ratio =  turns ratio"
+				}
+			]
+		}
+	],
+	"definitions": [],
+	"secText": ["  <b>Lesson:</b>  <b>    <br />  </b>1. Describe <a class='pjumpToTopic' href='javascript:void(0)' data-chap='17' data-topic='6' data-subtopic='1' data-subsection='0'>mutual induction</a>.<br />2. Apply the concept of mutual induction to <a class='pjumpToTopic' href='javascript:void(0)' data-chap='17' data-topic='6' data-subtopic='2' data-subsection='0'>transformers</a>.<br />3. Calculate the ratio of the <a class='pjumpToTopic' href='javascript:void(0)' data-chap='17' data-topic='6' data-subtopic='2' data-subsection='1'>potential difference</a> for a transformer.", "  <b>In-class assessment:</b>  <b>    <br />  </b>1. <a class='pjumpToTopic' href='javascript:void(0)' data-chap='17' data-topic='6' data-subtopic='2' data-subsection='2'>Calculate</a> the ratio of the number of turns for a transformer.", 
+	
+	"  <b>Quick Review:</b>  <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='sum_mutual_transformers'>Mutual Induction and Transformers</a>, <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='sum_loops_equation'>Transformer: Loops</a>"],
+	"objNames": ["wb_transformer_concepts1", "wb_loops_equation"]
+}

@@ -1,1 +1,36 @@
-{"cards":[{"lines":[{"type":"title","text":"History of gravity "},{"type":"headline","text":"If not the Greeks, then Newton "},{"type":"headline","text":"Kepler provided mathematical model for elliptical orbits"},{"type":"headline","text":"Advances in technology played key role"},{"type":"headline","text":"Einstein’s general theory of relativity"}]}],"definitions":[],"secText":["  <b>Lesson:</b>  <b>    <br />  </b>1. Introduce Johannes Kepler and define [OBJ:expsec_h577:Kepler's first law].<br />2. Define [OBJ:expsec_h578:Kepler's second law].<br />3. Define [OBJ:expsec_h579:Kepler's third law].<br />4. Calculate the [OBJ:expsec_h579i:energy of circular orbits].<br />5. Discover the [OBJ:expsec_zr79:history of gravity].","  <b>Quick Review:</b>  [OBJ:sum_kepler_first_two:Kepler's First Two Laws], [OBJ:sum_kepler_third:Kepler's Third Law]"],"objNames":["wb_gravity_1"]}
+{
+  "cards": [
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "History of gravity "
+        },
+        {
+          "type": "headline",
+          "text": "If not the Greeks, then Newton "
+        },
+        {
+          "type": "headline",
+          "text": "Kepler provided mathematical model for elliptical orbits"
+        },
+        {
+          "type": "headline",
+          "text": "Advances in technology played key role"
+        },
+        {
+          "type": "headline",
+          "text": "Einstein’s general theory of relativity"
+        }
+      ]
+    }
+  ],
+  "definitions": [],
+  "secText": [
+    "  <b>Lesson:</b>  <b>    <br />  </b>1. Introduce Johannes Kepler and define <a class='pjumpToTopic' href='javascript:void(0)' data-chap='8' data-topic='4' data-subtopic='1' data-subsection='0'>Kepler's first law</a>.<br />2. Define <a class='pjumpToTopic' href='javascript:void(0)' data-chap='8' data-topic='4' data-subtopic='2' data-subsection='0'>Kepler's second law</a>.<br />3. Define <a class='pjumpToTopic' href='javascript:void(0)' data-chap='8' data-topic='4' data-subtopic='3' data-subsection='0'>Kepler's third law</a>.<br />4. Calculate the <a class='pjumpToTopic' href='javascript:void(0)' data-chap='8' data-topic='4' data-subtopic='4' data-subsection='0'>energy of circular orbits</a>.<br />5. Discover the <a class='pjumpToTopic' href='javascript:void(0)' data-chap='8' data-topic='4' data-subtopic='5' data-subsection='0'>history of gravity</a>.",
+    "  <b>Quick Review:</b>  <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='sum_kepler_first_two'>Kepler's First Two Laws</a>, <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='sum_kepler_third'>Kepler's Third Law</a>"
+  ],
+  "objNames": [
+    "wb_gravity_1"
+  ]
+}

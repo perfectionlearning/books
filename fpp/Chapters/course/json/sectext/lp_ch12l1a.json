@@ -1,1 +1,47 @@
-{"cards":[{"lines":[{"type":"title","text":"First law of thermodynamics"},{"type":"headline","text":"Change in system’s thermal energy equals"},{"type":"bullet","text":"Net heat flow to system"},{"type":"bullet","text":"Minus work the system does"}]},{"lines":[{"type":"title","text":"Energy and work"},{"type":"headline","text":"A system’s energy is changed by work"}]}],"definitions":[],"secText":["  <b>Essential Question: </b>  <b>    <br />  </b>How are thermal energy, work, and heat related?","  <b>Enduring Understandings:</b>  <b>    <br />  </b>1. The [OBJ:expsec_l054:first law of thermodynamics] states that the change in thermal energy of a system is equal to the heat transferred to a system minus the work done by the system.<br />2. [OBJ:expsec_l055:Joule's experiment] proved the relationship between energy, heat, and work. A change of heat added to a system or work done by a system results in a change in the thermal energy of the system.","  <b>Vocabulary:</b>  [OBJ:expsec_l054:first law of thermodynamics]","  <b>STEM Skills:</b>  <b>    <br />  </b>1. Review ideas of [OBJ:expsec_f961:energy.]<b><br /></b>2. Review [OBJ:expsec_k473:heat].<b><br /></b>3. Review [OBJ:expsec_f954:work].<br /><b><br /></b>"],"objNames":["wb_first_law_thermo_concepts","wb_energy_concept"]}
+{
+  "cards": [
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "First law of thermodynamics"
+        },
+        {
+          "type": "headline",
+          "text": "Change in system’s thermal energy equals"
+        },
+        {
+          "type": "bullet",
+          "text": "Net heat flow to system"
+        },
+        {
+          "type": "bullet",
+          "text": "Minus work the system does"
+        }
+      ]
+    },
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Energy and work"
+        },
+        {
+          "type": "headline",
+          "text": "A system’s energy is changed by work"
+        }
+      ]
+    }
+  ],
+  "definitions": [],
+  "secText": [
+    "  <b>Essential Question: </b>  <b>    <br />  </b>How are thermal energy, work, and heat related?",
+    "  <b>Enduring Understandings:</b>  <b>    <br />  </b>1. The <a class='pjumpToTopic' href='javascript:void(0)' data-chap='12' data-topic='0' data-subtopic='1' data-subsection='0'>first law of thermodynamics</a> states that the change in thermal energy of a system is equal to the heat transferred to a system minus the work done by the system.<br />2. <a class='pjumpToTopic' href='javascript:void(0)' data-chap='12' data-topic='0' data-subtopic='2' data-subsection='0'>Joule's experiment</a> proved the relationship between energy, heat, and work. A change of heat added to a system or work done by a system results in a change in the thermal energy of the system.",
+    "  <b>Vocabulary:</b>  <a class='pjumpToTopic' href='javascript:void(0)' data-chap='12' data-topic='0' data-subtopic='1' data-subsection='0'>first law of thermodynamics</a>",
+    "  <b>STEM Skills:</b>  <b>    <br />  </b>1. Review ideas of <a class='pjumpToTopic' href='javascript:void(0)' data-chap='6' data-topic='2' data-subtopic='1' data-subsection='0'>energy</a><b><br /></b>2. Review <a class='pjumpToTopic' href='javascript:void(0)' data-chap='11' data-topic='3' data-subtopic='2' data-subsection='0'>heat</a>.<b><br /></b>3. Review <a class='pjumpToTopic' href='javascript:void(0)' data-chap='6' data-topic='0' data-subtopic='1' data-subsection='0'>work</a>.<br /><b><br /></b>"
+  ],
+  "objNames": [
+    "wb_first_law_thermo_concepts",
+    "wb_energy_concept"
+  ]
+}

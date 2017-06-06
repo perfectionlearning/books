@@ -1,1 +1,37 @@
-{"cards":[{"lines":[{"type":"title","text":"Work and pressure-volume graphs"},{"type":"headline","text":"Amount of work = area under graph"},{"type":"headline","text":"Gas does"},{"type":"bullet","text":"Positive work as volume increases"},{"type":"bullet","text":"Negative work as volume decreases"}]}],"definitions":[],"secText":["  <b>Lesson:</b>  <b>    <br />  </b>1. Describe the components of a [OBJ:expsec_l067:pressure-volume graph] of an engine cycle.<br />2. [OBJ:expsec_l068:Analyze] the pressure and volume during an engine's cycle using a pressure-volume graph.<br />3. [OBJ:expsec_l069:Analyze] the work done by an engine using a pressure-volume graph.","  <b>Homework:</b>  <span class=\"KBInternalLink\"><a href=\"assign.html#OHW 12.04\">OHW 12.04</a></span>","  <b>Quick Review:</b>  [OBJ:sum_work_depends_cycle_concepts:Work and Pressure-Volume Graphs]"],"objNames":["wb_work_PV_concepts"]}
+{
+  "cards": [
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Work and pressure-volume graphs"
+        },
+        {
+          "type": "headline",
+          "text": "Amount of work = area under graph"
+        },
+        {
+          "type": "headline",
+          "text": "Gas does"
+        },
+        {
+          "type": "bullet",
+          "text": "Positive work as volume increases"
+        },
+        {
+          "type": "bullet",
+          "text": "Negative work as volume decreases"
+        }
+      ]
+    }
+  ],
+  "definitions": [],
+  "secText": [
+    "  <b>Lesson:</b>  <b>    <br />  </b>1. Describe the components of a <a class='pjumpToTopic' href='javascript:void(0)' data-chap='12' data-topic='4' data-subtopic='1' data-subsection='0'>pressure-volume graph</a> of an engine cycle.<br />2. <a class='pjumpToTopic' href='javascript:void(0)' data-chap='12' data-topic='4' data-subtopic='1' data-subsection='1'>Analyze</a>the pressure and volume during an engine's cycle using a pressure-volume graph.<br />3. <a class='pjumpToTopic' href='javascript:void(0)' data-chap='12' data-topic='4' data-subtopic='1' data-subsection='2'>Analyze</a> the work done by an engine using a pressure-volume graph.",
+    
+    "  <b>Quick Review:</b>  <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='sum_work_depends_cycle_concepts'>Work and Pressure-Volume Graphs</a>"
+  ],
+  "objNames": [
+    "wb_work_PV_concepts"
+  ]
+}

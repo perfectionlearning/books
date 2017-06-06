@@ -1,1 +1,26 @@
-{"cards":[{"lines":[{"type":"title","text":"Terminal velocity"},{"type":"headline","text":"Maximum speed when falling"}]}],"definitions":[],"secText":["  <b>Lesson:</b>  <b>    <br />  </b>1. Define and calculate forces using [OBJ:expsec_e773:Hooke's law].<br />2. Define and calculate the force due to [OBJ:expsec_e774:air resistance].<br />3. Determine when [OBJ:expsec_e775:terminal velocity] occurs.","  <b>In-class assessment:</b>  <b>    <br />  </b>1. [OBJ:qc_37444:Calculate] the force exerted by a spring using Hooke's law.","  <b>Homework:</b>  <span class=\"KBInternalLink\"><a href=\"assign.html#OHW 5.04\">OHW 5.04</a></span>","  <b>Quick Review:</b>  [OBJ:sum_hooke:Hooke's Law], [OBJ:sum_terminal:Air Resistance]"],"objNames":["wb_terminal_velocity_concept"]}
+{
+  "cards": [
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Terminal velocity"
+        },
+        {
+          "type": "headline",
+          "text": "Maximum speed when falling"
+        }
+      ]
+    }
+  ],
+  "definitions": [],
+  "secText": [
+    "  <b>Lesson:</b>  <b>    <br />  </b>1. Define and calculate forces using <a class='pjumpToTopic' href='javascript:void(0)' data-chap='5' data-topic='3' data-subtopic='1' data-subsection='0'>Hooke's law</a>.<br />2. Define and calculate the force due to <a class='pjumpToTopic' href='javascript:void(0)' data-chap='5' data-topic='3' data-subtopic='2' data-subsection='0'>air resistance</a>.<br />3. Determine when <a class='pjumpToTopic' href='javascript:void(0)' data-chap='5' data-topic='3' data-subtopic='2' data-subsection='1'>terminal velocity</a> occurs.",
+    "  <b>In-class assessment:</b>  <b>    <br />  </b>1. <a class='pjumpToTopic' href='javascript:void(0)' data-chap='5' data-topic='3' data-subtopic='1' data-subsection='1'>Calculate</a> the force exerted by a spring using Hooke's law.",
+    
+    "  <b>Quick Review:</b> <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='sum_hooke'>Hooke's Law</a>, <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='sum_terminal'>Air Resistance</a>"
+  ],
+  "objNames": [
+    "wb_terminal_velocity_concept"
+  ]
+}

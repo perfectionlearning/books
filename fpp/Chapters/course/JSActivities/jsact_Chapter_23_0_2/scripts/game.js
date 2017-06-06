@@ -29,8 +29,8 @@ var game = {
 			game.mainEleImg =[];
 			game.incBanner = [];
 			game.incBannerValue = [];
-				game.incBannerValue[game.incBannerValue.length] = ['0','bold 14px Arial', 'left', 502, 531, 'IncDecputterTxt', '#fff'];//Text, font_style, alignment, xPos, yPos, id
-				game.incBanner[game.incBanner.length]   = ['incrBgMed', 476,  530];
+				game.incBannerValue[game.incBannerValue.length] = ['0','bold 14px Arial', 'left', 475, 530, 'IncDecputterTxt', '#fff'];//Text, font_style, alignment, xPos, yPos, id
+				//game.incBanner[game.incBanner.length]   = ['incrBgMed', 476,  530];
 				game.mainEleImg[game.mainEleImg.length] = ['background',  	0,   0];//image_id, image_X_Position, image_Y_Position
 				game.mainEleImg[game.mainEleImg.length] = ['golfHole',  	650,   340];//image_id, image_X_Position, image_Y_Position
 				game.mainEleImg[game.mainEleImg.length] = ['sand10',  	500,   300];//image_id, image_X_Position, image_Y_Position
@@ -279,17 +279,17 @@ game.__createMainImgScene = function(){
 //Create Increment and Decrement button
 //=======================================================
 game.__createIncDecButton=function(){
-	var incDecBtnImg = new CAAT.Foundation.SpriteImage().initialize( game._director.getImage('incre_decre_btn'), 2, 1);
+	var incDecBtnImg = new CAAT.Foundation.SpriteImage().initialize( game._director.getImage('incre_decre_btn'), 1, 2);
 	var iniputterIncBtn = new CAAT.Foundation.Actor().
 							setId('iniputterInc').
 							setAsButton(incDecBtnImg.getRef(), 0, 0, 0, 0, function(button){
 								//game.incDecHandler(this);
-							}).setLocation(472,530);
+							}).setLocation(617,520);
 	var iniputterDecBtn = new CAAT.Foundation.Actor().
 							setId('iniputterDec').
 							setAsButton(incDecBtnImg.getRef(), 1, 1, 1, 1, function(button){
 								//game.incDecHandler(this);
-							}).setLocation(472,539);
+							}).setLocation(616,548);
 	game._scene.addChild(iniputterIncBtn);
 	game._scene.addChild(iniputterDecBtn);
 			

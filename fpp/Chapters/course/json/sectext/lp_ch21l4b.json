@@ -1,1 +1,26 @@
-{"cards":[{"lines":[{"type":"title","text":"An example of dispersion"}]},{"lines":[{"type":"title","text":"Inside a raindrop"},{"type":"headline","text":"Refraction plus total internal reflection"},{"type":"bullet","text":"Colors refract at different angles"}]}],"definitions":[],"secText":["  <b>Lesson:</b>  <b>    <br />  </b>1. Describe [OBJ:expsec_u269:dispersion] and apply dispersion to prisms.<br />2. Apply the concepts of dispersion and total internal reflection to [OBJ:expsec_u270:rainbows].","  <b>Quick Review:</b>  [OBJ:sum_dispersion:Dispersion]"],"objNames":["wb_dispersion_concepts1","wb_rainbow_concepts1"]}
+{
+	"cards": [{
+			"lines": [{
+					"type": "title",
+					"text": "An example of dispersion"
+				}
+			]
+		}, {
+			"lines": [{
+					"type": "title",
+					"text": "Inside a raindrop"
+				}, {
+					"type": "headline",
+					"text": "Refraction plus total internal reflection"
+				}, {
+					"type": "bullet",
+					"text": "Colors refract at different angles"
+				}
+			]
+		}
+	],
+	"definitions": [],
+	"secText": ["  <b>Lesson:</b>  <b>    <br />  </b>1. Describe <a class='pjumpToTopic' href='javascript:void(0)' data-chap='21' data-topic='3' data-subtopic='1' data-subsection='0'>dispersion</a> and apply dispersion to prisms.<br />2. Apply the concepts of dispersion and total internal reflection to <a class='pjumpToTopic' href='javascript:void(0)' data-chap='21' data-topic='3' data-subtopic='1' data-subsection='1'>rainbows</a>.", 
+	"  <b>Quick Review:</b>  <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='sum_dispersion'>Dispersion</a>"],
+	"objNames": ["wb_dispersion_concepts1", "wb_rainbow_concepts1"]
+}

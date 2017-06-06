@@ -4,16 +4,16 @@
 ;(function() {	
 	
 	var dashBoardEle = [];
-		dashBoardEle[dashBoardEle.length] = ['dashBG',   		'0',  	'0'];//image_id, image_X_Position, image_Y_Position	
+		dashBoardEle[dashBoardEle.length] = ['dashBG',   		'0',  	'-1'];//image_id, image_X_Position, image_Y_Position	
 		dashBoardEle[dashBoardEle.length] = ['wellleft',   		'274',  '0'];
-		dashBoardEle[dashBoardEle.length] = ['well50',    		'650',  '0'];
-		dashBoardEle[dashBoardEle.length] = ['well100',    		'284',  '0'];
-		dashBoardEle[dashBoardEle.length] = ['well100',    		'384',  '0'];
-		dashBoardEle[dashBoardEle.length] = ['well100',    		'484',  '0'];
-		dashBoardEle[dashBoardEle.length] = ['well100',    		'584',  '0'];
-		dashBoardEle[dashBoardEle.length] = ['wellright',  		'700',  '0'];
-		dashBoardEle[dashBoardEle.length] = ['incrBgMed',  		'530',  '23'];
-		dashBoardEle[dashBoardEle.length] = ['incrBgMed',  		'530',  '48'];
+		dashBoardEle[dashBoardEle.length] = ['well50',    		'650',  '-1'];
+		dashBoardEle[dashBoardEle.length] = ['well100',    		'284',  '-1'];
+		dashBoardEle[dashBoardEle.length] = ['well100',    		'384',  '-1'];
+		dashBoardEle[dashBoardEle.length] = ['well100',    		'484',  '-1'];
+		dashBoardEle[dashBoardEle.length] = ['well100',    		'584',  '-1'];
+		dashBoardEle[dashBoardEle.length] = ['wellright',  		'700',  '-1'];
+		//dashBoardEle[dashBoardEle.length] = ['incrBgMed',  		'530',  '23'];
+		//dashBoardEle[dashBoardEle.length] = ['incrBgMed',  		'530',  '48'];
 		
 	//dashBoard test
 	var dashBoardTxt = [];
@@ -23,12 +23,12 @@
 		dashBoardTxt[dashBoardTxt.length] = ['Angular velocity', 	'bold 14px arial', 'left', 28, 50, 2, '#fff'];
 		dashBoardTxt[dashBoardTxt.length] = ['0.00', 				'bold 14px arial', 'left', 177, 50, 'angleTxt', '#fff'];
 		dashBoardTxt[dashBoardTxt.length] = ['rad/s', 				'bold 14px arial', 'left', 214, 50, 3, '#fff'];		
-		dashBoardTxt[dashBoardTxt.length] = ['Distance of rocket from center', 		'bold 14px arial', 'left', 304, 25, 4, '#fff'];		
-		dashBoardTxt[dashBoardTxt.length] = ['8.0', 				'bold 14px arial', 'left', 552, 25, 'disRTxt', '#fff'];
-		dashBoardTxt[dashBoardTxt.length] = ['m', 					'bold 14px arial', 'left', 590, 25, 5, '#fff'];
-		dashBoardTxt[dashBoardTxt.length] = ['Time for one revolution', 'bold 14px arial', 'left', 304, 50, 6, '#fff'];
-		dashBoardTxt[dashBoardTxt.length] = ['14.0', 				'bold 14px arial', 'left', 552, 50, 'revolTxt', '#fff'];//initial speed
-		dashBoardTxt[dashBoardTxt.length] = ['s', 					'bold 14px arial', 'left', 590, 50, 7, '#fff'];
+		dashBoardTxt[dashBoardTxt.length] = ['Distance of rocket from center', 		'bold 14px arial', 'left', 289, 25, 4, '#fff'];		
+		dashBoardTxt[dashBoardTxt.length] = ['8.0', 				'bold 14px arial', 'left', 506, 25, 'disRTxt', '#fff'];
+		dashBoardTxt[dashBoardTxt.length] = ['m', 					'bold 14px arial', 'left', 539, 25, 5, '#fff'];
+		dashBoardTxt[dashBoardTxt.length] = ['Time for one revolution', 'bold 14px arial', 'left', 289, 50, 6, '#fff'];
+		dashBoardTxt[dashBoardTxt.length] = ['14.0', 				'bold 14px arial', 'left', 506, 50, 'revolTxt', '#fff'];//initial speed
+		dashBoardTxt[dashBoardTxt.length] = ['s', 					'bold 14px arial', 'left', 539, 50, 7, '#fff'];
 		
 	var bannerImg,
 		bannerContainer,
@@ -124,28 +124,28 @@
 	//Create Increment and Decrement button
 	//=======================================================
 	function __createIncDecButton(){
-		var incDecBtnImg = new CAAT.Foundation.SpriteImage().initialize( game._director.getImage('incre_decre_btn'), 2, 1);
+		var incDecBtnImg = new CAAT.Foundation.SpriteImage().initialize( game._director.getImage('incre_decre_btn'), 1,2);
 		var rocketdistanceIncBtn = new CAAT.Foundation.Actor().
 								setId('rocketdistanceInc').
 								setAsButton(incDecBtnImg.getRef(), 0, 0, 0, 0, function(button){
 									game.incDecHandler(this);
-								}).setLocation(520, 23);
+								}).setLocation(560, 20);
 		var rocketdistanceDecBtn = new CAAT.Foundation.Actor().
 								setId('rocketdistanceDec').
 								setAsButton(incDecBtnImg.getRef(), 1, 1, 1, 1, function(button){
 									game.incDecHandler(this);
-								}).setLocation(520, 32);
+								}).setLocation(588, 20);
 								
 		var revolutionIncBtn = new CAAT.Foundation.Actor().
 								setId('revolutionInc').
 								setAsButton(incDecBtnImg.getRef(), 0, 0, 0, 0, function(button){
 									game.incDecHandler(this);
-								}).setLocation(520, 48);
+								}).setLocation(560, 50);
 		var revolutionDecBtn = new CAAT.Foundation.Actor().
 								setId('revolutionDec').
 								setAsButton(incDecBtnImg.getRef(), 1, 1, 1, 1, function(button){
 									game.incDecHandler(this);
-								}).setLocation(520, 57	);
+								}).setLocation(588, 50);
 								
 		dashBG.addChild(rocketdistanceIncBtn);
 		dashBG.addChild(rocketdistanceDecBtn);

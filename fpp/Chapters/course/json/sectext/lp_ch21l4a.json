@@ -1,1 +1,43 @@
-{"cards":[{"lines":[{"type":"title","text":"Dispersion and prisms"},{"type":"headline","text":"Creation of a spectrum by refraction"},{"type":"headline","text":"Occurs because different wavelengths refract at different angles"}]},{"lines":[{"type":"title","text":"Since light emerges from raindrop at different angles"},{"type":"headline","text":"Observer sees a color depending on location"}]}],"definitions":[],"secText":["  <b>Essential Question: </b>  <br />How can we apply dispersion to real-world examples?","  <b>Enduring Understandings:</b>  <b>    <br />  </b>1. [OBJ:expsec_u269:Dispersion] is when light separates into the colors (which are composed of specific wavelengths of light) that make it up.","  <b>Vocabulary:</b>  [OBJ:expsec_u269:dispersion]","  <b>STEM Skills:</b>  <b>    <br />  </b>1. Review [OBJ:expsec_u265:total internal reflection].<br />2. Review [OBJ:expsec_s572:scattering]."],"objNames":["wb_dispersion_concepts","wb_rainbow_concepts2"]}
+{
+  "cards": [
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Dispersion and prisms"
+        },
+        {
+          "type": "headline",
+          "text": "Creation of a spectrum by refraction"
+        },
+        {
+          "type": "headline",
+          "text": "Occurs because different wavelengths refract at different angles"
+        }
+      ]
+    },
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Since light emerges from raindrop at different angles"
+        },
+        {
+          "type": "headline",
+          "text": "Observer sees a color depending on location"
+        }
+      ]
+    }
+  ],
+  "definitions": [],
+  "secText": [
+    "  <b>Essential Question: </b>  <br />How can we apply dispersion to real-world examples?",
+    "  <b>Enduring Understandings:</b>  <b>    <br />  </b>1. <a class='pjumpToTopic' href='javascript:void(0)' data-chap='21' data-topic='3' data-subtopic='1' data-subsection='0'>Dispersion</a> is when light separates into the colors (which are composed of specific wavelengths of light) that make it up.",
+    "  <b>Vocabulary:</b>  <a class='pjumpToTopic' href='javascript:void(0)' data-chap='21' data-topic='3' data-subtopic='1' data-subsection='0'>dispersion</a>",
+    "  <b>STEM Skills:</b>  <b>    <br />  </b>1. Review <a class='pjumpToTopic' href='javascript:void(0)' data-chap='21' data-topic='2' data-subtopic='1' data-subsection='0'>total internal reflection</a>.<br />2. Review <a class='pjumpToTopic' href='javascript:void(0)' data-chap='19' data-topic='3' data-subtopic='2' data-subsection='0'>scattering</a>."
+  ],
+  "objNames": [
+    "wb_dispersion_concepts",
+    "wb_rainbow_concepts2"
+  ]
+}

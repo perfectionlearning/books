@@ -43,6 +43,7 @@
     <div class="pQuizCheck">
         <div class="pSummaryHeader">QuickCheck</div>
         <div class="pActivityBody">
+            <div class="pQuizWrap">
             <div class="pQues">Please Login...</div>
             <div class="pAnsWrap">
                 <div class="userInputWrap">
@@ -50,7 +51,7 @@
                  <div class="buttonWrap">
                     <div class="pQuizButtons uSubmit" data-type="uSubmit"></div>
                     <div class="pQuizButtons qHelp" data-type="qHelp"></div>
-                    <div class="pQuizButtons pQuizStep" data-type="step"><div class="pQuizButtons stepIcon"></div>Step</div>
+                    <div class="pQuizButtons pQuizStep" data-type="step"><div class="pQuizButtons stepIcon" data-type="step"></div>Step</div>
                 </div>
             </div>
             <div class="pQuizFeedback"></div>
@@ -58,6 +59,9 @@
                 <div class="pQuizHeaderText">Step by Step Help</div>
             
             </div>
+            </div>
+            <div class="pQuizIconWrap">
+                </div>
         </div>
     </div>
     <div class="pQuizBoard">
@@ -87,10 +91,9 @@
        <div class="pButtons pQuizButtons pNext quizNavButtons" data-type="quizNext">Next</div>
     <div class="pButtons pQuizButtons pBack quizNavButtons" data-type="quizBack">Back</div>
     <div class="pSubMenuWrap">
-        <div class="pSubTopicWrapper">
-            <div class="pSubTopicName">Ch 1 : One-Dimensional</div>
-            <div class='pChapSeperator'></div>
-
+        <div class="pSubMenuHeader">Ch 1: One-Dimensional Motion</div>
+        <div class="innerMenuWrap">
+         
         </div>
 
     </div>
@@ -98,7 +101,12 @@
 
     </div>
 </div>
-
+<div class="pSearchAreaWrapper">
+    <input type="text" id="searchField" placeholder="Search">
+    <div class="searchButton"></div>
+    <div class="searchResults"></div>
+    <div class="searchResultCount"></div>
+</div>
 <div class="pJsActWrapper">
 	<iframe src="" id="pJSActFrame" style="position:absolute;transform-origin:left top;width: 100%;height: 100%;box-shadow: 0px 0px 15px rgba(0,0,0,0.5);"></iframe>
 	<div class="pButtons jsClose" data-type="jsClose"></div>
@@ -108,8 +116,7 @@
         <div class="pQuizButtons hint" data-type="hint">I need a hint</div>
         <div class="pQuizButtons helpVideo" data-type="helpVideo">Watch a video</div>
          <div class="pQuizButtons solution" data-type="solution">Show solution</div>
-           <div class="pQuizButtons try_another" data-type="try_another">Try another</div>
-          <div class="pQuizButtons quickCheckHelpVideo" data-type="quickCheckHelpVideo">Quickcheck help</div>
+         <div class="pQuizButtons quickCheckHelpVideo" data-type="quickCheckHelpVideo">Quickcheck help</div>
             <div class="pQuizButtons inputBoxHelpVideo" data-type="inputBoxHelpVideo">Input box help</div>
              <div class="pQuizButtons helpClose" data-type="helpClose">Never mind</div>
         </div>
@@ -121,4 +128,4 @@
         </div>
      </div>
 </div>
-<div class="activityLoader"></div>
+

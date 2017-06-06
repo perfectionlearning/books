@@ -1,1 +1,43 @@
-{"cards":[{"lines":[{"type":"title","text":"Heat flow for state change"},{"type":"headline","text":"Is same in either “direction”"},{"type":"bullet","text":"But heat of fusion and vaporization  differ for a material"}]},{"lines":[{"type":"title","text":"Graph of heat, temperature and state"},{"type":"headline","text":"Heat changes temperature or state"}]}],"definitions":[],"secText":["  <b>Lesson:</b>  <b>    <br />  </b>1. Define and identify types of [OBJ:expsec_k478:state changes].<br />2. Define [OBJ:expsec_k479:latent heat]. Identify reactions that require latent heat of fusion and latent heat of vaporization.<br />3. [OBJ:expsec_k480:Calculate] latent heat of fusion and latent heat of vaporization. <br />4. Work through a sample problem and [OBJ:app_heat_T_in_phases_question:analyze changes of state].<br />5. Analyze the [OBJ:expsec_k482:graphs] of state changes.<br />6. [OBJ:der_specific_heat:Derive] the specific heat constant.<br />7. Work through a sample problem to [OBJ:app_watching_ice_melt_question:calculate the final temperature of a system] when it reaches thermal equilibrium.","  <b>In-class assessment:</b>  <b>    <br />  </b>1. [OBJ:qc_37465:Calculate] the latent heat of fusion.","  <b>Homework:</b>  <span class=\"KBInternalLink\"><a href=\"assign.html#OHW 11.05\">OHW 11.05</a></span>","  <b>Quick Review:</b>  [OBJ:sum_latent_heat_concepts:State Change and Latent Heat], [OBJ:sum_latent_equation:Calculating Latent Heat]"],"objNames":["wb_latent_heat_concepts2","wb_heat_temperature_phase1"]}
+{
+  "cards": [
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Heat flow for state change"
+        },
+        {
+          "type": "headline",
+          "text": "Is same in either “direction”"
+        },
+        {
+          "type": "bullet",
+          "text": "But heat of fusion and vaporization  differ for a material"
+        }
+      ]
+    },
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Graph of heat, temperature and state"
+        },
+        {
+          "type": "headline",
+          "text": "Heat changes temperature or state"
+        }
+      ]
+    }
+  ],
+  "definitions": [],
+  "secText": [
+    "  <b>Lesson:</b>  <b>    <br />  </b>1. Define and identify types of <a class='pjumpToTopic' href='javascript:void(0)' data-chap='11' data-topic='4' data-subtopic='1' data-subsection='0'>state changes</a>.<br />2. Define <a class='pjumpToTopic' href='javascript:void(0)' data-chap='11' data-topic='4' data-subtopic='1' data-subsection='1'>latent heat</a> Identify reactions that require latent heat of fusion and latent heat of vaporization.<br />3. <a class='pjumpToTopic' href='javascript:void(0)' data-chap='11' data-topic='4' data-subtopic='1' data-subsection='2'>Calculate</a> latent heat of fusion and latent heat of vaporization. <br />4. Work through a sample problem and <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='app_heat_T_in_phases_question'>analyze changes of state</a>.<br />5. Analyze the <a class='pjumpToTopic' href='javascript:void(0)' data-chap='11' data-topic='4' data-subtopic='2' data-subsection='1'>graphs</a> of state changes.<br />6. <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='der_specific_heat'>Derive</a> the specific heat constant.<br />7. Work through a sample problem to <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='app_watching_ice_melt_question'>calculate the final temperature of a system</a> when it reaches thermal equilibrium.",
+    "  <b>In-class assessment:</b>  <b>    <br />  </b>1. <a class='pjumpToTopic' href='javascript:void(0)' data-chap='11' data-topic='4' data-subtopic='1' data-subsection='3'>Calculate</a> the latent heat of fusion.",
+    
+    "  <b>Quick Review:</b>  <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='sum_latent_heat_concepts'>State Change and Latent Heat</a>, <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='sum_latent_equation'>Calculating Latent Heat</a>"
+  ],
+  "objNames": [
+    "wb_latent_heat_concepts2",
+    "wb_heat_temperature_phase1"
+  ]
+}

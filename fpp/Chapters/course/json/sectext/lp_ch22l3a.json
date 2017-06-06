@@ -1,1 +1,49 @@
-{"cards":[{"lines":[{"type":"title","text":"Radioactive decay with charged particle"},{"type":"headline","text":"Nucleus decays by emitting charged particle"},{"type":"headline","text":"Radioactive element has transmuted (changed to another element)"}]},{"lines":[{"type":"title","text":"Radioactive decay is probabilistic"},{"type":"headline","text":"Cannot be predicted for an individual atom"},{"type":"headline","text":"The probability of any atom decaying within a certain time can be stated"},{"type":"headline","text":"Half of particles within large sample will decay"}]}],"definitions":[],"secText":["  <b>Essential Question: </b>  <b>    <br />  </b>What happens when a nucleus undergoes radioactive decay?","  <b>Enduring Understandings:</b>  <b>    <br />  </b>1. In [OBJ:expsec_v067:radioactive decay], a nucleus spontaneously emits particles and is changed into a different element or becomes less excited. [OBJ:expsec_v068:Alpha particles] are composed of two protons and two neutrons. [OBJ:expsec_v069:Negative beta radiation] is when an unstable atom's nucleus emits an electron.<br />2. Alpha particles are [OBJ:expsec_v070:evidence for the strong force]. Since alpha particles are made of two positive charges and two neutral charges, one would expect them to be unstable, but they are stable.  Therefore, there must exist a force (the strong force) stronger than the predicted repulsion between two positive charges.<br />3. When beta particles were emitted during radioactive decay, the transmutated particle had less energy than was expected and scientists did not understand where the emitted electron was coming from. This is [OBJ:expsec_v071:explained by the weak force].  The weak force transforms protons into an electron and [OBJ:expsec_v072:neutrino] that are both emitted during radiation.<br />4. A half-life is the amount of time that it takes for one half of the element to undergo [OBJ:expsec_v074:radioactive decay]. <b>Vocabulary:</b>[OBJ:expsec_v067:radioactive decay], [OBJ:expsec_v067:transmutation], [OBJ:expsec_v068:alpha radiation], [OBJ:expsec_v069:negative beta radiation], [OBJ:expsec_v074:half-life]"],"objNames":["wb_radioactive_2","wb_half_life_3"]}
+{
+  "cards": [
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Radioactive decay with charged particle"
+        },
+        {
+          "type": "headline",
+          "text": "Nucleus decays by emitting charged particle"
+        },
+        {
+          "type": "headline",
+          "text": "Radioactive element has transmuted (changed to another element)"
+        }
+      ]
+    },
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Radioactive decay is probabilistic"
+        },
+        {
+          "type": "headline",
+          "text": "Cannot be predicted for an individual atom"
+        },
+        {
+          "type": "headline",
+          "text": "The probability of any atom decaying within a certain time can be stated"
+        },
+        {
+          "type": "headline",
+          "text": "Half of particles within large sample will decay"
+        }
+      ]
+    }
+  ],
+  "definitions": [],
+  "secText": [
+    "  <b>Essential Question: </b>  <b>    <br />  </b>What happens when a nucleus undergoes radioactive decay?",
+    "  <b>Enduring Understandings:</b>  <b>    <br />  </b>1. In <a class='pjumpToTopic' href='javascript:void(0)' data-chap='22' data-topic='2' data-subtopic='1' data-subsection='0'>radioactive decay</a>, a nucleus spontaneously emits particles and is changed into a different element or becomes less excited. <a class='pjumpToTopic' href='javascript:void(0)' data-chap='22' data-topic='2' data-subtopic='1' data-subsection='1'>Alpha particles</a> are composed of two protons and two neutrons. <a class='pjumpToTopic' href='javascript:void(0)' data-chap='22' data-topic='2' data-subtopic='1' data-subsection='2'>Negative beta radiation</a> is when an unstable atom's nucleus emits an electron.<br />2. Alpha particles are <a class='pjumpToTopic' href='javascript:void(0)' data-chap='22' data-topic='2' data-subtopic='3' data-subsection='0'>evidence for the strong force</a>. Since alpha particles are made of two positive charges and two neutral charges, one would expect them to be unstable, but they are stable.  Therefore, there must exist a force (the strong force) stronger than the predicted repulsion between two positive charges.<br />3. When beta particles were emitted during radioactive decay, the transmutated particle had less energy than was expected and scientists did not understand where the emitted electron was coming from. This is <a class='pjumpToTopic' href='javascript:void(0)' data-chap='22' data-topic='2' data-subtopic='4' data-subsection='0'>explained by the weak force</a>.  The weak force transforms protons into an electron and <a class='pjumpToTopic' href='javascript:void(0)' data-chap='22' data-topic='2' data-subtopic='4' data-subsection='1'>neutrino</a> that are both emitted during radiation.<br />4. A half-life is the amount of time that it takes for one half of the element to undergo <a class='pjumpToTopic' href='javascript:void(0)' data-chap='22' data-topic='2' data-subtopic='2' data-subsection='0'>radioactive decay</a>.</br></br> <b>Vocabulary:</b><a class='pjumpToTopic' href='javascript:void(0)' data-chap='22' data-topic='2' data-subtopic='1' data-subsection='0'>radioactive decay</a>, <a class='pjumpToTopic' href='javascript:void(0)' data-chap='22' data-topic='2' data-subtopic='1' data-subsection='0'>transmutation</a>, <a class='pjumpToTopic' href='javascript:void(0)' data-chap='22' data-topic='2' data-subtopic='1' data-subsection='1'>alpha radiation</a>, <a class='pjumpToTopic' href='javascript:void(0)' data-chap='22' data-topic='2' data-subtopic='1' data-subsection='2'>negative beta radiation</a>, <a class='pjumpToTopic' href='javascript:void(0)' data-chap='22' data-topic='2' data-subtopic='2' data-subsection='0'>half-life</a>"
+  ],
+  "objNames": [
+    "wb_radioactive_2",
+    "wb_half_life_3"
+  ]
+}

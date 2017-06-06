@@ -22,11 +22,11 @@
 		dashBoardTxt[dashBoardTxt.length] = ['0.00', 				'bold 14px arial', 'left', 167, 35, 'angleTxt', '#fff'];
 		dashBoardTxt[dashBoardTxt.length] = ['rad/s', 				'bold 14px arial', 'left', 204, 35, 3, '#fff'];		
 		dashBoardTxt[dashBoardTxt.length] = ['Angular acceleration to launch', 		'bold 14px arial', 'left', 270, 33, 4, '#fff'];				
-		dashBoardTxt[dashBoardTxt.length] = ['rad/s '+String.fromCharCode('178'), 					'bold 14px arial', 'left', 565, 35, 5, '#fff'];
+		dashBoardTxt[dashBoardTxt.length] = ['rad/s '+String.fromCharCode('178'), 					'bold 14px arial', 'left', 535, 35, 5, '#fff'];
 		
 	var dashTxt = [];
 	    
-	    dashTxt[dashTxt.length] = ['0.200', 				'bold 14px arial', 'left', 518, 535, 'disRTxt', '#fff'];	
+	    dashTxt[dashTxt.length] = ['0.200', 				'bold 14px arial', 'left', 490, 535, 'disRTxt', '#fff'];	
 	var bannerImg,
 		bannerContainer,
 		setBG, 
@@ -133,17 +133,17 @@
 	//Create Increment and Decrement button
 	//=======================================================
 	game.__createIncDecButton = function(){
-		var incDecBtnImg = new CAAT.Foundation.SpriteImage().initialize( game._director.getImage('incre_decre_btn'), 2, 1);
+		var incDecBtnImg = new CAAT.Foundation.SpriteImage().initialize( game._director.getImage('incre_decre_btn'), 1, 2);
 		var rocketdistanceIncBtn = new CAAT.Foundation.Actor().
 								setId('rocketdistanceInc').
 								setAsButton(incDecBtnImg.getRef(), 0, 0, 0, 0, function(button){
 									game.incDecHandler(this);
-								}).setLocation(490, 533);
+								}).setLocation(589, 517);
 		var rocketdistanceDecBtn = new CAAT.Foundation.Actor().
 								setId('rocketdistanceDec').
 								setAsButton(incDecBtnImg.getRef(), 1, 1, 1, 1, function(button){
 									game.incDecHandler(this);
-								}).setLocation(490, 542);
+								}).setLocation(588, 548);
 									
 								
 		game._scene.addChild(rocketdistanceIncBtn);

@@ -10,11 +10,11 @@
 		dashBoardEle[dashBoardEle.length] = ['wellleft',   		'640',  '0'];
 		dashBoardEle[dashBoardEle.length] = ['well100',    		'650',  '0'];
 		dashBoardEle[dashBoardEle.length] = ['wellright',  		'740',  '0'];
-		dashBoardEle[dashBoardEle.length] = ['incrBgMed',  		'128',  '68'];
-		dashBoardEle[dashBoardEle.length] = ['incrBgBig',  		'400',  '30'];
-		dashBoardEle[dashBoardEle.length] = ['incrBgBig',  		'400',  '50'];
-		dashBoardEle[dashBoardEle.length] = ['incrBgBig',  		'400',  '70'];
-		dashBoardEle[dashBoardEle.length] = ['arrowBlack',  	'410',  '10'];
+		//dashBoardEle[dashBoardEle.length] = ['incrBgMed',  		'128',  '68'];
+		//dashBoardEle[dashBoardEle.length] = ['incrBgBig',  		'400',  '30'];
+		//dashBoardEle[dashBoardEle.length] = ['incrBgBig',  		'400',  '50'];
+		//dashBoardEle[dashBoardEle.length] = ['incrBgBig',  		'400',  '70'];
+		dashBoardEle[dashBoardEle.length] = ['arrowBlack',  	'390',  '10'];
 		
 	//dashBoard test
 	var dashBoardTxt = [];
@@ -26,18 +26,18 @@
 		dashBoardTxt[dashBoardTxt.length] = ['0.00', 				'bold 14px arial', 'left', 120, 50, 'axisposTxt', '#fff'];
 		dashBoardTxt[dashBoardTxt.length] = ['m', 					'bold 14px arial', 'left', 155, 50, 5, '#fff'];
 		dashBoardTxt[dashBoardTxt.length] = ['Rod length', 			'bold 14px arial', 'left', 20, 70, 6, '#fff'];//Text, font_style, 
-		dashBoardTxt[dashBoardTxt.length] = ['0.00', 				'bold 14px arial', 'left', 150, 70, 'rodlenTxt', '#fff'];
-		dashBoardTxt[dashBoardTxt.length] = ['m', 					'bold 14px arial', 'left', 190, 70, 7, '#fff'];
+		dashBoardTxt[dashBoardTxt.length] = ['0.00', 				'bold 14px arial', 'left', 110, 70, 'rodlenTxt', '#fff'];
+		dashBoardTxt[dashBoardTxt.length] = ['m', 					'bold 14px arial', 'left', 148, 70, 7, '#fff'];
 		dashBoardTxt[dashBoardTxt.length] = ['Selected vector:', 	'bold 14px arial', 'left', 254, 10, 8, '#fff'];//Text, font_style,
 		dashBoardTxt[dashBoardTxt.length] = ['Force', 				'bold 14px arial', 'left', 254, 30, 9, '#fff'];//Text, font_style,
-		dashBoardTxt[dashBoardTxt.length] = ['0', 					'bold 14px arial', 'left', 415, 32, 'forceTxt', '#fff'];
-		dashBoardTxt[dashBoardTxt.length] = ['N', 					'bold 14px arial', 'left', 470, 30, 10, '#fff'];		
+		dashBoardTxt[dashBoardTxt.length] = ['0', 					'bold 14px arial', 'left', 395, 32, 'forceTxt', '#fff'];
+		dashBoardTxt[dashBoardTxt.length] = ['N', 					'bold 14px arial', 'left', 420, 32, 10, '#fff'];		
 		dashBoardTxt[dashBoardTxt.length] = ['Angle', 				'bold 14px arial', 'left', 254, 50, 11, '#fff'];//Text, font_style, alignment, xPos, yPos, id
-		dashBoardTxt[dashBoardTxt.length] = ['0.0', 				'bold 14px arial', 'left', 415, 52, 'angleTxt', '#fff'];
-		dashBoardTxt[dashBoardTxt.length] = [String.fromCharCode(186), 				'bold 14px arial', 'left', 470, 50, 12, '#fff'];
+		dashBoardTxt[dashBoardTxt.length] = ['0.0', 				'bold 14px arial', 'left', 395, 52, 'angleTxt', '#fff'];
+		dashBoardTxt[dashBoardTxt.length] = [String.fromCharCode(186), 				'bold 14px arial', 'left', 422, 50, 12, '#fff'];
 		dashBoardTxt[dashBoardTxt.length] = ['Distance to axis', 	'bold 14px arial', 'left', 254, 70, 13, '#fff'];//Text, font_style, alignment, xPos, yPos, id
-		dashBoardTxt[dashBoardTxt.length] = ['0.00', 				'bold 14px arial', 'left', 415, 72, 'axisdistanceTxt', '#fff'];
-		dashBoardTxt[dashBoardTxt.length] = ['m', 					'bold 14px arial', 'left', 470, 70, 14, '#fff'];
+		dashBoardTxt[dashBoardTxt.length] = ['0.00', 				'bold 14px arial', 'left', 385, 72, 'axisdistanceTxt', '#fff'];
+		dashBoardTxt[dashBoardTxt.length] = ['m', 					'bold 14px arial', 'left', 420, 72, 14, '#fff'];
 		dashBoardTxt[dashBoardTxt.length] = ['Add force vector:', 	'bold 14px arial', 'left', 514, 10, 15, '#fff'];//Text, font_style, 
 		
 	var bannerImg,
@@ -132,41 +132,41 @@
 	//Create Increment and Decrement button
 	//=======================================================
 	game.__createIncDecButton = function(){
-		var incDecBtnImg = new CAAT.Foundation.SpriteImage().initialize( game._director.getImage('incre_decre_btn'), 2, 1);
+		var incDecBtnImg = new CAAT.Foundation.SpriteImage().initialize( game._director.getImage('incre_decre_btn'), 1, 2);
 		var rodlengthIncBtn = new CAAT.Foundation.Actor().
 								setId('rodlengthInc').
 								setAsButton(incDecBtnImg.getRef(), 0, 0, 0, 0, function(button){									
-								}).setLocation(120, 568);
+								}).setLocation(170, 568);
 		var rodlengthDecBtn = new CAAT.Foundation.Actor().
 								setId('rodlengthDec').
 								setAsButton(incDecBtnImg.getRef(), 1, 1, 1, 1, function(button){									
-								}).setLocation(120, 576);
+								}).setLocation(200, 568);
 								
 		var forceIncBtn = new CAAT.Foundation.Actor().
 								setId('forceInc').
 								setAsButton(incDecBtnImg.getRef(), 0, 0, 0, 0, function(button){									
-								}).setLocation(380, 530);
+								}).setLocation(440, 516);
 		var forceDecBtn = new CAAT.Foundation.Actor().
 								setId('forceDec').
 								setAsButton(incDecBtnImg.getRef(), 1, 1, 1, 1, function(button){									
-								}).setLocation(380, 539);
+								}).setLocation(466, 516);
 								
 		var angleIncBtn = new CAAT.Foundation.Actor().
 								setId('angleInc').
 								setAsButton(incDecBtnImg.getRef(), 0, 0, 0, 0, function(button){									
-								}).setLocation(380, 550);
+								}).setLocation(440, 543);
 		var angleDecBtn = new CAAT.Foundation.Actor().
 								setId('angleDec').
 								setAsButton(incDecBtnImg.getRef(), 1, 1, 1, 1, function(button){									
-								}).setLocation(380, 559	);
+								}).setLocation(466, 543);
 		var disaxisIncBtn = new CAAT.Foundation.Actor().
 								setId('disaxisInc').
 								setAsButton(incDecBtnImg.getRef(), 0, 0, 0, 0, function(button){
-								}).setLocation(380, 570);
+								}).setLocation(440, 571);
 		var disaxisDecBtn = new CAAT.Foundation.Actor().
 								setId('disaxisDec').
 								setAsButton(incDecBtnImg.getRef(), 1, 1, 1, 1, function(button){
-								}).setLocation(380, 579	);
+								}).setLocation(466, 571);
 																
 		game._scene.addChild(rodlengthIncBtn);
 		game._scene.addChild(rodlengthDecBtn);

@@ -101,7 +101,7 @@ game.__gameInitialize = function( director ){
     var oActor = game.__addImageOnScene( game._director.getImage(buttonBg[0]), 1, 1 );
 			oActor.			
 				setLocation(buttonBg[1], buttonBg[2]);
-	game._scene.addChild(oActor);
+	//game._scene.addChild(oActor);
 			
 	game.__createIncDecButton();
 	game.__createDashBoardButton();

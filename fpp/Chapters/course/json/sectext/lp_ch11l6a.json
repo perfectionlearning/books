@@ -1,1 +1,37 @@
-{"cards":[{"lines":[{"type":"title","text":"Contrasting thermal energy transfer processes"},{"type":"headline","text":"Conduction and convection"},{"type":"bullet","text":"Conduction occurs between particles"},{"type":"bullet","text":"Convection is flow of warmer matter"},{"type":"headline","text":"Radiation is transfer through space via electromagnetic radiation"}]}],"definitions":[],"secText":["  <b>Essential Question: </b>  <b>    <br />  </b>How does heat transfer?","  <b>Enduring Understandings:</b>  <b>    <br />  </b>1. [OBJ:expsec_k484:Conduction] is the heat transfer due to contact within or between objects. <br />2. [OBJ:expsec_k486:Convection] is the heat transfer due to motion of molecules within fluids. An example of convection is warm air rising.<br />3. [OBJ:expsec_k4872331:Electromagnetic radiation] is the transfer of energy by electric and magnetic fields. An example of electromagnetic radiation is the [OBJ:expsec_k488:Sun's energy] heating [OBJ:expsec_k489:Earth's atmosphere].<br />4. [OBJ:expsec_k48722:Conduction, convection, and electromagnetic radiation] all deal with the idea of heat transfer, but vary in how heat is transferred.","  <b>Vocabulary:</b>  [OBJ:expsec_k484:conduction], [OBJ:expsec_k486:convection], [OBJ:expsec_k4872331:electromagnetic radiation], [OBJ:expsec_k489:global warming]"],"objNames":["wb_contrast_thermal_processes"]}
+{
+  "cards": [
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Contrasting thermal energy transfer processes"
+        },
+        {
+          "type": "headline",
+          "text": "Conduction and convection"
+        },
+        {
+          "type": "bullet",
+          "text": "Conduction occurs between particles"
+        },
+        {
+          "type": "bullet",
+          "text": "Convection is flow of warmer matter"
+        },
+        {
+          "type": "headline",
+          "text": "Radiation is transfer through space via electromagnetic radiation"
+        }
+      ]
+    }
+  ],
+  "definitions": [],
+  "secText": [
+    "  <b>Essential Question: </b>  <b>    <br />  </b>How does heat transfer?",
+    "  <b>Enduring Understandings:</b>  <b>    <br />  </b>1. <a class='pjumpToTopic' href='javascript:void(0)' data-chap='11' data-topic='5' data-subtopic='1' data-subsection='0'>Conduction</a> is the heat transfer due to contact within or between objects. <br />2. <a class='pjumpToTopic' href='javascript:void(0)' data-chap='11' data-topic='5' data-subtopic='2' data-subsection='0'>Convection</a> is the heat transfer due to motion of molecules within fluids. An example of convection is warm air rising.<br />3. <a class='pjumpToTopic' href='javascript:void(0)' data-chap='11' data-topic='5' data-subtopic='3' data-subsection='0'>Electromagnetic radiation</a> is the transfer of energy by electric and magnetic fields. An example of electromagnetic radiation is the <a class='pjumpToTopic' href='javascript:void(0)' data-chap='11' data-topic='5' data-subtopic='3' data-subsection='1'>Sun's energy</a> heating <a class='pjumpToTopic' href='javascript:void(0)' data-chap='11' data-topic='5' data-subtopic='3' data-subsection='2'>Earth's atmosphere </a>.<br />4. <a class='pjumpToTopic' href='javascript:void(0)' data-chap='11' data-topic='5' data-subtopic='4' data-subsection='0'>Conduction, convection, and electromagnetic radiation</a> all deal with the idea of heat transfer, but vary in how heat is transferred.",
+    "  <b>Vocabulary:</b>  <a class='pjumpToTopic' href='javascript:void(0)' data-chap='11' data-topic='5' data-subtopic='1' data-subsection='0'>conduction</a>, <a class='pjumpToTopic' href='javascript:void(0)' data-chap='11' data-topic='5' data-subtopic='2' data-subsection='0'>convection</a>, <a class='pjumpToTopic' href='javascript:void(0)' data-chap='11' data-topic='5' data-subtopic='3' data-subsection='0'>electromagnetic radiation</a>, <a class='pjumpToTopic' href='javascript:void(0)' data-chap='11' data-topic='5' data-subtopic='3' data-subsection='2'>global warming</a>"
+  ],
+  "objNames": [
+    "wb_contrast_thermal_processes"
+  ]
+}

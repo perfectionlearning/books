@@ -258,6 +258,7 @@
 		game.initXVelTxtBox.style.left = '476px';
 		game.initXVelTxtBox.style.top = '531px';
 		game.initXVelTxtBox.value = '0.0';	
+		
 		document.getElementById('act_controls').appendChild(game.initXVelTxtBox);
 	}
 	//=======================================================
