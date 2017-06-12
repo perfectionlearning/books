@@ -150,8 +150,8 @@
       $('.videoWrapper').addClass("vOpen");
       manageVideoNavigation();
       if (typeof qChk == "undefined") {
-        elem["video"].src = "assets/video/" + elem["srcData"][ind] + ".webm";
-        elem["video"].src = "assets/video/" + elem["srcData"][ind] + ".mp4";
+        elem["video"].src = "/books/fpp/Chapters/assets/video/" + elem["srcData"][ind] + ".webm";
+        elem["video"].src = "/books/fpp/Chapters/assets/video/" + elem["srcData"][ind] + ".mp4";
       } else {
         elem["video"].src = elem["srcData"][ind] + ".mp4";
       }
