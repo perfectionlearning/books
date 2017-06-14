@@ -107,8 +107,8 @@
   }
 
   $(document).ready(function () {
-    $(window).on("resize", resize);
-    resize();
+    //$(window).on("resize", resize);
+    // resize();
     bindEvents();
 
     $('#fwrapper').css("opacity", 1);
