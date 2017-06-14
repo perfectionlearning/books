@@ -10,6 +10,14 @@
       showLoader();
       eventListener();
     };
+    function getBaseUrl() {
+        // Added by PL: get base URL (qa1.perfectionlearning.com for test; ohw.perfectionlearning.com for live);
+        var host = window.location.host;
+        var protocol = window.location.protocol;
+        var baseUrl = protocol + '//' + host;
+        return baseUrl;
+    }
+
     function eventListener() {
       $(document).off("loadNext", loadNext).on("loadNext", loadNext);
       $(document).off("loadPrev", loadPrev).on("loadPrev", loadPrev);
@@ -20,15 +28,18 @@
       loadBookData();
     }
     function loadBookData(e, data) {
+      var baseUrl = getBaseUrl(); // Added by PL
+
       httpRequest("course/json/toc/BookDefinition.json", "json", function (_data) {
         coreData = _data;
         p.bookData = _data.chapters;
-        p.quizboard_get_link = _data.quizboard_get_link;
-        p.get_link = _data.get_link;
-        p.set_link = _data.put_link;
-        p.session_info = _data.session_info;
-        p.setting = _data.setting;
-        p.wrap_data = _data.wrap_data;
+        p.quizboard_get_link = baseUrl + _data.quizboard_get_link;
+        p.get_link = baseUrl + _data.get_link;
+        p.set_link = baseUrl + _data.put_link;
+        p.session_info = baseUrl + _data.session_info;
+        p.setting = baseUrl + _data.setting;
+        p.grades_link = baseUrl + _data.grades_link;
+        p.wrap_data = baseUrl + _data.wrap_data;
         getUserId();
         $(document).trigger("getBookData", {bookData: _data});
 

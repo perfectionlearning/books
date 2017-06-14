@@ -1,14 +1,14 @@
 {
-    "get_link": "https://qa1.perfectionlearning.com/api/rest/quickcheck/",
-    "quizboard_get_link": "https://qa1.perfectionlearning.com/api/rest/pset/",
-    "set_link": "https://qa1.perfectionlearning.com/api/rest/submit/",
-    "session_info": "https://qa1.perfectionlearning.com/api/endpoint/sessioninfo",
-    "setting": "https://qa1.perfectionlearning.com/api/endpoint/admin/user/",
+    "get_link": "/api/rest/quickcheck/",
+    "quizboard_get_link": "/api/rest/pset/",
+    "set_link": "/api/rest/submit/",
+    "session_info": "/api/endpoint/sessioninfo",
+    "setting": "/api/endpoint/admin/user/",
     "admin_link": "admin/class-wizard/list",
-    "homework_Teacher_link": "assignments/list",
-    "homework_Student_link": "books/student/project.html#assignments",
-    "grades_link": "reports/overview",
-    "wrap_data": "https://qa1.perfectionlearning.com/api/endpoint/output/wrapping/set",
+    "homework_Teacher_link": "/assignments/list",
+    "homework_Student_link": "/books/student/project.html#assignments",
+    "grades_link": "/reports/overview",
+    "wrap_data": "/api/endpoint/output/wrapping/set",
     "chapters": [
         {},
         {
