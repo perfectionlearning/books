@@ -10,6 +10,11 @@
       showLoader();
       eventListener();
     };
+
+    this.getDomain = function() {
+        return getBaseUrl();
+    };
+
     function getBaseUrl() {
         // Added by PL: get base URL (qa1.perfectionlearning.com for test; ohw.perfectionlearning.com for live);
         var host = window.location.host;

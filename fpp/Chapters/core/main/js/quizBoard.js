@@ -12,7 +12,7 @@
     q.submitCnt = 0;
     q.Id = [];
     q.totalQues = 0;
-    q.videoRef = "https://qa1.perfectionlearning.com/books/content/video/";
+    q.videoRef = "/books/fpp/Chapters/assets/video/";
     var feedback = {
       "correct": ["Great work! You've correctly solved this problem before, so you keep your perfect score", "Great work! You get 5 out of 5 for this problem."],
       "incorrect": [
@@ -91,7 +91,7 @@
         q.currentQues = data.ques;
       }
       q.problem_inst_id = id;
-      q.url = "https://qa1.perfectionlearning.com/api/rest/submit/" + q.instance_id + "/" + q.problem_inst_id;
+      q.url = ctrl.getDomain() + "/api/rest/submit/" + q.instance_id + "/" + q.problem_inst_id;
       $(q.mShell).find('.pQues').html(q.screenData[id].q);
       $(q.mShell).find('.userInputWrap').html(q.screenData[id].inputBox).attr('data-type', q.screenData[id].ansType);
       $(q.mShell).find('.pAnsWrap .uSubmit').attr('data-type', q.screenData[id].ansType);

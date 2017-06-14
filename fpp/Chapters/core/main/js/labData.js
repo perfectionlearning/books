@@ -9,8 +9,8 @@
     this.init = function (data) {
       lab.assignID = data.id;
       lab.mShell = $('.mShell')[0];
-      lab.setLink = "https://qa1.perfectionlearning.com/api/rest/assign/" + lab.assignID + "/labdata/update";
-      lab.getLink = "https://qa1.perfectionlearning.com/api/endpoint/assign/" + lab.assignID;
+      lab.setLink = ctrl.getDomain() + "/api/rest/assign/" + lab.assignID + "/labdata/update";
+      lab.getLink = ctrl.getDomain() + "/api/endpoint/assign/" + lab.assignID;
       httpRequest(lab.getLink, "json", function (data) {
         console.log(data);
 

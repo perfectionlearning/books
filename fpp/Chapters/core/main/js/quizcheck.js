@@ -10,8 +10,8 @@
     q.instance_id;
     q.problem_inst_id;
     q.submitCnt = 0;
-    q.videoImg = "https://qa1.perfectionlearning.com/books/content/image/";
-    q.videoRef = "https://qa1.perfectionlearning.com/books/content/video/";
+    q.videoImg = "/books/fpp/Chapters/assets/images/";
+    q.videoRef = "/books/fpp/Chapters/assets/video/";
     var step_feedback = {
       "correct": ["That is correct!"],
       "incorrect": [
@@ -35,7 +35,7 @@
       q.instance_id = data.instance_id;
       q.problem_inst_id = data.problem_inst_id;
       q.screenData = data.screenData;
-      q.url = "https://qa1.perfectionlearning.com/api/rest/submit/" + q.instance_id + "/" + q.problem_inst_id;
+      q.url = ctrl.getDomain + "/api/rest/submit/" + q.instance_id + "/" + q.problem_inst_id;
       reset();
       appendResource();
       $(q.mShell).find('.pQuizCheck .pQues').html(data.screenData.q);
