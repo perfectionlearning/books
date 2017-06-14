@@ -124,7 +124,7 @@ input {
     position: relative;
     width:33px;
     height:33px;
-    background-image: url('../assets/images/icon.png');
+    background-image: url('/books/fpp/Chapters/core/main/assets/images/icon.png');
     user-select: none;
     -webkit-user-select: none;
     background-repeat: no-repeat; 
@@ -812,7 +812,7 @@ background-position: -5px -1536px;
     width:22px;
     border-radius: 50%;
     border: 1px solid #3498db;
-    background-image: url('../assets/images/icon.png');
+    background-image: url('/books/fpp/Chapters/core/main/assets/images/icon.png');
     float: left;
     margin-right: 11px;
     cursor:pointer;
@@ -1617,7 +1617,7 @@ background-position: -5px -1536px;
     position: absolute;
     width: 20px;
     height: 20px;
-    background-image: url(../assets/images/icon.png);
+    background-image: url(/books/fpp/Chapters/core/main/assets/images/icon.png);
     background-position: -18px -233px;
     right: calc(18%);
     top: 50px;
@@ -1832,7 +1832,7 @@ background-position: -5px -1536px;
 
 .pLabSubMenuButton.open{
     background-position: -20px -837px;
-    background-image:url('../assets/images/icon.png');
+    background-image:url('/books/fpp/Chapters/core/main/assets/images/icon.png');
 }
 .pLabSubMenuButton.open.pHover{
     background-color: transparent;

@@ -1259,7 +1259,6 @@
           break; //---->
         case "admin":
           overlayDown();
-          console.log(baseUrl);
           location.href = baseUrl + coreData.bookData.admin_link;
           //window.open("https://qa1.kineticmath.com/admin/class-wizard/list");
           break;
