@@ -57,7 +57,6 @@
         var _txt = $(this).text();
         data["a"].push(_txt);
       })
-      //data["a"] = $('._tempDiv maction').text();
       $('._tempDiv').remove();
     } else {
       var temp = "";
@@ -69,6 +68,8 @@
     }
     for (var i in data.solve) {
       if (data["solve"][i]["ansType"] == "MultKinetic") {
+        data["solve"][i]["a"] = data["solve"][i]["a"].replace(/<mfrac>/g, " <mstyle mathsize='140%'><mfrac>");
+        data["solve"][i]["a"] = data["solve"][i]["a"].replace(/<\/mfrac>/g, "</mfrac> </mstyle'>")
         data["solve"][i]["inputBox"] = data["solve"][i]["a"].replace(pattern, toReplace);
       } else {
         var temp = "";
@@ -224,6 +225,7 @@
       return false;
     }
     var url = location.hash.replace('#', '');
+    url = unescape(url);
     url = url.split("/");
     if (url.length > 0 && url != "") {
       var _temp;
@@ -237,7 +239,7 @@
         if (_temp[0] == "type") {
           data.type = _temp[1];
         }
-        
+
         if (_temp[0] == "searchKey") {
           data.searchKey = _temp[1];
         }

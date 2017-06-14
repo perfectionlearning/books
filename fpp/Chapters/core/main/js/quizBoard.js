@@ -57,14 +57,14 @@
           theme: "dark-3",
           axis: "y",
           scrollInertia: 0, mouseWheelPixels: 50,
-          scrollButtons: {enable: false}
+          scrollButtons: {enable: true}
         });
         $(q.mShell).find('.pQuizboard_ques_wrap').mCustomScrollbar("destroy");
         $(q.mShell).find('.pQuizboard_ques_wrap').mCustomScrollbar({
           theme: "dark-3",
           axis: "y",
           scrollInertia: 0, mouseWheelPixels: 50,
-          scrollButtons: {enable: false}
+          scrollButtons: {enable: true}
         });
 
 

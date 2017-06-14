@@ -3,6 +3,7 @@
     var device = BrowserDetect.any();
     var _this = this;
     var videoPlayer;
+    var showSolutionFlag = false;
     q.stepIndex = 0;
     q.screenData;
     q.mShell = '.mShell';
@@ -45,7 +46,7 @@
         theme: "dark-3",
         axis: "y",
         scrollInertia: 0, mouseWheelPixels: 50,
-        scrollButtons: {enable: false}
+        scrollButtons: {enable: true}
       });
       var math = $(".pQuizCheck .userInputWrap")[0];
       console.log(data);
@@ -74,24 +75,30 @@
         $(temp).css({
           "position": "relative",
           "float": "left",
-          "width": "295px",
-          "height": "160px",
+          "width": "317px",
+          "height": "175px",
           "clear": "both",
           "background-image": "url(" + q.screenData.qImg + ")",
+          "background-repeat": "no-repeat",
+          "background-size": "100% 100%"
         });
-        if (size.length > 0) {
-          $(temp).css({
-            "width": (Number(size[0])) + "px",
-            "height": (Number(size[1])) + "px",
-          });
-        }
+//        if (size.length > 0) {
+//          $(temp).css({
+//            "width": (Number(size[0])) + "px",
+//            "height": (Number(size[1])) + "px",
+//          });
+//        }
         if (q.screenData.hasOwnProperty("qImageText") && q.screenData["qImageText"].length > 0) {
           for (var i in q.screenData["qImageText"]) {
             var temp_txt = document.createElement("div");
+            if (size.length > 0) {
+              var _top = (q.screenData["qImageText"][i]["y"] * 100) / Number(size[1]);
+              var _left = (q.screenData["qImageText"][i]["x"] * 100) / Number(size[0]);
+            }
             $(temp_txt).html(q.screenData["qImageText"][i]["text"]).css({
               "position": "absolute",
-              "top": (q.screenData["qImageText"][i]["y"]) + "px",
-              "left": (q.screenData["qImageText"][i]["x"]) + "px",
+              "top": (_top) + "%",
+              "left": (_left) + "%",
               "color": q.screenData["qImageText"][i]["color"],
               "font-size": q.screenData["qImageText"][i]["size"]
             }).appendTo($(temp));
@@ -233,6 +240,7 @@
       hideLoader();
     }
     this.loadSolution = function () {
+      showSolutionFlag = true;
       $('.pQuizCheck .pQuizFeedback').hide();
       $('.pQuizCheck .step').remove();
       $('.pQuizCheck .pQuizButtons').addClass('pDisable');
@@ -240,6 +248,10 @@
       $('.pQuizCheck .pAnsWrap').find("input").css("background-color", "#ebebe4");
       $('.pQuizCheck .pAnsWrap').find("input").attr("disabled", true);
       $('.pQuizCheck .step').find("input").attr("disabled", true);
+//      q.screenData["a"] = q.screenData["a"].split(',');
+//        for (var i in ans) {
+//          $(".pQuizBoard .bOptionRow[data-id='" + ans[i] + "']").addClass("selected");
+//        }
       $('.pQuizCheck .pAnsWrap').find("input").each(function (i) {
         $(this).val(q.screenData["a"][i])
       });
@@ -405,7 +417,9 @@
         case "helpVideo":
         case "video":
           q.submitCnt = 0;
-          manageButtons(false);
+          if (!showSolutionFlag) {
+            manageButtons(false);
+          }
           if (q.screenData.hasOwnProperty("video")) {
             $(q.mShell).find(".pDisabler").hide();
             $('.pVideoMainWrapper').addClass('quizVideo');
@@ -431,8 +445,10 @@
       $('.pQuizCheck .pQuizFeedback').removeClass('correct').removeClass('incorrect')
       if (data.hasOwnProperty("step")) {
         if (data.iscorrect) {
+
           hideLoader();
           if (q.stepIndex == q.screenData["solve"].length - 1) {
+            showSolutionFlag = true;
             var feedBackTxt;
             if (data.new_status == "correct") {
               feedBackTxt = feedback.correct[0];
@@ -475,6 +491,7 @@
       } else {
         $(".pQuizCheck .step").find(".stepFeedback").hide();
         if (data.iscorrect) {
+          showSolutionFlag = true;
           var feedBackTxt = feedback["correct"][0];
           $(".pQuizCheck .step").find("input").css("background-color", "#ebebe4");
           $('.pQuizCheck .pAnsWrap').find("input").css("background-color", "#ebebe4");
@@ -506,8 +523,9 @@
           if (data.iscorrect) {
             hideLoader();
             $(".pQuizCheck .step[data-step='" + q.stepIndex + "']").find("input").css("background-color", "#ebebe4");
-            $(".pQuizCheck .step[data-step='" + q.stepIndex + "']").find("input").attr("disabled", true);
+            $(".pQuizCheck .step[data-step='" + q.stepIndex + "']").find("input").addClass("freezed").attr("disabled", true);
             if (q.stepIndex == q.screenData["solve"].length - 1) {
+              showSolutionFlag = true;
               var feedBackTxt;
               if (data.new_status == "correct") {
                 feedBackTxt = feedback.correct[0];
@@ -519,7 +537,9 @@
               $('.pQuizCheck .pQuizButtons').addClass('pDisable');
               $('.pQuizCheck .pAnsWrap').find("input").css("background-color", "#ebebe4");
               $('.pQuizCheck .pAnsWrap').find("input").attr("disabled", true);
-              $('.pQuizCheck .pAnsWrap').find("input").val(q.screenData["a"]);
+              $('.pQuizCheck .pAnsWrap').find("input").each(function (i) {
+                $(this).val(q.screenData["a"][i])
+              });
             } else {
               $('.pQuizCheck .pQuizFeedback').hide();
               var feedBackTxt = step_feedback["correct"][0];
@@ -557,6 +577,7 @@
       } else {
         $(".pQuizCheck .step").find(".stepFeedback").hide();
         if (data.iscorrect) {
+          showSolutionFlag = true;
           var feedBackTxt;
           if (data.new_status == "correct") {
             feedBackTxt = feedback.correct[0];
@@ -618,6 +639,7 @@
       $(q.mShell).find(".pDisabler").fadeOut();
     }
     function reset() {
+      showSolutionFlag = false;
       manageButtons(false);
       $('.pQuizCheck .pQuizButtons').removeClass('pDisable');
       $('.pQuizCheck .step').remove();
@@ -636,7 +658,7 @@
         $('.pQuizButtons.uSubmit').addClass('pDisable');
         $(".pQuizCheck .bOptionRow").addClass('pDisable').off();
       } else {
-        $(".pQuizCheck input").attr("disabled", false);
+        $(".pQuizCheck input").not('.freezed').attr("disabled", false);
         $('.pQuizButtons.uSubmit').removeClass('pDisable');
         $(".pQuizCheck .bOptionRow").removeClass('pDisable').off();
         $(".pQuizCheck .bOptionRow").off(mouseEvents.up).on(mouseEvents.up, radioUp);

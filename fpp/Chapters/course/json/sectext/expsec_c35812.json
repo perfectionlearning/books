@@ -32,7 +32,7 @@
   "definitions": [
     {
       "term": "Inversely proportional",
-      "def": "A relationship that can be written in the form <flashml width=\"30.75\" height=\"30.75\" color=\"33CCCC\">  <math>    <mrow>      <mi>y</mi>      <mo>=</mo>      <mfrac linethickness=\"thin\">        <mi>k</mi>        <mi>x</mi>      </mfrac>    </mrow>  </math></flashml>, with <i>k</i> being a constant.  As <i>x</i> increases, with a positive <i>k</i>, <i>y</i> decreases."
+      "def": "A relationship that can be written in the form <flashml width=\"31\" height=\"31\" color=\"33CCCC\">  <math>    <mrow>      <mi>y</mi>      <mo>=</mo>      <mfrac linethickness=\"thin\">        <mi>k</mi>        <mi>x</mi>      </mfrac>    </mrow>  </math></flashml>, with <i>k</i> being a constant.  As <i>x</i> increases, with a positive <i>k</i>, <i>y</i> decreases."
     },
     {
       "term": "Nonlinear",

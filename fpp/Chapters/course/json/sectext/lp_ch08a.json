@@ -1,0 +1,16 @@
+{
+  "cards": [
+    {
+      "lines": [
+        
+      ]
+    }
+  ],
+  "definitions": [],
+  "secText": [
+    "  <b><span style='float:left ;clear:both ;text-align:left;margin-bottom: 5px;'>Essential Questions:</span></b> <ol style='list-style-type: decimal;padding-left: 25px;float:left;clear:both'><li style = 'padding-left:15px;text-align:left;margin-bottom: 5px;'>How can we determine the rotational period and centripetal acceleration of an object in circular motion?</li><li style = 'padding-left:15px;text-align:left;margin-bottom: 5px;'>How can we determine the centripetal force acting on an object in circular motion?</li><li  style = 'padding-left:15px;text-align:left;margin-bottom: 5px;'>How can we calculate the gravitational force between two objects?</li><li style = 'padding-left:15px;text-align:left;margin-bottom: 5px;'>How does an object remain in circular orbit?</li><li style = 'padding-left:15px;text-align:left;margin-bottom: 5px;'>How can we determine how long and how much energy it will take a planet to rotate around the Sun?</li></ol>"
+  ],
+  "objNames": [
+    
+  ]
+}

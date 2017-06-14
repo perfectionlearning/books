@@ -1,0 +1,12 @@
+{
+  "cards": [
+    {
+      "lines": []
+    }
+  ],
+  "definitions": [],
+  "secText": [
+    "  <b><span style='float:left ;clear:both ;text-align:left;margin-bottom: 5px;'>Essential Questions:</span></b> <ol style='list-style-type: decimal;padding-left: 25px;float:left;clear:both'><li style = 'padding-left:15px;text-align:left;margin-bottom: 5px;'>How can we measure thermal energy, temperature, and heat within matter?</li><li style = 'padding-left:15px;text-align:left;margin-bottom: 5px;'>How can we define and quantify the thermal energy and temperature of an object?</li><li  style = 'padding-left:15px;text-align:left;margin-bottom: 5px;'>How is temperature measured?</li><li style = 'padding-left:15px;text-align:left;margin-bottom: 5px;'>How is heat transfer measured?</li><li style = 'padding-left:15px;text-align:left;margin-bottom: 5px;'>What occurs to matter when heat is transferred to an object?</li><li style = 'padding-left:15px;text-align:left;margin-bottom: 5px;'>How does heat transfer?</li><li style = 'padding-left:15px;text-align:left;margin-bottom: 5px;'>How can heat change the volume and length of an object?</li></ol>"
+  ],
+  "objNames": []
+}

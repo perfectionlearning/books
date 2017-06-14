@@ -1,0 +1,18 @@
+{
+  "cards": [
+    {
+      "lines": [
+        
+      ]
+    }
+  ],
+  "definitions": [],
+  "secText": [
+	"<span style='float:left;clear:both;font-weight:bold;'>Essential Questions:</span></br><ol style='list-style-type: decimal;padding-left: 25px;float:left;'><li style = 'padding-left:15px;text-align:left;margin-bottom: 5px;'>How can we quantify the electric and magnetic fields that compose light?</li><li style = 'padding-left:15px;text-align:left;margin-bottom: 5px;'>How can we measure the intensity of light?</li><li style = 'padding-left:15px;text-align:left;margin-bottom: 5px;'>How can we apply electromagnetic radiation to real-world technology?</li><li style = 'padding-left:15px;text-align:left;margin-bottom: 5px;'>How can we use the concept of scattering to understand why the sky is blue?</li></ol></br></br></br></br>",
+	"<span style='float:left;clear:both;font-weight:bold;margin-bottom: 5px;'>Enduring Understandings:</span></br><ol style='list-style-type: decimal;padding-left: 25px;float:left;'><li style = 'padding-left:15px;text-align:left;margin-bottom: 5px;'>Electromagnetic radiation is composed of magnetic and electric fields. The strength of each field changes over time. The electric and magnetic fields have the same frequency, are in phase, and are perpendicular to each other.</li><li style = 'padding-left:15px;text-align:left;margin-bottom: 5px;'>The speed of light is equal to 3.0×108 m/s.</li><li style = 'padding-left:15px;text-align:left;margin-bottom: 5px;'>The equation for light intensity is the same as the equation for sound intensity. To calculate light intensity, divide the power by the area of a sphere.</li><li style = 'padding-left:15px;text-align:left;margin-bottom: 5px;'>When light hits a surface, its electromagnetic waves are absorbed or reflected by the surface. This causes a transfer of momentum from the wave to the surface, pushing the wave and the surface away from each other.</li><li style = 'padding-left:15px;text-align:left;margin-bottom: 5px;'>Antennas can transmit or receive electromagnetic signals, such as radio waves.</li><li style = 'padding-left:15px;text-align:left;margin-bottom: 5px;'>Analog information is continuous, such as a speedometer. Digital information is numerical and is not continuous, like the information processed by computers in bits and bytes.</li><li style = 'padding-left:15px;text-align:left;margin-bottom: 5px;'>Digital information is encoded into numerical form, and then decoded into its original form.</li><li style = 'padding-left:15px;text-align:left;margin-bottom: 5px;'>Unpolarized light is made up of fields that oscillate in different planes. Polarized light is made up of fields that oscillate in the same plane.</li><li style = 'padding-left:15px;text-align:left;margin-bottom: 5px;'>Scattering occurs when an electron absorbs light of a certain frequency, and emits a wavelength of the same frequency in a different direction. Blues and purples scatter more than other colors.</li><li style= 'padding-left:15px;text-align:left;margin-bottom: 5px;'>The atmosphere around Earth scatters the light emitted from the Sun, which makes the sky appear blue.</li></ol><span style='height: 13px;float:left;clear:both;line-height: 46px;background-color: white;'> </span></br></br></br></br>",
+	"<span style='text-align: left;float: left;clear: both;margin-bottom: 5px;'><b>Vocabulary:</b> analog, antenna, bit, byte, decode, digital, electromagnetic radiation, electromagnetic spectrum, encode, intensity, polarized light radiation pressure, sampling, scattering, speed of light, unpolarized light</span>"
+  ],
+  "objNames": [
+    
+  ]
+}

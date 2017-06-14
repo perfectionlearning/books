@@ -1,0 +1,12 @@
+{
+  "cards": [
+    {
+      "lines": []
+    }
+  ],
+  "definitions": [],
+  "secText": [
+    "  <b><span style='float:left ;clear:both ;text-align:left;margin-bottom: 5px;'>Essential Questions:</span></b> <ol style='list-style-type: decimal;padding-left: 25px;float:left;clear:both'><li style = 'padding-left:15px;text-align:left;margin-bottom: 5px;'>How are thermal energy, work, and heat related?</li><li style = 'padding-left:15px;text-align:left;margin-bottom: 5px;'>How do engines use heat to do work?</li><li  style = 'padding-left:15px;text-align:left;margin-bottom: 5px;'>How can we describe the engine cycle using work, heat, pressure, volume, and temperature?</li><li style = 'padding-left:15px;text-align:left;margin-bottom: 5px;'>What is the relationship between pressure, temperature, and volume of a gas?</li><li style = 'padding-left:15px;text-align:left;margin-bottom: 5px;'>How can we analyze pressure-volume graphs of engine cycles for the amount of work done by the system?</li><li style = 'padding-left:15px;text-align:left;margin-bottom: 5px;'>How does the second law of thermodynamics explain the efficiency of real-world engines?</li><li style = 'padding-left:15px;text-align:left;margin-bottom: 5px;'>How can we measure the order of a system?</li><li style = 'padding-left:15px;text-align:left;margin-bottom: 5px;'>How can we quantify the kinetic energy and speed of gases?</li></ol>"
+  ],
+  "objNames": []
+}

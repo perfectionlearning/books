@@ -1,0 +1,17 @@
+{
+  "cards": [
+    {
+      "lines": [
+        
+      ]
+    }
+  ],
+  "definitions": [],
+  "secText": [
+    "<span style='text-align: left;float: left;clear: both;'><b>Vocabulary:</b> alternating current, ammeter, capacitance, capacitor, conventional current, direct current, drift speed, electric circuit, electric current, electromotive force (emf), equivalent resistance, mixed circuit, multimeter, Ohm's law, parallel wiring, resistivity, resistor, series wiring, voltmeter</span><span style='height:13px;float:left;clear: both;'></span>",
+	"<span style='float:left;clear:both;font-weight:bold;'>STEM Skills:</span></br><ol style='float:left;clear:both;list-style-type: decimal;padding-left: 25px;float:left;'><li style = 'padding-left:15px;text-align:left;margin-bottom: 5px;'>Review potential difference.</li><li style = 'padding-left:15px;text-align:left;margin-bottom: 5px;'>Review charge.</li><li style = 'padding-left:15px;text-align:left;margin-bottom: 5px;'>Review conductors and insulators.</li><li style = 'padding-left:15px;text-align:left;margin-bottom: 5px;'>Review power.</li><li style = 'padding-left:15px;text-align:left;margin-bottom: 5px;'>Review Ohm's law.</li><li style = 'padding-left:15px;text-align:left;margin-bottom: 5px;'>Review conventional current.</li><li style = 'padding-left:15px;text-align:left;margin-bottom: 5px;'>Review resistance for components in series.</li><li style = 'padding-left:15px;text-align:left;margin-bottom: 5px;'>Review resistance for components in parallel.</li><li style = 'padding-left:15px;text-align:left;margin-bottom: 5px;'>Review capacitors.</li><li style = 'padding-left:15px;text-align:left;margin-bottom: 5px;'>Review series wiring.</li><li style = 'padding-left:15px;text-align:left;margin-bottom: 5px;'>Review parallel wiring.</li></ol>"
+  ],
+  "objNames": [
+    
+  ]
+}

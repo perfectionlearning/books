@@ -1,0 +1,20 @@
+{
+  "cards": [
+    {
+      "lines": [
+        
+      ]
+    }
+  ],
+  "definitions": [],
+  "secText": [
+  "  <b><span style='float:left ;clear:both ;text-align:left;margin-bottom: 5px;'>Enduring Understandings Continued: </span></b> <ol style='list-style-type: decimal;padding-left: 25px;float:left;clear:both' start='20'><li style = 'padding-left:15px;text-align:left;margin-bottom: 5px;'>Position graphs of the motion of a particle in a wave are identical to graphs of simple harmonic motion.</li><li style = 'padding-left:15px;text-align:left;margin-bottom: 5px;'>Wave speed is how fast a wave is moving. To calculate wave speed, divide the wavelength by the period, or multiply the wavelength by the frequency.</li></ol>",
+  
+    "  <span style='float:left ;clear:both ;text-align:left;margin-bottom: 5px;margin-top:10px'><b>Vocabulary: </b>amplitude, cycle, frequency, mechanical wave, medium, natural frequency, longitudinal wave, period, periodic wave, resonance, restoring force, simple harmonic motion (SHM), simple pendulum, surface waves, transverse wave, wave, wave pulse, wave speed, wavelength</span>",
+	
+	"<b><span style='float:left ;clear:both ;text-align:left;margin-bottom: 5px;margin-top:10px'>STEM Skills:</span></b> <ol style='list-style-type: decimal;padding-left: 25px;float:left;clear:both'><li style = 'padding-left:15px;text-align:left;margin-bottom: 5px;'>Review analyzing graphs.</li><li style = 'padding-left:15px;text-align:left;margin-bottom: 5px;'>Review acceleration.</li><li style = 'padding-left:15px;text-align:left;margin-bottom: 5px;'>Review velocity.</li><li style = 'padding-left:15px;text-align:left;margin-bottom: 5px;'>Review force.</li><li style = 'padding-left:15px;text-align:left;margin-bottom: 5px;'>Review uniform circular motion.</li><li style = 'padding-left:15px;text-align:left;margin-bottom: 5px;'>Review Newton's second law.</li><li style = 'padding-left:15px;text-align:left;margin-bottom: 5px;'>Review amplitude, period, and frequency in simple harmonic motion.</li><li style = 'padding-left:15px;text-align:left;margin-bottom: 5px;'>Review period.</li><li style = 'padding-left:15px;text-align:left;margin-bottom: 5px;'>Review frequency.</li></ol>"
+  ],
+  "objNames": [
+    
+  ]
+}

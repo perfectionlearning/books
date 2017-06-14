@@ -1,0 +1,20 @@
+{
+  "cards": [
+    {
+      "lines": [
+        
+      ]
+    }
+  ],
+  "definitions": [],
+  "secText": [
+  "  <b><span style='float:left ;clear:both ;text-align:left;margin-bottom: 5px;'>Enduring Understandings Continued: </span></b> <ol style='list-style-type: decimal;padding-left: 25px;float:left;clear:both' start='14'><li style = 'padding-left:15px;text-align:left;margin-bottom: 5px;'>The second law of thermodynamics states that the entropy (randomness) of a system always increases or remains constant.</li><li style = 'padding-left:15px;text-align:left;margin-bottom: 5px;'>As the temperature of an ideal gas increases, so does its kinetic energy. To calculate the average kinetic energy of a molecule, multiply Boltzmann's constant, by the temperature of the gas in Kelvins, by 3/2.</li><li style = 'padding-left:15px;text-align:left;margin-bottom: 5px;'>Since there are so many atoms that compose an amount of gas, we use the average velocity to approximate the speed of the molecules in the gas. To find the average velocity of molecules in a gas, take the root-mean-square.</li></ol>",
+  
+    "  <span style='float:left ;clear:both ;text-align:left;margin-bottom: 5px;'><b>Vocabulary: </b>adiabatic, efficiency, engine, first law of thermodynamics, heat engine, heat pump, isobaric, refrigerator, root-mean-square, second law of thermodynamics (engines), entropy, second law of thermodynamics (entropy)</span>",
+	
+	"<b><span style='float:left ;clear:both ;text-align:left;margin-bottom: 5px;margin-top:10px'>STEM Skills:</span></b> <ol style='list-style-type: decimal;padding-left: 25px;float:left;clear:both'><li style = 'padding-left:15px;text-align:left;margin-bottom: 5px;'>Review ideas of energy.</li><li style = 'padding-left:15px;text-align:left;margin-bottom: 5px;'>Review heat.</li><li style = 'padding-left:15px;text-align:left;margin-bottom: 5px;'>Review work.</li><li style = 'padding-left:15px;text-align:left;margin-bottom: 5px;'>Review the work-energy theorem.</li><li style = 'padding-left:15px;text-align:left;margin-bottom: 5px;'>Review heat engines.</li><li style = 'padding-left:15px;text-align:left;margin-bottom: 5px;'>Analyze graphs.</li><li style = 'padding-left:15px;text-align:left;margin-bottom: 5px;'>Solve for an equation for a variable.</li><li style = 'padding-left:15px;text-align:left;margin-bottom: 5px;'>Review kinetic energy.</li><li style = 'padding-left:15px;text-align:left;margin-bottom: 5px;'>Review ratios.</li></ol>"
+  ],
+  "objNames": [
+    
+  ]
+}

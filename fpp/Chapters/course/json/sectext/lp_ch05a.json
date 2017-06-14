@@ -1,0 +1,16 @@
+{
+  "cards": [
+    {
+      "lines": [
+        
+      ]
+    }
+  ],
+  "definitions": [],
+  "secText": [
+    "  <b><span style='float:left ;clear:both ;text-align:left;margin-bottom: 5px;'>Essential Questions:</span></b> <ol style='list-style-type: decimal;padding-left: 25px;float:left;clear:both'><li style = 'padding-left:15px;text-align:left;margin-bottom: 5px;'>How can we define force?</li><li style = 'padding-left:15px;text-align:left;margin-bottom: 5px;'>How does Newton's second law describe the relationship between net force, mass, and acceleration?</li><li  style = 'padding-left:15px;text-align:left;margin-bottom: 5px;'>How can we use Newton's third law to solve for other forces acting on an object?</li><li style = 'padding-left:15px;text-align:left;margin-bottom: 5px;'>How can we calculate the force change of an object that is moving?</li><li style = 'padding-left:15px;text-align:left;margin-bottom: 5px;'>How can we graphically represent multiple forces acting on an object?</li><li style = 'padding-left:15px;text-align:left;margin-bottom: 5px;'>How can we solve for a force when multiple forces are acting on an object, and the forces are not acting on a line?</li></ol>"
+  ],
+  "objNames": [
+    
+  ]
+}

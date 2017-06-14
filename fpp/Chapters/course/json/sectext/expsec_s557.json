@@ -31,9 +31,11 @@
   ],
   "definitions": [],
   "secText": [
-    "Radio waves and light are two examples of electromagnetic radiation.  ",
+    "Radio waves and visible light are two examples of electromagnetic radiation.  ",
     "AM radio waves have frequencies ranging from 530 kHz to 1,710 kHz, with wavelengths ranging from 566 meters to 175 meters. AM radio stations announce their frequencies in kilohertz: “710 AM on your radio dial” means a frequency of 710 kHz. FM radio waves have higher frequencies and shorter wavelengths than AM radio waves. ",
-    "Visible light has far higher frequencies than radio signals, ranging from over 400 trillion Hz for red light to almost 800 trillion Hz for violet light. Wavelengths of light are often expressed in nanometers: The wavelength of red light is around 650 nanometers. Everything you see in the world is brought to you by electromagnetic radiation − light − in this frequency range. <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='wb_double_slit_white_concepts'>“White”</a> light consists of a mixture of all the visible light frequencies."
+    "The government regulates who can use what frequencies. For instance, it wants to ensure a garage door opener does not interfere with a cellphone, or, someone’s wi-fi router doesn’t open the neighbor’s garage door. The frequencies used by radio stations were chosen in the first days of radio when the abilities to broadcast and receive transmissions were fairly limited. Some choices of “who” got what frequency are based on history − AM radio was developed before FM radio, so it got the lower frequencies. ",
+    "Cellphones use parts of the electromagnetic spectrum to communicate as well.  Higher frequencies can deliver more data − roughly speaking, the greater frequency allows more times per second for a signal to be encoded.  On the other hand, the higher frequencies do not travel through buildings as well, so the user may not receive an “invaluable” text or video stream as easily. ",
+    "Visible light has far higher frequencies than radio signals, ranging from over 400 trillion Hz for red light to almost 800 trillion Hz for violet light. Wavelengths of light are often expressed in nanometers: The wavelength of red light is around 650 nanometers. Everything you see in the world is brought to you by electromagnetic radiation − light − in this frequency range.  <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='wb_double_slit_white_concepts'>“White”</a> light consists of a mixture of all the visible light frequencies. The photosynthesis process of plants most effectively processes light in the 450 and 650 nanometer ranges. "
   ],
   "objNames": [
     "wb_electromagnetic_spectrum2",

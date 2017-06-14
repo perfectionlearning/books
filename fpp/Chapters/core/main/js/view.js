@@ -4,15 +4,17 @@
     var videoPlayer = new VideoPlayer();
     var quizCheck = new QuizCheck();
     var quizBoard = new QuizBoard();
+    var labData = new LabData();
     var p = new Object();
     var coreData;
+    var getUrl = window.location;
+    var baseUrl = getUrl.protocol + "//" + getUrl.host + "/";
     p.usertype;
     p.mShell = null; //html shell
     p.bookData = {};
     eventListener();
     var lessonFlag = false;
     function eventListener() {
-      //location.hash = "type_book";
       $(document).off("createShell", createShell).on("createShell", createShell);
       $(document).off("getBookData", getBookData).on("getBookData", getBookData);
       $(document).off("loadScreen", loadScreen).on("loadScreen", loadScreen);
@@ -70,6 +72,11 @@
       $.getJSON("course/json/searchBook/searchBook.json", function (data) {
         p.searchBook = data.data;
         createPlayer("header");
+      });
+
+      // search benchmark code
+      $.getJSON("course/json/searchBook/searchCode.json", function (data) {
+        p.searchCode = data;
       });
     }
     function createPlayer(_str) {
@@ -150,7 +157,7 @@
                 theme: "dark-3",
                 axis: "y",
                 scrollInertia: 0, mouseWheelPixels: 50,
-                scrollButtons: {enable: false}
+                scrollButtons: {enable: true}
               });
               $('.activityLoader').hide();
               updateView();
@@ -223,7 +230,7 @@
         theme: "dark-3",
         axis: "y",
         scrollInertia: 0, mouseWheelPixels: 50,
-        scrollButtons: {enable: false}
+        scrollButtons: {enable: true}
       });
     }//---->
 
@@ -263,7 +270,7 @@
         theme: "dark-3",
         axis: "y",
         scrollInertia: 0, mouseWheelPixels: 50,
-        scrollButtons: {enable: false}
+        scrollButtons: {enable: true}
       });
     }
 
@@ -298,7 +305,7 @@
         for (var j in temp.unit[i]["section"]) {
 
           if (j == 0) {
-            if (!lessonFlag) {
+            if (!lessonFlag && !temp.unit[i]["section"][j].hasOwnProperty("link")) {
               $(_pSubTopicInnerWrap).clone().appendTo(_mainWrpa).attr("data-subsection", 0).attr("data-chap", data["chap"]).attr("data-topic", i).attr("data-subtopic", j).addClass("pSubMenuTopic").find('.pSubTopicName').html("Lesson Overview");
             }
           } else {
@@ -348,7 +355,7 @@
         theme: "dark-3",
         axis: "y",
         scrollInertia: 0, mouseWheelPixels: 50,
-        scrollButtons: {enable: false}
+        scrollButtons: {enable: true}
       });
       playerEvent();
     }
@@ -381,7 +388,11 @@
           if (!lessonFlag) {
             if (j == 0) {
               if (temp.unit[i]["section"][j].hasOwnProperty("link")) {
-                _pTopicHeading.clone().appendTo(_pTopicBody).addClass("noLink").attr("data-chap", topic_no).attr("data-topic", i).attr("data-subtopic", j).html(temp.unit[i]["section"][j]["SectionTitle"])
+                if (!temp.unit[i]["section"][j].hasOwnProperty("number")) {
+                  _pTopicHeading.clone().appendTo(_pTopicBody).addClass("noLink").attr("data-chap", topic_no).attr("data-topic", i).attr("data-subtopic", j).html(temp.unit[i]["section"][j]["SectionTitle"])
+                } else {
+                  _pTopicHeading.clone().appendTo(_pTopicBody).addClass("noLink").attr("data-chap", topic_no).attr("data-topic", i).attr("data-subtopic", j).html("Lesson " + (Number(i) + 1) + ": " + temp.unit[i]["section"][j]["SectionTitle"])
+                }
               } else {
                 _pTopicHeading.clone().appendTo(_pTopicBody).attr("data-chap", topic_no).attr("data-topic", i).attr("data-subtopic", j).html("Lesson " + (Number(i) + 1) + ": " + temp.unit[i]["section"][j]["SectionTitle"])
               }
@@ -421,7 +432,7 @@
         theme: "dark-3",
         axis: "y",
         scrollInertia: 0, mouseWheelPixels: 50,
-        scrollButtons: {enable: false}
+        scrollButtons: {enable: true}
       });
       playerEvent();
     }
@@ -480,11 +491,12 @@
         //$(p.mShell).find(".pVideoIcon").css("height", maxHeight + "px")
         $(p.mShell).find(".pActivityDesc").html(desc);
         $(p.mShell).find(".pActivityHeader").html(data.screenNo + " " + _tempScreenData.SectionHeading);
+        console.log(data.screenNo)
         $(p.mShell).find('.pActivityArea .pActivityBody').mCustomScrollbar({
           theme: "dark-3",
           axis: "y",
           scrollInertia: 0, mouseWheelPixels: 50,
-          scrollButtons: {enable: false}
+          scrollButtons: {enable: true}
         });
       } else {
         $(p.mShell).find(".pActivityHeader").html("Activity");
@@ -522,7 +534,7 @@
           theme: "dark-3",
           axis: "y",
           scrollInertia: 0, mouseWheelPixels: 50,
-          scrollButtons: {enable: false}
+          scrollButtons: {enable: true}
         });
         playerEvent();
       });
@@ -567,10 +579,16 @@
         chapWrapper.appendTo(chapter.left ? labsWrapper.find(".pLeftWrapper") : labsWrapper.find(".pRightWrapper"));
         $(createElement({tagName: "div"})).addClass("pLabChapterTitle").appendTo(chapWrapper).html(chapter.title).css(chapter.icon ? chapter.icon : {});
         chapter.labs.forEach(function (lab) {
+          var _labTopic = $(createElement({tagName: "div"}));
           if (chapter.hasOwnProperty("video")) {
-            $(createElement({tagName: "div"})).addClass("pLabTitle pjumpToVideo").appendTo(chapWrapper).html(lab.title).attr("data-video", true).attr("data-vref", lab.href).attr("data-pageTitle", lab.pageTitle);
+            _labTopic.addClass("pLabTitle pjumpToVideo").appendTo(chapWrapper).html(lab.title).attr("data-video", true).attr("data-vref", lab.href).attr("data-pageTitle", lab.pageTitle);
           } else {
-            $(createElement({tagName: "div"})).addClass("pLabTitle").appendTo(chapWrapper).html(lab.title).attr("data-href", lab.href).attr("data-pageTitle", lab.pageTitle);
+            _labTopic.addClass("pLabTitle").appendTo(chapWrapper).html(lab.title).attr("data-href", lab.href).attr("data-pageTitle", lab.pageTitle);
+          }
+          if (lab.hasOwnProperty("assign_id")) {
+            _labTopic.attr("data-assign_id", lab.assign_id)
+          } else {
+            _labTopic.attr("data-assign_id", "")
           }
         });
         if (chapter.bottomGap) {
@@ -581,7 +599,7 @@
         theme: "dark-3",
         axis: "y",
         scrollInertia: 0, mouseWheelPixels: 50,
-        scrollButtons: {enable: false}
+        scrollButtons: {enable: true}
       });
       p.currentType = "labmenu";
       playerbtnManager({type: "labmenu"});
@@ -673,6 +691,18 @@
           $(p.mShell).find('.pSettingArea').hide();
           $(p.mShell).find('.pJsActWrapper').show();
           break;
+        case "search":
+          $('.pBookWrapper').hide();
+          $('.pLabsWrapper').hide();
+          $('.pLabPageWrapper').hide();
+          $(p.mShell).find('.pJsActWrapper').hide();
+          $('.pActivityWrapper').hide();
+          $(p.mShell).find('.pActivityArea').hide();
+          $(p.mShell).find('.pQuizBoard').hide();
+          $(p.mShell).find('.pQuizCheck').hide();
+          $(p.mShell).find('.pActivitySummary').hide();
+          $(p.mShell).find('.pSettingArea').hide();
+          break;
       }
     }
     function playerEvent() {
@@ -702,6 +732,11 @@
       $(p.mShell).find(".pLabTitle").off(mouseEvents.down, mousedown).on(mouseEvents.down, mousedown); //---->
       $(p.mShell).find(".pLabTitle").not(".pjumpToVideo").off("click", labChapterUp).on("click", labChapterUp); //---->
       $(p.mShell).find(".pSearch").off("click", showSearchBox).on("click", showSearchBox); //---->
+      $(p.mShell).find("#searchField").off("keyup").on('keyup', function (e) {
+        if (e.keyCode == 13) {
+          showSearchBox(e);
+        }
+      });
       $(p.mShell).find(".pLabSubMenuTopic").off(mouseEvents.down, mousedown).on(mouseEvents.down, mousedown); //---->
       $(p.mShell).find(".pLabSubMenuTopic").off("click", labSubTopicUp).on("click", labSubTopicUp); //---->
       $(p.mShell).find(".pTopic,.pSubMenuTopic").not('.noLink,.hyperLink').off(mouseEvents.up, topicUp).on(mouseEvents.up, topicUp);
@@ -716,12 +751,18 @@
     }
 
     function showSearchBox(e, data) {
-      if ($(e.target).hasClass("pSearch")) {
-        window.location.hash = "type_search";
+      if ($("#searchField").val() == "" && !data) {
         return false;
       }
+      if ($(e.target).hasClass("pSearch") || $(e.target).attr("id") == "searchField") {
+        window.location.hash = escape("type_search/searchKey_" + $("#searchField").val());
+        return false;
+      }
+      manageScreen("search");
       $(".pSearchAreaWrapper").show();
-      $(".searchButton").off("click").on("click", updateSearchHash);
+      $(p.mShell).find(".pLabSubmitButton").hide();
+      // $(".searchButton").off("click").on("click", updateSearchHash);
+      console.log(data)
       $(".searchResults").mCustomScrollbar("destroy").empty();
       if (data && data.searchKey) {
         $("#searchField").val(data.searchKey.split("%20").join(" "));
@@ -730,11 +771,6 @@
         $("#searchField").val("");
         $(".searchResultCount").text("");
       }
-      $("#searchField").off("keyup").on('keyup', function (e) {
-        if (e.keyCode == 13) {
-          updateSearchHash();
-        }
-      });
     }
 
     function updateSearchHash() {
@@ -742,7 +778,7 @@
       a = a.split("/");
       a[1] = "searchKey_" + $("#searchField").val().split(" ").join("%20");
       a.length = 2;
-      window.location.hash = a.join("/");
+      window.location.hash = escape(a.join("/"));
     }
 
     function searchResults() {
@@ -751,40 +787,17 @@
       }
       $(".activityLoader").show();
       var keywords = $("#searchField").val().split(" ").map(function (key) {
-        return " " + key + " ";
+        return " " + key.toLowerCase() + " ";
       });
       var links = [], found, text;
       var div = $(document.createElement("div"));
       p.searchBook.forEach(function (obj) {
         found = false;
-        if (obj.text) {
-          text = div.html(obj.text).text();
+        var a = [div.html(obj.text).text().toLowerCase(), obj.title.toLowerCase(), obj.sectionTitle.toLowerCase(), obj.sectionHeading.toLowerCase()];
+        for (var j = 0; j < a.length && !found; j++) {
+          text = a[j];
           for (var i = 0; i < keywords.length; i++) {
             if (text.match(keywords[i])) {
-              push(links, obj);
-              found = true;
-            }
-          }
-        }
-        if (!found && obj.title) {
-          for (var i = 0; i < keywords.length; i++) {
-            if (obj.title.match(keywords[i])) {
-              push(links, obj);
-              found = true;
-            }
-          }
-        }
-        if (!found && obj.sectionTitle) {
-          for (var i = 0; i < keywords.length; i++) {
-            if (obj.sectionTitle.match(keywords[i])) {
-              push(links, obj);
-              found = true;
-            }
-          }
-        }
-        if (!found && obj.sectionHeading) {
-          for (var i = 0; i < keywords.length; i++) {
-            if (obj.sectionHeading.match(keywords[i])) {
               push(links, obj);
               found = true;
             }
@@ -797,49 +810,93 @@
           src: obj.src,
           type: obj.type,
           href: obj.href,
-          title: obj.title + ", " + obj.sectionTitle + ", " + obj.sectionHeading
+          title: obj.title + ", " + obj.sectionHeading
         });
       }
 
       var count = 0;
+      if (links.length == 0 && keywords.length == 1) {
+        for (var i = 0; i < p.searchCode.data.length; i++) {
+          if (p.searchCode.data[i].code.toLowerCase().indexOf(keywords[0].trim()) != -1) {
+            for (var j = 0; j < p.searchCode.data[i].lessons.length; j++) {
+              var src = p.searchCode.data[i].lessons[j].split(" ")[0] + ".0";
+              var type = "book";
+              var href, dataTitle;
+              if (src.toLowerCase() == "lesson.0") {
+                src = p.searchCode.data[i].lessons[j].split("Ch")[1] + ".1.1.0";
+                type = "lessonPlan";
+              }
+              if (src.split(".")[0] == 26) {
+                type = "labPage";
+                var o = getLabref(src);
+                links.push({
+                  src: src.split(".").join(":"),
+                  type: type,
+                  title: p.searchCode.data[i].lessons[j],
+                  href: o.href,
+                  dataTitle: o.title + ", " + o.sectionHeading
+                });
+              } else {
+                links.push({
+                  src: src.split(".").join(":"),
+                  type: type,
+                  title: p.searchCode.data[i].lessons[j],
+                  href: href
+                });
+              }
+            }
+            break;
+          }
+        }
+      }
       links.forEach(function (obj) {
-        if (p.usertype.toLowerCase() == "student" && obj.type == "lessonPlan") {
+        if (p.usertype && p.usertype.toLowerCase() == "student" && obj.type == "lessonPlan") {
           return false;
         }
         count++;
         if (obj.type == "labPage") {
-          $(".searchResults").append("<div class='searchResult' data-type='" + obj.type + "' data-src='" + obj.src + "' data-href='" + obj.href.split("/").join("~").split("_").join("-") + "'>" + obj.title + "</div>");
+          console.log(obj.href)
+          $(".searchResults").append("<div class='searchResult' data-type='" + obj.type + "' data-src='" + obj.src + "' data-href='" + obj.href.split("/").join("~").split("_").join("-") + "' data-text='" + (obj.dataTitle ? obj.dataTitle : obj.title) + "'>" + obj.title + "</div>");
         } else {
-          $(".searchResults").append("<div class='searchResult' data-type='" + obj.type + "' data-src='" + obj.src + "'>" + obj.src + " " + obj.title + "</div>");
+          $(".searchResults").append("<div class='searchResult' data-type='" + obj.type + "' data-src='" + obj.src + "'>" + obj.title + "</div>");
         }
-
       });
       $(".searchResults").mCustomScrollbar({
         theme: "dark-3",
         axis: "y",
         scrollInertia: 0, mouseWheelPixels: 50,
-        scrollButtons: {enable: false}
+        scrollButtons: {enable: true}
       });
       $(".searchResultCount").text(count + " results");
       $(".searchResult").off("click").on("click", function (e) {
         var src = $(this).attr("data-src").split(":");
         var type = $(this).attr("data-type");
         if (type == "labPage") {
-          var src = $(this).text().split(", ");
+          var src = $(this).attr("data-text").split(", ");
           var href = $(this).attr("data-href");
-          window.location.hash = "type_labPage/title_" + src[2] + "/href_" + (href);
-          // location.hash = "type_labPage/title_Using one-dimensional motion equations/href_course~labs~Using-one-dimensional-equations~page.html";
-          console.log("type_labPage/title_" + src[2] + "/href_" + (href))
+          window.location.hash = escape("type_labPage/title_" + src[2] + "/href_" + (href));
         } else {
-          window.location.hash = "lesson_" + (type == "lessonPlan") + "/type_chapter/chapter_" + src[0] + "/unit_" + (src[1] - 1) + "/section_" + src[2] + "/subsection_0";
+          window.location.hash = escape("lesson_" + (type == "lessonPlan") + "/type_chapter/chapter_" + src[0] + "/unit_" + (src[1] - 1) + "/section_" + src[2] + "/subsection_" + src[3]);
         }
-
+        $(".pSearchAreaWrapper").hide();
       });
 
       setTimeout(function () {
         $(".activityLoader").hide();
       }, 500);
     }
+
+    function getLabref(src) {
+      src = src.split(".");
+      src.length = 3;
+      src = src.join(":");
+      for (var i in p.searchBook) {
+        if (p.searchBook[i].src == src) {
+          return p.searchBook[i];
+        }
+      }
+    }
+    this.getLabRef = getLabref;
 
     function gotoBook() {
       $(this).removeClass("pDown").removeClass("pHover");
@@ -919,6 +976,12 @@
       var _data = {}
       _data.SectionHeading = _this.text();
       _data.ref = _this.attr('data-href');
+      var _href = _data.ref.replace(/\//g, '~')
+      _href = _href.replace(/_/g, '-');
+      if (_data.SectionHeading == "Return to ELL Lesson Plans Table of Contents") {
+        _data.SectionHeading = "ELL Lesson Plans";
+      }
+      location.hash = escape("type_additonal-resource/title_" + _data.SectionHeading + "/href_" + _href);
       $(document).trigger("loadAdditionalResource", {screenData: _data})
     }
     function videoUp() {
@@ -1048,14 +1111,14 @@
     }
     function labChapterUp(e) {//---->
       $('.pLabsWrapper').hide();
-      loadLabPage($(e.target).attr("data-pageTitle") ? $(e.target).attr("data-pageTitle") : $(e.target).text(), $(e.target).attr("data-href"), $(e.target).attr("data-type"));
+      loadLabPage($(e.target).attr("data-pageTitle") ? $(e.target).attr("data-pageTitle") : $(e.target).text(), $(e.target).attr("data-href"), $(e.target).attr("data-assign_id"));
     }//---->
     function labSubTopicUp(e) {//---->
       var i = $(e.target).attr("data-index") * 1;
       var ele = $(p.mShell).find(".pLabPageWrapper").find("[data-index=" + i + "]");
       $(p.mShell).find(".pLabPageContentWrapper").mCustomScrollbar("scrollTo", ele);
     }//---->
-    function loadLabPage(title, href, type) {//---->
+    function loadLabPage(title, href, assign_id) {//---->
       $(".pSearchAreaWrapper").hide();
       if (href.split(".")[1] != "html") {
         $('.pLabsWrapper').show();
@@ -1066,127 +1129,71 @@
       _href = _href.replace(/_/g, '-');
       $(p.mShell).find(".book_bck").hide();
       $(p.mShell).find(".lab_bck").show();
-      //
       blockHashEvent = true;
 
-      if (typeof type == "undefined") {
-        location.hash = "type_labPage/title_" + title + "/href_" + _href;
-      } else {
-        location.hash = "type_labPage/title_" + title + "/href_" + _href + "/labtype_" + type;
-      }
+      location.hash = escape("type_labPage/title_" + title + "/href_" + _href);
+
       setTimeout(function () {
         blockHashEvent = false;
       }, 500);
-      //
-      if (type && type.toLowerCase() == "popup") {
 
-      } else {
-        if (href.split("/")[1] == "labs") {
-          $(p.mShell).find(".pLabSubmitButton").show().off("click", printLabAnswer).on("click", printLabAnswer);
-        }
-        var mainWrapper = $(p.mShell).find(".pLabPageWrapper");
-        $(p.mShell).find(".pLabPageWrapper").show();
-        var contentWrapper = $(p.mShell).find(".pLabPageContentWrapper");
-        contentWrapper.mCustomScrollbar("destroy").empty();
-        var sideMenuWrapper = $(p.mShell).find(".pLabSubMenu");
-        sideMenuWrapper.empty().css("opacity", 0);
-        loadHtml({
-          src: href,
-          parent: contentWrapper,
-          callback: function () {
-            mainWrapper.find(".pActivityHeader").html(title);
-            contentWrapper.find(".pLabAnswerWrapper")//.addClass("pCloseLabAnswerWrapper");
-            contentWrapper.find(".pLabQuestionArrow").addClass("pLabQuestionArrowUp");
-            contentWrapper.find(".pLabQText").on("click", function (e) {
-              $(this).parent().find(".pLabAnswerWrapper").toggleClass("pCloseLabAnswerWrapper");
-              $(this).parent().find(".pLabQuestionArrow").toggleClass("pLabQuestionArrowUp");
-            });
-            contentWrapper.find(".pLabQuestion").each(function (e) {
-              if ($(this).find(".pLabAnswerWrapper").length == 0) {
-                $(this).find(".pLabQuestionArrow").hide();
-                $(this).find(".pLabQText").css("cursor", "default");
-              } else {
-                if ($(this).find(".pLabAnswerTable").length > 0) {
-                  $(this).find(".pLabSaveButton").css("left", 12 + $(this).find(".pLabAnswerTable").width()).css("right", "none");
-                }
-              }
-            });
-            contentWrapper.find(".pExerciseButton").on("click", function (e) {
-              window.open($(this).attr("data-href"), "lab", "toolbar=yes,scrollbars=yes,resizable=yes,top=0,left=0,width=760,height=600");
-            });
-            var list = [];
-            contentWrapper.children().each(function (i, ele) {
-              $(ele).attr("data-index", i);
-              sideMenuWrapper.append("<div class='pLabSubMenuTopic' data-index=" + i + ">" + (i == 0 ? "Introduction" : $(ele).find(".pExcersiseTitle").text()) + "</div>");
-            });
-            sideMenuWrapper.css("left", -sideMenuWrapper.outerWidth(true)).data("open", false);
-            setTimeout(function () {
-              sideMenuWrapper.css("opacity", 1);
-            }, 800);
-            contentWrapper.mCustomScrollbar({
-              theme: "dark-3",
-              axis: "y",
-              scrollInertia: 0, mouseWheelPixels: 50,
-              scrollButtons: {enable: false}
-            });
-            playerEvent();
-          }
-        });
+      if (href.split("/")[1] == "labs") {
+        $(p.mShell).find(".pLabSubmitButton").show();
       }
+      var mainWrapper = $(p.mShell).find(".pLabPageWrapper");
+      $(p.mShell).find(".pLabPageWrapper").show();
+      var contentWrapper = $(p.mShell).find(".pLabPageContentWrapper");
+      contentWrapper.mCustomScrollbar("destroy").empty();
+      var sideMenuWrapper = $(p.mShell).find(".pLabSubMenu");
+      sideMenuWrapper.empty().css("opacity", 0);
+      loadHtml({
+        src: href,
+        parent: contentWrapper,
+        callback: function () {
+          console.log(assign_id);
+          labData.init({id: assign_id})
+          mainWrapper.find(".pActivityHeader").html(title);
+          contentWrapper.find(".pLabAnswerWrapper")//.addClass("pCloseLabAnswerWrapper");
+          contentWrapper.find(".pLabQuestionArrow").addClass("pLabQuestionArrowUp");
+          contentWrapper.find(".pLabQText").on("click", function (e) {
+            $(this).parent().find(".pLabAnswerWrapper").toggleClass("pCloseLabAnswerWrapper");
+            $(this).parent().find(".pLabQuestionArrow").toggleClass("pLabQuestionArrowUp");
+          });
+          contentWrapper.find(".pLabQuestion").each(function (e) {
+            if ($(this).find(".pLabAnswerWrapper").length == 0) {
+              $(this).find(".pLabQuestionArrow").hide();
+              $(this).find(".pLabQText").css("cursor", "default");
+            } else {
+              if ($(this).find(".pLabAnswerTable").length > 0) {
+                $(this).find(".pLabSaveButton").css("left", 12 + $(this).find(".pLabAnswerTable").width()).css("right", "none");
+              }
+            }
+          });
+          contentWrapper.find(".pExerciseButton").on("click", function (e) {
+            window.open($(this).attr("data-href"), "lab", "toolbar=yes,scrollbars=yes,resizable=yes,top=0,left=0,width=760,height=600");
+          });
+          var list = [];
+          contentWrapper.children().each(function (i, ele) {
+            $(ele).attr("data-index", i);
+            sideMenuWrapper.append("<div class='pLabSubMenuTopic' data-index=" + i + ">" + (i == 0 ? "Introduction" : $(ele).find(".pExcersiseTitle").text()) + "</div>");
+          });
+          sideMenuWrapper.css("left", -sideMenuWrapper.outerWidth(true)).data("open", false);
+          setTimeout(function () {
+            sideMenuWrapper.css("opacity", 1);
+          }, 800);
+          contentWrapper.mCustomScrollbar({
+            theme: "dark-3",
+            axis: "y",
+            scrollInertia: 0, mouseWheelPixels: 50,
+            scrollButtons: {enable: true}
+          });
+          playerEvent();
+        }
+      });
+
     }//---->
 
-    function printLabAnswer() {
-      var containers = $(p.mShell).find(".pLabPageWrapper").find(".pExerciseContainer");
-      // console.log(containers);
-      var str = "";
-      containers.each(function (i, element) {
-        element = $(element);
-        // exercise title
-        str += "<h2 class=\"SectionName\">" + element.find(".pExcersiseTitle").text() + "</h2>\r\n";
-        //
-        // question and answers
-        element.find(".pLabQuestion").each(function (j, qEle) {
-          qEle = $(qEle);
-          // console.log(qEle)
-          str += "<p class=\"ExerciseBody\" style='color:#FF0000; padding-left:20px;'>" + qEle.find(".pLabQNumber").text() + " " + qEle.find(".pLabQText").html() + "</p>\r\n";
-          if (qEle.find("textarea").length != 0) {
-            if (qEle.find("textarea")[0].value != "") {
-              str += "<p style='padding-left:35px;'>" + qEle.find("textarea")[0].value + "</p>\r\n";
-            } else {
-              str += "<p style='font-size:18px;'>Answer not submitted</p>\r\n";
-            }
-          } else {
-            // console.log("table");
-            // console.log(qEle.find("table")[0].outerHTML);
-            var table = qEle.find("table").clone();
-            table.find("input").each(function (k, input) {
-              var parent = $(input).parent();
-              if (input.value != "") {
-                parent.prepend(input.value);
-              } else {
-                parent.prepend("Answer not submitted ");
-              }
 
-              $(input).remove();
-            });
-            table.find("td").each(function () {
-              $(this).css("text-align", "center").css("width", "auto").css("border", "1px solid orange");
-            });
-            table.width(qEle.find("table").outerWidth() + 40).css("border", "1px solid orange").css("color", "orange").attr("cellSpacing", 0);
-            str += table[0].outerHTML;
-          }
-        });
-        //
-      });
-      // console.log(str)
-      var OpenWindow = window.open('course/template/printPage.html', '_blank', 'width=630,height=470,resizable=1');
-      // OpenWindow.document.getElementById("container").innerHTML = str;
-
-      OpenWindow.onload = function () {
-        OpenWindow.document.getElementById("container").innerHTML = str;
-        OpenWindow.print();
-      }
-    }
 
     function btnStateReset() {
       $(p.mShell).find(".pButtons").removeClass("pHover").removeClass("pDown");
@@ -1224,7 +1231,7 @@
           }
           $(p.mShell).find(".pMenu").removeClass('pDisable');
           $(p.mShell).find(".book_bck").hide();
-          location.hash = "type_" + _obj.type;
+          location.hash = escape("type_" + _obj.type);
           if ($(p.mShell).find(".videoWrapper").hasClass("vOpen")) {
             videoPlayer.stopVideo();
           }
@@ -1252,26 +1259,27 @@
           break; //---->
         case "admin":
           overlayDown();
-          location.href = "https://qa1.perfectionlearning.com/admin/class-wizard/list";
+          console.log(baseUrl);
+          location.href = baseUrl + coreData.bookData.admin_link;
           //window.open("https://qa1.kineticmath.com/admin/class-wizard/list");
           break;
         case "homework":
           overlayDown();
-          location.href = "https://qa1.perfectionlearning.com/assignments/list";
+          location.href = coreData.bookData["homework_" + p.usertype + "_link"];
           //window.open("https://qa1.kineticmath.com/assignments/list");
           break;
         case "grades":
           overlayDown();
-          location.href = "https://qa1.perfectionlearning.com/reports/overview";
+          location.href = coreData.bookData["grades_link"];
           //window.open("https://qa1.kineticmath.com/reports/overview");
           break;
         case "factbook":
-          window.open("course/factbook/index.html", "factbook", "toolbar=yes,scrollbars=yes,resizable=yes,top=0,left=0,width=760,height=593");
+          window.open("course/factbook/index.html", "factbook", "toolbar=yes,scrollbars=yes,resizable=0,top=0,left=0,width=842,height=593");
           overlayDown()
           break;
         case "setting":
           $(".pSearchAreaWrapper").hide();
-          location.hash = "type_" + _obj.type;
+          location.hash = escape("type_" + _obj.type);
           if ($(p.mShell).find(".videoWrapper").hasClass("vOpen")) {
             videoPlayer.stopVideo();
           }
@@ -1381,7 +1389,7 @@
           initBook();
           $(p.mShell).find(".pMenu").removeClass('pDisable');
           $(p.mShell).find(".book_bck").hide();
-          location.hash = "type_" + _obj.type;
+          location.hash = escape("type_" + _obj.type);
           if ($(p.mShell).find(".videoWrapper").hasClass("vOpen")) {
             videoPlayer.stopVideo();
           }
@@ -1393,6 +1401,7 @@
           $(p.mShell).find(".pLabPageWrapper").hide();
           $(p.mShell).find(".pLabSubmitButton").hide();
           $(p.mShell).find('.pBookWrapper').show();
+          $(".pSearchAreaWrapper").hide();
           overlayDown()
           break;
       }
@@ -1468,9 +1477,12 @@
     }
     function overlayDown(e) {
       if (typeof e != "undefined") {
-        if (!$(e.target).hasClass('accSysmbol') && !$(e.target).hasClass('pSubTopicName') && !$(e.target).hasClass('pSubMenuTopicHeader') && !$(e.target).hasClass('pSubmenuButton')) {
+        if (!$(e.target).hasClass('accSysmbol') && !$(e.target).hasClass('pSubTopicName') && !$(e.target).hasClass('pSubMenuTopicHeader') && !$(e.target).hasClass('pSubmenuButton') && !$(e.target).hasClass('pLabSubMenuButton ')) {
           $('.pSubMenuWrap').removeClass("open");
           $('.pSubmenuButton').removeClass("open");
+          $(p.mShell).find(".pLabSubMenu").css("left", -$(p.mShell).find(".pLabSubMenu").outerWidth(true));
+          $('.pLabSubMenuButton').removeClass("pSelected open");
+          $(p.mShell).find(".pLabSubMenu").data("open", false);
         }
       } else {
         //$('.pSubMenuWrap').removeClass("open");

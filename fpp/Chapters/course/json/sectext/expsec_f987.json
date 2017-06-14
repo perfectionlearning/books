@@ -18,7 +18,7 @@
     "Work can be performed on a system, but the system can also do work. In fact, many systems, such as <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='wb_engine_concept1'>engines</a>, are designed to do work.  When the system does positive work on its surroundings, the system’s energy is reduced.",
     "For example, dams are one way to store <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='wb_pe_definition'>gravitational potential energy</a>. Consider the system of dam and water and Earth. The water is held back behind the dam, retaining gravitational potential energy.    ",
     "When the water is allowed to fall down the face of a dam, it may spin the blades of a turbine.  The water is doing work, reducing the system’s gravitational potential energy.  ",
-    "The water does work spinning the turbine blades, giving them more kinetic energy, which changes into electrical energy.  Energy has transferred from the dam system to the electric grid system."
+    "The water does work spinning the turbine blades, giving them kinetic energy, which changes into electrical energy.  Energy has transferred from the dam system to the electrical grid system."
   ],
   "objNames": [
     "wb_work_by_system_and_energy"

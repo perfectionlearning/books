@@ -1,0 +1,16 @@
+{
+  "cards": [
+    {
+      "lines": [
+        
+      ]
+    }
+  ],
+  "definitions": [],
+  "secText": [
+	"<span style='float:left;clear:both;font-weight:bold;'>Essential Questions:</span></br><ol style='list-style-type: decimal;padding-left: 25px;float:left;'><li style = 'padding-left:15px;text-align:left;margin-bottom: 5px;'>How does resistance affect the flow of electric current?</li><li style = 'padding-left:15px;text-align:left;margin-bottom: 5px;'>How can we measure capacitance?</li><li style = 'padding-left:15px;text-align:left;margin-bottom: 5px;'>How does current behave in an electric circuit?</li><li style = 'padding-left:15px;text-align:left;margin-bottom: 5px;'>How can we measure the resistance of electric circuits in series and parallel wiring?</li><li style = 'padding-left:15px;text-align:left;margin-bottom: 5px;'>How can we measure the resistance of electric circuits in mixed circuits?</li><li style = 'padding-left:15px;text-align:left;margin-bottom: 5px;'>How can we measure the capacitance of electric circuits in series and parallel?</li></ol>"
+  ],
+  "objNames": [
+    
+  ]
+}

@@ -30,7 +30,7 @@
     "We use the work equation to show that work can be negative.",
     "Let’s assume the force is in the opposite direction of the displacement.  In this example, the force applied is trying to slow the moving ball.  The force is to the left, and the ball’s displacement is to the right. In this case, the angle between the force and displacement vectors is 180°.",
     "The cosine of 180 degrees is <span class=\"math\">−1.</span> Whatever the magnitudes of force and displacement, the cosine factor makes the sign of the work negative. ",
-    "What is the significance of negative work?  As we discuss later, <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='wb_work_on_system_and_energy_subtract'>negative work done on an object</a> reduces its energy.  The ball here is moving more slowly − it will have less energy − due to the negative work performed on it. "
+    "What is the significance of negative work?  As we discuss later, <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='wb_work_on_system_and_energy_subtract'>negative work done on an object</a> reduces its energy.  The ball here is moving more slowly − it will have less kinetic energy − due to the negative work performed on it. "
   ],
   "objNames": [
     "wb_work_negative",

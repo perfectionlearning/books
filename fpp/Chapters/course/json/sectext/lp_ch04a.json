@@ -1,0 +1,16 @@
+{
+  "cards": [
+    {
+      "lines": [
+        
+      ]
+    }
+  ],
+  "definitions": [],
+  "secText": [
+    "  <b><span style='float:left ;clear:both ;text-align:left;margin-bottom: 5px;'>Essential Questions:</span></b> <span style='float:left ;clear:both ;text-align:left;font-weight'></b></span><ol style='list-style-type: decimal;padding-left: 25px;float:left;clear:both'><li style = 'padding-left:15px;text-align:left;margin-bottom: 5px;'>How can we describe two-dimensional motion?</li><li style = 'padding-left:15px;text-align:left;margin-bottom: 5px;'>How can we graph and calculate projectile motion?</li><li style = 'padding-left:15px;text-align:left;margin-bottom: 5px;'>How can we calculate the magnitude of a vector given its components?</li><li style = 'padding-left:15px;text-align:left;margin-bottom: 5px;'>How can we combine two vectors?</li><li style = 'padding-left:15px;text-align:left;margin-bottom: 5px;'>How can we calculate projectile motion at an angle?</li><li style = 'padding-left:15px;text-align:left;margin-bottom: 5px;'>How can we multiply a rectangular vector by a scalar?</li><li style = 'padding-left:15px;text-align:left;margin-bottom: 5px;'>How can we convert from rectangular form to polar form and vice versa?</li></ol>"
+  ],
+  "objNames": [
+    
+  ]
+}

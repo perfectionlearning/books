@@ -1,0 +1,21 @@
+{
+  "cards": [
+    {
+      "lines": [
+        
+      ]
+    }
+  ],
+  "definitions": [],
+  "secText": [
+    "  <b><span style='float:left ;clear:both ;text-align:left;margin-bottom: 5px;'>Essential Questions:</span></b> <ol style='list-style-type: decimal;padding-left: 25px;float:left;clear:both'><li style = 'padding-left:15px;text-align:left;margin-bottom: 5px;'>How can we analyze equations using data and graphs?</li><li style = 'padding-left:15px;text-align:left;margin-bottom: 5px;'>How can we analyze motion using position-time graphs?</li><li style = 'padding-left:15px;text-align:left;margin-bottom: 5px;'>How can we analyze data using scatter plots and trend lines?</li><li style = 'padding-left:15px;text-align:left;margin-bottom: 5px;'>How can we use our surroundings to understand freefall acceleration?</li><li style = 'padding-left:15px;text-align:left;margin-bottom: 5px;'>How can we use reference frames to measure relative velocity?</li></ol></span>",
+	
+	
+    " <b><span style='float:left ;clear:both ;text-align:left;margin-bottom: 5px;margin-top:10px;'>Enduring Understandings:</span></b>  <ol style='list-style-type: decimal;padding-left: 25px;float:left;clear:both'><li style = 'padding-left:15px;text-align:left;margin-bottom: 5px;'>Classify relationships as proportional, linear, inversely proportional, and nonlinear.</li><li style = 'padding-left:15px;text-align:left;margin-bottom: 5px;'>Identify and calculate rates in graphs.</li><li style = 'padding-left:15px;text-align:left;margin-bottom: 5px;'>Identify the x- and y-axes, and analyze slope in a position-time graph.</li><li style = 'padding-left:15px;text-align:left;margin-bottom: 5px;'>Analyze a position-time graph for velocity and acceleration.</li><li style = 'padding-left:15px;text-align:left;margin-bottom: 5px;'>Create scatter plots and draw trend lines.</li><li style = 'padding-left:15px;text-align:left;margin-bottom: 5px;'>Analyze scatter plots and trend lines using standard deviation and regression.</li><li style = 'padding-left:15px;text-align:left;margin-bottom: 5px;'>Freefall acceleration is a constant value, but it has different values depending on your location in the universe.</li><li style = 'padding-left:15px;text-align:left;margin-bottom: 5px;'>Reference frames are different for each observer.</li><li style = 'padding-left:15px;text-align:left;margin-bottom: 5px;'>Relative velocity can be calculated based on the velocities observed in the reference frame of each observer.</li></ol>",
+    "  <span style='float:left;clear:both;text-align:left;margin-top:10px;'><b>Vocabulary: </b>freefall acceleration, inversely proportional, linear regression, linear relationship, nonlinear, position-time graphs, proportional, rate, reference frame, relationship, relative velocity scatter plot, standard deviation, trend line</span>",
+	"  <b><span style='float:left ;clear:both ;text-align:left;margin-bottom: 5px;margin-top:10px;'>STEM Skills:</span></b><ol style='list-style-type: decimal;padding-left: 25px;float:left;clear:both'><li style = 'padding-left:15px;text-align:left;margin-bottom: 5px;'>Analyze graphs.</li><li style = 'padding-left:15px;text-align:left;margin-bottom: 5px;'>Calculate slope.</li><li style = 'padding-left:15px;text-align:left;margin-bottom: 5px;'>Analyze data.</li><li style = 'padding-left:15px;text-align:left;margin-bottom: 5px;'>Review vectors.</li><li style = 'padding-left:15px;text-align:left;margin-bottom: 5px;'>Use motion equations.</li><li style = 'padding-left:15px;text-align:left;margin-bottom: 5px;'>Solve an equation for a variable.</li></ol>"
+  ],
+  "objNames": [
+    
+  ]
+}

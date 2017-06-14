@@ -1,0 +1,18 @@
+{
+  "cards": [
+    {
+      "lines": [
+        
+      ]
+    }
+  ],
+  "definitions": [],
+  "secText": [
+    "  <b><span style='float:left ;clear:both ;text-align:left;'>Stem Skills:</span></b>",
+
+	"<ol style='list-style-type: decimal;padding-left: 25px;line-height: 32px;float:left;clear:both'><li style = 'padding-left:15px;text-align:left'>Solve an equation for a variable.</li><li style = 'padding-left:15px;text-align:left'>Analyze an equation for relationships between variables.</li><li style = 'padding-left:15px;text-align:left'>Recognize vectors.</li><li style = 'padding-left:15px;text-align:left'>Review how to calculate an average.</li><li style = 'padding-left:15px;text-align:left'>Review constants in equations.</li></ol>"
+  ],
+  "objNames": [
+    
+  ]
+}

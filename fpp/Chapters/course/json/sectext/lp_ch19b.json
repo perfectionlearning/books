@@ -1,0 +1,16 @@
+{
+  "cards": [
+    {
+      "lines": [
+        
+      ]
+    }
+  ],
+  "definitions": [],
+  "secText": [
+	"<span style='float:left;clear:both;font-weight:bold;'>STEM Skills:</span></br><ol style='list-style-type: decimal;padding-left: 25px;float:left;'><li style = 'padding-left:15px;text-align:left;margin-bottom: 5px;'>Review electric fields.</li><li style = 'padding-left:15px;text-align:left;margin-bottom: 5px;'>Review magnetic fields.</li><li style = 'padding-left:15px;text-align:left;margin-bottom: 5px;'>Review transverse waves.</li><li style = 'padding-left:15px;text-align:left;margin-bottom: 5px;'>Review the area of a circle.</li><li style = 'padding-left:15px;text-align:left;margin-bottom: 5px;'>Review sound intensity.</li><li style = 'padding-left:15px;text-align:left;margin-bottom: 5px;'>Review generators and AC.</li><li style = 'padding-left:15px;text-align:left;margin-bottom: 5px;'>Review electrons.</li></ol>"
+  ],
+  "objNames": [
+    
+  ]
+}

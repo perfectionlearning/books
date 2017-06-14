@@ -3,7 +3,7 @@
     var p = {};
     p.subSection = 0;
     p.userId;
-    p.usertype;
+    p.usertype = "Teacher";
     var coreData;
     var lessonFlag = false;
     this.init = function () {
@@ -28,6 +28,7 @@
         p.set_link = _data.put_link;
         p.session_info = _data.session_info;
         p.setting = _data.setting;
+        p.wrap_data = _data.wrap_data;
         getUserId();
         $(document).trigger("getBookData", {bookData: _data});
 
@@ -36,7 +37,7 @@
     }
     function getUserId() {
       var request = $.ajax({
-        url: "https://qa1.perfectionlearning.com/api/endpoint/output/wrapping/set",
+        url: p.wrap_data,
         xhrFields: {
           withCredentials: true
         },
@@ -133,6 +134,7 @@
 
     }
     this.hashChange = function (data) {
+      console.log(data.type);
       if (data.type == "chapter") {
         p.chap = data.chap;
         p.unit = data.unit;
@@ -159,6 +161,11 @@
           loadScreen();
         }
 
+      } else if (data.type == "additonal-resource") {
+        var _data = {};
+        _data.SectionHeading = data.title;
+        _data.ref = data.href;
+        $(document).trigger("loadAdditionalResource", {screenData: _data})
       } else if (data.type == "search") {
         $(document).trigger("showSearchBox", {searchKey: data.searchKey});
       } else {
@@ -174,7 +181,7 @@
       updateSubMenu();
       var screenNo;
       blockHashEvent = true;
-      location.hash = 'lesson_' + lessonFlag + '/type_chapter/chapter_' + p.chap + '/unit_' + p.unit + '/section_' + p.section + '/subsection_' + p.subSection;
+      location.hash = escape('lesson_' + lessonFlag + '/type_chapter/chapter_' + p.chap + '/unit_' + p.unit + '/section_' + p.section + '/subsection_' + p.subSection);
       setTimeout(function () {
         blockHashEvent = false;
       }, 500);
@@ -186,7 +193,7 @@
           if (p.section == 1) {
             screenNo = "";
           } else {
-            screenNo = "Lesson " + (Number(p.section) - 1) + "." + (chr);
+            screenNo = "Lesson " + (Number(p.section) - 1) + "." + (chr) + ":";
           }
         }
       } else {
@@ -381,5 +388,10 @@
 
 
     }
+
+    this.getLabRef = function (src) {
+      return view.getLabRef(src);
+    }
+
     this.init();
   }

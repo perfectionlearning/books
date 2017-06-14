@@ -1,0 +1,16 @@
+{
+  "cards": [
+    {
+      "lines": [
+        
+      ]
+    }
+  ],
+  "definitions": [],
+  "secText": [
+	"<span style='float:left;clear:both;font-weight:bold;'>Essential Questions:</span></br><ol style='list-style-type: decimal;padding-left: 25px;float:left;'><li style = 'padding-left:15px;text-align:left;margin-bottom: 5px;'>How can we describe and quantify magnetic fields?</li><li style = 'padding-left:15px;text-align:left;margin-bottom: 5px;'>How are magnetic fields created?</li><li style = 'padding-left:15px;text-align:left;margin-bottom: 5px;'>How can we quantify electromagnetic induction?</li><li style = 'padding-left:15px;text-align:left;margin-bottom: 5px;'>How can we calculate the magnetic force and current of a current-carrying wire in a magnetic field?</li><li style = 'padding-left:15px;text-align:left;margin-bottom: 5px;'>How can we calculate properties of particles in magnetic fields when the magnetic field is not perpendicular to the magnetic force, velocity of the particle, or magnetic flux?</li><li style = 'padding-left:15px;text-align:left;margin-bottom: 5px;'>How can we quantify electromagnetic induction?</li><li style = 'padding-left:15px;text-align:left;margin-bottom: 5px;'>How do transformers use mutual induction?</li><li style = 'padding-left:15px;text-align:left;margin-bottom: 5px;'>How has our understanding of the electric and magnetic force evolved over time?</li></ol>"
+  ],
+  "objNames": [
+    
+  ]
+}

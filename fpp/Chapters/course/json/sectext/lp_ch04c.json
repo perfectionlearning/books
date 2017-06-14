@@ -1,0 +1,18 @@
+{
+  "cards": [
+    {
+      "lines": [
+        
+      ]
+    }
+  ],
+  "definitions": [],
+  "secText": [
+    "  <span style='float:left ;clear:both ;text-align:left;margin-bottom: 5px;'><b>Vocabulary: </b>adding vectors using components, inverse function, multiplying a polar vector by a scalar, multiplying a vector, projectile, Pythagorean theorem, right triangle, trigonometry, vector (polar), vectors (rectangular coordinates), velocity (in two dimensions)</span>",
+	
+	"<b><span style='float:left ;clear:both ;text-align:left;margin-bottom: 5px;margin-top:10px'>STEM Skills:</span></b> <ol style='list-style-type: decimal;padding-left: 25px;float:left;clear:both'><li style = 'padding-left:15px;text-align:left;margin-bottom: 5px;'>Review displacement in one dimension.</li><li style = 'padding-left:15px;text-align:left;margin-bottom: 5px;'>Review velocity in one dimension.</li><li style = 'padding-left:15px;text-align:left;margin-bottom: 5px;'>Review velocity components.</li><li style = 'padding-left:15px;text-align:left;margin-bottom: 5px;'>Review position-time graphs.</li><li style = 'padding-left:15px;text-align:left;margin-bottom: 5px;'>Review exponents</li><li style = 'padding-left:15px;text-align:left;margin-bottom: 5px;'>Review PEMDAS.</li><li style = 'padding-left:15px;text-align:left;margin-bottom: 5px;'>Review right triangles.</li><li style = 'padding-left:15px;text-align:left;margin-bottom: 5px;'>Review vectors.</li><li style = 'padding-left:15px;text-align:left;margin-bottom: 5px;'>Review the Pythagorean theorem.</li></ol>"
+  ],
+  "objNames": [
+    
+  ]
+}

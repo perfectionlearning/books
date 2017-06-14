@@ -1,0 +1,39 @@
+{
+  "cards": [
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Vectors in polar coordinates"
+        },
+        {
+          "type": "headline",
+          "text": "Length of vector represents magnitude"
+        },
+        {
+          "type": "headline",
+          "text": "Angle made with positive <i>x</i>-axis"
+        }
+      ]
+    },
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Polar vector multiplied by scalar <i>c</i>"
+        },
+        {
+          "type": "headline",
+          "text": "  <math>    <mrow>      <mi>v</mi>      <mo>=</mo>      <mo stretchy=\"false\">(</mo>      <mrow>        <mo closing=\"false\">|</mo>        <mi>c</mi>        <mo closing=\"true\">|</mo>      </mrow>      <mo>·</mo>      <mtext>magnitude, angle</mtext>      <mo stretchy=\"false\">)</mo>    </mrow>  </math>"
+        }
+      ]
+    }
+  ],
+  "definitions": [],
+  "secText": [
+    "  <span style='float:left;clear: both;font-weight:bold;margin-bottom: 5px;'>Essential Questions:</span><ol style='list-style-type: decimal;padding-left: 25px;float:left;'><li style = 'padding-left:15px;text-align:left;margin-bottom: 5px;'>How can we explain special relativity?</li><li style = 'padding-left:15px;text-align:left;margin-bottom: 5px;'>How can we describe and organize the subatomic particles that compose the universe and how can we describe the particles that have been inferred but not yet confirmed?</li><li style = 'padding-left:15px;text-align:left;margin-bottom: 5px;'>How are the properties of subatomic particles discovered?</li></ol>",
+    "  <span style='float:left;clear: both;font-weight:bold;margin-bottom: 5px;'>Enduring Understandings:</span>  <ol style='list-style-type: decimal;padding-left: 25px;float:left;'><li style = 'padding-left:15px;text-align:left;margin-bottom: 5px;'>A reference frame is a point of view for observing motion.</li><li style = 'padding-left:15px;text-align:left;margin-bottom: 5px;'>The speed of light is 299,792,458 m/s in a vacuum. The speed of light is constant and does not change in an observer’s or source’s reference frame.</li><li style = 'padding-left:15px;text-align:left;margin-bottom: 5px;'>Time dilates by a given factor when either a clock or an observer of the clock are moving with respect to the other.</li><li style = 'padding-left:15px;text-align:left;margin-bottom: 5px;'>An object’s length contracts by a given factor when either the object or an observer of the object is moving with respect to the other.</li><li style = 'padding-left:15px;text-align:left;margin-bottom: 5px;'>The Doppler light equation states the source frequency times the square root of one minus the speed of the observer divided by the speed of light, all divided by one plus the speed of the observer divided by the speed of light.</li><li style = 'padding-left:15px;text-align:left;margin-bottom: 5px;'>The Standard Model is composed of all the sub-atomic particles which make up the building blocks of matter: quarks, leptons, fermions, and bosons.</li><li style = 'padding-left:15px;text-align:left;margin-bottom: 5px;'>Dark matter is matter that does not emit light, and its existence is deduced from the properties of gravity. Its composition is not known. Dark energy has not been observed, but its existence is inferred from the expansion of the universe. Dark matter is repulsive.</li><li style = 'padding-left:15px;text-align:left;margin-bottom: 5px;'>Black holes are composed of matter so dense that the force of gravity within the black hole prevents light from escaping.</li><li style = 'padding-left:15px;text-align:left;margin-bottom: 5px;'>Gravitational lensing causes light to change direction because of a strong gravitational force.</li><li style = 'padding-left:15px;text-align:left;margin-bottom: 5px;'>The Big Bang theory is the model for the origin of the universe.</li><li style = 'padding-left:15px;text-align:left;margin-bottom: 5px;'>Particle accelerators accelerate particles to near the speed of light. When the particles collide, data on the properties of the particles can be studied.</li><li style = 'padding-left:15px;text-align:left;margin-bottom: 5px;'>Particle accelerators are responsible for the discovery of the Higgs boson, quarks, and antimatter atoms. The CERN Large Hadron Collider is the largest particle accelerator facility in the world.</li></ol>"
+  ],
+  "objNames": [
+  ]
+}

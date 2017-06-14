@@ -1,0 +1,18 @@
+{
+  "cards": [
+    {
+      "lines": [
+        
+      ]
+    }
+  ],
+  "definitions": [],
+  "secText": [
+	"<span style='float:left;clear:both;font-weight:bold;'>Enduring Understandings Continued:</span></br><ol start='17' style='list-style-type: decimal;padding-left: 25px;float:left;'><li style = 'padding-left:15px;text-align:left;margin-bottom: 5px;'>When the magnetic flux is perpendicular to the magnetic field, calculate the magnetic flux by multiplying the area vector by the magnetic field, by the cosine of the angle between the magnetic field and area vector.</li><li style = 'padding-left:15px;text-align:left;margin-bottom: 5px;'>Lenz's law states that an induced current flows so that the direction of its magnetic field opposes the change in magnetic flux that causes the current.</li><li style = 'padding-left:15px;text-align:left;margin-bottom: 5px;'>Electric generators are applications of motional induced emf and torque on a current-carrying loop.</li><li style = 'padding-left:15px;text-align:left;margin-bottom: 5px;'>Mutual induction occurs when the changing current in one circuit creates current in another circuit.</li><li style = 'padding-left:15px;text-align:left;margin-bottom: 5px;'>The ratio of the number of turns on the two sides of a transformer is equivalent to the ratio of the potential difference between the two sides of the transformer.</li><li style = 'padding-left:15px;text-align:left;margin-bottom: 5px;'>The concept of electric force and magnetic force were added to throughout history. Every discovery made by scientists such as Joseph Priestly, Charles Coulomb, Christian Oerstad, and James Clerk Maxwell was added to over years of hypotheses and experiments.</li></ol>",
+    "<span style='text-align: left;float: left;clear: both;margin-top:10px;'><b>Vocabulary:</b> electromagnetic induction, Faraday's law, Hall effect, Lenz's law, magnetic field, mutual induction</span>",
+	"<span style='float:left;clear:both;font-weight:bold;margin-top:10px;'>STEM Skills:</span></br><ol style='float:left;clear:both;list-style-type: decimal;padding-left: 25px;float:left;'><li style = 'padding-left:15px;text-align:left;margin-bottom: 5px;'>Review charge.</li><li style = 'padding-left:15px;text-align:left;margin-bottom: 5px;'>Review velocity.</li><li style = 'padding-left:15px;text-align:left;margin-bottom: 5px;'>Review force.</li><li style = 'padding-left:15px;text-align:left;margin-bottom: 5px;'>Review electric current.</li><li style = 'padding-left:15px;text-align:left;margin-bottom: 5px;'>Review emf.</li><li style = 'padding-left:15px;text-align:left;margin-bottom: 5px;'>Review circular motion.</li><li style = 'padding-left:15px;text-align:left;margin-bottom: 5px;'>Review electric current.</li><li style = 'padding-left:15px;text-align:left;margin-bottom: 5px;'>Review trigonometric functions.</li><li style = 'padding-left:15px;text-align:left;margin-bottom: 5px;'>Review electromagnetic induction.</li><li style = 'padding-left:15px;text-align:left;margin-bottom: 5px;'>Review potential difference.</li><li style = 'padding-left:15px;text-align:left;margin-bottom: 5px;'>Review electric force.</li><li style = 'padding-left:15px;text-align:left;margin-bottom: 5px;'>Review magnetic force.</li></ol>"
+  ],
+  "objNames": [
+    
+  ]
+}

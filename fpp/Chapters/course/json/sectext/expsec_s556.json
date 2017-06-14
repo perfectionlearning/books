@@ -21,7 +21,7 @@
   ],
   "secText": [
     "The electromagnetic spectrum includes everything from <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='wb_electromagnetic_spectrum2'>radio signals</a> to <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='wb_electromagnetic_spectrum3'>visible light</a> to gamma rays.  We will discuss these various forms of radiation shortly.",
-    "We order the types of radiation by their frequencies, with the lowest frequency on the left. Since the wavelength is inversely proportional to the frequency, it is smallest on the right, and increases as you move to the left."
+    "We order the types of radiation by their frequencies, with the lowest frequency on the left. The energy (of a photon of electromagnetic radiation) also increases from left to right since a photon’s energy is proportional to its frequency. On the other hand, since  the wavelength is inversely proportional to the frequency, it is smallest on the right, and increases as you move to the left. "
   ],
   "objNames": [
     "wb_electromagnetic_spectrum1"

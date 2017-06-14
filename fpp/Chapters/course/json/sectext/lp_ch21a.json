@@ -1,0 +1,16 @@
+{
+  "cards": [
+    {
+      "lines": [
+        
+      ]
+    }
+  ],
+  "definitions": [],
+  "secText": [
+	"<span style='float:left;clear:both;font-weight:bold;'>Essential Questions:</span></br><ol style='list-style-type: decimal;padding-left: 25px;float:left;'><li style = 'padding-left:15px;text-align:left;margin-bottom: 5px;'>How can we calculate how much light refracts?</li><li style = 'padding-left:15px;text-align:left;margin-bottom: 5px;'>What happens to the direction and wavelength of light when light is refracted?</li><li style = 'padding-left:15px;text-align:left;margin-bottom: 5px;'>What causes total internal reflection?</li><li style = 'padding-left:15px;text-align:left;margin-bottom: 5px;'>How can we apply dispersion to real-world examples?</li><li style = 'padding-left:15px;text-align:left;margin-bottom: 5px;'>How can we describe converging and diverging lenses?</li><li style = 'padding-left:15px;text-align:left;margin-bottom: 5px;'>How can we apply the concept of converging and diverging lenses to the real world?</li><li style = 'padding-left:15px;text-align:left;margin-bottom: 5px;'>How can we calculate the properties of thin lenses?</li></ol>"
+  ],
+  "objNames": [
+    
+  ]
+}

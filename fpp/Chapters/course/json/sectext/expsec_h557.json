@@ -34,7 +34,7 @@
   "secText": [
     "Centripetal acceleration occurs in uniform circular motion.",
     "When an object is <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='actwb_acceleration_definition'>accelerating</a> due to its motion along a circular path, this form of acceleration is called centripetal acceleration. The acceleration vector, shown in green, always points toward the circle’s center.",
-    "To emphasize a point: This form of acceleration is due only to motion along a curved path at constant speed.  Acceleration due to a change in speed as it travels a curved path is called tangential acceleration.  ",
+    "To emphasize a point: This form of center-directed acceleration is due only to the fact that the motion along the curved path is changing direction.  Acceleration due to a change in speed as it travels a curved path is called tangential acceleration.  ",
     "The amount of centripetal acceleration is proportional to the speed squared.  Think about running in a circle − the faster you run, the faster you are changing direction.",
     "Centripetal acceleration decreases with increase of radius.  The bigger the circle you are running around, the less rapidly you change direction. ",
     "One way to remember this: Consider trying to run around in circles on ice.  The harder it is to stay on the path, the more you are accelerating.  Fast, small circles are harder than slow, large circles."

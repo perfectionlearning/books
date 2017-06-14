@@ -1,0 +1,12 @@
+{
+  "cards": [
+    {
+      "lines": []
+    }
+  ],
+  "definitions": [],
+  "secText": [
+    "  <b><span style='float:left ;clear:both ;text-align:left;margin-bottom: 5px;'>Essential Questions:</span></b> <ol style='list-style-type: decimal;padding-left: 25px;float:left;clear:both'><li style = 'padding-left:15px;text-align:left;margin-bottom: 5px;'>How can we define rotational motion?</li><li style = 'padding-left:15px;text-align:left;margin-bottom: 5px;'>How can we calculate rotational motion?</li><li  style = 'padding-left:15px;text-align:left;margin-bottom: 5px;'>How are rotational motion equations similar to linear motion equations?</li><li style = 'padding-left:15px;text-align:left;margin-bottom: 5px;'>How can we calculate the torque acting on an object?</li><li style = 'padding-left:15px;text-align:left;margin-bottom: 5px;'>How can we use the moment of inertia to calculate net torque?</li><li style = 'padding-left:15px;text-align:left;margin-bottom: 5px;'>How can we calculate an object's angular momentum?</li><li style = 'padding-left:15px;text-align:left;margin-bottom: 5px;'>How can we define static equilibrium?</li><li style = 'padding-left:15px;text-align:left;margin-bottom: 5px;'>How can we measure the efficiency of a machine?</li></ol>"
+  ],
+  "objNames": []
+}

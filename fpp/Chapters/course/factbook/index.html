@@ -15,11 +15,18 @@
 		<script type="text/x-mathjax-config">
 			MathJax.Hub.Config({
 			  jax: ["input/TeX","input/MathML","input/AsciiMath","output/CommonHTML"],
+                          "HTML-CSS": {
+					availableFonts: ["STIX-Web"],
+					preferredFont: "STIX-Web", // force Web fonts
+					webFont: "STIX-Web",
+					matchFontHeight: false
+				},
 			  extensions: ["tex2jax.js","mml2jax.js","asciimath2jax.js","MathMenu.js","MathZoom.js","AssistiveMML.js", "a11y/accessibility-menu.js"],
 			  TeX: {
 				extensions: ["AMSmath.js","AMSsymbols.js","noErrors.js","noUndefined.js"]
 			  },
-			  tex2jax: {inlineMath: [["$","$"],["\\(","\\)"]]}
+			  tex2jax: {inlineMath: [["$","$"],["\\(","\\)"]]},
+                          skipStartupTypeset: true
 			});
 		</script>
 
@@ -94,7 +101,7 @@
 							<li>Quantum and Nuclear Physics</li>
 						</ul>
 					</td>
-					<td style="background-color: #566a82;width: 100px;box-shadow: 0px 1px 0px #566a82, 0px -1px 0px #566a82;">
+					<td style="background-color: #2c3e50;width: 100px;box-shadow: 0px 1px 0px #2c3e50, 0px -1px 0px #2c3e50;">
 					</td>
 				</tr>
 				
@@ -167,7 +174,7 @@
 							<tr><td>ln $x$</td><td>the natural logarithm (base e) of $x$</td></tr>
 							<tr><td>e</td><td>an irrational number defined by</td></tr>
 							<!--<tr><td></td><td>$e = \lim_{n\to \infty}{(1+\frac1n)}^n$</td></tr>-->
-							<tr><td></td><td><math><mtable columnalign='left'><mtr><mtd><mi>e</mi><mo>=</mo><munder><mrow><mi>lim</mi><mo>&#x2061;</mo></mrow><mrow><mtext>n</mtext><mo>&#x2192;</mo><mi>&#x221E;</mi></mrow></munder><msup><mrow><mo>(</mo><mrow><mn>1</mn><mo>+</mo><mfrac><mn>1</mn><mi>n</mi></mfrac></mrow><mo>)</mo></mrow><mtext>n</mtext></msup></mtd></mtr><mtr><mtd><mi>e</mi><mo>&#x2248;</mo><mtext>2</mtext><mtext>.718</mtext></mtd></mtr></mtable></math></td></tr>
+							<tr><td></td><td><math><mtable columnalign='left'><mtr><mtd><mi>e</mi><mo>=</mo><munder><mrow><mi>lim</mi><mo>&#x2061;</mo></mrow><mrow><mtext>n</mtext><mo>&#x2192;</mo><mi>&#x221E;</mi></mrow></munder><msup><mrow><mo>(</mo><mrow><mn>1</mn><mo>+</mo>  <mstyle mathsize="140%">    <mfrac><mn>1</mn><mi>n</mi>   </mfrac>  </mstyle></mrow><mo>)</mo></mrow><mtext>n</mtext></msup></mtd></mtr><mtr><mtd><mi>e</mi><mo>&#x2248;</mo><mtext>2</mtext><mtext>.718</mtext></mtd></mtr></mtable></math></td></tr>
 							
 							<!--<tr><td></td><td>$e \approx 2.718$</td></tr>-->
 						</table>
@@ -203,7 +210,9 @@
 							<tr><td>$\cos^2 \theta + \sin^2 \theta = 1$<br><br></td></tr>
 							<tr><td>$\sin (\alpha \pm \beta )= \sin \alpha \cos \beta \pm \cos \alpha \sin \beta$<br><br></td></tr>
 							<tr><td>$\cos (\alpha \pm \beta )= \cos \alpha \cos \beta \mp \sin \alpha \sin \beta$<br><br></td></tr>
-							<tr><td>$\tan (\alpha \pm \beta )= \frac{\tan \alpha \pm \tan \beta }{1 \mp \tan \alpha \tan \beta }$<br><br></td></tr>
+							<!--<tr><td>$\tan (\alpha \pm \beta )= \frac{\tan \alpha \pm \tan \beta }{1 \mp \tan \alpha \tan \beta }$<br><br></td></tr>-->
+							<tr><td><math><mrow><mi>tan</mi><mo>&#x2061;</mo><mrow><mo>(</mo><mrow><mtext>&#x03B1;</mtext><mo>&#x00B1;</mo><mi>&#x03B2;</mi></mrow><mo>)</mo></mrow><mo>=</mo><mstyle mathsize="140%"><mfrac><mrow><mi>tan</mi><mo>&#x2061;</mo><mtext>&#x03B1;</mtext><mo>&#x00B1;</mo><mi>tan</mi><mo>&#x2061;</mo><mi>&#x03B2;</mi></mrow><mrow><mn>1</mn><mo>&#x2213;</mo><mi>tan</mi><mo>&#x2061;</mo><mtext>&#x03B1;</mtext><mi>tan</mi><mo>&#x2061;</mo><mi>&#x03B2;</mi></mrow></mfrac></mstyle></mrow></math><br><br></td></tr>
+							
 							<tr><td>$\sin \alpha \pm \sin \beta = 2\sin [\frac12 (\alpha \pm \beta)]\cos [\frac12 (\alpha \mp \beta)]$</td></tr>
 							
 						</table>
@@ -241,7 +250,9 @@
 							<tr><td style="width: 140px;">${(x^a)}^b=x^{ab}$</td><td style="width: 140px;">$x^0=1$</td><td style="width: 140px;">$x^1=x$</td></tr>
 						</table><br><br>
 						<div><b>Quadratic formula</b><br><br></div>
-						<div>The roots of a quadratic equation of the form $ax^2+bx+c=0$ are given by<br>$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$<br><br></div>
+						<!--
+						<div>The roots of a quadratic equation of the form $ax^2+bx+c=0$ are given by<br>$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$<br><br></div>-->
+						<div>The roots of a quadratic equation of the form $ax^2+bx+c=0$ are given by<br><math><mrow><mi>x</mi><mo>=</mo><mstyle mathsize="140%"><mfrac><mrow><mo>&#x2212;</mo><mi>b</mi><mo>&#x00B1;</mo><msqrt><mrow><msup><mi>b</mi><mn>2</mn></msup><mo>&#x2212;</mo><mn>4</mn><mi>a</mi><mi>c</mi></mrow></msqrt></mrow><mrow><mn>2</mn><mi>a</mi></mrow></mfrac></mstyle></mrow></math><br><br></div>
 						<div><b>Logarithms</b><br></div>
 						<div>$x = a^y$ can be written as $y=\log_ax$<br></div>
 						<div>a is known as the base number. When no base is specified, it is assumed to be 10.<br>$x=10^y$ can be written as $y = \log x$<br></div>
@@ -255,9 +266,10 @@
 						<div>Linear equations<br></div>
 						<div><img src="images/equationofline.png"></img></div>
 						<div>The equation of a line is $y=ax+b$, where $a$ is called the slope and $b$ is called the y-intercept.<br><br></div>
-						<div>$slope=a= $${\Delta y}\over{\Delta x}$$=$${(y_2-y_1)}\over{(x_2-x_1)}$</div><br><br>
+						<!--<div>$slope=a= $${\Delta y}\over{\Delta x}$$=$${(y_2-y_1)}\over{(x_2-x_1)}$</div><br><br>-->
+						<div><math><mrow><mtext>slope</mtext><mo>=</mo><mi>a</mi><mo>=</mo><mstyle mathsize="140%"><mfrac><mrow><mi>&#x0394;</mi><mi>y</mi></mrow><mrow><mi>&#x0394;</mi><mi>x</mi></mrow></mfrac></mstyle><mo>=</mo><mstyle mathsize="140%"><mfrac><mrow><msub><mi>y</mi><mn>2</mn></msub><mo>&#x2212;</mo><msub><mi>y</mi><mn>1</mn></msub></mrow><mrow><msub><mi>x</mi><mn>2</mn></msub><mo>&#x2212;</mo><msub><mi>x</mi><mn>1</mn></msub></mrow></mfrac></mstyle></mrow></math></div><br><br>
 						<div>Solving systems of linear equations (also called simultaneous equations):<br><br>A system of independent linear equations containing $n$ unknown variables can be solved when the<br><br> number of equations is $n$ or greater. One method of solving the system is:<br><br>1. Write the equations in the same form. Below we write both equations in the form $ax+by=c$.<br></div>
-						<div>$5x+(x-y)=3 \rightarrow 6x-y=3$<br>$2y=8+x$&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$\rightarrow -x + 2y=8$<br><br>2. Multiply one equation by a constant so as to eliminate one variable when the equations are added. Below we multiply the lower equation by 6.<br><br>$6x-y=3$&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$6x-y=3$<br>$-x+2y=8$&nbsp;&nbsp;$\rightarrow -6x + 12y = 48$<br><br>3. Add the two equations and solve for the leftover variable.<br><br></div><div><math><mtable columnalign='left'><mtr><mtd><mfrac><mrow><mtable><mtr><mtd><mrow><mtable><mtr><mtd><mrow></mrow></mtd></mtr><mtr><mtd><mtext>+</mtext></mtd></mtr></mtable></mrow></mtd><mtd><mrow><mtable><mtr><mtd><mrow><mtext>&nbsp;&nbsp;</mtext><mn>6</mn><mi>x</mi></mrow></mtd></mtr><mtr><mtd><mrow><mo>&#x2212;</mo><mn>6</mn><mi>x</mi></mrow></mtd></mtr></mtable></mrow></mtd><mtd><mrow><mtable><mtr><mtd><mrow><mtext>&nbsp;&nbsp;</mtext><mo>&#x2212;</mo><mi>y</mi></mrow></mtd></mtr><mtr><mtd><mrow><mo>+</mo><mn>12</mn><mi>y</mi></mrow></mtd></mtr></mtable></mrow></mtd><mtd><mrow><mtable><mtr><mtd><mrow><mo>=</mo><mn>3</mn></mrow></mtd></mtr><mtr><mtd><mrow><mtext>&nbsp;</mtext><mo>=</mo><mn>48</mn></mrow></mtd></mtr></mtable></mrow></mtd></mtr></mtable></mrow><mrow><mtable><mtr><mtd><mrow><mtext>&nbsp;&nbsp;&nbsp;&nbsp;</mtext></mrow></mtd><mtd><mrow><mn>0</mn><mi>x</mi></mrow></mtd><mtd><mrow><mo>+</mo><mn>11</mn><mi>y</mi></mrow></mtd><mtd><mrow><mtext>&nbsp;</mtext><mo>=</mo><mn>51</mn></mrow></mtd></mtr></mtable></mrow></mfrac></mtd></mtr><mtr><mtd><mrow></mrow></mtd></mtr><mtr><mtd><mi>y</mi><mo>=</mo><mfrac><mrow><mn>51</mn></mrow><mrow><mn>11</mn></mrow></mfrac></mtd></mtr></mtable></math></div><br>
+						<div>$5x+(x-y)=3 \rightarrow 6x-y=3$<br>$2y=8+x$&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$\rightarrow -x + 2y=8$<br><br>2. Multiply one equation by a constant so as to eliminate one variable when the equations are added. Below we multiply the lower equation by 6.<br><br>$6x-y=3$&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$6x-y=3$<br>$-x+2y=8$&nbsp;&nbsp;$\rightarrow -6x + 12y = 48$<br><br>3. Add the two equations and solve for the leftover variable.<br><br></div><div><math><mtable columnalign='left'><mtr><mtd>  <mstyle mathsize="140%">    <mfrac><mrow><mtable><mtr><mtd><mrow><mtable><mtr><mtd><mrow></mrow></mtd></mtr><mtr><mtd><mtext>+</mtext></mtd></mtr></mtable></mrow></mtd><mtd><mrow><mtable><mtr><mtd><mrow><mtext>&nbsp;&nbsp;</mtext><mn>6</mn><mi>x</mi></mrow></mtd></mtr><mtr><mtd><mrow><mo>&#x2212;</mo><mn>6</mn><mi>x</mi></mrow></mtd></mtr></mtable></mrow></mtd><mtd><mrow><mtable><mtr><mtd><mrow><mtext>&nbsp;&nbsp;</mtext><mo>&#x2212;</mo><mi>y</mi></mrow></mtd></mtr><mtr><mtd><mrow><mo>+</mo><mn>12</mn><mi>y</mi></mrow></mtd></mtr></mtable></mrow></mtd><mtd><mrow><mtable><mtr><mtd><mrow><mo>=</mo><mn>3</mn></mrow></mtd></mtr><mtr><mtd><mrow><mtext>&nbsp;</mtext><mo>=</mo><mn>48</mn></mrow></mtd></mtr></mtable></mrow></mtd></mtr></mtable></mrow><mrow><mtable><mtr><mtd><mrow><mtext>&nbsp;&nbsp;&nbsp;&nbsp;</mtext></mrow></mtd><mtd><mrow><mn>0</mn><mi>x</mi></mrow></mtd><mtd><mrow><mo>+</mo><mn>11</mn><mi>y</mi></mrow></mtd><mtd><mrow><mtext>&nbsp;</mtext><mo>=</mo><mn>51</mn></mrow></mtd></mtr></mtable></mrow>   </mfrac>  </mstyle></mtd></mtr><mtr><mtd><mrow></mrow></mtd></mtr><mtr><mtd><mi>y</mi><mo>=</mo>  <mstyle mathsize="140%">    <mfrac><mrow><mn>51</mn></mrow><mrow><mn>11</mn></mrow>   </mfrac>  </mstyle></mtd></mtr></mtable></math></div><br>
 						<div>4. Substitute the value of the solved-for variable into one of the original equations to solve for the other variable.<br>$2y=8+x$<br>$x=2y-8$<br>$x=2(\cfrac{51}{11})-8$<br>$x = \cfrac{14}{11}$</div><br>
 						<div><b>Degrees and radians</b><br>angle in radians = arc length/radius=$s/r$<br>$360^\circ = 2\pi$ rad</div>
 						<br><br><div><b>Small angle approximation</b><br>For small angles in radians:<br>$\theta \approx \sin \theta \approx \tan \theta$<br>The error is less than 1% for angle less than 0.244 radians.</div><br><br>
@@ -871,11 +883,11 @@
 							<tr style="height: 50px;">
 								<td><math><mrow><mover accent='true'><mi>v</mi><mo>&#x00AF;</mo></mover><mo>=</mo><mi>&#x0394;</mi><mi>x</mi><mo>/</mo><mi>&#x0394;</mi><mi>t</mi></mrow></math></td>
 								<td><math><mrow><msub><mi>v</mi><mtext>f</mtext></msub><mo>=</mo><msub><mi>v</mi><mtext>i</mtext></msub><mo>+</mo><mi>a</mi><mi>t</mi></mrow></math></td>
-								<td><math><mrow><mi>&#x03A3;</mi><mstyle mathvariant='bold' mathsize='normal'><mi>F</mi></mstyle><mo>=</mo><mfrac><mrow><mi>&#x0394;</mi><mstyle mathvariant='bold' mathsize='normal'><mi>p</mi></mstyle></mrow><mrow><mi>&#x0394;</mi><mi>t</mi></mrow></mfrac></mrow></math></td>
+								<td><math><mrow><mi>&#x03A3;</mi><mstyle mathvariant='bold' mathsize='normal'><mi>F</mi></mstyle><mo>=</mo>  <mstyle mathsize="140%">    <mfrac><mrow><mi>&#x0394;</mi><mstyle mathvariant='bold' mathsize='normal'><mi>p</mi></mstyle></mrow><mrow><mi>&#x0394;</mi><mi>t</mi></mrow>   </mfrac>  </mstyle></mrow></math></td>
 							</tr>
 							<tr style="height: 50px;">
 								<td><math><mrow><mover accent='true'><mi>a</mi><mo>&#x00AF;</mo></mover><mo>=</mo><mi>&#x0394;</mi><mi>v</mi><mo>/</mo><mi>&#x0394;</mi><mi>t</mi></mrow></math></td>
-								<td><math><mrow><mi>&#x0394;</mi><mi>x</mi><mo>=</mo><mstyle scriptlevel='+1'><mfrac bevelled='true'><mn>1</mn><mn>2</mn></mfrac></mstyle><mrow><mo>(</mo><mrow><msub><mi>v</mi><mtext>i</mtext></msub><mo>+</mo><msub><mi>v</mi><mtext>f</mtext></msub></mrow><mo>)</mo></mrow><mi>t</mi></mrow></math></td>
+								<td><math><mrow><mi>&#x0394;</mi><mi>x</mi><mo>=</mo><mstyle scriptlevel='+1'><mfrac bevelled='true'><mn>1</mn><mn>2</mn>   </mfrac>  </mstyle></mstyle><mrow><mo>(</mo><mrow><msub><mi>v</mi><mtext>i</mtext></msub><mo>+</mo><msub><mi>v</mi><mtext>f</mtext></msub></mrow><mo>)</mo></mrow><mi>t</mi></mrow></math></td>
 								<td><math><mrow><mstyle mathvariant='bold' mathsize='normal'><mi>J</mi></mstyle><mo>=</mo><mstyle mathvariant='bold' mathsize='normal'><mover accent='true'><mi>F</mi><mo>&#x00AF;</mo></mover></mstyle><mi>&#x0394;</mi><mi>t</mi><mo>=</mo><mi>&#x0394;</mi><mstyle mathvariant='bold' mathsize='normal'><mi>p</mi></mstyle></mrow></math></td>
 							</tr>
 							<tr style="height: 50px;">
@@ -890,7 +902,7 @@
 							</tr>
 							<tr style="height: 50px;">
 								<td style="font-weight:bold;">Center of mass:</td>
-								<td><math><mrow><msub><mi>x</mi><mrow><mtext>CM</mtext></mrow></msub><mo>=</mo><mfrac><mrow><msub><mi>m</mi><mn>1</mn></msub><msub><mi>x</mi><mn>1</mn></msub><mo>+</mo><msub><mi>m</mi><mn>2</mn></msub><msub><mi>x</mi><mn>2</mn></msub><mo>+</mo><mn>...</mn><mo>+</mo><msub><mi>m</mi><mtext>n</mtext></msub><msub><mi>x</mi><mtext>n</mtext></msub></mrow><mrow><msub><mi>m</mi><mn>1</mn></msub><mo>+</mo><msub><mi>m</mi><mn>2</mn></msub><mo>+</mo><mn>...</mn><mo>+</mo><msub><mi>m</mi><mtext>n</mtext></msub></mrow></mfrac></mrow></math></td>
+								<td><math><mrow><msub><mi>x</mi><mrow><mtext>CM</mtext></mrow></msub><mo>=</mo>  <mstyle mathsize="140%">    <mfrac><mrow><msub><mi>m</mi><mn>1</mn></msub><msub><mi>x</mi><mn>1</mn></msub><mo>+</mo><msub><mi>m</mi><mn>2</mn></msub><msub><mi>x</mi><mn>2</mn></msub><mo>+</mo><mn>...</mn><mo>+</mo><msub><mi>m</mi><mtext>n</mtext></msub><msub><mi>x</mi><mtext>n</mtext></msub></mrow><mrow><msub><mi>m</mi><mn>1</mn></msub><mo>+</mo><msub><mi>m</mi><mn>2</mn></msub><mo>+</mo><mn>...</mn><mo>+</mo><msub><mi>m</mi><mtext>n</mtext></msub></mrow>   </mfrac>  </mstyle></mrow></math></td>
 								<td></td>
 							</tr>
 							<tr style="height: 50px;">
@@ -920,7 +932,7 @@
 							</tr>
 							<tr style="height: 50px;">
 								<td style="font-weight:bold;">Newton’s law of gravitation:</td>
-								<td><math><mrow><mi>F</mi><mo>=</mo><mfrac><mrow><mi>G</mi><mi>M</mi><mi>m</mi></mrow><mrow><msup><mi>r</mi><mn>2</mn></msup></mrow></mfrac></mrow></math></td>
+								<td><math><mrow><mi>F</mi><mo>=</mo>  <mstyle mathsize="140%">    <mfrac><mrow><mi>G</mi><mi>M</mi><mi>m</mi></mrow><mrow><msup><mi>r</mi><mn>2</mn></msup></mrow>   </mfrac>  </mstyle></mrow></math></td>
 								<td></td>
 							</tr>
 							<tr style="height: 50px;">
@@ -976,17 +988,17 @@
 							<tr style="height: 50px;">
 								<td><math><mrow><mi>W</mi><mo>=</mo><mstyle mathvariant='bold' mathsize='normal'><mi>F</mi></mstyle><mo>&#x22C5;</mo><mi>&#x0394;</mi><mstyle mathvariant='bold' mathsize='normal'><mi>x</mi></mstyle><mo>=</mo><mrow><mo>(</mo><mrow><mi>F</mi><mi>cos</mi><mo>&#x2061;</mo><mi>&#x03B8;</mi></mrow><mo>)</mo></mrow><mi>&#x0394;</mi><mi>x</mi></mrow></math></td>
 								<td>Tensile:</td>
-								<td><math><mrow><mfrac><mi>F</mi><mi>A</mi></mfrac><mo>=</mo><mi>Y</mi><mfrac><mrow><mi>&#x0394;</mi><mi>L</mi></mrow><mrow><msub><mi>L</mi><mtext>i</mtext></msub></mrow></mfrac></mrow></math></td>
+								<td><math><mrow>  <mstyle mathsize="140%">    <mfrac><mi>F</mi><mi>A</mi>   </mfrac>  </mstyle><mo>=</mo><mi>Y</mi>  <mstyle mathsize="140%">    <mfrac><mrow><mi>&#x0394;</mi><mi>L</mi></mrow><mrow><msub><mi>L</mi><mtext>i</mtext></msub></mrow>   </mfrac>  </mstyle></mrow></math></td>
 							</tr>
 							<tr style="height: 50px;">
-								<td><math><mrow><mi>P</mi><mo>=</mo><mfrac><mi>W</mi><mrow><mi>&#x0394;</mi><mi>t</mi></mrow></mfrac><mo>=</mo><mfrac><mrow><mi>&#x0394;</mi><mi>E</mi></mrow><mrow><mi>&#x0394;</mi><mi>t</mi></mrow></mfrac></mrow></math></td>
+								<td><math><mrow><mi>P</mi><mo>=</mo>  <mstyle mathsize="140%">    <mfrac><mi>W</mi><mrow><mi>&#x0394;</mi><mi>t</mi></mrow>   </mfrac>  </mstyle><mo>=</mo>  <mstyle mathsize="140%">    <mfrac><mrow><mi>&#x0394;</mi><mi>E</mi></mrow><mrow><mi>&#x0394;</mi><mi>t</mi></mrow>   </mfrac>  </mstyle></mrow></math></td>
 								<td>Volume:</td>
-								<td><math><mrow><mi>&#x0394;</mi><mi>P</mi><mo>=</mo><mo>&#x2212;</mo><mi>B</mi><mfrac><mrow><mi>&#x0394;</mi><mi>V</mi></mrow><mrow><msub><mi>V</mi><mtext>i</mtext></msub></mrow></mfrac></mrow></math></td>
+								<td><math><mrow><mi>&#x0394;</mi><mi>P</mi><mo>=</mo><mo>&#x2212;</mo><mi>B</mi>  <mstyle mathsize="140%">    <mfrac><mrow><mi>&#x0394;</mi><mi>V</mi></mrow><mrow><msub><mi>V</mi><mtext>i</mtext></msub></mrow>   </mfrac>  </mstyle></mrow></math></td>
 							</tr>
 							<tr style="height: 50px;">
-								<td><math><mrow><mi>K</mi><mi>E</mi><mo>=</mo><mstyle scriptlevel='+1'><mfrac bevelled='true'><mn>1</mn><mn>2</mn></mfrac></mstyle><mi>m</mi><msup><mi>v</mi><mn>2</mn></msup></mrow></math></td>
+								<td><math><mrow><mi>K</mi><mi>E</mi><mo>=</mo><mstyle scriptlevel='+1'><mfrac bevelled='true'><mn>1</mn><mn>2</mn>   </mfrac>  </mstyle></mstyle><mi>m</mi><msup><mi>v</mi><mn>2</mn></msup></mrow></math></td>
 								<td>Shear:</td>
-								<td><math><mrow><mfrac><mi>F</mi><mi>A</mi></mfrac><mo>=</mo><mi>S</mi><mfrac><mrow><mi>&#x0394;</mi><mi>x</mi></mrow><mrow><msub><mi>L</mi><mtext>i</mtext></msub></mrow></mfrac></mrow></math></td>
+								<td><math><mrow>  <mstyle mathsize="140%">    <mfrac><mi>F</mi><mi>A</mi>   </mfrac>  </mstyle><mo>=</mo><mi>S</mi>  <mstyle mathsize="140%">    <mfrac><mrow><mi>&#x0394;</mi><mi>x</mi></mrow><mrow><msub><mi>L</mi><mtext>i</mtext></msub></mrow>   </mfrac>  </mstyle></mrow></math></td>
 							</tr>
 							<tr style="height: 50px;">
 								<td><math><mrow><mi>&#x0394;</mi><mi>P</mi><mi>E</mi><mo>=</mo><mi>m</mi><mi>g</mi><mi>&#x0394;</mi><mi>h</mi></mrow></math></td>
@@ -1017,11 +1029,11 @@
 							</tr>
 							<tr style="height: 50px;">
 								<td>Bernoulli’s equation:</td>
-								<td><math><mrow><msub><mi>P</mi><mn>1</mn></msub><mo>+</mo><mstyle scriptlevel='+1'><mfrac bevelled='true'><mn>1</mn><mn>2</mn></mfrac></mstyle><mi>&#x03C1;</mi><msubsup><mi>v</mi><mn>1</mn><mn>2</mn></msubsup><mo>+</mo><mi>&#x03C1;</mi><mi>g</mi><msub><mi>h</mi><mn>1</mn></msub><mo>=</mo><msub><mi>P</mi><mn>2</mn></msub><mo>+</mo><mstyle scriptlevel='+1'><mfrac bevelled='true'><mn>1</mn><mn>2</mn></mfrac></mstyle><mi>&#x03C1;</mi><msubsup><mi>v</mi><mn>2</mn><mn>2</mn></msubsup><mo>+</mo><mi>&#x03C1;</mi><mi>g</mi><msub><mi>h</mi><mn>2</mn></msub></mrow></math></td>
+								<td><math><mrow><msub><mi>P</mi><mn>1</mn></msub><mo>+</mo><mstyle scriptlevel='+1'><mfrac bevelled='true'><mn>1</mn><mn>2</mn>   </mfrac>  </mstyle></mstyle><mi>&#x03C1;</mi><msubsup><mi>v</mi><mn>1</mn><mn>2</mn></msubsup><mo>+</mo><mi>&#x03C1;</mi><mi>g</mi><msub><mi>h</mi><mn>1</mn></msub><mo>=</mo><msub><mi>P</mi><mn>2</mn></msub><mo>+</mo><mstyle scriptlevel='+1'><mfrac bevelled='true'><mn>1</mn><mn>2</mn>   </mfrac>  </mstyle></mstyle><mi>&#x03C1;</mi><msubsup><mi>v</mi><mn>2</mn><mn>2</mn></msubsup><mo>+</mo><mi>&#x03C1;</mi><mi>g</mi><msub><mi>h</mi><mn>2</mn></msub></mrow></math></td>
 							</tr>
 							<tr style="height: 50px;">
 								<td>Laminar flow:</td>
-								<td><math><mrow><mi>F</mi><mo>=</mo><mfrac><mrow><mi>&#x03B7;</mi><mi>A</mi><mi>v</mi></mrow><mi>y</mi></mfrac><mo>,</mo><mi>R</mi><mo>=</mo><mfrac><mrow><mi>&#x03C0;</mi><msup><mi>r</mi><mn>4</mn></msup><mi>&#x0394;</mi><mi>P</mi></mrow><mrow><mn>8</mn><mi>&#x03B7;</mi><mi>L</mi></mrow></mfrac></mrow></math></td>
+								<td><math><mrow><mi>F</mi><mo>=</mo>  <mstyle mathsize="140%">    <mfrac><mrow><mi>&#x03B7;</mi><mi>A</mi><mi>v</mi></mrow><mi>y</mi>   </mfrac>  </mstyle><mo>,</mo><mi>R</mi><mo>=</mo>  <mstyle mathsize="140%">    <mfrac><mrow><mi>&#x03C0;</mi><msup><mi>r</mi><mn>4</mn></msup><mi>&#x0394;</mi><mi>P</mi></mrow><mrow><mn>8</mn><mi>&#x03B7;</mi><mi>L</mi></mrow>   </mfrac>  </mstyle></mrow></math></td>
 							</tr>
 						</table>
 					</div>
@@ -1036,23 +1048,23 @@
 								<th style="text-align: left;width: 210px;">Angular velocity and angular acceleration</th><th style="text-align: left;width: 210px;">Rotational motion</th><th style="text-align: left;width: 210px;">Uniform circular motion</th>
 							</tr>
 							<tr style="height: 50px;">
-								<td><math><mrow><mi>&#x03B8;</mi><mo>=</mo><mfrac><mi>s</mi><mi>r</mi></mfrac></mrow></math></td>
+								<td><math><mrow><mi>&#x03B8;</mi><mo>=</mo>  <mstyle mathsize="140%">    <mfrac><mi>s</mi><mi>r</mi>   </mfrac>  </mstyle></mrow></math></td>
 								<td><math><mrow><msub><mi>&#x03C9;</mi><mtext>f</mtext></msub><mo>=</mo><msub><mi>&#x03C9;</mi><mtext>i</mtext></msub><mo>+</mo><mtext>&#x03B1;</mtext><mi>t</mi></mrow></math></td>
-								<td><math><mrow><mi>T</mi><mo>=</mo><mfrac><mrow><mn>2</mn><mi>&#x03C0;</mi><mi>r</mi></mrow><mi>v</mi></mfrac></mrow></math></td>
+								<td><math><mrow><mi>T</mi><mo>=</mo>  <mstyle mathsize="140%">    <mfrac><mrow><mn>2</mn><mi>&#x03C0;</mi><mi>r</mi></mrow><mi>v</mi>   </mfrac>  </mstyle></mrow></math></td>
 							</tr>
 							<tr style="height: 50px;">
-								<td><math><mrow><mover accent='true'><mi>&#x03C9;</mi><mo>&#x00AF;</mo></mover><mo>=</mo><mfrac><mrow><mi>&#x0394;</mi><mi>&#x03B8;</mi></mrow><mrow><mi>&#x0394;</mi><mi>t</mi></mrow></mfrac></mrow></math></td>
-								<td><math><mrow><mi>&#x0394;</mi><mi>&#x03B8;</mi><mo>=</mo><msub><mi>&#x03C9;</mi><mtext>i</mtext></msub><mi>t</mi><mo>+</mo><mstyle scriptlevel='+1'><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle><mtext>&#x03B1;</mtext><msup><mi>t</mi><mn>2</mn></msup></mrow></math></td>
-								<td><math><mrow><msub><mi>a</mi><mtext>c</mtext></msub><mo>=</mo><mfrac><mrow><msup><mi>v</mi><mn>2</mn></msup></mrow><mi>r</mi></mfrac></mrow></math></td>
+								<td><math><mrow><mover accent='true'><mi>&#x03C9;</mi><mo>&#x00AF;</mo></mover><mo>=</mo>  <mstyle mathsize="140%">    <mfrac><mrow><mi>&#x0394;</mi><mi>&#x03B8;</mi></mrow><mrow><mi>&#x0394;</mi><mi>t</mi></mrow>   </mfrac>  </mstyle></mrow></math></td>
+								<td><math><mrow><mi>&#x0394;</mi><mi>&#x03B8;</mi><mo>=</mo><msub><mi>&#x03C9;</mi><mtext>i</mtext></msub><mi>t</mi><mo>+</mo><mstyle scriptlevel='+1'>  <mstyle mathsize="140%">    <mfrac><mn>1</mn><mn>2</mn>   </mfrac>  </mstyle></mstyle><mtext>&#x03B1;</mtext><msup><mi>t</mi><mn>2</mn></msup></mrow></math></td>
+								<td><math><mrow><msub><mi>a</mi><mtext>c</mtext></msub><mo>=</mo>  <mstyle mathsize="140%">    <mfrac><mrow><msup><mi>v</mi><mn>2</mn></msup></mrow><mi>r</mi>   </mfrac>  </mstyle></mrow></math></td>
 							</tr>
 							<tr style="height: 50px;">
 								<td></td>
 								<td><math><mrow><msubsup><mi>&#x03C9;</mi><mtext>f</mtext><mtext>2</mtext></msubsup><mo>=</mo><msubsup><mi>&#x03C9;</mi><mi>i</mi><mn>2</mn></msubsup><mo>+</mo><mn>2</mn><mtext>&#x03B1;</mtext><mi>&#x0394;</mi><mi>&#x03B8;</mi></mrow></math></td>
-								<td><math><mrow><mi>F</mi><mo>=</mo><mi>m</mi><mfrac><mrow><msup><mi>v</mi><mn>2</mn></msup></mrow><mi>r</mi></mfrac></mrow></math></td>
+								<td><math><mrow><mi>F</mi><mo>=</mo><mi>m</mi>  <mstyle mathsize="140%">    <mfrac><mrow><msup><mi>v</mi><mn>2</mn></msup></mrow><mi>r</mi>   </mfrac>  </mstyle></mrow></math></td>
 							</tr>
 							<tr style="height: 50px;">
-								<td><math><mrow><mover accent='true'><mtext>&#x03B1;</mtext><mo>&#x00AF;</mo></mover><mo>=</mo><mfrac><mrow><mi>&#x0394;</mi><mi>&#x03C9;</mi></mrow><mrow><mi>&#x0394;</mi><mi>t</mi></mrow></mfrac></mrow></math></td>
-								<td><math><mrow><mi>&#x0394;</mi><mi>&#x03B8;</mi><mo>=</mo><mstyle scriptlevel='+1'><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle><mo stretchy='false'>(</mo><msub><mi>&#x03C9;</mi><mtext>f</mtext></msub><mo>+</mo><msub><mi>&#x03C9;</mi><mtext>i</mtext></msub><mo stretchy='false'>)</mo><mi>t</mi></mrow></math></td>
+								<td><math><mrow><mover accent='true'><mtext>&#x03B1;</mtext><mo>&#x00AF;</mo></mover><mo>=</mo>  <mstyle mathsize="140%">    <mfrac><mrow><mi>&#x0394;</mi><mi>&#x03C9;</mi></mrow><mrow><mi>&#x0394;</mi><mi>t</mi></mrow>   </mfrac>  </mstyle></mrow></math></td>
+								<td><math><mrow><mi>&#x0394;</mi><mi>&#x03B8;</mi><mo>=</mo><mstyle scriptlevel='+1'>  <mstyle mathsize="140%">    <mfrac><mn>1</mn><mn>2</mn>   </mfrac>  </mstyle></mstyle><mo stretchy='false'>(</mo><msub><mi>&#x03C9;</mi><mtext>f</mtext></msub><mo>+</mo><msub><mi>&#x03C9;</mi><mtext>i</mtext></msub><mo stretchy='false'>)</mo><mi>t</mi></mrow></math></td>
 								<td></td>
 							</tr>
 							<tr style="height: 50px;">
@@ -1136,7 +1148,7 @@
 								<td></td>
 							</tr>
 							<tr style="height: 50px;">
-								<td><math><mrow><mi>K</mi><mi>E</mi><mo>=</mo><mstyle scriptlevel='+1'><mfrac bevelled='true'><mn>1</mn><mn>2</mn></mfrac></mstyle><mi>I</mi><msup><mi>&#x03C9;</mi><mn>2</mn></msup></mrow></math></td>
+								<td><math><mrow><mi>K</mi><mi>E</mi><mo>=</mo><mstyle scriptlevel='+1'><mfrac bevelled='true'><mn>1</mn><mn>2</mn>   </mfrac>  </mstyle></mstyle><mi>I</mi><msup><mi>&#x03C9;</mi><mn>2</mn></msup></mrow></math></td>
 								<td></td>
 							</tr>
 							<tr style="height: 50px;">
@@ -1145,7 +1157,7 @@
 							</tr>
 							<tr style="height: 50px;">
 								<td style="font-weight:bold;">Circular orbit:</td>
-								<td><math><mrow><mi>v</mi><mo>=</mo><msqrt><mrow><mfrac><mrow><mi>G</mi><mi>M</mi></mrow><mi>r</mi></mfrac></mrow></msqrt></mrow></math></td>
+								<td><math><mrow><mi>v</mi><mo>=</mo><msqrt><mrow>  <mstyle mathsize="140%">    <mfrac><mrow><mi>G</mi><mi>M</mi></mrow><mi>r</mi>   </mfrac>  </mstyle></mrow></msqrt></mrow></math></td>
 							</tr>
 							<tr style="height: 50px;">
 								<td></td>
@@ -1161,7 +1173,7 @@
 							</tr>
 							<tr style="height: 50px;">
 								<td>Semimajor axis:</td>
-								<td><math><mrow><mi>a</mi><mo>=</mo><mfrac><mrow><msub><mi>r</mi><mrow><mi>min</mi><mo>&#x2061;</mo></mrow></msub><mo>+</mo><msub><mi>r</mi><mrow><mi>max</mi><mo>&#x2061;</mo></mrow></msub></mrow><mn>2</mn></mfrac></mrow></math></td>
+								<td><math><mrow><mi>a</mi><mo>=</mo>  <mstyle mathsize="140%">    <mfrac><mrow><msub><mi>r</mi><mrow><mi>min</mi><mo>&#x2061;</mo></mrow></msub><mo>+</mo><msub><mi>r</mi><mrow><mi>max</mi><mo>&#x2061;</mo></mrow></msub></mrow><mn>2</mn>   </mfrac>  </mstyle></mrow></math></td>
 							</tr>
 							<tr style="height: 50px;">
 								<td></td>
@@ -1169,7 +1181,7 @@
 							</tr>
 							<tr style="height: 50px;">
 								<td>Eccentricity:</td>
-								<td><math><mrow><mi>e</mi><mo>=</mo><mfrac><mi>d</mi><mi>a</mi></mfrac></mrow></math>, where d is the center-to-focus distance</td>
+								<td><math><mrow><mi>e</mi><mo>=</mo>  <mstyle mathsize="140%">    <mfrac><mi>d</mi><mi>a</mi>   </mfrac>  </mstyle></mrow></math>, where d is the center-to-focus distance</td>
 							</tr>
 							<tr style="height: 50px;">
 								<td></td>
@@ -1177,7 +1189,7 @@
 							</tr>
 							<tr style="height: 50px;">
 								<td style="font-weight:bold;">Kepler’s second law:</td>
-								<td><math><mrow><mi>A</mi><mo>=</mo><mfrac><mi>L</mi><mrow><mn>2</mn><mi>m</mi></mrow></mfrac><mi>&#x0394;</mi><mi>t</mi></mrow></math></td>
+								<td><math><mrow><mi>A</mi><mo>=</mo>  <mstyle mathsize="140%">    <mfrac><mi>L</mi><mrow><mn>2</mn><mi>m</mi></mrow>   </mfrac>  </mstyle><mi>&#x0394;</mi><mi>t</mi></mrow></math></td>
 							</tr>
 							<tr style="height: 50px;">
 								<td></td>
@@ -1185,7 +1197,7 @@
 							</tr>
 							<tr style="height: 50px;">
 								<td style="font-weight:bold;">Kepler’s third law:</td>
-								<td><math><mrow><msup><mi>T</mi><mn>2</mn></msup><mo>=</mo><mrow><mo>(</mo><mrow><mfrac><mrow><mn>4</mn><msup><mi>&#x03C0;</mi><mn>2</mn></msup></mrow><mrow><mi>G</mi><mi>M</mi></mrow></mfrac></mrow><mo>)</mo></mrow><msup><mi>a</mi><mn>3</mn></msup></mrow></math></td>
+								<td><math><mrow><msup><mi>T</mi><mn>2</mn></msup><mo>=</mo><mrow><mo>(</mo><mrow>  <mstyle mathsize="140%">    <mfrac><mrow><mn>4</mn><msup><mi>&#x03C0;</mi><mn>2</mn></msup></mrow><mrow><mi>G</mi><mi>M</mi></mrow>   </mfrac>  </mstyle></mrow><mo>)</mo></mrow><msup><mi>a</mi><mn>3</mn></msup></mrow></math></td>
 							</tr>
 							<tr style="height: 50px;">
 								<td></td>
@@ -1193,7 +1205,7 @@
 							</tr>
 							<tr style="height: 50px;">
 								<td style="font-weight:bold;">Energy in a circular orbit:</td>
-								<td><math><mrow><mi>K</mi><mi>E</mi><mo>=</mo><mfrac><mrow><mi>G</mi><mi>M</mi><mi>m</mi></mrow><mrow><mn>2</mn><mi>r</mi></mrow></mfrac></mrow></math>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<math><mrow><mi>P</mi><mi>E</mi><mo>=</mo><mo>&#x2212;</mo><mfrac><mrow><mi>G</mi><mi>M</mi><mi>m</mi></mrow><mi>r</mi></mfrac></mrow></math>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<math><mrow><msub><mi>E</mi><mrow><mtext>tot</mtext></mrow></msub><mo>=</mo><mo>&#x2212;</mo><mfrac><mrow><mi>G</mi><mi>M</mi><mi>m</mi></mrow><mrow><mn>2</mn><mi>r</mi></mrow></mfrac></mrow></math></td>
+								<td><math><mrow><mi>K</mi><mi>E</mi><mo>=</mo>  <mstyle mathsize="140%">    <mfrac><mrow><mi>G</mi><mi>M</mi><mi>m</mi></mrow><mrow><mn>2</mn><mi>r</mi></mrow>   </mfrac>  </mstyle></mrow></math>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<math><mrow><mi>P</mi><mi>E</mi><mo>=</mo><mo>&#x2212;</mo>  <mstyle mathsize="140%">    <mfrac><mrow><mi>G</mi><mi>M</mi><mi>m</mi></mrow><mi>r</mi>   </mfrac>  </mstyle></mrow></math>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<math><mrow><msub><mi>E</mi><mrow><mtext>tot</mtext></mrow></msub><mo>=</mo><mo>&#x2212;</mo>  <mstyle mathsize="140%">    <mfrac><mrow><mi>G</mi><mi>M</mi><mi>m</mi></mrow><mrow><mn>2</mn><mi>r</mi></mrow>   </mfrac>  </mstyle></mrow></math></td>
 							</tr>
 							<tr style="height: 50px;">
 								<td></td>
@@ -1201,7 +1213,7 @@
 							</tr>
 							<tr style="height: 50px;">
 								<td style="font-weight:bold;">Energy in an elliptical orbit:</td>
-								<td><math><mrow><msub><mi>E</mi><mrow><mtext>tot</mtext></mrow></msub><mo>=</mo><mo>&#x2212;</mo><mfrac><mrow><mi>G</mi><mi>M</mi><mi>m</mi></mrow><mrow><mn>2</mn><mi>a</mi></mrow></mfrac></mrow></math></td>
+								<td><math><mrow><msub><mi>E</mi><mrow><mtext>tot</mtext></mrow></msub><mo>=</mo><mo>&#x2212;</mo>  <mstyle mathsize="140%">    <mfrac><mrow><mi>G</mi><mi>M</mi><mi>m</mi></mrow><mrow><mn>2</mn><mi>a</mi></mrow>   </mfrac>  </mstyle></mrow></math></td>
 							</tr>
 							<tr style="height: 50px;">
 								<td></td>
@@ -1209,7 +1221,7 @@
 							</tr>
 							<tr style="height: 50px;">
 								<td style="font-weight:bold;">Escape speed:</td>
-								<td><math><mrow><mi>v</mi><mo>=</mo><msqrt><mrow><mfrac><mrow><mn>2</mn><mi>G</mi><mi>M</mi></mrow><mi>r</mi></mfrac></mrow></msqrt></mrow></math></td>
+								<td><math><mrow><mi>v</mi><mo>=</mo><msqrt><mrow>  <mstyle mathsize="140%">    <mfrac><mrow><mn>2</mn><mi>G</mi><mi>M</mi></mrow><mi>r</mi>   </mfrac>  </mstyle></mrow></msqrt></mrow></math></td>
 							</tr>
 							<tr style="height: 50px;">
 								<td></td>
@@ -1226,7 +1238,7 @@
 					<div class="content">	
 						<table  style="margin: -15px 0px 0px 15px;float: left;">
 							<tr style="height: 50px;">
-								<td style="width: 250px;"><math><mrow><mi>v</mi><mo>=</mo><mfrac><mi>&#x03BB;</mi><mi>T</mi></mfrac><mo>=</mo><mi>&#x03BB;</mi><mi>f</mi></mrow></math></td>
+								<td style="width: 250px;"><math><mrow><mi>v</mi><mo>=</mo>  <mstyle mathsize="140%">    <mfrac><mi>&#x03BB;</mi><mi>T</mi>   </mfrac>  </mstyle><mo>=</mo><mi>&#x03BB;</mi><mi>f</mi></mrow></math></td>
 								<td style="width: 350px;"></td>
 							</tr>
 							<tr style="height: 50px;">
@@ -1243,16 +1255,16 @@
 							</tr>
 							<tr style="height: 50px;">
 								<td><math><mrow><mi>a</mi><mo stretchy='false'>(</mo><mi>t</mi><mo stretchy='false'>)</mo><mo>=</mo><mo>&#x2212;</mo><mi>A</mi><msup><mi>&#x03C9;</mi><mn>2</mn></msup><mi>cos</mi><mo>&#x2061;</mo><mrow><mo>(</mo><mrow><mi>&#x03C9;</mi><mi>t</mi><mo>+</mo><mi>&#x3C6;</mi></mrow><mo>)</mo></mrow></mrow></math></td>
-								<td><math><mrow><mtext>power</mtext><mo>=</mo><mstyle scriptlevel='+1'><mfrac bevelled='true'><mn>1</mn><mn>2</mn></mfrac></mstyle><mi>&#x03BC;</mi><mi>v</mi><msup><mi>&#x03C9;</mi><mn>2</mn></msup><msup><mi>A</mi><mn>2</mn></msup></mrow></math></td>
+								<td><math><mrow><mtext>power</mtext><mo>=</mo><mstyle scriptlevel='+1'><mfrac bevelled='true'><mn>1</mn><mn>2</mn>   </mfrac>  </mstyle></mstyle><mi>&#x03BC;</mi><mi>v</mi><msup><mi>&#x03C9;</mi><mn>2</mn></msup><msup><mi>A</mi><mn>2</mn></msup></mrow></math></td>
 							</tr>
 							
 						</table>
 						<table  style="margin: 0px 0px 0px 15px;float: left;">
 							<tr style="height: 50px;">
-								<td><math><mrow><mi>&#x03C9;</mi><mo>=</mo><mn>2</mn><mi>&#x03C0;</mi><mi>f</mi><mo>=</mo><msqrt><mrow><mfrac><mi>k</mi><mi>m</mi></mfrac></mrow></msqrt></mrow></math></td>
+								<td><math><mrow><mi>&#x03C9;</mi><mo>=</mo><mn>2</mn><mi>&#x03C0;</mi><mi>f</mi><mo>=</mo><msqrt><mrow>  <mstyle mathsize="140%">    <mfrac><mi>k</mi><mi>m</mi>   </mfrac>  </mstyle></mrow></msqrt></mrow></math></td>
 							</tr>
 							<tr style="height: 50px;">
-								<td><math><mrow><mi>v</mi><mo>=</mo><msqrt><mrow><mfrac><mi>F</mi><mrow><mi>m</mi><mo>/</mo><mi>L</mi></mrow></mfrac></mrow></msqrt><mo>=</mo><msqrt><mrow><mfrac><mi>F</mi><mi>&#x03BC;</mi></mfrac></mrow></msqrt></mrow></math></td>
+								<td><math><mrow><mi>v</mi><mo>=</mo><msqrt><mrow>  <mstyle mathsize="140%">    <mfrac><mi>F</mi><mrow><mi>m</mi><mo>/</mo><mi>L</mi></mrow>   </mfrac>  </mstyle></mrow></msqrt><mo>=</mo><msqrt><mrow>  <mstyle mathsize="140%">    <mfrac><mi>F</mi><mi>&#x03BC;</mi>   </mfrac>  </mstyle></mrow></msqrt></mrow></math></td>
 							</tr>
 							<tr style="height: 50px;">
 								<td><math><mrow><mi>k</mi><mo>=</mo><mn>2</mn><mi>&#x03C0;</mi><mo>/</mo><mi>&#x03BB;</mi></mrow></math></td>
@@ -1261,19 +1273,19 @@
 								<td><math><mrow><mi>f</mi><mo>=</mo><mn>1</mn><mo>/</mo><mi>T</mi></mrow></math></td>
 							</tr>
 							<tr style="height: 50px;">
-								<td><math><mrow><mi>T</mi><mo>=</mo><mn>2</mn><mi>&#x03C0;</mi><msqrt><mrow><mfrac><mi>m</mi><mi>k</mi></mfrac></mrow></msqrt></mrow></math></td>
+								<td><math><mrow><mi>T</mi><mo>=</mo><mn>2</mn><mi>&#x03C0;</mi><msqrt><mrow>  <mstyle mathsize="140%">    <mfrac><mi>m</mi><mi>k</mi>   </mfrac>  </mstyle></mrow></msqrt></mrow></math></td>
 							</tr>
 							<tr style="height: 50px;">
-								<td><math><mrow><mi>P</mi><mi>E</mi><mo>=</mo><mstyle scriptlevel='+1'><mfrac bevelled='true'><mn>1</mn><mn>2</mn></mfrac></mstyle><mi>k</mi><msup><mi>x</mi><mn>2</mn></msup></mrow></math></td>
+								<td><math><mrow><mi>P</mi><mi>E</mi><mo>=</mo><mstyle scriptlevel='+1'><mfrac bevelled='true'><mn>1</mn><mn>2</mn>   </mfrac>  </mstyle></mstyle><mi>k</mi><msup><mi>x</mi><mn>2</mn></msup></mrow></math></td>
 							</tr>
 							<tr style="height: 50px;">
-								<td><math><mrow><mi>P</mi><mi>E</mi><mo>=</mo><mstyle scriptlevel='+1'><mfrac bevelled='true'><mn>1</mn><mn>2</mn></mfrac></mstyle><mi>k</mi><msup><mi>A</mi><mn>2</mn></msup><msup><mrow><mi>cos</mi><mo>&#x2061;</mo></mrow><mn>2</mn></msup><mi>&#x03C9;</mi><mi>t</mi></mrow></math></td>
+								<td><math><mrow><mi>P</mi><mi>E</mi><mo>=</mo><mstyle scriptlevel='+1'><mfrac bevelled='true'><mn>1</mn><mn>2</mn>   </mfrac>  </mstyle></mstyle><mi>k</mi><msup><mi>A</mi><mn>2</mn></msup><msup><mrow><mi>cos</mi><mo>&#x2061;</mo></mrow><mn>2</mn></msup><mi>&#x03C9;</mi><mi>t</mi></mrow></math></td>
 							</tr>
 							<tr style="height: 50px;">
-								<td><math><mrow><mi>K</mi><mi>E</mi><mo>=</mo><mstyle scriptlevel='+1'><mfrac bevelled='true'><mn>1</mn><mn>2</mn></mfrac></mstyle><mi>m</mi><msup><mi>A</mi><mn>2</mn></msup><msup><mi>&#x03C9;</mi><mn>2</mn></msup><msup><mrow><mi>sin</mi><mo>&#x2061;</mo></mrow><mn>2</mn></msup><mi>&#x03C9;</mi><mi>t</mi></mrow></math></td>
+								<td><math><mrow><mi>K</mi><mi>E</mi><mo>=</mo><mstyle scriptlevel='+1'><mfrac bevelled='true'><mn>1</mn><mn>2</mn>   </mfrac>  </mstyle></mstyle><mi>m</mi><msup><mi>A</mi><mn>2</mn></msup><msup><mi>&#x03C9;</mi><mn>2</mn></msup><msup><mrow><mi>sin</mi><mo>&#x2061;</mo></mrow><mn>2</mn></msup><mi>&#x03C9;</mi><mi>t</mi></mrow></math></td>
 							</tr>
 							<tr style="height: 50px;">
-								<td><math><mrow><mi>T</mi><mi>E</mi><mo>=</mo><mstyle scriptlevel='+1'><mfrac bevelled='true'><mn>1</mn><mn>2</mn></mfrac></mstyle><mi>k</mi><msup><mi>A</mi><mn>2</mn></msup></mrow></math></td>
+								<td><math><mrow><mi>T</mi><mi>E</mi><mo>=</mo><mstyle scriptlevel='+1'><mfrac bevelled='true'><mn>1</mn><mn>2</mn>   </mfrac>  </mstyle></mstyle><mi>k</mi><msup><mi>A</mi><mn>2</mn></msup></mrow></math></td>
 							</tr>
 							<tr style="height: 50px;">
 								<td></td>
@@ -1282,7 +1294,7 @@
 						<table style="margin: 0px 0px 0px 15px;float: left;">
 							<tr style="height: 50px;">
 								<td style="font-weight:bold;width:210px;">Simple pendulum:</td>
-								<td><math><mrow><mi>T</mi><mo>=</mo><mn>2</mn><mi>&#x03C0;</mi><msqrt><mrow><mfrac><mi>L</mi><mi>g</mi></mfrac></mrow></msqrt></mrow></math></td>
+								<td><math><mrow><mi>T</mi><mo>=</mo><mn>2</mn><mi>&#x03C0;</mi><msqrt><mrow>  <mstyle mathsize="140%">    <mfrac><mi>L</mi><mi>g</mi>   </mfrac>  </mstyle></mrow></msqrt></mrow></math></td>
 							</tr>
 							<tr style="height: 20px;">
 								<td></td>
@@ -1290,7 +1302,7 @@
 							</tr>
 							<tr style="height: 50px;">
 								<td style="font-weight:bold;">Physical pendulum:</td>
-								<td><math><mrow><mi>T</mi><mo>=</mo><mn>2</mn><mi>&#x03C0;</mi><msqrt><mrow><mfrac><mi>I</mi><mrow><mi>m</mi><mi>g</mi><mi>h</mi></mrow></mfrac></mrow></msqrt></mrow></math>, where h = distance from pivot to center of mass</td>
+								<td><math><mrow><mi>T</mi><mo>=</mo><mn>2</mn><mi>&#x03C0;</mi><msqrt><mrow>  <mstyle mathsize="140%">    <mfrac><mi>I</mi><mrow><mi>m</mi><mi>g</mi><mi>h</mi></mrow>   </mfrac>  </mstyle></mrow></msqrt></mrow></math>, where h = distance from pivot to center of mass</td>
 							</tr>
 							<tr style="height: 20px;">
 								<td></td>
@@ -1309,8 +1321,8 @@
 							</tr>
 							<tr style="height: 50px;">
 								<td>Speed in air:</td>
-								<td><math><mrow><mi>v</mi><mo>=</mo><mo stretchy='false'>(</mo><mn>331</mn><mtext>&nbsp;m/s</mtext><mo stretchy='false'>)</mo><msqrt><mrow><mn>1</mn><mo>+</mo><mfrac><mrow><msub><mi>T</mi><mtext>C</mtext></msub></mrow><mrow><mn>273</mn><mo>&#x00B0;</mo><mtext>C</mtext></mrow></mfrac></mrow></msqrt></mrow></math></td>
-								<td><math><mrow><mi>sin</mi><mo>&#x2061;</mo><mi>&#x03B8;</mi><mo>=</mo><mfrac><mrow><msub><mi>v</mi><mrow><mtext>sound</mtext></mrow></msub></mrow><mrow><msub><mi>v</mi><mrow><mtext>object</mtext></mrow></msub></mrow></mfrac></mrow></math></td>
+								<td><math><mrow><mi>v</mi><mo>=</mo><mo stretchy='false'>(</mo><mn>331</mn><mtext>&nbsp;m/s</mtext><mo stretchy='false'>)</mo><msqrt><mrow><mn>1</mn><mo>+</mo>  <mstyle mathsize="140%">    <mfrac><mrow><msub><mi>T</mi><mtext>C</mtext></msub></mrow><mrow><mn>273</mn><mo>&#x00B0;</mo><mtext>C</mtext></mrow>   </mfrac>  </mstyle></mrow></msqrt></mrow></math></td>
+								<td><math><mrow><mi>sin</mi><mo>&#x2061;</mo><mi>&#x03B8;</mi><mo>=</mo>  <mstyle mathsize="140%">    <mfrac><mrow><msub><mi>v</mi><mrow><mtext>sound</mtext></mrow></msub></mrow><mrow><msub><mi>v</mi><mrow><mtext>object</mtext></mrow></msub></mrow>   </mfrac>  </mstyle></mrow></math></td>
 							</tr>
 							<tr style="height: 50px;">
 								<td></td>
@@ -1318,8 +1330,8 @@
 							</tr>
 							<tr style="height: 50px;">
 								<td>Speed in fluids:</td>
-								<td><math><mrow><mi>v</mi><mo>=</mo><msqrt><mrow><mfrac><mi>B</mi><mi>&#x03C1;</mi></mfrac></mrow></msqrt></mrow></math></td>
-								<td><math><mrow><mtext>Mach&nbsp;number</mtext><mo>=</mo><mfrac><mrow><msub><mi>v</mi><mrow><mtext>object</mtext></mrow></msub></mrow><mrow><msub><mi>v</mi><mrow><mtext>sound</mtext></mrow></msub></mrow></mfrac></mrow></math></td>
+								<td><math><mrow><mi>v</mi><mo>=</mo><msqrt><mrow>  <mstyle mathsize="140%">    <mfrac><mi>B</mi><mi>&#x03C1;</mi>   </mfrac>  </mstyle></mrow></msqrt></mrow></math></td>
+								<td><math><mrow><mtext>Mach&nbsp;number</mtext><mo>=</mo>  <mstyle mathsize="140%">    <mfrac><mrow><msub><mi>v</mi><mrow><mtext>object</mtext></mrow></msub></mrow><mrow><msub><mi>v</mi><mrow><mtext>sound</mtext></mrow></msub></mrow>   </mfrac>  </mstyle></mrow></math></td>
 							</tr>
 							<tr style="height: 50px;">
 								<td></td>
@@ -1327,7 +1339,7 @@
 							</tr>
 							<tr style="height: 50px;">
 								<td>Speed in solids:</td>
-								<td><math><mrow><mi>v</mi><mo>=</mo><msqrt><mrow><mfrac><mi>Y</mi><mi>&#x03C1;</mi></mfrac></mrow></msqrt></mrow></math></td>
+								<td><math><mrow><mi>v</mi><mo>=</mo><msqrt><mrow>  <mstyle mathsize="140%">    <mfrac><mi>Y</mi><mi>&#x03C1;</mi>   </mfrac>  </mstyle></mrow></msqrt></mrow></math></td>
 								<td></td>
 							</tr>
 							<tr style="height: 50px;">
@@ -1336,7 +1348,7 @@
 							</tr>
 							<tr style="height: 50px;">
 								<td>Particle displacement:</td>
-								<td><math><mrow><mi>s</mi><mo stretchy='false'>(</mo><mi>x</mi><mo>,</mo><mi>t</mi><mo stretchy='false'>)</mo><mo>=</mo><mi>A</mi><mi>cos</mi><mo>&#x2061;</mo><mrow><mo>(</mo><mrow><mfrac><mrow><mn>2</mn><mi>&#x03C0;</mi><mi>x</mi></mrow><mi>&#x03BB;</mi></mfrac><mo>&#x2212;</mo><mn>2</mn><mi>&#x03C0;</mi><mi>f</mi><mi>t</mi></mrow><mo>)</mo></mrow></mrow></math></td>
+								<td><math><mrow><mi>s</mi><mo stretchy='false'>(</mo><mi>x</mi><mo>,</mo><mi>t</mi><mo stretchy='false'>)</mo><mo>=</mo><mi>A</mi><mi>cos</mi><mo>&#x2061;</mo><mrow><mo>(</mo><mrow>  <mstyle mathsize="140%">    <mfrac><mrow><mn>2</mn><mi>&#x03C0;</mi><mi>x</mi></mrow><mi>&#x03BB;</mi>   </mfrac>  </mstyle><mo>&#x2212;</mo><mn>2</mn><mi>&#x03C0;</mi><mi>f</mi><mi>t</mi></mrow><mo>)</mo></mrow></mrow></math></td>
 								<td></td>
 							</tr>
 							<tr style="height: 50px;">
@@ -1345,7 +1357,7 @@
 							</tr>
 							<tr style="height: 50px;">
 								<td>Pressure:</td>
-								<td><math><mrow><mi>&#x0394;</mi><mi>P</mi><mo stretchy='false'>(</mo><mi>x</mi><mo>,</mo><mi>t</mi><mo stretchy='false'>)</mo><mo>=</mo><mi>&#x0394;</mi><msub><mi>P</mi><mrow><mi>max</mi><mo>&#x2061;</mo></mrow></msub><mi>sin</mi><mo>&#x2061;</mo><mrow><mo>(</mo><mrow><mfrac><mrow><mn>2</mn><mi>&#x03C0;</mi><mi>x</mi></mrow><mi>&#x03BB;</mi></mfrac><mo>&#x2212;</mo><mn>2</mn><mi>&#x03C0;</mi><mi>f</mi><mi>t</mi></mrow><mo>)</mo></mrow></mrow></math></td>
+								<td><math><mrow><mi>&#x0394;</mi><mi>P</mi><mo stretchy='false'>(</mo><mi>x</mi><mo>,</mo><mi>t</mi><mo stretchy='false'>)</mo><mo>=</mo><mi>&#x0394;</mi><msub><mi>P</mi><mrow><mi>max</mi><mo>&#x2061;</mo></mrow></msub><mi>sin</mi><mo>&#x2061;</mo><mrow><mo>(</mo><mrow>  <mstyle mathsize="140%">    <mfrac><mrow><mn>2</mn><mi>&#x03C0;</mi><mi>x</mi></mrow><mi>&#x03BB;</mi>   </mfrac>  </mstyle><mo>&#x2212;</mo><mn>2</mn><mi>&#x03C0;</mi><mi>f</mi><mi>t</mi></mrow><mo>)</mo></mrow></mrow></math></td>
 								<td></td>
 							</tr>
 							<tr style="height: 5px;">
@@ -1372,7 +1384,7 @@
 							</tr>
 							<tr style="height: 50px;">
 								<td>Sound level:</td>
-								<td><math><mrow><mi>&#x03B2;</mi><mo>=</mo><mo stretchy='false'>(</mo><mn>10</mn><mtext>&nbsp;dB</mtext><mo stretchy='false'>)</mo><mi>log</mi><mo>&#x2061;</mo><mfrac><mi>I</mi><mrow><msub><mi>I</mi><mn>0</mn></msub></mrow></mfrac></mrow></math></td>
+								<td><math><mrow><mi>&#x03B2;</mi><mo>=</mo><mo stretchy='false'>(</mo><mn>10</mn><mtext>&nbsp;dB</mtext><mo stretchy='false'>)</mo><mi>log</mi><mo>&#x2061;</mo>  <mstyle mathsize="140%">    <mfrac><mi>I</mi><mrow><msub><mi>I</mi><mn>0</mn></msub></mrow>   </mfrac>  </mstyle></mrow></math></td>
 								<td></td>
 							</tr>
 							<tr style="height: 50px;">
@@ -1382,7 +1394,7 @@
 							</tr>
 							<tr style="height: 50px;">
 								<td>General: </td>
-								<td><math><mrow><msub><mi>f</mi><mtext>L</mtext></msub><mo>=</mo><msub><mi>f</mi><mtext>s</mtext></msub><mrow><mo>(</mo><mrow><mfrac><mrow><mn>1</mn><mo>&#x00B1;</mo><mfrac><mrow><msub><mi>v</mi><mtext>L</mtext></msub></mrow><mi>v</mi></mfrac></mrow><mrow><mn>1</mn><mo>&#x00B1;</mo><mfrac><mrow><msub><mi>v</mi><mtext>s</mtext></msub></mrow><mi>v</mi></mfrac></mrow></mfrac></mrow><mo>)</mo></mrow></mrow></math></td>
+								<td><math><mrow><msub><mi>f</mi><mtext>L</mtext></msub><mo>=</mo><msub><mi>f</mi><mtext>s</mtext></msub><mrow><mo>(</mo><mrow>  <mstyle mathsize="140%">    <mfrac><mrow><mn>1</mn><mo>&#x00B1;</mo>  <mstyle mathsize="140%">    <mfrac><mrow><msub><mi>v</mi><mtext>L</mtext></msub></mrow><mi>v</mi>   </mfrac>  </mstyle></mrow><mrow><mn>1</mn><mo>&#x00B1;</mo>  <mstyle mathsize="140%">    <mfrac><mrow><msub><mi>v</mi><mtext>s</mtext></msub></mrow><mi>v</mi>   </mfrac>  </mstyle></mrow>   </mfrac>  </mstyle></mrow><mo>)</mo></mrow></mrow></math></td>
 								<td></td>
 							</tr>
 							<tr style="height: 50px;">
@@ -1393,7 +1405,7 @@
 						<table style="margin: 0px 0px 0px 15px;float: left;">
 							<tr style="height: 50px;">
 								<td style="width: 300px;">Source moves toward listener: </td>
-								<td><math><mrow><msub><mi>f</mi><mtext>L</mtext></msub><mo>=</mo><msub><mi>f</mi><mtext>s</mtext></msub><mfrac><mn>1</mn><mrow><mn>1</mn><mo>&#x2212;</mo><msub><mi>v</mi><mtext>s</mtext></msub><mo>/</mo><mi>v</mi></mrow></mfrac></mrow></math></td>
+								<td><math><mrow><msub><mi>f</mi><mtext>L</mtext></msub><mo>=</mo><msub><mi>f</mi><mtext>s</mtext></msub>  <mstyle mathsize="140%">    <mfrac><mn>1</mn><mrow><mn>1</mn><mo>&#x2212;</mo><msub><mi>v</mi><mtext>s</mtext></msub><mo>/</mo><mi>v</mi></mrow>   </mfrac>  </mstyle></mrow></math></td>
 							</tr>
 							<tr style="height: 50px;">
 								<td></td>
@@ -1401,7 +1413,7 @@
 							</tr>
 							<tr style="height: 50px;">
 								<td>Source moves away from listener: </td>
-								<td><math><mrow><msub><mi>f</mi><mtext>L</mtext></msub><mo>=</mo><msub><mi>f</mi><mtext>s</mtext></msub><mfrac><mn>1</mn><mrow><mn>1</mn><mo>+</mo><msub><mi>v</mi><mtext>s</mtext></msub><mo>/</mo><mi>v</mi></mrow></mfrac></mrow></math></td>
+								<td><math><mrow><msub><mi>f</mi><mtext>L</mtext></msub><mo>=</mo><msub><mi>f</mi><mtext>s</mtext></msub>  <mstyle mathsize="140%">    <mfrac><mn>1</mn><mrow><mn>1</mn><mo>+</mo><msub><mi>v</mi><mtext>s</mtext></msub><mo>/</mo><mi>v</mi></mrow>   </mfrac>  </mstyle></mrow></math></td>
 							</tr>
 							<tr style="height: 50px;">
 								<td></td>
@@ -1410,7 +1422,7 @@
 							
 							<tr style="height: 50px;">
 								<td>Listener moves toward source: </td>
-								<td><math><mrow><msub><mi>f</mi><mtext>L</mtext></msub><mo>=</mo><msub><mi>f</mi><mtext>s</mtext></msub><mrow><mo>(</mo><mrow><mn>1</mn><mo>+</mo><mfrac><mrow><msub><mi>v</mi><mtext>L</mtext></msub></mrow><mi>v</mi></mfrac></mrow><mo>)</mo></mrow></mrow></math></td>
+								<td><math><mrow><msub><mi>f</mi><mtext>L</mtext></msub><mo>=</mo><msub><mi>f</mi><mtext>s</mtext></msub><mrow><mo>(</mo><mrow><mn>1</mn><mo>+</mo>  <mstyle mathsize="140%">    <mfrac><mrow><msub><mi>v</mi><mtext>L</mtext></msub></mrow><mi>v</mi>   </mfrac>  </mstyle></mrow><mo>)</mo></mrow></mrow></math></td>
 							</tr>
 							<tr style="height: 50px;">
 								<td></td>
@@ -1418,7 +1430,7 @@
 							</tr>
 							<tr style="height: 50px;">
 								<td>Listener moves away from source: </td>
-								<td><math><mrow><msub><mi>f</mi><mtext>L</mtext></msub><mo>=</mo><msub><mi>f</mi><mtext>s</mtext></msub><mrow><mo>(</mo><mrow><mn>1</mn><mo>&#x2212;</mo><mfrac><mrow><msub><mi>v</mi><mtext>L</mtext></msub></mrow><mi>v</mi></mfrac></mrow><mo>)</mo></mrow></mrow></math></td>
+								<td><math><mrow><msub><mi>f</mi><mtext>L</mtext></msub><mo>=</mo><msub><mi>f</mi><mtext>s</mtext></msub><mrow><mo>(</mo><mrow><mn>1</mn><mo>&#x2212;</mo>  <mstyle mathsize="140%">    <mfrac><mrow><msub><mi>v</mi><mtext>L</mtext></msub></mrow><mi>v</mi>   </mfrac>  </mstyle></mrow><mo>)</mo></mrow></mrow></math></td>
 							</tr>
 							<tr style="height: 50px;">
 								<td></td>
@@ -1450,7 +1462,7 @@
 							</tr>
 							<tr style="height: 50px;">
 								<td>Destructive interference: </td>
-								<td><math><mrow><mi>&#x0394;</mi><mi>p</mi><mo>=</mo><mfrac><mrow><mn>2</mn><mi>n</mi><mo>+</mo><mn>1</mn></mrow><mn>2</mn></mfrac><mi>&#x03BB;</mi></mrow></math></td>
+								<td><math><mrow><mi>&#x0394;</mi><mi>p</mi><mo>=</mo>  <mstyle mathsize="140%">    <mfrac><mrow><mn>2</mn><mi>n</mi><mo>+</mo><mn>1</mn></mrow><mn>2</mn>   </mfrac>  </mstyle><mi>&#x03BB;</mi></mrow></math></td>
 							</tr>
 							<tr style="height: 50px;">
 								<td></td>
@@ -1466,7 +1478,7 @@
 							</tr>
 							<tr style="height: 50px;">
 								<td></td>
-								<td><math><mrow><msub><mi>&#x03C9;</mi><mtext>a</mtext></msub><mo>=</mo><mfrac><mrow><msub><mi>&#x03C9;</mi><mn>1</mn></msub><mo>&#x2212;</mo><msub><mi>&#x03C9;</mi><mn>2</mn></msub></mrow><mn>2</mn></mfrac><mo>,</mo><mtext>&nbsp;&nbsp;</mtext><msub><mi>&#x03C9;</mi><mtext>b</mtext></msub><mo>=</mo><mfrac><mrow><msub><mi>&#x03C9;</mi><mn>1</mn></msub><mo>+</mo><msub><mi>&#x03C9;</mi><mn>2</mn></msub></mrow><mn>2</mn></mfrac></mrow></math></td>
+								<td><math><mrow><msub><mi>&#x03C9;</mi><mtext>a</mtext></msub><mo>=</mo>  <mstyle mathsize="140%">    <mfrac><mrow><msub><mi>&#x03C9;</mi><mn>1</mn></msub><mo>&#x2212;</mo><msub><mi>&#x03C9;</mi><mn>2</mn></msub></mrow><mn>2</mn>   </mfrac>  </mstyle><mo>,</mo><mtext>&nbsp;&nbsp;</mtext><msub><mi>&#x03C9;</mi><mtext>b</mtext></msub><mo>=</mo>  <mstyle mathsize="140%">    <mfrac><mrow><msub><mi>&#x03C9;</mi><mn>1</mn></msub><mo>+</mo><msub><mi>&#x03C9;</mi><mn>2</mn></msub></mrow><mn>2</mn>   </mfrac>  </mstyle></mrow></math></td>
 							</tr>
 							<tr style="height: 50px;">
 								<td></td>
@@ -1490,7 +1502,7 @@
 							</tr>
 							<tr style="height: 50px;">
 								<td><math><mrow><msub><mi>y</mi><mtext>s</mtext></msub><mo>=</mo><mn>2</mn><mi>A</mi><mi>sin</mi><mo>&#x2061;</mo><mrow><mo>(</mo><mrow><mi>k</mi><mi>x</mi></mrow><mo>)</mo></mrow><mi>cos</mi><mo>&#x2061;</mo><mrow><mo>(</mo><mrow><mi>&#x03C9;</mi><mi>t</mi></mrow><mo>)</mo></mrow></mrow></math></td>
-								<td><math><mrow><msub><mi>f</mi><mtext>n</mtext></msub><mo>=</mo><mfrac><mi>v</mi><mrow><msub><mi>&#x03BB;</mi><mtext>n</mtext></msub></mrow></mfrac><mo>=</mo><mi>n</mi><mfrac><mi>v</mi><mrow><mn>2</mn><mi>L</mi></mrow></mfrac></mrow></math></td>
+								<td><math><mrow><msub><mi>f</mi><mtext>n</mtext></msub><mo>=</mo>  <mstyle mathsize="140%">    <mfrac><mi>v</mi><mrow><msub><mi>&#x03BB;</mi><mtext>n</mtext></msub></mrow>   </mfrac>  </mstyle><mo>=</mo><mi>n</mi>  <mstyle mathsize="140%">    <mfrac><mi>v</mi><mrow><mn>2</mn><mi>L</mi></mrow>   </mfrac>  </mstyle></mrow></math></td>
 							</tr>
 							<tr style="height: 50px;">
 								<td></td>
@@ -1500,8 +1512,8 @@
 						<table style="margin: 0px 0px 0px 15px;float: left;">
 							<tr style="height: 50px;">
 								<td style="width:100px">Nodes:</td>
-								<td style="width:200px"><math><mrow><mi>x</mi><mo>=</mo><mi>n</mi><mfrac><mi>&#x03BB;</mi><mn>2</mn></mfrac></mrow></math></td>
-								<td style="width:290px"><math><mrow><msub><mi>f</mi><mtext>n</mtext></msub><mo>=</mo><mfrac><mrow><mi>n</mi><mi>v</mi></mrow><mrow><mn>2</mn><mi>L</mi></mrow></mfrac></mrow></math> for pipe, both ends open</td>
+								<td style="width:200px"><math><mrow><mi>x</mi><mo>=</mo><mi>n</mi>  <mstyle mathsize="140%">    <mfrac><mi>&#x03BB;</mi><mn>2</mn>   </mfrac>  </mstyle></mrow></math></td>
+								<td style="width:290px"><math><mrow><msub><mi>f</mi><mtext>n</mtext></msub><mo>=</mo>  <mstyle mathsize="140%">    <mfrac><mrow><mi>n</mi><mi>v</mi></mrow><mrow><mn>2</mn><mi>L</mi></mrow>   </mfrac>  </mstyle></mrow></math> for pipe, both ends open</td>
 							</tr>
 							<tr style="height: 50px;">
 								<td></td>
@@ -1510,8 +1522,8 @@
 							</tr>
 							<tr style="height: 50px;">
 								<td>Antinodes:</td>
-								<td><math><mrow><mi>x</mi><mo>=</mo><mrow><mo>[</mo> <mrow><mi>n</mi><mo>+</mo><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow> <mo>]</mo></mrow><mfrac><mi>&#x03BB;</mi><mn>2</mn></mfrac></mrow></math></td>
-								<td><math><mrow><msub><mi>f</mi><mtext>n</mtext></msub><mo>=</mo><mfrac><mrow><mi>n</mi><mi>v</mi></mrow><mrow><mn>4</mn><mi>L</mi></mrow></mfrac></mrow></math> for pipe, one end closed</td>
+								<td><math><mrow><mi>x</mi><mo>=</mo><mrow><mo>[</mo> <mrow><mi>n</mi><mo>+</mo>  <mstyle mathsize="140%">    <mfrac><mn>1</mn><mn>2</mn>   </mfrac>  </mstyle></mrow> <mo>]</mo></mrow>  <mstyle mathsize="140%">    <mfrac><mi>&#x03BB;</mi><mn>2</mn>   </mfrac>  </mstyle></mrow></math></td>
+								<td><math><mrow><msub><mi>f</mi><mtext>n</mtext></msub><mo>=</mo>  <mstyle mathsize="140%">    <mfrac><mrow><mi>n</mi><mi>v</mi></mrow><mrow><mn>4</mn><mi>L</mi></mrow>   </mfrac>  </mstyle></mrow></math> for pipe, one end closed</td>
 							</tr>
 						</table>
 					
@@ -1577,8 +1589,8 @@
 						<table  style="margin: 0px 0px 0px 15px;float: left;">
 							<tr style="height: 50px;">
 								<td style="width:210px"><math><mrow><msub><mi>P</mi><mtext>c</mtext></msub><mo>=</mo><mi>Q</mi><mo>/</mo><mi>t</mi></mrow></math></td>
-								<td style="width:130px"><math><mrow><mover accent='true'><mrow><mi>K</mi><mi>E</mi></mrow><mo stretchy='true'>&#x00AF;</mo></mover><mtext>&nbsp;=&nbsp;</mtext><mfrac><mtext>3</mtext><mtext>2</mtext></mfrac><mi>k</mi><mi>T</mi></mrow></math></td>
-								<td style="width:130px"><math><mrow><mi>P</mi><mi>V</mi><mo>=</mo><mfrac><mi>N</mi><mn>3</mn></mfrac><mi>m</mi><mover accent='true'><mrow><msup><mi>v</mi><mn>2</mn></msup></mrow><mo stretchy='true'>&#x00AF;</mo></mover></mrow></math></td>
+								<td style="width:130px"><math><mrow><mover accent='true'><mrow><mi>K</mi><mi>E</mi></mrow><mo stretchy='true'>&#x00AF;</mo></mover><mtext>&nbsp;=&nbsp;</mtext>  <mstyle mathsize="140%">    <mfrac><mtext>3</mtext><mtext>2</mtext>   </mfrac>  </mstyle><mi>k</mi><mi>T</mi></mrow></math></td>
+								<td style="width:130px"><math><mrow><mi>P</mi><mi>V</mi><mo>=</mo>  <mstyle mathsize="140%">    <mfrac><mi>N</mi><mn>3</mn>   </mfrac>  </mstyle><mi>m</mi><mover accent='true'><mrow><msup><mi>v</mi><mn>2</mn></msup></mrow><mo stretchy='true'>&#x00AF;</mo></mover></mrow></math></td>
 							</tr>
 							<tr style="height: 50px;">
 								<td><math><mrow><mi>R</mi><mo>=</mo><mi>L</mi><mo>/</mo><mi>k</mi></mrow></math></td>
@@ -1588,11 +1600,11 @@
 						</table>
 						<table  style="margin: 0px 0px 0px 15px;float: left;">
 							<tr style="height: 50px;">
-								<td style="width:210px"><math><mrow><msub><mi>P</mi><mtext>c</mtext></msub><mo>=</mo><mfrac><mrow><mi>k</mi><mi>A</mi><mi>&#x0394;</mi><mi>T</mi></mrow><mi>L</mi></mfrac><mo>=</mo><mfrac><mrow><mi>A</mi><mi>&#x0394;</mi><mi>T</mi></mrow><mi>R</mi></mfrac></mrow></math></td>
-								<td style="width:270px"><math><mrow><msub><mi>E</mi><mrow><mtext>int</mtext></mrow></msub><mo>=</mo><mfrac><mn>3</mn><mn>2</mn></mfrac><mi>n</mi><mi>R</mi><mi>T</mi></mrow></math> (ideal monatomic gas)</td>
+								<td style="width:210px"><math><mrow><msub><mi>P</mi><mtext>c</mtext></msub><mo>=</mo>  <mstyle mathsize="140%">    <mfrac><mrow><mi>k</mi><mi>A</mi><mi>&#x0394;</mi><mi>T</mi></mrow><mi>L</mi>   </mfrac>  </mstyle><mo>=</mo>  <mstyle mathsize="140%">    <mfrac><mrow><mi>A</mi><mi>&#x0394;</mi><mi>T</mi></mrow><mi>R</mi>   </mfrac>  </mstyle></mrow></math></td>
+								<td style="width:270px"><math><mrow><msub><mi>E</mi><mrow><mtext>int</mtext></mrow></msub><mo>=</mo>  <mstyle mathsize="140%">    <mfrac><mn>3</mn><mn>2</mn>   </mfrac>  </mstyle><mi>n</mi><mi>R</mi><mi>T</mi></mrow></math> (ideal monatomic gas)</td>
 							</tr>
 							<tr style="height: 50px;">
-								<td><math><mrow><msub><mi>P</mi><mtext>c</mtext></msub><mo>=</mo><mfrac><mrow><mi>A</mi><mi>&#x0394;</mi><mi>T</mi></mrow><mrow><msub><mi>R</mi><mrow><mtext>comp</mtext></mrow></msub></mrow></mfrac></mrow></math></td>
+								<td><math><mrow><msub><mi>P</mi><mtext>c</mtext></msub><mo>=</mo>  <mstyle mathsize="140%">    <mfrac><mrow><mi>A</mi><mi>&#x0394;</mi><mi>T</mi></mrow><mrow><msub><mi>R</mi><mrow><mtext>comp</mtext></mrow></msub></mrow>   </mfrac>  </mstyle></mrow></math></td>
 								<td></td>
 							</tr>
 							<tr style="height: 50px;"></tr>
@@ -1604,14 +1616,14 @@
 								<th style="text-align:left;width:105px;"></th>
 							</tr>
 							<tr style="height: 50px;">
-								<td><math><mrow><mi>&#x03BB;</mi><mo>=</mo><mfrac><mn>1</mn><mrow><msqrt><mn>2</mn></msqrt><mi>&#x03C0;</mi><msup><mi>d</mi><mn>2</mn></msup><mo stretchy='false'>(</mo><mi>N</mi><mo>/</mo><mi>V</mi><mo stretchy='false'>)</mo></mrow></mfrac></mrow></math></td>
-								<td><math><mrow><msub><mi>v</mi><mrow><mtext>rms</mtext></mrow></msub><mo>=</mo><msqrt><mrow><mfrac><mrow><mn>3</mn><mi>R</mi><mi>T</mi></mrow><mi>M</mi></mfrac></mrow></msqrt></mrow></math></td>
+								<td><math><mrow><mi>&#x03BB;</mi><mo>=</mo>  <mstyle mathsize="140%">    <mfrac><mn>1</mn><mrow><msqrt><mn>2</mn></msqrt><mi>&#x03C0;</mi><msup><mi>d</mi><mn>2</mn></msup><mo stretchy='false'>(</mo><mi>N</mi><mo>/</mo><mi>V</mi><mo stretchy='false'>)</mo></mrow>   </mfrac>  </mstyle></mrow></math></td>
+								<td><math><mrow><msub><mi>v</mi><mrow><mtext>rms</mtext></mrow></msub><mo>=</mo><msqrt><mrow>  <mstyle mathsize="140%">    <mfrac><mrow><mn>3</mn><mi>R</mi><mi>T</mi></mrow><mi>M</mi>   </mfrac>  </mstyle></mrow></msqrt></mrow></math></td>
 								<td></td>
 							</tr>
 							<tr style="height: 50px;">
-								<td><math><mrow><mi>P</mi><mo stretchy='false'>(</mo><mi>v</mi><mo stretchy='false'>)</mo><mo>=</mo><mn>4</mn><mi>&#x03C0;</mi><msup><mrow><mrow><mo>(</mo><mrow><mfrac><mi>M</mi><mrow><mn>2</mn><mi>&#x03C0;</mi><mi>R</mi><mi>T</mi></mrow></mfrac></mrow><mo>)</mo></mrow></mrow><mrow><mfrac><mn>3</mn><mn>2</mn></mfrac></mrow></msup><msup><mi>v</mi><mn>2</mn></msup><msup><mi>e</mi><mrow><mo>&#x2212;</mo><mi>M</mi><msup><mi>v</mi><mn>2</mn></msup><mo>/</mo><mn>2</mn><mi>R</mi><mi>T</mi></mrow></msup></mrow></math></td>
-								<td><math><mrow><msub><mi>v</mi><mtext>p</mtext></msub><mo>=</mo><msqrt><mrow><mfrac><mrow><mn>2</mn><mi>R</mi><mi>T</mi></mrow><mi>M</mi></mfrac></mrow></msqrt></mrow></math></td>
-								<td><math><mrow><msub><mi>v</mi><mrow><mtext>avg</mtext></mrow></msub><mo>=</mo><msqrt><mrow><mfrac><mrow><mn>8</mn><mi>R</mi><mi>T</mi></mrow><mrow><mi>&#x03C0;</mi><mi>M</mi></mrow></mfrac></mrow></msqrt></mrow></math></td>
+								<td><math><mrow><mi>P</mi><mo stretchy='false'>(</mo><mi>v</mi><mo stretchy='false'>)</mo><mo>=</mo><mn>4</mn><mi>&#x03C0;</mi><msup><mrow><mrow><mo>(</mo><mrow>  <mstyle mathsize="140%">    <mfrac><mi>M</mi><mrow><mn>2</mn><mi>&#x03C0;</mi><mi>R</mi><mi>T</mi></mrow>   </mfrac>  </mstyle></mrow><mo>)</mo></mrow></mrow><mrow>  <mstyle mathsize="140%">    <mfrac><mn>3</mn><mn>2</mn>   </mfrac>  </mstyle></mrow></msup><msup><mi>v</mi><mn>2</mn></msup><msup><mi>e</mi><mrow><mo>&#x2212;</mo><mi>M</mi><msup><mi>v</mi><mn>2</mn></msup><mo>/</mo><mn>2</mn><mi>R</mi><mi>T</mi></mrow></msup></mrow></math></td>
+								<td><math><mrow><msub><mi>v</mi><mtext>p</mtext></msub><mo>=</mo><msqrt><mrow>  <mstyle mathsize="140%">    <mfrac><mrow><mn>2</mn><mi>R</mi><mi>T</mi></mrow><mi>M</mi>   </mfrac>  </mstyle></mrow></msqrt></mrow></math></td>
+								<td><math><mrow><msub><mi>v</mi><mrow><mtext>avg</mtext></mrow></msub><mo>=</mo><msqrt><mrow>  <mstyle mathsize="140%">    <mfrac><mrow><mn>8</mn><mi>R</mi><mi>T</mi></mrow><mrow><mi>&#x03C0;</mi><mi>M</mi></mrow>   </mfrac>  </mstyle></mrow></msqrt></mrow></math></td>
 							</tr>
 							<tr style="height: 50px;"></tr>
 						</table>
@@ -1659,7 +1671,7 @@
 								<td><math><mrow><mi>P</mi><msup><mi>V</mi><mi>&#x03B3;</mi></msup><mo>=</mo><mtext>constant</mtext></mrow></math></td>
 							</tr>
 							<tr style="height: 50px;">
-								<td><math><mrow><mi>W</mi><mo>=</mo><mo>&#x2212;</mo><mstyle scriptlevel='+1'><mfrac><mn>3</mn><mn>2</mn></mfrac></mstyle><mi>n</mi><mi>R</mi><mo stretchy='false'>(</mo><msub><mi>T</mi><mtext>f</mtext></msub><mo>&#x2212;</mo><msub><mi>T</mi><mtext>i</mtext></msub><mo stretchy='false'>)</mo></mrow></math> (monatomic gas)</td>
+								<td><math><mrow><mi>W</mi><mo>=</mo><mo>&#x2212;</mo><mstyle scriptlevel='+1'>  <mstyle mathsize="140%">    <mfrac><mn>3</mn><mn>2</mn>   </mfrac>  </mstyle></mstyle><mi>n</mi><mi>R</mi><mo stretchy='false'>(</mo><msub><mi>T</mi><mtext>f</mtext></msub><mo>&#x2212;</mo><msub><mi>T</mi><mtext>i</mtext></msub><mo stretchy='false'>)</mo></mrow></math> (monatomic gas)</td>
 								<td><math><mrow><msub><mi>P</mi><mtext>f</mtext></msub><msubsup><mi>V</mi><mtext>f</mtext><mi>&#x03B3;</mi></msubsup><mo>=</mo><msub><mi>P</mi><mtext>i</mtext></msub><msubsup><mi>V</mi><mi>i</mi><mi>&#x03B3;</mi></msubsup></mrow></math></td>
 							</tr>
 							<tr style="height: 50px;">
@@ -1684,28 +1696,28 @@
 								<td>In an isolated system, <math><mrow><mi>&#x0394;</mi><mi>S</mi><mo>&#x2265;</mo><mn>0</mn></mrow></math></td>
 							</tr>
 							<tr style="height: 50px;">
-								<td><math><mrow><mi>e</mi><mo>=</mo><mn>1</mn><mo>&#x2212;</mo><mfrac><mrow><msub><mi>Q</mi><mtext>c</mtext></msub></mrow><mrow><msub><mi>Q</mi><mtext>h</mtext></msub></mrow></mfrac></mrow></math></td>
+								<td><math><mrow><mi>e</mi><mo>=</mo><mn>1</mn><mo>&#x2212;</mo>  <mstyle mathsize="140%">    <mfrac><mrow><msub><mi>Q</mi><mtext>c</mtext></msub></mrow><mrow><msub><mi>Q</mi><mtext>h</mtext></msub></mrow>   </mfrac>  </mstyle></mrow></math></td>
 								<td></td>
-								<td><math><mrow><mi>&#x0394;</mi><mi>S</mi><mo>=</mo><mfrac><mrow><msub><mi>Q</mi><mrow><mtext>rev</mtext></mrow></msub></mrow><mi>T</mi></mfrac></mrow></math></td>
+								<td><math><mrow><mi>&#x0394;</mi><mi>S</mi><mo>=</mo>  <mstyle mathsize="140%">    <mfrac><mrow><msub><mi>Q</mi><mrow><mtext>rev</mtext></mrow></msub></mrow><mi>T</mi>   </mfrac>  </mstyle></mrow></math></td>
 							</tr>
 							<tr style="height: 50px;">
-								<td><math><mrow><mi>e</mi><mo>&#x2264;</mo><mn>1</mn><mo>&#x2212;</mo><mfrac><mrow><msub><mi>T</mi><mtext>c</mtext></msub></mrow><mrow><msub><mi>T</mi><mtext>h</mtext></msub></mrow></mfrac></mrow></math></td>
+								<td><math><mrow><mi>e</mi><mo>&#x2264;</mo><mn>1</mn><mo>&#x2212;</mo>  <mstyle mathsize="140%">    <mfrac><mrow><msub><mi>T</mi><mtext>c</mtext></msub></mrow><mrow><msub><mi>T</mi><mtext>h</mtext></msub></mrow>   </mfrac>  </mstyle></mrow></math></td>
 								<td></td>
 								<td></td>
 							</tr>
 						</table>
 						<table  style="margin: 0px 0px 0px 15px;float: left;">
 							<tr style="height: 50px;">
-								<td style="width:340px;"><math><mrow><msub><mi>e</mi><mrow><mtext>ce</mtext></mrow></msub><mo>=</mo><mn>1</mn><mo>&#x2212;</mo><mfrac><mrow><msub><mi>T</mi><mtext>c</mtext></msub></mrow><mrow><msub><mi>T</mi><mtext>h</mtext></msub></mrow></mfrac></mrow></math> (Carnot engine)</td>
+								<td style="width:340px;"><math><mrow><msub><mi>e</mi><mrow><mtext>ce</mtext></mrow></msub><mo>=</mo><mn>1</mn><mo>&#x2212;</mo>  <mstyle mathsize="140%">    <mfrac><mrow><msub><mi>T</mi><mtext>c</mtext></msub></mrow><mrow><msub><mi>T</mi><mtext>h</mtext></msub></mrow>   </mfrac>  </mstyle></mrow></math> (Carnot engine)</td>
 								<td style="width:220px;font-weight:bold;">Coefficient of performance</td>
 							</tr>
 							<tr style="height: 50px;">
-								<td><math><mrow><msub><mi>e</mi><mrow><mtext>se</mtext></mrow></msub><mo>=</mo><mn>1</mn><mo>&#x2212;</mo><mfrac><mrow><msub><mi>T</mi><mrow><mtext>min</mtext></mrow></msub></mrow><mrow><msub><mi>T</mi><mrow><mtext>max</mtext></mrow></msub></mrow></mfrac></mrow></math> (Stirling engine)</td>
-								<td><math><mrow><mi>C</mi><mi>O</mi><mi>P</mi><mo>=</mo><mfrac><mrow><msub><mi>Q</mi><mtext>h</mtext></msub></mrow><mi>W</mi></mfrac><mo>=</mo><mfrac><mn>1</mn><mi>e</mi></mfrac></mrow></math></td>
+								<td><math><mrow><msub><mi>e</mi><mrow><mtext>se</mtext></mrow></msub><mo>=</mo><mn>1</mn><mo>&#x2212;</mo>  <mstyle mathsize="140%">    <mfrac><mrow><msub><mi>T</mi><mrow><mtext>min</mtext></mrow></msub></mrow><mrow><msub><mi>T</mi><mrow><mtext>max</mtext></mrow></msub></mrow>   </mfrac>  </mstyle></mrow></math> (Stirling engine)</td>
+								<td><math><mrow><mi>C</mi><mi>O</mi><mi>P</mi><mo>=</mo>  <mstyle mathsize="140%">    <mfrac><mrow><msub><mi>Q</mi><mtext>h</mtext></msub></mrow><mi>W</mi>   </mfrac>  </mstyle><mo>=</mo>  <mstyle mathsize="140%">    <mfrac><mn>1</mn><mi>e</mi>   </mfrac>  </mstyle></mrow></math></td>
 							</tr>
 							<tr style="height: 50px;">
-								<td><math><mrow><msub><mi>e</mi><mrow><mtext>ice</mtext></mrow></msub><mo>=</mo><mn>1</mn><mo>&#x2212;</mo><mfrac><mn>1</mn><mrow><msup><mrow><mo stretchy='false'>(</mo><msub><mi>V</mi><mrow><mtext>max</mtext></mrow></msub><mo>/</mo><msub><mi>V</mi><mrow><mtext>min</mtext></mrow></msub><mo stretchy='false'>)</mo></mrow><mrow><mi>&#x03B3;</mi><mo>&#x2212;</mo><mn>1</mn></mrow></msup></mrow></mfrac></mrow></math> (Otto cycle)</td>
-								<td><math><mrow><mi>C</mi><mi>O</mi><mi>P</mi><mo>&#x2264;</mo><mfrac><mrow><msub><mi>T</mi><mtext>h</mtext></msub></mrow><mrow><msub><mi>T</mi><mtext>h</mtext></msub><mo>&#x2212;</mo><msub><mi>T</mi><mtext>c</mtext></msub></mrow></mfrac></mrow></math></td>
+								<td><math><mrow><msub><mi>e</mi><mrow><mtext>ice</mtext></mrow></msub><mo>=</mo><mn>1</mn><mo>&#x2212;</mo>  <mstyle mathsize="140%">    <mfrac><mn>1</mn><mrow><msup><mrow><mo stretchy='false'>(</mo><msub><mi>V</mi><mrow><mtext>max</mtext></mrow></msub><mo>/</mo><msub><mi>V</mi><mrow><mtext>min</mtext></mrow></msub><mo stretchy='false'>)</mo></mrow><mrow><mi>&#x03B3;</mi><mo>&#x2212;</mo><mn>1</mn></mrow></msup></mrow>   </mfrac>  </mstyle></mrow></math> (Otto cycle)</td>
+								<td><math><mrow><mi>C</mi><mi>O</mi><mi>P</mi><mo>&#x2264;</mo>  <mstyle mathsize="140%">    <mfrac><mrow><msub><mi>T</mi><mtext>h</mtext></msub></mrow><mrow><msub><mi>T</mi><mtext>h</mtext></msub><mo>&#x2212;</mo><msub><mi>T</mi><mtext>c</mtext></msub></mrow>   </mfrac>  </mstyle></mrow></math></td>
 							</tr>
 							<tr style="height: 50px;"></tr>
 						</table>
@@ -1716,7 +1728,7 @@
 							</tr>
 							<tr style="height: 50px;">
 								<td><math><mrow><mi>S</mi><mo>=</mo><mi>k</mi><mi>ln</mi><mo>&#x2061;</mo><mi>&#x03A9;</mi></mrow></math></td>
-								<td><math><mrow><mi>&#x03A9;</mi><mo>=</mo><mfrac><mrow><mo stretchy='false'>(</mo><mi>a</mi><mo>+</mo><mi>b</mi><mo stretchy='false'>)</mo><mo>!</mo></mrow><mrow><mi>a</mi><mo>!</mo><mi>b</mi><mo>!</mo></mrow></mfrac></mrow></math></td>
+								<td><math><mrow><mi>&#x03A9;</mi><mo>=</mo>  <mstyle mathsize="140%">    <mfrac><mrow><mo stretchy='false'>(</mo><mi>a</mi><mo>+</mo><mi>b</mi><mo stretchy='false'>)</mo><mo>!</mo></mrow><mrow><mi>a</mi><mo>!</mo><mi>b</mi><mo>!</mo></mrow>   </mfrac>  </mstyle></mrow></math></td>
 							</tr>
 							<tr style="height: 50px;"></tr>
 						</table>
@@ -1733,8 +1745,8 @@
 								<th style="text-align:left;width:250px">Force on a charge by an E-field</th>
 							</tr>
 							<tr style="height: 50px;">
-								<td><math><mrow><mi>F</mi><mo>=</mo><mi>k</mi><mfrac><mrow><mrow><mo>|</mo> <mrow><msub><mi>q</mi><mn>1</mn></msub></mrow> <mo>|</mo></mrow><mrow><mo>|</mo> <mrow><msub><mi>q</mi><mn>2</mn></msub></mrow> <mo>|</mo></mrow></mrow><mrow><msup><mi>r</mi><mn>2</mn></msup></mrow></mfrac></mrow></math></td>
-								<td><math><mrow><mi>E</mi><mo>=</mo><mfrac><mrow><mi>k</mi><mrow><mo>|</mo> <mi>q</mi> <mo>|</mo></mrow></mrow><mrow><msup><mi>r</mi><mn>2</mn></msup></mrow></mfrac></mrow></math></td>
+								<td><math><mrow><mi>F</mi><mo>=</mo><mi>k</mi>  <mstyle mathsize="140%">    <mfrac><mrow><mrow><mo>|</mo> <mrow><msub><mi>q</mi><mn>1</mn></msub></mrow> <mo>|</mo></mrow><mrow><mo>|</mo> <mrow><msub><mi>q</mi><mn>2</mn></msub></mrow> <mo>|</mo></mrow></mrow><mrow><msup><mi>r</mi><mn>2</mn></msup></mrow>   </mfrac>  </mstyle></mrow></math></td>
+								<td><math><mrow><mi>E</mi><mo>=</mo>  <mstyle mathsize="140%">    <mfrac><mrow><mi>k</mi><mrow><mo>|</mo> <mi>q</mi> <mo>|</mo></mrow></mrow><mrow><msup><mi>r</mi><mn>2</mn></msup></mrow>   </mfrac>  </mstyle></mrow></math></td>
 								<td><math><mrow><mstyle mathvariant='bold' mathsize='normal'><mi>F</mi></mstyle><mo>=</mo><mi>q</mi><mstyle mathvariant='bold' mathsize='normal'><mi>E</mi></mstyle></mrow></math></td>
 							</tr>
 							<tr style="height: 50px;">
@@ -1753,7 +1765,7 @@
 								<td></td>
 							</tr>
 							<tr style="height: 50px;">
-								<td><math><mrow><mi>V</mi><mo>=</mo><mfrac><mrow><mi>k</mi><mi>q</mi></mrow><mi>r</mi></mfrac></mrow></math></td>
+								<td><math><mrow><mi>V</mi><mo>=</mo>  <mstyle mathsize="140%">    <mfrac><mrow><mi>k</mi><mi>q</mi></mrow><mi>r</mi>   </mfrac>  </mstyle></mrow></math></td>
 								<td></td>
 								<td></td>
 							</tr>
@@ -1769,19 +1781,19 @@
 								<td>Uniform field: <math><mrow><mi>&#x0394;</mi><mi>V</mi><mo>=</mo><mo>&#x2212;</mo><mi>E</mi><mi>&#x0394;</mi><mi>s</mi></mrow></math></td>
 							</tr>
 							<tr style="height: 50px;">
-								<td><math><mrow><mstyle mathvariant='bold' mathsize='normal'><mi>E</mi></mstyle><mo>&#x2248;</mo><mfrac><mrow><mn>2</mn><mi>k</mi><mstyle mathvariant='bold' mathsize='normal'><mi>p</mi></mstyle></mrow><mrow><msup><mi>x</mi><mn>3</mn></msup></mrow></mfrac><mo>,</mo><mtext>&nbsp;parallel&nbsp;to&nbsp;dipole&nbsp;moment</mtext></mrow></math></td>
+								<td><math><mrow><mstyle mathvariant='bold' mathsize='normal'><mi>E</mi></mstyle><mo>&#x2248;</mo>  <mstyle mathsize="140%">    <mfrac><mrow><mn>2</mn><mi>k</mi><mstyle mathvariant='bold' mathsize='normal'><mi>p</mi></mstyle></mrow><mrow><msup><mi>x</mi><mn>3</mn></msup></mrow>   </mfrac>  </mstyle><mo>,</mo><mtext>&nbsp;parallel&nbsp;to&nbsp;dipole&nbsp;moment</mtext></mrow></math></td>
 								<td></td>
 							</tr>
 							<tr style="height: 50px;">
-								<td><math><mrow><mstyle mathvariant='bold' mathsize='normal'><mi>E</mi></mstyle><mo>&#x2248;</mo><mfrac><mrow><mo>&#x2212;</mo><mi>k</mi><mstyle mathvariant='bold' mathsize='normal'><mi>p</mi></mstyle></mrow><mrow><msup><mi>y</mi><mn>3</mn></msup></mrow></mfrac><mo>,</mo><mtext>&nbsp;opposite&nbsp;dipole&nbsp;moment</mtext></mrow></math></td>
+								<td><math><mrow><mstyle mathvariant='bold' mathsize='normal'><mi>E</mi></mstyle><mo>&#x2248;</mo>  <mstyle mathsize="140%">    <mfrac><mrow><mo>&#x2212;</mo><mi>k</mi><mstyle mathvariant='bold' mathsize='normal'><mi>p</mi></mstyle></mrow><mrow><msup><mi>y</mi><mn>3</mn></msup></mrow>   </mfrac>  </mstyle><mo>,</mo><mtext>&nbsp;opposite&nbsp;dipole&nbsp;moment</mtext></mrow></math></td>
 								<td style="font-weight:bold;">Potential energy of two-charge system</td>
 							</tr>
 							<tr style="height: 50px;">
-								<td><math><mrow><mi>V</mi><mo>=</mo><mi>k</mi><mi>q</mi><mrow><mo>(</mo><mrow><mfrac><mn>1</mn><mrow><msub><mi>r</mi><mrow><mtext>pos</mtext></mrow></msub></mrow></mfrac><mo>&#x2212;</mo><mfrac><mn>1</mn><mrow><msub><mi>r</mi><mrow><mtext>neg</mtext></mrow></msub></mrow></mfrac></mrow><mo>)</mo></mrow></mrow></math></td>
-								<td><math><mrow><mi>P</mi><msub><mi>E</mi><mtext>e</mtext></msub><mo>=</mo><mfrac><mrow><mi>k</mi><msub><mi>q</mi><mn>1</mn></msub><msub><mi>q</mi><mn>2</mn></msub></mrow><mi>r</mi></mfrac></mrow></math></td>
+								<td><math><mrow><mi>V</mi><mo>=</mo><mi>k</mi><mi>q</mi><mrow><mo>(</mo><mrow>  <mstyle mathsize="140%">    <mfrac><mn>1</mn><mrow><msub><mi>r</mi><mrow><mtext>pos</mtext></mrow></msub></mrow>   </mfrac>  </mstyle><mo>&#x2212;</mo>  <mstyle mathsize="140%">    <mfrac><mn>1</mn><mrow><msub><mi>r</mi><mrow><mtext>neg</mtext></mrow></msub></mrow>   </mfrac>  </mstyle></mrow><mo>)</mo></mrow></mrow></math></td>
+								<td><math><mrow><mi>P</mi><msub><mi>E</mi><mtext>e</mtext></msub><mo>=</mo>  <mstyle mathsize="140%">    <mfrac><mrow><mi>k</mi><msub><mi>q</mi><mn>1</mn></msub><msub><mi>q</mi><mn>2</mn></msub></mrow><mi>r</mi>   </mfrac>  </mstyle></mrow></math></td>
 							</tr>
 							<tr style="height: 50px;">
-								<td><math><mrow><mi>V</mi><mo>&#x2248;</mo><mfrac><mrow><mi>k</mi><mi>p</mi><mi>cos</mi><mo>&#x2061;</mo><mi>&#x03B8;</mi></mrow><mrow><msup><mi>r</mi><mn>2</mn></msup></mrow></mfrac><mtext>,&nbsp;&nbsp;where&nbsp;&nbsp;</mtext><mi>p</mi><mo>=</mo><mi>q</mi><mi>d</mi></mrow></math></td>
+								<td><math><mrow><mi>V</mi><mo>&#x2248;</mo>  <mstyle mathsize="140%">    <mfrac><mrow><mi>k</mi><mi>p</mi><mi>cos</mi><mo>&#x2061;</mo><mi>&#x03B8;</mi></mrow><mrow><msup><mi>r</mi><mn>2</mn></msup></mrow>   </mfrac>  </mstyle><mtext>,&nbsp;&nbsp;where&nbsp;&nbsp;</mtext><mi>p</mi><mo>=</mo><mi>q</mi><mi>d</mi></mrow></math></td>
 								<td></td>
 							</tr>
 							<tr style="height: 50px;"></tr>
@@ -1810,19 +1822,19 @@
 						<table  style="margin: 0px 0px 0px 15px;float: left;">
 							<tr style="height: 50px;">
 								<td style="width:120px">Infinite rod:</td>
-								<td style="width:180px"><math><mrow><mi>E</mi><mo>=</mo><mfrac><mi>&#x03BB;</mi><mrow><mn>2</mn><mi>&#x03C0;</mi><msub><mi>&#x03B5;</mi><mn>0</mn></msub><mi>r</mi></mrow></mfrac></mrow></math></td>
+								<td style="width:180px"><math><mrow><mi>E</mi><mo>=</mo>  <mstyle mathsize="140%">    <mfrac><mi>&#x03BB;</mi><mrow><mn>2</mn><mi>&#x03C0;</mi><msub><mi>&#x03B5;</mi><mn>0</mn></msub><mi>r</mi></mrow>   </mfrac>  </mstyle></mrow></math></td>
 								<td style="width:300px"><math><mrow><msub><mi>u</mi><mtext>E</mtext></msub><mo>=</mo><mi>P</mi><msub><mi>E</mi><mtext>e</mtext></msub><mo>/</mo><mi>V</mi><mi>o</mi><mi>l</mi></mrow></math></td>
 							</tr>
 							<tr style="height: 50px;">
 								<td>Infinite plane:</td>
-								<td><math><mrow><mi>E</mi><mo>=</mo><mfrac><mi>&#x03C3;</mi><mrow><mn>2</mn><msub><mi>&#x03B5;</mi><mn>0</mn></msub></mrow></mfrac></mrow></math></td>
-								<td><math><mrow><msub><mi>u</mi><mtext>E</mtext></msub><mo>=</mo><mstyle scriptlevel='+1'><mfrac bevelled='true'><mn>1</mn><mn>2</mn></mfrac></mstyle><msub><mi>&#x03B5;</mi><mn>0</mn></msub><msup><mi>E</mi><mn>2</mn></msup></mrow></math></td>
+								<td><math><mrow><mi>E</mi><mo>=</mo>  <mstyle mathsize="140%">    <mfrac><mi>&#x03C3;</mi><mrow><mn>2</mn><msub><mi>&#x03B5;</mi><mn>0</mn></msub></mrow>   </mfrac>  </mstyle></mrow></math></td>
+								<td><math><mrow><msub><mi>u</mi><mtext>E</mtext></msub><mo>=</mo><mstyle scriptlevel='+1'><mfrac bevelled='true'><mn>1</mn><mn>2</mn>   </mfrac>  </mstyle></mstyle><msub><mi>&#x03B5;</mi><mn>0</mn></msub><msup><mi>E</mi><mn>2</mn></msup></mrow></math></td>
 							</tr>
 						</table>
 						<table  style="margin: 0px 0px 0px 15px;float: left;">
 							<tr style="height: 50px;">
 								<td style="width:200px">Outside conducting sphere:</td>
-								<td style="width:100px"><math><mrow><mi>E</mi><mo>=</mo><mfrac><mrow><mi>k</mi><mrow><mo>|</mo> <mi>q</mi> <mo>|</mo></mrow></mrow><mrow><msup><mi>r</mi><mn>2</mn></msup></mrow></mfrac></mrow></math></td>
+								<td style="width:100px"><math><mrow><mi>E</mi><mo>=</mo>  <mstyle mathsize="140%">    <mfrac><mrow><mi>k</mi><mrow><mo>|</mo> <mi>q</mi> <mo>|</mo></mrow></mrow><mrow><msup><mi>r</mi><mn>2</mn></msup></mrow>   </mfrac>  </mstyle></mrow></math></td>
 							</tr>
 							<tr style="height: 50px;">
 								<td>Inside conducting sphere:</td>
@@ -1830,7 +1842,7 @@
 							</tr>
 							<tr style="height: 50px;">
 								<td>Between plates of ideal capacitor:</td>
-								<td><math><mrow><mi>E</mi><mo>=</mo><mfrac><mi>&#x03C3;</mi><mrow><msub><mi>&#x03B5;</mi><mn>0</mn></msub></mrow></mfrac></mrow></math></td>
+								<td><math><mrow><mi>E</mi><mo>=</mo>  <mstyle mathsize="140%">    <mfrac><mi>&#x03C3;</mi><mrow><msub><mi>&#x03B5;</mi><mn>0</mn></msub></mrow>   </mfrac>  </mstyle></mrow></math></td>
 							</tr>
 							<tr style="height: 50px;"></tr>
 						</table>
@@ -1847,7 +1859,7 @@
 								<th style="text-align:left;width:200px">Ohm’s law</th>
 							</tr>
 							<tr style="height: 50px;">
-								<td><math><mrow><mi>I</mi><mo>=</mo><mfrac><mrow><mi>&#x0394;</mi><mi>q</mi></mrow><mrow><mi>&#x0394;</mi><mi>t</mi></mrow></mfrac></mrow></math></td>
+								<td><math><mrow><mi>I</mi><mo>=</mo>  <mstyle mathsize="140%">    <mfrac><mrow><mi>&#x0394;</mi><mi>q</mi></mrow><mrow><mi>&#x0394;</mi><mi>t</mi></mrow>   </mfrac>  </mstyle></mrow></math></td>
 								<td><math><mrow><mi>J</mi><mo>=</mo><mi>I</mi><mo>/</mo><mi>A</mi><mo>=</mo><mi>n</mi><mi>q</mi><msub><mi>v</mi><mtext>d</mtext></msub></mrow></math></td>
 								<td><math><mrow><mi>&#x0394;</mi><mi>V</mi><mo>=</mo><mi>I</mi><mi>R</mi></mrow></math></td>
 							</tr>
@@ -1867,29 +1879,29 @@
 								<td style="font-weight:bold;">Energy in capacitors</td>
 							</tr>
 							<tr style="height: 50px;">
-								<td><math><mrow><mi>R</mi><mo>=</mo><mi>&#x03C1;</mi><mfrac><mi>L</mi><mi>A</mi></mfrac></mrow></math></td>
-								<td><math><mrow><mi>C</mi><mo>=</mo><mfrac><mi>q</mi><mrow><mi>&#x0394;</mi><mi>V</mi></mrow></mfrac></mrow></math></td>
-								<td><math><mrow><mi>P</mi><msub><mi>E</mi><mtext>e</mtext></msub><mo>=</mo><mfrac><mrow><msup><mi>q</mi><mn>2</mn></msup></mrow><mrow><mn>2</mn><mi>C</mi></mrow></mfrac></mrow></math></td>
+								<td><math><mrow><mi>R</mi><mo>=</mo><mi>&#x03C1;</mi>  <mstyle mathsize="140%">    <mfrac><mi>L</mi><mi>A</mi>   </mfrac>  </mstyle></mrow></math></td>
+								<td><math><mrow><mi>C</mi><mo>=</mo>  <mstyle mathsize="140%">    <mfrac><mi>q</mi><mrow><mi>&#x0394;</mi><mi>V</mi></mrow>   </mfrac>  </mstyle></mrow></math></td>
+								<td><math><mrow><mi>P</mi><msub><mi>E</mi><mtext>e</mtext></msub><mo>=</mo>  <mstyle mathsize="140%">    <mfrac><mrow><msup><mi>q</mi><mn>2</mn></msup></mrow><mrow><mn>2</mn><mi>C</mi></mrow>   </mfrac>  </mstyle></mrow></math></td>
 							</tr>
 						</table>
 						<table style="margin: 0px 0px 0px 15px;float: left;">
 							<tr style="height: 50px;">
 								<td style="width:200px;"><math><mrow><msub><mi>&#x03C1;</mi><mn>2</mn></msub><mo>=</mo><msub><mi>&#x03C1;</mi><mn>1</mn></msub><mrow><mo>[</mo> <mrow><mn>1</mn><mo>+</mo><mtext>&#x03B1;</mtext><mrow><mo>(</mo><mrow><msub><mi>T</mi><mn>2</mn></msub><mo>&#x2212;</mo><msub><mi>T</mi><mn>1</mn></msub></mrow><mo>)</mo></mrow></mrow> <mo>]</mo></mrow></mrow></math></td>
 								<td style="width:120px;">Parallel-plate:</td>
-								<td style="width:90px;"><math><mrow><mi>C</mi><mo>=</mo><mfrac><mrow><msub><mi>&#x03B5;</mi><mn>0</mn></msub><mi>A</mi></mrow><mi>d</mi></mfrac></mrow></math></td>
-								<td style="width:200px;"><math><mrow><mi>P</mi><msub><mi>E</mi><mtext>e</mtext></msub><mo>=</mo><mfrac><mrow><mi>C</mi><mo stretchy='false'>(</mo><mi>&#x0394;</mi><msup><mi>V</mi><mn>2</mn></msup><mo stretchy='false'>)</mo></mrow><mn>2</mn></mfrac></mrow></math></td>
+								<td style="width:90px;"><math><mrow><mi>C</mi><mo>=</mo>  <mstyle mathsize="140%">    <mfrac><mrow><msub><mi>&#x03B5;</mi><mn>0</mn></msub><mi>A</mi></mrow><mi>d</mi>   </mfrac>  </mstyle></mrow></math></td>
+								<td style="width:200px;"><math><mrow><mi>P</mi><msub><mi>E</mi><mtext>e</mtext></msub><mo>=</mo>  <mstyle mathsize="140%">    <mfrac><mrow><mi>C</mi><mo stretchy='false'>(</mo><mi>&#x0394;</mi><msup><mi>V</mi><mn>2</mn></msup><mo stretchy='false'>)</mo></mrow><mn>2</mn>   </mfrac>  </mstyle></mrow></math></td>
 							</tr>
 							<tr style="height: 50px;">
 								<td><math><mrow><msub><mi>R</mi><mn>2</mn></msub><mo>=</mo><msub><mi>R</mi><mn>1</mn></msub><mrow><mo>[</mo> <mrow><mn>1</mn><mo>+</mo><mtext>&#x03B1;</mtext><mrow><mo>(</mo><mrow><msub><mi>T</mi><mn>2</mn></msub><mo>&#x2212;</mo><msub><mi>T</mi><mn>1</mn></msub></mrow><mo>)</mo></mrow></mrow> <mo>]</mo></mrow></mrow></math></td>
 								<td>Cylindrical:</td>
-								<td><math><mrow><mi>C</mi><mo>=</mo><mfrac><mrow><mn>2</mn><mi>&#x03C0;</mi><msub><mi>&#x03B5;</mi><mn>0</mn></msub><mi>h</mi></mrow><mrow><mi>ln</mi><mo>&#x2061;</mo><mo stretchy='false'>(</mo><mi>b</mi><mo>/</mo><mi>a</mi><mo stretchy='false'>)</mo></mrow></mfrac></mrow></math></td>
+								<td><math><mrow><mi>C</mi><mo>=</mo>  <mstyle mathsize="140%">    <mfrac><mrow><mn>2</mn><mi>&#x03C0;</mi><msub><mi>&#x03B5;</mi><mn>0</mn></msub><mi>h</mi></mrow><mrow><mi>ln</mi><mo>&#x2061;</mo><mo stretchy='false'>(</mo><mi>b</mi><mo>/</mo><mi>a</mi><mo stretchy='false'>)</mo></mrow>   </mfrac>  </mstyle></mrow></math></td>
 								<td><math><mrow><msub><mi>u</mi><mtext>E</mtext></msub><mo>=</mo><mi>P</mi><msub><mi>E</mi><mtext>e</mtext></msub><mo>/</mo><mi>V</mi><mi>o</mi><mi>l</mi></mrow></math></td>
 							</tr>
 							<tr style="height: 50px;">
 								<td><math><mrow><mi>P</mi><mo>=</mo><mi>I</mi><mi>&#x0394;</mi><mi>V</mi></mrow></math></td>
 								<td>Spherical: </td>
-								<td><math><mrow><mi>C</mi><mo>=</mo><mfrac><mrow><mn>4</mn><mi>&#x03C0;</mi><msub><mi>&#x03B5;</mi><mn>0</mn></msub><mi>a</mi><mi>b</mi></mrow><mrow><mi>b</mi><mo>&#x2212;</mo><mi>a</mi></mrow></mfrac></mrow></math></td>
-								<td><math><mrow><msub><mi>u</mi><mtext>E</mtext></msub><mo>=</mo><mstyle scriptlevel='+1'><mfrac bevelled='true'><mn>1</mn><mn>2</mn></mfrac></mstyle><msub><mi>&#x03B5;</mi><mn>0</mn></msub><msup><mi>E</mi><mn>2</mn></msup></mrow></math></td>
+								<td><math><mrow><mi>C</mi><mo>=</mo>  <mstyle mathsize="140%">    <mfrac><mrow><mn>4</mn><mi>&#x03C0;</mi><msub><mi>&#x03B5;</mi><mn>0</mn></msub><mi>a</mi><mi>b</mi></mrow><mrow><mi>b</mi><mo>&#x2212;</mo><mi>a</mi></mrow>   </mfrac>  </mstyle></mrow></math></td>
+								<td><math><mrow><msub><mi>u</mi><mtext>E</mtext></msub><mo>=</mo><mstyle scriptlevel='+1'><mfrac bevelled='true'><mn>1</mn><mn>2</mn>   </mfrac>  </mstyle></mstyle><msub><mi>&#x03B5;</mi><mn>0</mn></msub><msup><mi>E</mi><mn>2</mn></msup></mrow></math></td>
 							</tr>
 							<tr style="height: 50px;">
 								<td><math><mrow><mi>P</mi><mo>=</mo><msup><mi>I</mi><mn>2</mn></msup><mi>R</mi><mo>=</mo><mi>&#x0394;</mi><msup><mi>V</mi><mn>2</mn></msup><mo>/</mo><mi>R</mi></mrow></math></td>
@@ -1909,14 +1921,14 @@
 							</tr>
 							<tr style="height: 50px;">
 								<td><math><mrow><msub><mi>R</mi><mrow><mtext>equiv</mtext></mrow></msub><mo>=</mo><msub><mi>R</mi><mn>1</mn></msub><mo>+</mo><msub><mi>R</mi><mn>2</mn></msub><mo>+</mo><mn>...</mn><mo>+</mo><msub><mi>R</mi><mtext>n</mtext></msub></mrow></math></td>
-								<td><math><mrow><mfrac><mn>1</mn><mrow><msub><mi>C</mi><mrow><mtext>equiv</mtext></mrow></msub></mrow></mfrac><mo>=</mo><mfrac><mn>1</mn><mrow><msub><mi>C</mi><mn>1</mn></msub></mrow></mfrac><mo>+</mo><mfrac><mn>1</mn><mrow><msub><mi>C</mi><mn>2</mn></msub></mrow></mfrac><mo>+</mo><mn>...</mn><mo>+</mo><mfrac><mn>1</mn><mrow><msub><mi>C</mi><mtext>n</mtext></msub></mrow></mfrac></mrow></math></td>
+								<td><math><mrow>  <mstyle mathsize="140%">    <mfrac><mn>1</mn><mrow><msub><mi>C</mi><mrow><mtext>equiv</mtext></mrow></msub></mrow>   </mfrac>  </mstyle><mo>=</mo>  <mstyle mathsize="140%">    <mfrac><mn>1</mn><mrow><msub><mi>C</mi><mn>1</mn></msub></mrow>   </mfrac>  </mstyle><mo>+</mo>  <mstyle mathsize="140%">    <mfrac><mn>1</mn><mrow><msub><mi>C</mi><mn>2</mn></msub></mrow>   </mfrac>  </mstyle><mo>+</mo><mn>...</mn><mo>+</mo>  <mstyle mathsize="140%">    <mfrac><mn>1</mn><mrow><msub><mi>C</mi><mtext>n</mtext></msub></mrow>   </mfrac>  </mstyle></mrow></math></td>
 							</tr>
 							<tr style="height: 50px;">
 								<td>In parallel:</td>
 								<td>In parallel:</td>
 							</tr>
 							<tr style="height: 50px;">
-								<td><math><mrow><mfrac><mn>1</mn><mrow><msub><mi>R</mi><mrow><mtext>equiv</mtext></mrow></msub></mrow></mfrac><mo>=</mo><mfrac><mn>1</mn><mrow><msub><mi>R</mi><mn>1</mn></msub></mrow></mfrac><mo>+</mo><mfrac><mn>1</mn><mrow><msub><mi>R</mi><mn>2</mn></msub></mrow></mfrac><mo>+</mo><mn>...</mn><mo>+</mo><mfrac><mn>1</mn><mrow><msub><mi>R</mi><mtext>n</mtext></msub></mrow></mfrac></mrow></math></td>
+								<td><math><mrow>  <mstyle mathsize="140%">    <mfrac><mn>1</mn><mrow><msub><mi>R</mi><mrow><mtext>equiv</mtext></mrow></msub></mrow>   </mfrac>  </mstyle><mo>=</mo>  <mstyle mathsize="140%">    <mfrac><mn>1</mn><mrow><msub><mi>R</mi><mn>1</mn></msub></mrow>   </mfrac>  </mstyle><mo>+</mo>  <mstyle mathsize="140%">    <mfrac><mn>1</mn><mrow><msub><mi>R</mi><mn>2</mn></msub></mrow>   </mfrac>  </mstyle><mo>+</mo><mn>...</mn><mo>+</mo>  <mstyle mathsize="140%">    <mfrac><mn>1</mn><mrow><msub><mi>R</mi><mtext>n</mtext></msub></mrow>   </mfrac>  </mstyle></mrow></math></td>
 								<td><math><mrow><msub><mi>C</mi><mrow><mtext>equiv</mtext></mrow></msub><mo>=</mo><msub><mi>C</mi><mn>1</mn></msub><mo>+</mo><msub><mi>C</mi><mn>2</mn></msub><mo>+</mo><mn>...</mn><mo>+</mo><msub><mi>C</mi><mtext>n</mtext></msub></mrow></math></td>
 							</tr>
 							<tr style="height: 50px;"></tr>
@@ -1927,16 +1939,16 @@
 								<th  style="text-align:left;width:300px">RC circuit discharging (no battery)</th>
 							</tr>
 							<tr style="height: 50px;">
-								<td ><math><mrow><mi>&#x2130;</mi><mo>&#x2212;</mo><mi>I</mi><mi>R</mi><mo>&#x2212;</mo><mfrac><mi>q</mi><mi>C</mi></mfrac><mo>=</mo><mn>0</mn></mrow></math></td>
-								<td ><math><mrow><mfrac><mi>q</mi><mi>C</mi></mfrac><mo>&#x2212;</mo><mi>I</mi><mi>R</mi><mo>=</mo><mn>0</mn></mrow></math></td>
+								<td ><math><mrow><mi>&#x2130;</mi><mo>&#x2212;</mo><mi>I</mi><mi>R</mi><mo>&#x2212;</mo>  <mstyle mathsize="140%">    <mfrac><mi>q</mi><mi>C</mi>   </mfrac>  </mstyle><mo>=</mo><mn>0</mn></mrow></math></td>
+								<td ><math><mrow>  <mstyle mathsize="140%">    <mfrac><mi>q</mi><mi>C</mi>   </mfrac>  </mstyle><mo>&#x2212;</mo><mi>I</mi><mi>R</mi><mo>=</mo><mn>0</mn></mrow></math></td>
 							</tr>
 							<tr style="height: 50px;">
 								<td><math><mrow><mi>q</mi><mo stretchy='false'>(</mo><mi>t</mi><mo stretchy='false'>)</mo><mo>=</mo><mi>Q</mi><mo stretchy='false'>(</mo><mn>1</mn><mo>&#x2212;</mo><msup><mi>e</mi><mrow><mo>&#x2212;</mo><mi>t</mi><mo>/</mo><mi>R</mi><mi>C</mi></mrow></msup><mo stretchy='false'>)</mo></mrow></math></td>
 								<td><math><mrow><mi>q</mi><mo stretchy='false'>(</mo><mi>t</mi><mo stretchy='false'>)</mo><mo>=</mo><mi>Q</mi><msup><mi>e</mi><mrow><mo>&#x2212;</mo><mi>t</mi><mo>/</mo><mi>R</mi><mi>C</mi></mrow></msup></mrow></math></td>
 							</tr>
 							<tr style="height: 50px;">
-								<td><math><mrow><mi>I</mi><mo stretchy='false'>(</mo><mi>t</mi><mo stretchy='false'>)</mo><mo>=</mo><mfrac><mi>&#x2130;</mi><mi>R</mi></mfrac><msup><mi>e</mi><mrow><mo>&#x2212;</mo><mi>t</mi><mo>/</mo><mi>R</mi><mi>C</mi></mrow></msup></mrow></math></td>
-								<td><math><mrow><mi>I</mi><mo stretchy='false'>(</mo><mi>t</mi><mo stretchy='false'>)</mo><mo>=</mo><mfrac><mi>Q</mi><mrow><mi>R</mi><mi>C</mi></mrow></mfrac><msup><mi>e</mi><mrow><mo>&#x2212;</mo><mi>t</mi><mo>/</mo><mi>R</mi><mi>C</mi></mrow></msup></mrow></math></td>
+								<td><math><mrow><mi>I</mi><mo stretchy='false'>(</mo><mi>t</mi><mo stretchy='false'>)</mo><mo>=</mo>  <mstyle mathsize="140%">    <mfrac><mi>&#x2130;</mi><mi>R</mi>   </mfrac>  </mstyle><msup><mi>e</mi><mrow><mo>&#x2212;</mo><mi>t</mi><mo>/</mo><mi>R</mi><mi>C</mi></mrow></msup></mrow></math></td>
+								<td><math><mrow><mi>I</mi><mo stretchy='false'>(</mo><mi>t</mi><mo stretchy='false'>)</mo><mo>=</mo>  <mstyle mathsize="140%">    <mfrac><mi>Q</mi><mrow><mi>R</mi><mi>C</mi></mrow>   </mfrac>  </mstyle><msup><mi>e</mi><mrow><mo>&#x2212;</mo><mi>t</mi><mo>/</mo><mi>R</mi><mi>C</mi></mrow></msup></mrow></math></td>
 							</tr>
 							<tr style="height: 50px;">
 								<td></td>
@@ -1950,16 +1962,16 @@
 								<th style="text-align:left;width:200px;">Transformer</th>
 							</tr>
 							<tr style="height: 50px;">
-								<td><math><mrow><mi>L</mi><mo>=</mo><mo>&#x2212;</mo><mfrac><mo>&#x2130;</mo><mrow><mi>&#x0394;</mi><mi>I</mi><mo>/</mo><mi>&#x0394;</mi><mi>t</mi></mrow></mfrac><mo>,</mo><mtext>&nbsp;</mtext><mi>L</mi><mo>=</mo><mi>N</mi><mfrac><mrow><msub><mi>&#x03A6;</mi><mtext>B</mtext></msub></mrow><mi>I</mi></mfrac></mrow></math></td>
-								<td><math><mrow><mi>P</mi><msub><mi>E</mi><mtext>B</mtext></msub><mo>=</mo><mstyle scriptlevel='+1'><mfrac bevelled='true'><mn>1</mn><mn>2</mn></mfrac></mstyle><mi>L</mi><msup><mi>I</mi><mn>2</mn></msup></mrow></math></td>
-								<td><math><mrow><mfrac><mrow><mi>&#x0394;</mi><msub><mi>V</mi><mn>1</mn></msub></mrow><mrow><mi>&#x0394;</mi><msub><mi>V</mi><mn>2</mn></msub></mrow></mfrac><mo>=</mo><mfrac><mrow><msub><mi>N</mi><mn>1</mn></msub></mrow><mrow><msub><mi>N</mi><mn>2</mn></msub></mrow></mfrac><mo>=</mo><mfrac><mrow><msub><mi>I</mi><mn>2</mn></msub></mrow><mrow><msub><mi>I</mi><mn>1</mn></msub></mrow></mfrac></mrow></math></td>
+								<td><math><mrow><mi>L</mi><mo>=</mo><mo>&#x2212;</mo>  <mstyle mathsize="140%">    <mfrac><mo>&#x2130;</mo><mrow><mi>&#x0394;</mi><mi>I</mi><mo>/</mo><mi>&#x0394;</mi><mi>t</mi></mrow>   </mfrac>  </mstyle><mo>,</mo><mtext>&nbsp;</mtext><mi>L</mi><mo>=</mo><mi>N</mi>  <mstyle mathsize="140%">    <mfrac><mrow><msub><mi>&#x03A6;</mi><mtext>B</mtext></msub></mrow><mi>I</mi>   </mfrac>  </mstyle></mrow></math></td>
+								<td><math><mrow><mi>P</mi><msub><mi>E</mi><mtext>B</mtext></msub><mo>=</mo><mstyle scriptlevel='+1'><mfrac bevelled='true'><mn>1</mn><mn>2</mn>   </mfrac>  </mstyle></mstyle><mi>L</mi><msup><mi>I</mi><mn>2</mn></msup></mrow></math></td>
+								<td><math><mrow>  <mstyle mathsize="140%">    <mfrac><mrow><mi>&#x0394;</mi><msub><mi>V</mi><mn>1</mn></msub></mrow><mrow><mi>&#x0394;</mi><msub><mi>V</mi><mn>2</mn></msub></mrow>   </mfrac>  </mstyle><mo>=</mo>  <mstyle mathsize="140%">    <mfrac><mrow><msub><mi>N</mi><mn>1</mn></msub></mrow><mrow><msub><mi>N</mi><mn>2</mn></msub></mrow>   </mfrac>  </mstyle><mo>=</mo>  <mstyle mathsize="140%">    <mfrac><mrow><msub><mi>I</mi><mn>2</mn></msub></mrow><mrow><msub><mi>I</mi><mn>1</mn></msub></mrow>   </mfrac>  </mstyle></mrow></math></td>
 							</tr>
 						</table>
 						<table  style="margin: 0px 0px 0px 15px;float: left;">
 							<tr style="height: 50px;">
 								<td style="width:75px">Solenoid:</td>
 								<td style="width:125px"><math><mrow><mi>L</mi><mo>=</mo><msup><mi>n</mi><mn>2</mn></msup><mi>s</mi><msub><mi>&#x03BC;</mi><mn>0</mn></msub><mi>A</mi></mrow></math></td>
-								<td style="width:200px"><math><mrow><msub><mi>u</mi><mtext>B</mtext></msub><mo>=</mo><mfrac><mrow><mi>P</mi><msub><mi>E</mi><mtext>B</mtext></msub></mrow><mrow><mi>V</mi><mi>o</mi><mi>l</mi></mrow></mfrac><mo>=</mo><mfrac><mrow><msup><mi>B</mi><mn>2</mn></msup></mrow><mrow><mn>2</mn><msub><mi>&#x03BC;</mi><mn>0</mn></msub></mrow></mfrac></mrow></math></td>
+								<td style="width:200px"><math><mrow><msub><mi>u</mi><mtext>B</mtext></msub><mo>=</mo>  <mstyle mathsize="140%">    <mfrac><mrow><mi>P</mi><msub><mi>E</mi><mtext>B</mtext></msub></mrow><mrow><mi>V</mi><mi>o</mi><mi>l</mi></mrow>   </mfrac>  </mstyle><mo>=</mo>  <mstyle mathsize="140%">    <mfrac><mrow><msup><mi>B</mi><mn>2</mn></msup></mrow><mrow><mn>2</mn><msub><mi>&#x03BC;</mi><mn>0</mn></msub></mrow>   </mfrac>  </mstyle></mrow></math></td>
 							<tr style="height: 50px;"></tr>
 							</tr>
 						</table>
@@ -1969,8 +1981,8 @@
 								<th  style="text-align:left;width:230px">RL circuit: decreasing current</th>
 							</tr>
 							<tr style="height: 50px;">
-								<td><math><mrow><mi>I</mi><mo stretchy='false'>(</mo><mi>t</mi><mo stretchy='false'>)</mo><mo>=</mo><mfrac><mrow><msub><mo>&#x2130;</mo><mtext>B</mtext></msub></mrow><mi>R</mi></mfrac><mo stretchy='false'>(</mo><mn>1</mn><mo>&#x2212;</mo><msup><mi>e</mi><mrow><mo>&#x2212;</mo><mi>t</mi><mo>/</mo><mi>&#x03C4;</mi></mrow></msup><mo stretchy='false'>)</mo></mrow></math></td>
-								<td><math><mrow><mi>I</mi><mo stretchy='false'>(</mo><mi>t</mi><mo stretchy='false'>)</mo><mo>=</mo><mfrac><mrow><msub><mo>&#x2130;</mo><mtext>B</mtext></msub></mrow><mi>R</mi></mfrac><msup><mi>e</mi><mrow><mo>&#x2212;</mo><mi>t</mi><mo>/</mo><mi>&#x03C4;</mi></mrow></msup><mo>=</mo><msub><mi>I</mi><mn>0</mn></msub><msup><mi>e</mi><mrow><mo>&#x2212;</mo><mi>t</mi><mo>/</mo><mi>&#x03C4;</mi></mrow></msup></mrow></math></td>
+								<td><math><mrow><mi>I</mi><mo stretchy='false'>(</mo><mi>t</mi><mo stretchy='false'>)</mo><mo>=</mo>  <mstyle mathsize="140%">    <mfrac><mrow><msub><mo>&#x2130;</mo><mtext>B</mtext></msub></mrow><mi>R</mi>   </mfrac>  </mstyle><mo stretchy='false'>(</mo><mn>1</mn><mo>&#x2212;</mo><msup><mi>e</mi><mrow><mo>&#x2212;</mo><mi>t</mi><mo>/</mo><mi>&#x03C4;</mi></mrow></msup><mo stretchy='false'>)</mo></mrow></math></td>
+								<td><math><mrow><mi>I</mi><mo stretchy='false'>(</mo><mi>t</mi><mo stretchy='false'>)</mo><mo>=</mo>  <mstyle mathsize="140%">    <mfrac><mrow><msub><mo>&#x2130;</mo><mtext>B</mtext></msub></mrow><mi>R</mi>   </mfrac>  </mstyle><msup><mi>e</mi><mrow><mo>&#x2212;</mo><mi>t</mi><mo>/</mo><mi>&#x03C4;</mi></mrow></msup><mo>=</mo><msub><mi>I</mi><mn>0</mn></msub><msup><mi>e</mi><mrow><mo>&#x2212;</mo><mi>t</mi><mo>/</mo><mi>&#x03C4;</mi></mrow></msup></mrow></math></td>
 							</tr>
 							<tr style="height: 50px;">
 								<td><math><mrow><mo>&#x2130;</mo><mo stretchy='false'>(</mo><mi>t</mi><mo stretchy='false'>)</mo><mo>=</mo><mo>&#x2212;</mo><msub><mo>&#x2130;</mo><mtext>B</mtext></msub><msup><mi>e</mi><mrow><mo>&#x2212;</mo><mi>t</mi><mo>/</mo><mi>&#x03C4;</mi></mrow></msup></mrow></math></td>
@@ -1992,22 +2004,22 @@
 							</tr>
 							<tr style="height: 50px;">
 								<td><math><mrow><mi>I</mi><mo>=</mo><mo>&#x2212;</mo><msub><mi>I</mi><mrow><mi>max</mi><mo>&#x2061;</mo></mrow></msub><mi>sin</mi><mo>&#x2061;</mo><mi>&#x03C9;</mi><mi>t</mi></mrow></math></td>
-								<td><math><mrow><msup><mi>&#x03C9;</mi><mo>&#x2032;</mo></msup><mo>=</mo><msqrt><mrow><msup><mi>&#x03C9;</mi><mn>2</mn></msup><mo>&#x2212;</mo><msup><mrow><mrow><mo>(</mo><mrow><mfrac bevelled='true'><mi>R</mi><mrow><mn>2</mn><mi>L</mi></mrow></mfrac></mrow><mo>)</mo></mrow></mrow><mn>2</mn></msup></mrow></msqrt></mrow></math></td>
+								<td><math><mrow><msup><mi>&#x03C9;</mi><mo>&#x2032;</mo></msup><mo>=</mo><msqrt><mrow><msup><mi>&#x03C9;</mi><mn>2</mn></msup><mo>&#x2212;</mo><msup><mrow><mrow><mo>(</mo><mrow><mfrac bevelled='true'><mi>R</mi><mrow><mn>2</mn><mi>L</mi></mrow>   </mfrac>  </mstyle></mrow><mo>)</mo></mrow></mrow><mn>2</mn></msup></mrow></msqrt></mrow></math></td>
 							</tr>
 							<tr style="height: 50px;">
 								<td><math><mrow><msub><mi>I</mi><mrow><mtext>max</mtext></mrow></msub><mo>=</mo><mi>&#x03C9;</mi><msub><mi>q</mi><mrow><mi>max</mi><mo>&#x2061;</mo></mrow></msub></mrow></math></td>
-								<td><math><mrow><msub><mi>E</mi><mtext>C</mtext></msub><mo>=</mo><mrow><mo>(</mo><mrow><mfrac><mrow><msubsup><mi>q</mi><mrow><mi>max</mi><mo>&#x2061;</mo></mrow><mn>2</mn></msubsup></mrow><mrow><mn>2</mn><mi>C</mi></mrow></mfrac></mrow><mo>)</mo></mrow><msup><mi>e</mi><mrow><mo>&#x2212;</mo><mi>R</mi><mi>t</mi><mo>/</mo><mi>L</mi></mrow></msup><msup><mrow><mi>sin</mi><mo>&#x2061;</mo></mrow><mn>2</mn></msup><mo stretchy='false'>(</mo><msup><mi>&#x03C9;</mi><mo>&#x2032;</mo></msup><mi>t</mi><mo>+</mo><mi>&#x03C0;</mi><mo>/</mo><mn>2</mn><mo stretchy='false'>)</mo></mrow></math></td>
+								<td><math><mrow><msub><mi>E</mi><mtext>C</mtext></msub><mo>=</mo><mrow><mo>(</mo><mrow>  <mstyle mathsize="140%">    <mfrac><mrow><msubsup><mi>q</mi><mrow><mi>max</mi><mo>&#x2061;</mo></mrow><mn>2</mn></msubsup></mrow><mrow><mn>2</mn><mi>C</mi></mrow>   </mfrac>  </mstyle></mrow><mo>)</mo></mrow><msup><mi>e</mi><mrow><mo>&#x2212;</mo><mi>R</mi><mi>t</mi><mo>/</mo><mi>L</mi></mrow></msup><msup><mrow><mi>sin</mi><mo>&#x2061;</mo></mrow><mn>2</mn></msup><mo stretchy='false'>(</mo><msup><mi>&#x03C9;</mi><mo>&#x2032;</mo></msup><mi>t</mi><mo>+</mo><mi>&#x03C0;</mi><mo>/</mo><mn>2</mn><mo stretchy='false'>)</mo></mrow></math></td>
 							</tr>
 							<tr style="height: 50px;">
-								<td><math><mrow><mi>&#x03C9;</mi><mo>=</mo><mfrac><mn>1</mn><mrow><msqrt><mrow><mi>L</mi><mi>C</mi></mrow></msqrt></mrow></mfrac></mrow></math></td>
+								<td><math><mrow><mi>&#x03C9;</mi><mo>=</mo>  <mstyle mathsize="140%">    <mfrac><mn>1</mn><mrow><msqrt><mrow><mi>L</mi><mi>C</mi></mrow></msqrt></mrow>   </mfrac>  </mstyle></mrow></math></td>
 								<td></td>
 							</tr>
 							<tr style="height: 50px;">
-								<td><math><mrow><msub><mi>E</mi><mtext>C</mtext></msub><mo>=</mo><mrow><mo>(</mo><mrow><mfrac><mrow><msubsup><mi>q</mi><mrow><mi>max</mi><mo>&#x2061;</mo></mrow><mn>2</mn></msubsup></mrow><mrow><mn>2</mn><mi>C</mi></mrow></mfrac></mrow><mo>)</mo></mrow><msup><mrow><mi>sin</mi><mo>&#x2061;</mo></mrow><mn>2</mn></msup><mo stretchy='false'>(</mo><mi>&#x03C9;</mi><mi>t</mi><mo>+</mo><mi>&#x03C0;</mi><mo>/</mo><mn>2</mn><mo stretchy='false'>)</mo></mrow></math></td>
+								<td><math><mrow><msub><mi>E</mi><mtext>C</mtext></msub><mo>=</mo><mrow><mo>(</mo><mrow>  <mstyle mathsize="140%">    <mfrac><mrow><msubsup><mi>q</mi><mrow><mi>max</mi><mo>&#x2061;</mo></mrow><mn>2</mn></msubsup></mrow><mrow><mn>2</mn><mi>C</mi></mrow>   </mfrac>  </mstyle></mrow><mo>)</mo></mrow><msup><mrow><mi>sin</mi><mo>&#x2061;</mo></mrow><mn>2</mn></msup><mo stretchy='false'>(</mo><mi>&#x03C9;</mi><mi>t</mi><mo>+</mo><mi>&#x03C0;</mi><mo>/</mo><mn>2</mn><mo stretchy='false'>)</mo></mrow></math></td>
 								<td></td>
 							</tr>
 							<tr style="height: 50px;">
-								<td><math><mrow><msub><mi>E</mi><mtext>L</mtext></msub><mo>=</mo><mrow><mo>(</mo><mrow><mfrac><mrow><mi>L</mi><msubsup><mi>I</mi><mrow><mi>max</mi><mo>&#x2061;</mo></mrow><mn>2</mn></msubsup></mrow><mn>2</mn></mfrac></mrow><mo>)</mo></mrow><msup><mrow><mi>sin</mi><mo>&#x2061;</mo></mrow><mn>2</mn></msup><mi>&#x03C9;</mi><mi>t</mi></mrow></math></td>
+								<td><math><mrow><msub><mi>E</mi><mtext>L</mtext></msub><mo>=</mo><mrow><mo>(</mo><mrow>  <mstyle mathsize="140%">    <mfrac><mrow><mi>L</mi><msubsup><mi>I</mi><mrow><mi>max</mi><mo>&#x2061;</mo></mrow><mn>2</mn></msubsup></mrow><mn>2</mn>   </mfrac>  </mstyle></mrow><mo>)</mo></mrow><msup><mrow><mi>sin</mi><mo>&#x2061;</mo></mrow><mn>2</mn></msup><mi>&#x03C9;</mi><mi>t</mi></mrow></math></td>
 								<td></td>
 							</tr>
 							<tr style="height: 50px;">
@@ -2050,12 +2062,12 @@
 								<td><math><mrow><msub><mi>I</mi><mtext>L</mtext></msub><mo>=</mo><msub><mi>I</mi><mrow><mi>max</mi><mo>&#x2061;</mo></mrow></msub><mi>sin</mi><mo>&#x2061;</mo><mrow><mo>(</mo><mrow><mi>&#x03C9;</mi><mi>t</mi><mo>&#x2212;</mo><mi>&#x03C0;</mi><mo>/</mo><mn>2</mn></mrow><mo>)</mo></mrow></mrow></math></td>
 							</tr>
 							<tr style="height: 50px;">
-								<td><math><mrow><msub><mi>I</mi><mrow><mtext>rms</mtext></mrow></msub><mo>=</mo><mfrac><mrow><msub><mi>I</mi><mrow><mi>max</mi><mo>&#x2061;</mo></mrow></msub></mrow><mrow><msqrt><mn>2</mn></msqrt></mrow></mfrac><mtext>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</mtext><msub><mo>&#x2130;</mo><mrow><mtext>rms</mtext></mrow></msub><mo>=</mo><mfrac><mrow><msub><mo>&#x2130;</mo><mrow><mi>max</mi><mo>&#x2061;</mo></mrow></msub></mrow><mrow><msqrt><mn>2</mn></msqrt></mrow></mfrac></mrow></math></td>
-								<td><math><mrow><msub><mi>X</mi><mtext>C</mtext></msub><mo>=</mo><mfrac><mn>1</mn><mrow><mi>&#x03C9;</mi><mi>C</mi></mrow></mfrac></mrow></math></td>
+								<td><math><mrow><msub><mi>I</mi><mrow><mtext>rms</mtext></mrow></msub><mo>=</mo>  <mstyle mathsize="140%">    <mfrac><mrow><msub><mi>I</mi><mrow><mi>max</mi><mo>&#x2061;</mo></mrow></msub></mrow><mrow><msqrt><mn>2</mn></msqrt></mrow>   </mfrac>  </mstyle><mtext>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</mtext><msub><mo>&#x2130;</mo><mrow><mtext>rms</mtext></mrow></msub><mo>=</mo>  <mstyle mathsize="140%">    <mfrac><mrow><msub><mo>&#x2130;</mo><mrow><mi>max</mi><mo>&#x2061;</mo></mrow></msub></mrow><mrow><msqrt><mn>2</mn></msqrt></mrow>   </mfrac>  </mstyle></mrow></math></td>
+								<td><math><mrow><msub><mi>X</mi><mtext>C</mtext></msub><mo>=</mo>  <mstyle mathsize="140%">    <mfrac><mn>1</mn><mrow><mi>&#x03C9;</mi><mi>C</mi></mrow>   </mfrac>  </mstyle></mrow></math></td>
 								<td><math><mrow><msub><mi>X</mi><mtext>L</mtext></msub><mo>=</mo><mi>&#x03C9;</mi><mi>L</mi></mrow></math></td>
 							</tr>
 							<tr style="height: 50px;">
-								<td><math><mrow><msub><mi>P</mi><mrow><mtext>avg</mtext></mrow></msub><mo>=</mo><msub><mi>I</mi><mrow><mtext>rms</mtext></mrow></msub><msub><mo>&#x2130;</mo><mrow><mtext>rms</mtext></mrow></msub><mo>=</mo><mfrac><mrow><msub><mi>I</mi><mrow><mi>max</mi><mo>&#x2061;</mo></mrow></msub><msub><mo>&#x2130;</mo><mrow><mi>max</mi><mo>&#x2061;</mo></mrow></msub></mrow><mn>2</mn></mfrac></mrow></math></td>
+								<td><math><mrow><msub><mi>P</mi><mrow><mtext>avg</mtext></mrow></msub><mo>=</mo><msub><mi>I</mi><mrow><mtext>rms</mtext></mrow></msub><msub><mo>&#x2130;</mo><mrow><mtext>rms</mtext></mrow></msub><mo>=</mo>  <mstyle mathsize="140%">    <mfrac><mrow><msub><mi>I</mi><mrow><mi>max</mi><mo>&#x2061;</mo></mrow></msub><msub><mo>&#x2130;</mo><mrow><mi>max</mi><mo>&#x2061;</mo></mrow></msub></mrow><mn>2</mn>   </mfrac>  </mstyle></mrow></math></td>
 								<td><math><mrow><mi>&#x0394;</mi><msub><mi>V</mi><mrow><mi>max</mi><mo>&#x2061;</mo></mrow></msub><mo>=</mo><msub><mi>I</mi><mrow><mtext>max</mtext></mrow></msub><msub><mi>X</mi><mtext>C</mtext></msub></mrow></math></td>
 								<td><math><mrow><mi>&#x0394;</mi><msub><mi>V</mi><mrow><mi>max</mi><mo>&#x2061;</mo></mrow></msub><mo>=</mo><msub><mi>I</mi><mrow><mtext>max</mtext></mrow></msub><msub><mi>X</mi><mtext>L</mtext></msub></mrow></math></td>
 							</tr>
@@ -2070,7 +2082,7 @@
 								<th  style="text-align:left;width:180px;">AC RLC circuit</th>
 							</tr>
 							<tr style="height: 50px;">
-								<td><math><mrow><mi>&#x3C6;</mi><mo>=</mo><mi>arctan</mi><mo>&#x2061;</mo><mfrac><mrow><msub><mi>X</mi><mtext>L</mtext></msub><mo>&#x2212;</mo><msub><mi>X</mi><mtext>C</mtext></msub></mrow><mi>R</mi></mfrac></mrow></math></td>
+								<td><math><mrow><mi>&#x3C6;</mi><mo>=</mo><mi>arctan</mi><mo>&#x2061;</mo>  <mstyle mathsize="140%">    <mfrac><mrow><msub><mi>X</mi><mtext>L</mtext></msub><mo>&#x2212;</mo><msub><mi>X</mi><mtext>C</mtext></msub></mrow><mi>R</mi>   </mfrac>  </mstyle></mrow></math></td>
 							</tr>
 							<tr style="height: 50px;">
 								<td><math><mrow><msub><mi>&#x2130;</mi><mrow><mi>max</mi><mo>&#x2061;</mo></mrow></msub><mo>=</mo><msub><mi>I</mi><mrow><mi>max</mi><mo>&#x2061;</mo></mrow></msub><mi>Z</mi></mrow></math></td>
@@ -2079,13 +2091,13 @@
 								<td><math><mrow><mi>Z</mi><mo>=</mo><msqrt><mrow><msup><mi>R</mi><mn>2</mn></msup><mo>+</mo><msup><mrow><mo stretchy='false'>(</mo><msub><mi>X</mi><mtext>L</mtext></msub><mo>&#x2212;</mo><msub><mi>X</mi><mtext>C</mtext></msub><mo stretchy='false'>)</mo></mrow><mn>2</mn></msup></mrow></msqrt></mrow></math></td>
 							</tr>
 							<tr style="height: 50px;">
-								<td><math><mrow><msub><mi>&#x03C9;</mi><mtext>n</mtext></msub><mo>=</mo><mfrac><mn>1</mn><mrow><msqrt><mrow><mi>L</mi><mi>C</mi></mrow></msqrt></mrow></mfrac></mrow></math></td>
+								<td><math><mrow><msub><mi>&#x03C9;</mi><mtext>n</mtext></msub><mo>=</mo>  <mstyle mathsize="140%">    <mfrac><mn>1</mn><mrow><msqrt><mrow><mi>L</mi><mi>C</mi></mrow></msqrt></mrow>   </mfrac>  </mstyle></mrow></math></td>
 							</tr>
 							<tr style="height: 50px;">
 								<td><math><mrow><mi>P</mi><mo>=</mo><msubsup><mi>I</mi><mrow><mi>max</mi><mo>&#x2061;</mo></mrow><mn>2</mn></msubsup><mi>R</mi><msup><mrow><mi>sin</mi><mo>&#x2061;</mo></mrow><mn>2</mn></msup><mrow><mo>(</mo><mrow><mi>&#x03C9;</mi><mi>t</mi><mo>&#x2212;</mo><mi>&#x3C6;</mi></mrow><mo>)</mo></mrow></mrow></math></td>
 							</tr>
 							<tr style="height: 50px;">
-								<td><math><mrow><msub><mi>P</mi><mrow><mtext>avg</mtext></mrow></msub><mo>=</mo><msubsup><mi>I</mi><mrow><mtext>rms</mtext></mrow><mn>2</mn></msubsup><mi>R</mi><mo>=</mo><mfrac><mrow><msubsup><mi>I</mi><mrow><mtext>max</mtext></mrow><mn>2</mn></msubsup><mi>R</mi></mrow><mtext>2</mtext></mfrac></mrow></math></td>
+								<td><math><mrow><msub><mi>P</mi><mrow><mtext>avg</mtext></mrow></msub><mo>=</mo><msubsup><mi>I</mi><mrow><mtext>rms</mtext></mrow><mn>2</mn></msubsup><mi>R</mi><mo>=</mo>  <mstyle mathsize="140%">    <mfrac><mrow><msubsup><mi>I</mi><mrow><mtext>max</mtext></mrow><mn>2</mn></msubsup><mi>R</mi></mrow><mtext>2</mtext>   </mfrac>  </mstyle></mrow></math></td>
 							</tr>
 							<tr style="height: 50px;">
 								<td><math><mrow><msub><mi>P</mi><mrow><mtext>avg</mtext></mrow></msub><mo>=</mo><msub><mi>I</mi><mrow><mtext>rms</mtext></mrow></msub><msub><mi>&#x2130;</mi><mrow><mtext>rms</mtext></mrow></msub><mi>cos</mi><mo>&#x2061;</mo><mi>&#x3C6;</mi></mrow></math></td>
@@ -2106,7 +2118,7 @@
 							<tr>
 							<td style="width: 340px;"><b>Balmer series</b></td><td style="width: 320px;"><b>Orbits in a hydrogen atom</b></td>
 							</tr>
-							<tr><td><math><mrow><mfrac><mn>1</mn><mi>&#x03BB;</mi></mfrac><mo>=</mo><msub><mi>R</mi><mtext>H</mtext></msub><mrow><mo>(</mo><mrow><mfrac><mn>1</mn><mrow><msup><mn>2</mn><mn>2</mn></msup></mrow></mfrac><mo>&#x2212;</mo><mfrac><mn>1</mn><mrow><msup><mi>n</mi><mn>2</mn></msup></mrow></mfrac></mrow><mo>)</mo></mrow><mo>,</mo><mtext>&nbsp;for&nbsp;</mtext><mi>n</mi><mtext>&nbsp;=&nbsp;3,&nbsp;4,&nbsp;5,&nbsp;</mtext><mn>...</mn></mrow></math></td><td>Energy:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<math><mrow><mi>E</mi><mo>=</mo><mfrac><mrow><mo>&#x2212;</mo><mn>13.6</mn></mrow><mrow><msup><mi>n</mi><mn>2</mn></msup></mrow></mfrac><mtext>&nbsp;eV,&nbsp;</mtext><mi>n</mi><mtext>&nbsp;</mtext><mo>=</mo><mtext>&nbsp;</mtext><mn>1</mn><mo>,</mo><mtext>&nbsp;2,&nbsp;3,&nbsp;</mtext><mn>...</mn></mrow></math></td></tr>
+							<tr><td><math><mrow>  <mstyle mathsize="140%">    <mfrac><mn>1</mn><mi>&#x03BB;</mi>   </mfrac>  </mstyle><mo>=</mo><msub><mi>R</mi><mtext>H</mtext></msub><mrow><mo>(</mo><mrow>  <mstyle mathsize="140%">    <mfrac><mn>1</mn><mrow><msup><mn>2</mn><mn>2</mn></msup></mrow>   </mfrac>  </mstyle><mo>&#x2212;</mo>  <mstyle mathsize="140%">    <mfrac><mn>1</mn><mrow><msup><mi>n</mi><mn>2</mn></msup></mrow>   </mfrac>  </mstyle></mrow><mo>)</mo></mrow><mo>,</mo><mtext>&nbsp;for&nbsp;</mtext><mi>n</mi><mtext>&nbsp;=&nbsp;3,&nbsp;4,&nbsp;5,&nbsp;</mtext><mn>...</mn></mrow></math></td><td>Energy:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<math><mrow><mi>E</mi><mo>=</mo>  <mstyle mathsize="140%">    <mfrac><mrow><mo>&#x2212;</mo><mn>13.6</mn></mrow><mrow><msup><mi>n</mi><mn>2</mn></msup></mrow>   </mfrac>  </mstyle><mtext>&nbsp;eV,&nbsp;</mtext><mi>n</mi><mtext>&nbsp;</mtext><mo>=</mo><mtext>&nbsp;</mtext><mn>1</mn><mo>,</mo><mtext>&nbsp;2,&nbsp;3,&nbsp;</mtext><mn>...</mn></mrow></math></td></tr>
 							<tr><td></td><td></td></tr>
 							<tr><td></td><td></td></tr>
 							<tr><td></td><td>Radii:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<math><mrow><msub><mi>r</mi><mtext>n</mtext></msub><mo>=</mo><msup><mi>n</mi><mn>2</mn></msup><msub><mi>a</mi><mn>0</mn></msub><mo>,</mo><mtext>&nbsp;&nbsp;&nbsp;</mtext><mi>n</mi><mo>=</mo><mn>1</mn><mo>,</mo><mtext>&nbsp;</mtext><mn>2</mn><mo>,</mo><mtext>&nbsp;</mtext><mn>3</mn><mo>,</mo><mn>...</mn></mrow></math></td></tr>
@@ -2119,7 +2131,7 @@
 							<tr><td></td><td></td></tr>
 							<tr><td></td><td></td></tr>
 							<tr><td><b>Energy of a photon</b></td><td><b>Boltzmann principle</b></td></tr>
-							<tr><td><math><mrow><mi>E</mi><mo>=</mo><mi>h</mi><mi>f</mi></mrow></math></td><td><math><mrow><mfrac><mrow><msub><mi>N</mi><mn>2</mn></msub></mrow><mrow><msub><mi>N</mi><mn>1</mn></msub></mrow></mfrac><mo>=</mo><msup><mi>e</mi><mrow><mo>&#x2212;</mo><mrow><mo>(</mo><mrow><msub><mi>E</mi><mn>2</mn></msub><mo>&#x2212;</mo><msub><mi>E</mi><mn>1</mn></msub></mrow><mo>)</mo></mrow><mo>/</mo><mi>k</mi><mi>T</mi></mrow></msup></mrow></math></td></tr>
+							<tr><td><math><mrow><mi>E</mi><mo>=</mo><mi>h</mi><mi>f</mi></mrow></math></td><td><math><mrow>  <mstyle mathsize="140%">    <mfrac><mrow><msub><mi>N</mi><mn>2</mn></msub></mrow><mrow><msub><mi>N</mi><mn>1</mn></msub></mrow>   </mfrac>  </mstyle><mo>=</mo><msup><mi>e</mi><mrow><mo>&#x2212;</mo><mrow><mo>(</mo><mrow><msub><mi>E</mi><mn>2</mn></msub><mo>&#x2212;</mo><msub><mi>E</mi><mn>1</mn></msub></mrow><mo>)</mo></mrow><mo>/</mo><mi>k</mi><mi>T</mi></mrow></msup></mrow></math></td></tr>
 							<tr><td></td><td></td></tr>
 							<tr><td></td><td></td></tr>
 							<tr><td></td><td></td></tr>
@@ -2140,7 +2152,7 @@
 							<tr><td></td><td></td></tr>
 							
 							<tr><td><b>Radioactive decay</b></td><td></td></tr>
-							<tr><td><math><mrow><mi>N</mi><mrow><mo>(</mo><mi>t</mi><mo>)</mo></mrow><mo>=</mo><msub><mi>N</mi><mn>0</mn></msub><msup><mrow><mrow><mo>(</mo><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow><mo>)</mo></mrow></mrow><mrow><mi>t</mi><mo>/</mo><msub><mi>&#x03C4;</mi><mrow><mn>1</mn><mo>/</mo><mn>2</mn></mrow></msub></mrow></msup></mrow></math></td><td></td></tr>
+							<tr><td><math><mrow><mi>N</mi><mrow><mo>(</mo><mi>t</mi><mo>)</mo></mrow><mo>=</mo><msub><mi>N</mi><mn>0</mn></msub><msup><mrow><mrow><mo>(</mo><mrow>  <mstyle mathsize="140%">    <mfrac><mn>1</mn><mn>2</mn>   </mfrac>  </mstyle></mrow><mo>)</mo></mrow></mrow><mrow><mi>t</mi><mo>/</mo><msub><mi>&#x03C4;</mi><mrow><mn>1</mn><mo>/</mo><mn>2</mn></mrow></msub></mrow></msup></mrow></math></td><td></td></tr>
 							<tr><td></td><td></td></tr>
 							<tr><td></td><td></td></tr>
 							<tr><td></td><td></td></tr>
@@ -2185,7 +2197,7 @@
 							<tr><td></td></tr>
 							<tr><td></td></tr>
 							<tr>
-							<td style="width: 180px;"><math><mrow><mi>&#x03B3;</mi><mo>=</mo><mfrac><mn>1</mn><mrow><msqrt><mrow><mn>1</mn><mo>&#x2212;</mo><msup><mi>v</mi><mn>2</mn></msup><mo>/</mo><msup><mi>c</mi><mn>2</mn></msup></mrow></msqrt></mrow></mfrac></mrow></math></td><td style="width: 180px;"><math><mrow><mi>t</mi><mo>=</mo><mfrac><mrow><msub><mi>t</mi><mn>0</mn></msub></mrow><mrow><msqrt><mrow><mn>1</mn><mo>&#x2212;</mo><msup><mi>v</mi><mn>2</mn></msup><mo>/</mo><msup><mi>c</mi><mn>2</mn></msup></mrow></msqrt></mrow></mfrac></mrow></math></td><td style="width: 180px;"><math><mrow><mi>L</mi><mo>=</mo><msub><mi>L</mi><mn>0</mn></msub><msqrt><mrow><mn>1</mn><mo>&#x2212;</mo><msup><mi>v</mi><mn>2</mn></msup><mo>/</mo><msup><mi>c</mi><mn>2</mn></msup></mrow></msqrt></mrow></math></td>
+							<td style="width: 180px;"><math><mrow><mi>&#x03B3;</mi><mo>=</mo>  <mstyle mathsize="140%">    <mfrac><mn>1</mn><mrow><msqrt><mrow><mn>1</mn><mo>&#x2212;</mo><msup><mi>v</mi><mn>2</mn></msup><mo>/</mo><msup><mi>c</mi><mn>2</mn></msup></mrow></msqrt></mrow>   </mfrac>  </mstyle></mrow></math></td><td style="width: 180px;"><math><mrow><mi>t</mi><mo>=</mo>  <mstyle mathsize="140%">    <mfrac><mrow><msub><mi>t</mi><mn>0</mn></msub></mrow><mrow><msqrt><mrow><mn>1</mn><mo>&#x2212;</mo><msup><mi>v</mi><mn>2</mn></msup><mo>/</mo><msup><mi>c</mi><mn>2</mn></msup></mrow></msqrt></mrow>   </mfrac>  </mstyle></mrow></math></td><td style="width: 180px;"><math><mrow><mi>L</mi><mo>=</mo><msub><mi>L</mi><mn>0</mn></msub><msqrt><mrow><mn>1</mn><mo>&#x2212;</mo><msup><mi>v</mi><mn>2</mn></msup><mo>/</mo><msup><mi>c</mi><mn>2</mn></msup></mrow></msqrt></mrow></math></td>
 							</tr>
 							<tr><td></td></tr>
 							<tr><td></td></tr>
@@ -2198,14 +2210,14 @@
 						<table>
 							<tr><td style="width: 180px;"><b>Lorentz transformation equations</b></td><td></td></tr>
 							<tr>
-							<td style="width: 180px;"><math><mrow><mtable columnalign='left'><mtr columnalign='left'><mtd columnalign='left'><mrow><mi>x</mi><mo>=</mo><mi>&#x03B3;</mi><mo stretchy='false'>(</mo><msup><mi>x</mi><mo>&#x2032;</mo></msup><mo>+</mo><mi>v</mi><msup><mi>t</mi><mo>&#x2032;</mo></msup><mo stretchy='false'>)</mo></mrow></mtd><mtd columnalign='left'><mrow><msup><mi>x</mi><mo>&#x2032;</mo></msup><mo>=</mo><mi>&#x03B3;</mi><mo stretchy='false'>(</mo><mi>x</mi><mo>&#x2212;</mo><mi>v</mi><mi>t</mi><mo stretchy='false'>)</mo></mrow></mtd></mtr><mtr columnalign='left'><mtd columnalign='left'><mrow><mi>y</mi><mo>=</mo><msup><mi>y</mi><mo>&#x2032;</mo></msup></mrow></mtd><mtd columnalign='left'><mrow><msup><mi>y</mi><mo>&#x2032;</mo></msup><mo>=</mo><mi>y</mi></mrow></mtd></mtr><mtr columnalign='left'><mtd columnalign='left'><mrow><mi>z</mi><mo>=</mo><msup><mi>z</mi><mo>&#x2032;</mo></msup></mrow></mtd><mtd columnalign='left'><mrow><msup><mi>z</mi><mo>&#x2032;</mo></msup><mo>=</mo><mi>z</mi></mrow></mtd></mtr><mtr columnalign='left'><mtd columnalign='left'><mrow><mi>t</mi><mo>=</mo><mi>&#x03B3;</mi><mrow><mo>(</mo><mrow><msup><mi>t</mi><mo>&#x2032;</mo></msup><mo>+</mo><mfrac><mrow><mi>v</mi><msup><mi>x</mi><mo>&#x2032;</mo></msup></mrow><mrow><msup><mi>c</mi><mn>2</mn></msup></mrow></mfrac></mrow><mo>)</mo></mrow><mtext>&nbsp;&nbsp;&nbsp;</mtext></mrow></mtd><mtd columnalign='left'><mrow><msup><mi>t</mi><mo>&#x2032;</mo></msup><mo>=</mo><mi>&#x03B3;</mi><mrow><mo>(</mo><mrow><mi>t</mi><mo>&#x2212;</mo><mfrac><mrow><mi>v</mi><mi>x</mi></mrow><mrow><msup><mi>c</mi><mn>2</mn></msup></mrow></mfrac></mrow><mo>)</mo></mrow></mrow></mtd></mtr></mtable></mrow></math></td><td style="width: 180px; padding: 0px 0px 5px 30px;"><math><mrow><mtable columnalign='left'><mtr columnalign='left'><mtd columnalign='left'><mrow><mi>&#x0394;</mi><mi>x</mi><mo>=</mo><mi>&#x03B3;</mi><mo stretchy='false'>(</mo><mi>&#x0394;</mi><msup><mi>x</mi><mo>&#x2032;</mo></msup><mo>+</mo><mi>v</mi><mi>&#x0394;</mi><msup><mi>t</mi><mo>&#x2032;</mo></msup><mo stretchy='false'>)</mo></mrow></mtd><mtd columnalign='left'><mrow><mi>&#x0394;</mi><msup><mi>x</mi><mo>&#x2032;</mo></msup><mo>=</mo><mi>&#x03B3;</mi><mo stretchy='false'>(</mo><mi>&#x0394;</mi><mi>x</mi><mo>&#x2212;</mo><mi>v</mi><mi>&#x0394;</mi><mi>t</mi><mo stretchy='false'>)</mo></mrow></mtd></mtr><mtr columnalign='left'><mtd columnalign='left'><mrow><mi>&#x0394;</mi><mi>y</mi><mo>=</mo><mi>&#x0394;</mi><msup><mi>y</mi><mo>&#x2032;</mo></msup></mrow></mtd><mtd columnalign='left'><mrow><mi>&#x0394;</mi><msup><mi>y</mi><mo>&#x2032;</mo></msup><mo>=</mo><mi>&#x0394;</mi><mi>y</mi></mrow></mtd></mtr><mtr columnalign='left'><mtd columnalign='left'><mrow><mi>&#x0394;</mi><mi>z</mi><mo>=</mo><mi>&#x0394;</mi><msup><mi>z</mi><mo>&#x2032;</mo></msup></mrow></mtd><mtd columnalign='left'><mrow><mi>&#x0394;</mi><msup><mi>z</mi><mo>&#x2032;</mo></msup><mo>=</mo><mi>&#x0394;</mi><mi>z</mi></mrow></mtd></mtr><mtr columnalign='left'><mtd columnalign='left'><mrow><mi>&#x0394;</mi><mi>t</mi><mo>=</mo><mi>&#x03B3;</mi><mrow><mo>(</mo><mrow><mi>&#x0394;</mi><msup><mi>t</mi><mo>&#x2032;</mo></msup><mo>+</mo><mfrac><mrow><mi>v</mi><mi>&#x0394;</mi><msup><mi>x</mi><mo>&#x2032;</mo></msup></mrow><mrow><msup><mi>c</mi><mn>2</mn></msup></mrow></mfrac></mrow><mo>)</mo></mrow><mtext>&nbsp;&nbsp;&nbsp;</mtext></mrow></mtd><mtd columnalign='left'><mrow><mi>&#x0394;</mi><msup><mi>t</mi><mo>&#x2032;</mo></msup><mo>=</mo><mi>&#x03B3;</mi><mrow><mo>(</mo><mrow><mi>&#x0394;</mi><mi>t</mi><mo>&#x2212;</mo><mfrac><mrow><mi>v</mi><mi>&#x0394;</mi><mi>x</mi></mrow><mrow><msup><mi>c</mi><mn>2</mn></msup></mrow></mfrac></mrow><mo>)</mo></mrow></mrow></mtd></mtr></mtable></mrow></math></td>
+							<td style="width: 180px;"><math><mrow><mtable columnalign='left'><mtr columnalign='left'><mtd columnalign='left'><mrow><mi>x</mi><mo>=</mo><mi>&#x03B3;</mi><mo stretchy='false'>(</mo><msup><mi>x</mi><mo>&#x2032;</mo></msup><mo>+</mo><mi>v</mi><msup><mi>t</mi><mo>&#x2032;</mo></msup><mo stretchy='false'>)</mo></mrow></mtd><mtd columnalign='left'><mrow><msup><mi>x</mi><mo>&#x2032;</mo></msup><mo>=</mo><mi>&#x03B3;</mi><mo stretchy='false'>(</mo><mi>x</mi><mo>&#x2212;</mo><mi>v</mi><mi>t</mi><mo stretchy='false'>)</mo></mrow></mtd></mtr><mtr columnalign='left'><mtd columnalign='left'><mrow><mi>y</mi><mo>=</mo><msup><mi>y</mi><mo>&#x2032;</mo></msup></mrow></mtd><mtd columnalign='left'><mrow><msup><mi>y</mi><mo>&#x2032;</mo></msup><mo>=</mo><mi>y</mi></mrow></mtd></mtr><mtr columnalign='left'><mtd columnalign='left'><mrow><mi>z</mi><mo>=</mo><msup><mi>z</mi><mo>&#x2032;</mo></msup></mrow></mtd><mtd columnalign='left'><mrow><msup><mi>z</mi><mo>&#x2032;</mo></msup><mo>=</mo><mi>z</mi></mrow></mtd></mtr><mtr columnalign='left'><mtd columnalign='left'><mrow><mi>t</mi><mo>=</mo><mi>&#x03B3;</mi><mrow><mo>(</mo><mrow><msup><mi>t</mi><mo>&#x2032;</mo></msup><mo>+</mo>  <mstyle mathsize="140%">    <mfrac><mrow><mi>v</mi><msup><mi>x</mi><mo>&#x2032;</mo></msup></mrow><mrow><msup><mi>c</mi><mn>2</mn></msup></mrow>   </mfrac>  </mstyle></mrow><mo>)</mo></mrow><mtext>&nbsp;&nbsp;&nbsp;</mtext></mrow></mtd><mtd columnalign='left'><mrow><msup><mi>t</mi><mo>&#x2032;</mo></msup><mo>=</mo><mi>&#x03B3;</mi><mrow><mo>(</mo><mrow><mi>t</mi><mo>&#x2212;</mo>  <mstyle mathsize="140%">    <mfrac><mrow><mi>v</mi><mi>x</mi></mrow><mrow><msup><mi>c</mi><mn>2</mn></msup></mrow>   </mfrac>  </mstyle></mrow><mo>)</mo></mrow></mrow></mtd></mtr></mtable></mrow></math></td><td style="width: 180px; padding: 0px 0px 5px 30px;"><math><mrow><mtable columnalign='left'><mtr columnalign='left'><mtd columnalign='left'><mrow><mi>&#x0394;</mi><mi>x</mi><mo>=</mo><mi>&#x03B3;</mi><mo stretchy='false'>(</mo><mi>&#x0394;</mi><msup><mi>x</mi><mo>&#x2032;</mo></msup><mo>+</mo><mi>v</mi><mi>&#x0394;</mi><msup><mi>t</mi><mo>&#x2032;</mo></msup><mo stretchy='false'>)</mo></mrow></mtd><mtd columnalign='left'><mrow><mi>&#x0394;</mi><msup><mi>x</mi><mo>&#x2032;</mo></msup><mo>=</mo><mi>&#x03B3;</mi><mo stretchy='false'>(</mo><mi>&#x0394;</mi><mi>x</mi><mo>&#x2212;</mo><mi>v</mi><mi>&#x0394;</mi><mi>t</mi><mo stretchy='false'>)</mo></mrow></mtd></mtr><mtr columnalign='left'><mtd columnalign='left'><mrow><mi>&#x0394;</mi><mi>y</mi><mo>=</mo><mi>&#x0394;</mi><msup><mi>y</mi><mo>&#x2032;</mo></msup></mrow></mtd><mtd columnalign='left'><mrow><mi>&#x0394;</mi><msup><mi>y</mi><mo>&#x2032;</mo></msup><mo>=</mo><mi>&#x0394;</mi><mi>y</mi></mrow></mtd></mtr><mtr columnalign='left'><mtd columnalign='left'><mrow><mi>&#x0394;</mi><mi>z</mi><mo>=</mo><mi>&#x0394;</mi><msup><mi>z</mi><mo>&#x2032;</mo></msup></mrow></mtd><mtd columnalign='left'><mrow><mi>&#x0394;</mi><msup><mi>z</mi><mo>&#x2032;</mo></msup><mo>=</mo><mi>&#x0394;</mi><mi>z</mi></mrow></mtd></mtr><mtr columnalign='left'><mtd columnalign='left'><mrow><mi>&#x0394;</mi><mi>t</mi><mo>=</mo><mi>&#x03B3;</mi><mrow><mo>(</mo><mrow><mi>&#x0394;</mi><msup><mi>t</mi><mo>&#x2032;</mo></msup><mo>+</mo>  <mstyle mathsize="140%">    <mfrac><mrow><mi>v</mi><mi>&#x0394;</mi><msup><mi>x</mi><mo>&#x2032;</mo></msup></mrow><mrow><msup><mi>c</mi><mn>2</mn></msup></mrow>   </mfrac>  </mstyle></mrow><mo>)</mo></mrow><mtext>&nbsp;&nbsp;&nbsp;</mtext></mrow></mtd><mtd columnalign='left'><mrow><mi>&#x0394;</mi><msup><mi>t</mi><mo>&#x2032;</mo></msup><mo>=</mo><mi>&#x03B3;</mi><mrow><mo>(</mo><mrow><mi>&#x0394;</mi><mi>t</mi><mo>&#x2212;</mo>  <mstyle mathsize="140%">    <mfrac><mrow><mi>v</mi><mi>&#x0394;</mi><mi>x</mi></mrow><mrow><msup><mi>c</mi><mn>2</mn></msup></mrow>   </mfrac>  </mstyle></mrow><mo>)</mo></mrow></mrow></mtd></mtr></mtable></mrow></math></td>
 							</tr>
 							<tr><td></td></tr>
 							<tr><td></td></tr>
 							<tr><td></td></tr>
 							<tr><td></td></tr>
 							<tr><td style="width: 180px;"><b>Lorentz transformation equations</b></td><td style="width: 180px; padding: 0px 0px 0px 30px;"><b>Relativistic momentum</b></td></tr>
-							<td style="width: 180px;"><math><mrow><mi>u</mi><mo>=</mo><mfrac><mrow><msup><mi>u</mi><mo>&#x2032;</mo></msup><mo>+</mo><mi>v</mi></mrow><mrow><mn>1</mn><mo>+</mo><msup><mi>u</mi><mo>&#x2032;</mo></msup><mi>v</mi><mo>/</mo><msup><mi>c</mi><mn>2</mn></msup></mrow></mfrac><mo>,</mo><mtext>&nbsp;&nbsp;</mtext><msup><mi>u</mi><mo>&#x2032;</mo></msup><mo>=</mo><mfrac><mrow><mi>u</mi><mo>&#x2212;</mo><mi>v</mi></mrow><mrow><mn>1</mn><mo>&#x2212;</mo><mi>u</mi><mi>v</mi><mo>/</mo><msup><mi>c</mi><mn>2</mn></msup></mrow></mfrac></mrow></math></td><td style="width: 180px; padding: 0px 0px 0px 30px;"><math><mrow><mi>p</mi><mo>=</mo><mfrac><mrow><mi>m</mi><mi>u</mi></mrow><mrow><msqrt><mrow><mn>1</mn><mo>&#x2212;</mo><mfrac><mrow><msup><mi>u</mi><mn>2</mn></msup></mrow><mrow><msup><mi>c</mi><mn>2</mn></msup></mrow></mfrac></mrow></msqrt></mrow></mfrac><mo>=</mo><mi>&#x03B3;</mi><mi>m</mi><mi>u</mi></mrow></math></td>
+							<td style="width: 180px;"><math><mrow><mi>u</mi><mo>=</mo>  <mstyle mathsize="140%">    <mfrac><mrow><msup><mi>u</mi><mo>&#x2032;</mo></msup><mo>+</mo><mi>v</mi></mrow><mrow><mn>1</mn><mo>+</mo><msup><mi>u</mi><mo>&#x2032;</mo></msup><mi>v</mi><mo>/</mo><msup><mi>c</mi><mn>2</mn></msup></mrow>   </mfrac>  </mstyle><mo>,</mo><mtext>&nbsp;&nbsp;</mtext><msup><mi>u</mi><mo>&#x2032;</mo></msup><mo>=</mo>  <mstyle mathsize="140%">    <mfrac><mrow><mi>u</mi><mo>&#x2212;</mo><mi>v</mi></mrow><mrow><mn>1</mn><mo>&#x2212;</mo><mi>u</mi><mi>v</mi><mo>/</mo><msup><mi>c</mi><mn>2</mn></msup></mrow>   </mfrac>  </mstyle></mrow></math></td><td style="width: 180px; padding: 0px 0px 0px 30px;"><math><mrow><mi>p</mi><mo>=</mo>  <mstyle mathsize="140%">    <mfrac><mrow><mi>m</mi><mi>u</mi></mrow><mrow><msqrt><mrow><mn>1</mn><mo>&#x2212;</mo>  <mstyle mathsize="140%">    <mfrac><mrow><msup><mi>u</mi><mn>2</mn></msup></mrow><mrow><msup><mi>c</mi><mn>2</mn></msup></mrow>   </mfrac>  </mstyle></mrow></msqrt></mrow>   </mfrac>  </mstyle><mo>=</mo><mi>&#x03B3;</mi><mi>m</mi><mi>u</mi></mrow></math></td>
 							</tr>
 							
 						</table>
@@ -2213,18 +2225,18 @@
 						<table>
 							<tr><td style="width: 260px;"><b>Doppler shift</b></td><td></td></tr>
 							<tr>
-							<td style="width: 260px;">Source/observer closing:</td><td style="width: 180px; padding: 0px 0px 5px 30px;"><math><mrow><mi>f</mi><mo>=</mo><msub><mi>f</mi><mn>0</mn></msub><msqrt><mrow><mfrac><mrow><mn>1</mn><mo>&#x2212;</mo><mi>v</mi><mo>/</mo><mi>c</mi></mrow><mrow><mn>1</mn><mo>+</mo><mi>v</mi><mo>/</mo><mi>c</mi></mrow></mfrac></mrow></msqrt></mrow></math></td>
+							<td style="width: 260px;">Source/observer closing:</td><td style="width: 180px; padding: 0px 0px 5px 30px;"><math><mrow><mi>f</mi><mo>=</mo><msub><mi>f</mi><mn>0</mn></msub><msqrt><mrow>  <mstyle mathsize="140%">    <mfrac><mrow><mn>1</mn><mo>&#x2212;</mo><mi>v</mi><mo>/</mo><mi>c</mi></mrow><mrow><mn>1</mn><mo>+</mo><mi>v</mi><mo>/</mo><mi>c</mi></mrow>   </mfrac>  </mstyle></mrow></msqrt></mrow></math></td>
 							</tr>
 							<tr><td></td></tr>
 							<tr><td></td></tr>
 							
 							<tr>
-							<td style="width: 260px;">Source/observer separating:</td><td style="width: 180px; padding: 0px 0px 0px 30px;"><math><mrow><mi>f</mi><mo>=</mo><msub><mi>f</mi><mn>0</mn></msub><msqrt><mrow><mfrac><mrow><mn>1</mn><mo>&#x2212;</mo><mi>v</mi><mo>/</mo><mi>c</mi></mrow><mrow><mn>1</mn><mo>+</mo><mi>v</mi><mo>/</mo><mi>c</mi></mrow></mfrac></mrow></msqrt></mrow></math></td>
+							<td style="width: 260px;">Source/observer separating:</td><td style="width: 180px; padding: 0px 0px 0px 30px;"><math><mrow><mi>f</mi><mo>=</mo><msub><mi>f</mi><mn>0</mn></msub><msqrt><mrow>  <mstyle mathsize="140%">    <mfrac><mrow><mn>1</mn><mo>&#x2212;</mo><mi>v</mi><mo>/</mo><mi>c</mi></mrow><mrow><mn>1</mn><mo>+</mo><mi>v</mi><mo>/</mo><mi>c</mi></mrow>   </mfrac>  </mstyle></mrow></msqrt></mrow></math></td>
 							</tr>
 							<tr><td></td></tr>
 							<tr><td></td></tr>
 							<tr>
-							<td style="width: 260px;">Transverse Doppler effect:</td><td style="width: 180px; padding: 0px 0px 0px 30px;"><math><mrow><mi>f</mi><mo>=</mo><msub><mi>f</mi><mn>0</mn></msub><mfrac><mrow><msqrt><mrow><mn>1</mn><mo>&#x2212;</mo><msup><mi>&#x03B2;</mi><mn>2</mn></msup></mrow></msqrt></mrow><mrow><mn>1</mn><mo>&#x2212;</mo><mi>&#x03B2;</mi><mi>cos</mi><mo>&#x2061;</mo><mi>&#x03B8;</mi></mrow></mfrac><mo>,</mo><mtext>&nbsp;</mtext><mi>&#x03B2;</mi><mo>=</mo><mfrac><mi>v</mi><mi>c</mi></mfrac></mrow></math></td>
+							<td style="width: 260px;">Transverse Doppler effect:</td><td style="width: 180px; padding: 0px 0px 0px 30px;"><math><mrow><mi>f</mi><mo>=</mo><msub><mi>f</mi><mn>0</mn></msub>  <mstyle mathsize="140%">    <mfrac><mrow><msqrt><mrow><mn>1</mn><mo>&#x2212;</mo><msup><mi>&#x03B2;</mi><mn>2</mn></msup></mrow></msqrt></mrow><mrow><mn>1</mn><mo>&#x2212;</mo><mi>&#x03B2;</mi><mi>cos</mi><mo>&#x2061;</mo><mi>&#x03B8;</mi></mrow>   </mfrac>  </mstyle><mo>,</mo><mtext>&nbsp;</mtext><mi>&#x03B2;</mi><mo>=</mo>  <mstyle mathsize="140%">    <mfrac><mi>v</mi><mi>c</mi>   </mfrac>  </mstyle></mrow></math></td>
 							</tr>
 							
 						</table>
@@ -2268,10 +2280,10 @@
 							<td style="width: 300px;"><b>Mirror and lens equations</b></td><td style="width: 200px;"><b>Snell’s law</b></td><td style="width: 200px;"><b>Lensmaker’s equation, air</b></td>
 							</tr>
 							<tr>
-							<td style="width: 300px;"><math><mrow><mfrac><mn>1</mn><mrow><msub><mi>d</mi><mtext>i</mtext></msub></mrow></mfrac><mo>+</mo><mfrac><mn>1</mn><mrow><msub><mi>d</mi><mtext>o</mtext></msub></mrow></mfrac><mo>=</mo><mfrac><mn>1</mn><mi>f</mi></mfrac></mrow></math></td><td style="width: 200px;"><math><mrow><msub><mi>n</mi><mtext>i</mtext></msub><mi>sin</mi><mo>&#x2061;</mo><msub><mi>&#x03B8;</mi><mtext>i</mtext></msub><mo>=</mo><msub><mi>n</mi><mtext>r</mtext></msub><mi>sin</mi><mo>&#x2061;</mo><msub><mi>&#x03B8;</mi><mtext>r</mtext></msub></mrow></math></td><td style="width: 200px;"><math><mrow><mfrac><mn>1</mn><mi>f</mi></mfrac><mo>=</mo><mrow><mo>(</mo><mrow><mi>n</mi><mo>&#x2212;</mo><mn>1</mn></mrow><mo>)</mo></mrow><mrow><mo>(</mo><mrow><mfrac><mn>1</mn><mrow><msub><mi>R</mi><mn>1</mn></msub></mrow></mfrac><mo>&#x2212;</mo><mfrac><mn>1</mn><mrow><msub><mi>R</mi><mn>2</mn></msub></mrow></mfrac></mrow><mo>)</mo></mrow></mrow></math></td>
+							<td style="width: 300px;"><math><mrow>  <mstyle mathsize="140%">    <mfrac><mn>1</mn><mrow><msub><mi>d</mi><mtext>i</mtext></msub></mrow>   </mfrac>  </mstyle><mo>+</mo>  <mstyle mathsize="140%">    <mfrac><mn>1</mn><mrow><msub><mi>d</mi><mtext>o</mtext></msub></mrow>   </mfrac>  </mstyle><mo>=</mo>  <mstyle mathsize="140%">    <mfrac><mn>1</mn><mi>f</mi>   </mfrac>  </mstyle></mrow></math></td><td style="width: 200px;"><math><mrow><msub><mi>n</mi><mtext>i</mtext></msub><mi>sin</mi><mo>&#x2061;</mo><msub><mi>&#x03B8;</mi><mtext>i</mtext></msub><mo>=</mo><msub><mi>n</mi><mtext>r</mtext></msub><mi>sin</mi><mo>&#x2061;</mo><msub><mi>&#x03B8;</mi><mtext>r</mtext></msub></mrow></math></td><td style="width: 200px;"><math><mrow>  <mstyle mathsize="140%">    <mfrac><mn>1</mn><mi>f</mi>   </mfrac>  </mstyle><mo>=</mo><mrow><mo>(</mo><mrow><mi>n</mi><mo>&#x2212;</mo><mn>1</mn></mrow><mo>)</mo></mrow><mrow><mo>(</mo><mrow>  <mstyle mathsize="140%">    <mfrac><mn>1</mn><mrow><msub><mi>R</mi><mn>1</mn></msub></mrow>   </mfrac>  </mstyle><mo>&#x2212;</mo>  <mstyle mathsize="140%">    <mfrac><mn>1</mn><mrow><msub><mi>R</mi><mn>2</mn></msub></mrow>   </mfrac>  </mstyle></mrow><mo>)</mo></mrow></mrow></math></td>
 							</tr>
 							<tr>
-							<td style="width: 300px;"><math><mrow><mi>m</mi><mo>=</mo><mfrac><mrow><msub><mi>h</mi><mtext>i</mtext></msub></mrow><mrow><msub><mi>h</mi><mtext>o</mtext></msub></mrow></mfrac><mo>=</mo><mo>&#x2212;</mo><mfrac><mrow><msub><mi>d</mi><mtext>i</mtext></msub></mrow><mrow><msub><mi>d</mi><mtext>o</mtext></msub></mrow></mfrac></mrow></math></td><td style="width: 200px;"><math><mrow><mi>sin</mi><mo>&#x2061;</mo><msub><mi>&#x03B8;</mi><mtext>c</mtext></msub><mo>=</mo><msub><mi>n</mi><mtext>2</mtext></msub><mo>/</mo><msub><mi>n</mi><mn>1</mn></msub></mrow></math></td><td style="width: 200px;"></td>
+							<td style="width: 300px;"><math><mrow><mi>m</mi><mo>=</mo>  <mstyle mathsize="140%">    <mfrac><mrow><msub><mi>h</mi><mtext>i</mtext></msub></mrow><mrow><msub><mi>h</mi><mtext>o</mtext></msub></mrow>   </mfrac>  </mstyle><mo>=</mo><mo>&#x2212;</mo>  <mstyle mathsize="140%">    <mfrac><mrow><msub><mi>d</mi><mtext>i</mtext></msub></mrow><mrow><msub><mi>d</mi><mtext>o</mtext></msub></mrow>   </mfrac>  </mstyle></mrow></math></td><td style="width: 200px;"><math><mrow><mi>sin</mi><mo>&#x2061;</mo><msub><mi>&#x03B8;</mi><mtext>c</mtext></msub><mo>=</mo><msub><mi>n</mi><mtext>2</mtext></msub><mo>/</mo><msub><mi>n</mi><mn>1</mn></msub></mrow></math></td><td style="width: 200px;"></td>
 							</tr>
 							<tr><td></td></tr>
 							<tr><td></td></tr>
@@ -2283,7 +2295,7 @@
 							<td style="width: 300px;"><b>Refractive power</b></td><td style="width: 200px;"><b>Angular size</b></td><td style="width: 200px;"><b>Angular magnification</b></td>
 							</tr>
 							<tr>
-							<td style="width: 300px;"><math><mrow><mi>P</mi><mo>=</mo><mfrac><mn>1</mn><mi>f</mi></mfrac></mrow></math></td><td style="width: 200px;"><math><mrow><mi>&#x03B8;</mi><mo>&#x2248;</mo><mfrac><mi>h</mi><mi>d</mi></mfrac></mrow></math></td><td style="width: 200px;"><math><mrow><mi>M</mi><mo>=</mo><mfrac><mi>&#x03B8;</mi><mrow><msub><mi>&#x03B8;</mi><mn>0</mn></msub></mrow></mfrac></mrow></math></td>
+							<td style="width: 300px;"><math><mrow><mi>P</mi><mo>=</mo>  <mstyle mathsize="140%">    <mfrac><mn>1</mn><mi>f</mi>   </mfrac>  </mstyle></mrow></math></td><td style="width: 200px;"><math><mrow><mi>&#x03B8;</mi><mo>&#x2248;</mo>  <mstyle mathsize="140%">    <mfrac><mi>h</mi><mi>d</mi>   </mfrac>  </mstyle></mrow></math></td><td style="width: 200px;"><math><mrow><mi>M</mi><mo>=</mo>  <mstyle mathsize="140%">    <mfrac><mi>&#x03B8;</mi><mrow><msub><mi>&#x03B8;</mi><mn>0</mn></msub></mrow>   </mfrac>  </mstyle></mrow></math></td>
 							</tr>
 							<tr><td></td></tr>
 							<tr><td></td></tr>
@@ -2295,52 +2307,52 @@
 							<td style="width: 300px;"><b>Angular magnification of a magnifying glass</b></td><td style="width: 200px;"><b>Angular magnification of a refracting telescope</b></td><td style="width: 200px;"><b>Angular magnification of a microscope</b></td>
 							</tr>
 							<tr>
-							<td style="width: 300px;"><math><mrow><mi>M</mi><mo>&#x2248;</mo><mfrac><mi>N</mi><mrow><msub><mi>d</mi><mtext>o</mtext></msub></mrow></mfrac><mo>=</mo><mrow><mo>(</mo><mrow><mfrac><mn>1</mn><mi>f</mi></mfrac><mo>&#x2212;</mo><mfrac><mn>1</mn><mrow><msub><mi>d</mi><mtext>i</mtext></msub></mrow></mfrac></mrow><mo>)</mo></mrow><mi>N</mi></mrow></math></td><td style="width: 200px;"><math><mrow><mi>M</mi><mo>=</mo><mo>&#x2212;</mo><mfrac><mrow><msub><mi>f</mi><mrow><mtext>ob</mtext></mrow></msub></mrow><mrow><msub><mi>f</mi><mrow><mtext>ey</mtext></mrow></msub></mrow></mfrac></mrow></math></td><td style="width: 200px;"><math><mrow><mi>M</mi><mo>&#x2248;</mo><mo>&#x2212;</mo><mfrac><mrow><mrow><mo>(</mo><mi>L</mi><mo>)</mo></mrow><mrow><mo>(</mo><mi>N</mi><mo>)</mo></mrow></mrow><mrow><mrow><mo>(</mo><mrow><msub><mi>f</mi><mrow><mtext>ob</mtext></mrow></msub></mrow><mo>)</mo></mrow><mrow><mo>(</mo><mrow><msub><mi>f</mi><mrow><mtext>ey</mtext></mrow></msub></mrow><mo>)</mo></mrow></mrow></mfrac></mrow></math></td>
+							<td style="width: 300px;"><math><mrow><mi>M</mi><mo>&#x2248;</mo>  <mstyle mathsize="140%">    <mfrac><mi>N</mi><mrow><msub><mi>d</mi><mtext>o</mtext></msub></mrow>   </mfrac>  </mstyle><mo>=</mo><mrow><mo>(</mo><mrow>  <mstyle mathsize="140%">    <mfrac><mn>1</mn><mi>f</mi>   </mfrac>  </mstyle><mo>&#x2212;</mo>  <mstyle mathsize="140%">    <mfrac><mn>1</mn><mrow><msub><mi>d</mi><mtext>i</mtext></msub></mrow>   </mfrac>  </mstyle></mrow><mo>)</mo></mrow><mi>N</mi></mrow></math></td><td style="width: 200px;"><math><mrow><mi>M</mi><mo>=</mo><mo>&#x2212;</mo>  <mstyle mathsize="140%">    <mfrac><mrow><msub><mi>f</mi><mrow><mtext>ob</mtext></mrow></msub></mrow><mrow><msub><mi>f</mi><mrow><mtext>ey</mtext></mrow></msub></mrow>   </mfrac>  </mstyle></mrow></math></td><td style="width: 200px;"><math><mrow><mi>M</mi><mo>&#x2248;</mo><mo>&#x2212;</mo>  <mstyle mathsize="140%">    <mfrac><mrow><mrow><mo>(</mo><mi>L</mi><mo>)</mo></mrow><mrow><mo>(</mo><mi>N</mi><mo>)</mo></mrow></mrow><mrow><mrow><mo>(</mo><mrow><msub><mi>f</mi><mrow><mtext>ob</mtext></mrow></msub></mrow><mo>)</mo></mrow><mrow><mo>(</mo><mrow><msub><mi>f</mi><mrow><mtext>ey</mtext></mrow></msub></mrow><mo>)</mo></mrow></mrow>   </mfrac>  </mstyle></mrow></math></td>
 							</tr>
 							<tr>
-							<td style="width: 300px;"><math><mrow><mi>M</mi><mo>&#x2248;</mo><mfrac><mi>N</mi><mi>f</mi></mfrac><mo>+</mo><mn>1</mn></mrow></math>&nbsp;&nbsp;&nbsp;&nbsp;(image at near point)</td><td style="width: 200px;"></td><td style="width: 200px;"></td>
+							<td style="width: 300px;"><math><mrow><mi>M</mi><mo>&#x2248;</mo>  <mstyle mathsize="140%">    <mfrac><mi>N</mi><mi>f</mi>   </mfrac>  </mstyle><mo>+</mo><mn>1</mn></mrow></math>&nbsp;&nbsp;&nbsp;&nbsp;(image at near point)</td><td style="width: 200px;"></td><td style="width: 200px;"></td>
 							</tr>
 							<tr>
-							<td style="width: 300px;"><math><mrow><mi>M</mi><mo>&#x2248;</mo><mfrac><mi>N</mi><mi>f</mi></mfrac></mrow></math>&nbsp;&nbsp;&nbsp;&nbsp;(image at infinity)</td><td style="width: 200px;"></td><td style="width: 200px;"></td>
+							<td style="width: 300px;"><math><mrow><mi>M</mi><mo>&#x2248;</mo>  <mstyle mathsize="140%">    <mfrac><mi>N</mi><mi>f</mi>   </mfrac>  </mstyle></mrow></math>&nbsp;&nbsp;&nbsp;&nbsp;(image at infinity)</td><td style="width: 200px;"></td><td style="width: 200px;"></td>
 							</tr>
 						</table>
 						<br><br><br>
 						<table>
 						<tr><td style="width: 600px;"><b>Double-slit interference</b></td><td style="width: 500px;"><b>Thin-film interference</b></td></tr>
-						<tr><td>Bright fringes:&nbsp;&nbsp;<math><mrow><mi>sin</mi><mo>&#x2061;</mo><mi>&#x03B8;</mi><mo>=</mo><mfrac><mrow><mi>m</mi><mi>&#x03BB;</mi></mrow><mi>d</mi></mfrac><mo>,</mo><mtext>&nbsp;&nbsp;&nbsp;</mtext><mi>m</mi><mo>=</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mn>...</mn></mrow></math></td><td>Destructive:&nbsp;&nbsp;<math><mrow><mn>2</mn><mi>n</mi><mi>t</mi><mo>=</mo><mi>m</mi><mi>&#x03BB;</mi><mo>,</mo><mtext>&nbsp;&nbsp;</mtext><mi>m</mi><mo>=</mo><mn>0</mn><mo>,</mo><mtext>&nbsp;</mtext><mn>1</mn><mo>,</mo><mtext>&nbsp;</mtext><mn>2...</mn></mrow></math></td></tr>
+						<tr><td>Bright fringes:&nbsp;&nbsp;<math><mrow><mi>sin</mi><mo>&#x2061;</mo><mi>&#x03B8;</mi><mo>=</mo>  <mstyle mathsize="140%">    <mfrac><mrow><mi>m</mi><mi>&#x03BB;</mi></mrow><mi>d</mi>   </mfrac>  </mstyle><mo>,</mo><mtext>&nbsp;&nbsp;&nbsp;</mtext><mi>m</mi><mo>=</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mn>...</mn></mrow></math></td><td>Destructive:&nbsp;&nbsp;<math><mrow><mn>2</mn><mi>n</mi><mi>t</mi><mo>=</mo><mi>m</mi><mi>&#x03BB;</mi><mo>,</mo><mtext>&nbsp;&nbsp;</mtext><mi>m</mi><mo>=</mo><mn>0</mn><mo>,</mo><mtext>&nbsp;</mtext><mn>1</mn><mo>,</mo><mtext>&nbsp;</mtext><mn>2...</mn></mrow></math></td></tr>
 						<tr><td></td></tr>
 							<tr><td></td><td></td></tr>
 							<tr><td></td><td></td></tr>
-							<tr><td>Dark fringes:&nbsp;&nbsp;<math><mrow><mi>sin</mi><mo>&#x2061;</mo><mi>&#x03B8;</mi><mo>=</mo><mfrac><mrow><mo stretchy='false'>(</mo><mi>m</mi><mo>+</mo><mstyle scriptlevel='+1'><mfrac bevelled='true'><mn>1</mn><mn>2</mn></mfrac></mstyle><mo stretchy='false'>)</mo><mi>&#x03BB;</mi></mrow><mi>d</mi></mfrac><mo>,</mo><mtext>&nbsp;&nbsp;</mtext><mi>m</mi><mo>=</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mn>...</mn></mrow></math></td><td>Constructive:&nbsp;&nbsp;<math><mrow><mn>2</mn><mi>n</mi><mi>t</mi><mo>=</mo><mrow><mo>(</mo><mrow><mi>m</mi><mo>+</mo><mstyle scriptlevel='+1'><mfrac bevelled='true'><mn>1</mn><mn>2</mn></mfrac></mstyle></mrow><mo>)</mo></mrow><mi>&#x03BB;</mi><mo>,</mo><mtext>&nbsp;&nbsp;</mtext><mi>m</mi><mo>=</mo><mn>0</mn><mo>,</mo><mtext>&nbsp;</mtext><mn>1</mn><mo>,</mo><mtext>&nbsp;</mtext><mn>2...</mn></mrow></math></td></tr>
+							<tr><td>Dark fringes:&nbsp;&nbsp;<math><mrow><mi>sin</mi><mo>&#x2061;</mo><mi>&#x03B8;</mi><mo>=</mo>  <mstyle mathsize="140%">    <mfrac><mrow><mo stretchy='false'>(</mo><mi>m</mi><mo>+</mo><mstyle scriptlevel='+1'><mfrac bevelled='true'><mn>1</mn><mn>2</mn>   </mfrac>  </mstyle></mstyle><mo stretchy='false'>)</mo><mi>&#x03BB;</mi></mrow><mi>d</mi>   </mfrac>  </mstyle><mo>,</mo><mtext>&nbsp;&nbsp;</mtext><mi>m</mi><mo>=</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mn>...</mn></mrow></math></td><td>Constructive:&nbsp;&nbsp;<math><mrow><mn>2</mn><mi>n</mi><mi>t</mi><mo>=</mo><mrow><mo>(</mo><mrow><mi>m</mi><mo>+</mo><mstyle scriptlevel='+1'><mfrac bevelled='true'><mn>1</mn><mn>2</mn>   </mfrac>  </mstyle></mstyle></mrow><mo>)</mo></mrow><mi>&#x03BB;</mi><mo>,</mo><mtext>&nbsp;&nbsp;</mtext><mi>m</mi><mo>=</mo><mn>0</mn><mo>,</mo><mtext>&nbsp;</mtext><mn>1</mn><mo>,</mo><mtext>&nbsp;</mtext><mn>2...</mn></mrow></math></td></tr>
 							<tr><td></td><td></td></tr>
 							<tr><td></td><td></td></tr>
-							<tr><td>Intensity function:&nbsp;&nbsp;<math><mrow><mi>I</mi><mo>=</mo><msub><mi>I</mi><mrow><mtext>max</mtext></mrow></msub><msup><mrow><mi>cos</mi><mo>&#x2061;</mo></mrow><mn>2</mn></msup><mrow><mo>(</mo><mrow><mfrac><mrow><mi>&#x03C0;</mi><mi>d</mi></mrow><mrow><mi>&#x03BB;</mi><mi>D</mi></mrow></mfrac><mi>x</mi></mrow><mo>)</mo></mrow></mrow></math></td><td></td></tr>
+							<tr><td>Intensity function:&nbsp;&nbsp;<math><mrow><mi>I</mi><mo>=</mo><msub><mi>I</mi><mrow><mtext>max</mtext></mrow></msub><msup><mrow><mi>cos</mi><mo>&#x2061;</mo></mrow><mn>2</mn></msup><mrow><mo>(</mo><mrow>  <mstyle mathsize="140%">    <mfrac><mrow><mi>&#x03C0;</mi><mi>d</mi></mrow><mrow><mi>&#x03BB;</mi><mi>D</mi></mrow>   </mfrac>  </mstyle><mi>x</mi></mrow><mo>)</mo></mrow></mrow></math></td><td></td></tr>
 							<tr style="height: 60px;"><td></td><td></td></tr>
 							
 							<tr><td><b>Air-wedge interference</b></td><td><b>Single-slit diffraction minima</b></td></tr>
 							<tr><td></td><td></td></tr>
 							<tr><td></td><td></td></tr>
-							<tr><td>Destructive:&nbsp;&nbsp;<math><mrow><mn>2</mn><mi>t</mi><mo>=</mo><mi>m</mi><mi>&#x03BB;</mi><mo>,</mo><mtext>&nbsp;&nbsp;</mtext><mi>m</mi><mo>=</mo><mn>1</mn><mo>,</mo><mtext>&nbsp;</mtext><mn>2</mn><mo>,</mo><mtext>&nbsp;</mtext><mn>3...</mn></mrow></math></td><td>Minima:&nbsp;&nbsp;<math><mrow><mi>sin</mi><mo>&#x2061;</mo><mi>&#x03B8;</mi><mo>=</mo><mi>m</mi><mfrac><mi>&#x03BB;</mi><mi>a</mi></mfrac><mo>,</mo><mtext>&nbsp;&nbsp;&nbsp;</mtext><mi>m</mi><mo>=</mo><mn>1</mn><mo>,</mo><mtext>&nbsp;</mtext><mn>2</mn><mo>,</mo><mtext>&nbsp;</mtext><mn>3...</mn></mrow></math></td></tr>
+							<tr><td>Destructive:&nbsp;&nbsp;<math><mrow><mn>2</mn><mi>t</mi><mo>=</mo><mi>m</mi><mi>&#x03BB;</mi><mo>,</mo><mtext>&nbsp;&nbsp;</mtext><mi>m</mi><mo>=</mo><mn>1</mn><mo>,</mo><mtext>&nbsp;</mtext><mn>2</mn><mo>,</mo><mtext>&nbsp;</mtext><mn>3...</mn></mrow></math></td><td>Minima:&nbsp;&nbsp;<math><mrow><mi>sin</mi><mo>&#x2061;</mo><mi>&#x03B8;</mi><mo>=</mo><mi>m</mi>  <mstyle mathsize="140%">    <mfrac><mi>&#x03BB;</mi><mi>a</mi>   </mfrac>  </mstyle><mo>,</mo><mtext>&nbsp;&nbsp;&nbsp;</mtext><mi>m</mi><mo>=</mo><mn>1</mn><mo>,</mo><mtext>&nbsp;</mtext><mn>2</mn><mo>,</mo><mtext>&nbsp;</mtext><mn>3...</mn></mrow></math></td></tr>
 							<tr style="height: 60px;"><td></td><td></td></tr>
-							<tr><td>Constructive:&nbsp;&nbsp;<math><mrow><mn>2</mn><mi>t</mi><mo>=</mo><mrow><mo>(</mo><mrow><mi>m</mi><mo>+</mo><mstyle scriptlevel='+1'><mfrac bevelled='true'><mn>1</mn><mn>2</mn></mfrac></mstyle></mrow><mo>)</mo></mrow><mi>&#x03BB;</mi><mo>,</mo><mtext>&nbsp;&nbsp;</mtext><mi>m</mi><mo>=</mo><mn>0</mn><mo>,</mo><mtext>&nbsp;</mtext><mn>1</mn><mo>,</mo><mtext>&nbsp;</mtext><mn>2...</mn></mrow></math></td><td>Intensity:&nbsp;&nbsp;<math><mrow><msub><mi>I</mi><mi>&#x03B8;</mi></msub><mo>=</mo><msub><mi>I</mi><mtext>M</mtext></msub><msup><mrow><mrow><mo>(</mo><mrow><mfrac><mrow><mi>sin</mi><mo>&#x2061;</mo><mtext>&#x03B1;</mtext></mrow><mtext>&#x03B1;</mtext></mfrac></mrow><mo>)</mo></mrow></mrow><mn>2</mn></msup><mtext>,&nbsp;&nbsp;&nbsp;&#x03B1;</mtext><mo>=</mo><mfrac><mi>&#x03C0;</mi><mi>&#x03BB;</mi></mfrac><mi>a</mi><mi>sin</mi><mo>&#x2061;</mo><mi>&#x03B8;</mi></mrow></math></td></tr>
+							<tr><td>Constructive:&nbsp;&nbsp;<math><mrow><mn>2</mn><mi>t</mi><mo>=</mo><mrow><mo>(</mo><mrow><mi>m</mi><mo>+</mo><mstyle scriptlevel='+1'><mfrac bevelled='true'><mn>1</mn><mn>2</mn>   </mfrac>  </mstyle></mstyle></mrow><mo>)</mo></mrow><mi>&#x03BB;</mi><mo>,</mo><mtext>&nbsp;&nbsp;</mtext><mi>m</mi><mo>=</mo><mn>0</mn><mo>,</mo><mtext>&nbsp;</mtext><mn>1</mn><mo>,</mo><mtext>&nbsp;</mtext><mn>2...</mn></mrow></math></td><td>Intensity:&nbsp;&nbsp;<math><mrow><msub><mi>I</mi><mi>&#x03B8;</mi></msub><mo>=</mo><msub><mi>I</mi><mtext>M</mtext></msub><msup><mrow><mrow><mo>(</mo><mrow>  <mstyle mathsize="140%">    <mfrac><mrow><mi>sin</mi><mo>&#x2061;</mo><mtext>&#x03B1;</mtext></mrow><mtext>&#x03B1;</mtext>   </mfrac>  </mstyle></mrow><mo>)</mo></mrow></mrow><mn>2</mn></msup><mtext>,&nbsp;&nbsp;&nbsp;&#x03B1;</mtext><mo>=</mo>  <mstyle mathsize="140%">    <mfrac><mi>&#x03C0;</mi><mi>&#x03BB;</mi>   </mfrac>  </mstyle><mi>a</mi><mi>sin</mi><mo>&#x2061;</mo><mi>&#x03B8;</mi></mrow></math></td></tr>
 							<tr style="height: 60px;"><td></td><td></td></tr>
 							<tr><td><b>Double-slit interference with diffraction</b></td><td><b>Diffraction by a circular aperture</b></td></tr>
 							<tr style="height: 30px;"><td></td><td></td></tr>
-							<tr><td><math><mrow><msub><mi>I</mi><mi>&#x03B8;</mi></msub><mo>=</mo><msub><mi>I</mi><mtext>M</mtext></msub><mrow><mo>[</mo> <mrow><msup><mrow><mi>cos</mi><mo>&#x2061;</mo></mrow><mn>2</mn></msup><mrow><mo>(</mo><mrow><mfrac><mrow><mi>&#x03C0;</mi><mi>d</mi><mi>sin</mi><mo>&#x2061;</mo><mi>&#x03B8;</mi></mrow><mi>&#x03BB;</mi></mfrac></mrow><mo>)</mo></mrow></mrow> <mo>]</mo></mrow><msup><mrow><mrow><mo>(</mo><mrow><mfrac><mrow><mi>sin</mi><mo>&#x2061;</mo><mtext>&#x03B1;</mtext></mrow><mtext>&#x03B1;</mtext></mfrac></mrow><mo>)</mo></mrow></mrow><mn>2</mn></msup></mrow></math></td><td>First minimum:&nbsp;&nbsp;<math><mrow><mi>sin</mi><mo>&#x2061;</mo><mi>&#x03B8;</mi><mo>=</mo><mn>1.22</mn><mfrac><mi>&#x03BB;</mi><mi>d</mi></mfrac></mrow></math></td></tr>
-							<tr><td><math><mrow><mtext>&#x03B1;</mtext><mo>=</mo><mfrac><mi>&#x03C0;</mi><mi>&#x03BB;</mi></mfrac><mi>a</mi><mi>sin</mi><mo>&#x2061;</mo><mi>&#x03B8;</mi></mrow></math></td><td></td></tr>
+							<tr><td><math><mrow><msub><mi>I</mi><mi>&#x03B8;</mi></msub><mo>=</mo><msub><mi>I</mi><mtext>M</mtext></msub><mrow><mo>[</mo> <mrow><msup><mrow><mi>cos</mi><mo>&#x2061;</mo></mrow><mn>2</mn></msup><mrow><mo>(</mo><mrow>  <mstyle mathsize="140%">    <mfrac><mrow><mi>&#x03C0;</mi><mi>d</mi><mi>sin</mi><mo>&#x2061;</mo><mi>&#x03B8;</mi></mrow><mi>&#x03BB;</mi>   </mfrac>  </mstyle></mrow><mo>)</mo></mrow></mrow> <mo>]</mo></mrow><msup><mrow><mrow><mo>(</mo><mrow>  <mstyle mathsize="140%">    <mfrac><mrow><mi>sin</mi><mo>&#x2061;</mo><mtext>&#x03B1;</mtext></mrow><mtext>&#x03B1;</mtext>   </mfrac>  </mstyle></mrow><mo>)</mo></mrow></mrow><mn>2</mn></msup></mrow></math></td><td>First minimum:&nbsp;&nbsp;<math><mrow><mi>sin</mi><mo>&#x2061;</mo><mi>&#x03B8;</mi><mo>=</mo><mn>1.22</mn>  <mstyle mathsize="140%">    <mfrac><mi>&#x03BB;</mi><mi>d</mi>   </mfrac>  </mstyle></mrow></math></td></tr>
+							<tr><td><math><mrow><mtext>&#x03B1;</mtext><mo>=</mo>  <mstyle mathsize="140%">    <mfrac><mi>&#x03C0;</mi><mi>&#x03BB;</mi>   </mfrac>  </mstyle><mi>a</mi><mi>sin</mi><mo>&#x2061;</mo><mi>&#x03B8;</mi></mrow></math></td><td></td></tr>
 						</table>
 						<br><br><br><br>
 						<table>
 						<tr><td style="width: 300px;"><b>Resolution for a circular aperture</b><br><b>(Rayleigh’s criterion)</b></td><td style="width: 300px;"><b>Bragg’s law</b></td></tr>
-						<tr><td style="width: 300px;"><math><mrow><msub><mi>&#x03B8;</mi><mrow><mi>min</mi><mo>&#x2061;</mo></mrow></msub><mo>&#x2248;</mo><mfrac><mrow><mn>1.22</mn><mi>&#x03BB;</mi></mrow><mi>D</mi></mfrac></mrow></math></td><td style="width: 300px;"><math><mrow><mn>2</mn><mi>d</mi><mi>sin</mi><mo>&#x2061;</mo><mi>&#x03B8;</mi><mo>=</mo><mi>m</mi><mi>&#x03BB;</mi></mrow></math></td></tr>
+						<tr><td style="width: 300px;"><math><mrow><msub><mi>&#x03B8;</mi><mrow><mi>min</mi><mo>&#x2061;</mo></mrow></msub><mo>&#x2248;</mo>  <mstyle mathsize="140%">    <mfrac><mrow><mn>1.22</mn><mi>&#x03BB;</mi></mrow><mi>D</mi>   </mfrac>  </mstyle></mrow></math></td><td style="width: 300px;"><math><mrow><mn>2</mn><mi>d</mi><mi>sin</mi><mo>&#x2061;</mo><mi>&#x03B8;</mi><mo>=</mo><mi>m</mi><mi>&#x03BB;</mi></mrow></math></td></tr>
 						</table>
 						<br><br><br><br>
 						<table>
 						<tr><td style="width: 140px;"><b>Diffraction grating</b></td><td style="width: 200px;"></td></tr>
-						<tr><td style="width: 140px;">Principal maxima:</td><td style="width: 200px;"><math><mrow><mi>sin</mi><mo>&#x2061;</mo><mi>&#x03B8;</mi><mo>=</mo><mfrac><mrow><mi>m</mi><mi>&#x03BB;</mi></mrow><mi>d</mi></mfrac><mo>,</mo><mtext>&nbsp;&nbsp;</mtext><mi>m</mi><mo>=</mo><mn>0</mn><mo>,</mo><mtext>&nbsp;</mtext><mn>1</mn><mo>,</mo><mtext>&nbsp;</mtext><mn>2</mn><mo>,</mo><mn>...</mn></mrow></math></td></tr>
-						<tr><td style="width: 140px;">Width of maxima:</td><td style="width: 200px;"><math><mrow><mi>&#x0394;</mi><msub><mi>&#x03B8;</mi><mrow><mi>max</mi><mo>&#x2061;</mo></mrow></msub><mo>=</mo><mfrac><mrow><mn>2</mn><mi>&#x03BB;</mi></mrow><mrow><mi>N</mi><mi>d</mi><mi>cos</mi><mo>&#x2061;</mo><mi>&#x03B8;</mi></mrow></mfrac></mrow></math></td></tr>
-						<tr><td style="width: 140px;">Dispersion:</td><td style="width: 200px;"><math><mrow><mi>D</mi><mo>=</mo><mfrac><mrow><mi>&#x0394;</mi><mi>&#x03B8;</mi></mrow><mrow><mi>&#x0394;</mi><mi>&#x03BB;</mi></mrow></mfrac><mo>=</mo><mfrac><mi>m</mi><mrow><mi>d</mi><mi>cos</mi><mo>&#x2061;</mo><mi>&#x03B8;</mi></mrow></mfrac></mrow></math></td></tr>
-						<tr><td style="width: 140px;">Resolution:</td><td style="width: 200px;"><math><mrow><mi>R</mi><mo>=</mo><mfrac><mrow><mi>&#x03BB;</mi><mo stretchy='false'>(</mo><mi>a</mi><mi>v</mi><mi>e</mi><mi>r</mi><mi>a</mi><mi>g</mi><mi>e</mi><mo stretchy='false'>)</mo></mrow><mrow><mi>&#x0394;</mi><mi>&#x03BB;</mi></mrow></mfrac><mo>=</mo><mi>m</mi><mi>N</mi></mrow></math></td></tr>
+						<tr><td style="width: 140px;">Principal maxima:</td><td style="width: 200px;"><math><mrow><mi>sin</mi><mo>&#x2061;</mo><mi>&#x03B8;</mi><mo>=</mo>  <mstyle mathsize="140%">    <mfrac><mrow><mi>m</mi><mi>&#x03BB;</mi></mrow><mi>d</mi>   </mfrac>  </mstyle><mo>,</mo><mtext>&nbsp;&nbsp;</mtext><mi>m</mi><mo>=</mo><mn>0</mn><mo>,</mo><mtext>&nbsp;</mtext><mn>1</mn><mo>,</mo><mtext>&nbsp;</mtext><mn>2</mn><mo>,</mo><mn>...</mn></mrow></math></td></tr>
+						<tr><td style="width: 140px;">Width of maxima:</td><td style="width: 200px;"><math><mrow><mi>&#x0394;</mi><msub><mi>&#x03B8;</mi><mrow><mi>max</mi><mo>&#x2061;</mo></mrow></msub><mo>=</mo>  <mstyle mathsize="140%">    <mfrac><mrow><mn>2</mn><mi>&#x03BB;</mi></mrow><mrow><mi>N</mi><mi>d</mi><mi>cos</mi><mo>&#x2061;</mo><mi>&#x03B8;</mi></mrow>   </mfrac>  </mstyle></mrow></math></td></tr>
+						<tr><td style="width: 140px;">Dispersion:</td><td style="width: 200px;"><math><mrow><mi>D</mi><mo>=</mo>  <mstyle mathsize="140%">    <mfrac><mrow><mi>&#x0394;</mi><mi>&#x03B8;</mi></mrow><mrow><mi>&#x0394;</mi><mi>&#x03BB;</mi></mrow>   </mfrac>  </mstyle><mo>=</mo>  <mstyle mathsize="140%">    <mfrac><mi>m</mi><mrow><mi>d</mi><mi>cos</mi><mo>&#x2061;</mo><mi>&#x03B8;</mi></mrow>   </mfrac>  </mstyle></mrow></math></td></tr>
+						<tr><td style="width: 140px;">Resolution:</td><td style="width: 200px;"><math><mrow><mi>R</mi><mo>=</mo>  <mstyle mathsize="140%">    <mfrac><mrow><mi>&#x03BB;</mi><mo stretchy='false'>(</mo><mi>a</mi><mi>v</mi><mi>e</mi><mi>r</mi><mi>a</mi><mi>g</mi><mi>e</mi><mo stretchy='false'>)</mo></mrow><mrow><mi>&#x0394;</mi><mi>&#x03BB;</mi></mrow>   </mfrac>  </mstyle><mo>=</mo><mi>m</mi><mi>N</mi></mrow></math></td></tr>
 						</table>
 						<br><br><br><br>
 						<table>
@@ -2362,15 +2374,15 @@
 					<div style="padding: 0px 0px 5px 15px; width:800px;">					
 						<div><b>Field equations</b></div>
 						<br>
-						<div><math><mtable columnalign='left'><mtr><mtd><mi>E</mi><mo>=</mo><msub><mi>E</mi><mrow><mi>max</mi><mo>&#x2061;</mo></mrow></msub><mi>cos</mi><mo>&#x2061;</mo><mo stretchy='false'>(</mo><mi>k</mi><mi>x</mi><mo>&#x2212;</mo><mi>&#x03C9;</mi><mi>t</mi><mo>+</mo><mi>&#x3C6;</mi><mo stretchy='false'>)</mo><mo>=</mo><msub><mi>E</mi><mrow><mi>max</mi><mo>&#x2061;</mo></mrow></msub><mi>cos</mi><mo>&#x2061;</mo><mo stretchy='false'>(</mo><mfrac><mrow><mn>2</mn><mi>&#x03C0;</mi><mi>x</mi></mrow><mi>&#x03BB;</mi></mfrac><mo>&#x2212;</mo><mn>2</mn><mi>&#x03C0;</mi><mi>f</mi><mi>t</mi><mo>+</mo><mi>&#x3C6;</mi><mo stretchy='false'>)</mo></mtd></mtr><mtr><mtd><mi>B</mi><mo>=</mo><msub><mi>B</mi><mrow><mi>max</mi><mo>&#x2061;</mo></mrow></msub><mi>cos</mi><mo>&#x2061;</mo><mo stretchy='false'>(</mo><mi>k</mi><mi>x</mi><mo>&#x2212;</mo><mi>&#x03C9;</mi><mi>t</mi><mo>+</mo><mi>&#x3C6;</mi><mo stretchy='false'>)</mo><mo>=</mo><msub><mi>B</mi><mrow><mi>max</mi><mo>&#x2061;</mo></mrow></msub><mi>cos</mi><mo>&#x2061;</mo><mo stretchy='false'>(</mo><mfrac><mrow><mn>2</mn><mi>&#x03C0;</mi><mi>x</mi></mrow><mi>&#x03BB;</mi></mfrac><mo>&#x2212;</mo><mn>2</mn><mi>&#x03C0;</mi><mi>f</mi><mi>t</mi><mo>+</mo><mi>&#x3C6;</mi><mo stretchy='false'>)</mo></mtd></mtr></mtable></math></div>
+						<div><math><mtable columnalign='left'><mtr><mtd><mi>E</mi><mo>=</mo><msub><mi>E</mi><mrow><mi>max</mi><mo>&#x2061;</mo></mrow></msub><mi>cos</mi><mo>&#x2061;</mo><mo stretchy='false'>(</mo><mi>k</mi><mi>x</mi><mo>&#x2212;</mo><mi>&#x03C9;</mi><mi>t</mi><mo>+</mo><mi>&#x3C6;</mi><mo stretchy='false'>)</mo><mo>=</mo><msub><mi>E</mi><mrow><mi>max</mi><mo>&#x2061;</mo></mrow></msub><mi>cos</mi><mo>&#x2061;</mo><mo stretchy='false'>(</mo>  <mstyle mathsize="140%">    <mfrac><mrow><mn>2</mn><mi>&#x03C0;</mi><mi>x</mi></mrow><mi>&#x03BB;</mi>   </mfrac>  </mstyle><mo>&#x2212;</mo><mn>2</mn><mi>&#x03C0;</mi><mi>f</mi><mi>t</mi><mo>+</mo><mi>&#x3C6;</mi><mo stretchy='false'>)</mo></mtd></mtr><mtr><mtd><mi>B</mi><mo>=</mo><msub><mi>B</mi><mrow><mi>max</mi><mo>&#x2061;</mo></mrow></msub><mi>cos</mi><mo>&#x2061;</mo><mo stretchy='false'>(</mo><mi>k</mi><mi>x</mi><mo>&#x2212;</mo><mi>&#x03C9;</mi><mi>t</mi><mo>+</mo><mi>&#x3C6;</mi><mo stretchy='false'>)</mo><mo>=</mo><msub><mi>B</mi><mrow><mi>max</mi><mo>&#x2061;</mo></mrow></msub><mi>cos</mi><mo>&#x2061;</mo><mo stretchy='false'>(</mo>  <mstyle mathsize="140%">    <mfrac><mrow><mn>2</mn><mi>&#x03C0;</mi><mi>x</mi></mrow><mi>&#x03BB;</mi>   </mfrac>  </mstyle><mo>&#x2212;</mo><mn>2</mn><mi>&#x03C0;</mi><mi>f</mi><mi>t</mi><mo>+</mo><mi>&#x3C6;</mi><mo stretchy='false'>)</mo></mtd></mtr></mtable></math></div>
 						<br><br>
-						<div><math><mrow><mfrac><mi>E</mi><mi>B</mi></mfrac><mo>=</mo><mi>c</mi><mo>=</mo><mfrac><mn>1</mn><mrow><msqrt><mrow><msub><mi>&#x03BC;</mi><mn>0</mn></msub><msub><mi>&#x03B5;</mi><mn>0</mn></msub></mrow></msqrt></mrow></mfrac></mrow></math></div>
+						<div><math><mrow>  <mstyle mathsize="140%">    <mfrac><mi>E</mi><mi>B</mi>   </mfrac>  </mstyle><mo>=</mo><mi>c</mi><mo>=</mo>  <mstyle mathsize="140%">    <mfrac><mn>1</mn><mrow><msqrt><mrow><msub><mi>&#x03BC;</mi><mn>0</mn></msub><msub><mi>&#x03B5;</mi><mn>0</mn></msub></mrow></msqrt></mrow>   </mfrac>  </mstyle></mrow></math></div>
 						<br><br>
 						<table>
 						<tr><td style="width: 250px;"><b>Poynting vector</b></td><td style="width: 250px;"><b>Intensity of EM radiation</b></td><td style="width: 250px;"><b>Energy density</b></td></tr>
-						<tr><td style="width: 250px;"><math><mrow><mstyle mathvariant='bold' mathsize='normal'><mi>S</mi></mstyle><mo>=</mo><mfrac><mn>1</mn><mrow><msub><mi>&#x03BC;</mi><mn>0</mn></msub></mrow></mfrac><mstyle mathvariant='bold' mathsize='normal'><mi>E</mi></mstyle><mo>&#x00D7;</mo><mstyle mathvariant='bold' mathsize='normal'><mi>B</mi></mstyle></mrow></math></td><td style="width: 250px;"><math><mrow><mi>I</mi><mo>=</mo><msub><mi>S</mi><mrow><mtext>avg</mtext></mrow></msub><mo>=</mo><mfrac><mrow><msubsup><mi>E</mi><mrow><mi>max</mi><mo>&#x2061;</mo></mrow><mn>2</mn></msubsup></mrow><mrow><mn>2</mn><msub><mi>&#x03BC;</mi><mn>0</mn></msub><mi>c</mi></mrow></mfrac><mo>=</mo><mfrac><mrow><msubsup><mi>E</mi><mrow><mtext>rms</mtext></mrow><mn>2</mn></msubsup></mrow><mrow><msub><mi>&#x03BC;</mi><mn>0</mn></msub><mi>c</mi></mrow></mfrac></mrow></math></td><td style="width: 250px;"><math><mrow><msub><mi>u</mi><mtext>E</mtext></msub><mo>=</mo><mfrac><mrow><msub><mi>&#x03B5;</mi><mn>0</mn></msub><msup><mi>E</mi><mn>2</mn></msup></mrow><mn>2</mn></mfrac><mo>,</mo><mtext>&nbsp;&nbsp;</mtext><msub><mi>u</mi><mtext>B</mtext></msub><mo>=</mo><mfrac><mrow><msup><mi>B</mi><mn>2</mn></msup></mrow><mrow><mn>2</mn><msub><mi>&#x03BC;</mi><mn>0</mn></msub></mrow></mfrac></mrow></math></td></tr>
-						<tr><td style="width: 250px;"></td><td style="width: 250px;"><math><mrow><mi>I</mi><mo>=</mo><mfrac><mi>P</mi><mrow><mn>4</mn><mi>&#x03C0;</mi><msup><mi>r</mi><mn>2</mn></msup></mrow></mfrac></mrow></math></td><td style="width: 250px;"><math><mrow><msub><mi>u</mi><mtext>E</mtext></msub><mo>=</mo><msub><mi>u</mi><mtext>B</mtext></msub></mrow></math></td></tr>
-						<tr><td style="width: 250px;"></td><td style="width: 250px;"></td><td style="width: 250px;"><math><mtable columnalign='left'><mtr><mtd><mi>u</mi><mo>=</mo><msub><mi>u</mi><mtext>E</mtext></msub><mo>+</mo><msub><mi>u</mi><mtext>B</mtext></msub><mo>=</mo><mn>2</mn><msub><mi>u</mi><mtext>E</mtext></msub><mo>=</mo><mn>2</mn><msub><mi>u</mi><mtext>B</mtext></msub></mtd></mtr><mtr><mtd><msub><mi>u</mi><mrow><mtext>avg</mtext></mrow></msub><mo>=</mo><mfrac><mrow><msub><mi>&#x03B5;</mi><mn>0</mn></msub><msubsup><mi>E</mi><mrow><mi>max</mi><mo>&#x2061;</mo></mrow><mn>2</mn></msubsup></mrow><mn>2</mn></mfrac></mtd></mtr></mtable></math></td></tr>
+						<tr><td style="width: 250px;"><math><mrow><mstyle mathvariant='bold' mathsize='normal'><mi>S</mi></mstyle><mo>=</mo>  <mstyle mathsize="140%">    <mfrac><mn>1</mn><mrow><msub><mi>&#x03BC;</mi><mn>0</mn></msub></mrow>   </mfrac>  </mstyle><mstyle mathvariant='bold' mathsize='normal'><mi>E</mi></mstyle><mo>&#x00D7;</mo><mstyle mathvariant='bold' mathsize='normal'><mi>B</mi></mstyle></mrow></math></td><td style="width: 250px;"><math><mrow><mi>I</mi><mo>=</mo><msub><mi>S</mi><mrow><mtext>avg</mtext></mrow></msub><mo>=</mo>  <mstyle mathsize="140%">    <mfrac><mrow><msubsup><mi>E</mi><mrow><mi>max</mi><mo>&#x2061;</mo></mrow><mn>2</mn></msubsup></mrow><mrow><mn>2</mn><msub><mi>&#x03BC;</mi><mn>0</mn></msub><mi>c</mi></mrow>   </mfrac>  </mstyle><mo>=</mo>  <mstyle mathsize="140%">    <mfrac><mrow><msubsup><mi>E</mi><mrow><mtext>rms</mtext></mrow><mn>2</mn></msubsup></mrow><mrow><msub><mi>&#x03BC;</mi><mn>0</mn></msub><mi>c</mi></mrow>   </mfrac>  </mstyle></mrow></math></td><td style="width: 250px;"><math><mrow><msub><mi>u</mi><mtext>E</mtext></msub><mo>=</mo>  <mstyle mathsize="140%">    <mfrac><mrow><msub><mi>&#x03B5;</mi><mn>0</mn></msub><msup><mi>E</mi><mn>2</mn></msup></mrow><mn>2</mn>   </mfrac>  </mstyle><mo>,</mo><mtext>&nbsp;&nbsp;</mtext><msub><mi>u</mi><mtext>B</mtext></msub><mo>=</mo>  <mstyle mathsize="140%">    <mfrac><mrow><msup><mi>B</mi><mn>2</mn></msup></mrow><mrow><mn>2</mn><msub><mi>&#x03BC;</mi><mn>0</mn></msub></mrow>   </mfrac>  </mstyle></mrow></math></td></tr>
+						<tr><td style="width: 250px;"></td><td style="width: 250px;"><math><mrow><mi>I</mi><mo>=</mo>  <mstyle mathsize="140%">    <mfrac><mi>P</mi><mrow><mn>4</mn><mi>&#x03C0;</mi><msup><mi>r</mi><mn>2</mn></msup></mrow>   </mfrac>  </mstyle></mrow></math></td><td style="width: 250px;"><math><mrow><msub><mi>u</mi><mtext>E</mtext></msub><mo>=</mo><msub><mi>u</mi><mtext>B</mtext></msub></mrow></math></td></tr>
+						<tr><td style="width: 250px;"></td><td style="width: 250px;"></td><td style="width: 250px;"><math><mtable columnalign='left'><mtr><mtd><mi>u</mi><mo>=</mo><msub><mi>u</mi><mtext>E</mtext></msub><mo>+</mo><msub><mi>u</mi><mtext>B</mtext></msub><mo>=</mo><mn>2</mn><msub><mi>u</mi><mtext>E</mtext></msub><mo>=</mo><mn>2</mn><msub><mi>u</mi><mtext>B</mtext></msub></mtd></mtr><mtr><mtd><msub><mi>u</mi><mrow><mtext>avg</mtext></mrow></msub><mo>=</mo>  <mstyle mathsize="140%">    <mfrac><mrow><msub><mi>&#x03B5;</mi><mn>0</mn></msub><msubsup><mi>E</mi><mrow><mi>max</mi><mo>&#x2061;</mo></mrow><mn>2</mn></msubsup></mrow><mn>2</mn>   </mfrac>  </mstyle></mtd></mtr></mtable></math></td></tr>
 						</table>
 						
 						<br><br>
@@ -2381,7 +2393,7 @@
 						</table>
 						<table>
 						
-						<tr><td style="width: 400px;"><math><mrow><mi>&#x0394;</mi><mi>p</mi><mo>=</mo><mfrac><mrow><mi>&#x0394;</mi><mi>U</mi></mrow><mi>c</mi></mfrac></mrow></math>&nbsp;for a blackbody</td></td></tr>
+						<tr><td style="width: 400px;"><math><mrow><mi>&#x0394;</mi><mi>p</mi><mo>=</mo>  <mstyle mathsize="140%">    <mfrac><mrow><mi>&#x0394;</mi><mi>U</mi></mrow><mi>c</mi>   </mfrac>  </mstyle></mrow></math>&nbsp;for a blackbody</td></td></tr>
 						
 						</table>
 						<br><br>
@@ -2404,40 +2416,40 @@
 					<div style="padding: 0px 0px 5px 15px; width:800px;">					
 						<table>
 						<tr><td style="width: 270px;"><b>Magnetic force on charge</b></td><td style="width: 250px;"><b>Motion of a charge in a B field</b></td><td style="width: 200px;"><b>Mass spectrometer</b></td></tr>
-						<tr><td style="width: 270px;"><math><mrow><mstyle mathvariant='bold' mathsize='normal'><mi>F</mi></mstyle><mo>=</mo><mi>q</mi><mstyle mathvariant='bold' mathsize='normal'><mi>v</mi></mstyle><mo>&#x00D7;</mo><mstyle mathvariant='bold' mathsize='normal'><mi>B</mi></mstyle><mo>=</mo><mrow><mo>|</mo> <mi>q</mi> <mo>|</mo></mrow><mi>v</mi><mi>B</mi><mi>sin</mi><mo>&#x2061;</mo><mi>&#x03B8;</mi></mrow></math></td><td style="width: 250px;"><math><mrow><mi>r</mi><mo>=</mo><mfrac><mrow><mi>m</mi><mi>v</mi></mrow><mrow><mrow><mo>|</mo> <mi>q</mi> <mo>|</mo></mrow><mi>B</mi></mrow></mfrac></mrow></math></td><td style="width: 200px;"><math><mrow><mi>m</mi><mo>=</mo><mo>&#x2212;</mo><mfrac><mrow><mi>q</mi><msup><mi>r</mi><mn>2</mn></msup><msup><mi>B</mi><mn>2</mn></msup></mrow><mrow><mn>2</mn><mi>&#x0394;</mi><mi>V</mi></mrow></mfrac></mrow></math></td></tr>
+						<tr><td style="width: 270px;"><math><mrow><mstyle mathvariant='bold' mathsize='normal'><mi>F</mi></mstyle><mo>=</mo><mi>q</mi><mstyle mathvariant='bold' mathsize='normal'><mi>v</mi></mstyle><mo>&#x00D7;</mo><mstyle mathvariant='bold' mathsize='normal'><mi>B</mi></mstyle><mo>=</mo><mrow><mo>|</mo> <mi>q</mi> <mo>|</mo></mrow><mi>v</mi><mi>B</mi><mi>sin</mi><mo>&#x2061;</mo><mi>&#x03B8;</mi></mrow></math></td><td style="width: 250px;"><math><mrow><mi>r</mi><mo>=</mo>  <mstyle mathsize="140%">    <mfrac><mrow><mi>m</mi><mi>v</mi></mrow><mrow><mrow><mo>|</mo> <mi>q</mi> <mo>|</mo></mrow><mi>B</mi></mrow>   </mfrac>  </mstyle></mrow></math></td><td style="width: 200px;"><math><mrow><mi>m</mi><mo>=</mo><mo>&#x2212;</mo>  <mstyle mathsize="140%">    <mfrac><mrow><mi>q</mi><msup><mi>r</mi><mn>2</mn></msup><msup><mi>B</mi><mn>2</mn></msup></mrow><mrow><mn>2</mn><mi>&#x0394;</mi><mi>V</mi></mrow>   </mfrac>  </mstyle></mrow></math></td></tr>
 						<tr style="height: 60px;"><td></td><td></td><td></td></tr>
 						<tr><td><b>Magnetic fields</b></td><td></td><td><b>Ampère’s law</b></td><tr>
 						<tr style="height: 30px;"><td></td><td></td></tr>
 						
 						
-						<tr><td>Near a wire: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<math><mrow><mi>B</mi><mo>=</mo><mfrac><mrow><msub><mi>&#x03BC;</mi><mn>0</mn></msub><mi>I</mi></mrow><mrow><mn>2</mn><mi>&#x03C0;</mi><mi>R</mi></mrow></mfrac></mrow></math></td><td></td><td><math><mrow><mi>&#x03A3;</mi><msub><mi>B</mi><mo>&#x2225;</mo></msub><mi>s</mi><mo>=</mo><msub><mi>&#x03BC;</mi><mn>0</mn></msub><mi>I</mi></mrow></math></td></tr>
+						<tr><td>Near a wire: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<math><mrow><mi>B</mi><mo>=</mo>  <mstyle mathsize="140%">    <mfrac><mrow><msub><mi>&#x03BC;</mi><mn>0</mn></msub><mi>I</mi></mrow><mrow><mn>2</mn><mi>&#x03C0;</mi><mi>R</mi></mrow>   </mfrac>  </mstyle></mrow></math></td><td></td><td><math><mrow><mi>&#x03A3;</mi><msub><mi>B</mi><mo>&#x2225;</mo></msub><mi>s</mi><mo>=</mo><msub><mi>&#x03BC;</mi><mn>0</mn></msub><mi>I</mi></mrow></math></td></tr>
 						<tr style="height: 30px;"><td></td><td></td></tr>
-						<tr><td>At center of wire arc: &nbsp;&nbsp;&nbsp;<math><mrow><mi>B</mi><mo>=</mo><mfrac><mrow><msub><mi>&#x03BC;</mi><mn>0</mn></msub><mi>I</mi><mi>&#x3C6;</mi></mrow><mrow><mn>4</mn><mi>&#x03C0;</mi><mi>R</mi></mrow></mfrac></mrow></math></td><td></td><td><math><mrow><mi>&#x03A3;</mi><mi>B</mi><mi>s</mi><mi>cos</mi><mo>&#x2061;</mo><mi>&#x03B8;</mi><mo>=</mo><msub><mi>&#x03BC;</mi><mn>0</mn></msub><mi>I</mi></mrow></math></td></tr>
+						<tr><td>At center of wire arc: &nbsp;&nbsp;&nbsp;<math><mrow><mi>B</mi><mo>=</mo>  <mstyle mathsize="140%">    <mfrac><mrow><msub><mi>&#x03BC;</mi><mn>0</mn></msub><mi>I</mi><mi>&#x3C6;</mi></mrow><mrow><mn>4</mn><mi>&#x03C0;</mi><mi>R</mi></mrow>   </mfrac>  </mstyle></mrow></math></td><td></td><td><math><mrow><mi>&#x03A3;</mi><mi>B</mi><mi>s</mi><mi>cos</mi><mo>&#x2061;</mo><mi>&#x03B8;</mi><mo>=</mo><msub><mi>&#x03BC;</mi><mn>0</mn></msub><mi>I</mi></mrow></math></td></tr>
 						
 						<tr style="height: 30px;"><td></td><td></td></tr>
-						<tr><td>Inside a wire:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<math><mrow><mi>B</mi><mo>=</mo><mfrac><mrow><msub><mi>&#x03BC;</mi><mn>0</mn></msub><mi>I</mi><mi>r</mi></mrow><mrow><mn>2</mn><mi>&#x03C0;</mi><msup><mi>R</mi><mn>2</mn></msup></mrow></mfrac></mrow></math></td><td></td><td></td><tr>
+						<tr><td>Inside a wire:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<math><mrow><mi>B</mi><mo>=</mo>  <mstyle mathsize="140%">    <mfrac><mrow><msub><mi>&#x03BC;</mi><mn>0</mn></msub><mi>I</mi><mi>r</mi></mrow><mrow><mn>2</mn><mi>&#x03C0;</mi><msup><mi>R</mi><mn>2</mn></msup></mrow>   </mfrac>  </mstyle></mrow></math></td><td></td><td></td><tr>
 						<tr style="height: 30px;"><td></td><td></td></tr>
-						<tr><td>Sheet of current:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<math><mrow><mi>B</mi><mo>=</mo><mfrac><mrow><msub><mi>&#x03BC;</mi><mn>0</mn></msub><mi>K</mi></mrow><mn>2</mn></mfrac></mrow></math></td><td></td><td></td><tr>
+						<tr><td>Sheet of current:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<math><mrow><mi>B</mi><mo>=</mo>  <mstyle mathsize="140%">    <mfrac><mrow><msub><mi>&#x03BC;</mi><mn>0</mn></msub><mi>K</mi></mrow><mn>2</mn>   </mfrac>  </mstyle></mrow></math></td><td></td><td></td><tr>
 						<tr style="height: 30px;"><td></td><td></td></tr>
 						<tr><td>Inside a solenoid:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<math><mrow><mi>B</mi><mo>=</mo><msub><mi>&#x03BC;</mi><mn>0</mn></msub><mi>I</mi><mi>n</mi></mrow></math></td><td></td><td></td></tr>
 						<tr style="height: 30px;"><td></td><td></td></tr>
-						<tr><td>Inside a toroid:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<math><mrow><mi>B</mi><mo>=</mo><mfrac><mrow><msub><mi>&#x03BC;</mi><mn>0</mn></msub><mi>I</mi><mi>N</mi></mrow><mrow><mn>2</mn><mi>&#x03C0;</mi><mi>r</mi></mrow></mfrac></mrow></math></td><td></td><td></td></tr>
+						<tr><td>Inside a toroid:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<math><mrow><mi>B</mi><mo>=</mo>  <mstyle mathsize="140%">    <mfrac><mrow><msub><mi>&#x03BC;</mi><mn>0</mn></msub><mi>I</mi><mi>N</mi></mrow><mrow><mn>2</mn><mi>&#x03C0;</mi><mi>r</mi></mrow>   </mfrac>  </mstyle></mrow></math></td><td></td><td></td></tr>
 						<tr style="height: 30px;"><td></td><td></td></tr>
-						<tr><td>Axial field of a coil:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<math><mrow><mi>B</mi><mo>=</mo><mfrac><mrow><msub><mi>&#x03BC;</mi><mn>0</mn></msub><mi>N</mi><mi>I</mi><msup><mi>R</mi><mn>2</mn></msup></mrow><mrow><mn>2</mn><msup><mrow><mo stretchy='false'>(</mo><msup><mi>R</mi><mn>2</mn></msup><mo>+</mo><msup><mi>z</mi><mn>2</mn></msup><mo stretchy='false'>)</mo></mrow><mrow><mn>3</mn><mo>/</mo><mn>2</mn></mrow></msup></mrow></mfrac></mrow></math></td><td></td><td></td></tr>
+						<tr><td>Axial field of a coil:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<math><mrow><mi>B</mi><mo>=</mo>  <mstyle mathsize="140%">    <mfrac><mrow><msub><mi>&#x03BC;</mi><mn>0</mn></msub><mi>N</mi><mi>I</mi><msup><mi>R</mi><mn>2</mn></msup></mrow><mrow><mn>2</mn><msup><mrow><mo stretchy='false'>(</mo><msup><mi>R</mi><mn>2</mn></msup><mo>+</mo><msup><mi>z</mi><mn>2</mn></msup><mo stretchy='false'>)</mo></mrow><mrow><mn>3</mn><mo>/</mo><mn>2</mn></mrow></msup></mrow>   </mfrac>  </mstyle></mrow></math></td><td></td><td></td></tr>
 						</table>
 						
 						<br><br>
-						<div style="padding:0 0 0 135px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<math><mrow><mi>B</mi><mo>=</mo><mfrac><mrow><msub><mi>&#x03BC;</mi><mn>0</mn></msub><mstyle mathvariant='bold' mathsize='normal'><mi>&#x03BC;</mi></mstyle></mrow><mrow><mn>2</mn><mi>&#x03C0;</mi><msup><mrow><mo stretchy='false'>(</mo><msup><mi>R</mi><mn>2</mn></msup><mo>+</mo><msup><mi>z</mi><mn>2</mn></msup><mo stretchy='false'>)</mo></mrow><mrow><mn>3</mn><mo>/</mo><mn>2</mn></mrow></msup></mrow></mfrac><mo>&#x2248;</mo><mfrac><mrow><msub><mi>&#x03BC;</mi><mn>0</mn></msub><mstyle mathvariant='bold' mathsize='normal'><mi>&#x03BC;</mi></mstyle></mrow><mrow><mn>2</mn><mi>&#x03C0;</mi><msup><mi>z</mi><mn>3</mn></msup></mrow></mfrac></mrow></math></div>
+						<div style="padding:0 0 0 135px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<math><mrow><mi>B</mi><mo>=</mo>  <mstyle mathsize="140%">    <mfrac><mrow><msub><mi>&#x03BC;</mi><mn>0</mn></msub><mstyle mathvariant='bold' mathsize='normal'><mi>&#x03BC;</mi></mstyle></mrow><mrow><mn>2</mn><mi>&#x03C0;</mi><msup><mrow><mo stretchy='false'>(</mo><msup><mi>R</mi><mn>2</mn></msup><mo>+</mo><msup><mi>z</mi><mn>2</mn></msup><mo stretchy='false'>)</mo></mrow><mrow><mn>3</mn><mo>/</mo><mn>2</mn></mrow></msup></mrow>   </mfrac>  </mstyle><mo>&#x2248;</mo>  <mstyle mathsize="140%">    <mfrac><mrow><msub><mi>&#x03BC;</mi><mn>0</mn></msub><mstyle mathvariant='bold' mathsize='normal'><mi>&#x03BC;</mi></mstyle></mrow><mrow><mn>2</mn><mi>&#x03C0;</mi><msup><mi>z</mi><mn>3</mn></msup></mrow>   </mfrac>  </mstyle></mrow></math></div>
 						<br><br><br>
 						
 						<table>
 						<tr><td style="width: 250px;"><b>Magnetic field energy</b></td><td style="width: 250px;"><b>Magnetic flux</b></td><td style="width: 200px;"><b>Faraday’s law</b></td></tr>
-						<tr><td style="width: 250px;">Density:&nbsp;&nbsp;&nbsp;<math><mrow><msub><mi>u</mi><mtext>B</mtext></msub><mo>=</mo><mfrac><mrow><mi>P</mi><msub><mi>E</mi><mtext>B</mtext></msub></mrow><mrow><mi>V</mi><mi>o</mi><mi>l</mi></mrow></mfrac><mo>=</mo><mfrac><mrow><msup><mi>B</mi><mn>2</mn></msup></mrow><mrow><mn>2</mn><msub><mi>&#x03BC;</mi><mn>0</mn></msub></mrow></mfrac></mrow></math></td><td style="width: 250px;"><math><mrow><msub><mi>&#x03A6;</mi><mtext>B</mtext></msub><mo>=</mo><mstyle mathvariant='bold' mathsize='normal'><mi>B</mi></mstyle><mo>&#x22C5;</mo><mstyle mathvariant='bold' mathsize='normal'><mi>A</mi></mstyle><mo>=</mo><mi>B</mi><mi>A</mi><mi>cos</mi><mo>&#x2061;</mo><mi>&#x03B8;</mi></mrow></math></td><td style="width: 200px;"><math><mrow><mo>&#x2130;</mo><mo>=</mo><mo>&#x2212;</mo><mi>N</mi><mfrac><mrow><mi>&#x0394;</mi><msub><mi>&#x03A6;</mi><mtext>B</mtext></msub></mrow><mrow><mi>&#x0394;</mi><mi>t</mi></mrow></mfrac></mrow></math></td></tr>
+						<tr><td style="width: 250px;">Density:&nbsp;&nbsp;&nbsp;<math><mrow><msub><mi>u</mi><mtext>B</mtext></msub><mo>=</mo>  <mstyle mathsize="140%">    <mfrac><mrow><mi>P</mi><msub><mi>E</mi><mtext>B</mtext></msub></mrow><mrow><mi>V</mi><mi>o</mi><mi>l</mi></mrow>   </mfrac>  </mstyle><mo>=</mo>  <mstyle mathsize="140%">    <mfrac><mrow><msup><mi>B</mi><mn>2</mn></msup></mrow><mrow><mn>2</mn><msub><mi>&#x03BC;</mi><mn>0</mn></msub></mrow>   </mfrac>  </mstyle></mrow></math></td><td style="width: 250px;"><math><mrow><msub><mi>&#x03A6;</mi><mtext>B</mtext></msub><mo>=</mo><mstyle mathvariant='bold' mathsize='normal'><mi>B</mi></mstyle><mo>&#x22C5;</mo><mstyle mathvariant='bold' mathsize='normal'><mi>A</mi></mstyle><mo>=</mo><mi>B</mi><mi>A</mi><mi>cos</mi><mo>&#x2061;</mo><mi>&#x03B8;</mi></mrow></math></td><td style="width: 200px;"><math><mrow><mo>&#x2130;</mo><mo>=</mo><mo>&#x2212;</mo><mi>N</mi>  <mstyle mathsize="140%">    <mfrac><mrow><mi>&#x0394;</mi><msub><mi>&#x03A6;</mi><mtext>B</mtext></msub></mrow><mrow><mi>&#x0394;</mi><mi>t</mi></mrow>   </mfrac>  </mstyle></mrow></math></td></tr>
 						<tr style="height: 60px;"><td></td><td></td><td></td></tr>
-						<tr><td>In an inductor:&nbsp;&nbsp;&nbsp;<math><mrow><mi>P</mi><msub><mi>E</mi><mtext>B</mtext></msub><mo>=</mo><mstyle scriptlevel='+1'><mfrac bevelled='true'><mn>1</mn><mn>2</mn></mfrac></mstyle><mi>L</mi><msup><mi>I</mi><mn>2</mn></msup></mrow></math></td><td><math><mrow><mtext>solenoid&nbsp;inductance</mtext><mo>=</mo><mi>N</mi><mfrac><mrow><msub><mi>&#x03A6;</mi><mtext>B</mtext></msub></mrow><mi>I</mi></mfrac></mrow></math></td><td></td></tr>
+						<tr><td>In an inductor:&nbsp;&nbsp;&nbsp;<math><mrow><mi>P</mi><msub><mi>E</mi><mtext>B</mtext></msub><mo>=</mo><mstyle scriptlevel='+1'><mfrac bevelled='true'><mn>1</mn><mn>2</mn>   </mfrac>  </mstyle></mstyle><mi>L</mi><msup><mi>I</mi><mn>2</mn></msup></mrow></math></td><td><math><mrow><mtext>solenoid&nbsp;inductance</mtext><mo>=</mo><mi>N</mi>  <mstyle mathsize="140%">    <mfrac><mrow><msub><mi>&#x03A6;</mi><mtext>B</mtext></msub></mrow><mi>I</mi>   </mfrac>  </mstyle></mrow></math></td><td></td></tr>
 						<tr style="height: 50px;"><td></td><td></td></tr>
 						<tr><td><b>Magnetic force on a wire</b></td><td><b>Wire segment moving in B field</b></td><td><b>Hall effect</b></td></tr>
-						<tr><td><math><mrow><mstyle mathvariant='bold' mathsize='normal'><mi>F</mi></mstyle><mo>=</mo><mi>I</mi><mstyle mathvariant='bold' mathsize='normal'><mi>L</mi></mstyle><mo>&#x00D7;</mo><mstyle mathvariant='bold' mathsize='normal'><mi>B</mi></mstyle><mo>=</mo><mi>I</mi><mi>L</mi><mi>B</mi><mi>sin</mi><mo>&#x2061;</mo><mi>&#x03B8;</mi></mrow></math></td><td><math><mrow><mi>&#x0394;</mi><mi>V</mi><mo>=</mo><mi>L</mi><mi>v</mi><mi>B</mi></mrow></math></td><td><math><mrow><mi>&#x0394;</mi><mi>V</mi><mo>=</mo><msub><mi>v</mi><mtext>d</mtext></msub><mi>B</mi><mi>h</mi><mo>=</mo><mfrac><mrow><mi>B</mi><mi>I</mi></mrow><mrow><mi>n</mi><mi>q</mi><mi>w</mi></mrow></mfrac></mrow></math></td></tr>
+						<tr><td><math><mrow><mstyle mathvariant='bold' mathsize='normal'><mi>F</mi></mstyle><mo>=</mo><mi>I</mi><mstyle mathvariant='bold' mathsize='normal'><mi>L</mi></mstyle><mo>&#x00D7;</mo><mstyle mathvariant='bold' mathsize='normal'><mi>B</mi></mstyle><mo>=</mo><mi>I</mi><mi>L</mi><mi>B</mi><mi>sin</mi><mo>&#x2061;</mo><mi>&#x03B8;</mi></mrow></math></td><td><math><mrow><mi>&#x0394;</mi><mi>V</mi><mo>=</mo><mi>L</mi><mi>v</mi><mi>B</mi></mrow></math></td><td><math><mrow><mi>&#x0394;</mi><mi>V</mi><mo>=</mo><msub><mi>v</mi><mtext>d</mtext></msub><mi>B</mi><mi>h</mi><mo>=</mo>  <mstyle mathsize="140%">    <mfrac><mrow><mi>B</mi><mi>I</mi></mrow><mrow><mi>n</mi><mi>q</mi><mi>w</mi></mrow>   </mfrac>  </mstyle></mrow></math></td></tr>
 						<tr style="height: 30px;"><td></td><td></td></tr>
 						<tr><td><b>Torque on loop of current</b></td><td><b>Generator</b></td><td><b>Magnetic moment of coil</b></td></tr>
 						<tr><td><math><mrow><mstyle mathvariant='bold' mathsize='normal'><mi>&#x03C4;</mi></mstyle><mo>=</mo><mi>I</mi><mstyle mathvariant='bold' mathsize='normal'><mi>A</mi></mstyle><mo>&#x00D7;</mo><mstyle mathvariant='bold' mathsize='normal'><mi>B</mi></mstyle><mo>=</mo><mi>I</mi><mi>A</mi><mi>B</mi><mi>sin</mi><mo>&#x2061;</mo><mi>&#x03B8;</mi></mrow></math></td><td><math><mrow><mi>&#x2130;</mi><mo>=</mo><mi>N</mi><mi>B</mi><mi>A</mi><mi>&#x03C9;</mi><mi>sin</mi><mo>&#x2061;</mo><mi>&#x03C9;</mi><mi>t</mi></mrow></math></td><td><math><mrow><mi>&#x03BC;</mi><mo>=</mo><mi>N</mi><mi>I</mi><mi>A</mi></mrow></math></td></tr>

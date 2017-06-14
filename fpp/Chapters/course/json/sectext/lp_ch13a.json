@@ -1,0 +1,12 @@
+{
+  "cards": [
+    {
+      "lines": []
+    }
+  ],
+  "definitions": [],
+  "secText": [
+    "  <b><span style='float:left ;clear:both ;text-align:left;margin-bottom: 5px;'>Essential Questions:</span></b> <ol style='list-style-type: decimal;padding-left: 25px;float:left;clear:both'><li style = 'padding-left:15px;text-align:left;margin-bottom: 5px;'>How can we describe objects in simple harmonic motion in terms of cycle, amplitude, period, and frequency?</li><li style = 'padding-left:15px;text-align:left;margin-bottom: 5px;'>How can we describe the velocity and acceleration of an object in simple harmonic motion?</li><li  style = 'padding-left:15px;text-align:left;margin-bottom: 5px;'>How can we describe real-world examples of simple harmonic motion?</li><li style = 'padding-left:15px;text-align:left;margin-bottom: 5px;'>How can we describe and quantify properties of waves?</li><li style = 'padding-left:15px;text-align:left;margin-bottom: 5px;'>How can we describe the motion of a particle in a wave?</li><li style = 'padding-left:15px;text-align:left;margin-bottom: 5px;'>How can we calculate the speed of a wave?</li></ol>"
+  ],
+  "objNames": []
+}

@@ -1,0 +1,12 @@
+{
+  "cards": [
+    {
+      "lines": []
+    }
+  ],
+  "definitions": [],
+  "secText": [
+    "  <b><span style='float:left ;clear:both ;text-align:left;margin-bottom: 5px;'>Essential Questions:</span></b> <ol style='list-style-type: decimal;padding-left: 25px;float:left;clear:both'><li style = 'padding-left:15px;text-align:left;margin-bottom: 5px;'>What are sound waves composed of?</li><li style = 'padding-left:15px;text-align:left;margin-bottom: 5px;'>How are sound levels measured?</li><li  style = 'padding-left:15px;text-align:left;margin-bottom: 5px;'>How does a sound's frequency differ between a sound source and listener?</li><li style = 'padding-left:15px;text-align:left;margin-bottom: 5px;'>How can waves be combined?</li><li style = 'padding-left:15px;text-align:left;margin-bottom: 5px;'>How do harmonics relate to instruments?</li><li style = 'padding-left:15px;text-align:left;margin-bottom: 5px;'>How do humans describe sound?</li></ol>"
+  ],
+  "objNames": []
+}

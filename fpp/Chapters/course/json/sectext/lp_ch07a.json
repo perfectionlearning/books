@@ -1,0 +1,21 @@
+{
+  "cards": [
+    {
+      "lines": [
+        
+      ]
+    }
+  ],
+  "definitions": [],
+  "secText": [
+    "  <b><span style='float:left ;clear:both ;text-align:left;margin-bottom: 5px;'>Essential Questions:</span></b><ol style='list-style-type: decimal;padding-left: 25px;float:left;clear:both'><li style = 'padding-left:15px;text-align:left;margin-bottom: 5px;'>How can we determine the impulse of an object using its momentum?</li><li style = 'padding-left:15px;text-align:left;margin-bottom: 5px;'>How does the momentum of a system change?</li><li style = 'padding-left:15px;text-align:left;margin-bottom: 5px;'>How can we determine the difference between elastic and inelastic collisions?</li><li style = 'padding-left:15px;text-align:left;margin-bottom: 5px;'>How is the center of mass of an object affected by movement and collisions?</li></ol>",
+	
+	  "<b><span style='float:left ;clear:both ;text-align:left;margin-bottom: 5px;margin-top: 10px;'>Enduring Understandings: </span></b><ol style='list-style-type: decimal;padding-left: 25px;float:left;clear:both'><li style = 'padding-left:15px;text-align:left;margin-bottom: 5px;'>The momentum for objects with mass can be calculated using the object's mass and its velocity.</li><li style = 'padding-left:15px;text-align:left;margin-bottom: 5px;'>The impulse of an object can be calculated using the change in momentum of an object, or the force acting on it over an elapsed time.<li style = 'padding-left:15px;text-align:left;margin-bottom: 5px;'>The final and initial momentum of a system is conserved.</li><li style = 'padding-left:15px;text-align:left;margin-bottom: 5px;'>In an elastic collision, the momentum of a system remains constant and the total kinetic energy of a system does not change. Kinetic energy is conserved.</li><li style = 'padding-left:15px;text-align:left;margin-bottom: 5px;'>In an inelastic collision, the momentum of a system remains constant, while the kinetic energy of a system changes. Kinetic energy is not conserved.</li><li style = 'padding-left:15px;text-align:left;margin-bottom: 5px;'>The center of mass is the average location of mass of an object.</li><li style = 'padding-left:15px;text-align:left;margin-bottom: 5px;'>Apply physics principles such as momentum and velocity to an object's center of mass.</li></ol>",
+	  	  
+    "  <span style='float:left ;clear:both ;text-align:left;margin-bottom: 5px;margin-top: 10px;'><b>Vocabulary: </b>center of mass, collision, completely inelastic collision, conservation of momentum, elastic collision, impulse, inelastic collision, momentum</span>"
+	
+  ],
+  "objNames": [
+    
+  ]
+}

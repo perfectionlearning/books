@@ -31,7 +31,7 @@ body {
     overflow-x: hidden;
     overflow-y: auto;
     font-family: 'AvenirNextLTPro-Regular';
-    background-color: #efefef;
+    background-color: #fff;
     user-select:none;
     -webkit-user-select: none;
     cursor: default;
@@ -74,7 +74,7 @@ input {
     right:0;
     bottom:0;
     box-sizing: border-box;
-    background-color: #dbe2e8;
+    background-color: #f5f7f7;
     overflow-x: hidden;
     overflow-y: auto;
 
@@ -105,18 +105,18 @@ input {
 .mShell .pHeader{
     position: relative;
     width:100%;
-    height:34px;
+    height:60px;
     padding:0 15px;
     float:left;
-    background-color: #ffffff;
-    border-bottom:1px solid #2184a0;
+    background-color: #2c3e50;
+   
     text-align: center;
 }
 .mShell .pHeader .headerText{
-    height:34px;
-    line-height: 34px;
-    color: #2184a1;
-    font-size: 20px;
+    height:60px;
+    line-height: 60px;
+    color: #fff;
+    font-size: 26px;
     font-style: italic;
     font-family: AvenirNextLTPro-Regular;
 }
@@ -148,18 +148,18 @@ input {
     opacity: 0.6;
 }
 .mShell .pHeader .pSearchWrap{
-    min-width: 30px;
-    height: 23px;
-    margin-top: 6px;
+      min-width: 60px;
+    height: 60px;
+   // margin-top: 6px;
     float: right;
     outline: none;
 }
 .pSearchAreaWrapper{
     position: absolute;
     width: 100%;
-    height: calc(100% - 70px);
+    height: calc(100% - 94px);
     background-color: #ffffff;
-    top: 35px;
+    top: 60px;
     border: 25px solid #DBE2E8;
     display: none;
     z-index: 1;
@@ -167,15 +167,21 @@ input {
 .mShell .pHeader .pSearch{
     position: relative;
     outline: none;
-    float:left;
-    height:23px; 
-    background-position: -15px -232px;
+    float: left;
+    height: 36px;
+    width: 42px;
+    top: 11px;
+    left: 27px;
+    z-index: 1;
+    background-position: -11px -2295px;
 }
 .mShell .pHeader .pSearch.pHover{
     background-color: transparent;
+       background-position: -11px -2375px;
 }
 .mShell .pHeader .pSearch.pDown{
     background-color: transparent;
+        background-position: -11px -2375px; 
 }
 .pSearchBox{
     font-size: 12px;
@@ -186,12 +192,23 @@ input {
 }
 [contentEditable=true]:empty:not(:focus):before{
     content:attr(data-text) }
-.pMenu{
-    background-position: -9px -591px
+
+.mShell .pButtons.pMenu{
+    height: 60px;
+    width: 40px;
+    background-position: -15px -2137px;
 }
-.pMenu.pSelected{
-    background-color: #ffa500;
-    background-position: -9px -625px;
+.mShell .pButtons.pMenu.pDown{
+   background-color: transparent;
+    background-position: -15px -2211px;;
+}
+.mShell .pButtons.pMenu.pHover{
+ background-color: transparent;
+    background-position: -15px -2211px;;
+}
+.mShell .pButtons.pMenu.pSelected{
+ background-color: transparent;
+    background-position: -15px -2211px;;
 }
 .pNextHistory{
     display: none !important;
@@ -203,44 +220,44 @@ input {
 }
 
 .mShell .pButtons.header_bck{
-    position: relative;
-    height: 16px;
-    line-height: 16px;
-    background-color: #1f859e;
+     position: relative;
+    height: 21px;
+    line-height: 21px;
+    background-color: #3498db;
     width: auto;
     color: #fff;
-    font-size: 12px;
+    font-size: 13px;
     background-image: none;
     padding-left: 17px;
-    padding-right: 5px;
-    top: 10px;
-    margin-left: 10px;
-    border-bottom-left-radius:4px;
+    padding-right: 6px;
+    top: 21px;
+    margin-left: 17px;
+    border-bottom-left-radius: 4px;
     display:none;
 
 }
 .mShell .pButtons.header_bck span{
-    border-radius: 50%;
-    background-color: #1f859e;
-    height: 21px;
-    width: 21px;
+   border-radius: 50%;
+    background-color: #3498db;
+    height: 26px;
+    width: 26px;
     position: absolute;
-    left: -8px;
+    left: -13px;
     top: -5px;
-    background-position: -30px -1369px;
+    background-position: -23px -1370px;
 
 }
 .mShell .pButtons.header_bck.pHover span{
-    background-position: -27px -1396px;
+    background-position: -23px -1394px;
 }
 .pActivityWrapper, .pJsActWrapper{
     position: relative;
     float: left;
     width:calc(100% - 25px);
-    height:calc(100% - 67px);
+    height:calc(100% - 94px);
     padding:25px;
     display: none;
-    background-color: #ffffff;
+    background-color: #fff;
     padding-left: 0px;
     margin-left: 25px;
     background-clip: content-box;
@@ -253,51 +270,150 @@ input {
 
 .pMenuWrap{
     position: absolute;
-    top:34px;
-    left:0;
-    width:185px;
+        top: 64px;
+    left: 5px;
+    width:300px;
     z-index: 2;
-    background-color: #666666;
+        background-color: #95a5a6;
     display: none;
+    box-shadow: 1px 1px 20px grey;
+}
+.pMenuWrap:first-child {
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px;
+}
+.pMenuWrap:last-child {
+    margin-bottom: 0;
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
 }
 .pMenuWrap .pButtons{
     width:100%;
-    height:32px;
+    height:43px;
     float:left;
     clear:both;
-    background-color: #666666;
+        background-color: #95a5a6;
     color:#ffffff;
     font-size: 15px;
-    line-height: 32px;
-    padding-left: 44px;
+    line-height: 43px;
+    padding-left: 55px;
+        border: 1px solid #ecf0f1;
+        margin-bottom: -1px;
+        text-transform: uppercase;
 }
-.pBook{
-    background-position: -5px -525px;
+.pMenuWrap .pButtons.pHover{
+        background-color: #cdcdcd;
 }
-.lessonPlans{
-    background-position: -5px -1419px;
+.pMenuWrap .pButtons.pDown{
+        background-color: #cdcdcd;
 }
-.admin{
-    background-position: -5px -1458px;
+.pMenuWrap .pMenuSeperator{
+    display: none
 }
-.pHomework{
-    background-position: -5px -61px;
+
+
+.pMenuWrap .pButtons.pBook{
+    background-position: -5px -1948px;
 }
-.pGrades{
-    background-position: -5px -25px
+.pMenuWrap .pButtons.pBook.pHover{
+    background-position: -5px -1908px;
 }
-.pFactbook{
-    background-position: -5px -559px
+.pMenuWrap .pButtons.pBook.pDown{
+    background-position: -5px -1908px;
 }
-.pSetting{
-    background-position: -5px -489px;
+
+.pMenuWrap .pButtons.lessonPlans{
+    background-position: -5px -1414px;
 }
-.pHelp{
-    background-position: -5px -724px
+.pMenuWrap .pButtons.lessonPlans.pHover{
+    background-position: -9px -2088px;
 }
-.pLogout{
-    background-position: -5px -389px;
+.pMenuWrap .pButtons.lessonPlans.pDown{
+    background-position: -9px -2088px;
 }
+
+.pMenuWrap .pButtons.admin{
+    background-position: -5px -1872px;
+}
+.pMenuWrap .pButtons.admin.pHover{
+    background-position: -5px -1836px;
+}
+.pMenuWrap .pButtons.admin.pDown{
+    background-position: -5px -1836px
+}
+
+
+.pMenuWrap .pButtons.pHomework{
+    background-position: -5px -1799px;
+}
+.pMenuWrap .pButtons.pHomework.pHover{
+    background-position: -5px -1767px
+}
+.pMenuWrap .pButtons.pHomework.pDown{
+    background-position: -5px -1767px
+}
+
+
+
+
+.pMenuWrap .pButtons.pGrades{
+  background-position:-5px -1737px
+}
+.pMenuWrap .pButtons.pGrades.pHover{
+    background-position: -5px -1701px
+}
+.pMenuWrap .pButtons.pGrades.pDown{
+    background-position: -5px -1701px
+}
+
+
+
+.pMenuWrap .pButtons.pFactbook{
+   background-position: -5px -553px
+}
+.pMenuWrap .pButtons.pFactbook.pHover{
+     background-position: -5px -2053px
+}
+.pMenuWrap .pButtons.pFactbook.pDown{
+    background-position: -5px -2053px
+}
+
+
+
+.pMenuWrap .pButtons.pSetting{
+    background-position: -5px -1665px;
+}
+.pMenuWrap .pButtons.pSetting.pHover{
+    background-position: -5px -1632px;
+}
+.pMenuWrap .pButtons.pSetting.pDown{
+     background-position: -5px -1632px;
+}
+
+
+
+.pMenuWrap .pButtons.pHelp{
+    background-position: -5px -1599px
+}
+.pMenuWrap .pButtons.pHelp.pHover{
+    background-position: -5px -1566px;
+}
+.pMenuWrap .pButtons.pHelp.pDown{
+    background-position: -5px -1566px
+}
+
+
+
+.pMenuWrap .pButtons.pLogout{
+background-position: -5px -1536px;
+}
+.pMenuWrap .pButtons.pLogout.pHover{
+    background-position: -5px -1503px;
+}
+.pMenuWrap .pButtons.pLogout.pDown{
+    background-position: -5px -1503px;
+}
+
 .pMenuSeperator{
     float:left;
     clear:both;
@@ -363,7 +479,7 @@ input {
     position: relative;
     float: left;
     width:100%;
-    height:calc(100% - 67px);
+    height:calc(100% - 94px);
     padding:25px;
     background-clip: content-box;
     display:block;
@@ -378,7 +494,7 @@ input {
     background-color: #556b82;
 }
 .pChapHeader{
-    background-color: #2184a1;
+    background-color: #2c3e50;
     height:39px;
     width:100%;
     color:#fff;
@@ -391,8 +507,11 @@ input {
     overflow: auto;
     width: 100%;
     height: calc(100% - 39px);
+    padding: 10px 0px;
 }
-
+.pTopicWrapper .pChapHeader{
+        background-color: #3498db;
+}
 .pChapName{
     width:100%;
     height:35px;
@@ -427,7 +546,7 @@ input {
     height:100%;
     position: realative;
     float:left;
-    background-color: #ffffff;
+    background-color: #fff;
 }
 .pTopicBody{
     loat:left;
@@ -442,7 +561,7 @@ input {
     padding-left: 15px;
     font-size: 15px;
     font-weight: bold;
-    color: #20849c;
+    color: #1a77b6;
     margin-top: 10px;
     cursor:pointer;
     float: left;
@@ -504,7 +623,7 @@ input {
     height:35px;
     line-height: 35px;
     padding-left: 30px;
-    background-color: #2184a1;
+    background-color: #3498db;
     color:#ffffff;
     font-size: 18px;
     font-family: AvenirNextLTPro-Demi;
@@ -621,7 +740,7 @@ input {
     height:35px;
     line-height: 35px;
     padding-left: 30px;
-    background-color: #2184a1;
+    background-color: #3498db;
     color:#ffffff;
     font-size: 18px;
     font-family: AvenirNextLTPro-Demi;
@@ -634,7 +753,7 @@ input {
     font-size: 17px;
     color:black;
     overflow: hidden;
-    text-align: center;
+    //text-align: center;
 }
 .pSummaryIconWrap{
     width:310px;
@@ -643,10 +762,12 @@ input {
     display: inline-block;
     border-radius: 23px;
     margin-bottom: 41px;
-    margin-right: 41px;
+    margin-left: 41px;
     box-shadow:0 0 4px 0px black;
     cursor:pointer;
+   
 }
+
 .pSummaryIcon{
     height:180px;
     width:100%;
@@ -690,7 +811,7 @@ input {
     height:22px;
     width:22px;
     border-radius: 50%;
-    border: 1px solid #2184a1;
+    border: 1px solid #3498db;
     background-image: url('../assets/images/icon.png');
     float: left;
     margin-right: 11px;
@@ -722,8 +843,8 @@ input {
     width:63px;
     height:22px;
     border-radius: 10px;
-    border: 1px solid #2184a1;
-    background-color: #2184a1;
+    border: 1px solid #3498db;
+    background-color: #3498db;
     text-align: right;
     color:#ffffff;
     font-size: 14px;
@@ -754,7 +875,7 @@ input {
     min-width:452px;
     width:auto;
     max-width: 90%;
-    border:1px solid #2184a1;
+    border:1px solid #3498db;
     padding: 7px;
     position: relative;
     float:left;
@@ -814,7 +935,7 @@ input {
 .inputBoxHelp_header{
     height: 30px;
     line-height: 30px;
-    background-color: #2184a1;
+    background-color: #3498db;
     padding: 0px 20px;
     padding-right: 0px;
     color: #ffffff;
@@ -845,7 +966,7 @@ input {
     position:absolute;
     width:158px;
     max-height:192px;
-    border:1px solid #2184a1;
+    border:1px solid #3498db;
     background: white;
     padding:7px 0px;
 }
@@ -912,9 +1033,9 @@ input {
 }
 .qVideo.pHover{
 
-    transition: transform .2s;
-    transform: scale(1.2);
-    transform-origin: left;
+   // transition: transform .2s;
+   // transform: scale(1.2);
+    //transform-origin: left;
 }
 .qVideo.pDown{
 
@@ -944,7 +1065,7 @@ input {
     height: 22px;
     width: 22px;
     vertical-align: middle;
-    border: 1px solid #2184a1;
+    border: 1px solid #3498db;
 }
 .userInputWrap[data-type='radio'] .bRadioBtn{
     border-radius: 50%;
@@ -956,7 +1077,7 @@ input {
     -ms-transform: translateX(-50%) translateY(-50%);
     -webkit-transform: translateX(-50%) translateY(-50%);
     transform: translateX(-50%) translateY(-50%);
-    background-color: #2184a1;
+    background-color: #3498db;
 
     height: 14px;
     width: 14px;
@@ -983,7 +1104,8 @@ input {
 
 }
 .pQuizWrap{
-    width: calc(100% - 410px);
+    width: calc(100% - 350px);
+        min-width: 470px;
     text-align: left;
     position: relative;
     float: left;
@@ -996,7 +1118,7 @@ input {
     position: relative;
     float: left;
     font-size: 13px;
-    width: 410px;
+    width: 350px;
     height: 100%;
     padding: 5px;
     text-align: center;
@@ -1098,7 +1220,7 @@ input {
     height:100%;
     width:100%;
     position: relative;
-    background-color: #dbe2e8;
+    background-color: #f5f7f7;
     display: none;
 }
 .pVideoMainWrapper.quizVideo{
@@ -1163,22 +1285,24 @@ input {
 .videoWrapper{
     width:100%;
     height:auto;
-    max-width: 727px;
+    max-width: 688px;
     position: relative;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    border:1px solid #dbe2e8;
+   // border:1px solid #dbe2e8;
 
 }
 .videoWrapper.small{
-    max-width: 860px;
+    max-width: 808px;
     max-height: 467px;
     top: calc(50% - 41px);
 }
 .videoWrapper.small .pSubtitleWrapper{
     bottom: auto;
     top: initial;
+    left: 0;
+    width: 100%;
 }
 
 .video_setup{
@@ -1189,7 +1313,7 @@ input {
     vertical-align: middle;
     border-radius: inherit;
     display: inline-block;
-        border: 2px solid #2184a1;
+        border: 2px solid #3498db;
 }
 .videoLoader{
     position: absolute;
@@ -1349,7 +1473,7 @@ input {
     width:100%;
     border-top:2px solid #fff;
     border-bottom:2px solid #fff;
-    background-color: #2184a1;
+    background-color: #3498db;
     line-height: 28px;
     padding-left: 20px;
     font-size: 18px;
@@ -1467,7 +1591,7 @@ input {
     top: 40px;
     font-size: 16px;
     font-weight: bold;
-    color: #2184a1;
+    color: #3498db;
 }
 .pLabPageContentWrapper{
     height: calc(100% - 35px);
@@ -1500,24 +1624,26 @@ input {
     cursor: pointer;
 }
 #searchField{
-    position: absolute;
-    height: 20px;
-    width: calc(64%);
+    position: relative;
+    height: 26px;
+    /*width: calc(64%);*/
     /*max-width: 624px;*/
-    left: 18%;
-    top: 50px;
+    left: -10px;
+    top: 15px;
     outline: 0;
-    border: 1px solid #CACACA;
-    text-indent: 20px;
+    background: transparent;
+    border: 1px solid #4b6177;
+    text-indent: 31px;
+    color: white;
 }
 .searchResults{
     position: absolute;
     left: 18%;
     width: 64%;
-    /*max-width: 624px;*/
-    top: 70px;
+    /* max-width: 624px; */
+    top: 10px;
     background-color: #FBFBFB;
-    height: calc(100% - 80px);
+    height: calc(100% - 20px);
     padding-top: 40px;
 }
 .searchResult{
@@ -1531,7 +1657,7 @@ input {
 .searchResultCount{
     position: absolute;
     left: 18%;
-    top: 85px;
+    top: 25px;
     font-size: 14px;
     font-weight: bold;
     color: #4584a1;
@@ -1546,7 +1672,7 @@ input {
 .pExcersiseTitle{
     font-size: 16px;
     font-weight: bold;
-    color: #2184a1;
+    color: #3498db;
     padding: 20px 0px 10px 0px;
 }
 .pLabQASection{
@@ -1562,7 +1688,7 @@ input {
     margin-left: 10px;
     color: white;
     font-weight: bold;
-    background-color: #2184a1;
+    background-color: #3498db;
     border-left: 3px solid #3ab54b;
 }
 .pLabQuestion{
@@ -1629,12 +1755,19 @@ input {
     position: absolute;
     width: 30px;
     height: 39px;
-    background-color: #2184a1;
+    background-color: #3498db;
     text-align: center;
     padding-top: 23px;
     background-image: url(../assets/images/iconLab.png);
     background-position: -7px -235px;
+    cursor: pointer;
     /* right:40px !important; */
+}
+.pLabSaveButton.pHover{
+     background-color: #ffa500;
+}
+.pLabSaveButton.pDown{
+     background-color: #ffa500;
 }
 .pLabSaveButton:after{
     content: "SAVE";
@@ -1720,7 +1853,7 @@ input {
     height:calc(100% - 85px);
     width:346px;
     left:-346px;
-    background-color: #666666;
+    background-color: #556b82;
     color:#ffffff;
 
     display: block;
@@ -1739,7 +1872,7 @@ input {
     height: 35px;
     line-height: 35px;
     padding-left: 15px;
-    background-color: #596b81;
+    background-color: #2c3e50;
     color: #ffffff;
     font-size: 18px;
     font-family: AvenirNextLTPro-Demi;
@@ -1849,9 +1982,9 @@ input {
     height: 25px;
     width: 100%;
     position: absolute;
-    top: 34px;
+    top: 61px;
     font-size:11px;
-    color:#2184a0;
+    color:#3498db;
     text-align:center;
     line-height: 25px;
     font-family: AvenirNextLTPro-Regular;
@@ -1861,7 +1994,9 @@ input {
 .mjx-semantics{
     margin-left: .278em;
 }
-
+.maction{
+    font-size: 99% !important;
+}
 .MJXc-display{
     margin:0 !important;;  
 }
@@ -1900,7 +2035,7 @@ input::-webkit-inner-spin-button {
     height:35px;
     line-height: 35px;
     padding-left: 30px;
-    background-color: #2184a1;
+    background-color: #3498db;
     color:#ffffff;
     font-size: 18px;
     font-family: AvenirNextLTPro-Demi;
@@ -1992,22 +2127,30 @@ input.loginInput {
     display: none
 }
 /*---------Setting End---------*/
-  @media only screen and  (max-width: 1120px){
+  @media only screen and  (max-width: 950px){
        .pQuizWrap{
             width:100%;
+        }
+        .pQuizIconWrap{
+            width:100%;
+        }
+        .pQuizIconWrap .resource{
+            margin-right: 30px;
+            clear: none !important;
         }
     }
 @media only screen and  (max-width: 910px){
     .OnlyVideo{
-        max-width:645px
+        max-width:610px
     }
 }
 
-@media only screen and  (max-width: 757px){
+@media only screen and  (max-width: 814px){
     .pSummaryIconWrap{
 
         margin-bottom: 31px;
-        margin-right: 31px;
+        margin-left: 31px;
+            width: 260px;
 
     }
 
@@ -2016,14 +2159,14 @@ input.loginInput {
     .pSummaryIconWrap{
 
         margin-bottom: 24px;
-        margin-right: 24px;
+        margin-left: 24px;
 
     }
     @media only screen and  (max-width: 725px){
         .pSummaryIconWrap{
             width:256px;
             margin-bottom: 20px;
-            margin-right: 20px;
+            margin-left: 20px;
 
         }
         .pSummaryIcon{
@@ -2106,7 +2249,7 @@ input.loginInput {
         .pSummaryIconWrap{
             width:250px;
             margin-bottom: 20px;
-            margin-right: 20px;
+            margin-left: 20px;
 
         }
         .pSummaryIcon{

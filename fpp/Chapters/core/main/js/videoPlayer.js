@@ -150,12 +150,12 @@
       $('.videoWrapper').addClass("vOpen");
       manageVideoNavigation();
       if (typeof qChk == "undefined") {
-        elem["video"].src = "/books/fpp/Chapters/assets/video/" + elem["srcData"][ind] + ".webm";
-        elem["video"].src = "/books/fpp/Chapters/assets/video/" + elem["srcData"][ind] + ".mp4";
+        elem["video"].src = "assets/video/" + elem["srcData"][ind] + ".webm";
+        elem["video"].src = "assets/video/" + elem["srcData"][ind] + ".mp4";
       } else {
         elem["video"].src = elem["srcData"][ind] + ".mp4";
       }
-      console.log(elem["srcData"][ind] + ".json");
+
       httpRequest("course/json/wb/" + elem["srcData"][ind] + ".json", "json", function (data) {
         console.log(data);
         elem.subtitle = data;
@@ -170,7 +170,6 @@
 
       elem["video"].addEventListener('loadedmetadata', function () {
         var width = this.videoWidth, height = this.videoHeight;
-        console.log("width-->" + width);
         if (width <= 640 && height <= 344) {
           $('.videoWrapper').addClass("small");
         }
@@ -178,12 +177,12 @@
         elem.duration = elem["video"].duration;
         elem["totalDuration"].html(getTime(elem.duration));
       }, false);
-
-      $('.pActivityArea').hide();
       if (!$('.pVideoMainWrapper').hasClass('quizVideo')) {
         $('.pQuizCheck').hide();
       }
+      $('.pActivityArea').hide();
       $('.pActivitySummary').hide();
+      $('.pLabsWrapper').hide();
       $('.pVideoMainWrapper').show();
       if (typeof playVideo == "undefined") {
         $('.pButtons[data-type="play"]').removeClass("pPlay").addClass("pPause");
