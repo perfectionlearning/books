@@ -12,7 +12,7 @@
     q.submitCnt = 0;
     q.Id = [];
     q.totalQues = 0;
-    q.videoRef = "/books/fpp/Chapters/assets/video/";
+    q.videoRef = "/books/fpp/Chapters/assets_q/video/";
     var feedback = {
       "correct": ["Great work! You've correctly solved this problem before, so you keep your perfect score", "Great work! You get 5 out of 5 for this problem."],
       "incorrect": [
