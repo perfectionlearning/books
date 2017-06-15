@@ -10,7 +10,7 @@
     q.instance_id;
     q.problem_inst_id;
     q.submitCnt = 0;
-    q.videoImg = "/books/fpp/Chapters/assets_q/images/";
+    q.videoImg = "/books/fpp/Chapters/assets_q/image/";
     q.videoRef = "/books/fpp/Chapters/assets_q/video/";
     var step_feedback = {
       "correct": ["That is correct!"],
