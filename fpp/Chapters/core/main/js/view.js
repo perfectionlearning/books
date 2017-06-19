@@ -1301,6 +1301,13 @@
           overlayDown()
           break;
         case "logout":
+          // Quick and hacky insert of logout functionality
+          var logoutUrl = '/api/rest/users/logout';
+          $.get(logoutUrl)
+          .done((resp) => { console.log('Success'); window.location = '/auth/main';})
+          .fail((resp) => { console.log('Failure'); })
+          ;
+
           overlayDown()
           break;
         case "play":
