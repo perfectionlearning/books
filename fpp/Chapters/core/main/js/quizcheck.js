@@ -35,7 +35,7 @@
       q.instance_id = data.instance_id;
       q.problem_inst_id = data.problem_inst_id;
       q.screenData = data.screenData;
-      q.url = ctrl.getDomain + "/api/rest/submit/" + q.instance_id + "/" + q.problem_inst_id;
+      q.url = ctrl.getDomain() + "/api/rest/submit/" + q.instance_id + "/" + q.problem_inst_id;
       reset();
       appendResource();
       $(q.mShell).find('.pQuizCheck .pQues').html(data.screenData.q);
