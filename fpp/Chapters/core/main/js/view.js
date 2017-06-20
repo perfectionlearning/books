@@ -1011,7 +1011,8 @@
       if ($(this).attr("data-jsact")) {
         loadJSActivity($(this).attr("data-jsact"));
       } else if ($(this).hasClass("activity")) {
-        alert("Activity not included");
+		window.open("http://car-run.herokuapp.com/");
+       //alert("Activity not included");
       } else {
         var vFlag = $(this).attr('data-video');
         var ind = $(this).attr("data-ind");
