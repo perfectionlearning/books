@@ -327,6 +327,9 @@
       httpRequest(p.get_link + p.bookData[p.chap]["instance_id"], "json", function (data) {
         console.log(data);
         data = data[p.bookData[p.chap]["unit"][p.unit]["section"][p.section]["subsection"][p.subSection]["problem_inst_id"]];
+        if (!data.video && _data['video']) {
+                data.video = _data['video'];
+        }
         data = cleanMML(data);
         cb(data);
       }, function () {

@@ -9,6 +9,8 @@
     "homework_Student_link": "/books/student/project.html#assignments",
     "grades_link": "/reports/overview",
     "wrap_data": "/api/endpoint/output/wrapping/set",
+    "logout_link": "/api/rest/users/logout",
+    "login_link": "/auth/main",
     "chapters": [
         {},
         {
