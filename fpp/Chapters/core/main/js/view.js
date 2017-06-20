@@ -1302,7 +1302,8 @@
           overlayDown()
           break;
         case "logout":
-          overlayDown()
+          overlayDown();
+          logout();
           break;
         case "play":
           overlayDown()
@@ -1490,6 +1491,14 @@
       }
       $(p.mShell).find(".pMenu").removeClass('pSelected');
       $(p.mShell).find(".pMenuWrap").slideUp();
+    }
+    function logout() {
+      var logoutUrl = p.bookData.logout_link;
+      var loginPage = p.bookData.login_link;
+      $.get(logoutUrl)
+        .done((resp) => { console.log('Success'); window.location = loginPage;})
+        .fail((resp) => { console.log('Failure'); })
+      ;
     }
     this.loadScreen = function (data) {
       if (data.type != "labPage") {
