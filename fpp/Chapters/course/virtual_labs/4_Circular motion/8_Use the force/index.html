@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Lab</title>
+         
+        <link rel="stylesheet" href="../../common/css/font.css">
+ 
+        <script src="../../common/libs/createjs/easeljs-0.8.1.js"></script>
+        <script src="../../common/libs/createjs/tweenjs-0.6.1.js"></script>
+        <script src="../../common/libs/createjs/preloadjs-0.6.1.js"></script>
+        <script src="../../common/libs/createjs/movieclip-0.8.1.js"></script>
+        
+		<script src="../../common/js/Vector.js"></script>
+		<script src="../../common/js/utils.js"></script>
+        <script src="../../common/js/components.js"></script>
+        <script src="../../common/js/Ticker.js"></script>
+        <script src="../../common/js/InteractionManager.js"></script>
+        <script src="../../common/js/main.js"></script>
+		
+        <script src="assets/animations/Use the force.js"></script>
+		
+        <script src="js/resourceList.js"></script>
+        <script src="js/layout.js"></script>
+        <script src="js/Lab.js"></script>
+		<script>
+			window.onload = main;
+		</script>
+		<style>
+		#loader{
+			background-image:url(../../common/images/loading.gif);
+		}
+		</style>
+    </head>
+    <body>
+		<canvas id="background" width="480" height="320"></canvas>
+		<canvas id="foreground" width="480" height="320"></canvas>
+		<div id="loader"></div>
+    </body>
+</html>

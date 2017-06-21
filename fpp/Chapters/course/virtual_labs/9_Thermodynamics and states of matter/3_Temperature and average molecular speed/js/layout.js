@@ -1,0 +1,181 @@
+var layout = {
+	background:[
+		{
+			name:"bg",
+			namespace:"lib",
+			type:"mc_bg",
+			transform:[512.1,265.5,1,1,0,0,0,512.3,266.3]
+		},
+		{
+			name:"patch",
+			namespace:"lib",
+			type:"mc_patch",
+			transform:[511.6,743.8]
+		}
+	],
+	foreground:[{
+			name:"molecule1",
+			namespace:"lib",
+			type:"mc_blueBall",
+			props:{
+				x:100,
+				y:100,
+				scaleX:0.475,
+				scaleY:0.475,
+				regX:21.6,
+				regY:21.6,
+				
+			},
+			cache:{x:0, y:0, width:50, height:50}
+		},
+		{
+			name:"resetButton",
+			type:"Button",
+			up:"replayIconN",
+			over:"replayIconO",
+			down:"replayIconC",
+			props:{
+				x:940,
+				y:714,
+				scaleX:0.6,
+				scaleY:0.6,
+			}
+		},{
+			name:"pauseButton",
+			type:"Button",
+			up:"pauseIconN",
+			over:"pauseIconO",
+			down:"pauseIconC",
+			props:{
+				x:866,
+			    y:714,
+				scaleX:0.6,
+				scaleY:0.6,
+			}
+		},{
+			name:"playButton",
+			type:"Button",
+			up:"playIconN",
+			over:"playIconO",
+			down:"playIconC",
+			props:{
+				x:866,
+				y:714,
+				scaleX:0.6,
+				scaleY:0.6,
+				visible:false
+			}
+		},{
+			name:"speedText",
+			namespace:"createjs",
+			type:"Text",
+			props:{
+				x:234,
+				y:733,
+				color:"black",
+				font:"bold 18px Arial",
+				text:"342",
+				color:"white",
+				textAlign:"center"
+			}
+		},
+		
+		{
+			name:"unitSpeedText",
+			namespace:"createjs",
+			type:"Text",
+			props:{
+				x:277,
+				y:733,
+				color:"black",
+				font:"bold 18px Arial",
+				text:"m/s",
+				color:"white",
+				textAlign:"center"
+			}
+		},
+		{
+			name:"LableSpeedText",
+			namespace:"createjs",
+			type:"Text",
+			props:{
+				x:117,
+				y:733,
+				color:"black",
+				font:"bold 18px Arial",
+				text:"Avg. molecule speed",
+				color:"white",
+				textAlign:"center"
+			}
+		},
+		{
+			name:"tempText",
+			namespace:"createjs",
+			type:"Text",
+			props:{
+				x:514,
+				y:733,
+				color:"black",
+				font:"bold 19px Arial",
+				text:"100",
+				color:"black",
+				textAlign:"center"
+			}
+		},
+		
+		{
+			name:"unitTempText",
+			namespace:"createjs",
+			type:"Text",
+			props:{
+				x:559,
+				y:733,
+				color:"black",
+				font:"bold 18px Arial",
+				text:"K",
+				color:"white",
+				textAlign:"center"
+			}
+		},
+		{
+			name:"LableTempText",
+			namespace:"createjs",
+			type:"Text",
+			props:{
+				x:373,
+				y:733,
+				color:"black",
+				font:"bold 18px Arial",
+				text:"Temperature",
+				color:"white",
+				textAlign:"center"
+			}
+		},
+		
+		{
+			name:"stepper",
+			type:"NumericStepper",
+			min:100,
+			max:600,
+			step:25,
+			value:100,
+			inc:{
+				up:"incN",
+				over:"incO",
+				down:"incD",
+			},
+			dec:{
+				up:"decN",
+				over:"decO",
+				down:"decD",
+			},
+			gap:1,
+			props:{
+				x: 435,
+				y:707,
+				scaleX:0.5 * 1.25,
+				scaleY:0.5 * 1.25,
+			}
+		}
+	]
+}

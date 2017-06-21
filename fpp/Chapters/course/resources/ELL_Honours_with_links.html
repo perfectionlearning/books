@@ -1,0 +1,84 @@
+
+<style type='text/css'>
+.myTd,.myTh{
+	border: 1px solid;
+	border-color:#959595;
+	padding:10px;
+}
+
+</style>
+
+
+
+<div style="text-align: left;"><b>Subject:</b> Physics<br><b>Grade Level:</b> 9-12<br><b>Course Title:</b> Physics 1 Honors<br><b>Course Code:</b> 2003390<br><b>Submission Title:</b> First Person Physics<br><b>BID id:</b> 3436<br><b>Publisher:</b> Perfection Learning<br></div><br><br>
+    
+    <table class="myTable" style="border: 1px solid black; border-collapse: collapse;">
+	
+	</table>
+</div>
+
+<script>
+
+
+
+
+var myData;
+var i,j;
+httpRequest("course/json/searchBook/searchCode.json", "json", function (_data) {
+		myData = _data;
+		console.log("hi---"+myData.data[0].code);
+		var myStr = '<tr><th align="center" bgcolor="#d5d5d5" class="myTh" style="width:200px; vertical-align:middle"><b>Benchmark Code</b></th><th align="center" bgcolor="#d5d5d5" class="myTh" style="width:350px; vertical-align:middle"><b>Benchmark</b></th><th align="center" class="myTh"  bgcolor="#d5d5d5" style="width:700px; vertical-align:middle"><b>Lessons where Benchmark is directly Addressed in-depth in major tool</b></th></tr>';
+		var str="";
+		var chap, topic, subtopic;
+		for(i=0;i<myData.data.length;i++)
+		{
+			lessonStr = "";
+			for(j=0;j<myData.data[i].lessons.length;j++){
+				var src = myData.data[i].lessons[j].split(" ")[0] + ".0";
+				var type = "book";
+				var href, dataTitle;
+				if(src.toLowerCase() == "lesson.0"){
+					src = myData.data[i].lessons[j].split("Ch")[1] + ".1.1.0";
+					type = "lessonPlan";
+				}
+				title = myData.data[i].lessons[j];
+				if(src.split(".")[0] == 26){
+					type = "labPage";
+					var o = ctrl.getLabRef(src);
+					href = o.href,
+					dataTitle = o.title + ", " + o.sectionHeading
+				} else {
+					href = href
+				}
+				src = src.split(".").join(":");
+				type = type;
+				
+				if (type == "labPage") {
+					lessonStr+= "<span onclick='openLink(event)' style='color:#0000FF;text-decoration: underline;cursor: pointer;' data-type='" + type + "' data-src='" + src + "' data-href='" + href.split("/").join("~").split("_").join("-") + "' data-text='"+(dataTitle ? dataTitle : title)+"'>" + title + "</span>";
+				} else {
+					lessonStr+= "<span onclick='openLink(event)' style='color:#0000FF;text-decoration: underline;cursor: pointer;' data-type='" + type + "' data-src='" + src + "'>" + title + "</span>";
+				}
+				lessonStr+= '&nbsp;&nbsp;';
+			}
+
+			str+= '<tr><td align="center" bgcolor="#e9e9e9" class="myTd">'+myData.data[i].code+'</td><td class="myTd" bgcolor="#e9e9e9">'+myData.data[i].benchmark+'</td><td class="myTd" bgcolor="#e9e9e9">'+lessonStr+'</td></tr>';
+		}
+		$('.myTable').html(myStr+str);
+});
+
+function openLink(e){
+	var src = $(e.target).attr("data-src").split(":");
+	var type = $(e.target).attr("data-type");
+	if (type == "labPage") {
+		var src = $(e.target).attr("data-text").split(", ");
+		var href = $(e.target).attr("data-href");
+		window.location.hash = "type_labPage/title_" + src[2] + "/href_" + (href);
+	} else {
+		window.location.hash = "lesson_" + (type == "lessonPlan") + "/type_chapter/chapter_" + src[0] + "/unit_" + (src[1] - 1) + "/section_" + src[2] + "/subsection_" + src[3];
+	}
+}
+
+</script>
+
+
+

@@ -74,11 +74,6 @@
   function showPage() {
     var clickedJ = $(this).index(), clickedI = $(this).parent().parent().index();
     var i, j;
-//var clickedJ = 0, clickedI = 0;
-
-
-    console.log("clickedJ====" + clickedJ);
-    console.log("clickedI====" + clickedI);
     for (i = 0; i < 5; i++)
     {
       for (j = 0; j < 11; j++)
@@ -90,13 +85,13 @@
     var strClicked = (clickedI + 1) + '' + (clickedJ + 1);
     $('.contentPage' + strClicked).show();
 
-    $('.content').css("height", "515px");
+    // $('.content').css("height", "515px");
     $('.list').hide();
 
-    if ((clickedI == 1) && (clickedJ == 0))
-    {
-      $('.content').css("height", "435px");
-    }
+    // if ((clickedI == 1) && (clickedJ == 0))
+    // {
+      // $('.content').css("height", "435px");
+    // }
 
     if ((clickedI == 3) && (clickedJ == 1))
     {
@@ -114,9 +109,10 @@
     $('#fwrapper').css("opacity", 1);
 
     $(".content").mCustomScrollbar({
-      theme: "dark-3",
-      axis: "yx",
-      scrollButtons: {enable: true}
+		theme: "dark-3",
+		axis: "yx",
+		scrollInertia: 0, mouseWheelPixels: 50,
+		scrollButtons: {enable: true}
     });
 
 

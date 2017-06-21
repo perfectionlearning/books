@@ -1,0 +1,289 @@
+var layout = {
+	background:[
+		{
+			name:"skyBG",
+			namespace:"lib",
+			type:"mc_bg",
+			transform:[512,404]
+		},
+		{
+			name:"earthBG",
+			namespace:"lib",
+			type:"mc_earth",
+			transform:[512.2,370.3,1.215,1.215,0,0,0,-0.1,0]
+		},
+		{
+			name:"patchBG",
+			namespace:"lib",
+			type:"mc_patch",
+			transform:[409.3,757,1,1,0,0,0,512.6,31.6]
+		},
+	],
+	foreground:[
+		{
+			name:"moonImg",
+			img:"moon",
+			namespace:"createjs",
+			type:"Bitmap",
+			props:{
+				x:894, // 894 
+				y:353.9,//353.2
+				//scaleX:0.5,
+				//scaleY:0.5,
+				regX:30,
+				regY:30,
+			},
+			//hitBounds:{x:-50,y:-20,width:40,height:48}
+			// transform:[511.6,758.1,1.25,1.25,0,0,0,512.6,31.5]
+		},
+		
+		{
+			name:"arrow1Line",
+			type:"Shape",
+			namespace:"createjs",				
+		},
+		{
+			name:"massText",
+			namespace:"createjs",
+			type:"Text",
+			props:{
+				x:35,
+				y:718,
+				lineWidth:65,
+				font:"bold 18px Arial",
+				text:"Mass",
+				textAlign:"left",
+				color:"#FFFFFF"
+			}
+		},
+		{
+			name:"massText2",
+			namespace:"createjs",
+			type:"Text",
+			props:{
+				x:35,
+				y:739,
+				lineWidth:65,
+				font:"bold 18px Arial",
+				text:"of test",
+				textAlign:"left",
+				color:"#FFFFFF"
+			}
+		},
+		{
+			name:"massText3",
+			namespace:"createjs",
+			type:"Text",
+			props:{
+				x:35,
+				y:759,
+				lineWidth:65,
+				font:"bold 18px Arial",
+				text:"object",
+				textAlign:"left",
+				color:"#FFFFFF"
+			}
+		},
+		{
+			name:"massValue",
+			namespace:"createjs",
+			type:"Text",
+			props:{
+				x:192,
+				y:740,
+				font:"bold 18px Arial",
+				weight:"bold",
+				text:10.0,
+				textAlign:"center",
+				color:"#000000"
+			}
+		},
+		{
+			name:"massUnit",
+			namespace:"createjs",
+			type:"Text",
+			props:{
+				x:244,
+				y:739,
+				font:"bold 18px Arial",
+				text:"kg",
+				textAlign:"center",
+				color:"#FFFFFF"
+			}
+		}, 
+		{
+			name:"massStepper",
+			type:"NumericStepper",
+			min:1,
+			max:100,
+			step:1,
+			value:10.0,
+			inc:{
+				up:"incN",
+				over:"incO",
+				down:"incD",
+			},
+			dec:{
+				up:"decN",
+				over:"decO",
+				down:"decD",
+			},
+			gap:1,
+			props:{
+				x:108,
+				y:712,
+				scaleX:0.5 * 1.25,
+				scaleY:0.5 * 1.25,
+			}
+		},
+		{
+			name:"distanceText",
+			namespace:"createjs",
+			type:"Text",
+			props:{
+				x:280,
+				y:718,
+				lineWidth:70,
+				font:"bold 18px Arial",
+				text:"Distance",
+				textAlign:"left",
+				color:"#FFFFFF"
+			}
+		},
+		{
+			name:"distanceText2",
+			namespace:"createjs",
+			type:"Text",
+			props:{
+				x:280,
+				y:739,
+				lineWidth:70,
+				font:"bold 18px Arial",
+				text:"between",
+				textAlign:"left",
+				color:"#FFFFFF"
+			}
+		},
+		{
+			name:"distanceText3",
+			namespace:"createjs",
+			type:"Text",
+			props:{
+				x:280,
+				y:759,
+				lineWidth:70,
+				font:"bold 18px Arial",
+				text:"centers",
+				textAlign:"left",
+				color:"#FFFFFF"
+			}
+		},
+		{
+			name:"distanceValue",
+			namespace:"createjs",
+			type:"Text",
+			props:{
+				x:433,
+				y:740,
+				font:"bold 18px Arial",
+				lineWidth:70,
+				text:9.00,
+				textAlign:"left",
+				border:"1px solid black",
+				color:"#000000"
+			}
+		},
+		{
+			name:"tensValue",
+			type:"SSText",
+			props:{
+				x:471,
+				y:740,
+				font:"bold 18px Arial",
+				text:" x 10^6",
+				color:"#000000",
+			},
+			hgap:1,
+			fonts:["bold 18px Arial","bold 14px Arial"]
+		},
+		 {
+			name:"distanceUnit",
+			namespace:"createjs",
+			type:"Text",
+			props:{
+				x:549,
+				y:739,
+				font:"bold 18px Arial",
+				text:"m",
+				textAlign:"center",
+				color:"#FFFFFF"
+			}
+		}, 
+		{
+			name:"distanceStepper",
+			type:"NumericStepper",
+			min:6.38,
+			max:32.7,
+			step:0.01,
+			value:9.00,
+			inc:{
+				up:"incN",
+				over:"incO",
+				down:"incD",
+			},
+			dec:{
+				up:"decN",
+				over:"decO",
+				down:"decD",
+			},
+			gap:1,
+			props:{
+				x:369,
+				y:712,
+				scaleX:0.5 * 1.25,
+				scaleY:0.5 * 1.25,
+			}
+		},
+		 
+		{
+			name:"gravityText",
+			namespace:"createjs",
+			type:"Text",
+			props:{
+				x:586,
+				y:727,
+				lineWidth:150,
+				font:"bold 18px Arial",
+				text:"Force of gravity",
+				textAlign:"left",
+				color:"#FFFFFF"
+			}
+		}, 
+		{
+			name:"gravityValue",
+			namespace:"createjs",
+			type:"Text",
+			props:{
+				x:642,
+				y:752,
+				font:"bold 18px Arial",
+				text:49.16,
+				textAlign:"center",
+				color:"#FFFFFF"
+			}
+		},
+		{
+			name:"gravityUnit",
+			namespace:"createjs",
+			type:"Text",
+			props:{
+				x:681,
+				y:752,
+				font:"bold 18px Arial",
+				text:"N",
+				textAlign:"center",
+				color:"#FFFFFF"
+			}
+		}, 
+	]
+}
