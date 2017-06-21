@@ -98,6 +98,9 @@
 
       quiznavigationState(q.currentQues);
       bindEvents();
+      setTimeout(function () {
+        setMaxLength();
+      }, 1000);
     }
     function bindEvents() {
       if (!device) {
@@ -478,6 +481,13 @@
         $(".pQuizBoard .bOptionRow").removeClass('pDisable').off();
         $(".pQuizBoard .bOptionRow").off(mouseEvents.up).on(mouseEvents.up, radioUp);
       }
+    }
+    function setMaxLength() {
+
+      $('.pAnsWrap').find("input").each(function (i) {
+        $(this).attr("maxlength", q.screenData[q.currentQues]["maxLength"][i]);
+      })
+
     }
 
   }

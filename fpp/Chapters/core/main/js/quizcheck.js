@@ -53,6 +53,9 @@
       MathJax.Hub.Queue(["Typeset", MathJax.Hub, math]);
       bindEvents();
       hideLoader();
+      setTimeout(function () {
+        setMaxLength();
+      }, 1000)
     }
     function appendResource() {
       $(".resource").remove();
@@ -230,7 +233,6 @@
         "position": "relative",
         "float": "left",
         "margin-top": "13px",
-        // "bottom": "10px",
         "margin-right": "15px",
         "width": "100%",
       });
@@ -238,6 +240,9 @@
       $('.pQuizCheck .pQuizStepWrap').fadeIn();
       bindEvents();
       hideLoader();
+      setTimeout(function () {
+        setMaxLength(q.stepIndex);
+      }, 2000)
     }
     this.loadSolution = function () {
       showSolutionFlag = true;
@@ -662,6 +667,17 @@
         $('.pQuizButtons.uSubmit').removeClass('pDisable');
         $(".pQuizCheck .bOptionRow").removeClass('pDisable').off();
         $(".pQuizCheck .bOptionRow").off(mouseEvents.up).on(mouseEvents.up, radioUp);
+      }
+    }
+    function setMaxLength(stepId) {
+      if (typeof stepId == "undefined") {
+        $('.pQuizCheck .pAnsWrap').find("input").each(function (i) {
+          $(this).attr("maxlength", q.screenData["maxLength"][i]);
+        })
+      } else {
+        $('#step_' + stepId + ' .userInputWrap').find("input").each(function (i) {
+          $(this).attr("maxlength", q.screenData["solve"][stepId]["maxLength"][i]);
+        })
       }
     }
   }

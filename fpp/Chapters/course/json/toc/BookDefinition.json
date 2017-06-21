@@ -11060,32 +11060,38 @@
                                             },
                                             "labs": [
                                                 {
-												"assign_id":"SJTVRhCmAWb",
+												"assign_id":"rJOOXQgoBQW",
                                                     "title": "Using one-dimensional motion equations",
                                                     "href": "course/labs/Using_one_dimensional_equations/page.html"
                                                 },
                                                 {
+												"assign_id":"S1y4X7esSmb",
                                                     "title": "Motion in two dimensions #1",
                                                     "href": "course/labs/Motion_in_two_dimensions_1/page.html"
                                                 },
                                                 {
+												"assign_id":"SkbQQxsr7Z",
                                                     "title": "Motion in two dimensions #2",
                                                     "href": "course/labs/Motion_in_two_dimensions_2/page.html"
                                                 },
                                                 {
+												"assign_id":"ByaQmmljr7b",
                                                     "title": "Circular motion",
                                                     "href": "course/labs/Circular_motion/page.html"
                                                 },
                                                 {
+												"assign_id":"BJ787QesrQW",
                                                     "title": "Force, mass and acceleration",
                                                     "href": "course/labs/Force_mass_acceleration/page.html"
                                                 },
                                                 {
+												"assign_id":"SyGmQloBXZ",
                                                     "title": "Gravity",
                                                     "href": "course/labs/Gravity/page.html",
                                                     "pageTitle": "Newton’s law of gravity"
                                                 },
                                                 {
+												"assign_id":"BkH8mXejB7b",
                                                     "title": "Collisions",
                                                     "href": "course/labs/Collisions/page.html"
                                                 }
@@ -11101,6 +11107,7 @@
                                             },
                                             "labs": [
                                                 {
+												"assign_id":"HJ2eX7gsH7b",
                                                     "title": "Thermodynamics and states of matter",
                                                     "href": "course/labs/Thermodynamics_and_states_of_matter/page.html"
                                                 }
@@ -11117,6 +11124,7 @@
                                             },
                                             "labs": [
                                                 {
+												"assign_id":"r1iem7xoBXb ",
                                                     "title": "Force between charged particles",
                                                     "href": "course/labs/Force_between_charged_particles/page.html"
                                                 }
@@ -11133,10 +11141,12 @@
                                             },
                                             "labs": [
                                                 {
+												"assign_id":"ryi7Q7eoS7-",
                                                     "title": "Speed, frequency and wavelength",
                                                     "href": "course/labs/Speed_frequency_and_wavelength/page.html"
                                                 },
                                                 {
+													"assign_id":"ByIuQmlsS7-",
                                                     "title": "Resonance",
                                                     "href": "course/labs/Resonance/page.html"
                                                 }
@@ -11152,6 +11162,7 @@
                                             },
                                             "labs": [
                                                 {
+													"assign_id":"S1bUQXeoBX-",
                                                     "title": "Refraction",
                                                     "href": "course/labs/Refraction/page.html"
                                                 }

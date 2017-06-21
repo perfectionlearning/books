@@ -47,17 +47,17 @@
     var toReplace = '<semantics><annotation-xml encoding="application/xhtml+xml"><input xmlns="http://www.w3.org/1999/xhtml" type="text" size="5" name="b" maxlength="9" onKeyDown="inputKeydown(event)"  /></annotation-xml></semantics>';
 
     if (data.ansType == "MultKinetic") {
-      var tempDiv = "<div class='_tempDiv' style='position:absolute;top:-9999999999;left:-999999999'></div>"
-      $('body').append(tempDiv);
+
       $('._tempDiv').html(data["a"]);
-      console.log(data["a"]);
       data["inputBox"] = data["a"].replace(pattern, toReplace);
       data["a"] = [];
-      $('._tempDiv maction').each(function () {
+      data["maxLength"] = [];
+      $('._tempDiv maction').each(function (no) {
         var _txt = $(this).text();
+        var len = _txt.length;
         data["a"].push(_txt);
+        data["maxLength"][no] = len;
       })
-      $('._tempDiv').remove();
     } else {
       var temp = "";
       for (var i in data.choices) {
@@ -68,6 +68,14 @@
     }
     for (var i in data.solve) {
       if (data["solve"][i]["ansType"] == "MultKinetic") {
+
+        $('._tempDiv').html(data["solve"][i]["a"]);
+        data["solve"][i]["maxLength"] = [];
+        $('._tempDiv maction').each(function (no) {
+          var _txt = $(this).text();
+          var len = _txt.length;
+          data["solve"][i]["maxLength"][no] = len;
+        })
         data["solve"][i]["a"] = data["solve"][i]["a"].replace(/<mfrac>/g, " <mstyle mathsize='140%'><mfrac>");
         data["solve"][i]["a"] = data["solve"][i]["a"].replace(/<\/mfrac>/g, "</mfrac> </mstyle'>")
         data["solve"][i]["inputBox"] = data["solve"][i]["a"].replace(pattern, toReplace);
@@ -146,7 +154,7 @@
 
 
 
-//===============================================================================
+  //===============================================================================
   function shuffle(array) {
     var currentIndex = array.length, temporaryValue, randomIndex;
 
@@ -204,7 +212,7 @@
       $('.activityLoader').hide();
     }, 500)
   }
-// create DOM element
+  // create DOM element
   function createElement(_obj) {
     var elem = document.createElement(_obj.tagName);
     if (_obj.hasOwnProperty("attr")) {
@@ -290,7 +298,6 @@
     var availableWidth = $(".pJsActWrapper").width(),
       availableHeight = $(".pJsActWrapper").height(),
       scale, left, top, width, height;
-
     if (availableWidth > availableHeight) {
       height = availableHeight;
       width = height * shellWidth / shellHeight;

@@ -4,26 +4,30 @@
     lab.assignID = "";
     lab.getLink = "";
     lab.setLink = "https://qa1.perfectionlearning.com/api/rest/assign/SJTVRhCmAWb/labdata/update";
-    lab.getLink = "https://qa1.perfectionlearning.com/api/endpoint/assign/SJTVRhCmAWb";
+    lab.getLink = "https://qa1.perfectionlearning.com/api/rest/assign/SJTVRhCmAWb/defn";
     lab.ans = {};
     this.init = function (data) {
+      showLoader();
       lab.assignID = data.id;
       lab.mShell = $('.mShell')[0];
-      lab.setLink = ctrl.getDomain() + "/api/rest/assign/" + lab.assignID + "/labdata/update";
-      lab.getLink = ctrl.getDomain() + "/api/endpoint/assign/" + lab.assignID;
-      httpRequest(lab.getLink, "json", function (data) {
-        console.log(data);
-
+      lab.setLink = "https://qa1.perfectionlearning.com/api/rest/assign/" + lab.assignID + "/labdata/update";
+      lab.getLink = "https://qa1.perfectionlearning.com/api/rest/assign/" + lab.assignID + "/defn";
+      httpRequest(lab.getLink, "json", function (udata) {
+        hideLoader();
+        if (udata.hasOwnProperty("labData")) {
+          lab.ans = $.parseJSON(udata.labData);
+          updateUserData();
+        } else {
+          createDataArray()
+        }
+        labEvent();
       }, function () {
+        hideLoader();
         console.log("cant dget");
       });
 
-      if (data.hasOwnProperty("userData")) {
-        updateUserData();
-      } else {
-        createDataArray()
-      }
-      labEvent();
+
+
     }
     function labEvent() {
       if (!device) {
@@ -180,7 +184,7 @@
     }
     function saveUserAnswer() {
       console.log("user response");
-
+      showLoader();
       var _data = JSON.stringify({"lab_data": lab.ans});
       //  var _data = {"lab_data": lab.ans};
       console.log(_data);
@@ -198,6 +202,7 @@
 
       request.done(function (data) {
         console.log("user data updated");
+        hideLoader();
         request = null;
 
       });

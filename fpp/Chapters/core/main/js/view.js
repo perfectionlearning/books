@@ -54,7 +54,8 @@
       if (p.mShell != null) {
         $(p.mShell).empty();
       }
-
+      var tempDiv = "<div class='_tempDiv' style='position:absolute;top:-9999999999;left:-999999999'></div>"
+      $('body').append(tempDiv);
       p.mShell = createElement({
         tagName: "div",
         attr: {
@@ -638,6 +639,7 @@
       $('.pBookWrapper').hide();
       $(p.mShell).find('.pQuizBoard_bck').hide();
       $('.quizNavButtons').hide();
+      disableHeaderSearch(false);
       switch (type) {
         case "summary":
           $(p.mShell).find('.pActivitySummary').show();
@@ -702,6 +704,7 @@
           $(p.mShell).find('.pQuizCheck').hide();
           $(p.mShell).find('.pActivitySummary').hide();
           $(p.mShell).find('.pSettingArea').hide();
+          disableHeaderSearch(true);
           break;
       }
     }
@@ -732,7 +735,10 @@
       $(p.mShell).find(".pLabTitle").off(mouseEvents.down, mousedown).on(mouseEvents.down, mousedown); //---->
       $(p.mShell).find(".pLabTitle").not(".pjumpToVideo").off("click", labChapterUp).on("click", labChapterUp); //---->
       $(p.mShell).find(".pSearch").off("click", showSearchBox).on("click", showSearchBox); //---->
-      $(p.mShell).find("#searchField").off("keyup").on('keyup', function (e) {
+      $(p.mShell).find("#searchField, #searchField2").off("keyup").on('keyup', function (e) {
+        if ($(e.target).attr("id") == "searchField2") {
+          $("#searchField").val($("#searchField2").val());
+        }
         if (e.keyCode == 13) {
           showSearchBox(e);
         }
@@ -754,7 +760,7 @@
       if ($("#searchField").val() == "" && !data) {
         return false;
       }
-      if ($(e.target).hasClass("pSearch") || $(e.target).attr("id") == "searchField") {
+      if ($(e.target).hasClass("pSearch") || $(e.target).attr("id") == "searchField" || $(e.target).attr("id") == "searchField2") {
         window.location.hash = escape("type_search/searchKey_" + $("#searchField").val());
         return false;
       }
@@ -762,15 +768,33 @@
       $(".pSearchAreaWrapper").show();
       $(p.mShell).find(".pLabSubmitButton").hide();
       // $(".searchButton").off("click").on("click", updateSearchHash);
-      console.log(data)
+      // console.log(data)
       $(".searchResults").mCustomScrollbar("destroy").empty();
       if (data && data.searchKey) {
         $("#searchField").val(data.searchKey.split("%20").join(" "));
+        $("#searchField2").val(data.searchKey.split("%20").join(" "));
         searchResults();
       } else {
         $("#searchField").val("");
+        $("#searchField2").val("");
         $(".searchResultCount").text("");
       }
+    }
+
+    function disableHeaderSearch(bool) {
+      $("#searchField").attr("disabled", bool);
+      if (bool) {
+        $(".pSearch").css({
+          "opacity": 0.6,
+          "pointer-events": "none"
+        });
+      } else {
+        $(".pSearch").css({
+          "opacity": 1,
+          "pointer-events": "all"
+        });
+      }
+
     }
 
     function updateSearchHash() {
@@ -789,31 +813,51 @@
       var keywords = $("#searchField").val().split(" ").map(function (key) {
         return " " + key.toLowerCase() + " ";
       });
-      var links = [], found, text;
+      var links = [], // for exact match
+        links2 = [], // for all keys match
+        found, text, sources = [];
       var div = $(document.createElement("div"));
       p.searchBook.forEach(function (obj) {
         found = false;
-        var a = [div.html(obj.text).text().toLowerCase(), obj.title.toLowerCase(), obj.sectionTitle.toLowerCase(), obj.sectionHeading.toLowerCase()];
-        for (var j = 0; j < a.length && !found; j++) {
-          text = a[j];
+        var allText = div.html(obj.text).text().toLowerCase() + " " + obj.title.toLowerCase() + " " + obj.sectionTitle.toLowerCase() + " " + obj.sectionHeading.toLowerCase();
+        var toSearch = $("#searchField").val().trim().toLowerCase();
+        if (allText.match(toSearch)) {
+          push(links, obj);
+        } else {
+          var count = 0;
           for (var i = 0; i < keywords.length; i++) {
-            if (text.match(keywords[i])) {
-              push(links, obj);
-              found = true;
+            if (allText.match(keywords[i])) {
+              count++;
             }
           }
+          if (count == keywords.length) {
+            push(links2, obj);
+          }
         }
+        // var a = [div.html(obj.text).text().toLowerCase(), obj.title.toLowerCase(), obj.sectionTitle.toLowerCase(), obj.sectionHeading.toLowerCase()];
+        // for (var j = 0; j < a.length && !found; j++) {
+        // text = a[j];
+        // for (var i = 0; i < keywords.length; i++) {
+        //   if (text.match(keywords[i])) {
+        //     push(links, obj);
+        //     found = true;
+        //   }
+        // }
+        // }
       });
 
       function push(a, obj) {
-        a.push({
-          src: obj.src,
-          type: obj.type,
-          href: obj.href,
-          title: obj.title + ", " + obj.sectionHeading
-        });
+        if (sources.indexOf(obj.src) == -1) {
+          sources.push(obj.src);
+          a.push({
+            src: obj.src,
+            type: obj.type,
+            href: obj.href,
+            title: obj.title + ", " + obj.sectionHeading
+          });
+        }
       }
-
+      links = links.concat(links2);
       var count = 0;
       if (links.length == 0 && keywords.length == 1) {
         for (var i = 0; i < p.searchCode.data.length; i++) {
@@ -855,7 +899,7 @@
         }
         count++;
         if (obj.type == "labPage") {
-          console.log(obj.href)
+          // console.log(obj.href)
           $(".searchResults").append("<div class='searchResult' data-type='" + obj.type + "' data-src='" + obj.src + "' data-href='" + obj.href.split("/").join("~").split("_").join("-") + "' data-text='" + (obj.dataTitle ? obj.dataTitle : obj.title) + "'>" + obj.title + "</div>");
         } else {
           $(".searchResults").append("<div class='searchResult' data-type='" + obj.type + "' data-src='" + obj.src + "'>" + obj.title + "</div>");
@@ -879,6 +923,7 @@
           window.location.hash = escape("lesson_" + (type == "lessonPlan") + "/type_chapter/chapter_" + src[0] + "/unit_" + (src[1] - 1) + "/section_" + src[2] + "/subsection_" + src[3]);
         }
         $(".pSearchAreaWrapper").hide();
+        disableHeaderSearch(false);
       });
 
       setTimeout(function () {
@@ -1011,8 +1056,8 @@
       if ($(this).attr("data-jsact")) {
         loadJSActivity($(this).attr("data-jsact"));
       } else if ($(this).hasClass("activity")) {
-		window.open("http://car-run.herokuapp.com/");
-       //alert("Activity not included");
+        window.open("http://car-run.herokuapp.com/");
+        //alert("Activity not included");
       } else {
         var vFlag = $(this).attr('data-video');
         var ind = $(this).attr("data-ind");
@@ -1121,6 +1166,7 @@
     }//---->
     function loadLabPage(title, href, assign_id) {//---->
       $(".pSearchAreaWrapper").hide();
+      disableHeaderSearch(false);
       if (href.split(".")[1] != "html") {
         $('.pLabsWrapper').show();
         window.open(href/* .split("~").join("/") */);
@@ -1246,6 +1292,7 @@
           $(p.mShell).find('.pBookWrapper').show();
 
           $(".pSearchAreaWrapper").hide();
+          disableHeaderSearch(false);
           overlayDown()
           break;
         case "labmenu"://---->
@@ -1256,10 +1303,12 @@
           $(p.mShell).find(".pLabPageWrapper").hide();
           $(p.mShell).find(".pLabSubmitButton").hide();
           $(".pSearchAreaWrapper").hide();
+          disableHeaderSearch(false);
           overlayDown()
           break; //---->
         case "admin":
           overlayDown();
+          console.log(baseUrl);
           location.href = baseUrl + coreData.bookData.admin_link;
           //window.open("https://qa1.kineticmath.com/admin/class-wizard/list");
           break;
@@ -1279,6 +1328,7 @@
           break;
         case "setting":
           $(".pSearchAreaWrapper").hide();
+          disableHeaderSearch(false);
           location.hash = escape("type_" + _obj.type);
           if ($(p.mShell).find(".videoWrapper").hasClass("vOpen")) {
             videoPlayer.stopVideo();
@@ -1302,8 +1352,7 @@
           overlayDown()
           break;
         case "logout":
-          overlayDown();
-          logout();
+          overlayDown()
           break;
         case "play":
           overlayDown()
@@ -1403,6 +1452,7 @@
           $(p.mShell).find(".pLabSubmitButton").hide();
           $(p.mShell).find('.pBookWrapper').show();
           $(".pSearchAreaWrapper").hide();
+          disableHeaderSearch(false);
           overlayDown()
           break;
       }
@@ -1491,14 +1541,6 @@
       }
       $(p.mShell).find(".pMenu").removeClass('pSelected');
       $(p.mShell).find(".pMenuWrap").slideUp();
-    }
-    function logout() {
-      var logoutUrl = p.bookData.logout_link;
-      var loginPage = p.bookData.login_link;
-      $.get(logoutUrl)
-        .done((resp) => { console.log('Success'); window.location = loginPage;})
-        .fail((resp) => { console.log('Failure'); })
-      ;
     }
     this.loadScreen = function (data) {
       if (data.type != "labPage") {
