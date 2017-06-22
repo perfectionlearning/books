@@ -1492,6 +1492,9 @@
       $(p.mShell).find(".pMenu").removeClass('pSelected');
       $(p.mShell).find(".pMenuWrap").slideUp();
     }
+    //--------------------------------------------------------------------------
+    // Handle logout from dropdown menu.
+    //--------------------------------------------------------------------------
     function logout() {
       var logoutUrl = p.bookData.logout_link;
       var loginPage = p.bookData.login_link;
