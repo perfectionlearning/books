@@ -731,7 +731,8 @@
       $(p.mShell).find(".pButtons,.pSubMenuHeader").off(mouseEvents.down, mousedown).on(mouseEvents.down, mousedown);
       $(p.mShell).find(".pButtons,.sbt_btn").off(mouseEvents.up, mouseup).on(mouseEvents.up, mouseup);
       $(p.mShell).find(".pChapName").off(mouseEvents.down, mousedown).on(mouseEvents.down, mousedown);
-      $(p.mShell).find(".pChapName").off(mouseEvents.up, chapterUp).on(mouseEvents.up, chapterUp);
+      $(p.mShell).find(".pChapName").off("click", chapterUp).on("click", chapterUp);
+      //$(p.mShell).find(".pChapName").off(:, chapterUp).on(mouseEvents.up, chapterUp);
       $(p.mShell).find(".pLabTitle").off(mouseEvents.down, mousedown).on(mouseEvents.down, mousedown); //---->
       $(p.mShell).find(".pLabTitle").not(".pjumpToVideo").off("click", labChapterUp).on("click", labChapterUp); //---->
       $(p.mShell).find(".pSearch").off("click", showSearchBox).on("click", showSearchBox); //---->
@@ -1056,8 +1057,7 @@
       if ($(this).attr("data-jsact")) {
         loadJSActivity($(this).attr("data-jsact"));
       } else if ($(this).hasClass("activity")) {
-        window.open("http://car-run.herokuapp.com/");
-        //alert("Activity not included");
+        window.open("http://car-run.herokuapp.com/", "lab", "toolbar=yes,scrollbars=yes,resizable=yes,top=0,left=0,width=900,height=643");
       } else {
         var vFlag = $(this).attr('data-video');
         var ind = $(this).attr("data-ind");
@@ -1139,7 +1139,7 @@
     }
     function mouseup(e) {
       btnStateReset();
-      //e.stopImmediatePropagation();
+      e.stopImmediatePropagation();
       if (!$(this).hasClass("pDisable")) {
 
         playerbtnManager({

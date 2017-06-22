@@ -10,13 +10,17 @@
       showLoader();
       lab.assignID = data.id;
       lab.mShell = $('.mShell')[0];
-      lab.setLink = "https://qa1.perfectionlearning.com/api/rest/assign/" + lab.assignID + "/labdata/update";
-      lab.getLink = "https://qa1.perfectionlearning.com/api/rest/assign/" + lab.assignID + "/defn";
+      lab.setLink = ctrl.getDomain() + "/api/rest/assign/" + lab.assignID + "/labdata/update";
+      lab.getLink = ctrl.getDomain() + "/api/rest/assign/" + lab.assignID + "/defn";
       httpRequest(lab.getLink, "json", function (udata) {
         hideLoader();
         if (udata.hasOwnProperty("labData")) {
           lab.ans = $.parseJSON(udata.labData);
-          updateUserData();
+          if (lab.ans.hasOwnProperty("ques_0")) {
+            updateUserData();
+          } else {
+            createDataArray()
+          }
         } else {
           createDataArray()
         }
