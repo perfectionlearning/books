@@ -154,7 +154,19 @@
       $(q.mShell).find(".bOptionRow").off(mouseEvents.up).on(mouseEvents.up, radioUp);
       $(q.mShell).find(".pDisabler").off(mouseEvents.up).on(mouseEvents.up, overlayDown);
 
+      $(q.mShell).find('.pQuizCheck').off("keypress").on("keypress", "input", onEnterClick);
 
+
+
+
+    }
+    function onEnterClick(e) {
+      var _temp = {};
+      _temp.type = $(this).closest('.MathJax').parent().attr("data-type");
+      _temp._this = $(this).closest('.MathJax');
+      if (e.keyCode == 13 || e.keyCode == "13") {
+        playerbtnManager(_temp)
+      }
     }
     function radioUp() {
       $('.selected').removeClass("selected");

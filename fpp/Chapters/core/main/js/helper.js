@@ -37,7 +37,7 @@
     var curr = temp.indexOf(str);
 
 
-    if ((curr < 0) && e.keyCode != 8 && e.keyCode != 39 && e.keyCode != 37) {
+    if ((curr < 0) && e.keyCode != 8 && e.keyCode != 39 && e.keyCode != 37 && e.keyCode != 9 && e.keyCode != 13) {
       e.preventDefault();
     }
 
@@ -154,7 +154,7 @@
 
 
 
-  //===============================================================================
+//===============================================================================
   function shuffle(array) {
     var currentIndex = array.length, temporaryValue, randomIndex;
 
@@ -212,7 +212,7 @@
       $('.activityLoader').hide();
     }, 500)
   }
-  // create DOM element
+// create DOM element
   function createElement(_obj) {
     var elem = document.createElement(_obj.tagName);
     if (_obj.hasOwnProperty("attr")) {
@@ -298,6 +298,7 @@
     var availableWidth = $(".pJsActWrapper").width(),
       availableHeight = $(".pJsActWrapper").height(),
       scale, left, top, width, height;
+
     if (availableWidth > availableHeight) {
       height = availableHeight;
       width = height * shellWidth / shellHeight;
