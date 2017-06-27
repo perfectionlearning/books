@@ -325,6 +325,7 @@
                             "SectionTitle": "Advanced Motion Equations",
                             "subsection": [
                                 {
+								 "type": "activity",
                                     "SectionHeading": "Lesson Overview: Advanced Motion Equations",
                                     "ref": "lp_ch01l5a_ui.json"
                                 }

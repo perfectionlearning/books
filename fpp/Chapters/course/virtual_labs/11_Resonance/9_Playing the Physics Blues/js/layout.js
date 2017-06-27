@@ -29,7 +29,7 @@ var layout = {
 			over: "playIconO",
 			down: "playIconC",
 			props: {
-				x: 871.5,
+				x: 871.4,
 				y: 727,
 				scaleX: 0.5*1.25,
 				scaleY: 0.5*1.25,
@@ -58,7 +58,7 @@ var layout = {
 				font:"bold 18px Arial",
 				text:"--",
 				textAlign:"left",
-				color:"#FFFFFF"
+				color:"#000000"
 			}
 		},
 		{
@@ -71,7 +71,7 @@ var layout = {
 				font:"bold 18px Arial",
 				text:"Frequency:",
 				textAlign:"center",
-				color:"#FFFFFF"
+				color:"#000000"
 			}
 		},
 		{
@@ -80,11 +80,24 @@ var layout = {
 			namespace:"createjs",
 			props:{
 				x:132,
-				y:434.4,
+				y:436.4,
 				font:"bold 18px Arial",
 				text:"Length 16/16",
 				textAlign:"left",
-				color:"#FFFFFF"
+				color:"#000000"
+			}
+		},
+		{
+			name:"instrument",
+			type:"Text",
+			namespace:"createjs",
+			props:{
+				x:520,
+				y:436.4,
+				font:"bold 18px Arial",
+				text:"Bass",
+				textAlign:"center",
+				color:"#000000"
 			}
 		},
 		{
@@ -92,12 +105,12 @@ var layout = {
 			type:"Text",
 			namespace:"createjs",
 			props:{
-				x:522,
-				y:569,
-				font:"bold 18px Arial",
+				x:525,
+				y:564,
+				font:"bold 20px Arial",
 				text:"Additional instruments to play:",
 				textAlign:"center",
-				color:"#FFFFFF"
+				color:"#000000"
 			}
 		},
 		{
@@ -107,10 +120,10 @@ var layout = {
 			props:{
 				x:397,
 				y:650,
-				font:"18px Arial",
+				font:"bold 18px Arial",
 				text:"Bass",
 				textAlign:"center",
-				color:"#FFFFFF"
+				color:"#000000"
 			}
 		},
 		{
@@ -120,10 +133,10 @@ var layout = {
 			props:{
 				x:520,
 				y:650,
-				font:"18px Arial",
+				font:"bold 18px Arial",
 				text:"Guitar",
 				textAlign:"center",
-				color:"#FFFFFF"
+				color:"#000000"
 			}
 		},
 		{
@@ -133,10 +146,10 @@ var layout = {
 			props:{
 				x:643,
 				y:650,
-				font:"18px Arial",
+				font:"bold 18px Arial",
 				text:"Piano",
 				textAlign:"center",
-				color:"#FFFFFF"
+				color:"#000000"
 			}
 		},
 		{
@@ -185,18 +198,6 @@ var layout = {
 				x:475.1,
 				y:217,
 			}
-		},
-		{
-			name:"redHand",
-			namespace:"lib",
-			type:"Hand_Red",
-			props:{
-				x:90.95,
-				y:153.35,
-				regX:-10.325,
-				regY:55.7
-			},
-			hitBounds:{x:-33.325, y:-55.7, width:66.65, height:111.4}
 		},
 		{
 			name: "leftBridge",
@@ -322,7 +323,7 @@ var layout = {
 			namespace:"lib",
 			type:"BassView",
 			props:{
-				x:69.9,
+				x:69.4,
 				y:757.3,
 				visible:false
 			},
@@ -333,7 +334,7 @@ var layout = {
 			namespace:"lib",
 			type:"GuitarView",
 			props:{
-				x:210.3,
+				x:210.4,
 				y:757.3,
 			},
 			hitBounds:{x:-69.25,y:-30.95,width:138.5,height:61.9}
@@ -353,7 +354,7 @@ var layout = {
 			namespace:"lib",
 			type:"BassClick",
 			props:{
-				x:210.2,
+				x:210.4,
 				y:767.2,
 			}
 		},
@@ -362,7 +363,7 @@ var layout = {
 			namespace:"lib",
 			type:"Guitarclick",
 			props:{
-				x:210.2,
+				x:210.4,
 				y:767.2,
 				visible:false
 			}
@@ -372,7 +373,7 @@ var layout = {
 			namespace:"lib",
 			type:"PianoClick",
 			props:{
-				x:210.2,
+				x:210.5,
 				y:767.2,
 				visible:false
 			}
@@ -472,6 +473,18 @@ var layout = {
 				color:"#FFFFFF",
 				visible:true,
 			}
+		},
+		{
+			name:"redHand",
+			namespace:"lib",
+			type:"Hand_Red",
+			props:{
+				x:90.95,
+				y:153.35,
+				regX:-10.325,
+				regY:55.7
+			},
+			hitBounds:{x:-33.325, y:-55.7, width:66.65, height:111.4}
 		},
 	]
 }

@@ -189,8 +189,12 @@ scaledValue.scalableProps = ["x", "y", "width", "height", "regX", "regY", "font"
 var sV = scaledValue;// shortcut
 
 function playSound(id, loop) {
+	// createjs.Sound.stop();
+	return createjs.Sound.play(id, createjs.Sound.INTERRUPT_EARLY, 0, 0, loop);
+}
+
+function stopSound() {
 	createjs.Sound.stop();
-	createjs.Sound.play(id, createjs.Sound.INTERRUPT_EARLY, 0, 0, loop);
 }
 
 (function() { 
@@ -205,7 +209,7 @@ function playSound(id, loop) {
     var length = methods.length;
     var console = (window.console = window.console || {});
     while (length--) {
-        // method = methods[length];
+        method = methods[length];
 		console[method] = noop;
     }
 }());

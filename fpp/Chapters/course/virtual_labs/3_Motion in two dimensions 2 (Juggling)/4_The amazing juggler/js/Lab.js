@@ -2,12 +2,13 @@ var Lab = (function () {
 	function Activity() {
 		createjs.Container.call(this);
 		this.unit = 200;
-		this.timeStep = 0.005;
+		this.timeStep = 0.0025;
 		this._enterFrame = this._enterFrame.bind(this);
 		this._play = this._play.bind(this);
 		this._pause = this._pause.bind(this);
 		this.reset = this.reset.bind(this);
 		this._delay = 0.2;
+		this._multiplier = 0.9;
 	}
 
 	Activity.prototype = Object.create(createjs.Container.prototype);
@@ -48,12 +49,18 @@ var Lab = (function () {
 			direction:1,
 			leftThreshold:22,
 			rightThreshold:17,
+			_multiplier:this._multiplier,
 		});
 		this.leftHand.addEventListener("ballThrown", function(e){
 			if(e.data.ball){
 				e.data.ball.Vy = -scope.layout.stepperY.value;
 				e.data.ball.Vx = -e.data.ball.Vx;
-				e.data.ball.hand = null;
+				e.data.ball.x = scope.leftHand.defaults.x + scope.leftHand.offset;
+				var ball = scope._nextBall(e.data.ball.id);
+				if(ball){
+					ball.visible = true;
+					scope.leftHand.catch(ball);
+				}
 			}
 		});
 
@@ -62,13 +69,14 @@ var Lab = (function () {
 			direction:-1,
 			leftThreshold:17,
 			rightThreshold:25,
-			duration:200
+			// duration:100,
+			_multiplier:this._multiplier,
 		});
 		this.rightHand.addEventListener("ballThrown", function(e){
 			if(e.data.ball){
 				e.data.ball.Vy = -scope.layout.stepperY.value;
 				e.data.ball.Vx = -e.data.ball.Vx;
-				e.data.ball.hand = null;
+				e.data.ball.x = scope.rightHand.defaults.x - scope.rightHand.offset;
 			}
 		});
 		this.reset();
@@ -90,86 +98,145 @@ var Lab = (function () {
 	}
 
 	Activity.prototype._enterFrame = function () {
-		for(var r = 0; r < 8; r++){
-			this.time = (this.time + this.timeStep).toFixed(3) * 1;
-			this.allBalls.forEach(function(ball, n){
-				if(this.time == Number((ball.startTime + 0.15 * n).toFixed(5)) && !ball.started){
-					// if(this._checkBallInHand(ball, ball.hand)){
-					// 	ball.hand.catchAndThrow(ball);
-					// 	ball.started = true;
-					// }
-					ball.visible = true;
-					if(ball.hand.ball && ball.hand.ball.isPrime){
-						ball.inHand = false;
-						// ball.Vx = 0;
-						// ball.Vy = 0;
-						ball.fallDown = true;
-						return false;
+		for(var r = 0; r < 20 * this._multiplier; r++){
+			this.time = (this.time + this.timeStep).toFixed(5) * 1;
+
+			// start the simulation with throwing the first ball
+			if(this.time == 0){
+				this.leftHand.catchAndThrow(this.allBalls[0]);
+			}
+			//
+			// console.log(Number((this.time % this._delay).toFixed(4)))
+			if(this.leftHand.ball){
+				if(this._delay < 1 || true){
+					var t = this.time * 10;
+					var d = this._delay * 10;
+					if(d == 2 ){
+						d = 3;
 					}
-					ball.hand.catchAndThrow(ball);
-					ball.started = true;
-					if(this.allBalls[ball.id + 1]){
-						this.allBalls[ball.id + 1].visible = true;
+					if(d == 10 ){
+						d = 9;
 					}
-					
+					if(Number((t % d).toFixed(4)) == 0){
+						this.leftHand.catchAndThrow(this.leftHand.ball);
+					}
 				}
+			}
+			
+			this.allBalls.forEach(function(ball){
 				if(!ball.inHand && !ball.outOfRange){
 					ball.propogate();
 					if(ball.Vy > 0 && !ball.fallDown){
 						if(this.leftHand.catchCondition(ball)){
-							
-							for(var k = ball.id; k < this.allBalls.length; k++){
-								if(!this.allBalls[k].started || this.allBalls[k].hand == this.leftHand){
-									this.allBalls[k].started = true;
-									this.allBalls[k].visible = true;
-									this.allBalls[k].fallDown = true;
-									this.allBalls[k].inHand = false;
+							if(this.leftHand.ball && this.leftHand.ball != ball){
+								if(ball.isPrime){
+									this.leftHand.ball.inHand = false;
+									this.leftHand.ball.fallDown = true;
 								}
-							}
-							if(this.leftHand.ball){
 								if(this.leftHand.ball.isPrime){
 									return;
 								}
-								if(ball.isPrime || true){
-									// this.leftHand.ball.Vy = 0;
-									// this.leftHand.ball.Vx = 0;
-									this.leftHand.ball.fallDown = true;
-									this.leftHand.ball.inHand = false;
-									ball.hand = this.leftHand;
-									this.leftHand.catchAndThrow(ball);
-									
-									return false;
-								}
 							}
-							
-							ball.hand = this.leftHand;
-							this.leftHand.catchAndThrow(ball);
+							this.leftHand.catch(ball);
 						} else if(this.rightHand.catchCondition(ball)){
-							if(this.rightHand.ball){
+							if(this.rightHand.ball && this.rightHand.ball != ball){
+								if(ball.isPrime){
+									this.rightHand.ball.inHand = false;
+									this.leftHand.ball.fallDown = true;
+								}
 								if(this.rightHand.ball.isPrime){
-									console.log("here")
 									return;
 								}
-								if(ball.isPrime || true){
-									// this.rightHand.ball.Vy = 0;
-									// this.rightHand.ball.Vx = 0;
-									this.rightHand.ball.fallDown = true;
-									this.rightHand.ball.inHand = false;
-									ball.hand = this.rightHand;
-									this.rightHand.catchAndThrow(ball);
-									console.log(ball.displayObject.name)
-									return false;
-								}
 							}
-							ball.hand = this.rightHand;
 							this.rightHand.catchAndThrow(ball);
 						}
-						
 					}
 				}
+
+				// if(this.time == Number((ball.startTime + 0.15).toFixed(5)) && !ball.started){
+				// 	// if(this._checkBallInHand(ball, ball.hand)){
+				// 	// 	ball.hand.catchAndThrow(ball);
+				// 	// 	ball.started = true;
+				// 	// }
+				// 	console.log(ball.id)
+				// 	ball.visible = true;
+				// 	if(ball.hand.ball && ball.hand.ball.isPrime){
+				// 		ball.inHand = false;
+				// 		// ball.Vx = 0;
+				// 		// ball.Vy = 0;
+				// 		ball.fallDown = true;
+				// 		return false;
+				// 	}
+				// 	ball.hand.catchAndThrow(ball);
+				// 	ball.started = true;
+				// 	if(this.allBalls[ball.id + 1]){
+				// 		this.allBalls[ball.id + 1].visible = true;
+				// 	}
+					
+				// }
+				// if(!ball.inHand && !ball.outOfRange){
+				// 	ball.propogate();
+				// 	if(ball.Vy > 0 && !ball.fallDown){
+				// 		if(this.leftHand.catchCondition(ball)){
+				// 			if(this.leftHand.ball){
+				// 				if(this.leftHand.ball.isPrime){
+				// 					return;
+				// 				}
+				// 				if(ball.isPrime || true){
+				// 					// this.leftHand.ball.Vy = 0;
+				// 					// this.leftHand.ball.Vx = 0;
+				// 					this.leftHand.ball.fallDown = true;
+				// 					this.leftHand.ball.inHand = false;
+				// 					ball.hand = this.leftHand;
+				// 					this.leftHand.catchAndThrow(ball);
+									
+				// 					return false;
+				// 				}
+				// 			}
+							
+				// 			for(var k = ball.id; k < this.allBalls.length; k++){
+				// 				if(!this.allBalls[k].started){
+				// 					this.allBalls[k].started = true;
+				// 					this.allBalls[k].visible = true;
+				// 					this.allBalls[k].fallDown = true;
+				// 					this.allBalls[k].inHand = false;
+				// 				}
+				// 			}
+				// 			ball.hand = this.leftHand;
+				// 			this.leftHand.catchAndThrow(ball);
+				// 		} else if(this.rightHand.catchCondition(ball)){
+				// 			if(this.rightHand.ball){
+				// 				if(this.rightHand.ball.isPrime){
+				// 					return;
+				// 				}
+				// 				if(ball.isPrime || true){
+				// 					// this.rightHand.ball.Vy = 0;
+				// 					// this.rightHand.ball.Vx = 0;
+				// 					this.rightHand.ball.fallDown = true;
+				// 					this.rightHand.ball.inHand = false;
+				// 					ball.hand = this.rightHand;
+				// 					this.rightHand.catchAndThrow(ball);
+				// 					return false;
+				// 				}
+				// 			}
+				// 			ball.hand = this.rightHand;
+				// 			this.rightHand.catchAndThrow(ball);
+				// 		}
+						
+				// 	}
+				// }
 			}, this);
 		}
 		this.layout.time.text = this.time.toFixed(2) + " s";
+	}
+
+	Activity.prototype._nextBall = function (id) {
+		for(var i = id + 1; i < this.allBalls.length; i++){
+			if(this.allBalls[i] && !this.allBalls[i].started){
+				this.allBalls[i].started = true;
+				return this.allBalls[i];
+			}
+		}
 	}
 
 	Activity.prototype._play = function () {
@@ -184,7 +251,7 @@ var Lab = (function () {
 				ball.inHand = true;
 				ball.started = false;
 				ball.visible = i == 0;
-				console.log(ball.startTime + 0.15)
+				// console.log(ball.startTime + 0.15)
 				startTime += this._delay;
 			}, this);
 			
@@ -264,6 +331,7 @@ var HandClass = (function(){
 		this.displayObject = o.displayObject;
 		this.direction = o.direction;
 		this.duration = o.duration;
+		this._multiplier = o._multiplier;
 		this.defaults = {
 			x:o.displayObject.x,
 			y:o.displayObject.y
@@ -285,6 +353,13 @@ var HandClass = (function(){
 		createjs.Tween.get(this.displayObject, {override:true});
 	};
 
+	Class.prototype.catch = function(ball){
+		this.ball = ball;
+		ball.inHand = true;
+		ball.hand = this;
+		this._updateBall();
+	}
+
 	Class.prototype.catchCondition = function(ball){
 		if(ball.y >= this.y - 5 && ball.y <= this.y){
 			if((ball.x >= this.x - this.leftThreshold) && (ball.x <= this.x + this.rightThreshold)){
@@ -298,7 +373,7 @@ var HandClass = (function(){
 		this.catched = true;
 		this.ball = ball;
 		ball.inHand = true;
-		var d = this.duration || 130;
+		var d = (this.duration || 120) / this._multiplier;
 		
 		createjs.Tween.get(this.displayObject, {override:true}).to({x:this.defaults.x}, 0).to({x:this.defaults.x + this.offset * this.direction}, d);
 		createjs.Tween.get(this.displayObject).to({y:this.defaults.y + this.offset / 2}, d/2, createjs.Ease.circOut).to({y:this.defaults.y}, d / 2, createjs.Ease.circIn).call(function(){
@@ -314,9 +389,8 @@ var HandClass = (function(){
 			e.data = {
 				ball:ball
 			}
-			scope.dispatchEvent(e);
 			scope.reset();
-			
+			scope.dispatchEvent(e);
 		}).addEventListener("change", this._updateBall);
 	}
 	

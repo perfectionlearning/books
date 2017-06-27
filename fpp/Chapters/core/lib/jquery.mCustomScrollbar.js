@@ -954,10 +954,10 @@
             mCSB_scrollTools = $(".mCSB_" + d.idx + "_scrollbar:first"),
             tabindex = !_isNumeric(o.scrollButtons.tabindex) ? "" : "tabindex='" + o.scrollButtons.tabindex + "'",
             btnHTML = [
-              "<a href='#' class='" + classes[13] + "' " + tabindex + " />",
-              "<a href='#' class='" + classes[14] + "' " + tabindex + " />",
-              "<a href='#' class='" + classes[15] + "' " + tabindex + " />",
-              "<a href='#' class='" + classes[16] + "' " + tabindex + " />"
+              "<a href='#' class='" + classes[13] + "' " + tabindex + " tabindex='-1'/>",
+              "<a href='#' class='" + classes[14] + "' " + tabindex + " tabindex='-1'/>",
+              "<a href='#' class='" + classes[15] + "' " + tabindex + " tabindex='-1'/>",
+              "<a href='#' class='" + classes[16] + "' " + tabindex + " tabindex='-1'/>"
             ],
             btn = [(o.axis === "x" ? btnHTML[2] : btnHTML[0]), (o.axis === "x" ? btnHTML[3] : btnHTML[1]), btnHTML[2], btnHTML[3]];
           if (o.scrollButtons.enable) {

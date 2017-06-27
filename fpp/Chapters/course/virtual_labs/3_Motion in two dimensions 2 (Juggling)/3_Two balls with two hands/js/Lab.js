@@ -373,7 +373,7 @@ var HandClass = (function(){
 		this.catched = true;
 		this.ball = ball;
 		ball.inHand = true;
-		var d = (this.duration || 60) / this._multiplier;
+		var d = (this.duration || 120) / this._multiplier;
 		
 		createjs.Tween.get(this.displayObject, {override:true}).to({x:this.defaults.x}, 0).to({x:this.defaults.x + this.offset * this.direction}, d);
 		createjs.Tween.get(this.displayObject).to({y:this.defaults.y + this.offset / 2}, d/2, createjs.Ease.circOut).to({y:this.defaults.y}, d / 2, createjs.Ease.circIn).call(function(){

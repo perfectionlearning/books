@@ -123,7 +123,10 @@ var Lab = (function () {
 	}
 	function playAnimation(e) {
 		var soundId = "sound"+ Model.ratioText[Model.currentId-1];
-		playSound(soundId, false);
+		if(this.sound){
+			createjs.Tween.get(this.sound).to({volume:0}, 100);
+		}
+		this.sound = playSound(soundId, false);
 		mc = scope.layout.whiteHand;
 		mc.visible = true;
 		mc.uncache();

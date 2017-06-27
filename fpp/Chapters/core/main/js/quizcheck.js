@@ -53,9 +53,13 @@
       MathJax.Hub.Queue(["Typeset", MathJax.Hub, math]);
       bindEvents();
       hideLoader();
-      setTimeout(function () {
-        setMaxLength();
-      }, 1000)
+      var _interval = setInterval(function () {
+        if ($('.pQuizCheck .pAnsWrap').find("input").length > 0) {
+          setMaxLength();
+          clearInterval(_interval);
+        }
+      }, 200)
+
     }
     function appendResource() {
       $(".resource").remove();
@@ -252,9 +256,13 @@
       $('.pQuizCheck .pQuizStepWrap').fadeIn();
       bindEvents();
       hideLoader();
-      setTimeout(function () {
-        setMaxLength(q.stepIndex);
-      }, 2000)
+      var _interval = setInterval(function () {
+        if ($('#step_' + q.stepIndex + ' .userInputWrap').find("input").length > 0) {
+          setMaxLength(q.stepIndex);
+          clearInterval(_interval);
+        }
+      }, 200)
+
     }
     this.loadSolution = function () {
       showSolutionFlag = true;
@@ -682,13 +690,19 @@
       }
     }
     function setMaxLength(stepId) {
+      $('input,a,button,textarea').attr('tabindex', '-1')
+      $('.pQuizCheck').find("input").each(function (i) {
+        $(this).attr('tabindex', (i + 1));
+      });
       if (typeof stepId == "undefined") {
         $('.pQuizCheck .pAnsWrap').find("input").each(function (i) {
           $(this).attr("maxlength", q.screenData["maxLength"][i]);
+          $(this).attr("size", q.screenData["maxLength"][i]);
         })
       } else {
         $('#step_' + stepId + ' .userInputWrap').find("input").each(function (i) {
           $(this).attr("maxlength", q.screenData["solve"][stepId]["maxLength"][i]);
+          $(this).attr("size", q.screenData["solve"][stepId]["maxLength"][i]);
         })
       }
     }
