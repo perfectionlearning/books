@@ -93,7 +93,22 @@
           loadHtml({
             src: "course/template/activity.html",
             parent: p.mContainer,
-            next: "videoPlayer"
+            next: "help"
+          });
+          break;
+        case "help":
+          loadHtml({
+            src: "course/template/help.html",
+            parent: ".pActivityWrapper",
+            next: "videoPlayer",
+            callback: function () {
+              $(".pHelpBody").mCustomScrollbar({
+                theme: "dark-3",
+                axis: "y",
+                scrollInertia: 0, mouseWheelPixels: 50,
+                scrollButtons: {enable: true}
+              });
+            }
           });
           break;
         case "videoPlayer":
@@ -492,7 +507,6 @@
         //$(p.mShell).find(".pVideoIcon").css("height", maxHeight + "px")
         $(p.mShell).find(".pActivityDesc").html(desc);
         $(p.mShell).find(".pActivityHeader").html(data.screenNo + " " + _tempScreenData.SectionHeading);
-        console.log(data.screenNo)
         $(p.mShell).find('.pActivityArea .pActivityBody').mCustomScrollbar({
           theme: "dark-3",
           axis: "y",
@@ -641,6 +655,17 @@
       $('.quizNavButtons').hide();
       disableHeaderSearch(false);
       switch (type) {
+        case "help":
+          $(p.mShell).find('.pMainHelpWrapper').show();
+          $(p.mShell).find('.pSubmenuButton').hide();
+          $(p.mShell).find('.navButtons').hide();
+          $(p.mShell).find('.pActivityArea').hide();
+          $(p.mShell).find('.pQuizBoard').hide();
+          $(p.mShell).find('.pQuizCheck').hide();
+          $(p.mShell).find('.pActivitySummary').hide();
+          $(p.mShell).find('.pJsActWrapper').hide();
+          $(p.mShell).find('.pSettingArea').hide();
+          break;
         case "summary":
           $(p.mShell).find('.pActivitySummary').show();
           $(p.mShell).find('.pQuizBoard').hide();
@@ -648,9 +673,9 @@
           $(p.mShell).find('.pActivityArea').hide();
           $(p.mShell).find('.pJsActWrapper').hide();
           $(p.mShell).find('.pSettingArea').hide();
+          $(p.mShell).find('.pMainHelpWrapper').hide();
           break;
         case "quizboard":
-
           $(p.mShell).find('.pQuizBoard').show();
           $(p.mShell).find('.pQuizBoard .pActivityBody').show();
           $(p.mShell).find('.pQuizBoard .pQuizboard_ques_wrap').hide();
@@ -659,6 +684,7 @@
           $(p.mShell).find('.pActivitySummary').hide();
           $(p.mShell).find('.pJsActWrapper').hide();
           $(p.mShell).find('.pSettingArea').hide();
+          $(p.mShell).find('.pMainHelpWrapper').hide();
           break;
         case "quizcheck":
           $(p.mShell).find('.pQuizCheck').show();
@@ -667,6 +693,7 @@
           $(p.mShell).find('.pActivitySummary').hide();
           $(p.mShell).find('.pJsActWrapper').hide();
           $(p.mShell).find('.pSettingArea').hide();
+          $(p.mShell).find('.pMainHelpWrapper').hide();
           break;
         case "videoScreen":
           $(p.mShell).find('.pActivityArea').show();
@@ -675,6 +702,7 @@
           $(p.mShell).find('.pActivitySummary').hide();
           $(p.mShell).find('.pJsActWrapper').hide();
           $(p.mShell).find('.pSettingArea').hide();
+          $(p.mShell).find('.pMainHelpWrapper').hide();
           break;
         case "labmenu":
           $('.pActivityWrapper').hide();
@@ -683,6 +711,7 @@
           $('.pLabsWrapper').show();
           $(p.mShell).find(".pLabPageWrapper").hide();
           $(p.mShell).find(".pLabSubmitButton").hide();
+          $(p.mShell).find('.pMainHelpWrapper').hide();
           break;
         case "jsact":
           $('.pActivityWrapper').hide();
@@ -692,6 +721,7 @@
           $(p.mShell).find('.pActivitySummary').hide();
           $(p.mShell).find('.pSettingArea').hide();
           $(p.mShell).find('.pJsActWrapper').show();
+          $(p.mShell).find('.pMainHelpWrapper').hide();
           break;
         case "search":
           $('.pBookWrapper').hide();
@@ -704,6 +734,7 @@
           $(p.mShell).find('.pQuizCheck').hide();
           $(p.mShell).find('.pActivitySummary').hide();
           $(p.mShell).find('.pSettingArea').hide();
+          $(p.mShell).find('.pMainHelpWrapper').hide();
           disableHeaderSearch(true);
           break;
       }
@@ -1349,11 +1380,13 @@
           overlayDown();
           break;
         case "help":
+          location.hash = escape("type_" + _obj.type);
+          p.currentType = "help";
+          manageScreen(p.currentType);
           overlayDown()
           break;
         case "logout":
-          overlayDown();
-          logout();
+          overlayDown()
           break;
         case "play":
           overlayDown()
@@ -1456,6 +1489,18 @@
           disableHeaderSearch(false);
           overlayDown()
           break;
+        case 'studentHelp':
+          $('.pMainHelpWrapper .pButtons').removeClass('selected');
+          $(_obj._this).addClass("selected");
+          $(".phelpInnerWrap[data-type = 'TeacherHelpBody']").hide();
+          $(".phelpInnerWrap[data-type='studentHelpBody']").show();
+          break;
+        case 'TeacherHelp':
+          $('.pMainHelpWrapper .pButtons').removeClass('selected');
+          $(_obj._this).addClass("selected");
+          $(".phelpInnerWrap[data-type='studentHelpBody']").hide();
+          $(".phelpInnerWrap[data-type='TeacherHelpBody']").show();
+          break;
       }
     }
     function validatePassword() {
@@ -1543,15 +1588,6 @@
       $(p.mShell).find(".pMenu").removeClass('pSelected');
       $(p.mShell).find(".pMenuWrap").slideUp();
     }
-    function logout() {
-      var logoutUrl = p.bookData.logout_link;
-      var loginPage = p.bookData.login_link;
-      $.get(logoutUrl)
-        .done((resp) => { console.log('Success'); window.location = loginPage;})
-        .fail((resp) => { console.log('Failure'); })
-      ;
-    }
-
     this.loadScreen = function (data) {
       if (data.type != "labPage") {
         playerbtnManager(data);

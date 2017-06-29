@@ -183,6 +183,7 @@
       $('.pActivityArea').hide();
       $('.pActivitySummary').hide();
       $('.pLabsWrapper').hide();
+      $('.pMainHelpWrapper').hide();
       $('.pVideoMainWrapper').show();
       if (typeof playVideo == "undefined") {
         $('.pButtons[data-type="play"]').removeClass("pPlay").addClass("pPause");

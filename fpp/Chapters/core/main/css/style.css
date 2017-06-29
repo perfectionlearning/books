@@ -2135,6 +2135,102 @@ input.loginInput {
     display: none
 }
 /*---------Setting End---------*/
+
+/*---------Help Start---------*/
+.pMainHelpWrapper{
+    width:100%;
+    height:100%;
+    position: relative;
+    float:left;
+    display:none;
+}
+.pHelpHeader{
+    position: relative;
+    width:100%;
+    height:35px;
+    line-height: 35px;
+    padding-left:20px;
+    padding-right: 24px;
+    background-color: #3498db;
+    color:#ffffff;
+    font-size: 18px;
+    font-family: AvenirNextLTPro-Demi;
+    
+}
+.pHelpBody{
+    width:100%;
+    height:calc(100% -  36px);
+    position: relative;
+    padding: 20px 20px;
+    padding-bottom: 0px;
+    font-size: 17px;
+    color:#333333;
+    overflow: hidden;
+    font-family: AvenirNextLTPro-Regular;
+    padding-right: 15px;
+
+}
+.pMainHelpWrapper .pButtons{
+    width:105px;
+    height:29px;
+    line-height: 29px;
+    background-image: none;
+    float:right;
+    text-align: center;
+    top: 6px;
+    margin-right: 6px;
+    background-color: #33b0ff;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.pMainHelpWrapper .pButtons.selected{
+    background-color: #ffa500;
+}
+.phelpBodyHeader{
+    margin-bottom: 20px;
+}
+.pHelpRow{
+    width:100%;
+    text-align: center;
+    overflow: hidden;
+  
+}
+.pHelpIconWrap{
+    width:334px;
+    height:225px;
+    padding: 6px;
+    border:1px solid #e2e2e2;
+    display:inline-block;
+    cursor: pointer;
+      margin-bottom: 30px;
+}
+.pHelpIconWrap:nth-child(even){
+    margin-left: 15px;
+}
+.pHelpIconWrap:nth-child(odd)   {
+    margin-right: 15px;
+}
+.pHelpIcon{
+    width:320px;
+    height:175px;
+    background-image:url('/books/fpp/Chapters/core/main/assets/images/img01.png');
+    background-repeat: no-repeat;
+    position: relative;
+        
+    
+}
+.pHelpDesc{
+    width:100%;
+    height:36px;
+    line-height: 42px;
+    font-size: 16px;
+    color:#1a77b6;
+    
+}
+.phelpInnerWrap[data-type='TeacherHelpBody']{
+    display: none;
+}
+/*---------Help End---------*/
   @media only screen and  (max-width: 950px){
        .pQuizWrap{
             width:100%;

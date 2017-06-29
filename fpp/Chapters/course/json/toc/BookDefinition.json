@@ -2250,7 +2250,7 @@
                                     "ref": "expsec_e777.json"
                                 },
                                 {
-                                    "type": "activity",
+                                    "type": "videoScreen",
                                     "SectionHeading": "Activity: Explore free-body diagrams",
                                     "ref": "actsec_ka49.json"
                                 },
@@ -2301,7 +2301,7 @@
                             "SectionTitle": "Forces and trigonometry",
                             "subsection": [
                                 {
-                                    "type": "activity",
+                                    "type": "videoScreen",
                                     "SectionHeading": "Activity: Forces not on a line",
                                     "ref": "actsec_ka50.json"
                                 },
