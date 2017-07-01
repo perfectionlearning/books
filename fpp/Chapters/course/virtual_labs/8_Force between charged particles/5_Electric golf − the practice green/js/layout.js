@@ -189,6 +189,14 @@ var layout = {
 				_charge:1,
 			}
 		},{
+			name: "ball2",
+			namespace: "lib",
+			type: "Golf_Ball",
+			transform:[1000,430.3,1.6,1.6],
+			props:{
+				_charge:1,
+			}
+		},{
 			name: "YouDidIt",
 			namespace: "lib",
 			type: "YouDidIt",

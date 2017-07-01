@@ -142,20 +142,20 @@
 	//Create Increment and Decrement button
 	//=======================================================
 	function __createIncDecButton(){
-		var incDecBtnImg = new CAAT.Foundation.SpriteImage().initialize( game._director.getImage('incre_decre_btn'), 2, 1);
+		var incDecBtnImg = new CAAT.Foundation.SpriteImage().initialize( game._director.getImage('incre_decre_btn'), 1, 2);
 		var iniVelIncBtn = new CAAT.Foundation.Actor().
 								setId('iniVelInc').
-								setAsButton(incDecBtnImg.getRef(), 0, 0, 0, 0, function(button){
+								setAsButton(incDecBtnImg.getRef(), 0, 0, 1, 1, function(button){
 								
-								}).setLocation(380, 35);
+								}).setLocation(375, 20);
 		var iniVelDecBtn = new CAAT.Foundation.Actor().
 								setId('iniVelDec').
 								setAsButton(incDecBtnImg.getRef(), 1, 1, 1, 1, function(button){
 									
-								}).setLocation(380, 44);
+								}).setLocation(374, 48);
 								
-			if ("ontouchstart" in document.documentElement)
-			{
+			// if ("ontouchstart" in document.documentElement)
+			// {
   					dashBG.addChild(iniVelIncBtn);
 					dashBG.addChild(iniVelDecBtn);
 		
@@ -167,7 +167,7 @@
 					//the increment and decrement buttons MouseDown functions are called when long press
 					iniVelDecBtn.mouseDown = game.incDecMDown;
 					iniVelDecBtn.mouseUp = game.incDecMUp;
-			}
+			// }
 	}
 	//=====================================================
 	//create Dashboard Button Container

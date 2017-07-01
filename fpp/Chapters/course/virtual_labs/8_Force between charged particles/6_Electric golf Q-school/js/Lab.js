@@ -4,9 +4,9 @@ var Lab = (function(){
 		this._unit =192.47;//  calculated from legacy and converted from 760 to 1024 px screen size.
 		this._putterCharge = 0;
 		this.started=false;
-		this.stdDist=48;
-		this.stdForce=2.30 * Math.pow(10,-26);
-		this.stdMag=10/this._unit;
+		this.stdDist=598;
+		this.stdForce=8.16 * Math.pow(10,-26);
+		this.stdMag=100/this._unit;
 		
 		this.K=8990000000;
 		this.protonMass = 1.6 * Math.pow(10,-27);
@@ -132,6 +132,7 @@ var Lab = (function(){
 		this.force =  (this.K * this._putterCharge * this.protonCharge * this.protonCharge)/Math.pow(this.ballPutterDist,2);
 		var ratio = this.force / this.stdForce;
 		this.dist = this.stdDist * ratio;
+		console.log(this.dist);
 		this.displacement = this.layout.ball.x + this.dist;
 		if(!(this.displacement <= this.layout.putter.x + 5)){
 			createjs.Tween.get(this.layout.ball, {override:true}).to({x:(this.layout.ball.x + this.dist)}, 1000, createjs.Ease.quadOut).call(this._checkHole);
