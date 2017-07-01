@@ -2219,6 +2219,18 @@ input.loginInput {
         
     
 }
+.quickcheckHelp{
+     background-image:url('/books/fpp/Chapters/core/main/assets/images/quickcheck.png');
+}
+.ohwHelp{
+     background-image:url('/books/fpp/Chapters/core/main/assets/images/ohw.png');
+}
+.enrollHelp{
+     background-image:url('/books/fpp/Chapters/core/main/assets/images/admin.png');
+}
+.gradeHelp{
+     background-image:url('/books/fpp/Chapters/core/main/assets/images/grades.png');
+}
 .pHelpDesc{
     width:100%;
     height:36px;

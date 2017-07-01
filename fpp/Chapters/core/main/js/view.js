@@ -196,6 +196,8 @@
           $('.pGrades').remove();
           $(".pSettingComp[data-type='email']").remove();
           $(".pChapName[data-chapter='27']").remove();
+          $(".pMainHelpWrapper .pButtons[data-type = 'TeacherHelp']").remove();
+          $(".phelpInnerWrap[data-type = 'TeacherHelpBody']").remove();
           break;
 
       }
