@@ -2257,6 +2257,12 @@ input.loginInput {
             width: 260px;
 
     }
+       .pHelpIconWrap:nth-child(even){
+        margin-left:0px;
+    }
+    .pHelpIconWrap:nth-child(odd) {
+            margin-right:0px;
+    }
 
 }
 @media only screen and  (max-width: 735px){
