@@ -1,0 +1,25 @@
+{
+	"cards": [{
+			"lines": [{
+					"type": "title",
+					"text": "Scatter plot of speed versus time"
+				}, {
+					"type": "headline",
+					"text": "Each row of data is an ordered pair"
+				}
+			]
+		}, {
+			"lines": [{
+					"type": "title",
+					"text": "Modeling data"
+				}, {
+					"type": "headline",
+					"text": "Measure difference between data and line"
+				}
+			]
+		}
+	],
+	"definitions": [],
+	"secText": ["  <b>Lesson:</b>  <b>    <br />  </b>1. Review slope/intercept form of line (link to appendix, it’s the first topic).<br />2. Discuss what a <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='wb_models_variance'>scatter plot</a> is − show or <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='wb_scatterplot'>create a plot</a>. <br />3. Discuss <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='wb_plot_residuals'>forms of correlation</a><br />4. <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='wb_models_variance'>Regress data</a> using data in text or other linear data. <br />5. Use the graph and determine the coefficient of determination. ", "6. Discuss: Does the line look like a good fit?  What is the coefficient?<br />7. Do <a class='pjumpToTopic' href='javascript:void(0)' data-chap='25' data-topic='1' data-subtopic='4' data-subsection='2'>regression for data</a> that is not linear. The text provides one example or provide your own.  ", "8. Contrast the visual appearance of the trend lines and their relationship to the data with the coefficients of determination.", "9. Discuss <a class='pjumpToTopic' href='javascript:void(0)' data-chap='22' data-topic='2' data-subtopic='2' data-subsection='0'>exponential decay</a> and its <a class='pjumpToTopic' href='javascript:void(0)' data-chap='25' data-topic='1' data-subtopic='4' data-subsection='4'>graph</a>.  ", "10. Show regression using a non-linear equation works, using <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='wb_models_variance'>exponential growth</a> as your example (25.5.f). ", "11. Depending on time, interest and availability of technology: The book contains step-by-step instructions for scatter plots/regression using a calculator or spreadsheet.", "  <b>Quick Review:</b>  <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='wb_models_variance'>Regression</a> and <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='wb_models03'>coefficient of determination</a>"],
+	"objNames": ["wb_scatterplot", "wb_models_variance"]
+}

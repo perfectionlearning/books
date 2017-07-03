@@ -1,0 +1,25 @@
+{
+	"cards": [{
+			"lines": [{
+					"type": "title",
+					"text": "Scatter plot of speed versus time"
+				}, {
+					"type": "headline",
+					"text": "Each row of data is an ordered pair"
+				}
+			]
+		}, {
+			"lines": [{
+					"type": "title",
+					"text": "Modeling data"
+				}, {
+					"type": "headline",
+					"text": "Measure difference between data and line"
+				}
+			]
+		}
+	],
+	"definitions": [],
+	"secText": ["  <b>Essential Question</b>  <b>s</b>  <b>:</b>  <b></b>  <b>    <br />  </b>What is a scatter plot?", "What is a trend line?", "What is regression?", "What is coefficient of determination?", "What is exponential decay?  Growth?", "  <b>Enduring Understandings</b>  <b>:</b>  <b>    <br />  </b>1. A scatter plot is a graph of ordered pairs (two variables).<br />2. A trend line is a line that best matches the data − it is closest on average to the data points.", "3. Regression is a process for generating an equation that matches data.", "4. The coefficient of determination is the measure of how well an equation matches data.<br /><br />", "  <b>Vocab</b>  <b>ulary:</b> Scatter plot, regression, coefficient of determination, exponential growth, exponential decay", "  <b>STEM Skills:</b>  <b>    <br />  </b>1. Review graphing a line in slope/intercept form. (This is in math appendix).<br />2. Review graphing an exponential equation (this is in math appendix).", "3. Review <a class='pjumpToTopic' href='javascript:void(0)' data-chap='22' data-topic='2' data-subtopic='2' data-subsection='0'>exponential decay</a>."],
+	"objNames": ["wb_scatterplot", "wb_models_variance"]
+}

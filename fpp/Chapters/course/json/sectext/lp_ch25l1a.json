@@ -1,0 +1,31 @@
+{
+	"cards": [{
+			"lines": [{
+					"type": "title",
+					"text": "Models"
+				}, {
+					"type": "headline",
+					"text": "Physical: Describes properties, relationships"
+				}, {
+					"type": "headline",
+					"text": "Conceptual: An idea that explains observations"
+				}, {
+					"type": "headline",
+					"text": "Mathematical: Equation to define relationships"
+				}
+			]
+		}, {
+			"lines": [{
+					"type": "title",
+					"text": "Science"
+				}, {
+					"type": "headline",
+					"text": "Science:  Creates testable explanations of phenomena"
+				}
+			]
+		}
+	],
+	"definitions": [],
+	"secText": ["  <b>Essential Question:</b>  <b></b>  <b>    <br />  </b>What are models and what can they (and can’t they) explain? ", "  <b>Enduring Understandings</b>  <b>:</b>  <b>    <br />  </b>1. <a class='pjumpToTopic' href='javascript:void(0)' data-chap='25' data-topic='0' data-subtopic='1' data-subsection='0'>Models</a> are tools scientists and others use to describe relationships. A physical model describes a part of the world as objects with relationships, such as atoms consist of a positive nucleus surrounded by negatively charged particles. A conceptual model presents an idea − such as Einstein saying that time is not absolute. And a mathematical model uses equations: <i>F = ma</i> is a mathematical model. <br />2. Models describe relationships, but not the “why”. For instance, why an atom isn’t a negative nucleus surrounded by positive charges is <a class='pjumpToTopic' href='javascript:void(0)' data-chap='25' data-topic='0' data-subtopic='1' data-subsection='0'>outside the scope of a scientific model</a>. <br />", "  <b>Vocabulary</b>  <b>:</b>  <a class='pjumpToTopic' href='javascript:void(0)' data-chap='25' data-topic='0' data-subtopic='1' data-subsection='0'>Physical model</a>, <a class='pjumpToTopic' href='javascript:void(0)' data-chap='25' data-topic='0' data-subtopic='1' data-subsection='0'>conceptual model</a>, and <a class='pjumpToTopic' href='javascript:void(0)' data-chap='25' data-topic='0' data-subtopic='1' data-subsection='0'>mathematical model</a>."],
+	"objNames": ["wb_models_data2", "wb_models_data"]
+}

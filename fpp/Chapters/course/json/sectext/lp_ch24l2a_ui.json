@@ -1,40 +1,27 @@
 {
-  "cards": [
-    {
-      "lines": [
-        {
-          "type": "title",
-          "text": "Standard Model is based on"
-        },
-        {
-          "type": "headline",
-          "text": "12 matter particles"
-        },
-        {
-          "type": "bullet",
-          "text": "Two types of particles: quarks and leptons"
-        }
-      ]
-    },
-    {
-      "lines": [
-        {
-          "type": "title",
-          "text": "Equipment used to confirm Higgs boson"
-        }
-      ]
-    }
-  ],
-  "definitions": [],
-  "secText": [
-    "  <b class=\"object-name\">Supplemental Material: </b>  <span class=\"object-name\">Advanced Topic</span>",
-    "  <b>Essential Question: </b>  <b>    <br />  </b>How can we describe and organize the subatomic particles that compose the universe and how can we describe the particles that have been inferred but not yet confirmed?",
-    "  <b>Enduring Understandings:</b>  <b>    <br />  </b>1. The <a class='pjumpToTopic' href='javascript:void(0)' data-chap='24' data-topic='1' data-subtopic='1' data-subsection='0'>Standard Model</a> is composed of all the sub-atomic particles which make up the building blocks of matter: <a class='pjumpToTopic' href='javascript:void(0)' data-chap='24' data-topic='1' data-subtopic='1' data-subsection='1'>quarks</a>, <a class='pjumpToTopic' href='javascript:void(0)' data-chap='24' data-topic='1' data-subtopic='1' data-subsection='1'>leptons</a>, <a class='pjumpToTopic' href='javascript:void(0)' data-chap='24' data-topic='1' data-subtopic='1' data-subsection='1'>fermions</a>, and <a class='pjumpToTopic' href='javascript:void(0)' data-chap='24' data-topic='1' data-subtopic='1' data-subsection='2'>bosons</a>.<br />2. <a class='pjumpToTopic' href='javascript:void(0)' data-chap='24' data-topic='1' data-subtopic='2' data-subsection='0'>Dark matter</a> is matter that does not emit light, and its existence is deduced from the properties of gravity. Its composition is not known. <a class='pjumpToTopic' href='javascript:void(0)' data-chap='24' data-topic='1' data-subtopic='2' data-subsection='1'>Dark energy</a> has not been observed, but its existence is inferred from the expansion of the universe. Dark matter is repulsive.<br />3. <a class='pjumpToTopic' href='javascript:void(0)'  data-chap='24' data-topic='1' data-subtopic='3' data-subsection='0'>Black holes</a> are composed of matter so dense that the force of gravity within the black hole prevents light from escaping.<br />4. <a class='pjumpToTopic' href='javascript:void(0)'  data-chap='24' data-topic='1' data-subtopic='4' data-subsection='0'>Gravitational lensing</a> causes light to change direction because of a strong gravitational force.<br />5. The <a class='pjumpToTopic' href='javascript:void(0)'  data-chap='24' data-topic='1' data-subtopic='5' data-subsection='0'>Big Bang</a> theory is the model for the origin of the universe.",
-    "  <b>Vocabulary:</b>  <a class='pjumpToTopic' href='javascript:void(0)' data-chap='24' data-topic='1' data-subtopic='1' data-subsection='0'>Standard Model</a>, <a class='pjumpToTopic' href='javascript:void(0)' data-chap='24' data-topic='1' data-subtopic='1' data-subsection='3'>Higgs boson</a>, <a class='pjumpToTopic' href='javascript:void(0)' data-chap='24' data-topic='1' data-subtopic='2' data-subsection='0'>dark matter</a>, <a class='pjumpToTopic' href='javascript:void(0)' data-chap='24' data-topic='1' data-subtopic='2' data-subsection='1'>dark energy</a>, <a class='pjumpToTopic' href='javascript:void(0)' data-chap='24' data-topic='1' data-subtopic='3' data-subsection='0'>black holes</a>, <a class='pjumpToTopic' href='javascript:void(0)' data-chap='24' data-topic='1' data-subtopic='4' data-subsection='0'>gravitational lensing</a>, <a class='pjumpToTopic' href='javascript:void(0)' data-chap='24' data-topic='1' data-subtopic='5' data-subsection='0'>Big Bang</a>",
-    "  <b>STEM Skills:</b>  <b>    <br />  </b>1. Review <a class='pjumpToTopic' href='javascript:void(0)' data-chap='8' data-topic='2' data-subtopic='1' data-subsection='1'>gravitational force</a>.<br />2. Review <a class='pjumpToTopic' href='javascript:void(0)' data-chap='10' data-topic='0' data-subtopic='3' data-subsection='0'>density</a>."
-  ],
-  "objNames": [
-    "wb_standard_model1",
-    "wb_standard_model5"
-  ]
+	"cards": [{
+			"lines": [{
+					"type": "title",
+					"text": "Standard Model is based on"
+				}, {
+					"type": "headline",
+					"text": "12 matter particles"
+				}, {
+					"type": "bullet",
+					"text": "Two types of particles: quarks and leptons"
+				}
+			]
+		}, {
+			"lines": [{
+					"type": "title",
+					"text": "Equipment used to confirm Higgs boson"
+				}
+			]
+		}
+	],
+	"definitions": [],
+	"secText": ["  <b class=\"object-name\">Supplemental Material:</b>  <b class=\"object-name\"></b>  <span class=\"object-name\">Advanced Topic</span>", "  <b>Essential Question:</b>  <b></b>  <b>    <br />  </b>How can we describe and organize the subatomic particles that compose the universe and how can we describe the particles that have been inferred but not yet confirmed?", "  <b>Enduring Understandings</b>  <b>:</b>  <b>    <br />  </b>1. The <a class='pjumpToTopic' href='javascript:void(0)' data-chap='24' data-topic='1' data-subtopic='1' data-subsection='0'>Standard Model</a> is composed of all the sub-atomic particles which make up the building blocks of matter: <a class='pjumpToTopic' href='javascript:void(0)' data-chap='24' data-topic='1' data-subtopic='1' data-subsection='1'>quarks</a>, <a class='pjumpToTopic' href='javascript:void(0)' data-chap='24' data-topic='1' data-subtopic='1' data-subsection='1'>leptons</a>, <a class='pjumpToTopic' href='javascript:void(0)' data-chap='24' data-topic='1' data-subtopic='1' data-subsection='1'>fermions</a>, and <a class='pjumpToTopic' href='javascript:void(0)' data-chap='24' data-topic='1' data-subtopic='1' data-subsection='2'>bosons</a>.<br />2. <a class='pjumpToTopic' href='javascript:void(0)' data-chap='24' data-topic='1' data-subtopic='2' data-subsection='0'>Dark matter</a> is matter that does not emit light, and its existence is deduced from the properties of gravity. Its composition is not known. <a class='pjumpToTopic' href='javascript:void(0)' data-chap='24' data-topic='1' data-subtopic='2' data-subsection='1'>Dark energy</a> has not been observed, but its existence is inferred from the expansion of the universe. Dark matter is repulsive.<br />3. <a class='pjumpToTopic' href='javascript:void(0)'  data-chap='24' data-topic='1' data-subtopic='3' data-subsection='0'>Black holes</a> are composed of matter so dense that the force of gravity within the black hole prevents light from escaping.<br />4. force of gravity within the black hole prevents light from escaping.<br />4. <a class='pjumpToTopic' href='javascript:void(0)'  data-chap='24' data-topic='1' data-subtopic='4' data-subsection='0'>Gravitational lensing</a> causes light to change direction because of a strong gravitational force.<br />5. The <a class='pjumpToTopic' href='javascript:void(0)'  data-chap='24' data-topic='1' data-subtopic='5' data-subsection='0'>Big Bang</a> theory is the model for the origin of the universe.", 
+	"  <b>Vocab</b>  <b>ulary:</b>  <a class='pjumpToTopic' href='javascript:void(0)' data-chap='24' data-topic='1' data-subtopic='1' data-subsection='0'>Standard Model</a>, <a class='pjumpToTopic' href='javascript:void(0)' data-chap='24' data-topic='1' data-subtopic='1' data-subsection='3'>Higgs boson</a>, <a class='pjumpToTopic' href='javascript:void(0)' data-chap='24' data-topic='1' data-subtopic='2' data-subsection='0'>dark matter</a>, <a class='pjumpToTopic' href='javascript:void(0)' data-chap='24' data-topic='1' data-subtopic='2' data-subsection='1'>dark energy</a>, <a class='pjumpToTopic' href='javascript:void(0)' data-chap='24' data-topic='1' data-subtopic='3' data-subsection='0'>black holes</a>, <a class='pjumpToTopic' href='javascript:void(0)' data-chap='24' data-topic='1' data-subtopic='4' data-subsection='0'>gravitational lensing</a>, <a class='pjumpToTopic' href='javascript:void(0)' data-chap='24' data-topic='1' data-subtopic='5' data-subsection='0'>Big Bang</a>", 
+	"  <b>STEM Skills:</b>  <b>    <br />  </b>1. Review <a class='pjumpToTopic' href='javascript:void(0)' data-chap='8' data-topic='2' data-subtopic='1' data-subsection='1'>gravitational force</a>.<br />2. Review <a class='pjumpToTopic' href='javascript:void(0)' data-chap='10' data-topic='0' data-subtopic='3' data-subsection='0'>density</a>."],
+	"objNames": ["wb_standard_model1", "wb_standard_model5"]
 }

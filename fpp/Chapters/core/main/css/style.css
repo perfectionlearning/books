@@ -96,11 +96,60 @@ input {
     width: 100%;
     height: 100%;
     z-index: 99;
-    background: url(../assets/images/actLoader.gif) no-repeat center center;
+    //background: url(../assets/images/actLoader.gif) no-repeat center center;
     background-color: rgba(255,255,255,0.4);
     top: 0;
     left: 0;
     display: none;
+}
+         .spinner-container {
+    position: fixed;
+    height: 200px;
+    width: 200px;
+    left: 50%;
+    top: 50%;
+    margin: -100px 0 0 -100px;
+    z-index: 1001;
+}
+      .spinner-hidden {
+    opacity: 1;
+    
+    -webkit-transition: visibility 0s 1s,opacity 1s ease-out;
+    transition: visibility 0s 1s,opacity 1s ease-out;
+}
+.spinner-container .spinner {
+    width: 10px;
+    height: 10px;
+    background: #f35626;
+    color: #f35626;
+    margin: 95px auto;
+    box-shadow: 15px 15px 0 0, -15px -15px 0 0, 15px -15px 0 0, -15px 15px 0 0, 0 15px 0 0, 15px 0 0 0, -15px 0 0 0, 0 -15px 0 0;
+    -webkit-animation: anim 2s linear infinite;
+    animation: anim 2s linear infinite;
+}
+@keyframes anim{
+0% {
+    -webkit-filter: hue-rotate(0deg);
+    -moz-filter: hue-rotate(0deg);
+    -o-filter: hue-rotate(0deg);
+    filter: hue-rotate(0deg);
+}
+
+50% {
+    box-shadow: 20px 20px 0 0, -20px -20px 0 0, 20px -20px 0 0, -20px 20px 0 0, 0 10px 0 0, 10px 0 0 0, -10px 0 0 0, 0 -10px 0 0;
+}
+
+75% {
+    box-shadow: 20px 20px 0 0, -20px -20px 0 0, 20px -20px 0 0, -20px 20px 0 0, 0 10px 0 0, 10px 0 0 0, -10px 0 0 0, 0 -10px 0 0;
+}
+
+100% {
+    transform: rotate(1turn);
+    -webkit-filter: hue-rotate(1turn);
+    -moz-filter: hue-rotate(1turn);
+    -o-filter: hue-rotate(1turn);
+    filter: hue-rotate(1turn);
+}
 }
 .mShell .pHeader{
     position: relative;
@@ -653,6 +702,7 @@ background-position: -5px -1536px;
 }
 .pActivityDesc p{
     margin-bottom: 10px;
+	text-align: left;
 }
 .pActivityDesc .definition{
     color: blue;
@@ -2240,6 +2290,13 @@ input.loginInput {
     
 }
 .phelpInnerWrap[data-type='TeacherHelpBody']{
+    display: none;
+}
+#pdfViewer{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    float: left;
     display: none;
 }
 /*---------Help End---------*/

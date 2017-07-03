@@ -1,0 +1,6 @@
+{
+	"cards": [],
+	"definitions": [],
+	"secText": ["  <b>Lesson:</b>", "2. A <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='wb_normal_distribution'>normal distribution</a> is a bell-shaped distribution of data often found in nature. (25.3.a first wb).<b><br /></b>1. Describe <a class='pjumpToTopic' href='javascript:void(0)' data-chap='18' data-topic='2' data-subtopic='1' data-subsection='0'>diffraction</a>.<br />2. Define <a class='pjumpToTopic' href='javascript:void(0)' data-chap='18' data-topic='2' data-subtopic='2' data-subsection='0'>Huygens' principle</a>.<br />3. Describe what occurs with wavelets and barriersMACROBUTTON UpdateWhiteboardLink [expsec_r974] using Huygens' principle.<br />4. Apply Huygens' concept to <a class='pjumpToTopic' href='javascript:void(0)' data-chap='18' data-topic='2' data-subtopic='2' data-subsection='2'>photolithography and computer chips</a>.<br />5. Describe <a class='pjumpToTopic' href='javascript:void(0)' data-chap='18' data-topic='2' data-subtopic='2' data-subsection='3'>diffraction limits</a>.", "  <b>Quick Review:</b>  <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='sum_diffraction'>Diffraction</a>, <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='sum_wavelets'>Huygens' Principle</a>"],
+	"objNames": []
+}

@@ -1,37 +1,23 @@
 {
-  "cards": [
-    {
-      "lines": [
-        {
-          "type": "title",
-          "text": "Communicating, applying scientific information "
-        },
-        {
-          "type": "headline",
-          "text": "Be specific about the question and your hypothesis"
-        },
-        {
-          "type": "headline",
-          "text": "Be clear about your sources"
-        },
-        {
-          "type": "headline",
-          "text": "State the data you use "
-        },
-        {
-          "type": "headline",
-          "text": "List sources of uncertainty"
-        }
-      ]
-    }
-  ],
-  "definitions": [],
-  "secText": [
-    "  <b>Essential Question: </b>  <br />How can scientific evidence be used to analyze marketing campaigns and news?",
-        "  <b>Enduring Understandings:</b>  <b>    <br />  </b>1. When <a class='pjumpToTopic' href='javascript:void(0)' data-chap='3' data-topic='5' data-subtopic='1' >analyzing marketing campaigns</a>, determine who is the source of the information, what are the testable claims made, what data is available, and when were the claims made. <b><br /></b>2. When <a class='pjumpToTopic' href='javascript:void(0)' data-chap='3' data-topic='5' data-subtopic='2' data-subsection='0'>analyzing news sources</a>, determine who the source of information is, whether the claim is a hypothesis or theory, and what data was collected.<b><br /></b>3. When <a class='pjumpToTopic' href='javascript:void(0)' data-chap='3' data-topic='5' data-subtopic='3' data-subsection='0'>communicating scientific information</a>, state your hypothesis, cite your sources, present data that supports your hypothesis, and determine areas of uncertainty in your data.<b><br /></b>",
-        "  <b>STEM Skills:</b>  <b>    <br />  </b>1. Review <a class='pjumpToVideo' href='javascript:void(0)' data-chap='3' data-topic='3' data-subtopic='2' >hypotheses and theories</a>.<b><br /></b>2. Review <a class='pjumpToTopic' href='javascript:void(0)' data-chap='3' data-topic='4' data-subtopic='5' data-subsection='0'>presenting scientific information</a>."
-  ],
-  "objNames": [
-    "wb_communicating_scientific_info"
-  ]
+	"cards": [{
+			"lines": [{
+					"type": "title",
+					"text": "Communicating, applying scientific information "
+				}, {
+					"type": "headline",
+					"text": "Discuss"
+				}, {
+					"type": "headline",
+					"text": "State the data you use "
+				}, {
+					"type": "headline",
+					"text": "List sources of uncertainty"
+				}
+			]
+		}
+	],
+	"definitions": [],
+	"secText": ["  <b>Essential Question: </b>  <b>    <br />  </b>How can scientific evidence be used to analyze marketing campaigns and news?", "  <b>Enduring Understandings:</b>  <b>    <br />  </b>1. When <a class='pjumpToTopic' href='javascript:void(0)' data-chap='3' data-topic='5' data-subtopic='1' >analyzing marketing campaigns</a>, determine who is the source of the information, what are the testable claims made, what data is available, and when were the claims made.<br />2. When <a class='pjumpToTopic' href='javascript:void(0)' data-chap='3' data-topic='5' data-subtopic='3' data-subsection='0'>analyzing news sources</a>, determine who the source of information is, whether the claim is a hypothesis or theory, and what data was collected.<br />3. When <a class='pjumpToTopic' href='javascript:void(0)' data-chap='3' data-topic='5' data-subtopic='4' data-subsection='0'>communicating scientific information</a>, state your hypothesis, cite your sources, present data that supports your hypothesis, and determine areas of uncertainty in your data.",
+	"  <b>STEM Skills:</b>  <b>    <br />  </b>1. Review <a class='pjumpToVideo' href='javascript:void(0)' data-chap='3' data-topic='3' data-subtopic='2' >hypotheses and theories</a>.<br />2. Review <a class='pjumpToTopic' href='javascript:void(0)' data-chap='3' data-topic='4' data-subtopic='5' data-subsection='0'>presenting scientific information</a>."],
+	"objNames": ["wb_communicating_scientific_info"]
 }

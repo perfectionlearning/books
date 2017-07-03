@@ -1,48 +1,33 @@
 {
-  "cards": [
-    {
-      "lines": [
-        {
-          "type": "title",
-          "text": "Time dilation"
-        },
-        {
-          "type": "headline",
-          "text": "Observers disagree on time interval between events"
-        },
-        {
-          "type": "headline",
-          "text": "Moving clock measures shorter time interval"
-        }
-      ]
-    },
-    {
-      "lines": [
-        {
-          "type": "title",
-          "text": "Length contraction"
-        },
-        {
-          "type": "headline",
-          "text": "Observer stationary with respect to object measures proper length"
-        },
-        {
-          "type": "headline",
-          "text": "Observer viewing moving object measures shorter (contracted) length"
-        }
-      ]
-    }
-  ],
-  "definitions": [],
-  "secText": [
-    "  <b>Essential Question: </b>  <b>    <br />  </b>How can we explain special relativity?",
-	"  <b>Enduring Understandings:</b>  <b>    <br />  </b>1. A <a class='pjumpToTopic' href='javascript:void(0)' data-chap='24' data-topic='0' data-subtopic='1' data-subsection='0'>reference frame</a> is a point of view for observing motion.<br />2. The <a class='pjumpToTopic' href='javascript:void(0)' data-chap='24' data-topic='0' data-subtopic='2' data-subsection='0'>speed of light</a> is 299,792,458 m/s in a vacuum. The speed of light is constant and does not change in an observer’s or source’s reference frame.<br />3. <a class='pjumpToTopic' href='javascript:void(0)' data-chap='24' data-topic='0' data-subtopic='3' data-subsection='0'>Time dilates</a> by a given factor when either a clock or an observer of the clock are moving with respect to the other. <br />4. An <a class='pjumpToTopic' href='javascript:void(0)' data-chap='24' data-topic='0' data-subtopic='4' data-subsection='0'>object’s length</a> contracts by a given factor when either the object or an observer of the object is moving with respect to the other. <br />5. The <a class='pjumpToTopic' href='javascript:void(0)' data-chap='24' data-topic='0' data-subtopic='5' data-subsection='1'>Doppler light equation</a> states the source frequency times the square root of one minus the speed of the observer divided by the speed of light, all divided by one plus the speed of the observer divided by the speed of light.",
-    "  <b>Vocabulary:</b>  <a class='pjumpToTopic' href='javascript:void(0)' data-chap='24' data-topic='0' data-subtopic='1' data-subsection='0'>reference frame</a>, <a class='pjumpToTopic' href='javascript:void(0)' data-chap='24' data-topic='0' data-subtopic='2' data-subsection='0'>speed of light in a vacuum</a>, <a class='pjumpToTopic' href='javascript:void(0)' data-chap='24' data-topic='0' data-subtopic='3' data-subsection='0'>time dilation</a>, <a class='pjumpToTopic' href='javascript:void(0)' data-chap='24' data-topic='0' data-subtopic='4' data-subsection='0'>length contraction</a>",
-    
-    "  <b>STEM Skills:</b>  <b>    <br />  </b>1. Review <a class='pjumpToTopic' href='javascript:void(0)' data-chap='2' data-topic='4' data-subtopic='1' data-subsection='0'>reference frame</a>.<br />2. Review the <a class='pjumpToTopic' href='javascript:void(0)' data-chap='19' data-topic='0' data-subtopic='2' data-subsection='0'>speed of light</a>.<b><br /></b>"
-  ],
-  "objNames": [
-    "wb_time_dilation2",
-    "wb_length_contraction1"
-  ]
+	"cards": [{
+			"lines": [{
+					"type": "title",
+					"text": "Time dilation"
+				}, {
+					"type": "headline",
+					"text": "Observers disagree on time interval between events"
+				}, {
+					"type": "headline",
+					"text": "Moving clock measures shorter time interval"
+				}
+			]
+		}, {
+			"lines": [{
+					"type": "title",
+					"text": "Length contraction"
+				}, {
+					"type": "headline",
+					"text": "Observer stationary with respect to object measures proper length"
+				}, {
+					"type": "headline",
+					"text": "Observer viewing moving object measures shorter (contracted) length"
+				}
+			]
+		}
+	],
+	"definitions": [],
+	"secText": ["  <b>Essential Question:</b>  <b></b>  <b>    <br />  </b>How can we explain special relativity?", "  <b>Enduring Understandings</b>  <b>:</b>  <b>    <br />  </b>1. A <a class='pjumpToTopic' href='javascript:void(0)' data-chap='24' data-topic='0' data-subtopic='1' data-subsection='0'>reference frame</a> is a point of view for observing motion.<br />2. The <a class='pjumpToTopic' href='javascript:void(0)' data-chap='24' data-topic='0' data-subtopic='2' data-subsection='0'>speed of light</a> is 299,792,458 m/s in a vacuum. The speed of light is constant and does not change in an observer’s or source’s reference frame.<br />3. <a class='pjumpToTopic' href='javascript:void(0)' data-chap='24' data-topic='0' data-subtopic='3' data-subsection='0'>Time dilates</a> by a given factor when either a clock or an observer of the clock are moving with respect to the other. <br />4. An <a class='pjumpToTopic' href='javascript:void(0)' data-chap='24' data-topic='0' data-subtopic='4' data-subsection='0'>object’s length</a> contracts by a given factor when either the object or an observer of the object is moving with respect to the other. <br />5. The <a class='pjumpToTopic' href='javascript:void(0)' data-chap='24' data-topic='0' data-subtopic='5' data-subsection='1'>Doppler light equation</a> states the source frequency times the square root of one minus the speed of the observer divided by the speed of light, all divided by one plus the speed of the observer divided by the speed of light.", 
+	"  <b>Vocab</b>  <b>ulary:</b>  <a class='pjumpToTopic' href='javascript:void(0)' data-chap='24' data-topic='0' data-subtopic='1' data-subsection='0'>reference frame</a>, <a class='pjumpToTopic' href='javascript:void(0)' data-chap='24' data-topic='0' data-subtopic='2' data-subsection='0'>speed of light in a vacuum</a>, <a class='pjumpToTopic' href='javascript:void(0)' data-chap='24' data-topic='0' data-subtopic='3' data-subsection='0'>time dilation</a>, <a class='pjumpToTopic' href='javascript:void(0)' data-chap='24' data-topic='0' data-subtopic='4' data-subsection='0'>length contraction</a>", 
+	"  <b>STEM Skills:</b>  <b>    <br />  </b>1. Review <a class='pjumpToTopic' href='javascript:void(0)' data-chap='2' data-topic='4' data-subtopic='1' data-subsection='0'>reference frame</a>.<br />2. Review the <a class='pjumpToTopic' href='javascript:void(0)' data-chap='19' data-topic='0' data-subtopic='2' data-subsection='0'>speed of light</a>.<b><br /></b>"],
+	"objNames": ["wb_time_dilation2", "wb_length_contraction1"]
 }

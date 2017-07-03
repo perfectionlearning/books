@@ -1,0 +1,28 @@
+{
+	"cards": [{
+			"lines": [{
+					"type": "title",
+					"text": "Two-way table"
+				}, {
+					"type": "headline",
+					"text": "Used with categorical data"
+				}, {
+					"type": "headline",
+					"text": "Shows relationship among categories"
+				}
+			]
+		}, {
+			"lines": [{
+					"type": "title",
+					"text": "Relative frequency"
+				}, {
+					"type": "headline",
+					"text": "Count in cell divided by total number in all cells"
+				}
+			]
+		}
+	],
+	"definitions": [],
+	"secText": ["  <span class=\"KBInternalLink\">Essential Question</span>  <span class=\"KBInternalLink\">s</span>  <span class=\"KBInternalLink\">:</span>  <b></b>  <br />What is categorical data?", "What is a two-way table?", "What is relative frequency?", "What is conditional probability?", "  <b>Enduring Understandings</b>  <b>:</b>  <b>    <br />  </b>1. Conditional data is data described by words (e.g. “female”) as opposed to numbers.<br />2. A two-way table shows the frequency of data that matches two categories (e.g. “female” and “basketball player.”)<br />3. Relative frequency is the count in a cell in a two-way table divided by the total count of all cells. <br />4. Conditional probability that an event occurs, given that one or more other events have occurred (e.g. “the probability that the Red Sox win given that Hernandez is pitching.”)", "  <b>STEM Skills:</b>  <b>    <br />  </b>1. <a class='pjumpToTopic' href='javascript:void(0)' data-chap='25' data-topic='1' data-subtopic='1' data-subsection='0'>Review frequency</a>"],
+	"objNames": ["wb_two_way_table1", "wb_two_way_relative_table_finish_it"]
+}

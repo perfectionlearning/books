@@ -1,0 +1,25 @@
+{
+	"cards": [{
+			"lines": [{
+					"type": "title",
+					"text": "Dot plot"
+				}, {
+					"type": "headline",
+					"text": "One dot for each occurrence"
+				}
+			]
+		}, {
+			"lines": [{
+					"type": "title",
+					"text": "Histogram"
+				}, {
+					"type": "headline",
+					"text": "Bar height reflects frequency"
+				}
+			]
+		}
+	],
+	"definitions": [],
+	"secText": ["  <b>Essential Question:</b>  <b></b>  <b>    <br />  </b>How do measures such as mean help to describe a data set?", "How does one represent frequency in a histogram?", "  <b>Enduring Understandings</b>  <b>:</b>  <b>    <br />  </b>1. Bar charts show frequency, with the bar height proportional to a frequency in an interval.", "2. <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='wb_histogram'>Mean</a> is the sum of a set of data divided by the count (the number of values in the set).", "  <b>STEM Skills:</b>  <b>    <br />  </b>1. <a class='pjumpToTopic' href='javascript:void(0)' data-chap='25' data-topic='1' data-subtopic='1' data-subsection='0'>Graphing frequency</a> using a bar chart", "2. <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='wb_mean'>Calculating mean</a>"],
+	"objNames": ["wb_graph_dots", "wb_histogram"]
+}
