@@ -1205,7 +1205,7 @@
                             ]
                         },
                         {
-                            "SectionTitle": "â€œYourâ€? science experiment",
+                            "SectionTitle": "\"Your\" science experiment",
                             "subsection": [
                                 {
                                     "type": "videoScreen",
@@ -10346,7 +10346,6 @@
                     "section": [
                         {
                             "SectionTitle": "Solar Power",
-                            "link": false,
                             "number": true,
                             "subsection": [
                                 {
@@ -10446,12 +10445,11 @@
                     "section": [
                         {
                             "SectionTitle": "Hyperloop Trains",
-                            "link": false,
                             "number": true,
                             "subsection": [
                                 {
                                     "SectionHeading": "Hyperloop Trains",
-                                    "ref": "temp.json"
+                                    "ref": "lp_ch25l1a.json"
                                 }
                             ]
                         },
@@ -14557,7 +14555,7 @@
                     {
                         "section": [
                             {
-							"link":false,
+                                "link": false,
                                 "SectionTitle": "Chapter 25 Lesson Plans",
                                 "subsection": [
                                     {
