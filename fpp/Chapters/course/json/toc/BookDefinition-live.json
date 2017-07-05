@@ -331,6 +331,7 @@
                             "SectionTitle": "Advanced Motion Equations",
                             "subsection": [
                                 {
+                                    "type": "activity",
                                     "SectionHeading": "Lesson Overview: Advanced Motion Equations",
                                     "ref": "lp_ch01l5a_ui.json"
                                 }
@@ -1201,10 +1202,10 @@
                 {
                     "section": [
                         {
-                            "SectionTitle": "Science, News and Marketing",
+                            "SectionTitle": "Real World Science",
                             "subsection": [
                                 {
-                                    "SectionHeading": "Lesson Overview: Science, News and Marketing",
+                                    "SectionHeading": "Lesson Overview: Real World Science",
                                     "ref": "lp_ch03l7a_ui.json"
                                 }
                             ]
@@ -1216,7 +1217,12 @@
                                     "type": "videoScreen",
                                     "SectionHeading": " Science and marketing",
                                     "ref": "expsec_rm20.json"
+                                }
+                            ]
                                 },
+                        {
+                            "SectionTitle": "\"Your\" science experiment",
+                            "subsection": [
                                 {
                                     "type": "videoScreen",
                                     "SectionHeading": " A straighter-putting golf ball?",
@@ -1224,13 +1230,9 @@
                                 },
                                 {
                                     "type": "videoScreen",
-                                    "SectionHeading": " GPS versus cell towers part 1",
+                                    "SectionHeading": " Golf balls part 2",
                                     "ref": "expsec_a3744211.json"
-                                },
-                                {
                                     "type": "videoScreen",
-                                    "SectionHeading": " GPS versus cell towers part 2",
-                                    "ref": "expsec_a3741111.json"
                                 }
                             ]
                         },
@@ -1894,10 +1896,10 @@
                 {
                     "section": [
                         {
-                            "SectionTitle": "Force and Newton’s First Law",
+                            "SectionTitle": "Force and Newton's First Law",
                             "subsection": [
                                 {
-                                    "SectionHeading": "Lesson Overview: Force and Newton’s First Law",
+                                    "SectionHeading": "Lesson Overview: Force and Newton's First Law",
                                     "ref": "lp_ch05l1a_ui.json"
                                 }
                             ]
@@ -1964,7 +1966,7 @@
                             "subsection": [
                                 {
                                     "type": "summary",
-                                    "SectionHeading": " Force and Newton’s first law",
+                                    "SectionHeading": " Force and Newton's first law",
                                     "objectNames": [
                                         "sum_force_basics",
                                         "sum_newton_laws_first"
@@ -1996,23 +1998,23 @@
                             ]
                         },
                         {
-                            "SectionTitle": "Newton’s second law",
+                            "SectionTitle": "Newton's second law",
                             "subsection": [
                                 {
                                     "type": "videoScreen",
-                                    "SectionHeading": "Newton’s second law",
+                                    "SectionHeading": "Newton's second law",
                                     "ref": "expsec_e762.json"
                                 },
                                 {
                                     "type": "quizcheck",
                                     "problem_inst_id": "298201",
-                                    "SectionHeading": "Quickcheck: Newton’s second law",
+                                    "SectionHeading": "Quickcheck: Newton's second law",
 									"video": "newton_laws_second",
                                     "ref": "qcsec_di38.json"
                                 },
                                 {
                                     "type": "videoScreen",
-                                    "SectionHeading": "Activity: Use Newton’s second law",
+                                    "SectionHeading": "Activity: Use Newton's second law",
                                     "ref": "samesec_ka473567.json"
                                 },
                                 {
@@ -2035,7 +2037,7 @@
                             ]
                         },
                         {
-                            "SectionTitle": "Applying Newton’s second law ",
+                            "SectionTitle": "Applying Newton's second law ",
                             "subsection": [
                                 {
                                     "type": "playVideo",
@@ -2050,7 +2052,7 @@
                             "subsection": [
                                 {
                                     "type": "summary",
-                                    "SectionHeading": "Newton’s second law ",
+                                    "SectionHeading": "Newton's second law ",
                                     "objectNames": [
                                         "sum_newton_laws_second"
                                     ]
@@ -2071,11 +2073,11 @@
                             ]
                         },
                         {
-                            "SectionTitle": "Newton’s third law",
+                            "SectionTitle": "Newton's third law",
                             "subsection": [
                                 {
                                     "type": "videoScreen",
-                                    "SectionHeading": " Newton’s third law",
+                                    "SectionHeading": " Newton's third law",
                                     "ref": "expsec_e763.json"
                                 }
                             ]
@@ -2101,7 +2103,7 @@
                                 {
                                     "type": "quizcheck",
                                     "problem_inst_id": "298215",
-                                    "SectionHeading": "Quickcheck: Newton’s third law",
+                                    "SectionHeading": "Quickcheck: Newton's third law",
 									"video": "newton_laws_third",
                                     "ref": "qcsec_di39.json"
                                 },
@@ -2190,7 +2192,7 @@
                             "subsection": [
                                 {
                                     "type": "summary",
-                                    "SectionHeading": "Newton’s third law and types of forces ",
+                                    "SectionHeading": "Newton's third law and types of forces ",
                                     "objectNames": [
                                         "sum_newton_laws_third",
                                         "sum_weight_equation",
@@ -2214,17 +2216,17 @@
                             ]
                         },
                         {
-                            "SectionTitle": "Hooke’s law",
+                            "SectionTitle": "Hooke's law",
                             "subsection": [
                                 {
                                     "type": "videoScreen",
-                                    "SectionHeading": " Hooke’s law",
+                                    "SectionHeading": " Hooke's law",
                                     "ref": "expsec_e773.json"
                                 },
                                 {
                                     "type": "quizcheck",
                                     "problem_inst_id": "298217",
-                                    "SectionHeading": "Quickcheck: Hooke’s law",
+                                    "SectionHeading": "Quickcheck: Hooke's law",
 									"video": "hooke",
                                     "ref": "qcsec_di44.json"
                                 }
@@ -2280,7 +2282,7 @@
                                     "ref": "expsec_e777.json"
                                 },
                                 {
-                                    "type": "activity",
+                                    "type": "videoScreen",
                                     "SectionHeading": "Activity: Explore free-body diagrams",
                                     "ref": "actsec_ka49.json"
                                 },
@@ -2332,7 +2334,7 @@
                             "SectionTitle": "Forces and trigonometry",
                             "subsection": [
                                 {
-                                    "type": "activity",
+                                    "type": "videoScreen",
                                     "SectionHeading": "Activity: Forces not on a line",
                                     "ref": "actsec_ka50.json"
                                 },
@@ -2680,6 +2682,10 @@
                                     "type": "videoScreen",
                                     "SectionHeading": " Conservation of energy",
                                     "ref": "expsec_f975.json"
+                                },
+                                {
+                                    "SectionHeading": " Total energy",
+                                    "ref": "expsec_f97522.json"
                                 },
                                 {
                                     "type": "quizcheck",
@@ -3284,16 +3290,16 @@
                 {
                     "section": [
                         {
-                            "SectionTitle": "Newton’s Law of Gravity",
+                            "SectionTitle": "Newton's Law of Gravity",
                             "subsection": [
                                 {
-                                    "SectionHeading": "Lesson Overview: Newton’s Law of Gravity",
+                                    "SectionHeading": "Lesson Overview: Newton's Law of Gravity",
                                     "ref": "lp_ch08l3a_ui.json"
                                 }
                             ]
                         },
                         {
-                            "SectionTitle": "Newton’s law of gravity ",
+                            "SectionTitle": "Newton's law of gravity ",
                             "subsection": [
                                 {
                                     "type": "activity",
@@ -3302,7 +3308,7 @@
                                 },
                                 {
                                     "type": "videoScreen",
-                                    "SectionHeading": " Newton’s law of gravity",
+                                    "SectionHeading": " Newton's law of gravity",
                                     "ref": "expsec_h564.json"
                                 },
                                 {
@@ -3334,7 +3340,7 @@
                             "subsection": [
                                 {
                                     "type": "videoScreen",
-                                    "SectionHeading": "Freefall acceleration and Earth’s shape",
+                                    "SectionHeading": "Freefall acceleration and Earth's shape",
                                     "ref": "expsec_h567.json"
                                 },
                                 {
@@ -3350,7 +3356,7 @@
                             "subsection": [
                                 {
                                     "type": "summary",
-                                    "SectionHeading": " Newton’s law of gravity",
+                                    "SectionHeading": " Newton's law of gravity",
                                     "objectNames": [
                                         "sum_gravity_concepts"
                                     ]
@@ -3441,7 +3447,7 @@
                             "SectionTitle": "Kepler’s Laws",
                             "subsection": [
                                 {
-                                    "SectionHeading": "Lesson Overview: Kepler’s Laws",
+                                    "SectionHeading": "Lesson Overview: Kepler's Laws",
                                     "ref": "lp_ch08l5a_ui.json"
                                 }
                             ]
@@ -3457,21 +3463,21 @@
                             ]
                         },
                         {
-                            "SectionTitle": "Kepler’s second law",
+                            "SectionTitle": "Kepler's second law",
                             "subsection": [
                                 {
                                     "type": "videoScreen",
-                                    "SectionHeading": " Kepler’s second law",
+                                    "SectionHeading": " Kepler's second law",
                                     "ref": "expsec_h578.json"
                                 }
                             ]
                         },
                         {
-                            "SectionTitle": "Kepler’s third law",
+                            "SectionTitle": "Kepler's third law",
                             "subsection": [
                                 {
                                     "type": "videoScreen",
-                                    "SectionHeading": " Kepler’s third law",
+                                    "SectionHeading": " Kepler's third law",
                                     "ref": "expsec_h579.json"
                                 }
                             ]
@@ -3501,7 +3507,7 @@
                             "subsection": [
                                 {
                                     "type": "summary",
-                                    "SectionHeading": " Kepler’s laws",
+                                    "SectionHeading": " Kepler's laws",
                                     "objectNames": [
                                         "sum_kepler_first_two",
                                         "sum_kepler_third"
@@ -3975,7 +3981,7 @@
                                 },
                                 {
                                     "type": "activity",
-                                    "SectionHeading": " Activity: Calculate the missing force",
+                                    "SectionHeading": " Activity: Add a force",
                                     "ref": "actsec_i975.json"
                                 },
                                 {
@@ -4219,11 +4225,11 @@
                             ]
                         },
                         {
-                            "SectionTitle": "Earth’s atmosphere",
+                            "SectionTitle": "Earth's atmosphere",
                             "subsection": [
                                 {
                                     "type": "videoScreen",
-                                    "SectionHeading": " Earth’s atmosphere",
+                                    "SectionHeading": " Earth's atmosphere",
                                     "ref": "expsec_j365.json"
                                 },
                                 {
@@ -4282,26 +4288,26 @@
                 {
                     "section": [
                         {
-                            "SectionTitle": "Archimedes’ Principle",
+                            "SectionTitle": "Archimedes' Principle",
                             "subsection": [
                                 {
-                                    "SectionHeading": "Lesson Overview: Archimedes’ Principle",
+                                    "SectionHeading": "Lesson Overview: Archimedes' Principle",
                                     "ref": "lp_ch10l4a_ui.json"
                                 }
                             ]
                         },
                         {
-                            "SectionTitle": "Archimedes’ principle",
+                            "SectionTitle": "Archimedes' principle",
                             "subsection": [
                                 {
                                     "type": "videoScreen",
-                                    "SectionHeading": " Archimedes’ principle",
+                                    "SectionHeading": " Archimedes' principle",
                                     "ref": "expsec_j372.json"
                                 },
                                 {
                                     "type": "quizcheck",
                                     "problem_inst_id": "298236",
-                                    "SectionHeading": " Quickcheck: Archimedes’s principle",
+                                    "SectionHeading": " Quickcheck: Archimedes's principle",
 									"video": "archimedes_concept",
                                     "ref": "qcsec_j373.json"
                                 },
@@ -4339,7 +4345,7 @@
                             "subsection": [
                                 {
                                     "type": "summary",
-                                    "SectionHeading": " Archimedes’ principle",
+                                    "SectionHeading": " Archimedes' principle",
                                     "objectNames": [
                                         "sum_archimedes_concept"
                                     ]
@@ -4351,20 +4357,20 @@
                 {
                     "section": [
                         {
-                            "SectionTitle": "Pascal’s Principle and Fluid Continuity",
+                            "SectionTitle": "Pascal's Principle and Fluid Continuity",
                             "subsection": [
                                 {
-                                    "SectionHeading": "Lesson Overview: Pascal’s Principle and Fluid Continuity",
+                                    "SectionHeading": "Lesson Overview: Pascal's Principle and Fluid Continuity",
                                     "ref": "lp_ch10l5a_ui.json"
                                 }
                             ]
                         },
                         {
-                            "SectionTitle": "Pascal’s principle",
+                            "SectionTitle": "Pascal's principle",
                             "subsection": [
                                 {
                                     "type": "videoScreen",
-                                    "SectionHeading": " Pascal’s principle",
+                                    "SectionHeading": " Pascal's principle",
                                     "ref": "expsec_j378.json"
                                 },
                                 {
@@ -4408,7 +4414,7 @@
                             "subsection": [
                                 {
                                     "type": "summary",
-                                    "SectionHeading": " Pascal’s principle and fluid continuity",
+                                    "SectionHeading": " Pascal's principle and fluid continuity",
                                     "objectNames": [
                                         "sum_pascal_principle_concepts",
                                         "sum_fluid_continuity_concepts"
@@ -4430,16 +4436,16 @@
                             ]
                         },
                         {
-                            "SectionTitle": "Bernoulli’s principle",
+                            "SectionTitle": "Bernoulli's principle",
                             "subsection": [
                                 {
                                     "type": "videoScreen",
-                                    "SectionHeading": " Bernoulli’s principle",
+                                    "SectionHeading": " Bernoulli's principle",
                                     "ref": "expsec_j383.json"
                                 },
                                 {
                                     "type": "videoScreen",
-                                    "SectionHeading": " Bernoulli’s principle and paper",
+                                    "SectionHeading": " Bernoulli's principle and paper",
                                     "ref": "pwsec_j385.json"
                                 },
                                 {
@@ -4451,7 +4457,7 @@
                                 {
                                     "type": "quizcheck",
                                     "problem_inst_id": "299537",
-                                    "SectionHeading": " Quickcheck: Bernoulli’s principle",
+                                    "SectionHeading": " Quickcheck: Bernoulli's principle",
 									"video": "bernoulli_concepts",
                                     "ref": "qcsec_j384.json"
                                 }
@@ -4462,7 +4468,7 @@
                             "subsection": [
                                 {
                                     "type": "summary",
-                                    "SectionHeading": " Bernoulli’s principle",
+                                    "SectionHeading": " Bernoulli's principle",
                                     "objectNames": [
                                         "sum_bernoulli_concepts"
                                     ]
@@ -4531,6 +4537,10 @@
                                     "type": "videoScreen",
                                     "SectionHeading": "Plasma",
                                     "ref": "expsec_k460.json"
+                                },
+                                {
+                                    "SectionHeading": " Endothermic and exothermic reactions",
+                                    "ref": "expsec_k4495.json"
                                 }
                             ]
                         },
@@ -5066,11 +5076,11 @@
                             ]
                         },
                         {
-                            "SectionTitle": "Joule’s experiment",
+                            "SectionTitle": "Joule's experiment",
                             "subsection": [
                                 {
                                     "type": "videoScreen",
-                                    "SectionHeading": "Joule’s experiment",
+                                    "SectionHeading": "Joule's experiment",
                                     "ref": "expsec_l055.json"
                                 }
                             ]
@@ -5250,11 +5260,11 @@
                             ]
                         },
                         {
-                            "SectionTitle": "Boyle’s and Charles’ laws",
+                            "SectionTitle": "Boyle's and Charles' laws",
                             "subsection": [
                                 {
                                     "type": "videoScreen",
-                                    "SectionHeading": " Boyle’s and Charles’ laws",
+                                    "SectionHeading": " Boyle's and Charles' laws",
                                     "ref": "expsec_ps112m.json"
                                 },
                                 {
@@ -6234,7 +6244,7 @@
                                 },
                                 {
                                     "type": "videoScreen",
-                                    "SectionHeading": "Can’t anyone hold still?",
+                                    "SectionHeading": "Can't anyone hold still?",
                                     "ref": "expsec_n270.json"
                                 }
                             ]
@@ -6668,11 +6678,11 @@
                             ]
                         },
                         {
-                            "SectionTitle": "Coulomb’s law",
+                            "SectionTitle": "Coulomb's law",
                             "subsection": [
                                 {
                                     "type": "videoScreen",
-                                    "SectionHeading": " Coulomb’s law",
+                                    "SectionHeading": " Coulomb's law",
                                     "ref": "expsec_o969.json"
                                 },
                                 {
@@ -6683,7 +6693,7 @@
                                 {
                                     "type": "quizcheck",
                                     "problem_inst_id": "298260",
-                                    "SectionHeading": " Quickcheck: Coulomb’s law 2",
+                                    "SectionHeading": " Quickcheck: Coulomb's law 2",
 									"video": "coulomb_law",
                                     "ref": "qcsec_o970.json"
                                 },
@@ -6759,13 +6769,13 @@
                                 },
                                 {
                                     "type": "videoScreen",
-                                    "SectionHeading": " Electric fields and Coulomb’s law ",
+                                    "SectionHeading": " Electric fields and Coulomb's law ",
                                     "ref": "expsec_o984mi.json"
                                 },
                                 {
                                     "type": "quizcheck",
                                     "problem_inst_id": "298250",
-                                    "SectionHeading": " Quickcheck: Electric field and Coulomb’s law",
+                                    "SectionHeading": " Quickcheck: Electric field and Coulomb's law",
 									"video": "e_field",
                                     "ref": "qcsec_o982.json"
                                 },
@@ -6933,7 +6943,7 @@
                             ]
                         },
                         {
-                            "SectionTitle": "Advanced topics in Coulomb’s law",
+                            "SectionTitle": "Advanced topics in Coulomb's law",
                             "subsection": [
                                 {
                                     "type": "videoScreen",
@@ -7068,17 +7078,17 @@
                             ]
                         },
                         {
-                            "SectionTitle": "Ohm’s law",
+                            "SectionTitle": "Ohm's law",
                             "subsection": [
                                 {
                                     "type": "videoScreen",
-                                    "SectionHeading": "Ohm’s law",
+                                    "SectionHeading": "Ohm's law",
                                     "ref": "expsec_p358.json"
                                 },
                                 {
                                     "type": "quizcheck",
                                     "problem_inst_id": "299546",
-                                    "SectionHeading": " Quickcheck: Ohm’s law ",
+                                    "SectionHeading": " Quickcheck: Ohm's law ",
 									"video": "ohm_law",
                                     "ref": "qcsec_p384.json"
                                 }
@@ -7768,17 +7778,17 @@
                             ]
                         },
                         {
-                            "SectionTitle": "Faraday’s law",
+                            "SectionTitle": "Faraday's law",
                             "subsection": [
                                 {
                                     "type": "videoScreen",
-                                    "SectionHeading": " Faraday’s law",
+                                    "SectionHeading": " Faraday's law",
                                     "ref": "expsec_q779.json"
                                 },
                                 {
                                     "type": "quizcheck",
                                     "problem_inst_id": "299554",
-                                    "SectionHeading": "Quickcheck: Faraday’s law",
+                                    "SectionHeading": "Quickcheck: Faraday's law",
 									"video": "faraday",
                                     "ref": "qcsec_us03.json"
                                 }
@@ -7968,11 +7978,11 @@
                             ]
                         },
                         {
-                            "SectionTitle": "Lenz’s law",
+                            "SectionTitle": "Lenz's law",
                             "subsection": [
                                 {
                                     "type": "videoScreen",
-                                    "SectionHeading": " Lenz’s law",
+                                    "SectionHeading": " Lenz's law",
                                     "ref": "expsec_q781.json"
                                 },
                                 {
@@ -7982,7 +7992,7 @@
                                 },
                                 {
                                     "type": "videoScreen",
-                                    "SectionHeading": " Magnetic field and Lenz’s law",
+                                    "SectionHeading": " Magnetic field and Lenz's law",
                                     "ref": "expsec_q783.json"
                                 },
                                 {
@@ -8326,7 +8336,7 @@
                             ]
                         },
                         {
-                            "SectionTitle": "Huygens’ principle",
+                            "SectionTitle": "Huygens' principle",
                             "subsection": [
                                 {
                                     "type": "videoScreen",
@@ -8462,11 +8472,11 @@
                             ]
                         },
                         {
-                            "SectionTitle": "Rayleigh’s criterion",
+                            "SectionTitle": "Rayleigh's criterion",
                             "subsection": [
                                 {
                                     "type": "videoScreen",
-                                    "SectionHeading": " Rayleigh’s criterion",
+                                    "SectionHeading": " Rayleigh's criterion",
                                     "ref": "expsec_r983.json"
                                 }
                             ]
@@ -9094,10 +9104,10 @@
                 {
                     "section": [
                         {
-                            "SectionTitle": "Snell’s Law",
+                            "SectionTitle": "Snell's Law",
                             "subsection": [
                                 {
-                                    "SectionHeading": "Lesson Overview: Snell’s Law",
+                                    "SectionHeading": "Lesson Overview: Snell's Law",
                                     "ref": "lp_ch21l1a_ui.json"
                                 }
                             ]
@@ -9135,11 +9145,11 @@
                             ]
                         },
                         {
-                            "SectionTitle": "Snell’s law",
+                            "SectionTitle": "Snell's law",
                             "subsection": [
                                 {
                                     "type": "videoScreen",
-                                    "SectionHeading": "Snell’s law",
+                                    "SectionHeading": "Snell's law",
                                     "ref": "expsec_u258.json"
                                 },
                                 {
@@ -9161,7 +9171,7 @@
                             "subsection": [
                                 {
                                     "type": "summary",
-                                    "SectionHeading": "Snell’s law",
+                                    "SectionHeading": "Snell's law",
                                     "objectNames": [
                                         "sum_refraction_concepts",
                                         "sum_index_refraction_concept",
@@ -9208,7 +9218,7 @@
                                 },
                                 {
                                     "type": "videoScreen",
-                                    "SectionHeading": "A fish’s tales",
+                                    "SectionHeading": "A fish's tales",
                                     "ref": "pwsec_u262.json"
                                 }
                             ]
@@ -9558,7 +9568,7 @@
                                 },
                                 {
                                     "type": "videoScreen",
-                                    "SectionHeading": "Rutherford’s experiment and conclusion",
+                                    "SectionHeading": "Rutherford's experiment and conclusion",
                                     "ref": "expsec_v056.json"
                                 }
                             ]
@@ -9944,7 +9954,7 @@
                                 },
                                 {
                                     "type": "videoScreen",
-                                    "SectionHeading": "Einstein’s conclusions",
+                                    "SectionHeading": "Einstein's conclusions",
                                     "ref": "expsec_x462.json"
                                 }
                             ]
@@ -10145,7 +10155,7 @@
                             ]
                         },
                         {
-                            "SectionTitle": "Schrodingers’s cat",
+                            "SectionTitle": "Schrodingers's cat",
                             "subsection": [
                                 {
                                     "type": "videoScreen",
@@ -10430,7 +10440,7 @@
                                 },
                                 {
                                     "type": "videoScreen",
-                                    "SectionHeading": "You can’t own this accelerator",
+                                    "SectionHeading": "You can't own this accelerator",
                                     "ref": "expsec_A417.json"
                                 }
                             ]
@@ -10466,12 +10476,11 @@
                     "section": [
                         {
                             "SectionTitle": "Solar Power",
-                            "link": false,
                             "number": true,
                             "subsection": [
                                 {
                                     "SectionHeading": "Solar Power",
-                                    "ref": "temp.json"
+                                    "ref": "lp_ch24l5a.json"
                                 }
                             ]
                         },
@@ -10521,7 +10530,7 @@
                             "subsection": [
                                 {
                                     "SectionHeading": "Nuclear Power Plants",
-                                    "ref": "temp.json"
+                                    "ref": "lp_ch24l8a.json"
                                 }
                             ]
                         },
@@ -10566,12 +10575,11 @@
                     "section": [
                         {
                             "SectionTitle": "Hyperloop Trains",
-                            "link": false,
                             "number": true,
                             "subsection": [
                                 {
                                     "SectionHeading": "Hyperloop Trains",
-                                    "ref": "temp.json"
+                                    "ref": "lp_ch25l1a.json"
                                 }
                             ]
                         },
@@ -10625,12 +10633,134 @@
                 {
                     "section": [
                         {
+                            "SectionTitle": "Models and Laws",
+                            "subsection": [
+                                {
+                                    "SectionHeading": "Models and Laws",
+                                    "ref": "lp_ch25l2a_ui.json"
+                                }
+                            ]
+                        },
+                        {
+                            "SectionTitle": "Models and laws ",
+                            "subsection": [
+                                {
+                                    "SectionHeading": "Models and laws",
+                                    "ref": "expsec_n1432.json"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "section": [
+                        {
+                            "SectionTitle": "Graphing and Analyzing Data",
+                            "subsection": [
+                                {
+                                    "SectionHeading": "Graphing and Analyzing Data",
+                                    "ref": "lp_ch25l3a.json"
+                                }
+                            ]
+                        },
+                        {
+                            "SectionTitle": "Data basics ",
+                            "subsection": [
+                                {
+                                    "SectionHeading": "Graphing data",
+                                    "ref": "expsec_g1234.json"
+                                },
+                                {
+                                    "SectionHeading": "Mean, median and mode",
+                                    "ref": "expsec_g1239.json"
+                                },
+                                {
+                                    "SectionHeading": "Box plots",
+                                    "ref": "expsec_g1235.json"
+                                }
+                            ]
+                        },
+                        {
+                            "SectionTitle": "Normal distribution ",
+                            "subsection": [
+                                {
+                                    "SectionHeading": "Normal distribution",
+                                    "ref": "expsec_g2347.json"
+                                },
+                                {
+                                    "SectionHeading": "Approximating probabilities",
+                                    "ref": "expsec_g23478.json"
+                                },
+                                {
+                                    "SectionHeading": "Spreadsheet and generating a normal curve",
+                                    "ref": "expsec_g23479.json"
+                                },
+                                {
+                                    "SectionHeading": "Spreadsheet and probabilities",
+                                    "ref": "expsec_g2345534.json"
+                                },
+                                {
+                                    "SectionHeading": "Different types of data",
+                                    "ref": "expsec_g2348.json"
+                                }
+                            ]
+                        },
+                        {
+                            "SectionTitle": "Categorical data",
+                            "subsection": [
+                                {
+                                    "SectionHeading": " Categorical data ",
+                                    "ref": "expsec_g2349.json"
+                                },
+                                {
+                                    "SectionHeading": " Relative frequency ",
+                                    "ref": "expsec_g9876.json"
+                                },
+                                {
+                                    "SectionHeading": " Conditional probability ",
+                                    "ref": "expsec_g9875.json"
+                                },
+                                {
+                                    "SectionHeading": " Testing a conjecture ",
+                                    "ref": "expsec_g9874.json"
+                                }
+                            ]
+                        },
+                        {
+                            "SectionTitle": "Regression",
+                            "subsection": [
+                                {
+                                    "SectionHeading": " Scatter plots ",
+                                    "ref": "expsec_g9873.json"
+                                },
+                                {
+                                    "SectionHeading": " Regression ",
+                                    "ref": "expsec_g9872.json"
+                                },
+                                {
+                                    "SectionHeading": " Coefficient of determination ",
+                                    "ref": "expsec_g98f2.json"
+                                },
+                                {
+                                    "SectionHeading": " Exponential decay ",
+                                    "ref": "expsec_k11f1.json"
+                                },
+                                {
+                                    "SectionHeading": " Modeling with an exponential equation ",
+                                    "ref": "expsec_k11f12d.json"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "section": [
+                        {
                             "SectionTitle": "Using Spreadsheets and Calculators",
-                            "link": false,
                             "subsection": [
                                 {
                                     "SectionHeading": "Using Spreadsheets and Calculators",
-                                    "ref": "temp.json"
+                                    "ref": "lp_ch25l4a.json"
                                 }
                             ]
                         },
@@ -10655,7 +10785,7 @@
                             ]
                         },
                         {
-                            "SectionTitle": "Entering data in a graphing calculator ",
+                            "SectionTitle": "Drawing a scatter plot with a calculator ",
                             "subsection": [
                                 {
                                     "type": "videoScreen",
@@ -10666,12 +10796,7 @@
                                     "type": "videoScreen",
                                     "SectionHeading": " Entering data ",
                                     "ref": "imgsec_c37x.json"
-                                }
-                            ]
                         },
-                        {
-                            "SectionTitle": "Drawing a scatter plot with a calculator",
-                            "subsection": [
                                 {
                                     "type": "videoScreen",
                                     "SectionHeading": " Setting up the calculator ",
@@ -10765,143 +10890,29 @@
                             ]
                         }
                     ]
-                },
-                {
-                    "section": [
-                        {
-                            "SectionTitle": "Graphing and Analyzing Data",
-                            "link": false,
-                            "subsection": [
-                                {
-                                    "SectionHeading": "Graphing and Analyzing Data",
-                                    "ref": "temp.json"
                                 }
                             ]
                         },
                         {
-                            "SectionTitle": "Models and laws ",
-                            "subsection": [
-                                {
                                     "type": "videoScreen",
-                                    "SectionHeading": "Models and laws",
-                                    "ref": "expsec_n1432.json"
-                                }
-                            ]
-                        },
-                        {
-                            "SectionTitle": "Data basics ",
-                            "subsection": [
-                                {
                                     "type": "videoScreen",
-                                    "SectionHeading": "Graphing data",
-                                    "ref": "expsec_g1234.json"
-                                },
-                                {
                                     "type": "videoScreen",
-                                    "SectionHeading": "Mean, median and mode",
-                                    "ref": "expsec_g1239.json"
-                                },
-                                {
                                     "type": "videoScreen",
-                                    "SectionHeading": "Box plots",
-                                    "ref": "expsec_g1235.json"
-                                },
-                                {
                                     "type": "videoScreen",
-                                    "SectionHeading": "Standard deviation",
-                                    "ref": "expsec_g2345.json"
-                                }
-                            ]
-                        },
-                        {
-                            "SectionTitle": "Normal distribution ",
-                            "subsection": [
-                                {
                                     "type": "videoScreen",
-                                    "SectionHeading": "Normal distribution",
-                                    "ref": "expsec_g2347.json"
-                                },
-                                {
                                     "type": "videoScreen",
-                                    "SectionHeading": "Approximating probabilities",
-                                    "ref": "expsec_g23478.json"
-                                },
-                                {
                                     "type": "videoScreen",
-                                    "SectionHeading": "Spreadsheet and generating a normal curve",
-                                    "ref": "expsec_g23479.json"
-                                },
-                                {
                                     "type": "videoScreen",
-                                    "SectionHeading": "Spreadsheet and probabilities",
-                                    "ref": "expsec_g2345534.json"
-                                },
-                                {
                                     "type": "videoScreen",
-                                    "SectionHeading": "Different types of data",
-                                    "ref": "expsec_g2348.json"
-                                }
-                            ]
-                        },
-                        {
-                            "SectionTitle": "Categorical data",
-                            "subsection": [
-                                {
                                     "type": "videoScreen",
-                                    "SectionHeading": " Categorical data ",
-                                    "ref": "expsec_g2349.json"
-                                },
-                                {
                                     "type": "videoScreen",
-                                    "SectionHeading": " Relative frequency ",
-                                    "ref": "expsec_g9876.json"
-                                },
-                                {
                                     "type": "videoScreen",
-                                    "SectionHeading": " Conditional probability ",
-                                    "ref": "expsec_g9875.json"
-                                },
-                                {
                                     "type": "videoScreen",
-                                    "SectionHeading": " Testing a conjecture ",
-                                    "ref": "expsec_g9874.json"
-                                }
-                            ]
-                        },
-                        {
-                            "SectionTitle": "Regression",
-                            "subsection": [
-                                {
                                     "type": "videoScreen",
-                                    "SectionHeading": " Scatter plots ",
-                                    "ref": "expsec_g9873.json"
-                                },
-                                {
                                     "type": "videoScreen",
-                                    "SectionHeading": " Regression ",
-                                    "ref": "expsec_g9872.json"
-                                },
-                                {
                                     "type": "videoScreen",
-                                    "SectionHeading": " Coefficient of determination ",
-                                    "ref": "expsec_g98f2.json"
-                                },
-                                {
                                     "type": "videoScreen",
-                                    "SectionHeading": " Exponential decay ",
-                                    "ref": "expsec_k11f1.json"
-                                },
-                                {
                                     "type": "videoScreen",
-                                    "SectionHeading": " Modeling with an exponential equation ",
-                                    "ref": "expsec_k11f12d.json"
-                                }
-                            ]
-                        }
-                    ]
-                }
-            ]
-        }, {
             "title": "Labs",
             "unit": [
                 {
@@ -11191,32 +11202,38 @@
                                             },
                                             "labs": [
                                                 {
-												"assign_id":"SJTVRhCmAWb",
+                                                    "assign_id": "rJOOXQgoBQW",
                                                     "title": "Using one-dimensional motion equations",
                                                     "href": "course/labs/Using_one_dimensional_equations/page.html"
                                                 },
                                                 {
+                                                    "assign_id": "S1y4X7esSmb",
                                                     "title": "Motion in two dimensions #1",
                                                     "href": "course/labs/Motion_in_two_dimensions_1/page.html"
                                                 },
                                                 {
+                                                    "assign_id": "SkbQQxsr7Z",
                                                     "title": "Motion in two dimensions #2",
                                                     "href": "course/labs/Motion_in_two_dimensions_2/page.html"
                                                 },
                                                 {
+                                                    "assign_id": "ByaQmmljr7b",
                                                     "title": "Circular motion",
                                                     "href": "course/labs/Circular_motion/page.html"
                                                 },
                                                 {
+                                                    "assign_id": "BJ787QesrQW",
                                                     "title": "Force, mass and acceleration",
                                                     "href": "course/labs/Force_mass_acceleration/page.html"
                                                 },
                                                 {
+                                                    "assign_id": "SyGmQloBXZ",
                                                     "title": "Gravity",
                                                     "href": "course/labs/Gravity/page.html",
-                                                    "pageTitle": "Newton’s law of gravity"
+                                                    "pageTitle": "Newton's law of gravity"
                                                 },
                                                 {
+                                                    "assign_id": "BkH8mXejB7b",
                                                     "title": "Collisions",
                                                     "href": "course/labs/Collisions/page.html"
                                                 }
@@ -11232,6 +11249,7 @@
                                             },
                                             "labs": [
                                                 {
+                                                    "assign_id": "HJ2eX7gsH7b",
                                                     "title": "Thermodynamics and states of matter",
                                                     "href": "course/labs/Thermodynamics_and_states_of_matter/page.html"
                                                 }
@@ -11248,6 +11266,7 @@
                                             },
                                             "labs": [
                                                 {
+                                                    "assign_id": "r1iem7xoBXb ",
                                                     "title": "Force between charged particles",
                                                     "href": "course/labs/Force_between_charged_particles/page.html"
                                                 }
@@ -11264,10 +11283,12 @@
                                             },
                                             "labs": [
                                                 {
+                                                    "assign_id": "ryi7Q7eoS7-",
                                                     "title": "Speed, frequency and wavelength",
                                                     "href": "course/labs/Speed_frequency_and_wavelength/page.html"
                                                 },
                                                 {
+                                                    "assign_id": "ByIuQmlsS7-",
                                                     "title": "Resonance",
                                                     "href": "course/labs/Resonance/page.html"
                                                 }
@@ -11283,6 +11304,7 @@
                                             },
                                             "labs": [
                                                 {
+                                                    "assign_id": "S1bUQXeoBX-",
                                                     "title": "Refraction",
                                                     "href": "course/labs/Refraction/page.html"
                                                 }
@@ -11713,7 +11735,7 @@
                                     {
                                         "type": "videoScreen",
                                         "SectionHeading": "Position, Distance and Speed ",
-                                        "ref": "lp_ch01l1a_ui.json"
+                                        "ref": "lp_ch01l1a.json"
                                     },
                                     {
                                         "type": "videoScreen",
@@ -14621,6 +14643,133 @@
                                         "type": "videoScreen",
                                         "SectionHeading": "Lesson and Assessment ",
                                         "ref": "lp_ch24l3b.json"
+                                    }
+                                ]
+                            },
+                            {
+                                "SectionTitle": "Lesson 4: Solar Power",
+                                "subsection": [
+                                    {
+                                        "SectionHeading": "Solar Power ",
+                                        "ref": "lp_ch24l5a.json"
+                                    },
+                                    {
+                                        "SectionHeading": "Lesson and Assessment ",
+                                        "ref": "lp_ch24l5b.json"
+                                    }
+                                ]
+                            },
+                            {
+                                "SectionTitle": "Lesson 5: Nuclear Power Plants ",
+                                "subsection": [
+                                    {
+                                        "SectionHeading": "Nuclear Power Plants ",
+                                        "ref": "lp_ch24l8a.json"
+                                    },
+                                    {
+                                        "SectionHeading": "Lesson and Assessment ",
+                                        "ref": "lp_ch24l5b.json"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "title": "Tools for Physics ",
+                "unit": [
+                    {
+                        "section": [
+                            {
+                                "link": false,
+                                "SectionTitle": "Chapter 25 Lesson Plans",
+                                "subsection": [
+                                    {
+                                        "SectionHeading": "Chapter 25 Lesson Plans",
+                                        "ref": "temp.json"
+                                    }
+                                ]
+                            },
+                            {
+                                "SectionTitle": "Chapter 25 Overview ",
+                                "subsection": [
+                                    {
+                                        "SectionHeading": "Chapter 25 Overview Part 1 ",
+                                        "ref": "lp_ch25a.json"
+                                    },
+                                    {
+                                        "SectionHeading": "Chapter 25 Overview Part 2 ",
+                                        "ref": "lp_ch25b.json"
+                                    },
+                                    {
+                                        "SectionHeading": "Chapter 25 Overview Part ",
+                                        "ref": "lp_ch25c.json"
+                                    }
+                                ]
+                            },
+                            {
+                                "SectionTitle": "Lesson 1: Interference",
+                                "subsection": [
+                                    {
+                                        "SectionHeading": "Interference ",
+                                        "ref": "lp_ch25l1a.json"
+                                    }
+                                ]
+                            },
+                            {
+                                "SectionTitle": "Lesson 2: Calculating Band Locations",
+                                "subsection": [
+                                    {
+                                        "SectionHeading": "Calculating Band Locations ",
+                                        "ref": "lp_ch25l2a.json"
+                                    },
+                                    {
+                                        "SectionHeading": "Lesson and Assessment ",
+                                        "ref": "lp_ch25l2b.json"
+                                    }
+                                ]
+                            },
+                            {
+                                "SectionTitle": "Lesson 3: Graphs and data distribution",
+                                "subsection": [
+                                    {
+                                        "SectionHeading": "Graphs and data distribution ",
+                                        "ref": "lp_ch25l3a.json"
+                                    },
+                                    {
+                                        "SectionHeading": "Lesson and Assessment ",
+                                        "ref": "lp_ch25l1b.json"
+                                    },
+                                    {
+                                        "SectionHeading": "Lesson and Assessment ",
+                                        "ref": "lp_ch25l3b.json"
+                                    }
+                                ]
+                            },
+                            {
+                                "SectionTitle": "Lesson 4: Categorical data",
+                                "subsection": [
+                                    {
+                                        "SectionHeading": "Categorical data ",
+                                        "ref": "lp_ch25l4a.json"
+                                    },
+                                    {
+                                        "SectionHeading": "Lesson ",
+                                        "ref": "lp_ch25l4b.json"
+                                    }
+                                ]
+                            },
+                            {
+                                "SectionTitle": "Lesson 5: Regression",
+                                "subsection": [
+                                    {
+                                        "SectionHeading": "Regression ",
+                                        "ref": "lp_ch25l5a.json"
+                                    },
+                                    {
+                                        "SectionHeading": "Lesson and Assessment ",
+                                        "ref": "lp_ch25l5b.json"
                                     }
                                 ]
                             }
