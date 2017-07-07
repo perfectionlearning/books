@@ -93,7 +93,7 @@
           loadHtml({
             src: "course/template/activity.html",
             parent: p.mContainer,
-            next: "help"
+            next: "help",
           });
           break;
         case "help":
@@ -1090,7 +1090,7 @@
       if ($(this).attr("data-jsact")) {
         loadJSActivity($(this).attr("data-jsact"));
       } else if ($(this).hasClass("activity")) {
-        window.open("http://car-run.herokuapp.com/", "lab", "toolbar=yes,scrollbars=yes,resizable=yes,top=0,left=0,width=900,height=643");
+        window.open("http://car-run.herokuapp.com/", "lab", "scrollbars=yes,resizable=yes,top=0,left=0,width=900,height=643");
       } else {
         var vFlag = $(this).attr('data-video');
         var ind = $(this).attr("data-ind");
@@ -1250,7 +1250,7 @@
             }
           });
           contentWrapper.find(".pExerciseButton").on("click", function (e) {
-            window.open($(this).attr("data-href"), "lab", "toolbar=yes,scrollbars=yes,resizable=yes,top=0,left=0,width=760,height=600");
+            window.open($(this).attr("data-href"), "lab", "scrollbars=yes,resizable=yes,top=0,left=0,width=760,height=600");
           });
           var list = [];
           contentWrapper.children().each(function (i, ele) {
@@ -1356,7 +1356,7 @@
           //window.open("https://qa1.kineticmath.com/reports/overview");
           break;
         case "factbook":
-          window.open("course/factbook/index.html", "factbook", "toolbar=yes,scrollbars=yes,resizable=0,top=0,left=0,width=842,height=593");
+          window.open("course/factbook/index.html", "_blank", "scrollbars=yes,resizable=0,top=0,left=0,width=842,height=593");
           overlayDown()
           break;
         case "setting":
