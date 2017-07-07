@@ -28,9 +28,12 @@
       $(document).off("loadOnlyVideo", loadOnlyVideo).on("loadOnlyVideo", loadOnlyVideo);
       $(document).off("loadAdditionalResource", loadAdditionalResource).on("loadAdditionalResource", loadAdditionalResource);
       $(document).off("showSearchBox", showSearchBox).on("showSearchBox", showSearchBox);
+/*
+ * Commenting this out to fix issue with Logout option not firing. The menu options in playerbtnManager call overlayDown, anyway.
       $(document).off(mouseEvents.down).on(mouseEvents.down, function (e) {
         overlayDown(e);
       });
+*/
     }
     function getBookData(e, data) {
       p.bookData = data.bookData;
@@ -1388,7 +1391,11 @@
           overlayDown()
           break;
         case "logout":
-          overlayDown()
+//        Do not call overlayDown here: mouseup needs to fire on Logout, and overlayDown causes menu to slide up before mouse is released.
+//          overlayDown()
+
+          // Call newly added logout function, which logs the user out and returns to the login screen.
+          logout();
           break;
         case "play":
           overlayDown()
@@ -1590,6 +1597,17 @@
       $(p.mShell).find(".pMenu").removeClass('pSelected');
       $(p.mShell).find(".pMenuWrap").slideUp();
     }
+
+    // Handle Logout menu option.
+    function logout() {
+      var logoutUrl = p.bookData.logout_link;
+      var loginPage = p.bookData.login_link;
+      $.get(logoutUrl)
+        .done((resp) => { console.log('Success'); window.location = loginPage;})
+        .fail((resp) => { console.log('Failure'); })
+      ;
+    }
+
     this.loadScreen = function (data) {
       if (data.type != "labPage") {
         playerbtnManager(data);
