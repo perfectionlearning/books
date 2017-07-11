@@ -37,8 +37,8 @@
 
       httpRequest("course/json/toc/BookDefinition.json", "json", function (_data) {
         coreData = _data;
-        p.courses = _data.courses;
-        p.assigns = _data.assigns;
+        p.rest_courses = _data.rest_courses;
+        p.rest_assigns = _data.rest_assigns;
         p.bookData = _data.chapters;
         p.quizboard_get_link = baseUrl + _data.quizboard_get_link;
         p.get_link = baseUrl + _data.get_link;
@@ -95,7 +95,7 @@
 			data: '{"Wrap_output": false}',
 			method: "PUT",
 			complete: function(jqXHR, textStatus) {
-				httpRequest(p.courses, "json", function (data) {
+				httpRequest(p.rest_courses, "json", function (data) {
 					var fpp_courses = data.filter((item) => { return item.product === 'fpp'; });
 					getSyncIDs(fpp_courses);
 
@@ -116,7 +116,7 @@
 				method: 'PUT',
 				data: '{"current:"' + p.session_info.course_id + ', "id":' + course.id + '}',
 				complete: function(jqXHR, textStatus) {
-					httpRequest(p.assigns, "json", function(data) {
+					httpRequest(p.rest_assigns, "json", function(data) {
 						var qcs = data.filter((item) => { return item.type === 'quickcheck'; });
 						var syncIDs = {};
 						qcs.forEach((item) => { 

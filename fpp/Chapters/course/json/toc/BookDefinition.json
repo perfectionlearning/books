@@ -1,4 +1,6 @@
 {
+    "rest_courses": "/api/rest/courses",
+    "rest_assigns": "/api/rest/assigns",
     "get_link": "/api/rest/quickcheck/",
     "quizboard_get_link": "/api/rest/pset/",
     "set_link": "/api/rest/submit/",
