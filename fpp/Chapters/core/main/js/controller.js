@@ -38,6 +38,7 @@
       httpRequest("course/json/toc/BookDefinition.json", "json", function (_data) {
         coreData = _data;
         p.rest_courses = _data.rest_courses;
+        p.rest_select_course = _data.rest_select_course;
         p.rest_assigns = _data.rest_assigns;
         p.bookData = _data.chapters;
         p.quizboard_get_link = baseUrl + _data.quizboard_get_link;
@@ -47,14 +48,14 @@
         p.setting = baseUrl + _data.setting;
         p.grades_link = baseUrl + _data.grades_link;
         p.wrap_data = baseUrl + _data.wrap_data;
-        getUserId();
-		getFPPCourses();
+//        getUserId();
+//		getFPPCourses();
+        getExternalData();
         $(document).trigger("getBookData", {bookData: _data});
-
-
       });
     }
-    function getUserId() {
+
+    function getExternalData() {
       var request = $.ajax({
         url: p.wrap_data,
         xhrFields: {
@@ -64,7 +65,14 @@
         data: '{"wrap_output": false}',
         method: "PUT",
         complete: function (jqXHR, textStatus) {
-          httpRequest(p.session_info, "json", function (data) {
+            getUserId();
+            getFPPCourses();
+        }
+    }
+
+
+    function getUserId() {
+        httpRequest(p.session_info, "json", function (data) {
             if (data.hasOwnProperty("user_id")) {
               p.userId = data.user_id;
               p.usertype = data.homedisplay;
@@ -79,40 +87,23 @@
 
           });
 
-        }
-      });
-
     }
 
 	// Get FPP courses
 	function getFPPCourses() {
-		var request = $.ajax({
-			url: p.wrap_data,
-			xhrFields: {
-				withCredentials: true
-			},
-			crossDomain: true,
-			data: '{"Wrap_output": false}',
-			method: "PUT",
-			complete: function(jqXHR, textStatus) {
-				httpRequest(p.rest_courses, "json", function (data) {
-					var fpp_courses = data.filter((item) => { return item.product === 'fpp'; });
-					getSyncIDs(fpp_courses);
-
-				}, function () {
-
-				});
-
-			}
-		});
+        httpRequest(p.rest_courses, "json", function (data) {
+            var fpp_courses = data.filter((item) => { return item.product === 'fpp'; });
+            getSyncIDs(fpp_courses);
+        }, function () {
+        });
 	}
 
 	// Get syncID to instanceID from FPP assignments.
-	function getSyncIDs(fpp_courses) {
+    function getSyncIDs(fpp_courses) {
 		if (fpp_courses.length > 0) {
 			var course = fpp_courses.shift();
 			$.ajax({
-				url: '/api/rest/courses/select/' + course.id,
+				url: p.rest_select_course + course.id,
 				method: 'PUT',
 				data: '{"current:"' + p.session_info.course_id + ', "id":' + course.id + '}',
 				complete: function(jqXHR, textStatus) {
@@ -130,7 +121,7 @@
 		} else {
 			fillInInstanceIds(p.syncIDs);
 		}
-	}
+    }
 
 	// Fill in instance_ids in BookDefinition object.
 	function fillInInstanceIds(syncIDs) {
