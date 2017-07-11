@@ -37,6 +37,8 @@
 
       httpRequest("course/json/toc/BookDefinition.json", "json", function (_data) {
         coreData = _data;
+        p.courses = _data.courses;
+        p.assigns = _data.assigns;
         p.bookData = _data.chapters;
         p.quizboard_get_link = baseUrl + _data.quizboard_get_link;
         p.get_link = baseUrl + _data.get_link;
@@ -46,6 +48,7 @@
         p.grades_link = baseUrl + _data.grades_link;
         p.wrap_data = baseUrl + _data.wrap_data;
         getUserId();
+		getFPPCourses();
         $(document).trigger("getBookData", {bookData: _data});
 
 
@@ -62,7 +65,6 @@
         method: "PUT",
         complete: function (jqXHR, textStatus) {
           httpRequest(p.session_info, "json", function (data) {
-            console.log(data);
             if (data.hasOwnProperty("user_id")) {
               p.userId = data.user_id;
               p.usertype = data.homedisplay;
@@ -81,6 +83,64 @@
       });
 
     }
+
+	// Get FPP courses
+	function getFPPCourses() {
+		var request = $.ajax({
+			url: p.wrap_data,
+			xhrFields: {
+				withCredentials: true
+			},
+			crossDomain: true,
+			data: '{"Wrap_output": false}',
+			method: "PUT",
+			complete: function(jqXHR, textStatus) {
+				httpRequest(p.courses, "json", function (data) {
+					var fpp_courses = data.filter((item) => { return item.product === 'fpp'; });
+					getSyncIDs(fpp_courses);
+
+				}, function () {
+
+				});
+
+			}
+		});
+	}
+
+	// Get syncID to instanceID from FPP assignments.
+	function getSyncIDs(fpp_courses) {
+		if (fpp_courses.length > 0) {
+			var course = fpp_courses.shift();
+			$.ajax({
+				url: '/api/rest/courses/select/' + course.id,
+				method: 'PUT',
+				data: '{"current:"' + p.session_info.course_id + ', "id":' + course.id + '}',
+				complete: function(jqXHR, textStatus) {
+					httpRequest(p.assigns, "json", function(data) {
+						var qcs = data.filter((item) => { return item.type === 'quickcheck'; });
+						var syncIDs = {};
+						qcs.forEach((item) => { 
+							syncIDs[item.syncID] = item.id
+						});
+						p.syncIDs = syncIDs;
+						getSyncIDs(fpp_courses);
+					});
+				}
+			});
+		} else {
+			fillInInstanceIds(p.syncIDs);
+		}
+	}
+
+	// Fill in instance_ids in BookDefinition object.
+	function fillInInstanceIds(syncIDs) {
+		p.bookData.forEach((item) => {
+			if (item.sync_id) {
+				item.instance_id = syncIDs[item.sync_id];
+			}
+		});
+		loadScreen();
+	}
 
     function updateBook(e, book) {
       if (book.book) {
@@ -190,6 +250,7 @@
 
     }
     function loadScreen(vIndex) {
+console.log('Starting loadScreen', vIndex);
       manageNavigationState();
       var _data = p.bookData[p.chap]["unit"][p.unit]["section"][p.section]["subsection"][p.subSection];
       $(document).trigger("loadSubMenu", {"chap": p.chap});
@@ -241,6 +302,7 @@
             _temp.screenNo = screenNo;
             _temp.screenData = data1;
             _temp.instance_id = p.bookData[p.chap]["instance_id"];
+console.log('getQuizData callback', _temp.instance_id);
             _temp.problem_inst_id = p.bookData[p.chap]["unit"][p.unit]["section"][p.section]["subsection"][p.subSection]["problem_inst_id"];
             $(document).trigger("loadQuizCheck", _temp);
           });
@@ -324,6 +386,7 @@
       $(".pSubMenuTopic[data-chap='" + p.chap + "'][data-topic='" + p.unit + "'][data-subtopic='" + p.section + "'][data-subsection='" + p.subSection + "'] ").prevUntil('.pSubMenuTopicHeader').prev().show();
     }
     function getQuizData(_data, cb) {
+console.log('getQuizData', p.bookData[p.chap]);
       httpRequest(p.get_link + p.bookData[p.chap]["instance_id"], "json", function (data) {
         console.log(data);
         data = data[p.bookData[p.chap]["unit"][p.unit]["section"][p.section]["subsection"][p.subSection]["problem_inst_id"]];

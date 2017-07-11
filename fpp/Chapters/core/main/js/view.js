@@ -1587,9 +1587,9 @@
 
   // Handle Logout menu option.
   function logout() {
-  var logoutUrl = p.bookData.logout_link;
+    var logoutUrl = p.bookData.logout_link;
     var loginPage = p.bookData.login_link;
-    $.get(logoutUrl).done((resp) = > { console.log('Success'); window.location = loginPage; }).fail((resp) = > { console.log('Failure'); });
+    $.get(logoutUrl).done((resp) => { console.log('Success'); window.location = loginPage; }).fail((resp) => { console.log('Failure'); });
   }
 
   this.loadScreen = function (data) {
