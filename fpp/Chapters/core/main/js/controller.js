@@ -48,13 +48,12 @@
         p.setting = baseUrl + _data.setting;
         p.grades_link = baseUrl + _data.grades_link;
         p.wrap_data = baseUrl + _data.wrap_data;
-//        getUserId();
-//		getFPPCourses();
         getExternalData();
         $(document).trigger("getBookData", {bookData: _data});
       });
     }
 
+    // Set up to perform REST calls with wrapping set to false.
     function getExternalData() {
       var request = $.ajax({
         url: p.wrap_data,
@@ -72,6 +71,7 @@
     }
 
 
+    // Perform REST call to get user ID from session data.
     function getUserId() {
         httpRequest(p.session_info, "json", function (data) {
             if (data.hasOwnProperty("user_id")) {
@@ -93,8 +93,8 @@
 	// Get FPP courses
 	function getFPPCourses() {
         httpRequest(p.rest_courses, "json", function (data) {
-            var fpp_courses = data.filter((item) => { return item.product === 'fpp'; });
-            getSyncIDs(fpp_courses);
+                var fpp_courses = data.filter((item) => { return item.product === 'fpp'; });
+                getSyncIDs(fpp_courses);
         }, function () {
         });
 	}
@@ -242,7 +242,7 @@
 
     }
     function loadScreen(vIndex) {
-console.log('Starting loadScreen', vIndex);
+      if (!p.chap) return;
       manageNavigationState();
       var _data = p.bookData[p.chap]["unit"][p.unit]["section"][p.section]["subsection"][p.subSection];
       $(document).trigger("loadSubMenu", {"chap": p.chap});
