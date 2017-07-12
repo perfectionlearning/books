@@ -90,7 +90,7 @@
   // Get FPP courses
   function getFPPCourses() {
   httpRequest(p.rest_courses, "json", function (data) {
-  var fpp_courses = data.filter((item) = > { return item.product === 'fpp'; });
+  var fpp_courses = data.filter((item) => { return item.product === 'fpp'; });
     getSyncIDs(fpp_courses);
   }, function () {
   });
@@ -106,9 +106,9 @@
       data: '{"current:"' + p.session_info.course_id + ', "id":' + course.id + '}',
       complete: function(jqXHR, textStatus) {
       httpRequest(p.rest_assigns, "json", function(data) {
-      var qcs = data.filter((item) = > { return item.type === 'quickcheck'; });
+      var qcs = data.filter((item) => { return item.type === 'quickcheck'; });
         var syncIDs = {};
-        qcs.forEach((item) = > {
+        qcs.forEach((item) => {
         syncIDs[item.syncID] = item.id
         });
         p.syncIDs = syncIDs;
@@ -123,7 +123,7 @@
 
   // Fill in instance_ids in BookDefinition object.
   function fillInInstanceIds(syncIDs) {
-  p.bookData.forEach((item) = > {
+  p.bookData.forEach((item) => {
   if (item.sync_id) {
   item.instance_id = syncIDs[item.sync_id];
   }
