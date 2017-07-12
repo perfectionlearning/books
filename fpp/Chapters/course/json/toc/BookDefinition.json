@@ -20,7 +20,7 @@
             "title": "One-dimensional Motion",
             "quizBoard_id": "B1U4BDu0XRl",
             "instance_id": "SJyXSw_0X0e",
-			"sync_id": 12681,
+            "sync_id": 12681,
             "unit": [
                 {
                     "section": [
@@ -392,7 +392,7 @@
             "title": "Analyzing 1-D Motion",
             "quizBoard_id": "ryhvrPuRm0e",
             "instance_id": "rk9Krv_AQRx",
-			"sync_id": 12682,
+            "sync_id": 12682,
             "unit": [
                 {
                     "section": [
@@ -733,7 +733,7 @@
             "title": "Physics and Science Essentials",
             "quizBoard_id": "HkPSBvdCm0l",
             "instance_id": "H1HvrwORmCe",
-			"sync_id": 12683,
+            "sync_id": 12683,
             "unit": [
                 {
                     "section": [
@@ -1335,7 +1335,7 @@
             "title": "Two-dimensional Motion",
             "quizBoard_id": "Sk0hWwjRGCg",
             "instance_id": "By-HHDO0Q0g",
-			"sync_id": 12684,
+            "sync_id": 12684,
             "unit": [
                 {
                     "section": [
@@ -1689,11 +1689,6 @@
                                     "type": "videoScreen",
                                     "SectionHeading": " Projectile motion equations",
                                     "ref": "expsec_d482.json"
-                                },
-                                {
-                                    "type": "videoScreen",
-                                    "SectionHeading": "Activity: Target practice",
-                                    "ref": "samesec_jr233452213.json"
                                 }
                             ]
                         },
@@ -1875,7 +1870,7 @@
             "title": "Force",
             "quizBoard_id": "Bkg4rD_0mCe",
             "instance_id": "BJtgSDdRmAe",
-			"sync_id": 12685,
+            "sync_id": 12685,
             "unit": [
                 {
                     "section": [
@@ -2374,7 +2369,7 @@
             "title": "Work, Energy and Power",
             "quizBoard_id": "H1WUSD_0mCl",
             "instance_id": "rkyZBwdR70g",
-			"sync_id": 12686,
+            "sync_id": 12686,
             "unit": [
                 {
                     "section": [
@@ -2825,7 +2820,7 @@
             "title": "Momentum",
             "quizBoard_id": "SJOVbPjRMAx",
             "instance_id": "SyNBBv_Rm0e",
-			"sync_id": 12687,
+            "sync_id": 12687,
             "unit": [
                 {
                     "section": [
@@ -3103,7 +3098,7 @@
             "title": "Circular Motion and Gravity",
             "quizBoard_id": "rJMBvu0Q0e",
             "instance_id": "B1jFHvOCmCl",
-			"sync_id": 12688,
+            "sync_id": 12688,
             "unit": [
                 {
                     "section": [
@@ -3341,11 +3336,11 @@
                             ]
                         },
                         {
-                            "SectionTitle": "Newton’s cannon",
+                            "SectionTitle": "Newton's cannon",
                             "subsection": [
                                 {
                                     "type": "videoScreen",
-                                    "SectionHeading": " Newton’s cannon",
+                                    "SectionHeading": " Newton's cannon",
                                     "ref": "expsec_h570.json"
                                 }
                             ]
@@ -3374,7 +3369,7 @@
                                     "ref": "expsec_h572.json"
                                 },
                                 {
-                                    "type": " onlyVideo",
+                                    "type": "onlyVideo",
                                     "SectionHeading": " Derivation ",
                                     "ref": "der_derive_orbital_speed"
                                 }
@@ -3408,7 +3403,7 @@
                 {
                     "section": [
                         {
-                            "SectionTitle": "Kepler’s Laws",
+                            "SectionTitle": "Kepler's Laws",
                             "subsection": [
                                 {
                                     "SectionHeading": "Lesson Overview: Kepler's Laws",
@@ -3417,11 +3412,11 @@
                             ]
                         },
                         {
-                            "SectionTitle": "Kepler’s first law",
+                            "SectionTitle": "Kepler's first law",
                             "subsection": [
                                 {
                                     "type": "videoScreen",
-                                    "SectionHeading": " Kepler’s first law",
+                                    "SectionHeading": " Kepler's first law",
                                     "ref": "expsec_h577.json"
                                 }
                             ]
@@ -3497,7 +3492,7 @@
             "title": "Rotational Motion",
             "quizBoard_id": "Bk--BDu0XCl",
             "instance_id": "rk7BSv_C7Cl",
-			"sync_id": 12689,
+            "sync_id": 12689,
             "unit": [
                 {
                     "section": [
@@ -4038,7 +4033,7 @@
             "title": "Fluids",
             "quizBoard_id": "SJ4mHPO07Ax",
             "instance_id": "ByigSv_R7Ae",
-			"sync_id": 12690,
+            "sync_id": 12690,
             "unit": [
                 {
                     "section": [
@@ -4441,7 +4436,7 @@
             "title": "Temperature and Heat",
             "quizBoard_id": "BJtLSPOAmCe",
             "instance_id": "ByMrBwdA7Rx",
-			"sync_id": 12691,
+            "sync_id": 12691,
             "unit": [
                 {
                     "section": [
@@ -4991,7 +4986,7 @@
             "title": "Thermodynamics and Engines",
             "quizBoard_id": "Sk78Hw_AQCx",
             "instance_id": "HyOtHPdAmCx",
-			"sync_id": 12692,
+            "sync_id": 12692,
             "unit": [
                 {
                     "section": [
@@ -5499,7 +5494,7 @@
             "title": "SHM and Waves",
             "quizBoard_id": "S1UHPdCm0e",
             "instance_id": "BkAfBvdAX0e",
-			"sync_id": 12693,
+            "sync_id": 12693,
             "unit": [
                 {
                     "section": [
@@ -5987,7 +5982,7 @@
             "title": "Sound",
             "quizBoard_id": "rk18SwO0QCe",
             "instance_id": "SJFFBwu0mAx",
-			"sync_id": 12692,
+            "sync_id": 12692,
             "unit": [
                 {
                     "section": [
@@ -6454,7 +6449,7 @@
             "title": "Electric Charge",
             "quizBoard_id": "B1PZrDuRXCl",
             "instance_id": "rJdPrPORQCl",
-			"sync_id": 12695,
+            "sync_id": 12695,
             "unit": [
                 {
                     "section": [
@@ -6614,11 +6609,6 @@
                                     "type": "videoScreen",
                                     "SectionHeading": " Coulomb's law",
                                     "ref": "expsec_o969.json"
-                                },
-                                {
-                                    "type": "activity",
-                                    "SectionHeading": " Activity: First person proton",
-                                    "ref": "actsec_o954mi.json"
                                 },
                                 {
                                     "type": "quizcheck",
@@ -6950,7 +6940,7 @@
             "title": "Electric Circuits",
             "quizBoard_id": "ByprrPdCX0g",
             "instance_id": "S1vYrD_R7Cg",
-			"sync_id": 12696,
+            "sync_id": 12696,
             "unit": [
                 {
                     "section": [
@@ -7476,7 +7466,7 @@
             "title": "Magnets and Charge",
             "quizBoard_id": "S1RYHPO0m0g",
             "instance_id": "ByaGHvOA7Cg",
-			"sync_id": 12697,
+            "sync_id": 12697,
             "unit": [
                 {
                     "section": [
@@ -8040,7 +8030,7 @@
             "title": "Interference and Diffraction",
             "quizBoard_id": "SyYSSPOCmAg",
             "instance_id": "S1qlrDuCXAx",
-			"sync_id": 12698,
+            "sync_id": 12698,
             "unit": [
                 {
                     "section": [
@@ -8417,7 +8407,7 @@
             "title": "Light",
             "quizBoard_id": "HJCHDuRXAe",
             "instance_id": "ByTgHDuC70g",
-			"sync_id": 12699,
+            "sync_id": 12699,
             "unit": [
                 {
                     "section": [
@@ -8694,7 +8684,7 @@
             "title": "Reflection",
             "quizBoard_id": "HJdSwdCXRl",
             "instance_id": "BJ3YrD_C70l",
-			"sync_id": 12700,
+            "sync_id": 12700,
             "unit": [
                 {
                     "section": [
@@ -9004,7 +8994,7 @@
             "title": "Refraction and Lenses",
             "quizBoard_id": "H1CXHPu0X0l",
             "instance_id": "rJ3xSvuCQ0g",
-			"sync_id": 12701,
+            "sync_id": 12701,
             "unit": [
                 {
                     "section": [
@@ -9434,7 +9424,7 @@
             "title": "Nuclear Physics",
             "quizBoard_id": "Sk57rPuRQCe",
             "instance_id": "BkxXrvuC7Al",
-			"sync_id": 12725,
+            "sync_id": 12725,
             "unit": [
                 {
                     "section": [
@@ -9752,7 +9742,7 @@
             "title": "Quantum Physics",
             "quizBoard_id": "BJH-BvuCXAe",
             "instance_id": "rkIDHPOA7Rg",
-			"sync_id": 12702,
+            "sync_id": 12702,
             "unit": [
                 {
                     "section": [
@@ -10108,7 +10098,7 @@
             "title": "Advances in Physics",
             "quizBoard_id": "ryb5BvdCQAl",
             "instance_id": "S1vwSDd07Al",
-			"sync_id": 12703,
+            "sync_id": 12703,
             "unit": [
                 {
                     "section": [
@@ -10800,6 +10790,70 @@
                                     "type": "videoScreen",
                                     "SectionHeading": " Adding & subtracting in scientific notation",
                                     "ref": "imgsec_c378.json"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "section": [
+                        {
+                            "SectionTitle": "Lesson 4: Research and presentation skills",
+                            "link": false,
+                            "subsection": [
+                                {
+                                    "SectionHeading": "Using Spreadsheets and Calculators",
+                                    "ref": ""
+                                }
+                            ]
+                        },
+                        {
+                            "SectionTitle": "MS Math Content",
+                            "subsection": [
+                                {
+                                    "type": "pdfScreen",
+                                    "SectionHeading": "MS Math Content",
+                                    "ref": "MS_Math_Content_FPP.pdf"
+                                }
+                            ]
+                        },
+                        {
+                            "SectionTitle": "Creating a Presentation Resource",
+                            "subsection": [
+                                {
+                                    "type": "pdfScreen",
+                                    "SectionHeading": "Creating a Presentation Resource",
+                                    "ref": "Creating_a_Presentation_Resource.pdf"
+                                }
+                            ]
+                        },
+                        {
+                            "SectionTitle": "Writing an Article Resource",
+                            "subsection": [
+                                {
+                                    "type": "pdfScreen",
+                                    "SectionHeading": " Entering data ",
+                                    "ref": "Writing_an_Article_Resource.pdf"
+                                }
+                            ]
+                        },
+                        {
+                            "SectionTitle": "Projects Resource",
+                            "subsection": [
+                                {
+                                    "type": "pdfScreen",
+                                    "SectionHeading": "Projects Resource",
+                                    "ref": "Projects_Resource.pdf"
+                                }
+                            ]
+                        },
+                        {
+                            "SectionTitle": "Reading a Textbook Resource",
+                            "subsection": [
+                                {
+                                    "type": "pdfScreen",
+                                    "SectionHeading": "Reading a Textbook Resource",
+                                    "ref": "Reading_a_Textbook_Resource.pdf"
                                 }
                             ]
                         }
@@ -12161,11 +12215,11 @@
                                 ]
                             },
                             {
-                                "SectionTitle": "Lesson 1: Force and Newton’s First Law",
+                                "SectionTitle": "Lesson 1: Force and Newton's First Law",
                                 "subsection": [
                                     {
                                         "type": "videoScreen",
-                                        "SectionHeading": "Force and Newton’s First Law ",
+                                        "SectionHeading": "Force and Newton's First Law ",
                                         "ref": "lp_ch05l1a.json"
                                     },
                                     {
@@ -12176,11 +12230,11 @@
                                 ]
                             },
                             {
-                                "SectionTitle": "Lesson 2: Newton’s Second Law",
+                                "SectionTitle": "Lesson 2: Newton's Second Law",
                                 "subsection": [
                                     {
                                         "type": "videoScreen",
-                                        "SectionHeading": "Newton’s Second Law ",
+                                        "SectionHeading": "Newton's Second Law ",
                                         "ref": "lp_ch05l2a.json"
                                     },
                                     {
@@ -12191,11 +12245,11 @@
                                 ]
                             },
                             {
-                                "SectionTitle": "Lesson 3: Newton’s Third Law & Types of Forces",
+                                "SectionTitle": "Lesson 3: Newton's Third Law & Types of Forces",
                                 "subsection": [
                                     {
                                         "type": "videoScreen",
-                                        "SectionHeading": "Newton’s Third Law & Types of Forces ",
+                                        "SectionHeading": "Newton's Third Law & Types of Forces ",
                                         "ref": "lp_ch05l3a.json"
                                     },
                                     {
@@ -12543,11 +12597,11 @@
                                 ]
                             },
                             {
-                                "SectionTitle": "Lesson 3: Newton’s Law of Gravity",
+                                "SectionTitle": "Lesson 3: Newton's Law of Gravity",
                                 "subsection": [
                                     {
                                         "type": "videoScreen",
-                                        "SectionHeading": "Newton’s Law of Gravity ",
+                                        "SectionHeading": "Newton's Law of Gravity ",
                                         "ref": "lp_ch08l3a.json"
                                     },
                                     {
@@ -12573,11 +12627,11 @@
                                 ]
                             },
                             {
-                                "SectionTitle": "Lesson 5: Kepler’s Laws",
+                                "SectionTitle": "Lesson 5: Kepler's Laws",
                                 "subsection": [
                                     {
                                         "type": "videoScreen",
-                                        "SectionHeading": "Kepler’s Laws ",
+                                        "SectionHeading": "Kepler's Laws ",
                                         "ref": "lp_ch08l5a.json"
                                     },
                                     {
@@ -12826,11 +12880,11 @@
                                 ]
                             },
                             {
-                                "SectionTitle": "Lesson 4: Archimedes’ Principle",
+                                "SectionTitle": "Lesson 4: Archimedes' Principle",
                                 "subsection": [
                                     {
                                         "type": "videoScreen",
-                                        "SectionHeading": "Archimedes’ Principle ",
+                                        "SectionHeading": "Archimedes' Principle ",
                                         "ref": "lp_ch10l4a.json"
                                     },
                                     {
@@ -12841,11 +12895,11 @@
                                 ]
                             },
                             {
-                                "SectionTitle": "Lesson 5: Pascal’s Principle and Fluid Continuity",
+                                "SectionTitle": "Lesson 5: Pascal's Principle and Fluid Continuity",
                                 "subsection": [
                                     {
                                         "type": "videoScreen",
-                                        "SectionHeading": "Pascal’s Principle and Fluid Continuity ",
+                                        "SectionHeading": "Pascal's Principle and Fluid Continuity ",
                                         "ref": "lp_ch10l5a.json"
                                     },
                                     {
@@ -12856,11 +12910,11 @@
                                 ]
                             },
                             {
-                                "SectionTitle": "Lesson 6: Bernoulli’s Principle",
+                                "SectionTitle": "Lesson 6: Bernoulli's Principle",
                                 "subsection": [
                                     {
                                         "type": "videoScreen",
-                                        "SectionHeading": "Bernoulli’s Principle ",
+                                        "SectionHeading": "Bernoulli's Principle ",
                                         "ref": "lp_ch10l6a.json"
                                     },
                                     {
@@ -14160,11 +14214,11 @@
                                 ]
                             },
                             {
-                                "SectionTitle": "Lesson 1: Snell’s Law",
+                                "SectionTitle": "Lesson 1: Snell's Law",
                                 "subsection": [
                                     {
                                         "type": "videoScreen",
-                                        "SectionHeading": "Snell’s Law ",
+                                        "SectionHeading": "Snell's Law ",
                                         "ref": "lp_ch21l1a.json"
                                     },
                                     {
@@ -14688,8 +14742,131 @@
                         ]
                     }
                 ]
+            },
+            {
+                "title": "Math Lessons ",
+                "unit": [
+                    {
+                        "section": [
+                            {
+                                "SectionTitle": "Chapter 26 Lesson Plans",
+                                "link": false,
+                                "subsection": [
+                                    {
+                                        "SectionHeading": "Chapter Lesson Plans",
+                                        "ref": "temp.json"
+                                    }
+                                ]
+                            },
+                            {
+                                "SectionTitle": "Lesson 1: Step and other functions ",
+                                "subsection": [
+                                    {
+                                        "type": "videoScreen",
+                                        "SectionHeading": "Step and other functions ",
+                                        "ref": "lp_ch80a.json"
+                                    },
+                                    {
+                                        "type": "videoScreen",
+                                        "SectionHeading": "Lesson and Assessment",
+                                        "ref": "lp_ch80b.json"
+                                    }
+                                ]
+                            },
+                            {
+                                "SectionTitle": "Lesson 2: More functions",
+                                "subsection": [
+                                    {
+                                        "type": "videoScreen",
+                                        "SectionHeading": "Square root and exponential",
+                                        "ref": "lp_ch80c.json"
+                                    },
+                                    {
+                                        "type": "videoScreen",
+                                        "SectionHeading": "Lesson and Assessment",
+                                        "ref": "lp_ch80d.json"
+                                    }
+                                ]
+                            },
+                            {
+                                "SectionTitle": "Lesson 3: Polynomial functions",
+                                "subsection": [
+                                    {
+                                        "type": "videoScreen",
+                                        "SectionHeading": "Polynomial functions",
+                                        "ref": "lp_ch80e.json"
+                                    },
+                                    {
+                                        "type": "videoScreen",
+                                        "SectionHeading": "Lesson and Assessment ",
+                                        "ref": "lp_ch80f.json"
+                                    }
+                                ]
+                            },
+                            {
+                                "SectionTitle": "Lesson 4: Rational expressions",
+                                "subsection": [
+                                    {
+                                        "type": "videoScreen",
+                                        "SectionHeading": "Rational expressions ",
+                                        "ref": "lp_ch80g.json"
+                                    },
+                                    {
+                                        "type": "videoScreen",
+                                        "SectionHeading": "Lesson and Assessment ",
+                                        "ref": "lp_ch80h.json"
+                                    }
+                                ]
+                            },
+                            {
+                                "SectionTitle": "Lesson 5: Logarithmic expressions",
+                                "subsection": [
+                                    {
+                                        "type": "videoScreen",
+                                        "SectionHeading": "Logarithmic expressions ",
+                                        "ref": "lp_ch80i.json"
+                                    },
+                                    {
+                                        "type": "videoScreen",
+                                        "SectionHeading": "Lesson and Assessment ",
+                                        "ref": "lp_ch80j.json"
+                                    }
+                                ]
+                            },
+                            {
+                                "SectionTitle": "Lesson 6: Trigonometric functions",
+                                "subsection": [
+                                    {
+                                        "type": "videoScreen",
+                                        "SectionHeading": "Trigonometric functions ",
+                                        "ref": "lp_ch80k.json"
+                                    },
+                                    {
+                                        "type": "videoScreen",
+                                        "SectionHeading": "Lesson and Assessment ",
+                                        "ref": "lp_ch80l.json"
+                                    }
+                                ]
+                            },
+                            {
+                                "SectionTitle": "Lesson 7: Volume",
+                                "subsection": [
+                                    {
+                                        "type": "videoScreen",
+                                        "SectionHeading": "Volume ",
+                                        "ref": "lp_ch80m.json"
+                                    },
+                                    {
+                                        "type": "videoScreen",
+                                        "SectionHeading": "Lesson and Assessment ",
+                                        "ref": "lp_ch80n.json"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
             }
-
         ]
     }
 }
