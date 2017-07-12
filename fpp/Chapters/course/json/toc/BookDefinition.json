@@ -10654,6 +10654,16 @@
                                     "ref": "expsec_k11f12d.json"
                                 }
                             ]
+                        },
+                        {
+                            "SectionTitle": "Functions, graphing and volume",
+                            "subsection": [
+                                {
+                                    "type": "pdfScreen",
+                                    "SectionHeading": "Functions, graphing and volume",
+                                    "ref": "MS_Math_Content_FPP.pdf"
+                                }
+                            ]
                         }
                     ]
                 },
@@ -10806,17 +10816,7 @@
                                     "ref": ""
                                 }
                             ]
-                        },
-                        {
-                            "SectionTitle": "MS Math Content",
-                            "subsection": [
-                                {
-                                    "type": "pdfScreen",
-                                    "SectionHeading": "MS Math Content",
-                                    "ref": "MS_Math_Content_FPP.pdf"
-                                }
-                            ]
-                        },
+                        },                      
                         {
                             "SectionTitle": "Creating a Presentation Resource",
                             "subsection": [
