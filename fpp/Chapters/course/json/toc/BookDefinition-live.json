@@ -1,4 +1,7 @@
 {
+    "rest_courses": "/api/rest/courses",
+    "rest_assigns": "/api/rest/assigns",
+    "rest_select_course": "/api/rest/courses/select/",
     "get_link": "/api/rest/quickcheck/",
     "quizboard_get_link": "/api/rest/pset/",
     "set_link": "/api/rest/submit/",
@@ -83,7 +86,6 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "298169",
                                     "SectionHeading": "Quickcheck",
-									"video": "math_solve_for_x",
                                     "ref": "qcsec_di1024.json"
                                 }
                             ]
@@ -147,7 +149,6 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "298171",
                                     "SectionHeading": "Quickcheck",
-									"video": "displacement",
                                     "ref": "qcsec_di17.json"
                                 }
                             ]
@@ -164,7 +165,6 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "298172",
                                     "SectionHeading": "Quickcheck",
-									"video": "velocity",
                                     "ref": "qcsec_di18.json"
                                 },
                                 {
@@ -218,7 +218,6 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "298173",
                                     "SectionHeading": "Quickcheck",
-									"video": "average_instant_v",
                                     "ref": "qcsec_di19.json"
                                 }
                             ]
@@ -280,7 +279,6 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "298174",
                                     "SectionHeading": "Quickcheck",
-									"video": "acceleration",
                                     "ref": "qcsec_di21.json"
                                 },
                                 {
@@ -307,7 +305,6 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "298175",
                                     "SectionHeading": "Quickcheck",
-									"video": "acceleration",
                                     "ref": "qcsec_5024mi.json"
                                 }
                             ]
@@ -350,7 +347,6 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "298176",
                                     "SectionHeading": "Quickcheck",
-									"video": "motion_equations",
                                     "ref": "qcsec_di1734.json"
                                 },
                                 {
@@ -504,7 +500,6 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "298177",
                                     "SectionHeading": "Quickcheck",
-									"video": "position_time_graphs",
                                     "ref": "qcsec_di20.json"
                                 }
                             ]
@@ -641,14 +636,12 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "298179",
                                     "SectionHeading": "Quickcheck: Freefall acceleration 1",
-									"video": "freefall_projectile",
                                     "ref": "qcsec_di24.json"
                                 },
                                 {
                                     "type": "quizcheck",
                                     "problem_inst_id": "298180",
                                     "SectionHeading": "Quickcheck: Freefall acceleration 2",
-									"video": "freefall_projectile",
                                     "ref": "qcsec_di25.json"
                                 }
                             ]
@@ -705,7 +698,6 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "298181",
                                     "SectionHeading": " Quickcheck: Relative velocity ",
-									"video": "relative_velocity",
                                     "ref": "qcsec_j359.json"
                                 }
                             ]
@@ -806,7 +798,6 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "298182",
                                     "SectionHeading": " Quickcheck: Unit conversions",
-									"video": "unit_conversions",
                                     "ref": "qcsec_c3763.json"
                                 },
                                 {
@@ -876,7 +867,6 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "298186",
                                     "SectionHeading": " Quickcheck: Scientific notation 1",
-									"video": "scientific_notation",
                                     "ref": "qcsec_c3761.json"
                                 },
                                 {
@@ -894,7 +884,6 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "298187",
                                     "SectionHeading": " Quickcheck: Scientific notation 2",
-									"video": "scientific_notation",
                                     "ref": "qcsec_c3762.json"
                                 },
                                 {
@@ -927,7 +916,6 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "298185",
                                     "SectionHeading": " Quickcheck: Multiply scientific notation",
-									"video": "scientific_notation",
                                     "ref": "qcsec_c3764.json"
                                 },
                                 {
@@ -939,7 +927,6 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "298188",
                                     "SectionHeading": " Quickcheck: Divide scientific notationsyte",
-									"video": "scientific_notation",
                                     "ref": "qcsec_c3765.json"
                                 }
                             ]
@@ -1222,7 +1209,7 @@
                                     "ref": "expsec_rm20.json"
                                 }
                             ]
-                                },
+                        },
                         {
                             "SectionTitle": "\"Your\" science experiment",
                             "subsection": [
@@ -1235,7 +1222,6 @@
                                     "type": "videoScreen",
                                     "SectionHeading": " Golf balls part 2",
                                     "ref": "expsec_a3744211.json",
-                                    "type": "videoScreen"
                                 }
                             ]
                         },
@@ -1404,14 +1390,12 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "298193",
                                     "SectionHeading": "Quickcheck: Velocity in rectangular notation ",
-									"video": "vector_components",
                                     "ref": "qcsec_j358.json"
                                 },
                                 {
                                     "type": "quizcheck",
                                     "problem_inst_id": "298192",
                                     "SectionHeading": "Quickcheck: Velocity components",
-									"video": "two_d_motion",
                                     "ref": "qcsec_r358.json"
                                 },
                                 {
@@ -1637,7 +1621,6 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "298194",
                                     "SectionHeading": "Quickcheck: Adding vectors",
-									"video": "add_vectors_components",
                                     "ref": "qcsec_di29.json"
                                 }
                             ]
@@ -1761,7 +1744,6 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "298198",
                                     "SectionHeading": "Quickcheck: Multiplying a rectangular vector by a scalar",
-									"video": "scalar_multiplication",
                                     "ref": "qcsec_di30.json"
                                 }
                             ]
@@ -1794,7 +1776,6 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "298199",
                                     "SectionHeading": "Quickcheck: Multiplying a polar vector by a scalar ",
-									"video": "mult_polar_scalar",
                                     "ref": "qcsec_di31.json"
                                 }
                             ]
@@ -1838,7 +1819,6 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "299535",
                                     "SectionHeading": "Quickcheck: Converting rectangular to polar",
-									"video": "rectangular_polar",
                                     "ref": "qcsec_di33.json"
                                 }
                             ]
@@ -1854,7 +1834,6 @@
                                 {
                                     "type": "quizcheck",
                                     "problem_inst_id": "299536",
-									"video": "polar_rec",
                                     "SectionHeading": "Quickcheck: Displacement in rectangular form",
                                     "ref": "qcsec_di32.json"
                                 }
@@ -1936,7 +1915,6 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "298200",
                                     "SectionHeading": "Quickcheck: Net force",
-									"video": "force_basics",
                                     "ref": "qcsec_di45.json"
                                 }
                             ]
@@ -2009,7 +1987,6 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "298201",
                                     "SectionHeading": "Quickcheck: Newton's second law",
-									"video": "newton_laws_second",
                                     "ref": "qcsec_di38.json"
                                 },
                                 {
@@ -2021,7 +1998,6 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "298202",
                                     "SectionHeading": "Quickcheck: Acceleration and net force",
-									"video": "newton_laws_second",
                                     "ref": "qcsec_di46.json"
                                 }
                             ]
@@ -2104,14 +2080,12 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "298215",
                                     "SectionHeading": "Quickcheck: Newton's third law",
-									"video": "newton_laws_third",
                                     "ref": "qcsec_di39.json"
                                 },
                                 {
                                     "type": "quizcheck",
                                     "problem_inst_id": "298214",
                                     "SectionHeading": "Quickcheck: Weight",
-									"video": "weight_equation",
                                     "ref": "qcsec_di37.json"
                                 }
                             ]
@@ -2128,7 +2102,6 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "298213",
                                     "SectionHeading": "Quickcheck: Normal force",
-									"video": "normal_force_direction",
                                     "ref": "qcsec_di40.json"
                                 }
                             ]
@@ -2145,7 +2118,6 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "298212",
                                     "SectionHeading": "Quickcheck: Tension",
-									"video": "newton_laws_third",
                                     "ref": "qcsec_di41.json"
                                 }
                             ]
@@ -2227,7 +2199,6 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "298217",
                                     "SectionHeading": "Quickcheck: Hooke's law",
-									"video": "hooke",
                                     "ref": "qcsec_di44.json"
                                 }
                             ]
@@ -2290,7 +2261,6 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "298218",
                                     "SectionHeading": "Quickcheck: Free-body diagram",
-									"video": "freebody",
                                     "ref": "qcsec_di551122.json"
                                 }
                             ]
@@ -2300,7 +2270,7 @@
                             "subsection": [
                                 {
                                     "type": "videoScreen",
-                                    "SectionHeading": " Forces not acting on a line ",
+                                    "SectionHeading": "Forces not acting on a line ",
                                     "ref": "expsec_e778.json"
                                 }
                             ]
@@ -2429,14 +2399,12 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "298220",
                                     "SectionHeading": "Quickcheck: Work for horizontal force and distance ",
-									"video": "work",
                                     "ref": "qcsec_jz56.json"
                                 },
                                 {
                                     "type": "quizcheck",
                                     "problem_inst_id": "298219",
                                     "SectionHeading": "Quickcheck: Work for vertical force and distance",
-									"video": "work",
                                     "ref": "qcsec_jz61.json"
                                 }
                             ]
@@ -2549,7 +2517,6 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "298170",
                                     "SectionHeading": "Quickcheck: Calculating kinetic energy",
-									"video": "conservation_energy",
                                     "ref": "qcsec_jz57.json"
                                 }
                             ]
@@ -2577,7 +2544,6 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "298178",
                                     "SectionHeading": "Quickcheck: Work and kinetic energy",
-									"video": "work_energy",
                                     "ref": "qcsec_jz58.json"
                                 }
                             ]
@@ -2685,6 +2651,7 @@
                                     "ref": "expsec_f975.json"
                                 },
                                 {
+                                    "type": "videoScreen",
                                     "SectionHeading": " Total energy",
                                     "ref": "expsec_f97522.json"
                                 },
@@ -2692,7 +2659,6 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "298195",
                                     "SectionHeading": "Quickcheck: Calculate kinetic energy",
-									"video": "conservation_energy",
                                     "ref": "qcsec_jz63.json"
                                 },
                                 {
@@ -2705,7 +2671,6 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "298191",
                                     "SectionHeading": "Quickcheck: Calculate velocity",
-									"video": "conservation_energy",
                                     "ref": "qcsec_jz62.json"
                                 },
                                 {
@@ -2754,7 +2719,6 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "298196",
                                     "SectionHeading": "Quickcheck: Power",
-									"video": "power2",
                                     "ref": "qcsec_jz59.json"
                                 }
                             ]
@@ -2886,7 +2850,6 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "298203",
                                     "SectionHeading": "Quickcheck: Momentum",
-									"video": "momentum",
                                     "ref": "qcsec_jz64.json"
                                 }
                             ]
@@ -2909,7 +2872,6 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "298204",
                                     "SectionHeading": "Quickcheck: Impulse",
-									"video": "impulse",
                                     "ref": "qcsec_jz65.json"
                                 },
                                 {
@@ -2962,14 +2924,12 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "",
                                     "SectionHeading": "Quickcheck: Conservation of momentum 1",
-									"video": "momentum_conservation",
                                     "ref": "qcsec_jz67.json"
                                 },
                                 {
                                     "type": "quizcheck",
                                     "problem_inst_id": "",
                                     "SectionHeading": "Quickcheck: Conservation of momentum 2",
-									"video": "momentum_conservation",
                                     "ref": "qcsec_jz68.json"
                                 },
                                 {
@@ -3089,7 +3049,6 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "298208",
                                     "SectionHeading": "Quickcheck: Center of mass",
-									"video": "center_of_mass",
                                     "ref": "qcsec_jz69.json"
                                 }
                             ]
@@ -3200,7 +3159,6 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "298210",
                                     "SectionHeading": " Quickcheck: Centripetal acceleration",
-									"video": "centripetal_acceleration",
                                     "ref": "qcsec_5082.json"
                                 },
                                 {
@@ -3249,7 +3207,6 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "298221",
                                     "SectionHeading": " Quickcheck: Centripetal force",
-									"video": "centripetal_force",
                                     "ref": "qcsec_5083.json"
                                 },
                                 {
@@ -3323,7 +3280,6 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "298222",
                                     "SectionHeading": " Quickcheck: Force of gravity",
-									"video": "gravity_concepts",
                                     "ref": "qcsec_5084.json"
                                 }
                             ]
@@ -3380,11 +3336,11 @@
                             ]
                         },
                         {
-                            "SectionTitle": "Newton’s cannon",
+                            "SectionTitle": "Newton's cannon",
                             "subsection": [
                                 {
                                     "type": "videoScreen",
-                                    "SectionHeading": " Newton’s cannon",
+                                    "SectionHeading": " Newton's cannon",
                                     "ref": "expsec_h570.json"
                                 }
                             ]
@@ -3447,7 +3403,7 @@
                 {
                     "section": [
                         {
-                            "SectionTitle": "Kepler’s Laws",
+                            "SectionTitle": "Kepler's Laws",
                             "subsection": [
                                 {
                                     "SectionHeading": "Lesson Overview: Kepler's Laws",
@@ -3456,11 +3412,11 @@
                             ]
                         },
                         {
-                            "SectionTitle": "Kepler’s first law",
+                            "SectionTitle": "Kepler's first law",
                             "subsection": [
                                 {
                                     "type": "videoScreen",
-                                    "SectionHeading": " Kepler’s first law",
+                                    "SectionHeading": " Kepler's first law",
                                     "ref": "expsec_h577.json"
                                 }
                             ]
@@ -3632,7 +3588,6 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "298223",
                                     "SectionHeading": "Quickcheck: Angular velocity",
-									"video": "angular_velocity",
                                     "ref": "qcsec_jz72.json"
                                 }
                             ]
@@ -3649,7 +3604,6 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "298224",
                                     "SectionHeading": "Quickcheck: Angular acceleration",
-									"video": "angular_acceleration",
                                     "ref": "qcsec_jz73.json"
                                 }
                             ]
@@ -3705,7 +3659,6 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "298225",
                                     "SectionHeading": "Quickcheck: Rotational motion equations",
-									"video": "rotational_motion_equations",
                                     "ref": "qcsec_jz74.json"
                                 }
                             ]
@@ -3722,7 +3675,6 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "298226",
                                     "SectionHeading": "Quickcheck: Tangential velocity",
-									"video": "tangential_velocity",
                                     "ref": "qcsec_jz75.json"
                                 },
                                 {
@@ -3805,7 +3757,6 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "298229",
                                     "SectionHeading": "Quickcheck: Net torque",
-									"video": "net_torque",
                                     "ref": "qcsec_jz77.json"
                                 }
                             ]
@@ -3849,7 +3800,6 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "298230",
                                     "SectionHeading": "Quickcheck: Torque and inertia",
-									"video": "torque_law_concepts",
                                     "ref": "qcsec_jz81.json"
                                 }
                             ]
@@ -3917,7 +3867,6 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "298232",
                                     "SectionHeading": "Quickcheck: Angular momentum",
-									"video": "torque_momentum",
                                     "ref": "qcsec_jz79.json"
                                 }
                             ]
@@ -3934,7 +3883,6 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "298231",
                                     "SectionHeading": "Quickcheck: Angular momentum",
-									"video": "angular_momentum",
                                     "ref": "qcsec_jz80.json"
                                 }
                             ]
@@ -4122,7 +4070,6 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "298233",
                                     "SectionHeading": "Quickcheck: Pressure",
-									"video": "pressure_concepts",
                                     "ref": "qcsec_j356.json"
                                 }
                             ]
@@ -4139,7 +4086,6 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "298234",
                                     "SectionHeading": "Quickcheck: Density",
-									"video": "density_concepts",
                                     "ref": "qcsec_j358.json"
                                 }
                             ]
@@ -4194,7 +4140,6 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "298235",
                                     "SectionHeading": "Quickcheck: Calculating pressure due to a liquid",
-									"video": "pressure_liquids_concepts",
                                     "ref": "qcsec_j362.json"
                                 },
                                 {
@@ -4261,7 +4206,6 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "299541",
                                     "SectionHeading": " Quickcheck: Combining pressures",
-									"video": "pressures_sum",
                                     "ref": "qcsec_j369.json"
                                 }
                             ]
@@ -4313,7 +4257,6 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "298236",
                                     "SectionHeading": " Quickcheck: Archimedes's principle",
-									"video": "archimedes_concept",
                                     "ref": "qcsec_j373.json"
                                 },
                                 {
@@ -4387,7 +4330,6 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "299534",
                                     "SectionHeading": "Quickcheck",
-									"video": "pascal_principle_concepts",
                                     "ref": "qcsec_wz85.json"
                                 }
                             ]
@@ -4409,7 +4351,6 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "298205",
                                     "SectionHeading": " Quickcheck: Fluid continuity",
-									"video": "fluid_continuity_concepts",
                                     "ref": "qcsec_j381.json"
                                 }
                             ]
@@ -4463,7 +4404,6 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "299537",
                                     "SectionHeading": " Quickcheck: Bernoulli's principle",
-									"video": "bernoulli_concepts",
                                     "ref": "qcsec_j384.json"
                                 }
                             ]
@@ -4545,6 +4485,7 @@
                                     "ref": "expsec_k460.json"
                                 },
                                 {
+                                    "type": "videoScreen",
                                     "SectionHeading": " Endothermic and exothermic reactions",
                                     "ref": "expsec_k4495.json"
                                 }
@@ -4676,7 +4617,6 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "299538",
                                     "SectionHeading": "Quickcheck: Temperature conversion",
-									"video": "temperature_conversion_equation1",
                                     "ref": "qcsec_k471.json"
                                 }
                             ]
@@ -4739,7 +4679,6 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "298227",
                                     "SectionHeading": "Quickcheck: Specific heat",
-									"video": "specific_heat_material_concepts",
                                     "ref": "qcsec_k475.json"
                                 }
                             ]
@@ -4815,7 +4754,6 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "299540",
                                     "SectionHeading": "Quickcheck: Latent heat",
-									"video": "latent_equation",
                                     "ref": "qcsec_k481.json"
                                 }
                             ]
@@ -4994,7 +4932,6 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "299542",
                                     "SectionHeading": "Quickcheck: Linear expansion",
-									"video": "volume_expansion_equation",
                                     "ref": "qcsec_k497.json"
                                 }
                             ]
@@ -5016,7 +4953,6 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "299543",
                                     "SectionHeading": "Quickcheck: Volume expansion",
-									"video": "volume_expansion_equation",
                                     "ref": "qcsec_k499.json"
                                 }
                             ]
@@ -5077,7 +5013,6 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "298237",
                                     "SectionHeading": "Quickcheck: First law thermondynamics",
-									"video": "first_law_thermo_concepts",
                                     "ref": "qcsec_jz82.json"
                                 }
                             ]
@@ -5154,7 +5089,6 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "298238",
                                     "SectionHeading": "Quickcheck: Work done by an engine",
-									"video": "heat_engine_concepts",
                                     "ref": "qcsec_jz83.json"
                                 },
                                 {
@@ -5278,7 +5212,6 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "298239",
                                     "SectionHeading": "Quickcheck: Gas law",
-									"video": "boyle_charles",
                                     "ref": "qcsec_ps12.json"
                                 }
                             ]
@@ -5300,7 +5233,6 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "298240",
                                     "SectionHeading": "Quickcheck: Ideal gas law",
-									"video": "ideal_gas_laws",
                                     "ref": "qcsec_ps15.json"
                                 }
                             ]
@@ -5394,7 +5326,6 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "298241",
                                     "SectionHeading": "Quickcheck: Engine efficiency",
-									"video": "efficiency_concepts",
                                     "ref": "qcsec_jz84.json"
                                 },
                                 {
@@ -5467,7 +5398,6 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "298242",
                                     "SectionHeading": "Quickcheck: Entropy",
-									"video": "entropy_equation2",
                                     "ref": "qcsec_jz85.json"
                                 },
                                 {
@@ -5531,7 +5461,6 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "298244",
                                     "SectionHeading": " Quickcheck: RMS in ideal gas",
-									"video": "rms_gas",
                                     "ref": "qcsec_ps19.json"
                                 }
                             ]
@@ -5804,7 +5733,6 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "299544",
                                     "SectionHeading": "Quickcheck: Period of a simple pendulum",
-									"video": "simple_pendulum_equation",
                                     "ref": "qcsec_m374.json"
                                 }
                             ]
@@ -5882,21 +5810,18 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "298252",
                                     "SectionHeading": "Quickcheck: Reading wave amplitude from a graph",
-									"video": "wavelength",
                                     "ref": "qcsec_m381.json"
                                 },
                                 {
                                     "type": "quizcheck",
                                     "problem_inst_id": "298253",
                                     "SectionHeading": "Quickcheck: Reading wave period from a graph",
-									"video": "wavelength",
                                     "ref": "qcsec_m389.json"
                                 },
                                 {
                                     "type": "quizcheck",
                                     "problem_inst_id": "298251",
                                     "SectionHeading": "Quickcheck: Reading wave frequency from a graph",
-									"video": "wavelength",
                                     "ref": "qcsec_m388.json"
                                 }
                             ]
@@ -5913,7 +5838,6 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "298254",
                                     "SectionHeading": "Quickcheck: Reading wavelength from a graph",
-									"video": "wavelength",
                                     "ref": "qcsec_m387.json"
                                 }
                             ]
@@ -6026,7 +5950,6 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "298255",
                                     "SectionHeading": "Quickcheck: Wave speed",
-									"video": "wavespeed",
                                     "ref": "qcsec_m392.json"
                                 }
                             ]
@@ -6162,7 +6085,6 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "299545",
                                     "SectionHeading": " Quickcheck: Sound intensity",
-									"video": "sound_intensity",
                                     "ref": "qcsec_n263.json"
                                 }
                             ]
@@ -6248,7 +6170,6 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "298256",
                                     "SectionHeading": "Quickcheck: Doppler effect",
-									"video": "doppler_object_moves",
                                     "ref": "qcsec_u5092.json"
                                 },
                                 {
@@ -6413,7 +6334,6 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "298245",
                                     "SectionHeading": "Quickcheck: Harmonic",
-									"video": "harmonics_equations1",
                                     "ref": "qcsec_n283.json"
                                 },
                                 {
@@ -6576,14 +6496,12 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "298258",
                                     "SectionHeading": " Quickcheck: Calculating electric charge",
-									"video": "charge",
                                     "ref": "qcsec_o958.json"
                                 },
                                 {
                                     "type": "quizcheck",
                                     "problem_inst_id": "298257",
                                     "SectionHeading": " Quickcheck: Net charge",
-									"video": "charge",
                                     "ref": "qcsec_o961.json"
                                 }
                             ]
@@ -6600,7 +6518,6 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "298259",
                                     "SectionHeading": " Quickcheck: Conservation of charge",
-									"video": "conservation_charge",
                                     "ref": "qcsec_o962.json"
                                 },
                                 {
@@ -6699,7 +6616,6 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "298260",
                                     "SectionHeading": " Quickcheck: Coulomb's law 2",
-									"video": "coulomb_law",
                                     "ref": "qcsec_o970.json"
                                 },
                                 {
@@ -6769,7 +6685,6 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "298249",
                                     "SectionHeading": " Quickcheck: Electric fields",
-									"video": "e_field",
                                     "ref": "qcsec_o979.json"
                                 },
                                 {
@@ -6781,7 +6696,6 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "298250",
                                     "SectionHeading": " Quickcheck: Electric field and Coulomb's law",
-									"video": "e_field",
                                     "ref": "qcsec_o982.json"
                                 },
                                 {
@@ -6828,7 +6742,6 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "298261",
                                     "SectionHeading": " Quickcheck: Force on a particle",
-									"video": "force_on_field",
                                     "ref": "qcsec_o985.json"
                                 },
                                 {
@@ -6893,7 +6806,6 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "299547",
                                     "SectionHeading": " Quickcheck: Electric potential",
-									"video": "e_potential",
                                     "ref": "qcsec_o52547.json"
                                 }
                             ]
@@ -6910,7 +6822,6 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "298248",
                                     "SectionHeading": " Electric potential difference",
-									"video": "e_po_difference",
                                     "ref": "qcsec_o997.json"
                                 },
                                 {
@@ -6964,7 +6875,6 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "298262",
                                     "SectionHeading": " Electric PE and work",
-									"video": "advanced_e_po",
                                     "ref": "qcsec_o5593.json"
                                 },
                                 {
@@ -6996,7 +6906,6 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "299548",
                                     "SectionHeading": " Electric potential ",
-									"video": "advanced_e_potential",
                                     "ref": "qcsec_o5562.json"
                                 }
                             ]
@@ -7058,7 +6967,6 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "298263",
                                     "SectionHeading": " Quickcheck: Electric current ",
-									"video": "current",
                                     "ref": "qcsec_p383.json"
                                 },
                                 {
@@ -7095,7 +7003,6 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "299546",
                                     "SectionHeading": " Quickcheck: Ohm's law ",
-									"video": "ohm_law",
                                     "ref": "qcsec_p384.json"
                                 }
                             ]
@@ -7150,7 +7057,6 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "298264",
                                     "SectionHeading": " Quickcheck: Electric power ",
-									"video": "power",
                                     "ref": "qcsec_p385.json"
                                 },
                                 {
@@ -7184,7 +7090,6 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "299550",
                                     "SectionHeading": " Quickcheck: Capacitance",
-									"video": "capacitor",
                                     "ref": "qcsec_p386.json"
                                 }
                             ]
@@ -7201,7 +7106,6 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "299549",
                                     "SectionHeading": " Quickcheck: Capacitor energy",
-									"video": "cap_energy",
                                     "ref": "qcsec_p387.json"
                                 },
                                 {
@@ -7331,7 +7235,6 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "298270",
                                     "SectionHeading": " Quickcheck: Current in a series",
-									"video": "resistors_series",
                                     "ref": "qcsec_p389.json"
                                 },
                                 {
@@ -7349,7 +7252,6 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "298269",
                                     "SectionHeading": " Quickcheck: Series resistors ",
-									"video": "resistors_series",
                                     "ref": "qcsec_p390.json"
                                 },
                                 {
@@ -7377,7 +7279,6 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "298265",
                                     "SectionHeading": "Quickcheck: Currents and junction ",
-									"video": "parallel",
                                     "ref": "qcsec_p393.json"
                                 },
                                 {
@@ -7389,7 +7290,6 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "298266",
                                     "SectionHeading": " Quickcheck: Parallel resistors ",
-									"video": "parallel",
                                     "ref": "qcsec_p391.json"
                                 },
                                 {
@@ -7412,14 +7312,12 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "298267",
                                     "SectionHeading": " Quickcheck: Parallel resistors 1 ",
-									"video": "parallel",
                                     "ref": "qcsec_p392.json"
                                 },
                                 {
                                     "type": "quizcheck",
                                     "problem_inst_id": "298268",
                                     "SectionHeading": " Quickcheck: Parallel resistors 2",
-									"video": "parallel",
                                     "ref": "qcsec_p393.json"
                                 },
                                 {
@@ -7529,14 +7427,12 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "299551",
                                     "SectionHeading": " Quickcheck: Equivalent capacitance 1 ",
-									"video": "capacitor_parallel",
                                     "ref": "qcsec_p384261.json"
                                 },
                                 {
                                     "type": "quizcheck",
                                     "problem_inst_id": "299552",
                                     "SectionHeading": " Quickcheck: Equivalent capacitance 2 ",
-									"video": "capacitor_parallel",
                                     "ref": "qcsec_p3843351.json"
                                 }
                             ]
@@ -7648,7 +7544,6 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "299553",
                                     "SectionHeading": "Quickcheck: B field and charge",
-									"video": "magnet_charge",
                                     "ref": "qcsec_us01.json"
                                 }
                             ]
@@ -7796,7 +7691,6 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "299554",
                                     "SectionHeading": "Quickcheck: Faraday's law",
-									"video": "faraday",
                                     "ref": "qcsec_us03.json"
                                 }
                             ]
@@ -7936,7 +7830,6 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "299555",
                                     "SectionHeading": "Quickcheck: Magnetic force on a wire 2",
-									"video": "b_force_trig",
                                     "ref": "qcsec_usz4.json"
                                 }
                             ]
@@ -7953,7 +7846,6 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "299556",
                                     "SectionHeading": "Quickcheck: Flux and angle",
-									"video": "flux_angle",
                                     "ref": "qcsec_usz5.json"
                                 }
                             ]
@@ -8072,7 +7964,6 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "299557",
                                     "SectionHeading": "Quickcheck: Transformer turns ratio",
-									"video": "loops_equation",
                                     "ref": "qcsec_us04.json"
                                 }
                             ]
@@ -8281,7 +8172,6 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "298271",
                                     "SectionHeading": " Quickcheck: Wavelength and interference",
-									"video": "interference_equation",
                                     "ref": "qcsec_5181.json"
                                 }
                             ]
@@ -8625,7 +8515,6 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "298272",
                                     "SectionHeading": "Quickcheck",
-									"video": "radiation_pressure_concepts2",
                                     "ref": "qcsec_5194.json"
                                 }
                             ]
@@ -8872,7 +8761,6 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "298273",
                                     "SectionHeading": "Quickcheck",
-									"video": "law_reflection",
                                     "ref": "qcsec_t562.json"
                                 }
                             ]
@@ -9033,7 +8921,6 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "299558",
                                     "SectionHeading": " Quickcheck: Mirror equation ",
-									"video": "mirror_equations",
                                     "ref": "qcsec_t578.json"
                                 }
                             ]
@@ -9072,7 +8959,6 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "299559",
                                     "SectionHeading": " Quickcheck: Focal length",
-									"video": "focal_length",
                                     "ref": "qcsec_t576.json"
                                 }
                             ]
@@ -9150,7 +9036,6 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "298274",
                                     "SectionHeading": "Quickcheck: Index of refraction",
-									"video": "index_refraction_concept",
                                     "ref": "qcsec_u257.json"
                                 }
                             ]
@@ -9167,7 +9052,6 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "298275",
                                     "SectionHeading": "Quickcheck: Angle of refraction",
-									"video": "snell_law",
                                     "ref": "qcsec_u259.json"
                                 },
                                 {
@@ -9287,7 +9171,6 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "298276",
                                     "SectionHeading": "Quickcheck: Critical angle",
-									"video": "critical_angle",
                                     "ref": "qcsec_u267.json"
                                 }
                             ]
@@ -9468,7 +9351,6 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "298279",
                                     "SectionHeading": " Quickcheck: Lens equation",
-									"video": "thin_lens_equation",
                                     "ref": "qcsec_u284.json"
                                 }
                             ]
@@ -9497,21 +9379,18 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "298278",
                                     "SectionHeading": " Quickcheck: Magnification 1",
-									"video": "magnification_equations",
                                     "ref": "qcsec_u287.json"
                                 },
                                 {
                                     "type": "quizcheck",
                                     "problem_inst_id": "298277",
                                     "SectionHeading": " Quickcheck: Magnification 2",
-									"video": "magnification_equations",
                                     "ref": "qcsec_u284.json"
                                 },
                                 {
                                     "type": "quizcheck",
                                     "problem_inst_id": "298280",
                                     "SectionHeading": " Quickcheck: Magnification 3",
-									"video": "magnification_equations",
                                     "ref": "qcsec_5u286.json"
                                 }
                             ]
@@ -9910,7 +9789,6 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "298281",
                                     "SectionHeading": "Quickcheck: Red light",
-									"video": "energy_photon",
                                     "ref": "qcsec_us08.json"
                                 },
                                 {
@@ -10267,7 +10145,6 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "299561",
                                     "SectionHeading": "Quickcheck: Time dilation",
-									"video": "dilation",
                                     "ref": "qcsec_us05.json"
                                 }
                             ]
@@ -10284,7 +10161,6 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "299560",
                                     "SectionHeading": "Quickcheck: Length contraction",
-									"video": "contraction",
                                     "ref": "qcsec_us06.json"
                                 }
                             ]
@@ -10306,7 +10182,6 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "298282",
                                     "SectionHeading": "Quickcheck: Light and Doppler effect",
-									"video": "doppler_light",
                                     "ref": "qcsec_us07.json"
                                 }
                             ]
@@ -10539,7 +10414,6 @@
                     "section": [
                         {
                             "SectionTitle": "Nuclear Power Plants",
-                            "link": false,
                             "number": true,
                             "subsection": [
                                 {
@@ -10659,6 +10533,7 @@
                             "SectionTitle": "Models and laws ",
                             "subsection": [
                                 {
+                                    "type": "videoScreen",
                                     "SectionHeading": "Models and laws",
                                     "ref": "expsec_n1432.json"
                                 }
@@ -10681,14 +10556,17 @@
                             "SectionTitle": "Data basics ",
                             "subsection": [
                                 {
+                                    "type": "videoScreen",
                                     "SectionHeading": "Graphing data",
                                     "ref": "expsec_g1234.json"
                                 },
                                 {
+                                    "type": "videoScreen",
                                     "SectionHeading": "Mean, median and mode",
                                     "ref": "expsec_g1239.json"
                                 },
                                 {
+                                    "type": "videoScreen",
                                     "SectionHeading": "Box plots",
                                     "ref": "expsec_g1235.json"
                                 }
@@ -10698,22 +10576,27 @@
                             "SectionTitle": "Normal distribution ",
                             "subsection": [
                                 {
+                                    "type": "videoScreen",
                                     "SectionHeading": "Normal distribution",
                                     "ref": "expsec_g2347.json"
                                 },
                                 {
+                                    "type": "videoScreen",
                                     "SectionHeading": "Approximating probabilities",
                                     "ref": "expsec_g23478.json"
                                 },
                                 {
+                                    "type": "videoScreen",
                                     "SectionHeading": "Spreadsheet and generating a normal curve",
                                     "ref": "expsec_g23479.json"
                                 },
                                 {
+                                    "type": "videoScreen",
                                     "SectionHeading": "Spreadsheet and probabilities",
                                     "ref": "expsec_g2345534.json"
                                 },
                                 {
+                                    "type": "videoScreen",
                                     "SectionHeading": "Different types of data",
                                     "ref": "expsec_g2348.json"
                                 }
@@ -10723,18 +10606,22 @@
                             "SectionTitle": "Categorical data",
                             "subsection": [
                                 {
+                                    "type": "videoScreen",
                                     "SectionHeading": " Categorical data ",
                                     "ref": "expsec_g2349.json"
                                 },
                                 {
+                                    "type": "videoScreen",
                                     "SectionHeading": " Relative frequency ",
                                     "ref": "expsec_g9876.json"
                                 },
                                 {
+                                    "type": "videoScreen",
                                     "SectionHeading": " Conditional probability ",
                                     "ref": "expsec_g9875.json"
                                 },
                                 {
+                                    "type": "videoScreen",
                                     "SectionHeading": " Testing a conjecture ",
                                     "ref": "expsec_g9874.json"
                                 }
@@ -10744,22 +10631,27 @@
                             "SectionTitle": "Regression",
                             "subsection": [
                                 {
+                                    "type": "videoScreen",
                                     "SectionHeading": " Scatter plots ",
                                     "ref": "expsec_g9873.json"
                                 },
                                 {
+                                    "type": "videoScreen",
                                     "SectionHeading": " Regression ",
                                     "ref": "expsec_g9872.json"
                                 },
                                 {
+                                    "type": "videoScreen",
                                     "SectionHeading": " Coefficient of determination ",
                                     "ref": "expsec_g98f2.json"
                                 },
                                 {
+                                    "type": "videoScreen",
                                     "SectionHeading": " Exponential decay ",
                                     "ref": "expsec_k11f1.json"
                                 },
                                 {
+                                    "type": "videoScreen",
                                     "SectionHeading": " Modeling with an exponential equation ",
                                     "ref": "expsec_k11f12d.json"
                                 }
@@ -10769,9 +10661,9 @@
                             "SectionTitle": "Functions, graphing and volume",
                             "subsection": [
                                 {
-                                     "type": "pdfScreen",
-                                     "SectionHeading": "Functions, graphing and volume",
-                                     "ref": "MS_Math_Content_FPP.pdf"
+                                    "type": "pdfScreen",
+                                    "SectionHeading": "Functions, graphing and volume",
+                                    "ref": "MS_Math_Content_FPP.pdf"
                                 }
                             ]
                         }
@@ -10820,7 +10712,7 @@
                                     "type": "videoScreen",
                                     "SectionHeading": " Entering data ",
                                     "ref": "imgsec_c37x.json"
-                        },
+                                },
                                 {
                                     "type": "videoScreen",
                                     "SectionHeading": " Setting up the calculator ",
@@ -10926,7 +10818,7 @@
                                     "ref": ""
                                 }
                             ]
-                        },
+                        },                      
                         {
                             "SectionTitle": "Creating a Presentation Resource",
                             "subsection": [
@@ -10968,29 +10860,10 @@
                             ]
                         }
                     ]
-                                }
-                            ]
-                        },
-                        {
-                                    "type": "videoScreen",
-                                    "type": "videoScreen",
-                                    "type": "videoScreen",
-                                    "type": "videoScreen",
-                                    "type": "videoScreen",
-                                    "type": "videoScreen",
-                                    "type": "videoScreen",
-                                    "type": "videoScreen",
-                                    "type": "videoScreen",
-                                    "type": "videoScreen",
-                                    "type": "videoScreen",
-                                    "type": "videoScreen",
-                                    "type": "videoScreen",
-                                    "type": "videoScreen",
-                                    "type": "videoScreen",
-                                    "type": "videoScreen",
-                                    "type": "videoScreen",
-                                    "type": "videoScreen",
-                                    "type": "videoScreen",
+                }
+            ]
+        },
+        {
             "title": "Labs",
             "unit": [
                 {
@@ -11758,7 +11631,7 @@
                             "href": "<a href='assets/pdf/Kinetic_Physics_Lab_Solutions.pdf' download>Solutions for Physical Labs and Demonstrations</a>",
                             "subsection": []
                         },
-						{
+                        {
                             "number": false,
                             "SectionTitle": "Florida Physics Honors I Corelation",
                             "subsection": [
@@ -12344,11 +12217,11 @@
                                 ]
                             },
                             {
-                                "SectionTitle": "Lesson 1: Force and Newton’s First Law",
+                                "SectionTitle": "Lesson 1: Force and Newton's First Law",
                                 "subsection": [
                                     {
                                         "type": "videoScreen",
-                                        "SectionHeading": "Force and Newton’s First Law ",
+                                        "SectionHeading": "Force and Newton's First Law ",
                                         "ref": "lp_ch05l1a.json"
                                     },
                                     {
@@ -12359,11 +12232,11 @@
                                 ]
                             },
                             {
-                                "SectionTitle": "Lesson 2: Newton’s Second Law",
+                                "SectionTitle": "Lesson 2: Newton's Second Law",
                                 "subsection": [
                                     {
                                         "type": "videoScreen",
-                                        "SectionHeading": "Newton’s Second Law ",
+                                        "SectionHeading": "Newton's Second Law ",
                                         "ref": "lp_ch05l2a.json"
                                     },
                                     {
@@ -12374,11 +12247,11 @@
                                 ]
                             },
                             {
-                                "SectionTitle": "Lesson 3: Newton’s Third Law & Types of Forces",
+                                "SectionTitle": "Lesson 3: Newton's Third Law & Types of Forces",
                                 "subsection": [
                                     {
                                         "type": "videoScreen",
-                                        "SectionHeading": "Newton’s Third Law & Types of Forces ",
+                                        "SectionHeading": "Newton's Third Law & Types of Forces ",
                                         "ref": "lp_ch05l3a.json"
                                     },
                                     {
@@ -12726,11 +12599,11 @@
                                 ]
                             },
                             {
-                                "SectionTitle": "Lesson 3: Newton’s Law of Gravity",
+                                "SectionTitle": "Lesson 3: Newton's Law of Gravity",
                                 "subsection": [
                                     {
                                         "type": "videoScreen",
-                                        "SectionHeading": "Newton’s Law of Gravity ",
+                                        "SectionHeading": "Newton's Law of Gravity ",
                                         "ref": "lp_ch08l3a.json"
                                     },
                                     {
@@ -12756,11 +12629,11 @@
                                 ]
                             },
                             {
-                                "SectionTitle": "Lesson 5: Kepler’s Laws",
+                                "SectionTitle": "Lesson 5: Kepler's Laws",
                                 "subsection": [
                                     {
                                         "type": "videoScreen",
-                                        "SectionHeading": "Kepler’s Laws ",
+                                        "SectionHeading": "Kepler's Laws ",
                                         "ref": "lp_ch08l5a.json"
                                     },
                                     {
@@ -13009,11 +12882,11 @@
                                 ]
                             },
                             {
-                                "SectionTitle": "Lesson 4: Archimedes’ Principle",
+                                "SectionTitle": "Lesson 4: Archimedes' Principle",
                                 "subsection": [
                                     {
                                         "type": "videoScreen",
-                                        "SectionHeading": "Archimedes’ Principle ",
+                                        "SectionHeading": "Archimedes' Principle ",
                                         "ref": "lp_ch10l4a.json"
                                     },
                                     {
@@ -13024,11 +12897,11 @@
                                 ]
                             },
                             {
-                                "SectionTitle": "Lesson 5: Pascal’s Principle and Fluid Continuity",
+                                "SectionTitle": "Lesson 5: Pascal's Principle and Fluid Continuity",
                                 "subsection": [
                                     {
                                         "type": "videoScreen",
-                                        "SectionHeading": "Pascal’s Principle and Fluid Continuity ",
+                                        "SectionHeading": "Pascal's Principle and Fluid Continuity ",
                                         "ref": "lp_ch10l5a.json"
                                     },
                                     {
@@ -13039,11 +12912,11 @@
                                 ]
                             },
                             {
-                                "SectionTitle": "Lesson 6: Bernoulli’s Principle",
+                                "SectionTitle": "Lesson 6: Bernoulli's Principle",
                                 "subsection": [
                                     {
                                         "type": "videoScreen",
-                                        "SectionHeading": "Bernoulli’s Principle ",
+                                        "SectionHeading": "Bernoulli's Principle ",
                                         "ref": "lp_ch10l6a.json"
                                     },
                                     {
@@ -14343,11 +14216,11 @@
                                 ]
                             },
                             {
-                                "SectionTitle": "Lesson 1: Snell’s Law",
+                                "SectionTitle": "Lesson 1: Snell's Law",
                                 "subsection": [
                                     {
                                         "type": "videoScreen",
-                                        "SectionHeading": "Snell’s Law ",
+                                        "SectionHeading": "Snell's Law ",
                                         "ref": "lp_ch21l1a.json"
                                     },
                                     {
@@ -14728,10 +14601,12 @@
                                 "SectionTitle": "Lesson 4: Solar Power",
                                 "subsection": [
                                     {
+                                        "type": "videoScreen",
                                         "SectionHeading": "Solar Power ",
                                         "ref": "lp_ch24l5a.json"
                                     },
                                     {
+                                        "type": "videoScreen",
                                         "SectionHeading": "Lesson and Assessment ",
                                         "ref": "lp_ch24l5b.json"
                                     }
@@ -14741,10 +14616,12 @@
                                 "SectionTitle": "Lesson 5: Nuclear Power Plants ",
                                 "subsection": [
                                     {
+                                        "type": "videoScreen",
                                         "SectionHeading": "Nuclear Power Plants ",
                                         "ref": "lp_ch24l8a.json"
                                     },
                                     {
+                                        "type": "videoScreen",
                                         "SectionHeading": "Lesson and Assessment ",
                                         "ref": "lp_ch24l5b.json"
                                     }
@@ -14773,14 +14650,17 @@
                                 "SectionTitle": "Chapter 25 Overview ",
                                 "subsection": [
                                     {
+                                        "type": "videoScreen",
                                         "SectionHeading": "Chapter 25 Overview Part 1 ",
                                         "ref": "lp_ch25a.json"
                                     },
                                     {
+                                        "type": "videoScreen",
                                         "SectionHeading": "Chapter 25 Overview Part 2 ",
                                         "ref": "lp_ch25b.json"
                                     },
                                     {
+                                        "type": "videoScreen",
                                         "SectionHeading": "Chapter 25 Overview Part ",
                                         "ref": "lp_ch25c.json"
                                     }
@@ -14790,6 +14670,7 @@
                                 "SectionTitle": "Lesson 1: Interference",
                                 "subsection": [
                                     {
+                                        "type": "videoScreen",
                                         "SectionHeading": "Interference ",
                                         "ref": "lp_ch25l1a.json"
                                     }
@@ -14799,10 +14680,12 @@
                                 "SectionTitle": "Lesson 2: Calculating Band Locations",
                                 "subsection": [
                                     {
+                                        "type": "videoScreen",
                                         "SectionHeading": "Calculating Band Locations ",
                                         "ref": "lp_ch25l2a.json"
                                     },
                                     {
+                                        "type": "videoScreen",
                                         "SectionHeading": "Lesson and Assessment ",
                                         "ref": "lp_ch25l2b.json"
                                     }
@@ -14812,14 +14695,17 @@
                                 "SectionTitle": "Lesson 3: Graphs and data distribution",
                                 "subsection": [
                                     {
+                                        "type": "videoScreen",
                                         "SectionHeading": "Graphs and data distribution ",
                                         "ref": "lp_ch25l3a.json"
                                     },
                                     {
+                                        "type": "videoScreen",
                                         "SectionHeading": "Lesson and Assessment ",
                                         "ref": "lp_ch25l1b.json"
                                     },
                                     {
+                                        "type": "videoScreen",
                                         "SectionHeading": "Lesson and Assessment ",
                                         "ref": "lp_ch25l3b.json"
                                     }
@@ -14829,10 +14715,12 @@
                                 "SectionTitle": "Lesson 4: Categorical data",
                                 "subsection": [
                                     {
+                                        "type": "videoScreen",
                                         "SectionHeading": "Categorical data ",
                                         "ref": "lp_ch25l4a.json"
                                     },
                                     {
+                                        "type": "videoScreen",
                                         "SectionHeading": "Lesson ",
                                         "ref": "lp_ch25l4b.json"
                                     }
@@ -14842,12 +14730,138 @@
                                 "SectionTitle": "Lesson 5: Regression",
                                 "subsection": [
                                     {
+                                        "type": "videoScreen",
                                         "SectionHeading": "Regression ",
                                         "ref": "lp_ch25l5a.json"
                                     },
                                     {
+                                        "type": "videoScreen",
                                         "SectionHeading": "Lesson and Assessment ",
                                         "ref": "lp_ch25l5b.json"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "title": "Math Lessons ",
+                "unit": [
+                    {
+                        "section": [
+                            {
+                                "SectionTitle": "Chapter 26 Lesson Plans",
+                                "link": false,
+                                "subsection": [
+                                    {
+                                        "SectionHeading": "Chapter Lesson Plans",
+                                        "ref": "temp.json"
+                                    }
+                                ]
+                            },
+                            {
+                                "SectionTitle": "Lesson 1: Step and other functions ",
+                                "subsection": [
+                                    {
+                                        "type": "videoScreen",
+                                        "SectionHeading": "Step and other functions ",
+                                        "ref": "lp_ch80a.json"
+                                    },
+                                    {
+                                        "type": "videoScreen",
+                                        "SectionHeading": "Lesson and Assessment",
+                                        "ref": "lp_ch80b.json"
+                                    }
+                                ]
+                            },
+                            {
+                                "SectionTitle": "Lesson 2: More functions",
+                                "subsection": [
+                                    {
+                                        "type": "videoScreen",
+                                        "SectionHeading": "Square root and exponential",
+                                        "ref": "lp_ch80c.json"
+                                    },
+                                    {
+                                        "type": "videoScreen",
+                                        "SectionHeading": "Lesson and Assessment",
+                                        "ref": "lp_ch80d.json"
+                                    }
+                                ]
+                            },
+                            {
+                                "SectionTitle": "Lesson 3: Polynomial functions",
+                                "subsection": [
+                                    {
+                                        "type": "videoScreen",
+                                        "SectionHeading": "Polynomial functions",
+                                        "ref": "lp_ch80e.json"
+                                    },
+                                    {
+                                        "type": "videoScreen",
+                                        "SectionHeading": "Lesson and Assessment ",
+                                        "ref": "lp_ch80f.json"
+                                    }
+                                ]
+                            },
+                            {
+                                "SectionTitle": "Lesson 4: Rational expressions",
+                                "subsection": [
+                                    {
+                                        "type": "videoScreen",
+                                        "SectionHeading": "Rational expressions ",
+                                        "ref": "lp_ch80g.json"
+                                    },
+                                    {
+                                        "type": "videoScreen",
+                                        "SectionHeading": "Lesson and Assessment ",
+                                        "ref": "lp_ch80h.json"
+                                    }
+                                ]
+                            },
+                            {
+                                "SectionTitle": "Lesson 5: Logarithmic expressions",
+                                "subsection": [
+                                    {
+                                        "type": "videoScreen",
+                                        "SectionHeading": "Logarithmic expressions ",
+                                        "ref": "lp_ch80i.json"
+                                    },
+                                    {
+                                        "type": "videoScreen",
+                                        "SectionHeading": "Lesson and Assessment ",
+                                        "ref": "lp_ch80j.json"
+                                    }
+                                ]
+                            },
+                            {
+                                "SectionTitle": "Lesson 6: Trigonometric functions",
+                                "subsection": [
+                                    {
+                                        "type": "videoScreen",
+                                        "SectionHeading": "Trigonometric functions ",
+                                        "ref": "lp_ch80k.json"
+                                    },
+                                    {
+                                        "type": "videoScreen",
+                                        "SectionHeading": "Lesson and Assessment ",
+                                        "ref": "lp_ch80l.json"
+                                    }
+                                ]
+                            },
+                            {
+                                "SectionTitle": "Lesson 7: Volume",
+                                "subsection": [
+                                    {
+                                        "type": "videoScreen",
+                                        "SectionHeading": "Volume ",
+                                        "ref": "lp_ch80m.json"
+                                    },
+                                    {
+                                        "type": "videoScreen",
+                                        "SectionHeading": "Lesson and Assessment ",
+                                        "ref": "lp_ch80n.json"
                                     }
                                 ]
                             }
