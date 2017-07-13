@@ -1,1166 +1,1201 @@
 {
-  "data": [
-    {
-      "code": "SC.912.E.5.2",
-      "benchmark": "Identify patterns in the organization and distribution of matter in the universe and the forces that determine them.",
-      "lessons": [
-        "8.3.1 Newton’s law of gravity",
-        "12.7.1 Entropy",
-        "24.2.5 Big Bang",
-        "24.2.1 Standard model",
-        "24.2.2 Dark matter and energy",
-        "24.2.3 Black holes",
-        "8.5.1 Kepler’s first law",
-        "8.5.2 Kepler’s second law",
-        "24.3.2 Particle accelerator discoveries"
-      ]
-    },
-    {
-      "code": "SC.912.E.5.6",
-      "benchmark": "Develop logical connections through physical principles, including Kepler's and Newton's Laws about the relationships and the effects of Earth, Moon, and Sun on each other.",
-      "lessons": [
-        "8.3.1 Newton’s law of gravity",
-        "8.4.1 Newton’s cannon",
-        "8.5.1 Kepler’s first law",
-        "8.5.2 Kepler’s second law",
-        "8.5.3 Kepler’s third law",
-        "5.1.3 Newton’s first law",
-        "5.2.2 Newton’s second law",
-        "5.3.1 Newton’s third law",
-        "8.3.2 Comparing g and G",
-        "8.4.2 Circular orbits",
-        "8.4.3 Speed of circular orbit"
-      ]
-    },
-    {
-      "code": "SC.912.E.5.8",
-      "benchmark": "Connect the concepts of radiation and the electromagnetic spectrum to the use of historical and newly-developed observational tools.",
-      "lessons": [
-        "19.1.1.c Electromagnetic spectrum",
-        "19.1.2 Speed of light",
-        "19.2.2 Radiation pressure",
-        "19.3.1 Antennas",
-        "22.3.1 Radioactivity and radiation",
-        "24.2.5 Big Bang",
-        "11.6.3 Electromagnetic radiation"
-      ]
-    },
-    {
-      "code": "SC.912.L.18.12",
-      "benchmark": "Discuss the special properties of water that contribute to Earth's suitability as an environment for life cohesive behavior, ability to moderate temperature, expansion upon freezing, and versatility as a solvent.",
-      "lessons": [
-        "10.3.3 Surface tension",
-        "11.4.3 Specific heat",
-        "11.5.1 State changes",
-        "11.7.3.b Expansion of water",
-        "15.2.1.d Electric charge and water"
-      ]
-    },
-    {
-      "code": "SC.912.N.1.1",
-      "benchmark": "Define a problem based on a speciﬁc body of knowledge, for example biology, chemistry, physics, and earth/space science, and do the following<ol style='list-style-type: decimal;margin-left: 15px;'><li>Pose questions about the natural world, (Articulate the purpose of the investigation and identify the relevant scientific concepts).</li><li>Conduct systematic observations, (Write procedures that are clear and replicable. Identify observables and examine relationships between test (independent) variable and outcome (dependent) variable. Employ appropriate methods for accurate and consistent observations; conduct and record measurements at appropriate levels of precision. Follow safety guidelines).</li><li>Examine books and other sources of information to see what is already known,</li><li>Review what is known in light of empirical evidence, (Examine whether available empirical evidence can be interpreted in terms of existing knowledge and models, and if not, modify or develop new models).</li><li>Plan investigations, (Design and evaluate a scientific investigation).</li><li>Use tools to gather, analyze, and interpret data (this includes the use of measurement in metric and other systems, and also the generation and interpretation of graphical representations of data, including data tables and graphs), (Collect data or evidence in an organized way. Properly use instruments, equipment, and materials (e.g., scales, probeware, meter sticks, microscopes, computers) including set-up, calibration, technique, maintenance, and storage).</li><li>Pose answers, explanations, or descriptions of events,</li><li>Generate explanations that explicate or describe natural phenomena (inferences),</li><li>Use appropriate evidence and reasoning to justify these explanations to others,</li><li>Communicate results of scientific investigations, and</li><li>Evaluate the merits of the explanations produced by others.</li></ol>",
-      "lessons": [
-        "3.5.1 Designing a science experiment",
-        "3.5.2 Conducting a lab",
-        "3.6.2 &#034;Your&#034; science experiment",
-        "3.6.3 Science information from varied sources",
-        "3.6.4 Communicating scientific information",
-        "3.5.3 Precision and accuracy",
-        "3.5.4 Checking the data Labs: Course apparatus",
-        "25.4.2 Creating a Presentation Resource",
-        "25.4.3 Writing an Article Resource"
-      ]
-    },
-    {
-      "code": "SC.912.N.1.2",
-      "benchmark": "Describe and explain what characterizes science and its methods.",
-      "lessons": [
-        "3.4.1 Nature of science",
-        "3.4.2 Hypotheses and theories",
-        "3.4.3 Science ethics and its limits",
-        "3.4.4 Physicists and their work",
-        "3.5.1 Designing a science experiment",
-        "3.5.2 Conducting a lab",
-        "3.5.3 Precision and accuracy",
-        "3.5.4 Checking the data",
-        "24.1.2 Speed of light",
-        "24.2.1.d Higgs Boson"
-      ]
-    },
-    {
-      "code": "SC.912.N.1.5",
-      "benchmark": "Describe and provide examples of how similar investigations conducted in many parts of the world result in the same outcome.",
-      "lessons": [
-        "3.4.2 Hypotheses and theories",
-        "8.5.5 History of science: Gravity",
-        "23.4.2 Observing matter waves",
-        "24.1.2 Speed of light",
-        "24.2.1.d Higgs Boson",
-        "24.2.3 Black holes"
-      ]
-    },
-    {
-      "code": "SC.912.N.1.6",
-      "benchmark": "Describe how scientiﬁc inferences are drawn from scientiﬁc observations and provide examples from the content being studied.",
-      "lessons": [
-        "3.4.1 Nature of science",
-        "3.4.2 Hypotheses and theories",
-        "3.6.3.b Concussions part 1",
-        "12.1.2 Joule’s experiment",
-        "19.1.2 Speed of light",
-        "23.2.1 Photoelectric effect",
-        "23.4.1 Matter waves",
-        "24.1.2 Speed of light",
-        "24.2.1.d Higgs Boson",
-        "24.2.3 Black holes",
-        "8.4.1 Newton’s cannon"
-      ]
-    },
-    {
-      "code": "SC.912.N.1.7",
-      "benchmark": "Recognize the role of creativity in constructing scientific questions, methods and explanations.",
-      "lessons": [
-        "3.4.1 Nature of science",
-        "3.4.2 Hypotheses and theories",
-        "8.4.1 Newton’s cannon",
-        "8.5.1 Kepler’s first law",
-        "12.1.2 Joule’s experiment",
-        "23.2.1 Photoelectric effect",
-        "23.4.1 Matter waves",
-        "24.1.2 Speed of light",
-        "24.2.1.d Higgs Boson"
-      ]
-    },
-    {
-      "code": "SC.912.N.2.2",
-      "benchmark": "Identify which questions can be answered through science and which questions are outside the boundaries of scientiﬁc investigation, such as questions addressed by other ways of knowing, such as art, philosophy, and religion.",
-      "lessons": [
-        "3.4.1 Nature of science",
-        "3.4.3.a Science and its limits",
-        "3.4.4 Physicists and their work",
-        "24.4.2 Solar Energy",
-        "24.5.2.b Nuclear power costs 2",
-        "24.6.2 Hyperloop trains",
-        "3.4.2 Hypotheses and theories"
-      ]
-    },
-    {
-      "code": "SC.912.N.2.3",
-      "benchmark": "Identify examples of pseudoscience (such as astrology, phrenology) in society.",
-      "lessons": [
-        "3.4.1 Nature of science",
-        "25.4.4 Projects Resource"
-      ]
-    },
-    {
-      "code": "SC.912.N.2.4",
-      "benchmark": "Explain that scientiﬁc knowledge is both durable and robust and open to change. Scientiﬁc knowledge can change because it is often examined and re- examined by new investigations and scientiﬁc argumentation. Because of these frequent examinations, scientiﬁc knowledge becomes stronger, leading to its durability.",
-      "lessons": [
-        "3.4.1 Nature of science",
-        "3.4.2 Hypotheses and theories",
-        "12.1.2 Joule’s experiment",
-        "23.1.2.b Photons",
-        "23.2.1.c The observations"
-      ]
-    },
-    {
-      "code": "SC.912.N.2.5",
-      "benchmark": "Describe instances in which scientists’ varied backgrounds, talents, interests, and goals inﬂuence the inferences and thus the explanations that they make about observations of natural phenomena and describe that competing interpretations (explanations) of scientists are a strength of science as they are a source of new, testable ideas that have the potential to add new evidence to support one or another of the explanations.",
-      "lessons": [
-        "3.4.1 Nature of science",
-        "3.4.2 Hypotheses and theories",
-        "3.4.4 Physicists and their work",
-        "8.4.1 Newton’s cannon",
-        "8.5.1 Kepler’s first law",
-        "12.1.2 Joule’s experiment",
-        "23.1.2.b Photons",
-        "23.2.1 Photoelectric effect",
-        "24.1.2 Speed of light",
-        "24.2.1.d Higgs Boson",
-        "24.2.2 Dark matter"
-      ]
-    },
-    {
-      "code": "SC.912.N.3.1",
-      "benchmark": "Explain that a scientiﬁc theory is the culmination of many scientiﬁc investigations drawing together all the current evidence concerning a substantial range of phenomena; thus, a scientiﬁc theory represents the most powerful explanation scientists have to offer.",
-      "lessons": [
-        "3.4.1 Nature of science",
-        "3.4.2 Hypotheses and theories",
-        "3.4.4 Physicists and their work",
-        "3.5.1 Designing a science experiment",
-        "3.5.2 Conducting a lab",
-        "12.1.2 Joule’s experiment",
-        "24.1.2 Speed of light",
-        "23.1.2.b Photons",
-        "23.2.1 Photoelectric effect",
-        "24.2.1.d Higgs Boson"
-      ]
-    },
-    {
-      "code": "SC.912.N.3.2",
-      "benchmark": "Describe the role consensus plays in the historical development of a theory in any one of the disciplines of science.",
-      "lessons": [
-        "3.4.1 Nature of science",
-        "3.4.2 Hypotheses and theories",
-        "24.1.2 Speed of light",
-        "24.2.1.d Higgs Boson",
-        "24.2.3 Black holes"
-      ]
-    },
-    {
-      "code": "SC.912.N.3.3",
-      "benchmark": "Explain that scientiﬁc laws are descriptions of speciﬁc relationships under given conditions in nature, but do not offer explanations for those relationships.",
-      "lessons": [
-        "3.4.1 Nature of science",
-        "225.1.1 Models and laws",
-        "3.4.2 Hypotheses and theories"
-      ]
-    },
-    {
-      "code": "SC.912.N.3.4",
-      "benchmark": "Recognize that theories do not become laws, nor do laws become theories; theories are well supported explanations and laws are well supported descriptions.",
-      "lessons": [
-        "3.4.1 Nature of science",
-        "3.4.2 Hypotheses and theories"
-      ]
-    },
-    {
-      "code": "SC.912.N.3.5",
-      "benchmark": "Describe the function of models in science, and identify the wide range of models used in science.",
-      "lessons": [
-        "25.1.1 Models and laws",
-        "24.2.1 Standard model",
-        "3.4.1 Nature of science"
-      ]
-    },
-    {
-      "code": "SC.912.N.4.1",
-      "benchmark": "Explain how scientiﬁc knowledge and reasoning provide an empirically-based perspective to inform society’s decision making.",
-      "lessons": [
-        "3.4.1 Nature of science",
-        "3.4.3 Science, ethics and its limits",
-        "24.19 Constraints and criteria",
-        "3.6.1 Science and marketing"
-      ]
-    },
-    {
-      "code": "SC.912.P.8.1",
-      "benchmark": "Differentiate among the four states of matter.",
-      "lessons": [
-        "11.1.2 Types of matter"
-      ]
-    },
-    {
-      "code": "SC.912.P.8.3",
-      "benchmark": "Explore the scientiﬁc theory of atoms (also known as atomic theory)  by describing changes in the atomic model over time and why those changes were necessitated by experimental evidence.",
-      "lessons": [
-        "22.1.2 Early models of the atom",
-        "22.3.3 Evidence of the strong force",
-        "22.3.4 Evidence of the weak force",
-        "22.2.1 The four forces",
-        "24.2.1 Standard model",
-        "22.1.1 Elements and atoms",
-        "22.1.3 Protons and neutrons",
-        "22.1.4 Isotopes",
-        "22.2.2 Nuclear stability",
-        "22.2.3 Mass and energy",
-        "22.3.1 Radioactivity and radiation",
-        "22.3.2 Radioactive decay and half-lives"
-      ]
-    },
-    {
-      "code": "SC.912.P.8.4",
-      "benchmark": "Explore the scientiﬁc theory of atoms (also known as atomic theory) by describing the structure of atoms in terms of protons, neutrons and electrons, and differentiate among these particles in terms of their mass, electrical charges and locations within the atom.",
-      "lessons": [
-        "22.1.1 Elements and atoms",
-        "22.1.2 Early models of the atom",
-        "22.1.3 Protons and neutrons"
-      ]
-    },
-    {
-      "code": "SC.912.P.10.1",
-      "benchmark": "Differentiate among the various forms of energy and recognize that they can be transformed from one form to others.",
-      "lessons": [
-        "6.3.1 Energy",
-        "6.3.2 Kinetic energy",
-        "6.3.3 Work and kinetic energy",
-        "6.4.1 Potential energy",
-        "6.4.2 Work and energy",
-        "6.5.1 Conservation of energy",
-        "6.5.2 Energy transfer",
-        "15.4.1 Electric potential energy"
-      ]
-    },
-    {
-      "code": "SC.912.P.10.2",
-      "benchmark": "Explore the Law of Conservation of Energy by differentiating among open, closed, and isolated systems and explain that the total energy in an isolated system is a conserved quantity.",
-      "lessons": [
-        "6.5.1 Conservation of energy",
-        "6.5.2 Energy transfer",
-        "15.4.1 Electric potential energy"
-      ]
-    },
-    {
-      "code": "SC.912.P.10.3",
-      "benchmark": "Compare and contrast work and power qualitatively and quantitatively.",
-      "lessons": [
-        "6.1.1 Work Force parallel to displacement",
-        "6.2.1 Work Force at angle to displacement",
-        "6.2.2 Negative work",
-        "6.2.3 Work Force that changes",
-        "6.3.3 Work and kinetic energy",
-        "6.4.2 Work and energy",
-        "6.5.3 Power"
-      ]
-    },
-    {
-      "code": "SC.912.P.10.4",
-      "benchmark": "Describe heat as the energy transferred by convection, conduction, and radiation, and explain the connection of heat to change in temperature or states of matter.",
-      "lessons": [
-        "11.1.1 Thermal energy, temperature and heat",
-        "11.4.2 Heat",
-        "11.6.1 Conduction",
-        "11.6.2 Convection",
-        "11.6.3 Electromagnetic radiation",
-        "11.6.4 Contrasting transfer processes",
-        "11.2.1 Thermodynamics",
-        "11.2.2 Thermal energy",
-        "11.2.3 Temperature",
-        "11.4.1 Thermal equilibrium",
-        "11.5.1 State changes",
-        "11.5.2 Analyzing state changes",
-        "11.1.2 Types of matter",
-        "11.4.3 Specific heat",
-        "11.4.4 Calorimetry and a calorimeter"
-      ]
-    },
-    {
-      "code": "SC.912.P.10.5",
-      "benchmark": "Relate temperature to the average molecular kinetic energy.",
-      "lessons": [
-        "12.8.1 Kinetic energy and temperature",
-        "11.2.2 Thermal energy",
-        "26:1:2 Virtual labs: Thermodynamics and states of matter",
-        "11.2.3 Temperature"
-      ]
-    },
-    {
-      "code": "SC.912.P.10.6",
-      "benchmark": "Create and interpret potential energy diagrams, for example chemical reactions, orbits around a central body, motion of a pendulum.",
-      "lessons": [
-        "6.4.1.e Elastic potential energy",
-        "66.5.1.b Total energy",
-        "11.1.2.e Endothermic and exothermic reactions",
-        "15.4.1.b Electric potential energy"
-      ]
-    },
-    {
-      "code": "SC.912.P.10.7",
-      "benchmark": "Distinguish between endothermic and exothermic chemical processes.",
-      "lessons": [
-        "11.1.2.e Endothermic and exothermic reactions"
-      ]
-    },
-    {
-      "code": "SC.912.P.10.8",
-      "benchmark": "Explain entropy's role in determining the efficiency of processes that convert energy to work.",
-      "lessons": [
-        "12.20.e Energy and efficiency",
-        "12.6.1 Efficiency",
-        "12.6.2 Second law of thermodynamics"
-      ]
-    },
-    {
-      "code": "SC.912.P.10.10",
-      "benchmark": "Compare the magnitude and range of the four fundamental forces (Gravitational, electromagnetic, weak nuclear, strong nuclear).",
-      "lessons": [
-        "22.2.1 The four forces"
-      ]
-    },
-    {
-      "code": "SC.912.P.10.13",
-      "benchmark": "Relate the conﬁguration of static charges to the electric ﬁeld, electric force, electric potential, and electric potential energy. Bruce electric potential &#034;configuration of charges.&#034;",
-      "lessons": [
-        "15.2.1 Electric force",
-        "15.2.2 Coulomb’s law",
-        "15.3.1 Fields",
-        "15.3.2 Electric fields",
-        "15.3.3 Electric field diagrams",
-        "15.3.4 Force from a field",
-        "15.4.1 Electric potential energy",
-        "15.4.2 Electric potential difference",
-        "26:1:2 Virtual labs: Force between charged particles",
-        "15.1.3 conductors, insulators, grounds",
-        "15.1.1 Electric charge"
-      ]
-    },
-    {
-      "code": "SC.912.P.10.14",
-      "benchmark": "Differentiate among conductors, semiconductors, and insulators.",
-      "lessons": [
-        "15.1.3 conductors, insulators, grounds",
-        "23.3.2 Transistors",
-        "23.3.1 Energy levels"
-      ]
-    },
-    {
-      "code": "SC.912.P.10.15",
-      "benchmark": "Investigate and explain the relationships among current, voltage, resistance, and power.",
-      "lessons": [
-        "16.1.3 Ohm’s law",
-        "16.1.1 Electric current",
-        "16.1.2 Resistors",
-        "16.2.1 Electric power",
-        "16.3.1 Electric circuits",
-        "16.3.2 Batteries",
-        "16.3.3 Energy conservation",
-        "16.4.1 Resistors in series",
-        "16.4.2 Resistors in parallel",
-        "16.5.1 Resistors in a mixed circuit",
-        "16.1.4 Properties that determine resistance"
-      ]
-    },
-    {
-      "code": "SC.912.P.10.16",
-      "benchmark": "Explain the relationship between moving charges and magnetic fields, as well as changing magnetic fields and electric fields, and their application to modern technologies.",
-      "lessons": [
-        "17.1.3 Magnetic field and charge",
-        "17.2.1 Currents and magnetic fields",
-        "17.6.2 Electric generators",
-        "17.2.3 Electric motor",
-        "17.3.1 Electromagnetic induction",
-        "17.3.4 Faraday’s law",
-        "17.4.2 Motion in magnetic fields",
-        "17.7.1 Mutual induction",
-        "17.7.2 Transformers",
-        "17.3.2 Inducted potential difference",
-        "17.3.3 Magnetic flux",
-        "17.4.1 Velocity selector",
-        "17.2.2 Two wires and magnetic fields",
-        "17.4.3 Hall effect",
-        "17.4.4 Magnetic force on current",
-        "17.5.1 Force on charge and wire",
-        "17.5.2 Flux at an angle",
-        "17.6.1 Lenz’s law"
-      ]
-    },
-    {
-      "code": "SC.912.P.10.17",
-      "benchmark": "Explore the theory of electromagnetism by explaining electromagnetic waves in terms of oscillating electric and magnetic fields.",
-      "lessons": [
-        "19.1.1 Electromagnetic radiation",
-        "19.3.1 Antennas",
-        "17.3.1.b Electromagnetic induction",
-        "17.3.3 Magnetic flux",
-        "17.3.4 Faraday’s law"
-      ]
-    },
-    {
-      "code": "SC.912.P.10.18",
-      "benchmark": "Explore the theory of electromagnetism by comparing and contrasting the different parts of the electromagnetic spectrum in terms of wavelength, frequency, and energy, and relate them to phenomena and applications.",
-      "lessons": [
-        "19.1.1.c Electromagnetic spectrum",
-        "19.1.1.d Radio and light waves",
-        "19.1.1.e X-rays",
-        "19.1.2.c Speed of radio waves",
-        "19.2.2 Radiation pressure",
-        "19.3.1 Antennas",
-        "19.4.2 Scattering",
-        "19.4.3 Why is the sky blue?",
-        "21.4.1 Dispersion and prisms",
-        "23.1.2.c Energy of a photon",
-        "23.2.1.b  Photoelectric effect"
-      ]
-    },
-    {
-      "code": "SC.912.P.10.20",
-      "benchmark": "Describe the measurable properties of waves and explain the relationships among them and how these properties change when the wave moves from one medium to another.",
-      "lessons": [
-        "13.4.3 Wave amplitude, frequency and period",
-        "113.4.4 Wavelength",
-        "13.4.5 Energy and amplitude",
-        "13.6.1 Wave speed",
-        "21.1.1 Refraction",
-        "21.1.2 Index of refraction",
-        "21.1.3 Snell’s law",
-        "21.2.3 Wavelength and frequency",
-        "26:1:2 Virtual labs: Waves: Speed, frequency, wavelength",
-        "26:1:2 Virtual labs: Waves: Refraction",
-        "21.2.1 Refraction direction",
-        "21.2.2 Why refraction occurs",
-        "13.4.1 Making waves",
-        "13.4.2 Wave pulse and periodic waves",
-        "21.6.3 Refracting telescope"
-      ]
-    },
-    {
-      "code": "SC.912.P.10.21",
-      "benchmark": "Qualitatively describe the shift in frequency in sound or electromagnetic waves due to the relative motion of a source or a receiver.",
-      "lessons": [
-        "14.3.1 Doppler effect",
-        "14.3.2 Calculating the Doppler effect",
-        "24.1.5 Doppler effect"
-      ]
-    },
-    {
-      "code": "SC.912.P.10.22",
-      "benchmark": "Construct ray diagrams and use thin lens and mirror equations to locate the images formed by lenses and mirrors.",
-      "lessons": [
-        "20.1.5 Ray diagram",
-        "21.7.1 Thin lens equation",
-        "21.7.2 Magnification",
-        "20.1.3 Types of images",
-        "20.1.4 Law of reflection",
-        "20.2.3 Convex mirror ray diagram",
-        "20.2.3 Convex mirror ray diagram",
-        "20.2.1 Spherical mirrors",
-        "20.2.4 Spherical mirror aberration",
-        "20.2.5 Parabolic mirrors",
-        "20.3.1 Mirror equations",
-        "20.3.2 Magnification equations",
-        "20.3.3 Calculating focal length in curved mirrors",
-        "21.1.1 Refraction",
-        "20.1.1 Reflection",
-        "20.1.2 Plane mirrors"
-      ]
-    },
-    {
-      "code": "SC.912.P.12.1",
-      "benchmark": "Distinguish between scalar and vector quantities and assess which should be used to describe an event.",
-      "lessons": [
-        "1.2.1 Scalar",
-        "1.2.2 Vectors",
-        "1.2.3 Displacement",
-        "1.4.2 Acceleration as a vector",
-        "1.2.4 Velocity",
-        "26:1:2 Virtual labs: Motion in two dimensions #1 and #2",
-        "4.1.1 Displacement in two dimensions",
-        "4.1.2 Velocity in two dimensions",
-        "4.2.1 Projectile motion"
-      ]
-    },
-    {
-      "code": "SC.912.P.12.2",
-      "benchmark": "Analyze the motion of an object in terms of its position, velocity, and acceleration (with respect to a frame of reference) as functions of time.",
-      "lessons": [
-        "1.2.3 Displacement",
-        "1.2.4 Velocity",
-        "1.4.1 Acceleration",
-        "1.4.2 Acceleration as a vector",
-        "1.5.1 Motion equations",
-        "2.5.1 Reference frame",
-        " 2.5.2 Relative velocity",
-        "2.2.1 Position-time graphs",
-        "2.2.2 Velocity in position-time graphs",
-        "2.2.3 Acceleration in position-time graphs",
-        "2.4.1 Freefall acceleration",
-        "4.1.1 Displacement in two dimensions",
-        "4.1.2 Velocity in two dimensions",
-        "4.2.1 Projectile motion",
-        "4.2.2 Graphs of projectile motion",
-        "4.2.3 Calculating projectile motion",
-        "1.3.1 Average velocity",
-        "1.3.2 Instantaneous velocity"
-      ]
-    },
-    {
-      "code": "SC.912.P.12.3",
-      "benchmark": "Interpret and apply Newton’s three laws of motion.",
-      "lessons": [
-        "5.1.3 Newton’s first law",
-        "5.2.2 Newton’s second law",
-        "5.2.4 Applying Newton’s second law",
-        "5.3.1 Newton’s third law",
-        "5.2.3 Equilibrium",
-        "5.5.1 Free-body diagrams",
-        "5.6.1 Forces and trigonometry",
-        "5.1.1  Force",
-        "5.1.2 Net force",
-        "5.2.1 Mass",
-        "5.3.2 Weight",
-        "5.3.3 Normal force",
-        "5.3.4 Tension",
-        "5.3.5 Friction",
-        "5.3.6 Summary",
-        "5.4.2 Air resistance",
-        "5.5.2 Forces not acting along a line"
-      ]
-    },
-    {
-      "code": "SC.912.P.12.4",
-      "benchmark": "Describe how the gravitational force between two objects depends on their masses and the distance between them.",
-      "lessons": [
-        "8.3.1 Newton’s law of gravity",
-        "26:1:2 Virtual labs: Gravity"
-      ]
-    },
-    {
-      "code": "SC.912.P.12.5",
-      "benchmark": "Apply the law of conservation of linear momentum to interactions, such as collisions between objects.",
-      "lessons": [
-        "7.2.1 Conservation of momentum",
-        "7.3.1 Elastic collision",
-        "7.3.2 Inelastic collision",
-        "26:1:2 Virtual labs: Collisions",
-        "7.1.1 Momentum",
-        "7.1.2 Impulse",
-        "7.4.1 Center of mass",
-        "7.4.2 Center of mass and motion"
-      ]
-    },
-    {
-      "code": "SC.912.P.12.6",
-      "benchmark": "Qualitatively apply the concept of angular momentum.",
-      "lessons": [
-        "9.6.1 Angular momentum",
-        "9.6.2 Torque and angular momentum"
-      ]
-    },
-    {
-      "code": "SC.912.P.12.7",
-      "benchmark": "Recognize that nothing travels faster than the speed of light in vacuum which is the same for all observers no matter how they or the light source are moving.",
-      "lessons": [
-        "24.1.2 Speed of light",
-        "21.1.2 Index of refraction",
-        "25.4.4 Projects Resource",
-        "19.1.2 Speed of light"
-      ]
-    },
-    {
-      "code": "SC.912.P.12.8",
-      "benchmark": "Recognize that Newton’s Laws are a limiting case of Einstein’s Special Theory of Relativity at speeds that are much smaller than the speed of light.",
-      "lessons": [
-        "5.1.3 Newton’s first law",
-        "24.1.2 Speed of light",
-        "25.4.3 Writing an Article Resource",
-        "25.4.4 Projects Resource"
-      ]
-    },
-    {
-      "code": "SC.912.P.12.9",
-      "benchmark": "Recognize that time, length, and energy depend on the frame of reference.",
-      "lessons": [
-        "24.1.1 Reference frames",
-        "24.1.2 Speed of light",
-        "24.1.3 Time dilation",
-        "24.1.4 Length contraction",
-        "2.5.2 Relative velocity"
-      ]
-    },
-    {
-      "code": "LAFS.1112.RST.1.1",
-      "benchmark": "Cite specific textual evidence to support analysis of science and technical texts, attending to important distinctions the author makes and to any gaps or inconsistencies in the account.",
-      "lessons": [
-        "3.6.3 Scientific information from varied sources",
-        "3.6.2 &#034;Your&#034; science experiment",
-        "3.6.1 Science and marketing",
-        "25.4.5 Writing an Article Resource",
-        "25.4.2 Creating a Presentation Resource",
-        "25.4.4 Projects Resource",
-        "3.6.4 Communicating scientific information"
-      ]
-    },
-    {
-      "code": "LAFS.1112.RST.1.2",
-      "benchmark": "Determine the central ideas or conclusions of a text; summarize complex concepts, processes, or information presented in a text by paraphrasing them in simpler but still accurate terms.",
-      "lessons": [
-        "3.6.3 Scientific information from varied sources",
-        "3.6.2 &#034;Your&#034; science experiment",
-        "3.6.1 Science and marketing",
-        "3.6.4 Communicating scientific information",
-        "Lesson Plan: Ch13",
-        "Lesson Plan: Ch18",
-        "Lesson Plan: Ch22",
-        "Lesson Plan: Ch24"
-      ]
-    },
-    {
-      "code": "LAFS.1112.RST.1.3",
-      "benchmark": "Follow precisely a complex multistep procedure when carrying out experiments, taking measurements, or performing technical tasks; analyze the specific results based on explanations in the text.",
-      "lessons": [
-        "3.5.2 Conducting a lab",
-        "3.5.3 Precision and accuracy",
-        "3.5.4 Checking the data",
-        "26:1:1 Physical labs and demonstrations",
-        "26:1:2 Virtual labs"
-      ]
-    },
-    {
-      "code": "LAFS.1112.RST.2.4",
-      "benchmark": "Determine the meaning of symbols, key terms, and other domain-specific words and phrases as they are used in a specific scientific or technical context relevant to grades 11–12 texts and topics.",
-      "lessons": [
-        "25.4.5 Reading a Textbook Resource",
-        "3.5.2 Conducting a lab",
-        "3.6.3 Scientific information from varied sources",
-        "Lesson Plan: Ch1",
-        "Lesson Plan: Ch5",
-        "Lesson Plan: Ch11",
-        "Lesson Plan: Ch19",
-        "25.4.4 Projects Resource"
-      ]
-    },
-    {
-      "code": "LAFS.1112.RST.2.5",
-      "benchmark": "Analyze how the text structures information or ideas into categories or hierarchies, demonstrating understanding of the information or ideas.",
-      "lessons": [
-        "Lesson Plan: Ch19",
-        "3.6.2 &#034;Your&#034; science experiment",
-        "3.6.3 Scientific information from varied sources",
-        "25.4.4 Projects Resource"
-      ]
-    },
-    {
-      "code": "LAFS.1112.RST.2.6",
-      "benchmark": "Analyze the author’s purpose in providing an explanation, describing a procedure, or discussing an experiment in a text, identifying important issues that remain unresolved.",
-      "lessons": [
-        "3.6.1 Science and marketing",
-        "3.6.3 Scientific information from varied sources",
-        "Lesson Plan: Ch11",
-        "Lesson Plan: Ch17",
-        "Lesson Plan: Ch19"
-      ]
-    },
-    {
-      "code": "LAFS.1112.RST.3.7",
-      "benchmark": "Integrate and evaluate multiple sources of information presented in diverse formats and media (e.g., quantitative data, video, multimedia) in order to address a question or solve a problem.",
-      "lessons": [
-        "3.6.3 Scientific information from varied sources",
-        "3.6.2 &#034;Your&#034; science experiment",
-        "Lesson Plan: Ch6",
-        "Lesson Plan: Ch18",
-        "25.4.2 Creating a Presentation Resource",
-        "Lesson Plan: Ch19",
-        "Lesson Plan: Ch21"
-      ]
-    },
-    {
-      "code": "LAFS.1112.RST.3.8",
-      "benchmark": "Evaluate the hypotheses, data, analysis, and conclusions in a science or technical text, verifying the data when possible and corroborating or challenging conclusions with other sources of information.",
-      "lessons": [
-        "3.6.3 Scientific information from varied sources",
-        "3.6.1 Science and marketing",
-        "3.6.2 &#034;Your&#034; science experiment",
-        "3.5.2 Conducting a lab",
-        "25.4.3: Writing an Article Resource",
-        "25.4.2 Creating a Presentation Resource",
-        "25.4.4 Projects Resource"
-      ]
-    },
-    {
-      "code": "LAFS.1112.RST.3.9",
-      "benchmark": "Synthesize information from a range of sources (e.g., texts, experiments, simulations) into a coherent understanding of a process, phenomenon, or concept, resolving conflicting information when possible.",
-      "lessons": [
-        "3.6.3 Scientific information from varied sources",
-        "3.6.1 Science and marketing",
-        "3.6.2 &#034;Your&#034; science experiment",
-        "Lesson Plan: Ch8",
-        "Lesson Plan: Ch10",
-        "3.5.2 Conducting a lab",
-        "25.4.3: Writing an Article Resource",
-        "25.4.2 Creating a Presentation Resource",
-        "26:1:2 Virtual labs",
-        "25.4.4 Projects Resource",
-        "Lesson Plan: Ch17",
-        "Lesson Plan: Ch18"
-      ]
-    },
-    {
-      "code": "LAFS.1112.RST.4.10",
-      "benchmark": "By the end of grade 12, read and comprehend science/technical texts in the grades 11–12 text complexity band independently and proficiently.",
-      "lessons": [
-        "25.4.5 Reading a Textbook Resource",
-        "Lesson Plan: Ch6",
-        "Lesson Plan: Ch11",
-        "Lesson Plan: Ch23",
-        "Lesson Plan: Ch24"
-      ]
-    },
-    {
-      "code": "LAFS.1112.SL.1.1",
-      "benchmark": "Initiate and participate effectively in a range of collaborative discussions (one-on-one, in groups, and teacher-led) with diverse partners on grades 11–12 topics, texts, and issues, building on others’ ideas and expressing their own clearly and persuasively.<ol style='list-style-type: lower-alpha;margin-left: 15px;'><li>Come to discussions prepared, having read and researched material under study; explicitly draw on that preparation by referring to evidence from texts and other research on the topic or issue to stimulate a thoughtful, well-reasoned exchange of ideas.</li><li>Work with peers to promote civil, democratic discussions and decision-making, set clear goals and deadlines, and establish individual roles as needed.</li><li>Propel conversations by posing and responding to questions that probe reasoning and evidence; ensure a hearing for a full range of positions on a topic or issue; clarify, verify, or challenge ideas and conclusions; and promote divergent and creative perspectives.</li><li>Respond thoughtfully to diverse perspectives; synthesize comments, claims, and evidence made on all sides of an issue; resolve contradictions when possible; and determine what additional information or research is required to deepen the investigation or complete the task.</li></ol>",
-      "lessons": [
-        "3.6.4 Communicating scientific information",
-        "Lesson Plan: Ch4",
-        "Lesson Plan:Ch12",
-        "25.4.2 Creating a Presentation Resource",
-        "25.4.3: Writing an Article Resource",
-        "25.4.4 Projects Resource"
-      ]
-    },
-    {
-      "code": "LAFS.1112.SL.1.2",
-      "benchmark": "Integrate multiple sources of information presented in diverse formats and media (e.g., visually, quantitatively, orally) in order to make informed decisions and solve problems, evaluating the credibility and accuracy of each source and noting any discrepancies among the data.",
-      "lessons": [
-        "3.6.4 Communicating scientific information",
-        "3.6.3 Scientific information from varied sources",
-        "Lesson Plan: Ch12",
-        "25.4.2 Creating a Presentation Resource",
-        "3.6.1 Science and marketing",
-        "3.6.2 &#034;Your&#034; science experiment",
-        "25.4.3 Writing an Article Resource",
-        "25.4.4 Projects Resource"
-      ]
-    },
-    {
-      "code": "LAFS.1112.SL.1.3",
-      "benchmark": "Evaluate a speaker’s point of view, reasoning, and use of evidence and rhetoric, assessing the stance, premises, links among ideas, word choice, points of emphasis, and tone used.",
-      "lessons": [
-        "25.4.2 Creating a Presentation Resource",
-        "Lesson Plan: Ch12",
-        "Lesson Plan: Ch23",
-        "25.4.4 Projects Resource"
-      ]
-    },
-    {
-      "code": "LAFS.1112.SL.2.4",
-      "benchmark": "Present information, findings, and supporting evidence, conveying a clear and distinct perspective, such that listeners can follow the line of reasoning, alternative or opposing perspectives are addressed, and the organization, development, substance, and style are appropriate to purpose, audience, and a range of formal and informal tasks.",
-      "lessons": [
-        "25.4.2 Creating a Presentation Resource",
-        "25.4.3: Writing an Article Resource",
-        "3.6.4 Communicating scientific information",
-        "Lesson Plan: Ch23",
-        "25.4.4 Projects Resource"
-      ]
-    },
-    {
-      "code": "LAFS.1112.SL.2.5",
-      "benchmark": "Make strategic use of digital media (e.g., textual, graphical, audio, visual, and interactive elements) in presentations to enhance understanding of findings, reasoning, and evidence and to add interest.",
-      "lessons": [
-        "25.4.2 Creating a Presentation Resource",
-        "3.5.5 Presenting the results",
-        "Lesson Plan:Ch5",
-        "Lesson Plan:Ch12",
-        "3.6.4 Communicating scientific information",
-        "25.4.4 Projects Resource"
-      ]
-    },
-    {
-      "code": "LAFS.1112.WHST.1.1",
-      "benchmark": "Write arguments focused on discipline-specific content.<ol style='list-style-type: lower-alpha;margin-left: 15px;'><li>Introduce precise, knowledgeable claim(s), establish the significance of the claim(s), distinguish the claim(s) from alternate or opposing claims, and create an organization that logically sequences the claim(s), counterclaims, reasons, and evidence.</li><li>Develop claim(s) and counterclaims fairly and thoroughly, supplying the most relevant data and evidence for each while pointing out the strengths and limitations of both claim(s) and counterclaims in a discipline-appropriate form that anticipates the audience’s knowledge level, concerns, values, and possible biases.</li><li>c. Use words, phrases, and clauses as well as varied syntax to link the major sections of the text, create cohesion, and clarify the relationships between claim(s) and reasons, between reasons and evidence, and between claim(s) and counterclaims.</li><li>d. Establish and maintain a formal style and objective tone while attending to the norms and conventions of the discipline in which they are writing.</li><li>e. Provide a concluding statement or section that follows from or supports the argument presented.</li></ol>",
-      "lessons": [
-        "3.6.4 Communicating scientific information",
-        "Lesson Plan: Ch24"
-      ]
-    },
-    {
-      "code": "LAFS.1112.WHST.1.2",
-      "benchmark": "Write informative/explanatory texts, including the narration of historical events, scientific procedures/ experiments, or technical processes.<ol style='list-style-type: lower-alpha;margin-left: 15px;'><li>Introduce a topic and organize complex ideas, concepts, and information so that each new element builds on that which precedes it to create a unified whole; include formatting (e.g., headings), graphics (e.g., figures, tables), and multimedia when useful to aiding comprehension.</li><li>Develop the topic thoroughly by selecting the most significant and relevant facts, extended definitions, concrete details, quotations, or other information and examples appropriate to the audience’s knowledge of the topic. </li><li>Use varied transitions and sentence structures to link the major sections of the text, create cohesion, and clarify the relationships among complex ideas and concepts. </li><li>Use precise language, domain-specific vocabulary and techniques such as metaphor, simile, and analogy to manage the complexity of the topic; convey a knowledgeable stance in a style that responds to the discipline and context as well as to the expertise of likely readers. </li><li>Provide a concluding statement or section that follows from and supports the information or explanation provided (e.g., articulating implications or the significance of the topic).</li></ol>",
-      "lessons": [
-        "25.4.3: Writing an Article Resource",
-        "25.4.2 Creating a Presentation Resource",
-        "Lesson Plan: Ch17",
-        "Lesson Plan: Ch18",
-        "Lesson Plan: Ch21",
-        "Lesson Plan: Ch24",
-        "25.4.4 Projects Resource"
-      ]
-    },
-    {
-      "code": "LAFS.1112.WHST.2.4",
-      "benchmark": "Produce clear and coherent writing in which the development, organization, and style are appropriate to task, purpose, and audience.",
-      "lessons": [
-        "25.4.3: Writing an Article Resource",
-        "25.4.2 Creating a Presentation Resource",
-        "Lesson Plan:Ch2",
-        "Lesson Plan:Ch14",
-        "Lesson Plan: Ch21",
-        "Lesson Plan:Ch23",
-        "Lesson Plan: Ch24",
-        "25.4.4 Projects Resource"
-      ]
-    },
-    {
-      "code": "LAFS.1112.WHST.2.5",
-      "benchmark": "Develop and strengthen writing as needed by planning, revising, editing, rewriting, or trying a new approach, focusing on addressing what is most significant for a specific purpose and audience.",
-      "lessons": [
-        "25.4.3: Writing an Article Resource",
-        "Lesson Plan: Ch14",
-        "Lesson Plan: Ch17",
-        "Lesson Plan: Ch24",
-        "25.4.4 Projects Resource"
-      ]
-    },
-    {
-      "code": "LAFS.1112.WHST.2.6",
-      "benchmark": "Use technology, including the Internet, to produce, publish, and update individual or shared writing products in response to ongoing feedback, including new arguments or information.",
-      "lessons": [
-        "25.4.3: Writing an Article Resource",
-        "Lesson Plan: Ch14",
-        "Lesson Plan:Ch17",
-        "Lesson Plan:Ch18",
-        "25.4.4 Projects Resource",
-        "Lesson Plan:Ch24"
-      ]
-    },
-    {
-      "code": "LAFS.1112.WHST.3.7",
-      "benchmark": "Conduct short as well as more sustained research projects to answer a question (including a self-generated question) or solve a problem; narrow or broaden the inquiry when appropriate; synthesize multiple sources on the subject, demonstrating understanding of the subject under investigation.",
-      "lessons": [
-        "Lesson Plan:Ch14",
-        "Lesson Plan: Ch17",
-        "Lesson Plan: Ch18",
-        "Lesson Plan: Ch24"
-      ]
-    },
-    {
-      "code": "LAFS.1112.WHST.3.8",
-      "benchmark": "Gather relevant information from multiple authoritative print and digital sources, using advanced searches effectively; assess the strengths and limitations of each source in terms of the specific task, purpose, and audience; integrate information into the text selectively to maintain the flow of ideas, avoiding plagiarism and overreliance on any one source and following a standard format for citation.",
-      "lessons": [
-        "25.4.3: Writing an Article Resource",
-        "3.6.1 Science and marketing",
-        "3.6.3 Scientific information from varied sources",
-        "25.4.2 Creating a Presentation Resource",
-        "Lesson Plan:Ch17",
-        "Lesson Plan:Ch18",
-        "Lesson Plan:Ch24"
-      ]
-    },
-    {
-      "code": "LAFS.1112.WHST.3.9",
-      "benchmark": "Draw evidence from informational texts to support analysis, reflection, and research.",
-      "lessons": [
-        "3.6.3 Scientific information from varied sources",
-        "25.4.3: Writing an Article Resource",
-        "3.6.1 Science and marketing",
-        "25.4.2 Creating a Presentation Resource",
-        "Lesson Plan: Ch13",
-        "Lesson Plan: Ch18",
-        "Lesson Plan: Ch21",
-        "Lesson Plan: Ch22",
-        "Lesson Plan: Ch24"
-      ]
-    },
-    {
-      "code": "LAFS.1112.WHST.4.10",
-      "benchmark": "Write routinely over extended time frames (time for reflection and revision) and shorter time frames (a single sitting or a day or two) for a range of discipline-specific tasks, purposes, and audiences.",
-      "lessons": [
-        "Lesson Plan: Ch1",
-        "Lesson Plan: Ch4",
-        "25.4.5 Reading a Textbook Resource",
-        "Lesson Plan: Ch7",
-        "Lesson Plan: Ch20",
-        "25.4.4 Projects Resource"
-      ]
-    },
-    {
-      "code": "MAFS.912.A-CED.1.4",
-      "benchmark": "Rearrange formulas to highlight a quantity of interest, using the same reasoning as in solving equations. For example, rearrange Ohm’s law V = IR to highlight resistance R. ★",
-      "lessons": [
-        "16.1.3 Ohm’s law",
-        "5.2.2 Newton’s second law",
-        "10.2.1.e Derivation Pressure due to a liquid",
-        "4.2.3.b Derivation Horizontal projectile time",
-        "6.3.3.b Derivation Work and kinetic energy 1.1.5 Math skills",
-        "8.4.3.b Derivation Orbital speed",
-        "1.5.1 Motion equations",
-        "11.3.2 Temperature conversions"
-      ]
-    },
-    {
-      "code": "MAFS.912.F-IF.2.4",
-      "benchmark": "For a function that models a relationship between two quantities, interpret key features of graphs and tables in terms of the quantities, and sketch graphs showing key features given a verbal description of the relationship. Key features include intercepts; intervals where the function is increasing, decreasing, positive, or negative; relative maximums and minimums; symmetries; end behavior; and periodicity. ★",
-      "lessons": [
-        "2.2.1 Position-time graphs",
-        "2.2.2 Velocity in position-time graphs",
-        "2.2.3 Acceleration in position-time graphs",
-        "4.2.2 Graphs of projectile motion",
-        "11.5.2.b Graphs of state changes",
-        "13.1.6.c Graph of SHM",
-        "13.4.3 Wave amplitude, frequency and amplitude",
-        "25.4.1 MS Math content"
-      ]
-    },
-    {
-      "code": "MAFS.912.F-IF.3.7",
-      "benchmark": "Graph functions expressed symbolically and show key features of the graph, by hand in simple cases and using technology for more complicated cases. ★<ol style='list-style-type: lower-alpha;margin-left: 15px;'><li>Graph linear and quadratic functions and show intercepts, maxima, and minima.</li><li>Graph square root, cube root, and piecewise-defined functions, including step functions and absolute value functions.</li><li>Graph polynomial functions, identifying zeros when suitable factorizations are available, and showing end behavior.</li><li>Graph rational functions, identifying zeros and asymptotes when suitable factorizations are available, and showing end behavior.</li><li>Graph exponential and logarithmic functions, showing intercepts and end behavior, and trigonometric functions, showing period, midline, and amplitude, and using phase shift.</li></ol>",
-      "lessons": [
-        "2.2.1 Position-time graphs",
-        "2.2.2 Velocity in position-time graphs",
-        "2.2.3 Acceleration in position-time graphs",
-        "25.4.1 MS Math content",
-        "25.2.2 Normal distribution",
-        "25.2.4.b Regression"
-      ]
-    },
-    {
-      "code": "MAFS.912.G-GMD.1.3",
-      "benchmark": "Choose a level of accuracy appropriate to limitations on measurement when reporting quantities.  Use volume formulas for cylinders, pyramids, cones, and spheres to solve problems. ★",
-      "lessons": [
-        "3.5.3 Precision and accuracy",
-        "3.5.2 Conducting a lab",
-        "3.5.5 Presenting the results",
-        "3.5.4 Checking the data",
-        "3.3.1 Significant figures",
-        "3.3.2 Operations with significant digits"
-      ]
-    },
-    {
-      "code": "MAFS.912.G-MG.1.2",
-      "benchmark": "Apply concepts of density based on area and volume in modeling situations (e.g., persons per square mile, BTUs per cubic foot). ★",
-      "lessons": [
-        "10.1.2 Pressure",
-        "10.1.3 Density",
-        "10.2.1 Pressure due to a liquid",
-        "10.4.1 Archimedes’ principle"
-      ]
-    },
-    {
-      "code": "MAFS.912.N-Q.1.1",
-      "benchmark": "Use units as a way to understand problems and to guide the solution of multi-step problems; choose and interpret units consistently in formulas; choose and interpret the scale and the origin in graphs and data displays. ★",
-      "lessons": [
-        "3.1.2 Metric system",
-        "3.1.3 Converting between units",
-        "3.1.4 Dimensional analysis"
-      ]
-    },
-    {
-      "code": "MAFS.912.N-Q.1.3",
-      "benchmark": "Choose a level of accuracy appropriate to limitations on measurement when reporting quantities. ★",
-      "lessons": [
-        "3.5.3 Precision and accuracy",
-        "3.5.2 Conducting a lab",
-        "3.5.5 Presenting the results",
-        "3.3.1 Significant figures",
-        "3.3.2 Operations with significant digits"
-      ]
-    },
-    {
-      "code": "MAFS.912.N-VM.1.1",
-      "benchmark": "Recognize vector quantities as having both magnitude and direction. Represent vector quantities by directed line segments, and use appropriate symbols for vectors and their magnitudes (e.g., v, |v|, ||v||, v).",
-      "lessons": [
-        "4.1.1 Displacement in two dimensions",
-        "4.1.2 Velocity in two dimensions",
-        "4.3.1 Adding vectors graphically",
-        "4.4.1 Combining vectors using components",
-        "4.2.1 Projectile motion",
-        "4.3.4 Vector magnitude from components",
-        "8.1.1 Circular motion",
-        "9.4.1 Torque",
-        "9.4.2 Torque, angle and lever arm"
-      ]
-    },
-    {
-      "code": "MAFS.912.N-VM.1.2",
-      "benchmark": "Find the components of a vector by subtracting the coordinates of an initial point from the coordinates of a terminal point.",
-      "lessons": [
-        "4.1.1 Displacement in two dimensions",
-        "4.1.2 Velocity in two dimensions"
-      ]
-    },
-    {
-      "code": "MAFS.912.N-VM.1.3",
-      "benchmark": "Solve problems involving velocity and other quantities that can be represented by vectors.",
-      "lessons": [
-        "4.1.2 Velocity in two dimensions",
-        "4.2.1 Projectile motion",
-        "5.2.2 Newton’s second law",
-        "5.3.5 Friction",
-        "5.5.1 Free-body diagrams",
-        "5.5.2 Forces not acting along a line",
-        "5.6.1 Forces and trigonometry",
-        "6.2.1 Work Force at angle to displacement",
-        "7.1.1 Momentum",
-        "10.5.1 Pascal’s principle",
-        "15.2.1.c Electric force",
-        "9.4.1 Torque",
-        "8.3.1 Newton’s law of gravity"
-      ]
-    },
-    {
-      "code": "MAFS.912.S-IC.2.6",
-      "benchmark": "Evaluate reports based on data. ★",
-      "lessons": [
-        "3.4.1 Nature of science",
-        "3.4.2 Hypotheses and theories",
-        "3.4.4 Physicists and their work",
-        "3.5.5 Presenting the results",
-        "3.6.1 Science and marketing",
-        "3.6.3 Scientific information from varied sources",
-        "3.6.4 Communicating scientific information"
-      ]
-    },
-    {
-      "code": "MAFS.912.S-ID.1.1",
-      "benchmark": "Represent data with plots on the real number line (dot plots, histograms, and box plots). ★",
-      "lessons": [
-        "3.5.5 Presenting the results",
-        "3.6.4 Communicating scientific information",
-        "25.1.1 Models and laws",
-        "25.2.1 Data basics",
-        "25.2.2 Normal distribution",
-        "25.2.4 Regression"
-      ]
-    },
-    {
-      "code": "MAFS.912.S-ID.1.2",
-      "benchmark": "RUse statistics appropriate to the shape of the data distribution to compare center (median, mean) and spread (interquartile range, standard deviation) of two or more different data sets. ★",
-      "lessons": [
-        "25.1.1 Models and laws",
-        "25.2.1 Data basics",
-        "25.2.2 Normal distribution",
-        "25.2.4 Regression"
-      ]
-    },
-    {
-      "code": "MAFS.912.S-ID.1.3",
-      "benchmark": "Interpret differences in shape, center, and spread in the context of the data sets, accounting for possible effects of extreme data points (outliers). ★",
-      "lessons": [
-        "2.3.3 Standard deviation",
-        "25.1.1 Models and laws",
-        "25.2.1 Data basics",
-        "25.2.2 Normal distribution",
-        "25.2.4 Regression"
-      ]
-    },
-    {
-      "code": "MAFS.912.S-ID.1.4",
-      "benchmark": "Use the mean and standard deviation of a data set to fit it to a normal distribution and to estimate population percentages. Recognize that there are data sets for which such a procedure is not appropriate. Use calculators, spreadsheets, and tables to estimate areas under the normal curve. ★",
-      "lessons": [
-        "2.3.2 Drawing a trend line",
-        "2.3.3 Standard deviation",
-        "25.1.1 Models and laws",
-        "25.2.2 Normal distribution"
-      ]
-    },
-    {
-      "code": "MAFS.912.S-ID.2.5",
-      "benchmark": "Summarize categorical data for two categories in two-way frequency tables. Interpret relative frequencies in the context of the data (including joint, marginal, and conditional relative frequencies). Recognize possible associations and trends in the data. ★",
-      "lessons": [
-        "25.2.3 Categorical data"
-      ]
-    },
-    {
-      "code": "MAFS.912.S-ID.2.6",
-      "benchmark": "Represent data on two quantitative variables on a scatter plot, and describe how the variables are related. ★<ol style='list-style-type: lower-alpha;margin-left: 15px;'><li>Fit a function to the data; use functions fitted to data to solve problems in the context of the data. Use given functions or choose a function suggested by the context. Emphasize linear and exponential models.</li><li>Informally assess the fit of a function by plotting and analyzing residuals.</li><li>Fit a linear function for a scatter plot that suggests a linear association.</li></ol>",
-      "lessons": [
-        "2.3.1 Drawing a scatter plot",
-        "2.3.2 Drawing a trend line",
-        "2.3.3 Standard deviation",
-        "2.3.4 Linear regression",
-        "3.5.4 Checking the data",
-        "3.5.5 Presenting the results",
-        "25.3.1 Drawing a scatter plot with a spreadsheet",
-        "25.3.2 Entering data in a graphing calculator",
-        "25.3.2.c Drawing a scatter plot with a calculator",
-        "25.3.3 Creating a linear model with a spreadsheet",
-        "25.3.4 Create a linear model with a calculator",
-        "25.3.5 Using a calculator with scientific notation"
-      ]
-    },
-    {
-      "code": "ELD.K12.ELL.SC.1",
-      "benchmark": "English language learners communicate information, ideas and concepts necessary for academic success in the content area of Science.",
-      "lessons": [
-        "27.1.1 ELL Student Activities",
-        "27.1.2 ELL Lesson Plans"
-      ]
-    },
-    {
-      "code": "ELD.K12.ELL.SI.1",
-      "benchmark": "English language learners communicate for social and instructional purposes within the school setting.",
-      "lessons": [
-        "27.1.2 ELL Lesson Plans"
-      ]
-    }
-  ]
+    "data": [
+        {
+            "code": "SC.912.E.5.2",
+            "benchmark": "Identify patterns in the organization and distribution of matter in the universe and the forces that determine them.",
+            "lessons": [
+                "8.3.1 Newton's law of gravity",
+                "12.7.1 Entropy",
+                "24.2.5 Big Bang",
+                "24.2.1 Standard model",
+                "24.2.2 Dark matter and energy",
+                "24.2.3 Black holes",
+                "8.5.1 Kepler's first law",
+                "8.5.2 Kepler's second law",
+                "24.3.2 Particle accelerator discoveries"
+            ]
+        },
+        {
+            "code": "SC.912.E.5.6",
+            "benchmark": "Develop logical connections through physical principles, including Kepler's and Newton's Laws about the relationships and the effects of Earth, Moon, and Sun on each other.",
+            "lessons": [
+                "8.3.1 Newton's law of gravity",
+                "8.4.1 Newton's cannon",
+                "8.5.1 Kepler's first law",
+                "8.5.2 Kepler's second law",
+                "8.5.3 Kepler's third law",
+                "5.1.3 Newton's first law",
+                "5.2.2 Newton's second law",
+                "5.3.1 Newton's third law",
+                "8.3.2 Comparing g and G",
+                "8.4.2 Circular orbits",
+                "8.4.3 Speed of circular orbit"
+            ]
+        },
+        {
+            "code": "SC.912.E.5.8",
+            "benchmark": "Connect the concepts of radiation and the electromagnetic spectrum to the use of historical and newly-developed observational tools.",
+            "lessons": [
+                "19.1.1.c Electromagnetic spectrum",
+                "19.1.2 Speed of light",
+                "19.2.2 Radiation pressure",
+                "19.3.1 Antennas",
+                "22.3.1 Radioactivity and radiation",
+                "24.2.5 Big Bang",
+                "11.6.3 Electromagnetic radiation"
+            ]
+        },
+        {
+            "code": "SC.912.L.18.12",
+            "benchmark": "Discuss the special properties of water that contribute to Earth's suitability as an environment for life cohesive behavior, ability to moderate temperature, expansion upon freezing, and versatility as a solvent.",
+            "lessons": [
+                "10.3.3 Surface tension",
+                "11.4.3 Specific heat",
+                "11.5.1 State changes",
+                "11.7.3.b Expansion of water",
+                "15.2.1.d Electric charge and water"
+            ]
+        },
+        {
+            "code": "SC.912.N.1.1",
+            "benchmark": "Define a problem based on a specific body of knowledge, for example biology, chemistry, physics, and earth/space science, and do the following<ol style='list-style-type: decimal;margin-left: 15px;'><li>Pose questions about the natural world, (Articulate the purpose of the investigation and identify the relevant scientific concepts).</li><li>Conduct systematic observations, (Write procedures that are clear and replicable. Identify observables and examine relationships between test (independent) variable and outcome (dependent) variable. Employ appropriate methods for accurate and consistent observations; conduct and record measurements at appropriate levels of precision. Follow safety guidelines).</li><li>Examine books and other sources of information to see what is already known,</li><li>Review what is known in light of empirical evidence, (Examine whether available empirical evidence can be interpreted in terms of existing knowledge and models, and if not, modify or develop new models).</li><li>Plan investigations, (Design and evaluate a scientific investigation).</li><li>Use tools to gather, analyze, and interpret data (this includes the use of measurement in metric and other systems, and also the generation and interpretation of graphical representations of data, including data tables and graphs), (Collect data or evidence in an organized way. Properly use instruments, equipment, and materials (e.g., scales, probeware, meter sticks, microscopes, computers) including set-up, calibration, technique, maintenance, and storage).</li><li>Pose answers, explanations, or descriptions of events,</li><li>Generate explanations that explicate or describe natural phenomena (inferences),</li><li>Use appropriate evidence and reasoning to justify these explanations to others,</li><li>Communicate results of scientific investigations, and</li><li>Evaluate the merits of the explanations produced by others.</li></ol>",
+            "lessons": [
+                "3.5.1 Designing a science experiment",
+                "3.5.2 Conducting a lab",
+                "3.6.2 &#034;Your&#034; science experiment",
+                "3.6.3 Science information from varied sources",
+                "3.6.4 Communicating scientific information",
+                "3.5.3 Precision and accuracy",
+                "3.5.4 Checking the data",
+                "26:1:3 Labs: Course apparatus",
+                "25.4.1 Creating a Presentation Resource",
+                "25.4.2 Writing an Article Resource"
+            ]
+        },
+        {
+            "code": "SC.912.N.1.2",
+            "benchmark": "Describe and explain what characterizes science and its methods.",
+            "lessons": [
+                "3.4.1 Nature of science",
+                "3.4.2 Hypotheses and theories",
+                "3.4.3 Science, ethics and its limits",
+                "3.4.4 Physicists and their work",
+                "3.5.1 Designing a science experiment",
+                "3.5.2 Conducting a lab",
+                "3.5.3 Precision and accuracy",
+                "3.5.4 Checking the data",
+                "24.1.2 Speed of light",
+                "24.2.1.d Higgs Boson"
+            ]
+        },
+        {
+            "code": "SC.912.N.1.5",
+            "benchmark": "Describe and provide examples of how similar investigations conducted in many parts of the world result in the same outcome.   ",
+            "lessons": [
+                "3.4.2 Hypotheses and theories",
+                "8.5.5 History of science: Gravity",
+                "23.4.2 Observing matter waves",
+                "24.1.2 Speed of light",
+                "24.2.1.d Higgs Boson",
+                "24.2.3 Black holes"
+            ]
+        },
+        {
+            "code": "SC.912.N.1.6",
+            "benchmark": "Describe how scientific inferences are drawn from scienti?c observations and provide examples from the content being studied. ",
+            "lessons": [
+                "3.4.1 Nature of science",
+                "3.4.2 Hypotheses and theories",
+                "3.6.3.b Concussions part 1",
+                "12.1.2 Joule's experiment",
+                "19.1.2 Speed of light",
+                "23.2.1 Photoelectric effect",
+                "23.4.1 Matter waves",
+                "24.1.2 Speed of light",
+                "24.2.1.d Higgs Boson",
+                "24.2.3 Black holes",
+                "8.4.1 Newton's cannon"
+            ]
+        },
+        {
+            "code": "SC.912.N.1.7",
+            "benchmark": "Recognize the role of creativity in constructing scientific questions, methods and explanations.",
+            "lessons": [
+                "3.4.1 Nature of science",
+                "3.4.2 Hypotheses and theories",
+                "8.4.1 Newton's cannon",
+                "8.5.1 Kepler's first law",
+                "12.1.2 Joule's experiment",
+                "23.2.1 Photoelectric effect",
+                "23.4.1 Matter waves",
+                "24.1.2 Speed of light",
+                "24.2.1.d Higgs Boson"
+            ]
+        },
+        {
+            "code": "SC.912.N.2.2",
+            "benchmark": "Identify which questions can be answered through science and which questions are outside the boundaries of scienti?c investigation, such as questions addressed by other ways of knowing, such as art, philosophy, and religion. ",
+            "lessons": [
+                "3.4.1 Nature of science",
+                "3.4.3.a Science and its limits",
+                "3.4.4 Physicists and their work",
+                "24.4.2 Solar Energy",
+                "24.5.2.b Nuclear power costs 2",
+                "24.6.2 Hyperloop trains",
+                "3.4.2 Hypotheses and theories"
+            ]
+        },
+        {
+            "code": "SC.912.N.2.3",
+            "benchmark": "Identify examples of pseudoscience (such as astrology, phrenology) in society.",
+            "lessons": [
+                "3.4.1 Nature of science",
+                "25.4.3 Projects Resource"
+            ]
+        },
+        {
+            "code": "SC.912.N.2.4",
+            "benchmark": "Explain that scientific knowledge is both durable and robust and open to change. Scientific knowledge can change because it is often examined and re- examined by new investigations and scientific argumentation. Because of these frequent examinations, scientific knowledge becomes stronger, leading to its durability. ",
+            "lessons": [
+                "3.4.1 Nature of science",
+                "3.4.2 Hypotheses and theories",
+                "12.1.2 Joule's experiment",
+                "23.1.2.b Photons",
+                "23.2.1.c The observations"
+            ]
+        },
+        {
+            "code": "SC.912.N.2.5",
+            "benchmark": "Describe instances in which scientists' varied backgrounds, talents, interests, and goals in?uence the inferences and thus the explanations that they make about observations of natural phenomena and describe that competing interpretations (explanations) of scientists are a strength of science as they are a source of new, testable ideas that have the potential to add new evidence to support one or another of the explanations.  ",
+            "lessons": [
+                "3.4.1 Nature of science",
+                "3.4.2 Hypotheses and theories",
+                "3.4.4 Physicists and their work",
+                "8.4.1 Newton's cannon",
+                "8.5.1 Kepler's first law",
+                "12.1.2 Joule's experiment",
+                "23.1.2.b Photons",
+                "23.2.1 Photoelectric effect",
+                "24.1.2 Speed of light",
+                "24.2.1.d Higgs Boson",
+                "24.2.2 Dark matter"
+            ]
+        },
+        {
+            "code": "SC.912.N.3.1",
+            "benchmark": "Explain that a scientific theory is the culmination of many scientific investigations drawing together all the current evidence concerning a substantial range of phenomena; thus, a scientific theory represents the most powerful explanation scientists have to offer.",
+            "lessons": [
+                "3.4.1 Nature of science",
+                "3.4.2 Hypotheses and theories",
+                "3.4.4 Physicists and their work",
+                "3.5.1 Designing a science experiment",
+                "3.5.2 Conducting a lab",
+                "12.1.2 Joule's experiment",
+                "24.1.2 Speed of light",
+                "23.1.2.b Photons",
+                "23.2.1 Photoelectric effect",
+                "24.2.1.d Higgs Boson"
+            ]
+        },
+        {
+            "code": "SC.912.N.3.2",
+            "benchmark": "Describe the role consensus plays in the historical development of a theory in any one of the disciplines of science.",
+            "lessons": [
+                "3.4.1 Nature of science",
+                "3.4.2 Hypotheses and theories",
+                "24.1.2 Speed of light",
+                "24.2.1.d Higgs Boson",
+                "24.2.3 Black holes"
+            ]
+        },
+        {
+            "code": "SC.912.N.3.3",
+            "benchmark": "Explain that scientific laws are descriptions of specific relationships under given conditions in nature, but do not offer explanations for those relationships.",
+            "lessons": [
+                "3.4.1 Nature of science",
+                "25.1.1 Models and laws",
+                "3.4.2 Hypotheses and theories"
+            ]
+        },
+        {
+            "code": "SC.912.N.3.4",
+            "benchmark": "Recognize that theories do not become laws, nor do laws become theories; theories are well supported explanations and laws are well supported descriptions.",
+            "lessons": [
+                "3.4.1 Nature of science",
+                "3.4.2 Hypotheses and theories"
+            ]
+        },
+        {
+            "code": "SC.912.N.3.5",
+            "benchmark": "Describe the function of models in science, and identify the wide range of models used in science.",
+            "lessons": [
+                "25.1.1 Models and laws",
+                "24.2.1 Standard model",
+                "3.4.1 Nature of science"
+            ]
+        },
+        {
+            "code": "SC.912.N.4.1",
+            "benchmark": "Explain how scientific knowledge and reasoning provide an empirically-based perspective to inform society's decision making.",
+            "lessons": [
+                "3.4.1 Nature of science",
+                "3.4.3 Science, ethics and its limits",
+                "24.19 Constraints and criteria",
+                "3.6.1 Science and marketing"
+            ]
+        },
+        {
+            "code": "SC.912.P.8.1",
+            "benchmark": "Differentiate among the four states of matter.",
+            "lessons": [
+                "11.1.2 Types of matter"
+            ]
+        },
+        {
+            "code": "SC.912.P.8.3",
+            "benchmark": "Explore the scienti?c theory of atoms (also known as atomic theory)  by describing changes in the atomic model over time and why those changes were necessitated by experimental evidence.   ",
+            "lessons": [
+                "22.1.2 Early models of the atom",
+                "22.3.3 Evidence of the strong force",
+                "22.3.4 Evidence of the weak force",
+                "22.2.1 The four forces",
+                "24.2.1 Standard model",
+                "22.1.1 Elements and atoms",
+                "22.1.3 Protons and neutrons",
+                "22.1.4 Isotopes",
+                "22.2.2 Nuclear stability",
+                "22.2.3 Mass and energy",
+                "22.3.1 Radioactivity and radiation",
+                "22.3.2 Radioactive decay and half-lives"
+            ]
+        },
+        {
+            "code": "SC.912.P.8.4",
+            "benchmark": "Explore the scientific theory of atoms (also known as atomic theory) by describing the structure of atoms in terms of protons, neutrons and electrons, and differentiate among these particles in terms of their mass, electrical charges and locations within the atom.",
+            "lessons": [
+                "22.1.1 Elements and atoms",
+                "22.1.2 Early models of the atom",
+                "22.1.3 Protons and neutrons"
+            ]
+        },
+        {
+            "code": "SC.912.P.10.1",
+            "benchmark": "Differentiate among the various forms of energy and recognize that they can be transformed from one form to others.",
+            "lessons": [
+                "6.3.1 Energy",
+                "6.3.2 Kinetic energy",
+                "6.3.3 Work and kinetic energy",
+                "6.4.1 Potential energy",
+                "6.4.2 Work and energy",
+                "6.5.1 Conservation of energy",
+                "6.5.2 Energy transfer",
+                "15.4.1 Electric potential energy"
+            ]
+        },
+        {
+            "code": "SC.912.P.10.2",
+            "benchmark": "Explore the Law of Conservation of Energy by differentiating among open, closed, and isolated systems and explain that the total energy in an isolated system is a conserved quantity.  ",
+            "lessons": [
+                "6.5.1 Conservation of energy",
+                "6.5.2 Energy transfer",
+                "15.4.1 Electric potential energy"
+            ]
+        },
+        {
+            "code": "SC.912.P.10.3",
+            "benchmark": "Compare and contrast work and power qualitatively and quantitatively.",
+            "lessons": [
+                "6.5.3 Power"
+            ]
+        },
+        {
+            "code": "SC.912.P.10.4",
+            "benchmark": "Describe heat as the energy transferred by convection, conduction, and radiation, and explain the connection of heat to change in temperature or states of matter.",
+            "lessons": [
+                "11.1.1 Thermal energy, temperature and heat",
+                "11.4.2 Heat",
+                "11.6.1 Conduction",
+                "11.6.2 Convection",
+                "11.6.3 Electromagnetic radiation",
+                "11.6.4 Contrasting transfer processes",
+                "11.2.1 Thermodynamics",
+                "11.2.2 Thermal energy",
+                "11.2.3 Temperature",
+                "11.4.1 Thermal equilibrium",
+                "11.5.1 State changes",
+                "11.5.2 Analyzing state changes",
+                "11.1.2 Types of matter",
+                "11.4.3 Specific heat",
+                "11.4.4 Calorimetry and a calorimeter"
+            ]
+        },
+        {
+            "code": "SC.912.P.10.5",
+            "benchmark": "Relate temperature to the average molecular kinetic energy.",
+            "lessons": [
+                "12.8.1 Kinetic energy and temperature",
+                "11.2.2 Thermal energy",
+                "26:1:2 Virtual labs: Thermodynamics and states of matter",
+                "11.2.3 Temperature"
+            ]
+        },
+        {
+            "code": "SC.912.P.10.6",
+            "benchmark": "Create and interpret potential energy diagrams, for example chemical reactions, orbits around a central body, motion of a pendulum.",
+            "lessons": [
+                "6.4.1.e Elastic potential energy",
+                "6.5.1.b Total energy",
+                "11.1.2.e Endothermic and exothermic reactions",
+                "15.4.1.b Electric potential energy"
+            ]
+        },
+        {
+            "code": "SC.912.P.10.7",
+            "benchmark": "Distinguish between endothermic and exothermic chemical processes.",
+            "lessons": [
+                "11.1.2.e Endothermic and exothermic reactions"
+            ]
+        },
+        {
+            "code": "SC.912.P.10.8",
+            "benchmark": "Explain entropy's role in determining the efficiency of processes that convert energy to work.",
+            "lessons": [
+                "12.20.e Entropy and efficiency",
+                "12.6.1 Efficiency",
+                "12.6.2 Second law of thermodynamics"
+            ]
+        },
+        {
+            "code": "SC.912.P.10.10",
+            "benchmark": "Compare the magnitude and range of the four fundamental forces (Gravitational, electromagnetic, weak nuclear, strong nuclear).  ",
+            "lessons": [
+                "22.2.1 The four forces"
+            ]
+        },
+        {
+            "code": "SC.912.P.10.13",
+            "benchmark": "Relate the con?guration of static charges to the electric ?eld, electric force, electric potential, and electric potential energy.  ",
+            "lessons": [
+                "15.2.1 Electric force",
+                "15.2.2 Coulomb's law",
+                "15.3.1 Fields",
+                "15.3.2 Electric fields",
+                "15.3.3 Electric field diagrams",
+                "15.4.1 Electric potential energy",
+                "15.4.2 Electric potential difference",
+                "26:1:2 Virtual labs: Force between charged particles",
+                "15.3.4 Force from a field",
+                "15.5.3 Potential: Point charges"
+            ]
+        },
+        {
+            "code": "SC.912.P.10.14",
+            "benchmark": "Differentiate among conductors, semiconductors, and insulators. ",
+            "lessons": [
+                "15.1.3 conductors, insulators, grounds",
+                "23.3.2 Transistors",
+                "23.3.1 Energy levels"
+            ]
+        },
+        {
+            "code": "SC.912.P.10.15",
+            "benchmark": "Investigate and explain the relationships among current, voltage, resistance, and power.",
+            "lessons": [
+                "16.1.3 Ohm's law",
+                "16.1.1 Electric current",
+                "16.1.2 Resistors",
+                "16.2.1 Electric power",
+                "16.3.1 Electric circuits",
+                "16.3.2 Batteries",
+                "16.3.3 Energy conservation",
+                "16.4.1 Resistors in series",
+                "16.4.2 Resistors in parallel",
+                "16.5.1 Resistors in a mixed circuit",
+                "16.1.4 Properties that determine resistance"
+            ]
+        },
+        {
+            "code": "SC.912.P.10.16",
+            "benchmark": "Explain the relationship between moving charges and magnetic fields, as well as changing magnetic fields and electric fields, and their application to modern technologies.",
+            "lessons": [
+                "17.1.3 Magnetic field and charge",
+                "17.2.1 Currents and magnetic fields",
+                "17.6.2 Electric generators",
+                "17.2.3 Electric motor",
+                "17.3.1 Electromagnetic induction",
+                "17.3.4 Faraday's law",
+                "17.4.2 Motion in magnetic fields",
+                "17.7.1 Mutual induction",
+                "17.7.2 Transformers",
+                "17.3.2 Inducted potential difference",
+                "17.3.3 Magnetic flux",
+                "17.4.1 Velocity selector",
+                "17.2.2 Two wires and magnetic fields",
+                "17.4.3 Hall effect",
+                "17.4.4 Magnetic force on current",
+                "17.5.1 Force on charge and wire",
+                "17.5.2 Flux at an angle",
+                "17.6.1 Lenz's law"
+            ]
+        },
+        {
+            "code": "SC.912.P.10.17",
+            "benchmark": "Explore the theory of electromagnetism by explaining electromagnetic waves in terms of oscillating electric and magnetic fields. ",
+            "lessons": [
+                "19.1.1 Electromagnetic radiation",
+                "19.3.1 Antennas",
+                "17.3.1.b Electromagnetic induction",
+                "17.3.3 Magnetic flux",
+                "17.3.4 Faraday's law"
+            ]
+        },
+        {
+            "code": "SC.912.P.10.18",
+            "benchmark": "Explore the theory of electromagnetism by comparing and contrasting the different parts of the electromagnetic spectrum in terms of wavelength, frequency, and energy, and relate them to phenomena and applications. ",
+            "lessons": [
+                "19.1.1.c Electromagnetic spectrum",
+                "19.1.1.d Radio and light waves",
+                "19.1.1.e X-rays",
+                "19.1.2.c Speed of radio waves",
+                "19.2.2 Radiation pressure",
+                "19.3.1 Antennas",
+                "19.4.2 Scattering",
+                "19.4.3 Why is the sky blue?",
+                "21.4.1 Dispersion and prisms",
+                "23.1.2.c Energy of a photon",
+                "23.2.1.b  Photoelectric effect"
+            ]
+        },
+        {
+            "code": "SC.912.P.10.20",
+            "benchmark": "Describe the measurable properties of waves and explain the relationships among them and how these properties change when the wave moves from one medium to another.  ",
+            "lessons": [
+                "13.4.3 Wave amplitude, frequency and period",
+                "13.4.4 Wavelength",
+                "13.4.5 Energy and amplitude",
+                "13.6.1 Wave speed",
+                "21.1.1 Refraction",
+                "21.1.2 Index of refraction",
+                "21.1.3 Snell's law",
+                "21.2.3 Wavelength and frequency",
+                "26:1:2 Virtual labs: Waves: Speed, frequency, wavelength",
+                "26:1:2 Virtual labs: Waves: Refraction",
+                "21.2.1 Refraction direction",
+                "21.2.2 Why refraction occurs",
+                "13.4.1 Making waves",
+                "13.4.2 Wave pulse and periodic waves",
+                "21.6.3 Refracting telescope"
+            ]
+        },
+        {
+            "code": "SC.912.P.10.21",
+            "benchmark": "Qualitatively describe the shift in frequency in sound or electromagnetic waves due to the relative motion of a source or a receiver.",
+            "lessons": [
+                "14.3.1 Doppler effect",
+                "14.3.2 Calculating the Doppler effect",
+                "24.1.5 Doppler effect"
+            ]
+        },
+        {
+            "code": "SC.912.P.10.22",
+            "benchmark": "Construct ray diagrams and use thin lens and mirror equations to locate the images formed by lenses and mirrors.",
+            "lessons": [
+                "20.1.5 Ray diagram",
+                "21.7.1 Thin lens equation",
+                "21.7.2 Magnification",
+                "20.1.3 Types of images",
+                "20.1.4 Law of reflection",
+                "20.2.2 Concave mirror ray diagram",
+                "20.2.3 Convex mirror ray diagram",
+                "20.2.1 Spherical mirrors",
+                "20.2.4 Spherical mirror aberration",
+                "20.2.5 Parabolic mirrors",
+                "20.3.1 Mirror equations",
+                "20.3.2 Magnification equations",
+                "20.3.3 Calculating focal length in curved mirrors",
+                "20.1.1 Reflection",
+                "20.1.2 Plane mirrors"
+            ]
+        },
+        {
+            "code": "SC.912.P.12.1",
+            "benchmark": "Distinguish between scalar and vector quantities and assess which should be used to describe an event.",
+            "lessons": [
+                "1.2.1 Scalar",
+                "1.2.2 Vectors",
+                "1.2.3 Displacement",
+                "1.4.2 Acceleration as a vector",
+                "1.2.4 Velocity",
+                "26:1:2 Virtual labs: Motion in two dimensions #1",
+                "26:1:2 Virtual labs: Motion in two dimensions #2",
+                "4.1.1 Displacement in two dimensions",
+                "4.1.2 Velocity in two dimensions",
+                "4.2.1 Projectile motion"
+            ]
+        },
+        {
+            "code": "SC.912.P.12.2",
+            "benchmark": "Analyze the motion of an object in terms of its position, velocity, and acceleration (with respect to a frame of reference) as functions of time.  ",
+            "lessons": [
+                "1.2.3 Displacement",
+                "1.2.4 Velocity",
+                "1.4.1 Acceleration",
+                "1.4.2 Acceleration as a vector",
+                "1.5.1 Motion equations",
+                "2.5.1 Reference frame",
+                "2.5.2 Relative velocity",
+                "2.2.1 Position-time graphs",
+                "2.2.2 Velocity in position-time graphs",
+                "2.2.3 Acceleration in position-time graphs",
+                "2.4.1 Freefall acceleration",
+                "4.1.1 Displacement in two dimensions",
+                "4.1.2 Velocity in two dimensions",
+                "4.2.1 Projectile motion",
+                "4.2.2 Graphs of projectile motion",
+                "4.2.3 Calculating projectile motion",
+                "1.3.1 Average velocity",
+                "1.3.2 Instantaneous velocity"
+            ]
+        },
+        {
+            "code": "SC.912.P.12.3",
+            "benchmark": "Interpret and apply Newton's three laws of motion.",
+            "lessons": [
+                "5.1.3 Newton's first law",
+                "5.2.2 Newton's second law",
+                "5.2.4 Applying Newton's second law",
+                "5.3.1 Newton's third law",
+                "5.2.3 Equilibrium",
+                "5.5.1 Free-body diagrams",
+                "5.6.1 Forces and trigonometry",
+                "5.1.1 Force",
+                "5.1.2 Net force",
+                "5.2.1 Mass",
+                "5.3.2 Weight",
+                "5.3.3 Normal force",
+                "5.3.4 Tension",
+                "5.3.5 Friction",
+                "5.3.6 Summary",
+                "5.4.2 Air resistance",
+                "5.5.2 Forces not acting along a line"
+            ]
+        },
+        {
+            "code": "SC.912.P.12.4",
+            "benchmark": "Describe how the gravitational force between two objects depends on their masses and the distance between them.",
+            "lessons": [
+                "8.3.1 Newton's law of gravity",
+                "26:1:2 Virtual labs: Gravity"
+            ]
+        },
+        {
+            "code": "SC.912.P.12.5",
+            "benchmark": "Apply the law of conservation of linear momentum to interactions, such as collisions between objects.",
+            "lessons": [
+                "7.2.1 Conservation of momentum",
+                "7.3.1 Elastic collision",
+                "7.3.2 Inelastic collision",
+                "26:1:2 Virtual labs: Collisions",
+                "7.1.1 Momentum",
+                "7.1.2 Impulse",
+                "7.4.1 Center of mass",
+                "7.4.2 Center of mass and motion"
+            ]
+        },
+        {
+            "code": "SC.912.P.12.6",
+            "benchmark": "Qualitatively apply the concept of angular momentum.",
+            "lessons": [
+                "9.6.1 Angular momentum",
+                "9.6.2 Torque and angular momentum"
+            ]
+        },
+        {
+            "code": "SC.912.P.12.7",
+            "benchmark": "Recognize that nothing travels faster than the speed of light in vacuum which is the same for all observers no matter how they or the light source are moving. ",
+            "lessons": [
+                "24.1.2 Speed of light",
+                "21.1.2 Index of refraction",
+                "25.4.3 Projects Resource",
+                "19.1.2 Speed of light"
+            ]
+        },
+        {
+            "code": "SC.912.P.12.8",
+            "benchmark": "Recognize that Newton's Laws are a limiting case of Einstein's Special Theory of Relativity at speeds that are much smaller than the speed of light.  ",
+            "lessons": [
+                "5.1.3 Newton's first law",
+                "24.1.2 Speed of light",
+                "25.4.2 Writing an Article Resource",
+                "25.4.3 Projects Resource"
+            ]
+        },
+        {
+            "code": "SC.912.P.12.9",
+            "benchmark": "Recognize that time, length, and energy depend on the frame of reference.  ",
+            "lessons": [
+                "24.1.1 Reference frames",
+                "24.1.2 Speed of light",
+                "24.1.3 Time dilation",
+                "24.1.4 Length contraction",
+                "2.5.2 Relative velocity"
+            ]
+        },
+        {
+            "code": "LAFS.1112.RST.1.1",
+            "benchmark": "Cite specific textual evidence to support analysis of science and technical texts, attending to important distinctions the author makes and to any gaps or inconsistencies in the account.   ",
+            "lessons": [
+                "3.6.3 Scientific information from varied sources",
+                "3.6.2 &#034;Your&#034; science experiment",
+                "3.6.1 Science and marketing",
+                "25.4.4 Writing an Article Resource",
+                "25.4.1 Creating a Presentation Resource",
+                "25.4.3 Projects Resource",
+                "3.6.4 Communicating scientific information"
+            ]
+        },
+        {
+            "code": "LAFS.1112.RST.1.2",
+            "benchmark": "Determine the central ideas or conclusions of a text; summarize complex concepts, processes, or information presented in a text by paraphrasing them in simpler but still accurate terms. ",
+            "lessons": [
+                "3.6.3 Scientific information from varied sources",
+                "3.6.2 &#034;Your&#034; science experiment",
+                "3.6.1 Science and marketing",
+                "3.6.4 Communicating scientific information",
+                "Lesson Plan: Ch13",
+                "Lesson Plan: Ch18",
+                "Lesson Plan: Ch22",
+                "Lesson Plan: Ch24"
+            ]
+        },
+        {
+            "code": "LAFS.1112.RST.1.3",
+            "benchmark": "Follow precisely a complex multistep procedure when carrying out experiments, taking measurements, or performing technical tasks; analyze the specific results based on explanations in the text. ",
+            "lessons": [
+                "3.5.2 Conducting a lab",
+                "3.5.3 Precision and accuracy",
+                "3.5.4 Checking the data",
+                "26:1:1 Physical labs and demonstrations",
+                "26:1:2 Virtual labs"
+            ]
+        },
+        {
+            "code": "LAFS.1112.RST.2.4",
+            "benchmark": "Determine the meaning of symbols, key terms, and other domain-specific words and phrases as they are used in a specific scientific or technical context relevant to grades 11�12 texts and topics.  ",
+            "lessons": [
+                "25.4.4 Reading a Textbook Resource",
+                "3.5.2 Conducting a lab",
+                "3.6.3 Scientific information from varied sources",
+                "Lesson Plan: Ch1",
+                "Lesson Plan: Ch5",
+                "Lesson Plan: Ch11",
+                "Lesson Plan: Ch19",
+                "25.4.3 Projects Resource"
+            ]
+        },
+        {
+            "code": "LAFS.1112.RST.2.5",
+            "benchmark": "Analyze how the text structures information or ideas into categories or hierarchies, demonstrating understanding of the information or ideas. ",
+            "lessons": [
+                "Lesson Plan: Ch19",
+                "3.6.2 &#034;Your&#034; science experiment",
+                "3.6.3 Scientific information from varied sources",
+                "25.4.3 Projects Resource"
+            ]
+        },
+        {
+            "code": "LAFS.1112.RST.2.6",
+            "benchmark": "Analyze the author's purpose in providing an explanation, describing a procedure, or discussing an experiment in a text, identifying important issues that remain unresolved. ",
+            "lessons": [
+                "3.6.1 Science and marketing",
+                "3.6.3 Scientific information from varied sources",
+                "Lesson Plan: Ch11",
+                "Lesson Plan: Ch17",
+                "Lesson Plan: Ch19"
+            ]
+        },
+        {
+            "code": "LAFS.1112.RST.3.7",
+            "benchmark": "Integrate and evaluate multiple sources of information presented in diverse formats and media (e.g., quantitative data, video, multimedia) in order to address a question or solve a problem.  ",
+            "lessons": [
+                "3.6.3 Scientific information from varied sources",
+                "3.6.2 &#034;Your&#034; science experiment",
+                "Lesson Plan: Ch6",
+                "Lesson Plan: Ch18",
+                "25.4.1 Creating a Presentation Resource",
+                "Lesson Plan: Ch19",
+                "Lesson Plan: Ch21"
+            ]
+        },
+        {
+            "code": "LAFS.1112.RST.3.8",
+            "benchmark": "Evaluate the hypotheses, data, analysis, and conclusions in a science or technical text, verifying the data when possible and corroborating or challenging conclusions with other sources of information. ",
+            "lessons": [
+                "3.6.3 Scientific information from varied sources",
+                "3.6.1 Science and marketing",
+                "3.6.2 &#034;Your&#034; science experiment",
+                "3.5.2 Conducting a lab",
+                "25.4.2 Writing an Article Resource",
+                "25.4.1 Creating a Presentation Resource",
+                "25.4.3 Projects Resource"
+            ]
+        },
+        {
+            "code": "LAFS.1112.RST.3.9",
+            "benchmark": "Synthesize information from a range of sources (e.g., texts, experiments, simulations) into a coherent understanding of a process, phenomenon, or concept, resolving conflicting information when possible. ",
+            "lessons": [
+                "3.6.3 Scientific information from varied sources",
+                "3.6.1 Science and marketing",
+                "3.6.2 &#034;Your&#034; science experiment",
+                "Lesson Plan: Ch8",
+                "Lesson Plan: Ch10",
+                "3.5.2 Conducting a lab",
+                "25.4.2 Writing an Article Resource",
+                "25.4.1 Creating a Presentation Resource",
+                "26:1:2 Virtual labs",
+                "25.4.3 Projects Resource",
+                "Lesson Plan: Ch17",
+                "Lesson Plan: Ch18"
+            ]
+        },
+        {
+            "code": "LAFS.1112.RST.4.10",
+            "benchmark": "By the end of grade 12, read and comprehend science/technical texts in the grades 11�12 text complexity band independently and proficiently. ",
+            "lessons": [
+                "25.4.4 Reading a Textbook Resource",
+                "Lesson Plan: Ch6",
+                "Lesson Plan: Ch11",
+                "Lesson Plan: Ch23",
+                "Lesson Plan: Ch24"
+            ]
+        },
+        {
+            "code": "LAFS.1112.SL.1.1",
+            "benchmark": "Initiate and participate effectively in a range of collaborative discussions (one-on-one, in groups, and teacher-led) with diverse partners on grades 11–12 topics, texts, and issues, building on others' ideas and expressing their own clearly and persuasively.<ol style='list-style-type: lower-alpha;margin-left: 15px;'><li>Come to discussions prepared, having read and researched material under study; explicitly draw on that preparation by referring to evidence from texts and other research on the topic or issue to stimulate a thoughtful, well-reasoned exchange of ideas.</li><li>Work with peers to promote civil, democratic discussions and decision-making, set clear goals and deadlines, and establish individual roles as needed.</li><li>Propel conversations by posing and responding to questions that probe reasoning and evidence; ensure a hearing for a full range of positions on a topic or issue; clarify, verify, or challenge ideas and conclusions; and promote divergent and creative perspectives.</li><li>Respond thoughtfully to diverse perspectives; synthesize comments, claims, and evidence made on all sides of an issue; resolve contradictions when possible; and determine what additional information or research is required to deepen the investigation or complete the task.</li></ol>",
+            "lessons": [
+                "3.6.4 Communicating scientific information",
+                "Lesson Plan: Ch4",
+                "Lesson Plan:Ch12",
+                "25.4.1 Creating a Presentation Resource",
+                "25.4.2 Writing an Article Resource",
+                "25.4.3 Projects Resource"
+            ]
+        },
+        {
+            "code": "LAFS.1112.SL.1.2",
+            "benchmark": "Integrate multiple sources of information presented in diverse formats and media (e.g., visually, quantitatively, orally) in order to make informed decisions and solve problems, evaluating the credibility and accuracy of each source and noting any discrepancies among the data. ",
+            "lessons": [
+                "3.6.4 Communicating scientific information",
+                "3.6.3 Scientific information from varied sources",
+                "Lesson Plan: Ch12",
+                "25.4.1 Creating a Presentation Resource",
+                "3.6.1 Science and marketing",
+                "3.6.2 &#034;Your&#034; science experiment",
+                "25.4.2 Writing an Article Resource",
+                "25.4.3 Projects Resource"
+            ]
+        },
+        {
+            "code": "LAFS.1112.SL.1.3",
+            "benchmark": "Evaluate a speaker's point of view, reasoning, and use of evidence and rhetoric, assessing the stance, premises, links among ideas, word choice, points of emphasis, and tone used.",
+            "lessons": [
+                "25.4.1 Creating a Presentation Resource",
+                "Lesson Plan: Ch12",
+                "Lesson Plan: Ch23",
+                "25.4.3 Projects Resource"
+            ]
+        },
+        {
+            "code": "LAFS.1112.SL.2.4",
+            "benchmark": "Present information, findings, and supporting evidence, conveying a clear and distinct perspective, such that listeners can follow the line of reasoning, alternative or opposing perspectives are addressed, and the organization, development, substance, and style are appropriate to purpose, audience, and a range of formal and informal tasks.",
+            "lessons": [
+                "25.4.1 Creating a Presentation Resource",
+                "25.4.2 Writing an Article Resource",
+                "3.6.4 Communicating scientific information",
+                "Lesson Plan: Ch23",
+                "25.4.3 Projects Resource"
+            ]
+        },
+        {
+            "code": "LAFS.1112.SL.2.5",
+            "benchmark": "Make strategic use of digital media (e.g., textual, graphical, audio, visual, and interactive elements) in presentations to enhance understanding of findings, reasoning, and evidence and to add interest.",
+            "lessons": [
+                "25.4.1 Creating a Presentation Resource",
+                "3.5.5 Presenting the results",
+                "Lesson Plan: Ch5",
+                "Lesson Plan: Ch12",
+                "3.6.4 Communicating scientific information",
+                "25.4.3 Projects Resource"
+            ]
+        },
+        {
+            "code": "LAFS.1112.WHST.1.1",
+            "benchmark": "Write arguments focused on discipline-specific content.<ol style='list-style-type: lower-alpha;margin-left: 15px;'><li>Introduce precise, knowledgeable claim(s), establish the significance of the claim(s), distinguish the claim(s) from alternate or opposing claims, and create an organization that logically sequences the claim(s), counterclaims, reasons, and evidence.</li><li>Develop claim(s) and counterclaims fairly and thoroughly, supplying the most relevant data and evidence for each while pointing out the strengths and limitations of both claim(s) and counterclaims in a discipline-appropriate form that anticipates the audience's knowledge level, concerns, values, and possible biases.</li><li>c. Use words, phrases, and clauses as well as varied syntax to link the major sections of the text, create cohesion, and clarify the relationships between claim(s) and reasons, between reasons and evidence, and between claim(s) and counterclaims.</li><li>d. Establish and maintain a formal style and objective tone while attending to the norms and conventions of the discipline in which they are writing.</li><li>e. Provide a concluding statement or section that follows from or supports the argument presented.</li></ol>",
+            "lessons": [
+                "3.6.4 Communicating scientific information",
+                "Lesson Plan: Ch24"
+            ]
+        },
+        {
+            "code": "LAFS.1112.WHST.1.2",
+            "benchmark": "Write informative/explanatory texts, including the narration of historical events, scientific procedures/ experiments, or technical processes.<ol style='list-style-type: lower-alpha;margin-left: 15px;'><li>Introduce a topic and organize complex ideas, concepts, and information so that each new element builds on that which precedes it to create a unified whole; include formatting (e.g., headings), graphics (e.g., figures, tables), and multimedia when useful to aiding comprehension.</li><li>Develop the topic thoroughly by selecting the most significant and relevant facts, extended definitions, concrete details, quotations, or other information and examples appropriate to the audience's knowledge of the topic. </li><li>Use varied transitions and sentence structures to link the major sections of the text, create cohesion, and clarify the relationships among complex ideas and concepts. </li><li>Use precise language, domain-specific vocabulary and techniques such as metaphor, simile, and analogy to manage the complexity of the topic; convey a knowledgeable stance in a style that responds to the discipline and context as well as to the expertise of likely readers. </li><li>Provide a concluding statement or section that follows from and supports the information or explanation provided (e.g., articulating implications or the significance of the topic).</li></ol>",
+            "lessons": [
+                "25.4.2 Writing an Article Resource",
+                "25.4.1 Creating a Presentation Resource",
+                "Lesson Plan: Ch17",
+                "Lesson Plan: Ch18",
+                "Lesson Plan: Ch21",
+                "Lesson Plan: Ch24",
+                "25.4.3 Projects Resource"
+            ]
+        },
+        {
+            "code": "LAFS.1112.WHST.2.4",
+            "benchmark": "Produce clear and coherent writing in which the development, organization, and style are appropriate to task, purpose, and audience.",
+            "lessons": [
+                "25.4.2 Writing an Article Resource",
+                "25.4.1 Creating a Presentation Resource",
+                "Lesson Plan: Ch2",
+                "Lesson Plan: Ch14",
+                "Lesson Plan: Ch21",
+                "Lesson Plan: Ch23",
+                "Lesson Plan: Ch24",
+                "25.4.3 Projects Resource"
+            ]
+        },
+        {
+            "code": "LAFS.1112.WHST.2.5",
+            "benchmark": "Develop and strengthen writing as needed by planning, revising, editing, rewriting, or trying a new approach, focusing on addressing what is most significant for a specific purpose and audience.",
+            "lessons": [
+                "25.4.2 Writing an Article Resource",
+                "Lesson Plan: Ch14",
+                "Lesson Plan: Ch17",
+                "Lesson Plan: Ch24",
+                "25.4.3 Projects Resource"
+            ]
+        },
+        {
+            "code": "LAFS.1112.WHST.2.6",
+            "benchmark": "Use technology, including the Internet, to produce, publish, and update individual or shared writing products in response to ongoing feedback, including new arguments or information.",
+            "lessons": [
+                "25.4.2 Writing an Article Resource",
+                "Lesson Plan: Ch4",
+                "Lesson Plan: Ch15",
+                "3.6.3 Scientific information from varied sources",
+                "Lesson Plan: Ch16",
+                "Lesson Plan: Ch18"
+            ]
+        },
+        {
+            "code": "LAFS.1112.WHST.3.7",
+            "benchmark": "Conduct short as well as more sustained research projects to answer a question (including a self-generated question) or solve a problem; narrow or broaden the inquiry when appropriate; synthesize multiple sources on the subject, demonstrating understanding of the subject under investigation.",
+            "lessons": [
+                "25.4.2 Writing an Article Resource",
+                "Lesson Plan: Ch14",
+                "Lesson Plan: Ch17",
+                "Lesson Plan: Ch18",
+                "25.4.3 Projects Resource",
+                "Lesson Plan: Ch24"
+            ]
+        },
+        {
+            "code": "LAFS.1112.WHST.3.8",
+            "benchmark": "Gather relevant information from multiple authoritative print and digital sources, using advanced searches effectively; assess the strengths and limitations of each source in terms of the specific task, purpose, and audience; integrate information into the text selectively to maintain the flow of ideas, avoiding plagiarism and overreliance on any one source and following a standard format for citation. ",
+            "lessons": [
+                "25.4.2 Writing an Article Resource",
+                "3.6.1 Science and marketing",
+                "3.6.3 Scientific information from varied sources",
+                "25.4.1 Creating a Presentation Resource",
+                "Lesson Plan: Ch17",
+                "Lesson Plan: Ch18",
+                "Lesson Plan: Ch24"
+            ]
+        },
+        {
+            "code": "LAFS.1112.WHST.3.9",
+            "benchmark": "Draw evidence from informational texts to support analysis, reflection, and research.",
+            "lessons": [
+                "3.6.3 Scientific information from varied sources",
+                "25.4.2 Writing an Article Resource",
+                "3.6.1 Science and marketing",
+                "25.4.1 Creating a Presentation Resource",
+                "Lesson Plan: Ch13",
+                "Lesson Plan: Ch18",
+                "Lesson Plan: Ch21",
+                "Lesson Plan: Ch22",
+                "Lesson Plan: Ch24"
+            ]
+        },
+        {
+            "code": "LAFS.1112.WHST.4.10",
+            "benchmark": "Write routinely over extended time frames (time for reflection and revision) and shorter time frames (a single sitting or a day or two) for a range of discipline-specific tasks, purposes, and audiences.",
+            "lessons": [
+                "Lesson Plan: Ch1",
+                "Lesson Plan: Ch4",
+                "25.4.4 Reading a Textbook Resource",
+                "Lesson Plan: Ch7",
+                "Lesson Plan: Ch20",
+                "25.4.3 Projects Resource"
+            ]
+        },
+        {
+            "code": "MAFS.912.A-CED.1.4",
+            "benchmark": "Rearrange formulas to highlight a quantity of interest, using the same reasoning as in solving equations.�For example, rearrange Ohm's law V = IR to highlight resistance R.�? ",
+            "lessons": [
+                "16.1.3 Ohm's law",
+                "5.2.2 Newton's second law",
+                "10.2.1.e Derivation Pressure due to a liquid",
+                "4.2.3.b Derivation Horizontal projectile time",
+                "6.3.3.b Derivation Work and kinetic energy",
+                "1.1.5 Math skills",
+                "8.4.3.b Derivation Orbital speed",
+                "1.5.1 Motion equations",
+                "11.3.2 Temperature conversions"
+            ]
+        },
+        {
+            "code": "MAFS.912.F-IF.2.4",
+            "benchmark": "For a function that models a relationship between two quantities, interpret key features of graphs and tables in terms of the quantities, and sketch graphs showing key features given a verbal description of the relationship.�Key features include intercepts; intervals where the function is increasing, decreasing, positive, or negative; relative maximums and minimums; symmetries; end behavior; and periodicity.�?",
+            "lessons": [
+                "2.2.1 Position-time graphs",
+                "2.2.2 Velocity in position-time graphs",
+                "2.2.3 Acceleration in position-time graphs",
+                "4.2.2 Graphs of projectile motion",
+                "11.5.2.b Graphs of state changes",
+                "13.1.6.c Graph of SHM",
+                "13.4.3 Wave amplitude, frequency and amplitude",
+                "25.4.1 Functions, graphing and volume page 1",
+                "25.4.1 Functions, graphing and volume page 26",
+                "25.4.1 Functions, graphing and volume page 34",
+                "25.4.1 Functions, graphing and volume page 16",
+                "25.4.1 Functions, graphing and volume page 45"
+            ]
+        },
+        {
+            "code": "MAFS.912.F-IF.3.7",
+            "benchmark": "Graph functions expressed symbolically and show key features of the graph, by hand in simple cases and using technology for more complicated cases. ★<ol style='list-style-type: lower-alpha;margin-left: 15px;'><li>Graph linear and quadratic functions and show intercepts, maxima, and minima.</li><li>Graph square root, cube root, and piecewise-defined functions, including step functions and absolute value functions.</li><li>Graph polynomial functions, identifying zeros when suitable factorizations are available, and showing end behavior.</li><li>Graph rational functions, identifying zeros and asymptotes when suitable factorizations are available, and showing end behavior.</li><li>Graph exponential and logarithmic functions, showing intercepts and end behavior, and trigonometric functions, showing period, midline, and amplitude, and using phase shift.</li></ol>",
+            "lessons": [
+                "2.2.1 Position-time graphs",
+                "2.2.2 Velocity in position-time graphs",
+                "2.2.3 Acceleration in position-time graphs",
+                "25.4.1 Functions, graphing and volume page 1",
+                "25.4.1 Functions, graphing and volume page 20",
+                "25.4.1 Functions, graphing and volume page 25",
+                "25.4.1 Functions, graphing and volume page 26",
+                "25.4.1 Functions, graphing and volume page 8",
+                "25.4.1 Functions, graphing and volume page 16",
+                "25.4.1 Functions, graphing and volume page 31",
+                "25.4.1 Functions, graphing and volume page 21",
+                "25.4.1 Functions, graphing and volume page 35",
+                "25.4.1 Functions, graphing and volume page 37",
+                "25.4.1 Functions, graphing and volume page 27",
+                "25.4.1 Functions, graphing and volume page 42",
+                "25.4.1 Functions, graphing and volume page 45",
+                "25.2.2 Normal distribution",
+                "25.2.4.b Regression"
+            ]
+        },
+        {
+            "code": "MAFS.912.G-GMD.1.3",
+            "benchmark": "Choose a level of accuracy appropriate to limitations on measurement when reporting quantities.  Use volume formulas for cylinders, pyramids, cones, and spheres to solve problems. ★",
+            "lessons": [
+                "3.5.3 Precision and accuracy",
+                "3.5.2 Conducting a lab",
+                "3.5.5 Presenting the results",
+                "3.5.4 Checking the data",
+                "3.3.1 Significant figures",
+                "3.3.2 Operations with significant digits",
+                "25.4.1 Functions, graphing and volume page 1",
+                "25.4.1 Functions, graphing and volume page 56",
+                "25.4.1 Functions, graphing and volume page 57",
+                "25.4.1 Functions, graphing and volume page 59"
+            ]
+        },
+        {
+            "code": "MAFS.912.G-MG.1.2",
+            "benchmark": "Apply concepts of density based on area and volume in modeling situations (e.g., persons per square mile, BTUs per cubic foot).�? ",
+            "lessons": [
+                "10.1.2 Pressure",
+                "10.1.3 Density",
+                "10.2.1 Pressure due to a liquid",
+                "10.4.1 Archimedes' principle",
+                "17.3.3 Magnetic flux",
+                "15.3.3 Electric field diagrams"
+            ]
+        },
+        {
+            "code": "MAFS.912.N-Q.1.1",
+            "benchmark": "Use units as a way to understand problems and to guide the solution of multi-step problems; choose and interpret units consistently in formulas; choose and interpret the scale and the origin in graphs and data displays.�? ",
+            "lessons": [
+                "3.1.2 Metric system",
+                "3.1.3 Converting between units",
+                "3.1.4 Dimensional analysis",
+                "14.2.3 Sound level",
+                "11.3.1 Absolute zero",
+                "8.5.3 Kepler's third law",
+                "2.1.2 Rates",
+                "2.2.1 Position-time graphs",
+                "4.2.2 Graphs of projectile motion",
+                "26:1:3 Course apparatus",
+                "25.4.1 Functions, graphing and volume page 1",
+                "25.4.1 Functions, graphing and volume page 22",
+                "25.4.1 Functions, graphing and volume page 34",
+                "25.3.1 Drawing a scatter plot with a spreadsheet",
+                "25.2.2 Normal distribution",
+                "5.5.1 Free-body diagrams",
+                "24.1.1 Reference frames",
+                "1.1.2 Position"
+            ]
+        },
+        {
+            "code": "MAFS.912.N-Q.1.3",
+            "benchmark": "Choose a level of accuracy appropriate to limitations on measurement when reporting quantities.�?",
+            "lessons": [
+                "3.5.3 Precision and accuracy",
+                "3.5.2 Conducting a lab",
+                "3.5.5 Presenting the results",
+                "3.3.1 Significant figures",
+                "3.3.2 Operations with significant digits"
+            ]
+        },
+        {
+            "code": "MAFS.912.N-VM.1.1",
+            "benchmark": "Recognize vector quantities as having both magnitude and direction. Represent vector quantities by directed line segments, and use appropriate symbols for vectors and their magnitudes (e.g.,�v,�|v|,�||v||,�v).",
+            "lessons": [
+                "4.1.1 Displacement in two dimensions",
+                "4.1.2 Velocity in two dimensions",
+                "4.3.1 Adding vectors graphically",
+                "4.4.1 Combining vectors using components",
+                "4.2.1 Projectile motion",
+                "4.3.4 Vector magnitude from components",
+                "8.1.1 Circular motion",
+                "9.4.1 Torque",
+                "9.4.2 Torque, angle and lever arm"
+            ]
+        },
+        {
+            "code": "MAFS.912.N-VM.1.2",
+            "benchmark": "Find the components of a vector by subtracting the coordinates of an initial point from the coordinates of a terminal point. ",
+            "lessons": [
+                "4.1.1 Displacement in two dimensions",
+                "4.1.2 Velocity in two dimensions"
+            ]
+        },
+        {
+            "code": "MAFS.912.N-VM.1.3",
+            "benchmark": "Solve problems involving velocity and other quantities that can be represented by vectors.",
+            "lessons": [
+                "4.1.2 Velocity in two dimensions",
+                "4.2.1 Projectile motion",
+                "5.2.2 Newton's second law",
+                "5.3.5 Friction",
+                "5.5.1 Free-body diagrams",
+                "5.5.2 Forces not acting along a line",
+                "5.6.1 Forces and trigonometry",
+                "6.2.1 Work Force at angle to displacement",
+                "7.1.1 Momentum",
+                "10.5.1 Pascal's principle",
+                "15.2.1.c Electric force",
+                "9.4.1 Torque",
+                "8.3.1 Newton's law of gravity"
+            ]
+        },
+        {
+            "code": "MAFS.912.S-IC.2.6",
+            "benchmark": "Evaluate reports based on data.�? ",
+            "lessons": [
+                "3.4.1 Nature of science",
+                "3.4.2 Hypotheses and theories",
+                "3.4.4 Physicists and their work",
+                "3.5.5 Presenting the results",
+                "3.6.1 Science and marketing",
+                "3.6.3 Scientific information from varied sources",
+                "3.6.4 Communicating scientific information",
+                "3.5.2 Conducting a lab",
+                "25.4.2 Writing an Article Resource",
+                "25.4.3 Projects Resource",
+                "25.4.1 Creating a Presentation Resource"
+            ]
+        },
+        {
+            "code": "MAFS.912.S-ID.1.1",
+            "benchmark": "Represent data with plots on the real number line (dot plots, histograms, and box plots).�?",
+            "lessons": [
+                "3.5.5 Presenting the results",
+                "3.6.4 Communicating scientific information",
+                "25.1.1 Models and laws",
+                "25.2.1 Data basics",
+                "25.2.2 Normal distribution",
+                "25.2.4 Regression"
+            ]
+        },
+        {
+            "code": "MAFS.912.S-ID.1.2",
+            "benchmark": "Use statistics appropriate to the shape of the data distribution to compare center (median, mean) and spread (interquartile range, standard deviation) of two or more different data sets.�?",
+            "lessons": [
+                "2.3.3 Standard deviation",
+                "25.2.1 Data basics",
+                "25.2.2 Normal distribution",
+                "25.2.4 Regression",
+                "26:1:2 Virtual labs: Thermodynamics and states of matter"
+            ]
+        },
+        {
+            "code": "MAFS.912.S-ID.1.3",
+            "benchmark": "Interpret differences in shape, center, and spread in the context of the data sets, accounting for possible effects of extreme data points (outliers). ?",
+            "lessons": [
+                "2.3.3 Standard deviation",
+                "25.2.1 Data basics",
+                "25.2.2 Normal distribution",
+                "25.2.4 Regression"
+            ]
+        },
+        {
+            "code": "MAFS.912.S-ID.1.4",
+            "benchmark": "Use the mean and standard deviation of a data set to fit it to a normal distribution and to estimate population percentages. Recognize that there are data sets for which such a procedure is not appropriate. Use calculators, spreadsheets, and tables to estimate areas under the normal curve.�?",
+            "lessons": [
+                "25.2.2 Normal distribution",
+                "2.3.2 Drawing a trend line",
+                "2.3.3 Standard deviation",
+                "25.1.1 Models and laws"
+            ]
+        },
+        {
+            "code": "MAFS.912.S-ID.2.5",
+            "benchmark": "Summarize categorical data for two categories in two-way frequency tables. Interpret relative frequencies in the context of the data (including joint, marginal, and conditional relative frequencies). Recognize possible associations and trends in the data.�?",
+            "lessons": [
+                "25.2.3 Categorical data",
+                "25.2.4 Regression",
+                "2.3.1 Drawing a scatter plot"
+            ]
+        },
+        {
+            "code": "MAFS.912.S-ID.2.6",
+            "benchmark": "Represent data on two quantitative variables on a scatter plot, and describe how the variables are related.�? a. Fit a function to the data; use functions fitted to data to solve problems in the context of the data.�Use given functions or choose a function suggested by the context. Emphasize linear and exponential models. b. Informally assess the fit of a function by plotting and analyzing residuals. c. Fit a linear function for a scatter plot that suggests a linear association.",
+            "lessons": [
+                "2.3.1 Drawing a scatter plot",
+                "2.3.2 Drawing a trend line",
+                "25.3.1 Drawing a scatter plot with a spreadsheet",
+                "26:1:2 Virtual labs: Force between charged particles",
+                "2.1.2 Rates",
+                "2.2.1 Position-time graphs",
+                "25.2.4 Regression"
+            ]
+        },
+        {
+            "code": "ELD.K12.ELL.SC.1",
+            "benchmark": "English language learners communicate information, ideas and concepts necessary for academic success in the content area of Science.",
+            "lessons": [
+                "27.1.1 ELL Student Activities",
+                "27.1.2 ELL Lesson Plans"
+            ]
+        },
+        {
+            "code": "ELD.K12.ELL.SI.1",
+            "benchmark": "English language learners communicate for social and instructional purposes within the school setting.",
+            "lessons": [
+                "27.1.2 ELL Lesson Plans"
+            ]
+        }
+    ]
 }

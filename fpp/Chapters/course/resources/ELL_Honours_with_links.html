@@ -37,6 +37,7 @@ httpRequest("course/json/searchBook/searchCode.json", "json", function (_data) {
 				var src = myData.data[i].lessons[j].split(" ")[0] + ".0";
 				var type = "book";
 				var href, dataTitle;
+                            
 				if(src.toLowerCase() == "lesson.0"){
 					src = myData.data[i].lessons[j].split("Ch")[1] + ".1.1.0";
 					type = "lessonPlan";
@@ -56,7 +57,11 @@ httpRequest("course/json/searchBook/searchCode.json", "json", function (_data) {
 				if (type == "labPage") {
 					lessonStr+= "<span onclick='openLink(event)' style='color:#0000FF;text-decoration: underline;cursor: pointer;' data-type='" + type + "' data-src='" + src + "' data-href='" + href.split("/").join("~").split("_").join("-") + "' data-text='"+(dataTitle ? dataTitle : title)+"'>" + title + "</span>";
 				} else {
-					lessonStr+= "<span onclick='openLink(event)' style='color:#0000FF;text-decoration: underline;cursor: pointer;' data-type='" + type + "' data-src='" + src + "'>" + title + "</span>";
+                                    var page ="";
+                                    if(title.indexOf("page ")>-1 && src.indexOf("25")>-1){
+                                       page=title.split("page ")[1];
+                                    }
+					lessonStr+= "<span onclick='openLink(event)' style='color:#0000FF;text-decoration: underline;cursor: pointer;' data-type='" + type + "' data-src='" + src + "'data-page='" + page + "'>" + title + "</span>";
 				}
 				lessonStr+= '&nbsp;&nbsp;';
 			}
@@ -74,8 +79,13 @@ function openLink(e){
 		var href = $(e.target).attr("data-href");
 		window.location.hash = "type_labPage/title_" + src[2] + "/href_" + (href);
 	} else {
+            var page="";
+            page=$(e.target).attr("data-page");
+            if(page != ""){
+               window.location.hash = "lesson_" + (type == "lessonPlan") + "/type_chapter/chapter_" + src[0] + "/unit_" + (src[1] - 1) + "/section_" + src[2] + "/subsection_" + src[3]+"/page_"+page; 
+            }else{
 		window.location.hash = "lesson_" + (type == "lessonPlan") + "/type_chapter/chapter_" + src[0] + "/unit_" + (src[1] - 1) + "/section_" + src[2] + "/subsection_" + src[3];
-	}
+	}}
 }
 
 </script>

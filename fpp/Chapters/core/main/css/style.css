@@ -2270,7 +2270,50 @@ input.loginInput {
     
 }
 .quickcheckHelp{
-     background-image:url('/books/fpp/Chapters/core/main/assets/images/quickcheck.png');
+     background-image:url('/books/fpp/Chapters/core/main/assets/images/QuickCheckExplained.png');
+}
+.navigationHelp{
+ background-image:url('/books/fpp/Chapters/core/main/assets/images/FPPIntro.png');
+}
+.compAssignHelp{
+ background-image:url('/books/fpp/Chapters/core/main/assets/images/CompleteAssignment.png');
+}
+.checkGrades{
+ background-image:url('/books/fpp/Chapters/core/main/assets/images/ViewingGrades.png');
+}
+.howStudentsSignIn
+{
+background-image:url('/books/fpp/Chapters/core/main/assets/images/HowStudentsSign.png');
+}
+.UploadStudents{
+background-image:url('/books/fpp/Chapters/core/main/assets/images/UploadStudents.png');
+}
+.DataDrivenInstruction{
+background-image:url('/books/fpp/Chapters/core/main/assets/images/DataDrivenInstruction.png');
+}
+.ResetStudentPassword{
+background-image:url('/books/fpp/Chapters/core/main/assets/images/ResetStudentPasswords.png');
+}
+.CreateAssignment{
+background-image:url('/books/fpp/Chapters/core/main/assets/images/CreateAssignment.png');
+}
+.PrintStudentLogin{
+background-image:url('/books/fpp/Chapters/core/main/assets/images/PrintStudentLogin.png');
+}
+.GradeStudentWork{
+background-image:url('/books/fpp/Chapters/core/main/assets/images/GradeStudentWork.png');
+}
+.RemoveAssignments{
+background-image:url('/books/fpp/Chapters/core/main/assets/images/RemoveAssignments.png');
+}
+.EditAssignment{
+background-image:url('/books/fpp/Chapters/core/main/assets/images/EditAssignment.png');
+}
+.PrintAssignment{
+background-image:url('/books/fpp/Chapters/core/main/assets/images/PrintAssignment.png');
+}
+.SetUpAClass{
+background-image:url('/books/fpp/Chapters/core/main/assets/images/SetUpAClass.png');
 }
 .ohwHelp{
      background-image:url('/books/fpp/Chapters/core/main/assets/images/ohw.png');

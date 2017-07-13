@@ -43,11 +43,16 @@ See https://github.com/adobe-type-tools/cmap-resources
 
     <script src="viewer.js"></script>
 <script>
+  
+    var page=window.parent.document.getElementById("myFrame").getAttribute("data-page");
+    console.log("page-->"+page);
+    page=Number(page);
     var url = location.hash.replace('#', '');
    DEFAULT_URL=url;
+   
    setTimeout(function(){
        var pageChange1 = new CustomEvent("pageChangeEvent");
-       pageChange1.page=1;
+       pageChange1.page=page;
         document.dispatchEvent(pageChange1);
    },500);
 

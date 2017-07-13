@@ -230,7 +230,11 @@
     p.bookData = coreData.chapters;
     view.updateBook(true);
   }
-  loadScreen();
+  if (data.hasOwnProperty("page")) {
+            loadScreen("", data.page);
+          } else {
+            loadScreen();
+          }
   }
 
   } else if (data.type == "additonal-resource") {
@@ -245,7 +249,7 @@
   }
 
   }
-  function loadScreen(vIndex) {
+  function loadScreen(vIndex,page) {
   if (!p.chap) return;
     manageNavigationState();
     var _data = p.bookData[p.chap]["unit"][p.unit]["section"][p.section]["subsection"][p.subSection];
@@ -254,8 +258,13 @@
     updateSubMenu();
     var screenNo;
     blockHashEvent = true;
-    location.hash = escape('lesson_' + lessonFlag + '/type_chapter/chapter_' + p.chap + '/unit_' + p.unit + '/section_' + p.section + '/subsection_' + p.subSection);
-    setTimeout(function () {
+     if (typeof page != "undefined") {
+        _data.page = page;
+        location.hash = escape('lesson_' + lessonFlag + '/type_chapter/chapter_' + p.chap + '/unit_' + p.unit + '/section_' + p.section + '/subsection_' + p.subSection + '/page_' + page);
+      } else {
+        location.hash = escape('lesson_' + lessonFlag + '/type_chapter/chapter_' + p.chap + '/unit_' + p.unit + '/section_' + p.section + '/subsection_' + p.subSection);
+      }
+	  setTimeout(function () {
     blockHashEvent = false;
     }, 500);
     if (lessonFlag) {
@@ -327,7 +336,7 @@
     _temp.SectionHeading = _data["SectionHeading"];
       var _tempdata = {screenData: _temp, screenNo: screenNo}
     _tempdata.type = _data.type;
-      if (typeof vIndex != "undefined") {
+      if (typeof vIndex != "undefined" && vIndex != "") {
     _tempdata.vPlay = vIndex
     }
     $(document).trigger("loadActivityScreen", _tempdata);

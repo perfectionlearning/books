@@ -567,10 +567,13 @@
     playerEvent();
     }     function loadPdfScreen(e, data) {
       var _tempScreenData = data.screenData;
-
+ var page = 1;
+      if (_tempScreenData.hasOwnProperty("page")) {
+        page = _tempScreenData.page;
+      }
     $(p.mShell).find(".pdfHeader").html(data.screenNo + " " + _tempScreenData.SectionHeading);
 
-    $('.pdfBody').html("<iframe src='core/lib/web/viewer.html#../../../assets/pdf/" + _tempScreenData.ref + "' style='border: none; width: 100%; height: 100%;overflow: scroll' frameborder='0'></iframe>")
+    $('.pdfBody').html("<iframe  id='myFrame' src='core/lib/web/viewer.html#../../../assets/pdf/" + _tempScreenData.ref + "' style='border: none; width: 100%; height: 100%;overflow: scroll' frameborder='0' data-page=" + page + "></iframe>")
     p.currentType = "pdfScreen";
       manageScreen("pdfScreen");
     }

@@ -275,6 +275,9 @@
         if (_temp[0] == "subsection") {
           data.subsection = _temp[1];
         }
+		if (_temp[0] == "page") {
+          data.page = _temp[1];
+        }
         if (_temp[0] == "v" && _temp[2] != "undefined") {
           data.v_index = _temp[2];
         }
