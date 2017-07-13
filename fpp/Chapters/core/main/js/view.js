@@ -652,6 +652,7 @@
     $('.pBookWrapper').hide();
     $(p.mShell).find('.pQuizBoard_bck').hide();
     $('.quizNavButtons').hide();
+	 $('.pLabsWrapper').hide();
     $(p.mShell).find('#pdfViewer').hide();
     disableHeaderSearch(false);
     switch (type) {

@@ -44,12 +44,17 @@ httpRequest("course/json/searchBook/searchCode.json", "json", function (_data) {
 				}
                                 
 				title = myData.data[i].lessons[j];
-                                mainTitle=title.replace(/[.]/g,":")
+                                mainTitle=title;
+                                console.log(src);
 				if(src.split(".")[0] == 26){
-					type = "labPage";
-					var o = ctrl.getLabRef(src);
-					href = o.href,
-					dataTitle = o.title + ", " + o.sectionHeading
+                                    href = href
+                                  //  console.log(src);
+                                    // src=src.replace(/[.]/g,":");
+                                     //console.log(src);
+					//type = "labPage";
+					//var o = ctrl.getLabRef(src);
+					//href = o.href,
+					//dataTitle = o.title + ", " + o.sectionHeading
 				} else {
 					href = href
 				}
