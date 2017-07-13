@@ -643,7 +643,7 @@ background-position: -5px -1536px;
     color:black;  
 }
 .pSubtopic{
-    height:20px;
+    min-height:20px;
     line-height: 20px;
     padding-left: 30px;
     font-size: 14px;

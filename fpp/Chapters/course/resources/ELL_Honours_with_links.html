@@ -29,7 +29,7 @@ httpRequest("course/json/searchBook/searchCode.json", "json", function (_data) {
 		console.log("hi---"+myData.data[0].code);
 		var myStr = '<tr><th align="center" bgcolor="#d5d5d5" class="myTh" style="width:200px; vertical-align:middle"><b>Benchmark Code</b></th><th align="center" bgcolor="#d5d5d5" class="myTh" style="width:350px; vertical-align:middle"><b>Benchmark</b></th><th align="center" class="myTh"  bgcolor="#d5d5d5" style="width:700px; vertical-align:middle"><b>Lessons where Benchmark is directly Addressed in-depth in major tool</b></th></tr>';
 		var str="";
-		var chap, topic, subtopic;
+		var chap, topic, subtopic,mainTitle;
 		for(i=0;i<myData.data.length;i++)
 		{
 			lessonStr = "";
@@ -42,7 +42,9 @@ httpRequest("course/json/searchBook/searchCode.json", "json", function (_data) {
 					src = myData.data[i].lessons[j].split("Ch")[1] + ".1.1.0";
 					type = "lessonPlan";
 				}
+                                
 				title = myData.data[i].lessons[j];
+                                mainTitle=title.replace(/[.]/g,":")
 				if(src.split(".")[0] == 26){
 					type = "labPage";
 					var o = ctrl.getLabRef(src);
@@ -55,13 +57,13 @@ httpRequest("course/json/searchBook/searchCode.json", "json", function (_data) {
 				type = type;
 				
 				if (type == "labPage") {
-					lessonStr+= "<span onclick='openLink(event)' style='color:#0000FF;text-decoration: underline;cursor: pointer;' data-type='" + type + "' data-src='" + src + "' data-href='" + href.split("/").join("~").split("_").join("-") + "' data-text='"+(dataTitle ? dataTitle : title)+"'>" + title + "</span>";
+					lessonStr+= "<span onclick='openLink(event)' style='color:#0000FF;text-decoration: underline;cursor: pointer;float:left;clear:both' data-type='" + type + "' data-src='" + src + "' data-href='" + href.split("/").join("~").split("_").join("-") + "' data-text='"+(dataTitle ? dataTitle : title)+"'>" + mainTitle + "</span>";
 				} else {
                                     var page ="";
                                     if(title.indexOf("page ")>-1 && src.indexOf("25")>-1){
                                        page=title.split("page ")[1];
                                     }
-					lessonStr+= "<span onclick='openLink(event)' style='color:#0000FF;text-decoration: underline;cursor: pointer;' data-type='" + type + "' data-src='" + src + "'data-page='" + page + "'>" + title + "</span>";
+					lessonStr+= "<span onclick='openLink(event)' style='color:#0000FF;text-decoration: underline;cursor: pointer;float:left;clear:both' data-type='" + type + "' data-src='" + src + "'data-page='" + page + "'>" + mainTitle + "</span>";
 				}
 				lessonStr+= '&nbsp;&nbsp;';
 			}
@@ -72,6 +74,8 @@ httpRequest("course/json/searchBook/searchCode.json", "json", function (_data) {
 });
 
 function openLink(e){
+    $('.header_bck').hide();
+      $('.pMenu').removeClass("pDisable");
 	var src = $(e.target).attr("data-src").split(":");
 	var type = $(e.target).attr("data-type");
 	if (type == "labPage") {

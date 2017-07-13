@@ -681,7 +681,7 @@
         },
         {
             "code": "LAFS.1112.RST.2.4",
-            "benchmark": "Determine the meaning of symbols, key terms, and other domain-specific words and phrases as they are used in a specific scientific or technical context relevant to grades 11–12 texts and topics.  ",
+            "benchmark": "Determine the meaning of symbols, key terms, and other domain-specific words and phrases as they are used in a specific scientific or technical context relevant to grades 11-12 texts and topics.  ",
             "lessons": [
                 "25.4.4 Reading a Textbook Resource",
                 "3.5.2 Conducting a lab",
@@ -760,7 +760,7 @@
         },
         {
             "code": "LAFS.1112.RST.4.10",
-            "benchmark": "By the end of grade 12, read and comprehend science/technical texts in the grades 11–12 text complexity band independently and proficiently. ",
+            "benchmark": "By the end of grade 12, read and comprehend science/technical texts in the grades 11-12 text complexity band independently and proficiently. ",
             "lessons": [
                 "25.4.4 Reading a Textbook Resource",
                 "Lesson Plan: Ch6",
@@ -940,7 +940,7 @@
         },
         {
             "code": "MAFS.912.A-CED.1.4",
-            "benchmark": "Rearrange formulas to highlight a quantity of interest, using the same reasoning as in solving equations. For example, rearrange Ohm's law V = IR to highlight resistance R. ? ",
+            "benchmark": "Rearrange formulas to highlight a quantity of interest, using the same reasoning as in solving equations. For example, rearrange Ohm's law V = IR to highlight resistance R.â˜…",
             "lessons": [
                 "16.1.3 Ohm's law",
                 "5.2.2 Newton's second law",
@@ -955,7 +955,7 @@
         },
         {
             "code": "MAFS.912.F-IF.2.4",
-            "benchmark": "For a function that models a relationship between two quantities, interpret key features of graphs and tables in terms of the quantities, and sketch graphs showing key features given a verbal description of the relationship. Key features include intercepts; intervals where the function is increasing, decreasing, positive, or negative; relative maximums and minimums; symmetries; end behavior; and periodicity. ?",
+            "benchmark": "For a function that models a relationship between two quantities, interpret key features of graphs and tables in terms of the quantities, and sketch graphs showing key features given a verbal description of the relationship. Key features include intercepts; intervals where the function is increasing, decreasing, positive, or negative; relative maximums and minimums; symmetries; end behavior; and periodicity.â˜…",
             "lessons": [
                 "2.2.1 Position-time graphs",
                 "2.2.2 Velocity in position-time graphs",
@@ -973,7 +973,7 @@
         },
         {
             "code": "MAFS.912.F-IF.3.7",
-            "benchmark": "Graph functions expressed symbolically and show key features of the graph, by hand in simple cases and using technology for more complicated cases. â˜…<ol style='list-style-type: lower-alpha;margin-left: 15px;'><li>Graph linear and quadratic functions and show intercepts, maxima, and minima.</li><li>Graph square root, cube root, and piecewise-defined functions, including step functions and absolute value functions.</li><li>Graph polynomial functions, identifying zeros when suitable factorizations are available, and showing end behavior.</li><li>Graph rational functions, identifying zeros and asymptotes when suitable factorizations are available, and showing end behavior.</li><li>Graph exponential and logarithmic functions, showing intercepts and end behavior, and trigonometric functions, showing period, midline, and amplitude, and using phase shift.</li></ol>",
+            "benchmark": "Graph functions expressed symbolically and show key features of the graph, by hand in simple cases and using technology for more complicated cases. â˜… <ol style='list-style-type: lower-alpha;margin-left: 15px;'><li>Graph linear and quadratic functions and show intercepts, maxima, and minima.</li><li>Graph square root, cube root, and piecewise-defined functions, including step functions and absolute value functions.</li><li>Graph polynomial functions, identifying zeros when suitable factorizations are available, and showing end behavior.</li><li>Graph rational functions, identifying zeros and asymptotes when suitable factorizations are available, and showing end behavior.</li><li>Graph exponential and logarithmic functions, showing intercepts and end behavior, and trigonometric functions, showing period, midline, and amplitude, and using phase shift.</li></ol>",
             "lessons": [
                 "2.2.1 Position-time graphs",
                 "2.2.2 Velocity in position-time graphs",
@@ -1013,7 +1013,7 @@
         },
         {
             "code": "MAFS.912.G-MG.1.2",
-            "benchmark": "Apply concepts of density based on area and volume in modeling situations (e.g., persons per square mile, BTUs per cubic foot). ? ",
+            "benchmark": "Apply concepts of density based on area and volume in modeling situations (e.g., persons per square mile, BTUs per cubic foot). â˜…",
             "lessons": [
                 "10.1.2 Pressure",
                 "10.1.3 Density",
@@ -1025,7 +1025,7 @@
         },
         {
             "code": "MAFS.912.N-Q.1.1",
-            "benchmark": "Use units as a way to understand problems and to guide the solution of multi-step problems; choose and interpret units consistently in formulas; choose and interpret the scale and the origin in graphs and data displays. ? ",
+            "benchmark": "Use units as a way to understand problems and to guide the solution of multi-step problems; choose and interpret units consistently in formulas; choose and interpret the scale and the origin in graphs and data displays. â˜… ",
             "lessons": [
                 "3.1.2 Metric system",
                 "3.1.3 Converting between units",
@@ -1049,7 +1049,7 @@
         },
         {
             "code": "MAFS.912.N-Q.1.3",
-            "benchmark": "Choose a level of accuracy appropriate to limitations on measurement when reporting quantities. ?",
+            "benchmark": "Choose a level of accuracy appropriate to limitations on measurement when reporting quantities. â˜… ",
             "lessons": [
                 "3.5.3 Precision and accuracy",
                 "3.5.2 Conducting a lab",
@@ -1060,7 +1060,7 @@
         },
         {
             "code": "MAFS.912.N-VM.1.1",
-            "benchmark": "Recognize vector quantities as having both magnitude and direction. Represent vector quantities by directed line segments, and use appropriate symbols for vectors and their magnitudes (e.g., v, |v|, ||v||, v).",
+            "benchmark": "Recognize vector quantities as having both magnitude and direction. Represent vector quantities by directed line segments, and use appropriate symbols for vectors and their magnitudes (e.g.,v,|v|,||v||,v).",
             "lessons": [
                 "4.1.1 Displacement in two dimensions",
                 "4.1.2 Velocity in two dimensions",
@@ -1102,7 +1102,7 @@
         },
         {
             "code": "MAFS.912.S-IC.2.6",
-            "benchmark": "Evaluate reports based on data. ? ",
+            "benchmark": "Evaluate reports based on data.â˜…",
             "lessons": [
                 "3.4.1 Nature of science",
                 "3.4.2 Hypotheses and theories",
@@ -1119,7 +1119,7 @@
         },
         {
             "code": "MAFS.912.S-ID.1.1",
-            "benchmark": "Represent data with plots on the real number line (dot plots, histograms, and box plots). ?",
+            "benchmark": "Represent data with plots on the real number line (dot plots, histograms, and box plots).â˜… ",
             "lessons": [
                 "3.5.5 Presenting the results",
                 "3.6.4 Communicating scientific information",
@@ -1131,7 +1131,7 @@
         },
         {
             "code": "MAFS.912.S-ID.1.2",
-            "benchmark": "Use statistics appropriate to the shape of the data distribution to compare center (median, mean) and spread (interquartile range, standard deviation) of two or more different data sets. ?",
+            "benchmark": "Use statistics appropriate to the shape of the data distribution to compare center (median, mean) and spread (interquartile range, standard deviation) of two or more different data sets.â˜…",
             "lessons": [
                 "2.3.3 Standard deviation",
                 "25.2.1 Data basics",
@@ -1142,7 +1142,7 @@
         },
         {
             "code": "MAFS.912.S-ID.1.3",
-            "benchmark": "Interpret differences in shape, center, and spread in the context of the data sets, accounting for possible effects of extreme data points (outliers). ?",
+            "benchmark": "Interpret differences in shape, center, and spread in the context of the data sets, accounting for possible effects of extreme data points (outliers).â˜…",
             "lessons": [
                 "2.3.3 Standard deviation",
                 "25.2.1 Data basics",
@@ -1152,7 +1152,7 @@
         },
         {
             "code": "MAFS.912.S-ID.1.4",
-            "benchmark": "Use the mean and standard deviation of a data set to fit it to a normal distribution and to estimate population percentages. Recognize that there are data sets for which such a procedure is not appropriate. Use calculators, spreadsheets, and tables to estimate areas under the normal curve. ?",
+            "benchmark": "Use the mean and standard deviation of a data set to fit it to a normal distribution and to estimate population percentages. Recognize that there are data sets for which such a procedure is not appropriate. Use calculators, spreadsheets, and tables to estimate areas under the normal curve.â˜…",
             "lessons": [
                 "25.2.2 Normal distribution",
                 "2.3.2 Drawing a trend line",
@@ -1162,7 +1162,7 @@
         },
         {
             "code": "MAFS.912.S-ID.2.5",
-            "benchmark": "Summarize categorical data for two categories in two-way frequency tables. Interpret relative frequencies in the context of the data (including joint, marginal, and conditional relative frequencies). Recognize possible associations and trends in the data. ?",
+            "benchmark": "Summarize categorical data for two categories in two-way frequency tables. Interpret relative frequencies in the context of the data (including joint, marginal, and conditional relative frequencies). Recognize possible associations and trends in the data.â˜…",
             "lessons": [
                 "25.2.3 Categorical data",
                 "25.2.4 Regression",
@@ -1171,7 +1171,7 @@
         },
         {
             "code": "MAFS.912.S-ID.2.6",
-            "benchmark": "Represent data on two quantitative variables on a scatter plot, and describe how the variables are related. ? a. Fit a function to the data; use functions fitted to data to solve problems in the context of the data. Use given functions or choose a function suggested by the context. Emphasize linear and exponential models. b. Informally assess the fit of a function by plotting and analyzing residuals. c. Fit a linear function for a scatter plot that suggests a linear association.",
+            "benchmark": "Represent data on two quantitative variables on a scatter plot, and describe how the variables are related.â˜…  a. Fit a function to the data; use functions fitted to data to solve problems in the context of the data. Use given functions or choose a function suggested by the context. Emphasize linear and exponential models. b. Informally assess the fit of a function by plotting and analyzing residuals. c. Fit a linear function for a scatter plot that suggests a linear association.",
             "lessons": [
                 "2.3.1 Drawing a scatter plot",
                 "2.3.2 Drawing a trend line",
