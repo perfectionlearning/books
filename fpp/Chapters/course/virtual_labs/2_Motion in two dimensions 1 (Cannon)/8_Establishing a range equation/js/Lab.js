@@ -153,7 +153,7 @@ var Lab = (function(){
 		this.layout.angleStepper.value = this.layout.angleStepper._min + 1;
 		//
 		this.layout.speedStepper.value = this.activePlayer.velocity.toFixed(1) * 1;
-		this.layout.angleStepper.value = 360 - this.activePlayer.angle;
+		this.layout.angleStepper.value = (360 - this.activePlayer.angle).toFixed(0) * 1;
 
 		this.layout.speedText.text = this.activePlayer.velocity.toFixed(1);
 		this.layout.angleText.text = this.layout.angleStepper.value//.toFixed(1);
