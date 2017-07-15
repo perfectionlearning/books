@@ -30,71 +30,44 @@ httpRequest("course/json/searchBook/searchCode.json", "json", function (_data) {
 		var myStr = '<tr><th align="center" bgcolor="#d5d5d5" class="myTh" style="width:200px; vertical-align:middle"><b>Benchmark Code</b></th><th align="center" bgcolor="#d5d5d5" class="myTh" style="width:350px; vertical-align:middle"><b>Benchmark</b></th><th align="center" class="myTh"  bgcolor="#d5d5d5" style="width:700px; vertical-align:middle"><b>Lessons where Benchmark is directly Addressed in-depth in major tool</b></th></tr>';
 		var str="";
 		var chap, topic, subtopic,mainTitle;
+		var count = 0;
 		for(i=0;i<myData.data.length;i++)
 		{
 			lessonStr = "";
 			for(j=0;j<myData.data[i].lessons.length;j++){
-				var src = myData.data[i].lessons[j].split(" ")[0] + ".0";
-				var type = "book";
-				var href, dataTitle;
-                            
-				if(src.toLowerCase() == "lesson.0"){
-					src = myData.data[i].lessons[j].split("Ch")[1] + ".1.1.0";
-					type = "lessonPlan";
-				}
-                                
-				title = myData.data[i].lessons[j];
-                                mainTitle=title;
-                                console.log(src);
-				if(src.split(".")[0] == 26){
-                                    href = href
-                                  //  console.log(src);
-                                    // src=src.replace(/[.]/g,":");
-                                     //console.log(src);
-					//type = "labPage";
-					//var o = ctrl.getLabRef(src);
-					//href = o.href,
-					//dataTitle = o.title + ", " + o.sectionHeading
-				} else {
-					href = href
-				}
-				src = src.split(".").join(":");
-				type = type;
+				count++;
+				var link = myData.data[i].hyperLink[j];
+				var title = myData.data[i].lessons[j];
+				var mainTitle=title;
 				
-				if (type == "labPage") {
-					lessonStr+= "<span onclick='openLink(event)' style='color:#0000FF;text-decoration: underline;cursor: pointer;float:left;clear:both' data-type='" + type + "' data-src='" + src + "' data-href='" + href.split("/").join("~").split("_").join("-") + "' data-text='"+(dataTitle ? dataTitle : title)+"'>" + mainTitle + "</span>";
-				} else {
-                                    var page ="";
-                                    if(title.indexOf("page ")>-1 && src.indexOf("25")>-1){
-                                       page=title.split("page ")[1];
-                                    }
-					lessonStr+= "<span onclick='openLink(event)' style='color:#0000FF;text-decoration: underline;cursor: pointer;float:left;clear:both' data-type='" + type + "' data-src='" + src + "'data-page='" + page + "'>" + mainTitle + "</span>";
-				}
-				lessonStr+= '&nbsp;&nbsp;';
+				lessonStr+= "<span onclick='openLink(event)' style='color:#0000FF;text-decoration: underline;cursor: pointer;float:left;clear:both' data-link='" + link + "'>" + mainTitle + "</span>";
 			}
 
 			str+= '<tr><td align="center" bgcolor="#e9e9e9" class="myTd">'+myData.data[i].code+'</td><td class="myTd" bgcolor="#e9e9e9">'+myData.data[i].benchmark+'</td><td class="myTd" bgcolor="#e9e9e9">'+lessonStr+'</td></tr>';
 		}
+		console.log(count)
 		$('.myTable').html(myStr+str);
 });
 
 function openLink(e){
     $('.header_bck').hide();
-      $('.pMenu').removeClass("pDisable");
-	var src = $(e.target).attr("data-src").split(":");
-	var type = $(e.target).attr("data-type");
-	if (type == "labPage") {
-		var src = $(e.target).attr("data-text").split(", ");
-		var href = $(e.target).attr("data-href");
-		window.location.hash = "type_labPage/title_" + src[2] + "/href_" + (href);
-	} else {
-            var page="";
-            page=$(e.target).attr("data-page");
-            if(page != ""){
-               window.location.hash = "lesson_" + (type == "lessonPlan") + "/type_chapter/chapter_" + src[0] + "/unit_" + (src[1] - 1) + "/section_" + src[2] + "/subsection_" + src[3]+"/page_"+page; 
-            }else{
-		window.location.hash = "lesson_" + (type == "lessonPlan") + "/type_chapter/chapter_" + src[0] + "/unit_" + (src[1] - 1) + "/section_" + src[2] + "/subsection_" + src[3];
-	}}
+	$('.pMenu').removeClass("pDisable");
+	var link = $(e.target).attr("data-link");
+	window.location.hash = link;
+	<!-- var src = $(e.target).attr("data-src").split(":"); -->
+	<!-- var type = $(e.target).attr("data-type"); -->
+	<!-- if (type == "labPage") { -->
+		<!-- var src = $(e.target).attr("data-text").split(", "); -->
+		<!-- var href = $(e.target).attr("data-href"); -->
+		<!-- window.location.hash = "type_labPage/title_" + src[2] + "/href_" + (href); -->
+	<!-- } else { -->
+            <!-- var page=""; -->
+            <!-- page=$(e.target).attr("data-page"); -->
+            <!-- if(page != ""){ -->
+               <!-- window.location.hash = "lesson_" + (type == "lessonPlan") + "/type_chapter/chapter_" + src[0] + "/unit_" + (src[1] - 1) + "/section_" + src[2] + "/subsection_" + src[3]+"/page_"+page;  -->
+            <!-- }else{ -->
+		<!-- window.location.hash = "lesson_" + (type == "lessonPlan") + "/type_chapter/chapter_" + src[0] + "/unit_" + (src[1] - 1) + "/section_" + src[2] + "/subsection_" + src[3]; -->
+	<!-- }} -->
 }
 
 </script>

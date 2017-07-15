@@ -847,122 +847,143 @@
     window.location.hash = escape(a.join("/"));
     }
 
-  function searchResults() {
-  if (!p.searchBook) {
-    return false;
-  }
-    $(".activityLoader").show();
-    var keywords = $("#searchField").val().split(" ").map(function (key) {
-    return " " + key.toLowerCase() + " ";
-  });
-    var links = [], // for exact match
-    links2 = [], // for all keys match
-    found, text, sources = [];
-      var div = $(document.createElement("div"));
-        p.searchBook.forEach(function (obj) {
-        found = false;
-  var allText = div.html(obj.text).text().toLowerCase() + " " + obj.title.toLowerCase() + " " + obj.sectionTitle.toLowerCase() + " " + obj.sectionHeading.toLowerCase();
-  var toSearch = $("#searchField").val().trim().toLowerCase();
-      if (allText.match(toSearch)) {
-    push(links, obj);
-  } else {
-  var count = 0;       for (var i = 0; i < keywords.length; i++) {
-    if (allText.match(keywords[i])) {
-    count++;
-    }
-    }
-    if (count == keywords.length) {     push(links2, obj);
-    }
-    }
-  // var a = [div.html(obj.text).text().toLowerCase(), obj.title.toLowerCase(), obj.sectionTitle.toLowerCase(), obj.sectionHeading.toLowerCase()];
-    // for (var j = 0; j < a.length && !found; j++) {
-    // text = a[j];
-      // for (var i = 0; i < keywords.length; i++) {
-      //   if (text.match(keywords[i])) {
-      //     push(links, obj);
-    //     found = true;
-    //   }
-    // }
-  // }
-  });
-  function push(a, obj) {
-    if (sources.indexOf(obj.src) == - 1) {
-    sources.push(obj.src);
-    a.push({
-  src: obj.src,
-  type: obj.type,
-        href: obj.href,
-  title: obj.title + ", " + obj.sectionHeading
+    function searchResults() {
+      if (!p.searchBook) {
+        return false;
+      }
+      $(".activityLoader").show();
+      var keywords = $("#searchField").val().split(" ").map(function (key) {
+        return " " + key.toLowerCase() + " ";
       });
+      var links = [], // for exact match
+        links2 = [], // for all keys match
+        found, text, sources = [];
+      var div = $(document.createElement("div"));
+      p.searchBook.forEach(function (obj) {
+        found = false;
+        var allText = div.html(obj.text).text().toLowerCase() + " " + obj.title.toLowerCase() + " " + obj.sectionTitle.toLowerCase() + " " + obj.sectionHeading.toLowerCase();
+        var toSearch = $("#searchField").val().trim().toLowerCase();
+        if (allText.indexOf(toSearch) != -1) {
+          push(links, obj);
+        } else {
+          var count = 0;
+          for (var i = 0; i < keywords.length; i++) {
+            if (allText.indexOf(keywords[i]) != -1) {
+              count++;
+            }
+          }
+          if (count == keywords.length) {
+            push(links2, obj);
+          }
+        }
+        // var a = [div.html(obj.text).text().toLowerCase(), obj.title.toLowerCase(), obj.sectionTitle.toLowerCase(), obj.sectionHeading.toLowerCase()];
+        // for (var j = 0; j < a.length && !found; j++) {
+        // text = a[j];
+        // for (var i = 0; i < keywords.length; i++) {
+        //   if (text.match(keywords[i])) {
+        //     push(links, obj);
+        //     found = true;
+        //   }
+        // }
+        // }
+      });
+
+      function push(a, obj) {
+        if (sources.indexOf(obj.src) == -1) {
+          sources.push(obj.src);
+          a.push({
+            src: obj.src,
+            type: obj.type,
+            href: obj.href,
+            title: obj.title + ", " + obj.sectionHeading
+          });
+        }
+      }
+	  console.log(links.length, links2.length)
+      links = links.concat(links2);
+      var count = 0;
+      if (links.length == 0 && keywords.length == 1) {
+		  console.log("searching in code");
+        for (var i = 0; i < p.searchCode.data.length; i++) {
+          if (p.searchCode.data[i].code.toLowerCase().indexOf(keywords[0].trim()) != -1) {
+            for (var j = 0; j < p.searchCode.data[i].lessons.length; j++) {
+				links.push({
+					title:p.searchCode.data[i].lessons[j],
+					link:p.searchCode.data[i].hyperLink[j]
+				});
+              // var src = p.searchCode.data[i].lessons[j].split(" ")[0] + ".0";
+              // var type = "book";
+              // var href, dataTitle;
+              // if (src.toLowerCase() == "lesson.0") {
+                // src = p.searchCode.data[i].lessons[j].split("Ch")[1] + ".1.1.0";
+                // type = "lessonPlan";
+              // }
+              // if (src.split(".")[0] == 26) {
+                // type = "labPage";
+                // var o = getLabref(src);
+                // links.push({
+                  // src: src.split(".").join(":"),
+                  // type: type,
+                  // title: p.searchCode.data[i].lessons[j],
+                  // href: o.href,
+                  // dataTitle: o.title + ", " + o.sectionHeading
+                // });
+              // } else {
+                // links.push({
+                  // src: src.split(".").join(":"),
+                  // type: type,
+                  // title: p.searchCode.data[i].lessons[j],
+                  // href: href
+                // });
+              // }
+            }
+            break;
+          }
+        }
+      }
+      links.forEach(function (obj) {
+        if (p.usertype && p.usertype.toLowerCase() == "student" && obj.type == "lessonPlan") {
+          return false;
+        }
+        count++;
+        if (obj.type == "labPage") {
+          // console.log(obj.href)
+          $(".searchResults").append("<div class='searchResult' data-type='" + obj.type + "' data-src='" + obj.src + "' data-href='" + obj.href.split("/").join("~").split("_").join("-") + "' data-text='" + (obj.dataTitle ? obj.dataTitle : obj.title) + "'>" + obj.title + "</div>");
+        } else {
+          $(".searchResults").append("<div class='searchResult' data-type='" + obj.type + "' data-link='" + obj.link + "' data-src='" + obj.src + "'>" + obj.title + "</div>");
+        }
+      });
+      $(".searchResults").mCustomScrollbar({
+        theme: "dark-3",
+        axis: "y",
+        scrollInertia: 0, mouseWheelPixels: 50,
+        scrollButtons: {enable: true}
+      });
+      $(".searchResultCount").text(count + " results");
+      $(".searchResult").off("click").on("click", function (e) {
+        var link = $(this).attr("data-link");
+		console.log(link)
+		if(link && link != "undefined"){
+			window.location.hash = link;
+			return false;
+		}
+        var src = $(this).attr("data-src").split(":");
+        var type = $(this).attr("data-type");
+        if (type == "labPage") {
+          var src = $(this).attr("data-text").split(", ");
+          var href = $(this).attr("data-href");
+          window.location.hash = escape("type_labPage/title_" + src[2] + "/href_" + (href));
+        } else {
+          window.location.hash = escape("lesson_" + (type == "lessonPlan") + "/type_chapter/chapter_" + src[0] + "/unit_" + (src[1] - 1) + "/section_" + src[2] + "/subsection_" + src[3]);
+        }
+        $(".pSearchAreaWrapper").hide();
+        disableHeaderSearch(false);
+      });
+
+      setTimeout(function () {
+        $(".activityLoader").hide();
+      }, 500);
     }
-    }
-  links = links.concat(links2);
-  var count = 0;
-  if (links.length == 0 && keywords.length == 1) {
-  for (var i = 0; i < p.searchCode.data.length; i++) {
-  if (p.searchCode.data[i].code.toLowerCase().indexOf(keywords[0].trim()) != - 1) {
-  for (var j = 0; j < p.searchCode.data[i].lessons.length; j++) {
-  var src = p.searchCode.data[i].lessons[j].split(" ")[0] + ".0";     var type = "book";
-    var href, dataTitle;
-    if (src.toLowerCase() == "lesson.0") {   src = p.searchCode.data[i].lessons[j].split("Ch")[1] + ".1.1.0";
-    type = "lessonPlan";
-  }
-  if (src.split(".")[0] == 26) {
-    type = "labPage";
-    var o = getLabref(src);
-    links.push({
-    src: src.split(".").join(":"),
-    type: type,
-      title: p.searchCode.data[i].lessons[j],
-    href: o.href,
-  dataTitle: o.title + ", " + o.sectionHeading     });
-  } else {
-  links.push({
-    src: src.split(".").join(":"),
-    type: type,
-  title: p.searchCode.data[i].lessons[j],
-    href: href
-  });
-  }
-  }
-  break;
-    }
-  }   }
-    links.forEach(function (obj) {
-  if (p.usertype && p.usertype.toLowerCase() == "student" && obj.type == "lessonPlan") {
-  return false;
-  }
-  count++;     if (obj.type == "labPage") {
-  // console.log(obj.href)
-  $(".searchResults").append("<div class='searchResult' data-type='" + obj.type + "' data-src='" + obj.src + "' data-href='" + obj.href.split("/").join("~").split("_").join("-") + "' data-text='" + (obj.dataTitle ? obj.dataTitle : obj.title) + "'>" + obj.title + "</div>");
-  } else {
-  $(".searchResults").append("<div class='searchResult' data-type='" + obj.type + "' data-src='" + obj.src + "'>" + obj.title + "</div>");
-  }
-  });
-  $(".searchResults").mCustomScrollbar({
-    theme: "dark-3",
-    axis: "y",
-    scrollInertia: 0, mouseWheelPixels: 50,
-      scrollButtons: {enable: true}
-  });
-  $(".searchResultCount").text(count + " results");
-    $(".searchResult").off("click").on("click", function (e) {
-  var src = $(this).attr("data-src").split(":");
-    var type = $(this).attr("data-type");
-  if (type == "labPage") {
-  var src = $(this).attr("data-text").split(", ");
-    var href = $(this).attr("data-href");
-  window.location.hash = escape("type_labPage/title_" + src[2] + "/href_" + (href));
-  } else {
-  window.location.hash = escape("lesson_" + (type == "lessonPlan") + "/type_chapter/chapter_" + src[0] + "/unit_" + (src[1] - 1) + "/section_" + src[2] + "/subsection_" + src[3]);
-  }
-  $(".pSearchAreaWrapper").hide();
-    disableHeaderSearch(false);
-    });
-    setTimeout(function () {
-  $(".activityLoader").hide();
-    }, 500);
-  }
 
   function getLabref(src) {
   src = src.split(".");
