@@ -31,10 +31,10 @@
        $(document).off("showSearchBox", showSearchBox).on("showSearchBox", showSearchBox);
       /*
        * Commenting this out to fix issue with Logout option not firing. The menu options in playerbtnManager call overlayDown, anyway.
+       */
   $(document).off(mouseEvents.down).on(mouseEvents.down, function (e) {
        overlayDown(e);
     });
-       */
   }
   function getBookData(e, data) {
     p.bookData = data.bookData;     coreData = data;
@@ -1627,20 +1627,26 @@
   }
   }
   function overlayDown(e) {
-  if (typeof e != "undefined") {
-    if (!$(e.target).hasClass('accSysmbol') && !$(e.target).hasClass('pSubTopicName') && !$(e.target).hasClass('pSubMenuTopicHeader') && !$(e.target).hasClass('pSubmenuButton') && !$(e.target).hasClass('pLabSubMenuButton ')) {
-  $('.pSubMenuWrap').removeClass("open");
-    $('.pSubmenuButton').removeClass("open");
-    $(p.mShell).find(".pLabSubMenu").css("left", - $(p.mShell).find(".pLabSubMenu").outerWidth(true));
-    $('.pLabSubMenuButton').removeClass("pSelected open");
-    $(p.mShell).find(".pLabSubMenu").data("open", false);
-  }
-  } else {
-  //$('.pSubMenuWrap').removeClass("open");
-  // $('.pSubmenuButton').removeClass("open");
-  }
-  $(p.mShell).find(".pMenu").removeClass('pSelected');
-    $(p.mShell).find(".pMenuWrap").slideUp();
+    var type; // Element's data-type attribute value, if present.
+    if (typeof e != "undefined") {
+      if (!$(e.target).hasClass('accSysmbol') && !$(e.target).hasClass('pSubTopicName') && !$(e.target).hasClass('pSubMenuTopicHeader') && !$(e.target).hasClass('pSubmenuButton') && !$(e.target).hasClass('pLabSubMenuButton ')) {
+        $('.pSubMenuWrap').removeClass("open");
+        $('.pSubmenuButton').removeClass("open");
+        $(p.mShell).find(".pLabSubMenu").css("left", - $(p.mShell).find(".pLabSubMenu").outerWidth(true));
+        $('.pLabSubMenuButton').removeClass("pSelected open");
+        $(p.mShell).find(".pLabSubMenu").data("open", false);
+      }
+      // Checking for element's data-type attribute. If found, use to identify logout menu option.
+      type = e.target && e.target.dataset && e.target.dataset.type;
+    } else {
+      //$('.pSubMenuWrap').removeClass("open");
+      // $('.pSubmenuButton').removeClass("open");
+    }
+    // Slide menu up unless logout option was clicked.
+    if (type !== 'logout') {
+      $(p.mShell).find(".pMenu").removeClass('pSelected');
+      $(p.mShell).find(".pMenuWrap").slideUp();
+    }
   }
 
   // Handle Logout menu option.
