@@ -26,7 +26,8 @@ var myData;
 var i,j;
 httpRequest("course/json/searchBook/searchCode.json", "json", function (_data) {
 		myData = _data;
-		console.log("hi---"+myData.data[0].code);
+		var user = ""//ctrl.getUserType().toLowerCase();
+		<!-- console.log("hi---"+myData.data[0].code); -->
 		var myStr = '<tr><th align="center" bgcolor="#d5d5d5" class="myTh" style="width:200px; vertical-align:middle"><b>Benchmark Code</b></th><th align="center" bgcolor="#d5d5d5" class="myTh" style="width:350px; vertical-align:middle"><b>Benchmark</b></th><th align="center" class="myTh"  bgcolor="#d5d5d5" style="width:700px; vertical-align:middle"><b>Lessons where Benchmark is directly Addressed in-depth in major tool</b></th></tr>';
 		var str="";
 		var chap, topic, subtopic,mainTitle;
@@ -34,12 +35,19 @@ httpRequest("course/json/searchBook/searchCode.json", "json", function (_data) {
 		for(i=0;i<myData.data.length;i++)
 		{
 			lessonStr = "";
+			if(user != "teacher"){
+				if(myData.data[i].type == "teacher"){
+					continue;
+				}
+			}
 			for(j=0;j<myData.data[i].lessons.length;j++){
 				count++;
 				var link = myData.data[i].hyperLink[j];
 				var title = myData.data[i].lessons[j];
 				var mainTitle=title;
-				
+				if(mainTitle.split(" ")[0].toLowerCase() == "lesson"){
+					continue;
+				}
 				lessonStr+= "<span onclick='openLink(event)' style='color:#0000FF;text-decoration: underline;cursor: pointer;float:left;clear:both' data-link='" + link + "'>" + mainTitle + "</span>";
 			}
 

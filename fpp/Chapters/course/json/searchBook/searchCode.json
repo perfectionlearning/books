@@ -2006,6 +2006,7 @@
         },
         {
             "code": "ELD.K12.ELL.SC.1",
+			"type":"teacher",
             "benchmark": "English language learners communicate information, ideas and concepts necessary for academic success in the content area of Science.",
             "lessons": [
                 "ELL Student Activities: 27.1.1",
@@ -2018,6 +2019,7 @@
         },
         {
             "code": "ELD.K12.ELL.SI.1",
+			"type":"teacher",
             "benchmark": "English language learners communicate for social and instructional purposes within the school setting.",
             "lessons": [
                 "ELL Lesson Plans: 27.1.2"

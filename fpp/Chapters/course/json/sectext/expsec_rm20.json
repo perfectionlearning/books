@@ -1,1 +1,25 @@
-{"cards":[{"lines":[{"type":"title","text":"Questions for evaluating marketing"},{"type":"headline","text":"Who?  Is the source unbiased and respected?"},{"type":"headline","text":"What?  What specific, testable claims are being made? "},{"type":"headline","text":"What evidence?  What data is supplied?"},{"type":"headline","text":"When?  Has time allowed others to comment?"}]}],"definitions":[],"secText":["Your science skills can help you to evaluate news stories and marketing (promotional) claims.  This unit uses several case studies of news and marketing claims, and asks you to evaluate the claims.  ","To judge a marketing claim, we start with the source.  We prefer an unbiased and respected source.  By biased, we mean: Is the claim being made by someone who benefits, financially or otherwise, whether it is true or false?  ","We want to read the claim carefully to make sure we understand precisely what is being said.  Then we want to decide: How relevant is it?  Advertisements may be about a broad topic, such as “sleeping better at night,” but the claim itself may be very specific, such as: “You will fall asleep 15 minutes sooner on average.”  In short, we would prefer a testable hypothesis.","Data is used to test whether a hypothesis is true or false, and that is how any marketing claim should be judged. What data is being supplied to support the claim?  A strong claim will be backed by data available to others, and we would want independent researchers to confirm it.  Experiments will be conducted by people not directly linked to the company making the claim.  We want to use empirical evidence to test a scientific explanation. “Empirical” means based on observation and experiments.","Lastly: When was the claim made?  Have others had time to review it?  It takes time for a hypothesis to turn into an accepted theory. "],"objNames":["wb_marketing"]}
+{
+	"cards": [{
+			"lines": [{
+					"type": "title",
+					"text": "Questions for evaluating marketing"
+				}, {
+					"type": "headline",
+					"text": "Who?  Is the source unbiased and respected?"
+				}, {
+					"type": "headline",
+					"text": "What?  What specific, testable claims are being made? "
+				}, {
+					"type": "headline",
+					"text": "What evidence?  What data is supplied?"
+				}, {
+					"type": "headline",
+					"text": "When?  Has time allowed others to comment?"
+				}
+			]
+		}
+	],
+	"definitions": [],
+	"secText": ["Your science skills can help you to evaluate news stories and marketing (promotional) claims.  This unit uses several case studies of news and marketing claims, and asks you to evaluate the claims.  ", "To judge a marketing claim, we start with the source.  We prefer an unbiased and respected source.  By biased, we mean: Is the claim being made by someone who benefits, financially or otherwise, whether it is true or false?  ", "We want to read the claim carefully to make sure we understand precisely what is being said.  Then we want to decide: How relevant is it?  Advertisements may be about a broad topic, such as “sleeping better at night,” but the claim itself may be very specific, such as: “You will fall asleep 15 minutes sooner on average.”  In short, we would prefer a testable hypothesis.", "Data is used to test whether a hypothesis is true or false, and that is how any marketing claim should be judged. What data is being supplied to support the claim?  A strong claim will be backed by data available to others, and we would want independent researchers to confirm it.  Experiments will be conducted by people not directly linked to the company making the claim.  We want to use empirical evidence to test a scientific explanation. “Empirical” means based on observation and experiments.", "We also want to consult any resources available to us. We can examine books on a topic, consult scientific journals, and so on. Others may have researched this issue.", "Lastly: When was the claim made?  Have others had time to review it?  It takes time for a hypothesis to turn into an accepted theory. "],
+	"objNames": ["wb_marketing"]
+}

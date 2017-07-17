@@ -10,6 +10,9 @@
     showLoader();
       eventListener();
     };
+	 this.getUserType = function () {
+      return p.usertype;
+    };
     this.getDomain = function() {
     return getBaseUrl();
     };
@@ -200,9 +203,9 @@
   p.subSection = data.subSection;
   }
   if (data.hasOwnProperty("vIndex")) {
-  loadScreen(data.vIndex);
+  loadScreen(data.vIndex, data.pageNo);
   } else {
-  loadScreen(data.vIndex);
+  loadScreen(data.vIndex, data.pageNo);
   }
 
   }

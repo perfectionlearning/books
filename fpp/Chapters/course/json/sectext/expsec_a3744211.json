@@ -1,1 +1,23 @@
-{"cards":[{"lines":[{"type":"title","text":"GPS versus cell towers for position information"}]}],"definitions":[],"secText":["We present another case study, this one about two different systems for determining position. One system uses satellites and the other uses cell phone towers.","The first system is called GPS. GPS stands for Global Positioning System. The system is used to determine your position on the surface of the Earth.  Today, everything from cellphones to cameras and watches contain GPS technology.","A GPS receiver works by noting its position relative to satellites that send out radio signals. The diagram gives you a sense of how it receives signals from multiple satellites (there are 24 satellites altogether).  The satellites send signals with the exact time and their own location. The GPS chip notes the differences in the arrival times of the radio signals.  Using the basic formula that distance equals the product of speed and elapsed time, it establishes its distance from the various satellites, and uses geometry to determine its own location.","GPS manufacturers market how accurate their system is.    Many mention the system of 24 satellites that send signals.  Some manufacturers claim accuracy within a few meters. ","Another service has sprung up that does not rely on satellites, but, rather, on the location of cell phone towers.  The software running in a cell phone notes the relative signal strength from nearby cell phone towers, and determines its position based on the location of those towers. Marketing claims include being able to automatically notify friends when a person has arrived at a location such as a restaurant. "],"objNames":["wb_market_service1"]}
+{
+	"cards": [{
+			"lines": [{
+					"type": "title",
+					"text": "GPS versus cell towers for position information"
+				}
+			]
+		}
+	],
+	"definitions": [],
+	"secText": [
+	"Since golf is a popular sport, others may have researched this issue. You could research this using books, journals and so on.",
+	"Even if you don’t find specific information on golf balls, look for other relevant models concerning motion, which may explain the phenomena or provide a starting point for your model.",
+	"Answer the question to the best of your ability: Do some golf balls go straighter?",
+	"Use specific evidence from texts and other sources as a basis for your analysis. Determine the key ideas and conclusions of a text and summarize them, using simpler but still accurate terms.",
+	"Look for any gaps or contradictions in these materials. Also pay attention to any important distinctions an author may supply (for instance, how a ball rolls on a smooth surface versus a rougher one, such as a golf green).",
+	"Analyze how information and ideas are organized and placed in categories. This will help you demonstrate your understanding of the information and ideas.",
+	"Are there concepts you learned in physics − perhaps friction, air resistance or angular momentum − that might apply here?",
+	"Plan a presentation − use a computer presentation, or arrive with a putter and some golf balls…. Argue your case using appropriate evidence and reasoning.",
+	"Evaluate the merits of explanations produced by others, such as an explanation provided by a manufacturer. Or encourage another team of students to analyze the same question, and present their results."
+	],
+	"objNames": ["wb_market_service1"]
+}

@@ -1363,7 +1363,7 @@
                                 },
                                 {
                                     "type": "videoScreen",
-                                    "SectionHeading": "Two-dimensional displacement",
+                                    "SectionHeading": "Calculating components",
                                     "ref": "expsec_d454.json"
                                 },
                                 {
@@ -2374,7 +2374,7 @@
                 {
                     "section": [
                         {
-                            "SectionTitle": "Work",
+                            "SectionTitle": "buildWork",
                             "subsection": [
                                 {
                                     "SectionHeading": "Lesson Overview: Work",
@@ -10816,8 +10816,7 @@
                                     "ref": ""
                                 }
                             ]
-                        },                      
-                        {
+                        },                         {
                             "SectionTitle": "Creating a Presentation Resource",
                             "subsection": [
                                 {

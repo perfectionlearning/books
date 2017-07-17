@@ -1,1 +1,19 @@
-{"cards":[{"lines":[{"type":"title","text":"How are football helmets tested? "},{"type":"headline","text":"What data can be verified? "},{"type":"headline","text":"What reasoning can be confirmed?"}]}],"definitions":[],"secText":["We finish our discussion of concussions.  We move beyond the specifics of the collision test and start to explain how we would assess information from NOCSAE in general.","An element to emphasize in this section is that we are not questioning NOCSAE or endorsing them.  We are simply explaining the steps we would use to analyze the information on their website. Our brief quote from the website detailed the standard, but not who created it.  Were the scientists from a well-respected institution?  Do they have a relationship, financial or otherwise, with NOCSAE?   We do not know the answers to these questions, and that is crucial information. ","The claims are pretty specific as to the tests they do on helmets, as are their statements about football collisions. We repeat some of what they wrote: “Most players run faster than this, i.e., the average speed of a player running 40 yards in 4.8 seconds is 25 feet per second, but very rarely would the head be stopped in such a short distance on the football field.”","The above NOCSAE statements may be true, but as scientists who want data, we would ask: Is this truly the average speed of a football player?  What exactly is meant by “very rarely”?  That could mean once a year, or once per game.  We would regard the statements as a hypothesis where we would like data from NOCSAE or other groups.","We can also use logical reasoning to analyze these statements.  For instance, they mention their tests use a falling object hitting an unmoving, stationary object.  But is this equivalent to two moving objects colliding, as occurs in football?  Despite the reputation of football players being tough, are they as unyielding as a floor? If given a chance to talk to the group, or to other experts, you ought to ask them questions like the ones above! "],"objNames":["wb_concussions3"]}
+{
+	"cards": [{
+			"lines": [{
+					"type": "title",
+					"text": "How are football helmets tested? "
+				}, {
+					"type": "headline",
+					"text": "What data can be verified? "
+				}, {
+					"type": "headline",
+					"text": "What reasoning can be confirmed?"
+				}
+			]
+		}
+	],
+	"definitions": [],
+	"secText": ["We finish our discussion of concussions.  We move beyond the specifics of the collision test and start to explain how we would assess information from NOCSAE in general.", "An element to emphasize in this section is that we are not questioning NOCSAE or endorsing them. We are simply explaining the steps we would use to analyze any source of information: assessing its credibility and looking for any gaps or inconsistencies.", "The claims are pretty specific as to the tests they do on helmets, as are their statements about football collisions. We repeat some of what they wrote: “Most players run faster than this, i.e., the average speed of a player running 40 yards in 4.8 seconds is 25 feet per second, but very rarely would the head be stopped in such a short distance on the football field.”", "The above NOCSAE statements may be true, but as scientists, we would ask: Is this truly the average speed of a football player? What exactly is meant by “very rarely”? That could mean once a year, or once per game. We would regard the statements as a hypothesis, and would look for data from NOCSAE or other groups.", "Other texts and websites offer additional perspectives, and may emphasize other ideas and organize their analysis about these ideas. For instance, these alternative sources may analyze concussion by age, sport or gender, and emphasize medical data, instead of the physics of a collision. Such resources may reflect more of a medical background or approach.", "All this is part of a continuing area of research and debate. What you may find in other texts, from experts, or from sources on the Internet may well be different than what we are now documenting."],
+	"objNames": ["wb_concussions3"]
+}

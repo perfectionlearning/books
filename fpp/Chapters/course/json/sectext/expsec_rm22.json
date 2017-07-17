@@ -1,1 +1,22 @@
-{"cards":[{"lines":[{"type":"title","text":"Analyzing information in the news "},{"type":"headline","text":"Consider the sources "},{"type":"headline","text":"Is it a hypothesis or a theory?"},{"type":"headline","text":"What data or logic backs it up?"}]}],"definitions":[],"secText":["In this section, we analyze a news story that was reported in a newspaper and was based on an article in a <span class=\"SearchText\">scientific journal</span>.  Scientific journals are required reading for scientists.  The story we analyze was about the number of stars in the universe.  A newspaper story in late 2010 said that scientists think there are three times as many stars as previously was thought.  That sounds dramatic:   Scientists off by a factor of two or three?  Had not scientists been looking at stars for a while? We use an approach similar to the approach we used with marketing information.","The <i>New York Times</i> newspaper article mentioned the names of two scientists and a report in <i>Nature</i> magazine.  These are two sources of the story. The scientists were from Harvard and Yale, two well-known and well-respected institutions. That makes us more likely to accept the story.","The reporter also included a quote from another university, not involved in the research.  The use of a person not directly involved but with expertise in the area also makes us believe in the story.","The story is clear that a hypothesis is being presented.  Not all scientists accept the new theory.  The fact it is a relatively recent article also helps make you think it is a hypothesis, since other scientists have had little time to debate the theory or provide more empirical evidence that supports or disagrees with the theory.","Finding the empirical data is a bit harder, since the scientists summarize it in a highly technical article.  But the journal article the newspaper mentions can be found, and it is clear the scientists are making their data available to others."],"objNames":["wb_news1"]}
+{
+	"cards": [{
+			"lines": [{
+					"type": "title",
+					"text": "Analyzing information in the news "
+				}, {
+					"type": "headline",
+					"text": "Consider the sources "
+				}, {
+					"type": "headline",
+					"text": "Is it a hypothesis or a theory?"
+				}, {
+					"type": "headline",
+					"text": "What data or logic backs it up?"
+				}
+			]
+		}
+	],
+	"definitions": [],
+	"secText": ["In this section, we analyze a news story that was reported in a newspaper and was based on an article in a <span class=\"SearchText\">scientific journal</span>.  Scientific journals are required reading for scientists.  The story we analyze was about the number of stars in the universe.  A newspaper story in late 2010 said that scientists think there are three times as many stars as previously was thought.  That sounds dramatic:   Scientists off by a factor of two or three?  Had not scientists been looking at stars for a while? We use an approach similar to the approach we used with marketing information.", "The <i>New York Times</i> newspaper article mentioned the names of two scientists and a report in <i>Nature</i> magazine.  These are two sources of the story. The scientists were from Harvard and Yale, two well-known and well-respected institutions. That makes us more likely to accept the story.", "The reporter also included a quote from another university, not involved in the research.  The use of a person not directly involved but with expertise in the area also makes us believe in the story.", "The story is clear that a hypothesis is being presented.  Not all scientists accept the new theory.  The fact it is a relatively recent article also helps make you think it is a hypothesis, since other scientists have had little time to debate the theory or provide more empirical evidence that supports or disagrees with the theory.", "Finding the empirical data is a bit harder, since the scientists summarize it in a highly technical article.  But the journal article the newspaper mentions can be found, and it is clear the scientists are making their data available to others.", "Finding the empirical data is a bit harder, since the scientists summarize it in a highly technical article. But the journal article the newspaper mentions can be found, and it is clear the scientists are making their data available to others. We could also research the topic further, consulting other books, journals, and so on."],
+	"objNames": ["wb_news1"]
+}

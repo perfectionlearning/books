@@ -1348,6 +1348,9 @@ background-position: -5px -1536px;
     max-height: 467px;
     top: calc(50% - 41px);
 }
+.videoWrapper.big{
+    max-width: 1024px;
+}
 .videoWrapper.small .pSubtitleWrapper{
     bottom: auto;
     top: initial;
@@ -1902,6 +1905,19 @@ background-position: -5px -1536px;
 }
 /*-------------------------*/
 
+.userManual{
+	position: absolute;
+    width: 200px !important;
+    height: 24px;
+    background: rgba(255,255,255,0.3);
+    right: 30px;
+    top: 3px !important;
+    line-height: 24px;
+    font-size: 16px;
+    border-radius: 5px;
+    text-align: center;
+}
+
 
 /*------------Sub menu----------------*/
 
@@ -2181,8 +2197,12 @@ input.loginInput {
     float: right;
     cursor:pointer;
 
-}.pLabSubmitButton{
+}.pLabSubmitButton,.pPrintPageButton{
     display: none
+}
+
+.pPrintPageButton{
+	width:60px;
 }
 /*---------Setting End---------*/
 

@@ -108,6 +108,7 @@
     this.initiateVideo = function (data) {
       elem["srcData"] = data.src
       $('.videoWrapper').removeClass("small");
+      $('.videoWrapper').removeClass("big");
       elem["title"].html("");
       elem["slideData"].html("");
     }
@@ -167,11 +168,14 @@
         $('.pSubtitleWrapper').hide();
       });
       $('.videoWrapper').removeClass("small")
-
+      $('.videoWrapper').removeClass("big")
       elem["video"].addEventListener('loadedmetadata', function () {
         var width = this.videoWidth, height = this.videoHeight;
         if (width <= 640 && height <= 344) {
           $('.videoWrapper').addClass("small");
+        }
+        if (width > 1500) {
+          $('.videoWrapper').addClass("big");
         }
         elem.currentTime = 0;
         elem.duration = elem["video"].duration;
@@ -240,7 +244,6 @@
       buffer = setInterval(function () {
         checkBuffering();
       }, 500)
-
     }
 
     function setVolume1(e) {
@@ -311,7 +314,6 @@
         $(window).off(mouseEvents.up, sliderUp).on(mouseEvents.up, sliderUp);
       }
     }
-
     function sliderMove(e) {
       elem["scruBar"].addClass("pHover");
       var pos = getMouseOffset(e);
@@ -330,7 +332,6 @@
         elem["progressBar"].css({width: percentage + "%"});
       }
     }
-
     function sliderUp(e) {
       e.stopImmediatePropagation();
       elem["scruBar"].removeClass("pHover").removeClass("pDown");
@@ -395,7 +396,6 @@
       $('.pVolumeSlider').hide();
     }
     function checkBuffering() {
-
       currentPlayPos = elem["video"].currentTime;
       var offset = 1 / checkInterval
       if (

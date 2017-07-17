@@ -1,1 +1,35 @@
-{"cards":[{"lines":[{"type":"title","text":"Vectors  in rectangular form"},{"type":"headline","text":"Are described by coordinate pairs"},{"type":"bullet","text":"  <span class=\"math\">A = (3, 2)</span>"},{"type":"bullet","text":"  <span class=\"math\">B = (4, −1)</span>"}]},{"lines":[{"type":"title","text":"Vectors can start, end at any point"},{"type":"headline","text":"Vector A now starts at (2, 2)"}]}],"definitions":[{"term":"Vectors (rectangular coordinates)","def":"A vector described using <i>x-</i> and <i>y</i>-coordinates."}],"secText":["We use rectangular coordinates to describe <a class='pjumpToTopic' href='javascript:void(0)' data-chap='4' data-topic='0' data-subtopic='1' data-subsection='0'>motion</a> and other properties acting in two dimensions. For instance, the vector <b>A</b> that we show can be described by the rectangular coordinates (3, 2), which describe its endpoint.  It is convenient with vectors to have them start at the origin, (0, 0). ","Vectors can end in any quadrant. For example, <b>B</b> is described as <span class=\"math\">(4, −1).</span>  It too starts at the origin. ","Although it can be simpler to have vectors start at the origin, they can start and end at any point.  ","For instance, we slide the vector <b>A </b>shown in the first card 2 units upward and 2 units to the right.   It still describes a vector with the same magnitude and direction, but it now has different starting and ending points."],"objNames":["wb_math_vector_coordinates_concept1","wb_math_vector_coordinates_concept2"]}
+{
+	"cards": [{
+			"lines": [{
+					"type": "title",
+					"text": "Vectors  in rectangular form"
+				}, {
+					"type": "headline",
+					"text": "Are described by coordinate pairs"
+				}, {
+					"type": "bullet",
+					"text": "  <span class=\"math\">A = (3, 2)</span>"
+				}, {
+					"type": "bullet",
+					"text": "  <span class=\"math\">B = (4, −1)</span>"
+				}
+			]
+		}, {
+			"lines": [{
+					"type": "title",
+					"text": "Vectors can start, end at any point"
+				}, {
+					"type": "headline",
+					"text": "Vector A now starts at (2, 2)"
+				}
+			]
+		}
+	],
+	"definitions": [{
+			"term": "Vectors (rectangular coordinates)",
+			"def": "A vector described using <i>x-</i> and <i>y</i>-coordinates."
+		}
+	],
+	"secText": ["We use rectangular coordinates to describe <a class='pjumpToTopic' href='javascript:void(0)' data-chap='4' data-topic='0' data-subtopic='1' data-subsection='0'>motion</a> and other properties acting in two dimensions. For instance, the vector <b>A</b> that we show can be described by the rectangular coordinates (3, 2), which describe its endpoint.  It is convenient with vectors to have them start at the origin, (0, 0). ", "Vectors can end in any quadrant. For example, <b>B</b> is described as <span class=\"math\">(4, −1).</span>  It too starts at the origin. ", "We started our physics text by analyzing motion along a line. For example, the car you first drove moved straight back-and-forth along a linear road. The motion occurs along one dimension, parallel to an axis.", "The world is a little more complex than this. Objects do not move only along straight-line paths. A car moving around a curve, a baseball thrown from a tall building − these types of motion take place in more than one dimension.", "The car shown on the left moves in two dimensions simultaneously as it goes around the curve. A physicist (and you, shortly) would say that the car moves in both the x- and the y-directions. Its position along the x- and y-axes changes as it moves.", "We can draw a vector to indicate the car’s displacement. As with any displacement vector, it starts at the initial position, and ends at the final position. Its components can be calculated by subtracting the initial point from its endpoint, as the diagram visually shows. We discuss this further next."],
+	"objNames": ["wb_math_vector_coordinates_concept1", "wb_math_vector_coordinates_concept2"]
+}

@@ -194,8 +194,9 @@
     $('.pGrades').next('.pMenuSeperator').remove();
     $('.pGrades').remove();
     $(".pSettingComp[data-type='email']").remove();
-    $(".pChapName[data-chapter='27']").remove();
+   
   $(".pMainHelpWrapper .pButtons[data-type = 'TeacherHelp']").remove();
+  $(".pMainHelpWrapper .userManual").remove();
   $(".phelpInnerWrap[data-type = 'TeacherHelpBody']").remove();
     break;
   }
@@ -723,6 +724,7 @@
   $('.pLabsWrapper').show();
   $(p.mShell).find(".pLabPageWrapper").hide();
     $(p.mShell).find(".pLabSubmitButton").hide();
+	$(p.mShell).find(".pPrintPageButton").hide();
     $(p.mShell).find('.pMainHelpWrapper').hide();
     break;
     case "jsact":
@@ -811,6 +813,7 @@
   manageScreen("search");
   $(".pSearchAreaWrapper").show();
     $(p.mShell).find(".pLabSubmitButton").hide();
+	$(p.mShell).find(".pPrintPageButton").hide();
   // $(".searchButton").off("click").on("click", updateSearchHash);
     // console.log(data)
     $(".searchResults").mCustomScrollbar("destroy").empty();
@@ -1045,12 +1048,13 @@
   }
     $('.pSubMenuWrap').removeClass("open");
     $('.pSubmenuButton').removeClass("open");
-    var chap, unit, section, data, subsection, vIndex;
+    var chap, unit, section, data, subsection, vIndex, pageNo;
   chap = $(this).attr("data-chap");
   unit = $(this).attr("data-topic");
     section = $(this).attr("data-subtopic");
     subsection = $(this).attr("data-subsection");
     vIndex = $(this).attr("data-vIndex");
+	pageNo = $(this).attr("data-pageno");
   e.stopImmediatePropagation();
   $('.tActive').removeClass('tActive');
   $(this).addClass('tActive');
@@ -1059,9 +1063,9 @@
   }
 
   if (typeof vIndex == typeof undefined || (vIndex == false && vIndex != "0")) {
-  data = {"chap": chap, unit: unit, section: section, subSection: subsection};
+  data = {"chap": chap, unit: unit, section: section, subSection: subsection, pageNo: pageNo};
   } else {
-  data = {"chap": chap, unit: unit, section: section, subSection: subsection, vIndex: vIndex};
+  data = {"chap": chap, unit: unit, section: section, subSection: subsection, vIndex: vIndex, pageNo: pageNo};
   }
   $(document).trigger("loadSpecificTopic", data);
   }
@@ -1201,6 +1205,10 @@
     $(this).addClass("active");
     loadTopic(topic_no);
     $(document).trigger("loadSubMenu", {"chap": topic_no});
+	 if(topic_no == "27" && p.usertype== "Student"){
+          $(".pSubtopic[data-subtopic='1']").remove();
+          $(".pSubtopic[data-subtopic='2']").remove();
+	  }
   }
     function labChapterUp(e) {//---->
   $('.pLabsWrapper').hide();
@@ -1231,6 +1239,9 @@
       if (href.split("/")[1] == "labs") {
   $(p.mShell).find(".pLabSubmitButton").show();
   }
+   if (href.split("/")[1] == "physical labs" || href.split("/")[1] == "demonstrations") {
+        $(p.mShell).find(".pPrintPageButton").show().off("click", printPage).on("click", printPage);
+      }
         var mainWrapper = $(p.mShell).find(".pLabPageWrapper");
     $(p.mShell).find(".pLabPageWrapper").show();
       var contentWrapper = $(p.mShell).find(".pLabPageContentWrapper");     contentWrapper.mCustomScrollbar("destroy").empty();
@@ -1282,7 +1293,27 @@
     });
   }//---->
 
-
+   function printPage(e) {
+      var OpenWindow = window.open('course/template/printPage.html', '_blank', 'width=1024,height=470,resizable=1');
+      window.OpenWindow = OpenWindow;
+      var link = document.createElement("link");
+      link.onload = function () {
+        console.log("link")
+        setTimeout(function () {
+          OpenWindow.print();
+        }, 500);
+      }
+      link.rel = "stylesheet";
+      link.href = "../../core/main/css/style.css";
+      OpenWindow.onload = function () {
+        console.log("window")
+        OpenWindow.document.head.append(link);
+        OpenWindow.document.getElementById("container").innerHTML = $(".pLabPageWrapper").html();
+        $(OpenWindow.document.getElementById("container")).find(".pLabSubMenu").remove();
+        $(OpenWindow.document.getElementById("container")).find(".pLabSubMenuButton").remove();
+        $(OpenWindow.document.getElementById("container")).css("width", "1024px");
+      }
+    }
 
   function btnStateReset() {
     $(p.mShell).find(".pButtons").removeClass("pHover").removeClass("pDown");
@@ -1331,6 +1362,8 @@
     $(p.mShell).find('.pBreadCrumb').hide();
     $(p.mShell).find(".pLabPageWrapper").hide();
     $(p.mShell).find(".pLabSubmitButton").hide();
+	$(p.mShell).find(".pPrintPageButton").hide();
+	$(p.mShell).find('.pMainHelpWrapper').show();
     $(p.mShell).find('.pBookWrapper').show();
     $(".pSearchAreaWrapper").hide();
     disableHeaderSearch(false);
@@ -1343,6 +1376,8 @@
     $('.pLabsWrapper').show();
   $(p.mShell).find(".pLabPageWrapper").hide();
   $(p.mShell).find(".pLabSubmitButton").hide();
+  $(p.mShell).find(".pPrintPageButton").hide();
+  $(p.mShell).find('.pMainHelpWrapper').show();
     $(".pSearchAreaWrapper").hide();
     disableHeaderSearch(false);
     overlayDown()
@@ -1378,6 +1413,7 @@
     $(p.mShell).find('.pLabsWrapper').hide();
     $(p.mShell).find('.pBreadCrumb').hide();
     $(p.mShell).find('.pBookWrapper').hide();
+	$(p.mShell).find('.pMainHelpWrapper').show();
     $(p.mShell).find(".pLabPageWrapper").hide();
     $(p.mShell).find(".pLabSubmitButton").hide();
     $(p.mShell).find('.pActivitySummary').hide();
@@ -1385,6 +1421,7 @@
     $(p.mShell).find('.pQuizCheck').hide();
     $(p.mShell).find('.pActivityArea').hide();
     $(p.mShell).find('.pJsActWrapper').hide();
+	$(p.mShell).find(".pPrintPageButton").hide();
     $(p.mShell).find('.pSettingArea').show();
     overlayDown();
     break;
@@ -1473,6 +1510,7 @@
     $('.pLabsWrapper').show();
     $(p.mShell).find(".pLabPageWrapper").hide();
     $(p.mShell).find(".pLabSubmitButton").hide();
+	$(p.mShell).find(".pPrintPageButton").hide();
     break;
     case"password":
     validatePassword();
@@ -1497,6 +1535,7 @@
     $(p.mShell).find('.pBreadCrumb').hide();
     $(p.mShell).find(".pLabPageWrapper").hide();
     $(p.mShell).find(".pLabSubmitButton").hide();
+	$(p.mShell).find(".pPrintPageButton").hide();
   $(p.mShell).find('.pBookWrapper').show();
   $(".pSearchAreaWrapper").hide();
     disableHeaderSearch(false);
@@ -1514,6 +1553,9 @@
   $(".phelpInnerWrap[data-type='studentHelpBody']").hide();
     $(".phelpInnerWrap[data-type='TeacherHelpBody']").show();
     break;
+	case 'userManual':
+          window.open("assets/pdf/fpp-user-manual.pdf");
+          break;
   }
   }
   function validatePassword() {
