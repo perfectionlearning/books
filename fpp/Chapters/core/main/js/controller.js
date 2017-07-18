@@ -74,14 +74,14 @@
 
   // Perform REST call to get user ID from session data.
   function getUserId() {
-  httpRequest(p.session_info, "json", function (data) {
-  if (data.hasOwnProperty("user_id")) {
-  p.userId = data.user_id;
-    p.usertype = data.homedisplay;
-  } else if (data.hasOwnProperty("data")) {
-  p.userId = data.data.user_id;
-    p.usertype = data.data.homedisplay;
-  }
+    httpRequest(p.session_info, "json", function (data) {
+      if (data.hasOwnProperty("user_id")) {
+        p.userId = data.user_id;
+        p.usertype = data.homedisplay;
+      } else if (data.hasOwnProperty("data")) {
+        p.userId = data.data.user_id;
+        p.usertype = data.data.homedisplay;
+      }
 
   view.setUserType(p.usertype);
     $(document).trigger("createShell");
@@ -92,35 +92,39 @@
 
   // Get FPP courses
   function getFPPCourses() {
-  httpRequest(p.rest_courses, "json", function (data) {
-  var fpp_courses = data.filter((item) => { return item.product === 'fpp'; });
-    getSyncIDs(fpp_courses);
-  }, function () {
-  });
+    httpRequest(p.rest_courses, "json", function (data) {
+      var fpp_courses = data.filter((item) => { return item.product === 'fpp'; });
+      getSyncIDs(fpp_courses);
+    }, function () {
+    });
   }
 
   // Get syncID to instanceID from FPP assignments.
   function getSyncIDs(fpp_courses) {
   if (fpp_courses.length > 0) {
-  var course = fpp_courses.shift();
+    var course = fpp_courses.shift();
     $.ajax({
-    url: p.rest_select_course + course.id,
+      url: p.rest_select_course + course.id,
       method: 'PUT',
       data: '{"current:"' + p.session_info.course_id + ', "id":' + course.id + '}',
       complete: function(jqXHR, textStatus) {
-      httpRequest(p.rest_assigns, "json", function(data) {
-      var qcs = data.filter((item) => { return item.type === 'quickcheck'; });
-        var syncIDs = {};
-        qcs.forEach((item) => {
-        syncIDs[item.syncID] = item.id
+        httpRequest(p.rest_assigns, "json", function(data) {
+          var qcs = data.filter((item) => { return item.type === 'quickcheck'; });
+          var syncIDs = {};
+          qcs.forEach((item) => {
+            syncIDs[item.syncID] = item.id
+          });
+          if (Object.keys(syncIDs).length > 0) {
+            	p.syncIDs = syncIDs;
+          }
+          getSyncIDs(fpp_courses);
         });
-        p.syncIDs = syncIDs;
-        getSyncIDs(fpp_courses);
-      });
       }
     });
   } else {
-  fillInInstanceIds(p.syncIDs);
+    if (p.syncIDs) {
+      fillInInstanceIds(p.syncIDs);
+    }
   }
   }
 
@@ -210,7 +214,6 @@
 
   }
   this.hashChange = function (data) {
-  console.log(data.type);
     if (data.type == "chapter") {
   p.chap = data.chap;
     p.unit = data.unit;
@@ -316,7 +319,6 @@
       _temp.screenNo = screenNo;
       _temp.screenData = data1;
       _temp.instance_id = p.bookData[p.chap]["instance_id"];
-      console.log('getQuizData callback', _temp.instance_id);
       _temp.problem_inst_id = p.bookData[p.chap]["unit"][p.unit]["section"][p.section]["subsection"][p.subSection]["problem_inst_id"];
       $(document).trigger("loadQuizCheck", _temp);
     });
@@ -396,9 +398,7 @@
   $(".pSubMenuTopic[data-chap='" + p.chap + "'][data-topic='" + p.unit + "'][data-subtopic='" + p.section + "'][data-subsection='" + p.subSection + "'] ").prevUntil('.pSubMenuTopicHeader').prev().show();
   }
   function getQuizData(_data, cb) {
-  console.log('getQuizData', p.bookData[p.chap]);
     httpRequest(p.get_link + p.bookData[p.chap]["instance_id"], "json", function (data) {
-    console.log(data);
       data = data[p.bookData[p.chap]["unit"][p.unit]["section"][p.section]["subsection"][p.subSection]["problem_inst_id"]];
       if (!data.video && _data['video']) {
     data.video = _data['video'];
@@ -414,7 +414,6 @@
   for (var i in data) {
   data[i] = cleanMML(data[i]);
   }
-  console.log(data);
     cb(data);
   }, function () {
   cb({json: false})
