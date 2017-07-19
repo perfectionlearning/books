@@ -132,7 +132,7 @@
   function fillInInstanceIds(syncIDs) {
   p.bookData.forEach((item) => {
   if (item.sync_id) {
-  item.instance_id = syncIDs[item.sync_id];
+  item.instance_id = syncIDs[item.sync_id] || syncIDs[item.fl_sync_id];
   }
   });
     loadScreen();
