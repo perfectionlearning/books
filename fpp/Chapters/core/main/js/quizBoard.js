@@ -380,16 +380,46 @@
     }
 
 
+    /*
+        Get the problem status from the problem data.
+    */
+    function getProblemStatus() {
+      var id = q.problem_inst_id || -1;
+      // To determine whether the problem was answered correctly before, we need the status from the problem data, not the results from the answer submission.
+      var problem_status = q.screenData[id] && q.screenData[id].status || '';
+      return problem_status;
+    }
+
+    /*
+        Determine which "Correct" message to use.
+    */
+    function getCorrectMsgNdx(data) {
+      var msg_ndx = 1; // use "first time" correct message if problem_status is "new" or "incorrect".
+      var problem_status = getProblemStatus();
+      if (problem_status === 'correct') {
+        // if problem was already answered correctly, use the "already answered" message.
+        msg_ndx = 0;
+      }
+      return msg_ndx;
+    }
+
+    /*
+        Update the problem status in the problem data.
+    */
+    function setProblemStatus(status) {
+      var id = q.problem_inst_id || -1;
+      q.screenData[id].status = status;
+
+    }
+
     function checkUserResponse(data, cb) {
+      var feedbackCorrectNdx = getCorrectMsgNdx(data);
       console.log(data);
       $('.pQuizBoard .pQuizFeedback').removeClass('correct').removeClass('incorrect')
       if (data.iscorrect) {
-        var feedBackTxt;
-        if (data.new_status == "correct") {
-          feedBackTxt = feedback.correct[0];
-        } else {
-          feedBackTxt = feedback.correct[1];
-        }
+        var correctMsgNdx = getCorrectMsgNdx(data);
+        var feedBackTxt = feedback.correct[correctMsgNdx];;
+        setProblemStatus('correct');
         $(".step").find("input").css("background-color", "#ebebe4");
         $('.pAnsWrap').find("input").css("background-color", "#ebebe4");
         $('.pAnsWrap').find("input").attr("disabled", true);
@@ -399,6 +429,7 @@
         $('.pQuizBoard .pQuizButtons').not('.quizNavButtons').addClass('pDisable');
         hideLoader();
       } else {
+        setProblemStatus('incorrect');
         var feedBackTxt = feedback["incorrect"][q.submitCnt];
         q.submitCnt++;
         if (q.submitCnt == 3) {
