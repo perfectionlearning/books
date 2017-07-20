@@ -130,11 +130,14 @@
 
   // Fill in instance_ids in BookDefinition object.
   function fillInInstanceIds(syncIDs) {
-  p.bookData.forEach((item) => {
-  if (item.sync_id) {
-  item.instance_id = syncIDs[item.sync_id] || syncIDs[item.fl_sync_id];
-  }
-  });
+    p.bookData.forEach((item) => {
+      if (item.sync_id) {
+        // Check to see if the fl_sync_id is in the list of syncIDs. If so, use it.
+        if (syncIDs[item.fl_sync_id]) item.sync_id = item.fl_sync_id;
+
+        item.instance_id = syncIDs[item.sync_id] || syncIDs[item.fl_sync_id];
+      }
+    });
     loadScreen();
   }
 
@@ -399,6 +402,12 @@
   }
   function getQuizData(_data, cb) {
     httpRequest(p.get_link + p.bookData[p.chap]["instance_id"], "json", function (data) {
+      // Check for FL instance ID
+      var fl_inst_id = p.bookData[p.chap]["unit"][p.unit]["section"][p.section]["subsection"][p.subSection]["fl_problem_inst_id"];
+      var inst_id = p.bookData[p.chap]["unit"][p.unit]["section"][p.section]["subsection"][p.subSection]["problem_inst_id"];
+      // If this assignment uses FL instance IDs, replace the problem_inst_id with the one for FL. This replacement will remain in place for submission, as well.
+      if (data[fl_inst_id]) p.bookData[p.chap]["unit"][p.unit]["section"][p.section]["subsection"][p.subSection]["problem_inst_id"] = fl_inst_id;
+
       data = data[p.bookData[p.chap]["unit"][p.unit]["section"][p.section]["subsection"][p.subSection]["problem_inst_id"]];
       if (!data.video && _data['video']) {
     data.video = _data['video'];
