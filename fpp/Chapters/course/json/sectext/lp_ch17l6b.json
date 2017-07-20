@@ -1,18 +1,1 @@
-{
-	"cards": [{
-			"lines": [{
-					"type": "title",
-					"text": "Applying Lenz’s law"
-				}, {
-					"type": "headline",
-					"text": "Magnetic field due to current opposes change in flux"
-				}
-			]
-		}
-	],
-	"definitions": [],
-	"secText": ["  <b>Lesson:</b>  <b>    <br />  </b>1. Describe <a class='pjumpToTopic' href='javascript:void(0)' data-chap='17' data-topic='5' data-subtopic='1' data-subsection='0'>Lenz's law</a>.<br />2. <a class='pjumpToTopic' href='javascript:void(0)' data-chap='17' data-topic='5' data-subtopic='1' data-subsection='1'>Experiment</a> with motional induction by moving a wire through a magnetic field.<br />3. Determine the <a class='pjumpToTopic' href='javascript:void(0)' data-chap='17' data-topic='5' data-subtopic='1' data-subsection='2'>direction of the current</a> in a wire moving through a magnetic field using Lenz's law.<br />4. Define and calculate the <a class='pjumpToTopic' href='javascript:void(0)' data-chap='17' data-topic='5' data-subtopic='1' data-subsection='3'>emf</a> induced by a moving wire in a magnetic field.<br />5. Apply the concept of motional emf and torque to <a class='pjumpToTopic' href='javascript:void(0)' data-chap='17' data-topic='5' data-subtopic='2' data-subsection='0'>electric generators</a>.", 
-	
-	"  <b>Quick Review:</b>  <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='sum_lenz'>Lenz's Law</a>"],
-	"objNames": ["wb_motional_induced_emf_force2"]
-}
+{"cards":[{"lines":[{"type":"title","text":"Applying Lenz\u2019s law"},{"type":"headline","text":"Magnetic field due to current opposes change in flux"}]}],"definitions":[],"secText":["  <b>Lesson:<\/b>  <b>    <br \/>  <\/b>1. Describe <a class='pjumpToTopic' href='javascript:void(0)' data-chap='17' data-topic='5' data-subtopic='1' data-subsection='0'>Lenz's law<\/a>.<br \/>2. <a class='pjumpToTopic' href='javascript:void(0)' data-chap='17' data-topic='5' data-subtopic='1' data-subsection='1'>Experiment<\/a> with motional induction by moving a wire through a magnetic field.<br \/>3. Determine the <a class='pjumpToTopic' href='javascript:void(0)' data-chap='17' data-topic='5' data-subtopic='1' data-subsection='2'>direction of the current<\/a> in a wire moving through a magnetic field using Lenz's law.<br \/>4. Define and calculate the <a class='pjumpToTopic' href='javascript:void(0)' data-chap='17' data-topic='5' data-subtopic='1' data-subsection='3'>emf<\/a> induced by a moving wire in a magnetic field.<br \/>5. Apply the concept of motional emf and torque to <a class='pjumpToTopic' href='javascript:void(0)' data-chap='17' data-topic='5' data-subtopic='2' data-subsection='0'>electric generators<\/a>.","  <b>Homework:<\/b>  <span class=\"KBInternalLink\"><a href=\"assign.html#OHW 17.06\">OHW 17.06<\/a><\/span>","  <b>Quick Review:<\/b>  <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='sum_lenz'>Lenz's Law<\/a>"],"objNames":["wb_motional_induced_emf_force2"]}
