@@ -86,7 +86,8 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "294383",
                                     "SectionHeading": "Quickcheck",
-                                    "ref": "qcsec_di1024.json"
+                                    "ref": "qcsec_di1024.json",
+                                    "fl_problem_inst_id": "302030"
                                 }
                             ]
                         },
@@ -149,7 +150,8 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "294385",
                                     "SectionHeading": "Quickcheck",
-                                    "ref": "qcsec_di17.json"
+                                    "ref": "qcsec_di17.json",
+                                    "fl_problem_inst_id": "302031"
                                 }
                             ]
                         },
@@ -165,7 +167,8 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "294386",
                                     "SectionHeading": "Quickcheck",
-                                    "ref": "qcsec_di18.json"
+                                    "ref": "qcsec_di18.json",
+                                    "fl_problem_inst_id": "302032"
                                 },
                                 {
                                     "type": "activity",
@@ -218,7 +221,8 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "294387",
                                     "SectionHeading": "Quickcheck",
-                                    "ref": "qcsec_di19.json"
+                                    "ref": "qcsec_di19.json",
+                                    "fl_problem_inst_id": "302033"
                                 }
                             ]
                         },
@@ -279,7 +283,8 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "294388",
                                     "SectionHeading": "Quickcheck",
-                                    "ref": "qcsec_di21.json"
+                                    "ref": "qcsec_di21.json",
+                                    "fl_problem_inst_id": "302034"
                                 },
                                 {
                                     "type": "activity",
@@ -305,7 +310,8 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "294389",
                                     "SectionHeading": "Quickcheck",
-                                    "ref": "qcsec_5024mi.json"
+                                    "ref": "qcsec_5024mi.json",
+                                    "fl_problem_inst_id": "302035"
                                 }
                             ]
                         },
@@ -347,7 +353,8 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "294390",
                                     "SectionHeading": "Quickcheck",
-                                    "ref": "qcsec_di1734.json"
+                                    "ref": "qcsec_di1734.json",
+                                    "fl_problem_inst_id": "302036"
                                 },
                                 {
                                     "type": "activity",
@@ -500,7 +507,8 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "294391",
                                     "SectionHeading": "Quickcheck",
-                                    "ref": "qcsec_di20.json"
+                                    "ref": "qcsec_di20.json",
+                                    "fl_problem_inst_id": "302037"
                                 }
                             ]
                         },
@@ -636,13 +644,15 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "294393",
                                     "SectionHeading": "Quickcheck: Freefall acceleration 1",
-                                    "ref": "qcsec_di24.json"
+                                    "ref": "qcsec_di24.json",
+                                    "fl_problem_inst_id": "302038"
                                 },
                                 {
                                     "type": "quizcheck",
                                     "problem_inst_id": "294394",
                                     "SectionHeading": "Quickcheck: Freefall acceleration 2",
-                                    "ref": "qcsec_di25.json"
+                                    "ref": "qcsec_di25.json",
+                                    "fl_problem_inst_id": "302039"
                                 }
                             ]
                         },
@@ -698,7 +708,8 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "294395",
                                     "SectionHeading": " Quickcheck: Relative velocity ",
-                                    "ref": "qcsec_j359.json"
+                                    "ref": "qcsec_j359.json",
+                                    "fl_problem_inst_id": "302040"
                                 }
                             ]
                         },
@@ -798,7 +809,8 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "294396",
                                     "SectionHeading": " Quickcheck: Unit conversions",
-                                    "ref": "qcsec_c3763.json"
+                                    "ref": "qcsec_c3763.json",
+                                    "fl_problem_inst_id": "302041"
                                 },
                                 {
                                     "type": "playVideo",
@@ -867,7 +879,8 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "294400",
                                     "SectionHeading": " Quickcheck: Scientific notation 1",
-                                    "ref": "qcsec_c3761.json"
+                                    "ref": "qcsec_c3761.json",
+                                    "fl_problem_inst_id": "302043"
                                 },
                                 {
                                     "type": "playVideo",
@@ -884,7 +897,8 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "294401",
                                     "SectionHeading": " Quickcheck: Scientific notation 2",
-                                    "ref": "qcsec_c3762.json"
+                                    "ref": "qcsec_c3762.json",
+                                    "fl_problem_inst_id": "302044"
                                 },
                                 {
                                     "type": "playVideo",
@@ -916,7 +930,8 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "294399",
                                     "SectionHeading": " Quickcheck: Multiply scientific notation",
-                                    "ref": "qcsec_c3764.json"
+                                    "ref": "qcsec_c3764.json",
+                                    "fl_problem_inst_id": "302042"
                                 },
                                 {
                                     "type": "videoScreen",
@@ -927,7 +942,8 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "294402",
                                     "SectionHeading": " Quickcheck: Divide scientific notationsyte",
-                                    "ref": "qcsec_c3765.json"
+                                    "ref": "qcsec_c3765.json",
+                                    "fl_problem_inst_id": "302045"
                                 }
                             ]
                         },
@@ -1290,7 +1306,8 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "294403",
                                     "SectionHeading": "Quickcheck: Evaluating expressions with powers",
-                                    "ref": "qcsec_a357.json"
+                                    "ref": "qcsec_a357.json",
+                                    "fl_problem_inst_id": "302046"
                                 },
                                 {
                                     "type": "videoScreen",
@@ -1301,7 +1318,8 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "294404",
                                     "SectionHeading": "Quickcheck: Evaluating expressions with fraction bars",
-                                    "ref": "qcsec_0359.json"
+                                    "ref": "qcsec_0359.json",
+                                    "fl_problem_inst_id": "302047"
                                 }
                             ]
                         },
@@ -1390,13 +1408,15 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "294407",
                                     "SectionHeading": "Quickcheck: Velocity in rectangular notation ",
-                                    "ref": "qcsec_j358.json"
+                                    "ref": "qcsec_j358.json",
+                                    "fl_problem_inst_id": "302049"
                                 },
                                 {
                                     "type": "quizcheck",
                                     "problem_inst_id": "294406",
                                     "SectionHeading": "Quickcheck: Velocity components",
-                                    "ref": "qcsec_r358.json"
+                                    "ref": "qcsec_r358.json",
+                                    "fl_problem_inst_id": "302048"
                                 },
                                 {
                                     "type": "activity",
@@ -1621,7 +1641,8 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "294408",
                                     "SectionHeading": "Quickcheck: Adding vectors",
-                                    "ref": "qcsec_di29.json"
+                                    "ref": "qcsec_di29.json",
+                                    "fl_problem_inst_id": "302050"
                                 }
                             ]
                         },
@@ -1744,7 +1765,8 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "294412",
                                     "SectionHeading": "Quickcheck: Multiplying a rectangular vector by a scalar",
-                                    "ref": "qcsec_di30.json"
+                                    "ref": "qcsec_di30.json",
+                                    "fl_problem_inst_id": "302052"
                                 }
                             ]
                         },
@@ -1760,7 +1782,8 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "294411",
                                     "SectionHeading": "Quickcheck: Polar notation",
-                                    "ref": "qcsec_j358.json"
+                                    "ref": "qcsec_j358.json",
+                                    "fl_problem_inst_id": "302051"
                                 }
                             ]
                         },
@@ -1776,7 +1799,8 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "294413",
                                     "SectionHeading": "Quickcheck: Multiplying a polar vector by a scalar ",
-                                    "ref": "qcsec_di31.json"
+                                    "ref": "qcsec_di31.json",
+                                    "fl_problem_inst_id": "302053"
                                 }
                             ]
                         },
@@ -1819,7 +1843,8 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "295749",
                                     "SectionHeading": "Quickcheck: Converting rectangular to polar",
-                                    "ref": "qcsec_di33.json"
+                                    "ref": "qcsec_di33.json",
+                                    "fl_problem_inst_id": "302054"
                                 }
                             ]
                         },
@@ -1835,7 +1860,8 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "295750",
                                     "SectionHeading": "Quickcheck: Displacement in rectangular form",
-                                    "ref": "qcsec_di32.json"
+                                    "ref": "qcsec_di32.json",
+                                    "fl_problem_inst_id": "302055"
                                 }
                             ]
                         },
@@ -1915,7 +1941,8 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "294414",
                                     "SectionHeading": "Quickcheck: Net force",
-                                    "ref": "qcsec_di45.json"
+                                    "ref": "qcsec_di45.json",
+                                    "fl_problem_inst_id": "302056"
                                 }
                             ]
                         },
@@ -1987,7 +2014,8 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "294415",
                                     "SectionHeading": "Quickcheck: Newton's second law",
-                                    "ref": "qcsec_di38.json"
+                                    "ref": "qcsec_di38.json",
+                                    "fl_problem_inst_id": "302057"
                                 },
                                 {
                                     "type": "videoScreen",
@@ -1998,7 +2026,8 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "294416",
                                     "SectionHeading": "Quickcheck: Acceleration and net force",
-                                    "ref": "qcsec_di46.json"
+                                    "ref": "qcsec_di46.json",
+                                    "fl_problem_inst_id": "302058"
                                 }
                             ]
                         },
@@ -2080,13 +2109,15 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "294429",
                                     "SectionHeading": "Quickcheck: Newton's third law",
-                                    "ref": "qcsec_di39.json"
+                                    "ref": "qcsec_di39.json",
+                                    "fl_problem_inst_id": "302063"
                                 },
                                 {
                                     "type": "quizcheck",
                                     "problem_inst_id": "294428",
                                     "SectionHeading": "Quickcheck: Weight",
-                                    "ref": "qcsec_di37.json"
+                                    "ref": "qcsec_di37.json",
+                                    "fl_problem_inst_id": "302062"
                                 }
                             ]
                         },
@@ -2102,7 +2133,8 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "294427",
                                     "SectionHeading": "Quickcheck: Normal force",
-                                    "ref": "qcsec_di40.json"
+                                    "ref": "qcsec_di40.json",
+                                    "fl_problem_inst_id": "302061"
                                 }
                             ]
                         },
@@ -2118,7 +2150,8 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "294426",
                                     "SectionHeading": "Quickcheck: Tension",
-                                    "ref": "qcsec_di41.json"
+                                    "ref": "qcsec_di41.json",
+                                    "fl_problem_inst_id": "302060"
                                 }
                             ]
                         },
@@ -2149,13 +2182,15 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "294430",
                                     "SectionHeading": "Quickcheck: Static friction",
-                                    "ref": "qcsec_di42.json"
+                                    "ref": "qcsec_di42.json",
+                                    "fl_problem_inst_id": "302064"
                                 },
                                 {
                                     "type": "quizcheck",
                                     "problem_inst_id": "294425",
                                     "SectionHeading": "Quickcheck: Kinetic friction",
-                                    "ref": "qcsec_di43.json"
+                                    "ref": "qcsec_di43.json",
+                                    "fl_problem_inst_id": "302059"
                                 }
                             ]
                         },
@@ -2199,7 +2234,8 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "294431",
                                     "SectionHeading": "Quickcheck: Hooke's law",
-                                    "ref": "qcsec_di44.json"
+                                    "ref": "qcsec_di44.json",
+                                    "fl_problem_inst_id": "302065"
                                 }
                             ]
                         },
@@ -2261,7 +2297,8 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "294432",
                                     "SectionHeading": "Quickcheck: Free-body diagram",
-                                    "ref": "qcsec_di551122.json"
+                                    "ref": "qcsec_di551122.json",
+                                    "fl_problem_inst_id": "302066"
                                 }
                             ]
                         },
@@ -2399,13 +2436,15 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "294434",
                                     "SectionHeading": "Quickcheck: Work for horizontal force and distance ",
-                                    "ref": "qcsec_jz56.json"
+                                    "ref": "qcsec_jz56.json",
+                                    "fl_problem_inst_id": "302074"
                                 },
                                 {
                                     "type": "quizcheck",
                                     "problem_inst_id": "294433",
                                     "SectionHeading": "Quickcheck: Work for vertical force and distance",
-                                    "ref": "qcsec_jz61.json"
+                                    "ref": "qcsec_jz61.json",
+                                    "fl_problem_inst_id": "302073"
                                 }
                             ]
                         },
@@ -2517,7 +2556,8 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "294384",
                                     "SectionHeading": "Quickcheck: Calculating kinetic energy",
-                                    "ref": "qcsec_jz57.json"
+                                    "ref": "qcsec_jz57.json",
+                                    "fl_problem_inst_id": "302067"
                                 }
                             ]
                         },
@@ -2544,7 +2584,8 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "294392",
                                     "SectionHeading": "Quickcheck: Work and kinetic energy",
-                                    "ref": "qcsec_jz58.json"
+                                    "ref": "qcsec_jz58.json",
+                                    "fl_problem_inst_id": "302068"
                                 }
                             ]
                         },
@@ -2596,7 +2637,8 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "294397",
                                     "SectionHeading": "Quickcheck: Gravitational potential energy",
-                                    "ref": "qcsec_jz60.json"
+                                    "ref": "qcsec_jz60.json",
+                                    "fl_problem_inst_id": "302069"
                                 },
                                 {
                                     "type": "videoScreen",
@@ -2659,7 +2701,8 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "294409",
                                     "SectionHeading": "Quickcheck: Calculate kinetic energy",
-                                    "ref": "qcsec_jz63.json"
+                                    "ref": "qcsec_jz63.json",
+                                    "fl_problem_inst_id": "302071"
                                 },
                                 {
                                     "type": "playVideo",
@@ -2671,7 +2714,8 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "294405",
                                     "SectionHeading": "Quickcheck: Calculate velocity",
-                                    "ref": "qcsec_jz62.json"
+                                    "ref": "qcsec_jz62.json",
+                                    "fl_problem_inst_id": "302070"
                                 },
                                 {
                                     "type": "activity",
@@ -2719,7 +2763,8 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "294410",
                                     "SectionHeading": "Quickcheck: Power",
-                                    "ref": "qcsec_jz59.json"
+                                    "ref": "qcsec_jz59.json",
+                                    "fl_problem_inst_id": "302072"
                                 }
                             ]
                         },
@@ -2850,7 +2895,8 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "294417",
                                     "SectionHeading": "Quickcheck: Momentum",
-                                    "ref": "qcsec_jz64.json"
+                                    "ref": "qcsec_jz64.json",
+                                    "fl_problem_inst_id": "302075"
                                 }
                             ]
                         },
@@ -2872,7 +2918,8 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "294418",
                                     "SectionHeading": "Quickcheck: Impulse",
-                                    "ref": "qcsec_jz65.json"
+                                    "ref": "qcsec_jz65.json",
+                                    "fl_problem_inst_id": "302076"
                                 },
                                 {
                                     "type": "onlyVideo",
@@ -2924,13 +2971,15 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "294421",
                                     "SectionHeading": "Quickcheck: Conservation of momentum 1",
-                                    "ref": "qcsec_jz67.json"
+                                    "ref": "qcsec_jz67.json",
+                                    "fl_problem_inst_id": "302078"
                                 },
                                 {
                                     "type": "quizcheck",
                                     "problem_inst_id": "294420",
                                     "SectionHeading": "Quickcheck: Conservation of momentum 2",
-                                    "ref": "qcsec_jz68.json"
+                                    "ref": "qcsec_jz68.json",
+                                    "fl_problem_inst_id": "302077"
                                 },
                                 {
                                     "type": "playVideo",
@@ -3049,7 +3098,8 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "294422",
                                     "SectionHeading": "Quickcheck: Center of mass",
-                                    "ref": "qcsec_jz69.json"
+                                    "ref": "qcsec_jz69.json",
+                                    "fl_problem_inst_id": "302079"
                                 }
                             ]
                         },
@@ -3143,7 +3193,8 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "294423",
                                     "SectionHeading": " Quickcheck: UCM and period",
-                                    "ref": "qcsec_5081.json"
+                                    "ref": "qcsec_5081.json",
+                                    "fl_problem_inst_id": "302080"
                                 }
                             ]
                         },
@@ -3159,7 +3210,8 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "294424",
                                     "SectionHeading": " Quickcheck: Centripetal acceleration",
-                                    "ref": "qcsec_5082.json"
+                                    "ref": "qcsec_5082.json",
+                                    "fl_problem_inst_id": "302081"
                                 },
                                 {
                                     "type": "activity",
@@ -3207,7 +3259,8 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "294435",
                                     "SectionHeading": " Quickcheck: Centripetal force",
-                                    "ref": "qcsec_5083.json"
+                                    "ref": "qcsec_5083.json",
+                                    "fl_problem_inst_id": "302082"
                                 },
                                 {
                                     "type": "playVideo",
@@ -3280,7 +3333,8 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "294436",
                                     "SectionHeading": " Quickcheck: Force of gravity",
-                                    "ref": "qcsec_5084.json"
+                                    "ref": "qcsec_5084.json",
+                                    "fl_problem_inst_id": "302083"
                                 }
                             ]
                         },
@@ -3588,7 +3642,8 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "294437",
                                     "SectionHeading": "Quickcheck: Angular velocity",
-                                    "ref": "qcsec_jz72.json"
+                                    "ref": "qcsec_jz72.json",
+                                    "fl_problem_inst_id": "302084"
                                 }
                             ]
                         },
@@ -3604,7 +3659,8 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "294438",
                                     "SectionHeading": "Quickcheck: Angular acceleration",
-                                    "ref": "qcsec_jz73.json"
+                                    "ref": "qcsec_jz73.json",
+                                    "fl_problem_inst_id": "302085"
                                 }
                             ]
                         },
@@ -3659,7 +3715,8 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "294439",
                                     "SectionHeading": "Quickcheck: Rotational motion equations",
-                                    "ref": "qcsec_jz74.json"
+                                    "ref": "qcsec_jz74.json",
+                                    "fl_problem_inst_id": "302086"
                                 }
                             ]
                         },
@@ -3675,7 +3732,8 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "294440",
                                     "SectionHeading": "Quickcheck: Tangential velocity",
-                                    "ref": "qcsec_jz75.json"
+                                    "ref": "qcsec_jz75.json",
+                                    "fl_problem_inst_id": "302087"
                                 },
                                 {
                                     "type": "playVideo",
@@ -3723,7 +3781,8 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "295753",
                                     "SectionHeading": "Quickcheck: Torque",
-                                    "ref": "qcsec_jz76.json"
+                                    "ref": "qcsec_jz76.json",
+                                    "fl_problem_inst_id": "302093"
                                 }
                             ]
                         },
@@ -3739,7 +3798,8 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "294442",
                                     "SectionHeading": "Quickcheck: Lever arm",
-                                    "ref": " qcsec_jz78.json"
+                                    "ref": " qcsec_jz78.json",
+                                    "fl_problem_inst_id": "302088"
                                 }
                             ]
                         },
@@ -3755,7 +3815,8 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "294443",
                                     "SectionHeading": "Quickcheck: Net torque",
-                                    "ref": "qcsec_jz77.json"
+                                    "ref": "qcsec_jz77.json",
+                                    "fl_problem_inst_id": "302089"
                                 }
                             ]
                         },
@@ -3798,7 +3859,8 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "294444",
                                     "SectionHeading": "Quickcheck: Torque and inertia",
-                                    "ref": "qcsec_jz81.json"
+                                    "ref": "qcsec_jz81.json",
+                                    "fl_problem_inst_id": "302090"
                                 }
                             ]
                         },
@@ -3865,7 +3927,8 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "294445",
                                     "SectionHeading": "Quickcheck: Angular momentum",
-                                    "ref": "qcsec_jz79.json"
+                                    "ref": "qcsec_jz79.json",
+                                    "fl_problem_inst_id": "302091"
                                 }
                             ]
                         },
@@ -3881,7 +3944,8 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "294446",
                                     "SectionHeading": "Quickcheck: Angular momentum",
-                                    "ref": "qcsec_jz80.json"
+                                    "ref": "qcsec_jz80.json",
+                                    "fl_problem_inst_id": "302092"
                                 }
                             ]
                         },
@@ -4068,7 +4132,8 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "294447",
                                     "SectionHeading": "Quickcheck: Pressure",
-                                    "ref": "qcsec_j356.json"
+                                    "ref": "qcsec_j356.json",
+                                    "fl_problem_inst_id": "302095"
                                 }
                             ]
                         },
@@ -4084,7 +4149,8 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "294448",
                                     "SectionHeading": "Quickcheck: Density",
-                                    "ref": "qcsec_j358.json"
+                                    "ref": "qcsec_j358.json",
+                                    "fl_problem_inst_id": "302096"
                                 }
                             ]
                         },
@@ -4138,7 +4204,8 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "294449",
                                     "SectionHeading": "Quickcheck: Calculating pressure due to a liquid",
-                                    "ref": "qcsec_j362.json"
+                                    "ref": "qcsec_j362.json",
+                                    "fl_problem_inst_id": "302097"
                                 },
                                 {
                                     "type": "onlyVideo",
@@ -4204,7 +4271,8 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "295755",
                                     "SectionHeading": " Quickcheck: Combining pressures",
-                                    "ref": "qcsec_j369.json"
+                                    "ref": "qcsec_j369.json",
+                                    "fl_problem_inst_id": "302101"
                                 }
                             ]
                         },
@@ -4255,7 +4323,8 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "294450",
                                     "SectionHeading": " Quickcheck: Archimedes's principle",
-                                    "ref": "qcsec_j373.json"
+                                    "ref": "qcsec_j373.json",
+                                    "fl_problem_inst_id": "302098"
                                 },
                                 {
                                     "type": "videoScreen",
@@ -4328,7 +4397,8 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "295748",
                                     "SectionHeading": "Quickcheck",
-                                    "ref": "qcsec_wz85.json"
+                                    "ref": "qcsec_wz85.json",
+                                    "fl_problem_inst_id": "302099"
                                 }
                             ]
                         },
@@ -4349,7 +4419,8 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "294419",
                                     "SectionHeading": " Quickcheck: Fluid continuity",
-                                    "ref": "qcsec_j381.json"
+                                    "ref": "qcsec_j381.json",
+                                    "fl_problem_inst_id": "302094"
                                 }
                             ]
                         },
@@ -4402,7 +4473,8 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "295751",
                                     "SectionHeading": " Quickcheck: Bernoulli's principle",
-                                    "ref": "qcsec_j384.json"
+                                    "ref": "qcsec_j384.json",
+                                    "fl_problem_inst_id": "302100"
                                 }
                             ]
                         },
@@ -4615,7 +4687,8 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "295752",
                                     "SectionHeading": "Quickcheck: Temperature conversion",
-                                    "ref": "qcsec_k471.json"
+                                    "ref": "qcsec_k471.json",
+                                    "fl_problem_inst_id": "302103"
                                 }
                             ]
                         },
@@ -4677,7 +4750,8 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "294441",
                                     "SectionHeading": "Quickcheck: Specific heat",
-                                    "ref": "qcsec_k475.json"
+                                    "ref": "qcsec_k475.json",
+                                    "fl_problem_inst_id": "302102"
                                 }
                             ]
                         },
@@ -4752,7 +4826,8 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "295754",
                                     "SectionHeading": "Quickcheck: Latent heat",
-                                    "ref": "qcsec_k481.json"
+                                    "ref": "qcsec_k481.json",
+                                    "fl_problem_inst_id": "302104"
                                 }
                             ]
                         },
@@ -4930,7 +5005,8 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "295756",
                                     "SectionHeading": "Quickcheck: Linear expansion",
-                                    "ref": "qcsec_k497.json"
+                                    "ref": "qcsec_k497.json",
+                                    "fl_problem_inst_id": "302105"
                                 }
                             ]
                         },
@@ -4951,7 +5027,8 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "295757",
                                     "SectionHeading": "Quickcheck: Volume expansion",
-                                    "ref": "qcsec_k499.json"
+                                    "ref": "qcsec_k499.json",
+                                    "fl_problem_inst_id": "302106"
                                 }
                             ]
                         },
@@ -5011,7 +5088,8 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "294451",
                                     "SectionHeading": "Quickcheck: First law thermondynamics",
-                                    "ref": "qcsec_jz82.json"
+                                    "ref": "qcsec_jz82.json",
+                                    "fl_problem_inst_id": "302107"
                                 }
                             ]
                         },
@@ -5087,7 +5165,8 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "294452",
                                     "SectionHeading": "Quickcheck: Work done by an engine",
-                                    "ref": "qcsec_jz83.json"
+                                    "ref": "qcsec_jz83.json",
+                                    "fl_problem_inst_id": "302108"
                                 },
                                 {
                                     "type": "playVideo",
@@ -5210,7 +5289,8 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "294453",
                                     "SectionHeading": "Quickcheck: Gas law",
-                                    "ref": "qcsec_ps12.json"
+                                    "ref": "qcsec_ps12.json",
+                                    "fl_problem_inst_id": "302109"
                                 }
                             ]
                         },
@@ -5231,7 +5311,8 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "294454",
                                     "SectionHeading": "Quickcheck: Ideal gas law",
-                                    "ref": "qcsec_ps15.json"
+                                    "ref": "qcsec_ps15.json",
+                                    "fl_problem_inst_id": "302110"
                                 }
                             ]
                         },
@@ -5324,7 +5405,8 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "294455",
                                     "SectionHeading": "Quickcheck: Engine efficiency",
-                                    "ref": "qcsec_jz84.json"
+                                    "ref": "qcsec_jz84.json",
+                                    "fl_problem_inst_id": "302111"
                                 },
                                 {
                                     "type": "videoScreen",
@@ -5396,7 +5478,8 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "294456",
                                     "SectionHeading": "Quickcheck: Entropy",
-                                    "ref": "qcsec_jz85.json"
+                                    "ref": "qcsec_jz85.json",
+                                    "fl_problem_inst_id": "302112"
                                 },
                                 {
                                     "type": "videoScreen",
@@ -5443,7 +5526,8 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "294457",
                                     "SectionHeading": " Quick check: gas molecular KE",
-                                    "ref": "qcsec_ps17.json"
+                                    "ref": "qcsec_ps17.json",
+                                    "fl_problem_inst_id": "302113"
                                 }
                             ]
                         },
@@ -5459,7 +5543,8 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "294458",
                                     "SectionHeading": " Quickcheck: RMS in ideal gas",
-                                    "ref": "qcsec_ps19.json"
+                                    "ref": "qcsec_ps19.json",
+                                    "fl_problem_inst_id": "302114"
                                 }
                             ]
                         },
@@ -5549,7 +5634,8 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "294461",
                                     "SectionHeading": "Quickcheck: Reading SHM amplitude from a graph",
-                                    "ref": "qcsec_m359.json"
+                                    "ref": "qcsec_m359.json",
+                                    "fl_problem_inst_id": "302117"
                                 }
                             ]
                         },
@@ -5565,7 +5651,8 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "294460",
                                     "SectionHeading": " Reading SHM period from a graph",
-                                    "ref": "qcsec_m363.json"
+                                    "ref": "qcsec_m363.json",
+                                    "fl_problem_inst_id": "302116"
                                 }
                             ]
                         },
@@ -5581,7 +5668,8 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "294398",
                                     "SectionHeading": "Quickcheck",
-                                    "ref": "qcsec_m364.json"
+                                    "ref": "qcsec_m364.json",
+                                    "fl_problem_inst_id": "302115"
                                 },
                                 {
                                     "type": "videoScreen",
@@ -5731,7 +5819,8 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "295758",
                                     "SectionHeading": "Quickcheck: Period of a simple pendulum",
-                                    "ref": "qcsec_m374.json"
+                                    "ref": "qcsec_m374.json",
+                                    "fl_problem_inst_id": "302123"
                                 }
                             ]
                         },
@@ -5808,19 +5897,22 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "294466",
                                     "SectionHeading": "Quickcheck: Reading wave amplitude from a graph",
-                                    "ref": "qcsec_m381.json"
+                                    "ref": "qcsec_m381.json",
+                                    "fl_problem_inst_id": "302119"
                                 },
                                 {
                                     "type": "quizcheck",
                                     "problem_inst_id": "294467",
                                     "SectionHeading": "Quickcheck: Reading wave period from a graph",
-                                    "ref": "qcsec_m389.json"
+                                    "ref": "qcsec_m389.json",
+                                    "fl_problem_inst_id": "302120"
                                 },
                                 {
                                     "type": "quizcheck",
                                     "problem_inst_id": "294465",
                                     "SectionHeading": "Quickcheck: Reading wave frequency from a graph",
-                                    "ref": "qcsec_m388.json"
+                                    "ref": "qcsec_m388.json",
+                                    "fl_problem_inst_id": "302118"
                                 }
                             ]
                         },
@@ -5836,7 +5928,8 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "294468",
                                     "SectionHeading": "Quickcheck: Reading wavelength from a graph",
-                                    "ref": "qcsec_m387.json"
+                                    "ref": "qcsec_m387.json",
+                                    "fl_problem_inst_id": "302121"
                                 }
                             ]
                         },
@@ -5948,7 +6041,8 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "294469",
                                     "SectionHeading": "Quickcheck: Wave speed",
-                                    "ref": "qcsec_m392.json"
+                                    "ref": "qcsec_m392.json",
+                                    "fl_problem_inst_id": "302122"
                                 }
                             ]
                         },
@@ -6083,7 +6177,8 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "295759",
                                     "SectionHeading": " Quickcheck: Sound intensity",
-                                    "ref": "qcsec_n263.json"
+                                    "ref": "qcsec_n263.json",
+                                    "fl_problem_inst_id": "302126"
                                 }
                             ]
                         },
@@ -6168,7 +6263,8 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "294470",
                                     "SectionHeading": "Quickcheck: Doppler effect",
-                                    "ref": "qcsec_u5092.json"
+                                    "ref": "qcsec_u5092.json",
+                                    "fl_problem_inst_id": "302125"
                                 },
                                 {
                                     "type": "videoScreen",
@@ -6332,7 +6428,8 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "294459",
                                     "SectionHeading": "Quickcheck: Harmonic",
-                                    "ref": "qcsec_n283.json"
+                                    "ref": "qcsec_n283.json",
+                                    "fl_problem_inst_id": "302124"
                                 },
                                 {
                                     "type": "playVideo",
@@ -6494,13 +6591,15 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "294472",
                                     "SectionHeading": " Quickcheck: Calculating electric charge",
-                                    "ref": "qcsec_o958.json"
+                                    "ref": "qcsec_o958.json",
+                                    "fl_problem_inst_id": "302131"
                                 },
                                 {
                                     "type": "quizcheck",
                                     "problem_inst_id": "294471",
                                     "SectionHeading": " Quickcheck: Net charge",
-                                    "ref": "qcsec_o961.json"
+                                    "ref": "qcsec_o961.json",
+                                    "fl_problem_inst_id": "302130"
                                 }
                             ]
                         },
@@ -6516,7 +6615,8 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "294473",
                                     "SectionHeading": " Quickcheck: Conservation of charge",
-                                    "ref": "qcsec_o962.json"
+                                    "ref": "qcsec_o962.json",
+                                    "fl_problem_inst_id": "302132"
                                 },
                                 {
                                     "type": "activity",
@@ -6614,7 +6714,8 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "294474",
                                     "SectionHeading": " Quickcheck: Coulomb's law 2",
-                                    "ref": "qcsec_o970.json"
+                                    "ref": "qcsec_o970.json",
+                                    "fl_problem_inst_id": "302133"
                                 },
                                 {
                                     "type": "playVideo",
@@ -6683,7 +6784,8 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "294463",
                                     "SectionHeading": " Quickcheck: Electric fields",
-                                    "ref": "qcsec_o979.json"
+                                    "ref": "qcsec_o979.json",
+                                    "fl_problem_inst_id": "302128"
                                 },
                                 {
                                     "type": "videoScreen",
@@ -6694,7 +6796,8 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "294464",
                                     "SectionHeading": " Quickcheck: Electric field and Coulomb's law",
-                                    "ref": "qcsec_o982.json"
+                                    "ref": "qcsec_o982.json",
+                                    "fl_problem_inst_id": "302129"
                                 },
                                 {
                                     "type": "onlyVideo",
@@ -6740,7 +6843,8 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "294475",
                                     "SectionHeading": " Quickcheck: Force on a particle",
-                                    "ref": "qcsec_o985.json"
+                                    "ref": "qcsec_o985.json",
+                                    "fl_problem_inst_id": "302134"
                                 },
                                 {
                                     "type": "activity",
@@ -6804,7 +6908,8 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "295761",
                                     "SectionHeading": " Quickcheck: Electric potential",
-                                    "ref": "qcsec_o52547.json"
+                                    "ref": "qcsec_o52547.json",
+                                    "fl_problem_inst_id": "302136"
                                 }
                             ]
                         },
@@ -6820,7 +6925,8 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "294462",
                                     "SectionHeading": " Electric potential difference",
-                                    "ref": "qcsec_o997.json"
+                                    "ref": "qcsec_o997.json",
+                                    "fl_problem_inst_id": "302127"
                                 },
                                 {
                                     "type": "videoScreen",
@@ -6873,7 +6979,8 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "294476",
                                     "SectionHeading": " Electric PE and work",
-                                    "ref": "qcsec_o5593.json"
+                                    "ref": "qcsec_o5593.json",
+                                    "fl_problem_inst_id": "302135"
                                 },
                                 {
                                     "type": "onlyVideo",
@@ -6904,7 +7011,8 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "295762",
                                     "SectionHeading": " Electric potential ",
-                                    "ref": "qcsec_o5562.json"
+                                    "ref": "qcsec_o5562.json",
+                                    "fl_problem_inst_id": "302137"
                                 }
                             ]
                         },
@@ -6965,7 +7073,8 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "294477",
                                     "SectionHeading": " Quickcheck: Electric current ",
-                                    "ref": "qcsec_p383.json"
+                                    "ref": "qcsec_p383.json",
+                                    "fl_problem_inst_id": "302138"
                                 },
                                 {
                                     "type": "videoScreen",
@@ -7001,7 +7110,8 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "295760",
                                     "SectionHeading": " Quickcheck: Ohm's law ",
-                                    "ref": "qcsec_p384.json"
+                                    "ref": "qcsec_p384.json",
+                                    "fl_problem_inst_id": "302146"
                                 }
                             ]
                         },
@@ -7055,7 +7165,8 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "294478",
                                     "SectionHeading": " Quickcheck: Electric power ",
-                                    "ref": "qcsec_p385.json"
+                                    "ref": "qcsec_p385.json",
+                                    "fl_problem_inst_id": "302139"
                                 },
                                 {
                                     "type": "playVideo",
@@ -7088,7 +7199,8 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "295764",
                                     "SectionHeading": " Quickcheck: Capacitance",
-                                    "ref": "qcsec_p386.json"
+                                    "ref": "qcsec_p386.json",
+                                    "fl_problem_inst_id": "302148"
                                 }
                             ]
                         },
@@ -7104,7 +7216,8 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "295763",
                                     "SectionHeading": " Quickcheck: Capacitor energy",
-                                    "ref": "qcsec_p387.json"
+                                    "ref": "qcsec_p387.json",
+                                    "fl_problem_inst_id": "302147"
                                 },
                                 {
                                     "type": "videoScreen",
@@ -7233,7 +7346,8 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "294484",
                                     "SectionHeading": " Quickcheck: Current in a series",
-                                    "ref": "qcsec_p389.json"
+                                    "ref": "qcsec_p389.json",
+                                    "fl_problem_inst_id": "302145"
                                 },
                                 {
                                     "type": "playVideo",
@@ -7250,7 +7364,8 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "294481",
                                     "SectionHeading": " Quickcheck: Series resistors ",
-                                    "ref": "qcsec_p390.json"
+                                    "ref": "qcsec_p390.json",
+                                    "fl_problem_inst_id": "302142"
                                 },
                                 {
                                     "type": "onlyVideo",
@@ -7277,7 +7392,8 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "294479",
                                     "SectionHeading": "Quickcheck: Currents and junction ",
-                                    "ref": "qcsec_p393.json"
+                                    "ref": "qcsec_p393.json",
+                                    "fl_problem_inst_id": "302140"
                                 },
                                 {
                                     "type": "videoScreen",
@@ -7288,7 +7404,8 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "294480",
                                     "SectionHeading": " Quickcheck: Parallel resistors ",
-                                    "ref": "qcsec_p391.json"
+                                    "ref": "qcsec_p391.json",
+                                    "fl_problem_inst_id": "302141"
                                 },
                                 {
                                     "type": "playVideo",
@@ -7310,13 +7427,15 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "294481",
                                     "SectionHeading": " Quickcheck: Parallel resistors 1 ",
-                                    "ref": "qcsec_p392.json"
+                                    "ref": "qcsec_p392.json",
+                                    "fl_problem_inst_id": "302142"
                                 },
                                 {
                                     "type": "quizcheck",
                                     "problem_inst_id": "294482",
                                     "SectionHeading": " Quickcheck: Parallel resistors 2",
-                                    "ref": "qcsec_p393.json"
+                                    "ref": "qcsec_p393.json",
+                                    "fl_problem_inst_id": "302143"
                                 },
                                 {
                                     "type": "onlyVideo",
@@ -7425,13 +7544,15 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "295765",
                                     "SectionHeading": " Quickcheck: Equivalent capacitance 1 ",
-                                    "ref": "qcsec_p384261.json"
+                                    "ref": "qcsec_p384261.json",
+                                    "fl_problem_inst_id": "302149"
                                 },
                                 {
                                     "type": "quizcheck",
                                     "problem_inst_id": "295766",
                                     "SectionHeading": " Quickcheck: Equivalent capacitance 2 ",
-                                    "ref": "qcsec_p3843351.json"
+                                    "ref": "qcsec_p3843351.json",
+                                    "fl_problem_inst_id": "302150"
                                 }
                             ]
                         },
@@ -7542,7 +7663,8 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "295767",
                                     "SectionHeading": "Quickcheck: B field and charge",
-                                    "ref": "qcsec_us01.json"
+                                    "ref": "qcsec_us01.json",
+                                    "fl_problem_inst_id": "302151"
                                 }
                             ]
                         },
@@ -7689,7 +7811,8 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "295768",
                                     "SectionHeading": "Quickcheck: Faraday's law",
-                                    "ref": "qcsec_us03.json"
+                                    "ref": "qcsec_us03.json",
+                                    "fl_problem_inst_id": "302152"
                                 }
                             ]
                         },
@@ -7828,7 +7951,8 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "295769",
                                     "SectionHeading": "Quickcheck: Magnetic force on a wire 2",
-                                    "ref": "qcsec_usz4.json"
+                                    "ref": "qcsec_usz4.json",
+                                    "fl_problem_inst_id": "302153"
                                 }
                             ]
                         },
@@ -7844,7 +7968,8 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "295770",
                                     "SectionHeading": "Quickcheck: Flux and angle",
-                                    "ref": "qcsec_usz5.json"
+                                    "ref": "qcsec_usz5.json",
+                                    "fl_problem_inst_id": "302154"
                                 }
                             ]
                         },
@@ -7962,7 +8087,8 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "295771",
                                     "SectionHeading": "Quickcheck: Transformer turns ratio",
-                                    "ref": "qcsec_us04.json"
+                                    "ref": "qcsec_us04.json",
+                                    "fl_problem_inst_id": "302155"
                                 }
                             ]
                         },
@@ -8170,7 +8296,8 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "294485",
                                     "SectionHeading": " Quickcheck: Wavelength and interference",
-                                    "ref": "qcsec_5181.json"
+                                    "ref": "qcsec_5181.json",
+                                    "fl_problem_inst_id": "302156"
                                 }
                             ]
                         },
@@ -8513,7 +8640,8 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "294486",
                                     "SectionHeading": "Quickcheck",
-                                    "ref": "qcsec_5194.json"
+                                    "ref": "qcsec_5194.json",
+                                    "fl_problem_inst_id": "302157"
                                 }
                             ]
                         },
@@ -8759,7 +8887,8 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "294487",
                                     "SectionHeading": "Quickcheck",
-                                    "ref": "qcsec_t562.json"
+                                    "ref": "qcsec_t562.json",
+                                    "fl_problem_inst_id": "302158"
                                 }
                             ]
                         },
@@ -8919,7 +9048,8 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "295772",
                                     "SectionHeading": " Quickcheck: Mirror equation ",
-                                    "ref": "qcsec_t578.json"
+                                    "ref": "qcsec_t578.json",
+                                    "fl_problem_inst_id": "302159"
                                 }
                             ]
                         },
@@ -8957,7 +9087,8 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "295773",
                                     "SectionHeading": " Quickcheck: Focal length",
-                                    "ref": "qcsec_t576.json"
+                                    "ref": "qcsec_t576.json",
+                                    "fl_problem_inst_id": "302160"
                                 }
                             ]
                         },
@@ -9034,7 +9165,8 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "294488",
                                     "SectionHeading": "Quickcheck: Index of refraction",
-                                    "ref": "qcsec_u257.json"
+                                    "ref": "qcsec_u257.json",
+                                    "fl_problem_inst_id": "302161"
                                 }
                             ]
                         },
@@ -9050,7 +9182,8 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "294489",
                                     "SectionHeading": "Quickcheck: Angle of refraction",
-                                    "ref": "qcsec_u259.json"
+                                    "ref": "qcsec_u259.json",
+                                    "fl_problem_inst_id": "302162"
                                 },
                                 {
                                     "type": "activity",
@@ -9169,7 +9302,8 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "294490",
                                     "SectionHeading": "Quickcheck: Critical angle",
-                                    "ref": "qcsec_u267.json"
+                                    "ref": "qcsec_u267.json",
+                                    "fl_problem_inst_id": "302163"
                                 }
                             ]
                         },
@@ -9349,7 +9483,8 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "294493",
                                     "SectionHeading": " Quickcheck: Lens equation",
-                                    "ref": "qcsec_u284.json"
+                                    "ref": "qcsec_u284.json",
+                                    "fl_problem_inst_id": "302166"
                                 }
                             ]
                         },
@@ -9377,19 +9512,22 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "294492",
                                     "SectionHeading": " Quickcheck: Magnification 1",
-                                    "ref": "qcsec_u287.json"
+                                    "ref": "qcsec_u287.json",
+                                    "fl_problem_inst_id": "302165"
                                 },
                                 {
                                     "type": "quizcheck",
                                     "problem_inst_id": "294491",
                                     "SectionHeading": " Quickcheck: Magnification 2",
-                                    "ref": "qcsec_u284.json"
+                                    "ref": "qcsec_u284.json",
+                                    "fl_problem_inst_id": "302164"
                                 },
                                 {
                                     "type": "quizcheck",
                                     "problem_inst_id": "294494",
                                     "SectionHeading": " Quickcheck: Magnification 3",
-                                    "ref": "qcsec_5u286.json"
+                                    "ref": "qcsec_5u286.json",
+                                    "fl_problem_inst_id": "302167"
                                 }
                             ]
                         },
@@ -10816,7 +10954,8 @@
                                     "ref": ""
                                 }
                             ]
-                        },                         {
+                        },
+                        {
                             "SectionTitle": "Creating a Presentation Resource",
                             "subsection": [
                                 {
