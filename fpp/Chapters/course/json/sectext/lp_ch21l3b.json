@@ -1,18 +1,1 @@
-{
-	"cards": [{
-			"lines": [{
-					"type": "title",
-					"text": "Critical angle"
-				}, {
-					"type": "headline",
-					"text": "Minimum incident angle for total internal reflection"
-				}
-			]
-		}
-	],
-	"definitions": [],
-	"secText": ["  <b>Lesson:</b>  <b>    <br />  </b>1. Define <a class='pjumpToTopic' href='javascript:void(0)' data-chap='21' data-topic='2' data-subtopic='1' data-subsection='0'>total internal reflection</a>.<br />2. Define and calculate <a class='pjumpToTopic' href='javascript:void(0)' data-chap='21' data-topic='2' data-subtopic='1' data-subsection='1'>critical angle</a>.", "  <b>In-class assessment:</b>  <b>    <br />  </b>1. <a class='pjumpToTopic' href='javascript:void(0)' data-chap='21' data-topic='2' data-subtopic='0' data-subsection='2'>Calculate</a> the critical angle of a sapphire.", 
-	
-	"  <b>Quick Review:</b>  <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='sum_critical_angle'>Total Internal Reflection</a>"],
-	"objNames": ["wb_critical_angle"]
-}
+{"cards":[{"lines":[{"type":"title","text":"Critical angle"},{"type":"headline","text":"Minimum incident angle for total internal reflection"}]}],"definitions":[],"secText":["  <b>Lesson:<\/b>  <b>    <br \/>  <\/b>1. Define <a class='pjumpToTopic' href='javascript:void(0)' data-chap='21' data-topic='2' data-subtopic='1' data-subsection='0'>total internal reflection<\/a>.<br \/>2. Define and calculate <a class='pjumpToTopic' href='javascript:void(0)' data-chap='21' data-topic='2' data-subtopic='1' data-subsection='1'>critical angle<\/a>.","  <b>In-class assessment:<\/b>  <b>    <br \/>  <\/b>1. <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='qc_36646'>Calculate<\/a> the critical angle of a sapphire.","  <b>Homework:<\/b>  <span class=\"KBInternalLink\"><a href=\"assign.html#OHW 21.03\">OHW 21.03<\/a><\/span>","  <b>Quick Review:<\/b>  <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='sum_critical_angle'>Total Internal Reflection<\/a>"],"objNames":["wb_critical_angle"]}

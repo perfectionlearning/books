@@ -1363,7 +1363,7 @@
     $(p.mShell).find(".pLabPageWrapper").hide();
     $(p.mShell).find(".pLabSubmitButton").hide();
 	$(p.mShell).find(".pPrintPageButton").hide();
-	$(p.mShell).find('.pMainHelpWrapper').show();
+	$(p.mShell).find('.pMainHelpWrapper').hide();
     $(p.mShell).find('.pBookWrapper').show();
     $(".pSearchAreaWrapper").hide();
     disableHeaderSearch(false);
@@ -1377,7 +1377,7 @@
   $(p.mShell).find(".pLabPageWrapper").hide();
   $(p.mShell).find(".pLabSubmitButton").hide();
   $(p.mShell).find(".pPrintPageButton").hide();
-  $(p.mShell).find('.pMainHelpWrapper').show();
+  $(p.mShell).find('.pMainHelpWrapper').hide();
     $(".pSearchAreaWrapper").hide();
     disableHeaderSearch(false);
     overlayDown()
@@ -1413,7 +1413,7 @@
     $(p.mShell).find('.pLabsWrapper').hide();
     $(p.mShell).find('.pBreadCrumb').hide();
     $(p.mShell).find('.pBookWrapper').hide();
-	$(p.mShell).find('.pMainHelpWrapper').show();
+	$(p.mShell).find('.pMainHelpWrapper').hide();
     $(p.mShell).find(".pLabPageWrapper").hide();
     $(p.mShell).find(".pLabSubmitButton").hide();
     $(p.mShell).find('.pActivitySummary').hide();
