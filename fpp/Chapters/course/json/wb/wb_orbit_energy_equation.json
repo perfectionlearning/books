@@ -1,15 +1,1 @@
-{
-  "Title": "Energy in circular orbits",
-  "Slides": [
-    {
-      "startTime": "0",
-      "endTime": "-1",
-      "startMarkerName": "",
-      "endMarkerName": "End",
-      "headlines": [
-        "  <span class=\"math\">    <i>G</i> = gravitational constant,</span>  <span class=\"math\">    <i>M</i> = mass of planet, <i>m</i> = mass of satellite,</span> </br> <span class=\"math\">    <i>r</i> = orbital radius</span>"
-      ],
-      "bullets": []
-    }
-  ]
-}
+{"Title":"Energy in circular orbits","Slides":[{"startTime":"0","endTime":"-1","startMarkerName":"","endMarkerName":"End","headlines":["  <span class=\"math\">    <i>G</i> = gravitational constant,</span>  <span class=\"math\">    <i>M</i> = mass of planet, <i>m</i> = mass of satellite,</span>  <span class=\"math\">    <i>r</i> = orbital radius</span>"],"bullets":[]}]}

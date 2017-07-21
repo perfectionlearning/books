@@ -92,7 +92,7 @@ td.tabs.pHover {
     left: 0px;
     top: 43px;
     width: 100%;
-    height: calc(100% - 43px);
+    height: calc(100% - 10px);
     background: #f5f7f7;
     border: 6px solid #2c3e50;
     font-family: AvenirNextLTPro-Regular;

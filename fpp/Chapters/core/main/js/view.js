@@ -540,6 +540,9 @@
     scrollInertia: 0, mouseWheelPixels: 50,
     scrollButtons: {enable: true}
     });
+		if(data.screenData.hash != "undefined"){
+			$(p.mShell).find('.pActivityArea .pActivityBody').mCustomScrollbar("scrollTo", $(p.mShell).find('.pActivityArea .pActivityBody').find("#" + data.screenData.hash)[0]);
+		}
     playerEvent();
     });
     p.currentType = "videoScreen";
@@ -1076,6 +1079,7 @@
     var _data = {}
     _data.SectionHeading = _this.text();
     _data.ref = _this.attr('data-href');
+	data.hash = _this.attr('data-hash');
     var _href = _data.ref.replace(/\//g, '~')
   _href = _href.replace(/_/g, '-');
   if (_data.SectionHeading == "Return to ELL Lesson Plans Table of Contents") {
@@ -1205,9 +1209,10 @@
     $(this).addClass("active");
     loadTopic(topic_no);
     $(document).trigger("loadSubMenu", {"chap": topic_no});
-	 if(topic_no == "27" && p.usertype== "Student"){
+	 if(topic_no == "27" && p.usertype.toLowerCase() == "student"){
           $(".pSubtopic[data-subtopic='1']").remove();
           $(".pSubtopic[data-subtopic='2']").remove();
+		  $(".pSubtopic[data-subtopic='6']").remove();
 	  }
   }
     function labChapterUp(e) {//---->
@@ -1416,13 +1421,13 @@
 	$(p.mShell).find('.pMainHelpWrapper').hide();
     $(p.mShell).find(".pLabPageWrapper").hide();
     $(p.mShell).find(".pLabSubmitButton").hide();
+	$(p.mShell).find(".pPrintPageButton").hide();
     $(p.mShell).find('.pActivitySummary').hide();
     $(p.mShell).find('.pQuizBoard').hide();
     $(p.mShell).find('.pQuizCheck').hide();
     $(p.mShell).find('.pActivityArea').hide();
     $(p.mShell).find('.pJsActWrapper').hide();
-	$(p.mShell).find(".pPrintPageButton").hide();
-    $(p.mShell).find('.pSettingArea').show();
+	$(p.mShell).find('.pSettingArea').show();
     overlayDown();
     break;
     case "help":

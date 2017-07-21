@@ -11777,6 +11777,17 @@
                                     "ref": "course/resources/ELL_Honours_with_links.html"
                                 }
                             ]
+                        },
+                        {
+                            "number": false,
+                            "SectionTitle": "ELPS Corelation",
+                            "subsection": [
+                                {
+                                    "SectionHeading": "ELPS Corelation",
+                                    "type": "additonal_resource",
+                                    "ref": "course/resources/ELPS_correlation.html"
+                                }
+                            ]
                         }
                     ]
                 }
@@ -13471,8 +13482,7 @@
                                         "type": "videoScreen",
                                         "SectionHeading": "Types of Waves ",
                                         "ref": "lp_ch13l5a.json"
-                                    },
-                                    {
+                                    }, {
                                         "type": "videoScreen",
                                         "SectionHeading": "Lesson ",
                                         "ref": "lp_ch13l5b.json"
@@ -14021,8 +14031,7 @@
                                 ]
                             }
                         ]
-                    }
-                ]
+                    }]
             },
             {
                 "title": "Interference and Diffraction ",
@@ -14111,8 +14120,7 @@
                                         "type": "videoScreen",
                                         "SectionHeading": "Single-Slit Diffraction ",
                                         "ref": "lp_ch18l4a.json"
-                                    },
-                                    {
+                                    }, {
                                         "type": "videoScreen",
                                         "SectionHeading": "Lesson ",
                                         "ref": "lp_ch18l4b.json"
@@ -14854,8 +14862,7 @@
                                         "type": "videoScreen",
                                         "SectionHeading": "Categorical data ",
                                         "ref": "lp_ch25l4a.json"
-                                    },
-                                    {
+                                    }, {
                                         "type": "videoScreen",
                                         "SectionHeading": "Lesson ",
                                         "ref": "lp_ch25l4b.json"

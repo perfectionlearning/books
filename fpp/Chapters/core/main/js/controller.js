@@ -75,6 +75,11 @@
   // Perform REST call to get user ID from session data.
   function getUserId() {
     httpRequest(p.session_info, "json", function (data) {
+	  if (data.hasOwnProperty("is_demo")) {
+        p.is_demo = data.is_demo;
+      } else {
+         p.is_demo = false;
+      }
       if (data.hasOwnProperty("user_id")) {
         p.userId = data.user_id;
         p.usertype = data.homedisplay;
@@ -82,8 +87,13 @@
         p.userId = data.data.user_id;
         p.usertype = data.data.homedisplay;
       }
-
-  view.setUserType(p.usertype);
+	  if (p.is_demo) {
+              coreData.chapters.length = 2;
+              coreData.lessonPlan.chapters.length = 2;
+              p.bookData = coreData.chapters;
+             $(document).trigger("getBookData", {bookData: coreData});
+	 }
+	view.setUserType(p.usertype);
     $(document).trigger("createShell");
   }, function () {
 

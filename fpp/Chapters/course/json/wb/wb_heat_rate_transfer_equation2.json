@@ -1,15 +1,1 @@
-{
-  "Title": "Rate of heat transfer",
-  "Slides": [
-    {
-      "startTime": "0",
-      "endTime": "-1",
-      "startMarkerName": "",
-      "endMarkerName": "End",
-      "headlines": [
-        "  <span class=\"math\">    <i>k</i> = thermal conductivity of a material,</span>  <span class=\"math\">    <i>A</i> = area,</span>  <span class=\"math\">Δ<i>T</i> = temperature</span>  <span class=\"math\">difference,</span> </br> <span class=\"math\">    <i>L</i> = thickness,</span>  <span class=\"math\">    <i>R</i> = thermal resistance</span>"
-      ],
-      "bullets": []
-    }
-  ]
-}
+{"Title":"Rate of heat transfer","Slides":[{"startTime":"0","endTime":"-1","startMarkerName":"","endMarkerName":"End","headlines":["  <span class=\"math\">    <i>k</i> = thermal conductivity of a material,</span>  <span class=\"math\">    <i>A</i> = area,</span>  <span class=\"math\">Δ<i>T</i> = temperature</span>  <span class=\"math\">difference,</span>  <span class=\"math\">    <i>L</i> = thickness,</span>  <span class=\"math\">    <i>R</i> = thermal resistance</span>"],"bullets":[]}]}
