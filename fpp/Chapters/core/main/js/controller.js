@@ -119,6 +119,15 @@
       data: '{"current:"' + p.session_info.course_id + ', "id":' + course.id + '}',
       complete: function(jqXHR, textStatus) {
         httpRequest(p.rest_assigns, "json", function(data) {
+          var vls = data.filter((item) => { return item.type === 'virtual lab'; });
+          var vlSyncIDs = {};
+          vls.forEach((item) => {
+            vlSyncIDs[item.syncID] = item.id
+          });
+          if (Object.keys(vlSyncIDs).length > 0) {
+            	p.vlSyncIDs = vlSyncIDs;
+          }
+
           var qcs = data.filter((item) => { return item.type === 'quickcheck'; });
           var syncIDs = {};
           qcs.forEach((item) => {
@@ -145,6 +154,9 @@
     if (p.syncIDs || q.qbSyncIDs) {
       fillInInstanceIds(p.syncIDs, p.qbSyncIDs);
     }
+    if (p.vlSyncIDs) {
+      fillInVLInstanceIds(p.vlSyncIDs);
+    }
   }
   }
 
@@ -154,11 +166,31 @@
       if (item.sync_id) {
         // Check to see if the fl_sync_id is in the list of syncIDs. If so, use it.
         if (syncIDs[item.fl_sync_id]) item.sync_id = item.fl_sync_id;
+        if (syncIDs[item.fl_qb_sync_id]) item.qb_sync_id = item.fl_qb_sync_id;
 
         item.quizBoard_id = qbSyncIDs[item.qb_sync_id];
         item.instance_id = syncIDs[item.sync_id];
       }
     });
+    loadScreen();
+  }
+
+  // Fill in Virtual Lab assign_ids in BookDefinition object.
+  // These are buried in the Lab chapter, so drilling down gets ugly. Really ugly.
+  function fillInVLInstanceIds(vlSyncIDs) {
+	var labs = p.bookData.filter((item) => { return item.title === 'Labs'; });
+	var unit = labs[0].unit[0];
+	var virtualLabSection = unit.section.filter((item) => { return item.SectionTitle === 'Virtual Labs'; });
+	var chapters = virtualLabSection[0].subsection[0].chapters;
+	chapters.forEach((chapter) => {
+		if (chapter.labs) {
+			chapter.labs.forEach((lab) => {
+				if (lab.sync_id) {
+					lab.assign_id = vlSyncIDs[lab.sync_id];
+				}
+			});
+		}
+	});
     loadScreen();
   }
 
