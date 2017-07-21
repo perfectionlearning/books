@@ -127,25 +127,36 @@
           if (Object.keys(syncIDs).length > 0) {
             	p.syncIDs = syncIDs;
           }
+
+          var qbs = data.filter((item) => { return item.type === 'quizboard'; });
+          var qbSyncIDs = {};
+          qbs.forEach((item) => {
+            qbSyncIDs[item.syncID] = item.id
+          });
+          if (Object.keys(qbSyncIDs).length > 0) {
+            	p.qbSyncIDs = qbSyncIDs;
+          }
+
           getSyncIDs(fpp_courses);
         });
       }
     });
   } else {
-    if (p.syncIDs) {
-      fillInInstanceIds(p.syncIDs);
+    if (p.syncIDs || q.qbSyncIDs) {
+      fillInInstanceIds(p.syncIDs, p.qbSyncIDs);
     }
   }
   }
 
   // Fill in instance_ids in BookDefinition object.
-  function fillInInstanceIds(syncIDs) {
+  function fillInInstanceIds(syncIDs, qbSyncIDs) {
     p.bookData.forEach((item) => {
       if (item.sync_id) {
         // Check to see if the fl_sync_id is in the list of syncIDs. If so, use it.
         if (syncIDs[item.fl_sync_id]) item.sync_id = item.fl_sync_id;
 
-        item.instance_id = syncIDs[item.sync_id] || syncIDs[item.fl_sync_id];
+        item.quizBoard_id = qbSyncIDs[item.qb_sync_id];
+        item.instance_id = syncIDs[item.sync_id];
       }
     });
     loadScreen();
