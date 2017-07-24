@@ -14807,11 +14807,6 @@
                                         "type": "videoScreen",
                                         "SectionHeading": "Solar Power ",
                                         "ref": "lp_ch24l5a.json"
-                                    },
-                                    {
-                                        "type": "videoScreen",
-                                        "SectionHeading": "Lesson and Assessment ",
-                                        "ref": "lp_ch24l5b.json"
                                     }
                                 ]
                             },
@@ -14822,11 +14817,6 @@
                                         "type": "videoScreen",
                                         "SectionHeading": "Nuclear Power Plants ",
                                         "ref": "lp_ch24l8a.json"
-                                    },
-                                    {
-                                        "type": "videoScreen",
-                                        "SectionHeading": "Lesson and Assessment ",
-                                        "ref": "lp_ch24l5b.json"
                                     }
                                 ]
                             }
