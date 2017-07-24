@@ -6,6 +6,11 @@
     lab.setLink = "https://qa1.perfectionlearning.com/api/rest/assign/SJTVRhCmAWb/labdata/update";
     lab.getLink = "https://qa1.perfectionlearning.com/api/rest/assign/SJTVRhCmAWb/defn";
     lab.ans = {};
+    lab.submitBtnActions = {
+      'lab-print': printLabAnswer,
+      'lab-submit': submitLabAnswers
+    };
+
     this.init = function (data) {
       showLoader();
       lab.assignID = data.id;
@@ -133,13 +138,12 @@
     // Handler for Print and Submit buttons.
     // Get the element ID (lab-print or lab-submit) and call the appropriate function.
     function handleSubmitButton(e) {
-        var btnActions = {
-            'lab-print': printLabAnswer,
-            'lab-submit': submitLabAnswers
-        };
-
         var btn = e.currentTarget;
-        btnActions[btn.id]();
+        if (btn.id && lab.submitBtnActions[btn.id]) { // safety net; should always be true.
+          lab.submitBtnActions[btn.id]();
+        } else {
+          console.log('handleSubmitButton failed for', btn);
+        }
     }
 
         function printLabAnswer() {
@@ -208,11 +212,13 @@
   }
 
   function submitLabAnswers() {
-    console.log('Submit button clicked.', lab.problemIds);
+    showLoader();
     var keys = Object.keys(lab.problemIds);
+    lab.submissions = {};
     keys.forEach((key) => {
       var probInstId = lab.problemIds[key];
       if (isAnswered(key)) {
+        lab.submissions[probInstId] = 1;
         sendLabResponse(probInstId, lab.ans[key]);
       }
     });
@@ -236,14 +242,17 @@
       });
 
       request.done(function (data) {
-        console.log(data);
+        delete lab.submissions[probInstId];
+        if (Object.keys(lab.submissions).length === 0) {
+          hideLoader();
+        }
         request = null;
-
       });
 
       request.fail(function (jqXHR, textStatus) {
         console.log(jqXHR);
         console.log(textStatus);
+        hideLoader();
         request = null;
         alert("please login");
       });
