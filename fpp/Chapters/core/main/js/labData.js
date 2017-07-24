@@ -12,6 +12,7 @@
       lab.mShell = $('.mShell')[0];
       lab.setLink = ctrl.getDomain() + "/api/rest/assign/" + lab.assignID + "/labdata/update";
       lab.getLink = ctrl.getDomain() + "/api/rest/assign/" + lab.assignID + "/defn";
+      lab.submitLink = ctrl.getDomain() + "/api/rest/submit/" + lab.assignID + "/";
       httpRequest(lab.getLink, "json", function (udata) {
         hideLoader();
         lab.problemIds = buildIdList(udata.problems);
@@ -192,12 +193,28 @@
       }
         }
 
+  // Check each answer to make sure it contains a value before submitting.
+  function isAnswered(key) {
+    var answer = lab.ans[key];
+    var answered = false;
+
+    if (Array.isArray(answer)) {
+      answered = answer.filter((item) => { return item.length > 0; }).length > 0;
+    }
+    else if (typeof answer !== 'undefined') {
+      answered = answer.length > 0;
+    }
+    return answered;
+  }
+
   function submitLabAnswers() {
     console.log('Submit button clicked.', lab.problemIds);
     var keys = Object.keys(lab.problemIds);
     keys.forEach((key) => {
       var probInstId = lab.problemIds[key];
-      sendLabResponse(probInstId, lab.ans[key]);
+      if (isAnswered(key)) {
+        sendLabResponse(probInstId, lab.ans[key]);
+      }
     });
   }
 
@@ -205,8 +222,7 @@
   function sendLabResponse(probInstId, answer) {
       console.log("user lab response");
       var _data = JSON.stringify({"studentResponse": answer });
-      var url = ctrl.getDomain() + "/api/rest/submit/" + lab.assignID + "/" + probInstId;
-console.log('sendLabResponse', url, answer);
+      var url = lab.submitLink + probInstId;
       var request = $.ajax({
         url: url,
         xhrFields: {
