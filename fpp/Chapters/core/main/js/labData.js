@@ -14,6 +14,7 @@
       lab.getLink = ctrl.getDomain() + "/api/rest/assign/" + lab.assignID + "/defn";
       httpRequest(lab.getLink, "json", function (udata) {
         hideLoader();
+        lab.problemIds = buildIdList(udata.problems);
         if (udata.hasOwnProperty("labData")) {
           lab.ans = $.parseJSON(udata.labData);
           if (lab.ans.hasOwnProperty("ques_0")) {
@@ -33,6 +34,16 @@
 
 
     }
+
+    function buildIdList(data) {
+      var ids = {};
+      data.forEach((item) => {
+        ids['ques_' + item.problem_num] = item._id;
+      });
+
+      return ids;
+    }
+
     function labEvent() {
       if (!device) {
         $(lab.mShell).find(".pLabSaveButton").off("mouseover", mouseover).on("mouseover", mouseover);
@@ -40,7 +51,7 @@
       }
       $(lab.mShell).find(".pLabSaveButton").off(mouseEvents.down).on(mouseEvents.down, mousedown);
       $(lab.mShell).find(".pLabSaveButton").off(mouseEvents.up).on(mouseEvents.up, saveLabAnswer);
-      $(lab.mShell).find(".pLabSubmitButton").off("click", printLabAnswer).on("click", printLabAnswer);
+      $(lab.mShell).find(".pLabSubmitButton").off("click", handleSubmitButton).on("click", handleSubmitButton);
 
     }
     function mouseover() {
@@ -117,6 +128,19 @@
       saveUserAnswer();
       console.log(lab.ans);
     }
+
+    // Handler for Print and Submit buttons.
+    // Get the element ID (lab-print or lab-submit) and call the appropriate function.
+    function handleSubmitButton(e) {
+        var btnActions = {
+            'lab-print': printLabAnswer,
+            'lab-submit': submitLabAnswers
+        };
+
+        var btn = e.currentTarget;
+        btnActions[btn.id]();
+    }
+
         function printLabAnswer() {
         console.log("its here");
       submitUserData();
@@ -167,29 +191,72 @@
       OpenWindow.onload = function () {         OpenWindow.document.getElementById("container").innerHTML = str;         OpenWindow.print();
       }
         }
-        function saveLabAnswer() {
-      $(".pLabSaveButton").removeClass('pHover').removeClass('pDown')
-        var _type = $(this).attr("data-type");
-        var _id = $(this).attr('data-id');
-      console.log(_id);
-          var _userInput, _val;       if (_type == "textarea") {
-        _userInput = "";
-      _userInput = $(this).parent().find('.pLabAnswerBox').val();
 
+  function submitLabAnswers() {
+    console.log('Submit button clicked.', lab.problemIds);
+    var keys = Object.keys(lab.problemIds);
+    keys.forEach((key) => {
+      var probInstId = lab.problemIds[key];
+      sendLabResponse(probInstId, lab.ans[key]);
+    });
+  }
+
+
+  function sendLabResponse(probInstId, answer) {
+      console.log("user lab response");
+      var _data = JSON.stringify({"studentResponse": answer });
+      var url = ctrl.getDomain() + "/api/rest/submit/" + lab.assignID + "/" + probInstId;
+console.log('sendLabResponse', url, answer);
+      var request = $.ajax({
+        url: url,
+        xhrFields: {
+          withCredentials: true
+        },
+        headers: {"Content-Type": "application/json"},
+        crossDomain: true,
+        data: _data,
+        method: "PUT",
+        dataType: "json"
+      });
+
+      request.done(function (data) {
+        console.log(data);
+        request = null;
+
+      });
+
+      request.fail(function (jqXHR, textStatus) {
+        console.log(jqXHR);
+        console.log(textStatus);
+        request = null;
+        alert("please login");
+      });
+  }
+
+  function saveLabAnswer() {
+    $(".pLabSaveButton").removeClass('pHover').removeClass('pDown')
+    var _type = $(this).attr("data-type");
+    var _id = $(this).attr('data-id');
+    console.log(_id);
+    var _userInput, _val;
+    if (_type == "textarea") {
+      _userInput = "";
+      _userInput = $(this).parent().find('.pLabAnswerBox').val();
     } else if (_type == "table") {
       _userInput = [];
       $(this).parent().find(".pLabAnswerInput").each(function () {
-      _val = $(this).val();
-      _val = _val.replace(/[$|$]/g, '~');
-      _userInput.push(_val);
-        })
-          _userInput = _userInput.join("$|$");
-      }
-
-        lab.ans[_id] = _userInput;
-        saveUserAnswer();
-
+        _val = $(this).val();
+        _val = _val.replace(/[$|$]/g, '~');
+        _userInput.push(_val);
+      })
+      _userInput = _userInput.join("$|$");
     }
+
+    lab.ans[_id] = _userInput;
+    saveUserAnswer();
+
+  }
+
         function saveUserAnswer() {
         console.log("user response");
       showLoader();       var _data = JSON.stringify({"lab_data": lab.ans});
