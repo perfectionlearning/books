@@ -50,13 +50,14 @@
       });
       var math = $(".pQuizCheck .userInputWrap")[0];
       console.log(data);
-      MathJax.Hub.Queue(["Typeset", MathJax.Hub, math]);
+
       bindEvents();
       hideLoader();
       var _interval = setInterval(function () {
         if ($('.pQuizCheck .pAnsWrap').find("input").length > 0) {
           setMaxLength();
           clearInterval(_interval);
+          MathJax.Hub.Queue(["Typeset", MathJax.Hub, math]);
         }
       }, 200)
 
@@ -252,7 +253,7 @@
         "margin-right": "15px",
         "width": "100%",
       });
-      MathJax.Hub.Queue(["Typeset", MathJax.Hub, math]);
+
       $('.pQuizCheck .pQuizStepWrap').fadeIn();
       bindEvents();
       hideLoader();
@@ -260,6 +261,7 @@
         if ($('#step_' + q.stepIndex + ' .userInputWrap').find("input").length > 0) {
           setMaxLength(q.stepIndex);
           clearInterval(_interval);
+          MathJax.Hub.Queue(["Typeset", MathJax.Hub, math]);
         }
       }, 200)
 
