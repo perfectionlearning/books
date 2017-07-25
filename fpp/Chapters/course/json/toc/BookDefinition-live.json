@@ -11877,12 +11877,12 @@
                                     {
                                         "type": "videoScreen",
                                         "SectionHeading": " Chapter 1 Overview Part 1 ",
-                                        "ref": "lp_ch01a.json"
+                                        "ref": "text_ch01a.json"
                                     },
                                     {
                                         "type": "videoScreen",
                                         "SectionHeading": " Chapter 1 Overview Part 2 ",
-                                        "ref": "lp_ch01b.json"
+                                        "ref": "text_ch01b.json"
                                     }
                                 ]
                             },
@@ -12011,7 +12011,7 @@
                                     {
                                         "type": "videoScreen",
                                         "SectionHeading": " Chapter 2 Overview ",
-                                        "ref": "lp_ch02.json"
+                                        "ref": "text_ch02.json"
                                     }
                                 ]
                             },
@@ -12119,18 +12119,18 @@
                                 "subsection": [
                                     {
                                         "type": "videoScreen",
-                                        "SectionHeading": " Chapter 3 Overview Part 1",
-                                        "ref": "lp_ch03a.json"
+                                        "SectionHeading": "Chapter 3 Overview Part 1",
+                                        "ref": "text_ch03a.json"
                                     },
                                     {
                                         "type": "videoScreen",
                                         "SectionHeading": " Chapter 3 Overview Part 2",
-                                        "ref": "lp_ch03b.json"
+                                        "ref": "text_ch03b.json"
                                     },
                                     {
                                         "type": "videoScreen",
                                         "SectionHeading": " Chapter 3 Overview Part 3",
-                                        "ref": "lp_ch03c.json"
+                                        "ref": "text_ch03c.json"
                                     }
                                 ]
                             },
@@ -12264,17 +12264,17 @@
                                     {
                                         "type": "videoScreen",
                                         "SectionHeading": " Chapter 4 Overview Part 1 ",
-                                        "ref": "lp_ch04a.json"
+                                        "ref": "text_ch04a.json"
                                     },
                                     {
                                         "type": "videoScreen",
                                         "SectionHeading": " Chapter 4 Overview Part 2 ",
-                                        "ref": "lp_ch04b.json"
+                                        "ref": "text_ch04b.json"
                                     },
                                     {
                                         "type": "videoScreen",
                                         "SectionHeading": " Chapter 4 Overview Part 3 ",
-                                        "ref": "lp_ch04c.json"
+                                        "ref": "text_ch04c.json"
                                     }
                                 ]
                             },
@@ -12408,17 +12408,17 @@
                                     {
                                         "type": "videoScreen",
                                         "SectionHeading": " Chapter 5 Overview Part 1 ",
-                                        "ref": "lp_ch05a.json"
+                                        "ref": "text_ch05a.json"
                                     },
                                     {
                                         "type": "videoScreen",
                                         "SectionHeading": " Chapter 5 Overview Part 2 ",
-                                        "ref": "lp_ch05b.json"
+                                        "ref": "text_ch05b.json"
                                     },
                                     {
                                         "type": "videoScreen",
                                         "SectionHeading": " Chapter 5 Overview Part 3 ",
-                                        "ref": "lp_ch05c.json"
+                                        "ref": "text_ch05c.json"
                                     }
                                 ]
                             },
@@ -12537,17 +12537,17 @@
                                     {
                                         "type": "videoScreen",
                                         "SectionHeading": " Chapter 6 Overview Part 1 ",
-                                        "ref": "lp_ch06a.json"
+                                        "ref": "text_ch06a.json"
                                     },
                                     {
                                         "type": "videoScreen",
                                         "SectionHeading": " Chapter 6 Overview Part 2 ",
-                                        "ref": "lp_ch06b.json"
+                                        "ref": "text_ch06b.json"
                                     },
                                     {
                                         "type": "videoScreen",
                                         "SectionHeading": " Chapter 6 Overview Part 3 ",
-                                        "ref": "lp_ch06c.json"
+                                        "ref": "text_ch06c.json"
                                     }
                                 ]
                             },
@@ -12666,12 +12666,12 @@
                                     {
                                         "type": "videoScreen",
                                         "SectionHeading": " Chapter 7 Overview Part 1",
-                                        "ref": "lp_ch07a.json"
+                                        "ref": "text_ch07a.json"
                                     },
                                     {
                                         "type": "videoScreen",
                                         "SectionHeading": " Chapter 7 Overview Part 2 ",
-                                        "ref": "lp_ch07b.json"
+                                        "ref": "text_ch07b.json"
                                     }
                                 ]
                             },
@@ -12760,17 +12760,17 @@
                                     {
                                         "type": "videoScreen",
                                         "SectionHeading": " Chapter 8 Overview Part 1 ",
-                                        "ref": "lp_ch08a.json"
+                                        "ref": "text_ch08a.json"
                                     },
                                     {
                                         "type": "videoScreen",
                                         "SectionHeading": " Chapter 8 Overview Part 2 ",
-                                        "ref": "lp_ch08b.json"
+                                        "ref": "text_ch08b.json"
                                     },
                                     {
                                         "type": "videoScreen",
                                         "SectionHeading": " Chapter 8 Overview Part 3",
-                                        "ref": "lp_ch08c.json"
+                                        "ref": "text_ch08c.json"
                                     }
                                 ]
                             },
@@ -12874,17 +12874,17 @@
                                     {
                                         "type": "videoScreen",
                                         "SectionHeading": " Chapter 9 Overview Part 1 ",
-                                        "ref": "lp_ch09a.json"
+                                        "ref": "text_ch09a.json"
                                     },
                                     {
                                         "type": "videoScreen",
                                         "SectionHeading": " Chapter 9 Overview Part 2 ",
-                                        "ref": "lp_ch09b.json"
+                                        "ref": "text_ch09b.json"
                                     },
                                     {
                                         "type": "videoScreen",
                                         "SectionHeading": " Chapter 9 Overview Part 3",
-                                        "ref": "lp_ch09c.json"
+                                        "ref": "text_ch09c.json"
                                     }
                                 ]
                             },
@@ -13033,12 +13033,12 @@
                                     {
                                         "type": "videoScreen",
                                         "SectionHeading": " Chapter 10 Overview Part 1 ",
-                                        "ref": "lp_ch10a.json"
+                                        "ref": "text_ch10a.json"
                                     },
                                     {
                                         "type": "videoScreen",
                                         "SectionHeading": " Chapter 10 Overview Part 2",
-                                        "ref": "lp_ch10b.json"
+                                        "ref": "text_ch10b.json"
                                     }
                                 ]
                             },
@@ -13157,17 +13157,17 @@
                                     {
                                         "type": "videoScreen",
                                         "SectionHeading": " Chapter 11 Overview Part 1 ",
-                                        "ref": "lp_ch11a.json"
+                                        "ref": "text_ch11a.json"
                                     },
                                     {
                                         "type": "videoScreen",
                                         "SectionHeading": " Chapter 11 Overview Part 2",
-                                        "ref": "lp_ch11b.json"
+                                        "ref": "text_ch11b.json"
                                     },
                                     {
                                         "type": "videoScreen",
                                         "SectionHeading": " Chapter 11 Overview Part 3",
-                                        "ref": "lp_ch11c.json"
+                                        "ref": "text_ch11c.json"
                                     }
                                 ]
                             },
@@ -13301,17 +13301,17 @@
                                     {
                                         "type": "videoScreen",
                                         "SectionHeading": " Chapter 12 Overview Part 1 ",
-                                        "ref": "lp_ch12a.json"
+                                        "ref": "text_ch12a.json"
                                     },
                                     {
                                         "type": "videoScreen",
                                         "SectionHeading": " Chapter 12 Overview Part 2 ",
-                                        "ref": "lp_ch12b.json"
+                                        "ref": "text_ch12b.json"
                                     },
                                     {
                                         "type": "videoScreen",
                                         "SectionHeading": " Chapter 12 Overview Part 3 ",
-                                        "ref": "lp_ch12c.json"
+                                        "ref": "text_ch12c.json"
                                     }
                                 ]
                             },
@@ -13460,17 +13460,17 @@
                                     {
                                         "type": "videoScreen",
                                         "SectionHeading": " Chapter 13 Overview Part 1 ",
-                                        "ref": "lp_ch13a.json"
+                                        "ref": "text_ch13a.json"
                                     },
                                     {
                                         "type": "videoScreen",
                                         "SectionHeading": " Chapter 13 Overview Part 2 ",
-                                        "ref": "lp_ch13b.json"
+                                        "ref": "text_ch13b.json"
                                     },
                                     {
                                         "type": "videoScreen",
                                         "SectionHeading": " Chapter 13 Overview Part 3 ",
-                                        "ref": "lp_ch13c.json"
+                                        "ref": "text_ch13c.json"
                                     }
                                 ]
                             },
@@ -13588,17 +13588,17 @@
                                     {
                                         "type": "videoScreen",
                                         "SectionHeading": " Chapter 14 Overview Part 1",
-                                        "ref": "lp_ch14a.json"
+                                        "ref": "text_ch14a.json"
                                     },
                                     {
                                         "type": "videoScreen",
                                         "SectionHeading": " Chapter 14 Overview Part 2",
-                                        "ref": "lp_ch14b.json"
+                                        "ref": "text_ch14b.json"
                                     },
                                     {
                                         "type": "videoScreen",
                                         "SectionHeading": "Chapter 14 Overview Part 3",
-                                        "ref": "lp_ch14c.json"
+                                        "ref": "text_ch14c.json"
                                     }
                                 ]
                             },
@@ -13717,12 +13717,12 @@
                                     {
                                         "type": "videoScreen",
                                         "SectionHeading": " Chapter 15 Overview Part 1",
-                                        "ref": "lp_ch15a.json"
+                                        "ref": "text_ch15a.json"
                                     },
                                     {
                                         "type": "videoScreen",
                                         "SectionHeading": " Chapter 15 Overview Part 2 ",
-                                        "ref": "lp_ch15b.json"
+                                        "ref": "text_ch15b.json"
                                     }
                                 ]
                             },
@@ -13826,17 +13826,17 @@
                                     {
                                         "type": "videoScreen",
                                         "SectionHeading": " Chapter 16 Overview Part 1 ",
-                                        "ref": "lp_ch16a.json"
+                                        "ref": "text_ch16a.json"
                                     },
                                     {
                                         "type": "videoScreen",
                                         "SectionHeading": " Chapter 16 Overview Part 2 ",
-                                        "ref": "lp_ch16b.json"
+                                        "ref": "text_ch16b.json"
                                     },
                                     {
                                         "type": "videoScreen",
                                         "SectionHeading": " Chapter 16 Overview Part 2",
-                                        "ref": "lp_ch16c.json"
+                                        "ref": "text_ch16c.json"
                                     }
                                 ]
                             },
@@ -13955,17 +13955,17 @@
                                     {
                                         "type": "videoScreen",
                                         "SectionHeading": " Chapter 17 Overview Part 1",
-                                        "ref": "lp_ch17a.json"
+                                        "ref": "text_ch17a.json"
                                     },
                                     {
                                         "type": "videoScreen",
                                         "SectionHeading": " Chapter 17 Overview Part 2",
-                                        "ref": "lp_ch17b.json"
+                                        "ref": "text_ch17b.json"
                                     },
                                     {
                                         "type": "videoScreen",
                                         "SectionHeading": " Chapter 17 Overview Part 3 ",
-                                        "ref": "lp_ch17c.json"
+                                        "ref": "text_ch17c.json"
                                     }
                                 ]
                             },
@@ -14113,17 +14113,17 @@
                                     {
                                         "type": "videoScreen",
                                         "SectionHeading": " Chapter 18 Overview Part 1 ",
-                                        "ref": "lp_ch18a.json"
+                                        "ref": "text_ch18a.json"
                                     },
                                     {
                                         "type": "videoScreen",
                                         "SectionHeading": " Chapter 18 Overview Part 2 ",
-                                        "ref": "lp_ch18b.json"
+                                        "ref": "text_ch18b.json"
                                     },
                                     {
                                         "type": "videoScreen",
                                         "SectionHeading": " Chapter 18 Overview Part 3",
-                                        "ref": "lp_ch18c.json"
+                                        "ref": "text_ch18c.json"
                                     }
                                 ]
                             },
@@ -14179,7 +14179,8 @@
                                         "type": "videoScreen",
                                         "SectionHeading": "Single-Slit Diffraction ",
                                         "ref": "lp_ch18l4a.json"
-                                    }, {
+                                    },
+                                    {
                                         "type": "videoScreen",
                                         "SectionHeading": "Lesson ",
                                         "ref": "lp_ch18l4b.json"
@@ -14226,12 +14227,12 @@
                                     {
                                         "type": "videoScreen",
                                         "SectionHeading": " Chapter 19 Overview Part 1 ",
-                                        "ref": "lp_ch19a.json"
+                                        "ref": "text_ch19a.json"
                                     },
                                     {
                                         "type": "videoScreen",
                                         "SectionHeading": " Chapter 19 Overview Part 2 ",
-                                        "ref": "lp_ch19b.json"
+                                        "ref": "text_ch19b.json"
                                     }
                                 ]
                             },
@@ -14320,17 +14321,17 @@
                                     {
                                         "type": "videoScreen",
                                         "SectionHeading": " Chapter 20 Overview Part 1",
-                                        "ref": "lp_ch20a.json"
+                                        "ref": "text_ch20a.json"
                                     },
                                     {
                                         "type": "videoScreen",
                                         "SectionHeading": " Chapter 20 Overview Part 2",
-                                        "ref": "lp_ch20b.json"
+                                        "ref": "text_ch20b.json"
                                     },
                                     {
                                         "type": "videoScreen",
                                         "SectionHeading": " Chapter 20 Overview Part 3",
-                                        "ref": "lp_ch20c.json"
+                                        "ref": "text_ch20c.json"
                                     }
                                 ]
                             },
@@ -14404,17 +14405,17 @@
                                     {
                                         "type": "videoScreen",
                                         "SectionHeading": " Chapter 21 Overview Part 1",
-                                        "ref": "lp_ch21a.json"
+                                        "ref": "text_ch21a.json"
                                     },
                                     {
                                         "type": "videoScreen",
                                         "SectionHeading": " Chapter 21 Overview Part 2 ",
-                                        "ref": "lp_ch21b.json"
+                                        "ref": "text_ch21b.json"
                                     },
                                     {
                                         "type": "videoScreen",
                                         "SectionHeading": " Chapter 21 Overview Part 3",
-                                        "ref": "lp_ch21c.json"
+                                        "ref": "text_ch21c.json"
                                     }
                                 ]
                             },
@@ -14548,17 +14549,17 @@
                                     {
                                         "type": "videoScreen",
                                         "SectionHeading": " Chapter 22 Overview Part 1",
-                                        "ref": "lp_ch22a.json"
+                                        "ref": "text_ch22a.json"
                                     },
                                     {
                                         "type": "videoScreen",
                                         "SectionHeading": " Chapter 22 Overview Part 2",
-                                        "ref": "lp_ch22b.json"
+                                        "ref": "text_ch22b.json"
                                     },
                                     {
                                         "type": "videoScreen",
                                         "SectionHeading": " Chapter 22 Overview Part 3",
-                                        "ref": "lp_ch22c.json"
+                                        "ref": "text_ch22c.json"
                                     }
                                 ]
                             },
@@ -14647,17 +14648,17 @@
                                     {
                                         "type": "videoScreen",
                                         "SectionHeading": " Chapter 23 Overview Part 1",
-                                        "ref": "lp_ch23a.json"
+                                        "ref": "text_ch23a.json"
                                     },
                                     {
                                         "type": "videoScreen",
                                         "SectionHeading": " Chapter 23 Overview Part 2",
-                                        "ref": "lp_ch23b.json"
+                                        "ref": "text_ch23b.json"
                                     },
                                     {
                                         "type": "videoScreen",
                                         "SectionHeading": " Chapter 23 Overview Part 3 ",
-                                        "ref": "lp_ch23c.json"
+                                        "ref": "text_ch23c.json"
                                     }
                                 ]
                             },
@@ -14745,13 +14746,13 @@
                                 "subsection": [
                                     {
                                         "type": "videoScreen",
-                                        "SectionHeading": " Chapter 24 Overview Part 1 ",
-                                        "ref": "lp_ch24a.json"
+                                        "SectionHeading": "Chapter 24 Overview Part 1 ",
+                                        "ref": "text_ch24a.json"
                                     },
                                     {
                                         "type": "videoScreen",
-                                        "SectionHeading": " Chapter 24 Overview Part 2 ",
-                                        "ref": "lp_ch24b.json"
+                                        "SectionHeading": "Chapter 24 Overview Part 2 ",
+                                        "ref": "text_ch24b.json"
                                     }
                                 ]
                             },
@@ -14807,11 +14808,6 @@
                                         "type": "videoScreen",
                                         "SectionHeading": "Solar Power ",
                                         "ref": "lp_ch24l5a.json"
-                                    },
-                                    {
-                                        "type": "videoScreen",
-                                        "SectionHeading": "Lesson and Assessment ",
-                                        "ref": "lp_ch24l5b.json"
                                     }
                                 ]
                             },
@@ -14822,11 +14818,6 @@
                                         "type": "videoScreen",
                                         "SectionHeading": "Nuclear Power Plants ",
                                         "ref": "lp_ch24l8a.json"
-                                    },
-                                    {
-                                        "type": "videoScreen",
-                                        "SectionHeading": "Lesson and Assessment ",
-                                        "ref": "lp_ch24l5b.json"
                                     }
                                 ]
                             }
@@ -14855,17 +14846,17 @@
                                     {
                                         "type": "videoScreen",
                                         "SectionHeading": "Chapter 25 Overview Part 1 ",
-                                        "ref": "lp_ch25a.json"
+                                        "ref": "text_ch25a.json"
                                     },
                                     {
                                         "type": "videoScreen",
                                         "SectionHeading": "Chapter 25 Overview Part 2 ",
-                                        "ref": "lp_ch25b.json"
+                                        "ref": "text_ch25b.json"
                                     },
                                     {
                                         "type": "videoScreen",
                                         "SectionHeading": "Chapter 25 Overview Part ",
-                                        "ref": "lp_ch25c.json"
+                                        "ref": "text_ch25c.json"
                                     }
                                 ]
                             },
@@ -14921,7 +14912,8 @@
                                         "type": "videoScreen",
                                         "SectionHeading": "Categorical data ",
                                         "ref": "lp_ch25l4a.json"
-                                    }, {
+                                    },
+                                    {
                                         "type": "videoScreen",
                                         "SectionHeading": "Lesson ",
                                         "ref": "lp_ch25l4b.json"
