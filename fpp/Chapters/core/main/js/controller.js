@@ -152,6 +152,8 @@
     });
   } else {
     if (p.syncIDs || q.qbSyncIDs) {
+      if (!p.syncIDs) p.syncIDs = {};
+      if (!p.qbSyncIDs) p.qbSyncIDs = {};
       fillInInstanceIds(p.syncIDs, p.qbSyncIDs);
     }
     if (p.vlSyncIDs) {
@@ -166,7 +168,7 @@
       if (item.sync_id) {
         // Check to see if the fl_sync_id is in the list of syncIDs. If so, use it.
         if (syncIDs[item.fl_sync_id]) item.sync_id = item.fl_sync_id;
-        if (syncIDs[item.fl_qb_sync_id]) item.qb_sync_id = item.fl_qb_sync_id;
+        if (qbSyncIDs[item.fl_qb_sync_id]) item.qb_sync_id = item.fl_qb_sync_id;
 
         item.quizBoard_id = qbSyncIDs[item.qb_sync_id];
         item.instance_id = syncIDs[item.sync_id];
