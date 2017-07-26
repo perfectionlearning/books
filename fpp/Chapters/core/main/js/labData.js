@@ -244,38 +244,28 @@
     return answered;
   }
 
+  // submitLabAnswers: Save response for each answered exercise. Required to affect Gradebook.
+  //   The REST Call is performed only if an answer has been submitted.
+  //
+  // lab.submissions flag hash is used to determine when the final answer is finished saving
+  // and the spinner can be hidden.
+  // 
   function submitLabAnswers() {
     showLoader();
     var keys = Object.keys(lab.problemIds);
     lab.submissions = {};
     keys.forEach((key) => {
-      var probInstId = lab.problemIds[key];
+      setLabAns(key);
       if (isAnswered(key)) {
+        var probInstId = lab.problemIds[key];
         lab.submissions[probInstId] = 1;
         sendLabResponse(probInstId, lab.ans[key]);
       }
     });
+    saveLabAnswerList();
   }
 
-
-    function submitLabAnswers() {
-/*
-    console.log('Submit button clicked.', lab.problemIds);
-    var _ids = document.querySelectorAll('div.pLabSaveButton');
-console.log('submitLabAnswers data-ids', _ids);
-*/
-      var keys = Object.keys(lab.problemIds);
-  console.log('submitLabAnswers keys', keys);
-      keys.forEach((key) => {
-        setLabAns(key);
-        if (isAnswered(key)) {
-          var probInstId = lab.problemIds[key];
-          sendLabResponse(probInstId, lab.ans[key]);
-        }
-      });
-      saveLabAnswerList();
-    }
-
+  // REST call for saving problem submissions. Must be called for submissions to be reflected in the Gradebook.
   function sendLabResponse(probInstId, answer) {
       console.log("user lab response");
       var _data = JSON.stringify({"studentResponse": answer });
