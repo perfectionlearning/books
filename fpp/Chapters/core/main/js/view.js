@@ -15,7 +15,7 @@
     eventListener();
     var lessonFlag = false;
     function eventListener() {
-    $(document).off("createShell", createShell).on("createShell", createShell);
+      $(document).off("createShell", createShell).on("createShell", createShell);
       $(document).off("getBookData", getBookData).on("getBookData", getBookData);
       $(document).off("loadScreen", loadScreen).on("loadScreen", loadScreen);
       $(document).off("navigationState", navigationState).on("navigationState", navigationState);
@@ -28,14 +28,13 @@
       $(document).off("loadSubMenu", loadSubMenu).on("loadSubMenu", loadSubMenu);
       $(document).off("loadOnlyVideo", loadOnlyVideo).on("loadOnlyVideo", loadOnlyVideo);
       $(document).off("loadAdditionalResource", loadAdditionalResource).on("loadAdditionalResource", loadAdditionalResource);
-       $(document).off("showSearchBox", showSearchBox).on("showSearchBox", showSearchBox);
-      /*
-       * Commenting this out to fix issue with Logout option not firing. The menu options in playerbtnManager call overlayDown, anyway.
-       */
-  $(document).off(mouseEvents.down).on(mouseEvents.down, function (e) {
-       overlayDown(e);
-    });
-  }
+      $(document).off("showSearchBox", showSearchBox).on("showSearchBox", showSearchBox);
+      // Call overlayDown on mouseup rather than mousedown. This is intended to fix the issue with a slideUp menu option not responding.
+      //$(document).off(mouseEvents.down).on(mouseEvents.down, function (e) {
+      $(document).off(mouseEvents.down).on(mouseEvents.down, function (e) {
+        overlayDown(e);
+      });
+    }
   function getBookData(e, data) {
     p.bookData = data.bookData;     coreData = data;
   }
