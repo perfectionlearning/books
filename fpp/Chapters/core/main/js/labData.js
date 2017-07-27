@@ -265,9 +265,22 @@
     saveLabAnswerList();
   }
 
+  function formatAnswer(answer) {
+    var parts = answer.split('$|$').filter(item => { return item; });
+    if (parts.length === 0) {
+      return false;
+    } else {
+      return parts.join(', ');
+    }
+  }
+
   // REST call for saving problem submissions. Must be called for submissions to be reflected in the Gradebook.
   function sendLabResponse(probInstId, answer) {
-      console.log("user lab response");
+      answer = formatAnswer(answer);
+      if (answer === false) {
+        delete lab.submissions[probInstId];
+        return;
+      }
       var _data = JSON.stringify({"studentResponse": answer });
       var url = lab.submitLink + probInstId;
       var request = $.ajax({
