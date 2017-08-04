@@ -1114,7 +1114,7 @@
     if ($(this).attr("data-jsact")) {
   loadJSActivity($(this).attr("data-jsact"));
     } else if ($(this).hasClass("activity")) {
-    window.open("http://car-run.herokuapp.com/", "lab", "scrollbars=yes,resizable=yes,top=0,left=0,width=900,height=643");
+    window.open("course/3DActivity/index.html", "lab", "scrollbars=yes,resizable=yes,top=0,left=0,width=900,height=643");
   } else {
     var vFlag = $(this).attr('data-video');
     var ind = $(this).attr("data-ind");
