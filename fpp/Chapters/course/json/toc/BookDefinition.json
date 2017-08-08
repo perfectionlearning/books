@@ -32,7 +32,8 @@
                                 {
                                     "type": "activity",
                                     "SectionHeading": "Lesson Overview: Position, Distance and Speed",
-                                    "ref": "lp_ch01l1a_ui.json"
+                                    "ref": "lp_ch01l1a_ui.json",
+                                    "actRef": "course/3DActivity/drive_a_car/index.html"
                                 }
                             ]
                         },
@@ -42,7 +43,8 @@
                                 {
                                     "type": "activity",
                                     "SectionHeading": " Activity: Driving a car",
-                                    "ref": "actsec_c451.json"
+                                    "ref": "actsec_c451.json",
+                                    "actRef": "course/3DActivity/drive_a_car/index.html"
                                 }
                             ]
                         },
@@ -175,7 +177,8 @@
                                 {
                                     "type": "activity",
                                     "SectionHeading": " Activity: Velocity and sign",
-                                    "ref": "actsec_c4512.json"
+                                    "ref": "actsec_c4512.json",
+                                    "actRef": "course/3DActivity/drive_a_car/index.html"
                                 }
                             ]
                         },
