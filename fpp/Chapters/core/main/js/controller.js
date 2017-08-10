@@ -151,7 +151,7 @@
       }
     });
   } else {
-    if (p.syncIDs || q.qbSyncIDs) {
+    if (p.syncIDs || p.qbSyncIDs) {
       if (!p.syncIDs) p.syncIDs = {};
       if (!p.qbSyncIDs) p.qbSyncIDs = {};
       fillInInstanceIds(p.syncIDs, p.qbSyncIDs);
