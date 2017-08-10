@@ -49,8 +49,14 @@
         for (var j in  q.screenData[i]["choices"]) {
           temp1 += "<span style='margin-top:10px;padding-right:10px;'>" + alpha[j] + ") " + q.screenData[i]["choices"][j]["answer"] + "</span>";
         }
-        var temp = '<div class="bquestionWrapper" data-ques="' + (cnt - 1) + '" data-id="' + i + '"><div class="currentQuestionNo">' + cnt + '</div><div class="currentQuestion"><div class="question"><p>' + q.screenData[i]['q'] + '</p>' + temp1 + '</div> </div></div>'
-
+        if (q.screenData[i]["status"] == "incorrect") {
+          var temp = '<div class="bquestionWrapper" data-ques="' + (cnt - 1) + '" data-id="' + i + '"><div class="currentQuestionNo incorrect"><div class="status_img incorrect"></div><span>' + cnt + '</span></div><div class="currentQuestion"><div class="question"><p>' + q.screenData[i]['q'] + '</p>' + temp1 + '</div> </div></div>'
+        } else if (q.screenData[i]["status"] == "correct")
+        {
+          var temp = '<div class="bquestionWrapper" data-ques="' + (cnt - 1) + '" data-id="' + i + '"><div class="currentQuestionNo correct"><div class="status_img correct"></div><span>' + cnt + '</span></div><div class="currentQuestion"><div class="question"><p>' + q.screenData[i]['q'] + '</p>' + temp1 + '</div> </div></div>'
+        } else {
+          var temp = '<div class="bquestionWrapper" data-ques="' + (cnt - 1) + '" data-id="' + i + '"><div class="currentQuestionNo"><div class="status_img"></div><span>' + cnt + '</span></div><div class="currentQuestion"><div class="question"><p>' + q.screenData[i]['q'] + '</p>' + temp1 + '</div> </div></div>'
+        }
         $(q.mShell).find('.pActivityBody').css("padding-right", "11px").append(temp);
         $(q.mShell).find('.pActivityBody').mCustomScrollbar("destroy");
         $(q.mShell).find('.pActivityBody').mCustomScrollbar({
@@ -233,7 +239,7 @@
           var _arr = [];
           if ($('.pQuizBoard .bOptionRow.selected').length > 0) {
 
-            $('.selected').each(function () {
+            $('.pQuizBoard .bOptionRow.selected').each(function () {
               var _this = $(this);
               _arr.push(_this.attr("data-id"));
             })
@@ -381,8 +387,8 @@
 
 
     /*
-        Get the problem status from the problem data.
-    */
+     Get the problem status from the problem data.
+     */
     function getProblemStatus() {
       var id = q.problem_inst_id || -1;
       // To determine whether the problem was answered correctly before, we need the status from the problem data, not the results from the answer submission.
@@ -391,8 +397,8 @@
     }
 
     /*
-        Determine which "Correct" message to use.
-    */
+     Determine which "Correct" message to use.
+     */
     function getCorrectMsgNdx(data) {
       var msg_ndx = 1; // use "first time" correct message if problem_status is "new" or "incorrect".
       var problem_status = getProblemStatus();
@@ -404,8 +410,8 @@
     }
 
     /*
-        Update the problem status in the problem data.
-    */
+     Update the problem status in the problem data.
+     */
     function setProblemStatus(status) {
       var id = q.problem_inst_id || -1;
       q.screenData[id].status = status;
@@ -415,10 +421,18 @@
     function checkUserResponse(data, cb) {
       var feedbackCorrectNdx = getCorrectMsgNdx(data);
       console.log(data);
-      $('.pQuizBoard .pQuizFeedback').removeClass('correct').removeClass('incorrect')
+      $('.pQuizBoard .pQuizFeedback').removeClass('correct').removeClass('incorrect');
+      $('.bquestionWrapper[data-ques="' + q.currentQues + '"]').find('.currentQuestionNo').removeClass('incorrect');
+      $('.bquestionWrapper[data-ques="' + q.currentQues + '"]').find('.currentQuestionNo').removeClass('correct');
+      $('.bquestionWrapper[data-ques="' + q.currentQues + '"]').find('.currentQuestionNo .status_img').removeClass('correct');
+      $('.bquestionWrapper[data-ques="' + q.currentQues + '"]').find('.currentQuestionNo .status_img').removeClass('incorrect');
       if (data.iscorrect) {
+        $('.bquestionWrapper[data-ques="' + q.currentQues + '"]').find('.currentQuestionNo').addClass('correct');
+        $('.bquestionWrapper[data-ques="' + q.currentQues + '"]').find('.currentQuestionNo .status_img').addClass('correct');
+
         var correctMsgNdx = getCorrectMsgNdx(data);
-        var feedBackTxt = feedback.correct[correctMsgNdx];;
+        var feedBackTxt = feedback.correct[correctMsgNdx];
+        ;
         setProblemStatus('correct');
         $(".step").find("input").css("background-color", "#ebebe4");
         $('.pAnsWrap').find("input").css("background-color", "#ebebe4");
@@ -429,6 +443,9 @@
         $('.pQuizBoard .pQuizButtons').not('.quizNavButtons').addClass('pDisable');
         hideLoader();
       } else {
+        $('.bquestionWrapper[data-ques="' + q.currentQues + '"]').find('.currentQuestionNo').addClass('incorrect');
+        $('.bquestionWrapper[data-ques="' + q.currentQues + '"]').find('.currentQuestionNo .status_img').addClass('incorrect');
+
         setProblemStatus('incorrect');
         var feedBackTxt = feedback["incorrect"][q.submitCnt];
         q.submitCnt++;

@@ -1241,15 +1241,38 @@ background-position: -5px -1536px;
 .currentQuestionNo {
     width: 30px;
     min-height: 84px;
-    line-height: 84px;
-    font-size: 32px;
+    //line-height: 84px;
+    font-size: 42px;
     font-weight: bold;
     background-color: #bcdae2;
     text-align: center;
     color: #ffffff;
 
     display: table-cell;
-    vertical-align: middle;
+    vertical-align: bottom;
+}
+.currentQuestionNo.incorrect{
+    background-color: #ff0000;
+}
+.currentQuestionNo.correct {
+    background-color: #05901f;
+}
+.status_img{
+	height: 20px;
+	width: 30px;
+	background-position: center;
+	vertical-align:top;
+	position: absolute;
+	top: 7px;
+}
+
+.status_img.correct{
+	background-image: url('/books/fpp/Chapters/core/main/assets/images/icon03.png');
+	background-repeat: no-repeat;
+}
+.status_img.incorrect{
+	background-image: url('/books/fpp/Chapters/core/main/assets/images/icon02.png');
+	background-repeat: no-repeat;
 }
 .currentQuestion {
     display: table-cell;

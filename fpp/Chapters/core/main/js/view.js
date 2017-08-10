@@ -479,6 +479,11 @@
     } else {
   $(this).removeAttr("data-jsact");
   }
+   if (data.type == "activity" && data.hasOwnProperty("ref")) {
+              $(this).attr("data-ref", data.ref);
+            } else {
+              $(this).removeAttr('data-ref')
+            }
     });
   } else {
   $('.pVideoIconWrap').hide();
@@ -1114,7 +1119,11 @@
     if ($(this).attr("data-jsact")) {
   loadJSActivity($(this).attr("data-jsact"));
     } else if ($(this).hasClass("activity")) {
-    window.open("http://car-run.herokuapp.com/", "lab", "scrollbars=yes,resizable=yes,top=0,left=0,width=900,height=643");
+     if ($(this).attr("data-ref")) {
+          window.open($(this).attr("data-ref"), "lab", "scrollbars=yes,resizable=yes,top=0,left=0,width=900,height=643");
+        } else {
+          alert("Activity coming soon");
+        }
   } else {
     var vFlag = $(this).attr('data-video');
     var ind = $(this).attr("data-ind");

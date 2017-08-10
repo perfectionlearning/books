@@ -402,6 +402,9 @@
       if (typeof vIndex != "undefined" && vIndex != "") {
     _tempdata.vPlay = vIndex
     }
+	 if (_data.hasOwnProperty("actRef")) {
+              _tempdata.ref = _data["actRef"];
+            }
     $(document).trigger("loadActivityScreen", _tempdata);
     }, function () {
     $(document).trigger("loadActivityScreen", {json: false});
