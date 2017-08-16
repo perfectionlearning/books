@@ -88,10 +88,17 @@
         p.usertype = data.data.homedisplay;
       }
 	  if (p.is_demo) {
-              coreData.chapters.length = 2;
+              var labs = coreData.chapters[26];
+			  labs.title = "Virtual Lab Sampler";
+			  labs.unit[0].section[2].subsection[0].chapters[0].labs.length = 3;
+			  labs.unit[0].section[2].subsection[0].chapters.length = 1;
+              coreData.chapters.length = 3;
+			  coreData.chapters.push(labs);
               coreData.lessonPlan.chapters.length = 2;
+			  coreData.is_demo = true;
               p.bookData = coreData.chapters;
-             $(document).trigger("getBookData", {bookData: coreData});
+              console.log(coreData);
+              $(document).trigger("getBookData", {bookData: coreData});
 	 }
 	view.setUserType(p.usertype);
     $(document).trigger("createShell");

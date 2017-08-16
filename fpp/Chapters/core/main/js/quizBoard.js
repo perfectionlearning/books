@@ -347,7 +347,7 @@
         case "hint":
           manageButtons(false);
           q.submitCnt = 0;
-          $(".pQuizBoard .pQuizFeedback").css("color", "blue").html(q.screenData[q.problem_inst_id]["hint"][0]).show();
+          $(".pQuizBoard .pQuizFeedback").removeClass("correct").removeClass("incorrect").css("color", "blue").html(q.screenData[q.problem_inst_id]["hint"][0]).show();
           q.screenData[q.problem_inst_id]["hint"].push(q.screenData[q.problem_inst_id]["hint"].shift());
           overlayDown();
           break;
