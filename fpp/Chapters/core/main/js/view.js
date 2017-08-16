@@ -1366,6 +1366,10 @@
     thisObj.updateBook(true);
     initBook();
   }
+   if (p.bookData.is_demo) {
+            $(p.mShell).find(".pChapName").removeClass("active");
+            loadTopic(1);
+          }
     $(p.mShell).find(".pMenu").removeClass('pDisable');
     $(p.mShell).find(".book_bck").hide();
     location.hash = escape("type_" + _obj.type);
