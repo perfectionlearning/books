@@ -92,7 +92,7 @@
 			  labs.title = "Virtual Lab Sampler";
 			  labs.unit[0].section[2].subsection[0].chapters[0].labs.length = 3;
 			  labs.unit[0].section[2].subsection[0].chapters.length = 1;
-              coreData.chapters.length = 3;
+              coreData.chapters.length = 2;
 			  coreData.chapters.push(labs);
               coreData.lessonPlan.chapters.length = 2;
 			  coreData.is_demo = true;
