@@ -31,7 +31,7 @@
       $(document).off("showSearchBox", showSearchBox).on("showSearchBox", showSearchBox);
       // Call overlayDown on mouseup rather than mousedown. This is intended to fix the issue with a slideUp menu option not responding.
       //$(document).off(mouseEvents.down).on(mouseEvents.down, function (e) {
-      $(document).off(mouseEvents.down).on(mouseEvents.down, function (e) {
+      $(document).off(mouseEvents.up).on(mouseEvents.up, function (e) {
         overlayDown(e);
       });
     }
