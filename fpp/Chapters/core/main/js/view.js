@@ -1052,6 +1052,7 @@
     if ($(e.target).hasClass('pjumpToTopic') && lessonFlag) {
     $(document).trigger("updateBook", {book: true});
     thisObj.updateBook(true);
+	initBook();
   }
     $('.pSubMenuWrap').removeClass("open");
     $('.pSubmenuButton').removeClass("open");
@@ -1215,8 +1216,8 @@
     var topic_no = $(this).attr('data-chapter');
     $(p.mShell).find(".pChapName").removeClass("active");
     $(this).addClass("active");
-	 if (topic_no == "2" && p.bookData.is_demo) {
-		window.location.hash = "#lesson_false/type_chapter/chapter_2/unit_0/section_2/subsection_0";
+	 if (topic_no == "3" && p.bookData.is_demo) {
+		window.location.hash = "#lesson_false/type_chapter/chapter_3/unit_0/section_2/subsection_0";
 		return false;
       }
     loadTopic(topic_no);
