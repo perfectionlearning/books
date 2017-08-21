@@ -174,7 +174,7 @@
         },
         {
             "code": "SC.912.N.1.6",
-            "benchmark": "Describe how scientific inferences are drawn from scienti?c observations and provide examples from the content being studied. ",
+            "benchmark": "Describe how scientific inferences are drawn from scientific observations and provide examples from the content being studied. ",
             "lessons": [
                 "3.4.1 Nature of science",
                 "3.4.2 Hypotheses and theories",
@@ -230,7 +230,7 @@
         },
         {
             "code": "SC.912.N.2.2",
-            "benchmark": "Identify which questions can be answered through science and which questions are outside the boundaries of scienti?c investigation, such as questions addressed by other ways of knowing, such as art, philosophy, and religion. ",
+            "benchmark": "Identify which questions can be answered through science and which questions are outside the boundaries of scientific investigation, such as questions addressed by other ways of knowing, such as art, philosophy, and religion. ",
             "lessons": [
                 "3.4.1 Nature of science",
                 "3.4.3.a Science and its limits",
@@ -282,7 +282,7 @@
         },
         {
             "code": "SC.912.N.2.5",
-            "benchmark": "Describe instances in which scientists' varied backgrounds, talents, interests, and goals in?uence the inferences and thus the explanations that they make about observations of natural phenomena and describe that competing interpretations (explanations) of scientists are a strength of science as they are a source of new, testable ideas that have the potential to add new evidence to support one or another of the explanations.  ",
+            "benchmark": "Describe instances in which scientists' varied backgrounds, talents, interests, and goals influence the inferences and thus the explanations that they make about observations of natural phenomena and describe that competing interpretations (explanations) of scientists are a strength of science as they are a source of new, testable ideas that have the potential to add new evidence to support one or another of the explanations.  ",
             "lessons": [
                 "3.4.1 Nature of science",
                 "3.4.2 Hypotheses and theories",
@@ -424,7 +424,7 @@
         },
         {
             "code": "SC.912.P.8.3",
-            "benchmark": "Explore the scienti?c theory of atoms (also known as atomic theory)  by describing changes in the atomic model over time and why those changes were necessitated by experimental evidence.   ",
+            "benchmark": "Explore the scientific theory of atoms (also known as atomic theory)  by describing changes in the atomic model over time and why those changes were necessitated by experimental evidence.   ",
             "lessons": [
                 "22.1.2 Early models of the atom",
                 "22.3.3 Evidence of the strong force",
@@ -622,7 +622,7 @@
         },
         {
             "code": "SC.912.P.10.13",
-            "benchmark": "Relate the con?guration of static charges to the electric ?eld, electric force, electric potential, and electric potential energy.  ",
+            "benchmark": "Relate the configuration of static charges to the electric field, electric force, electric potential, and electric potential energy.  ",
             "lessons": [
                 "15.2.1 Electric force",
                 "15.2.2 Coulomb's law",
