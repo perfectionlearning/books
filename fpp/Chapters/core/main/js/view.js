@@ -71,14 +71,16 @@
       }
     });
     $(p.mContainer).appendTo(p.mShell);
-    $.getJSON("course/json/searchBook/searchBook.json", function (data) {
-    p.searchBook = data.data;
-      createPlayer("header");
-    });
+	var path = p.bookData.is_demo ? "searchBook_demo" : "searchBook";
+      $.getJSON("course/json/searchBook/"+path+".json", function (data) {
+        p.searchBook = data.data;
+        createPlayer("header");
+      });
     // search benchmark code
-  $.getJSON("course/json/searchBook/searchCode.json", function (data) {
-    p.searchCode = data;
-    });
+		path = p.bookData.is_demo ? "searchCode_demo" : "searchCode";
+      $.getJSON("course/json/searchBook/"+path+".json", function (data) {
+        p.searchCode = data;
+      });
   }
   function createPlayer(_str) {
       switch (_str) {

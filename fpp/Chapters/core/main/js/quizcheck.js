@@ -174,7 +174,7 @@
       }
     }
     function radioUp() {
-      $('.selected').removeClass("selected");
+      $('.pQuizCheck .selected').removeClass("selected");
       $(this).addClass("selected");
     }
     function mouseover() {
@@ -308,7 +308,7 @@
         $(temp).html("<div style='display:table'>" + qPrefix + userInput + "</div>");
         if (q.screenData["solve"][q.stepIndex]["ansType"] == "radio") {
 
-          $(".bOptionRow[data-id='" + q.screenData["solve"][q.stepIndex]['a'] + "']").addClass("selected");
+          $(".pQuizCheck .bOptionRow[data-id='" + q.screenData["solve"][q.stepIndex]['a'] + "']").addClass("selected");
           // $(".bOptionRow[data-id='0']").addClass("selected");
         }
         $(".bOptionRow").addClass('pDisable').off();
@@ -317,6 +317,9 @@
       }
       $('.pQuizStepWrap').fadeIn();
       hideLoader();
+      $(q.mShell).find('.pQuizCheck .buttonWrap').hide();
+      $(q.mShell).find('.pQuizCheck .try_another_main').removeClass('pDisable').show();
+
     }
     function playerbtnManager(_obj) {
       //
@@ -328,8 +331,8 @@
           var _parent = _obj._this.parent().parent();
           var _arr = [];
           if (_parent.hasClass("step")) {
-            if ($('.bOptionRow.selected').length > 0) {
-              _arr.push($('.selected').attr("data-id"));
+            if ($('.pQuizCheck .bOptionRow.selected').length > 0) {
+              _arr.push($('.pQuizCheck .selected').attr("data-id"));
               _temp.data = _arr;
               _temp.url = q.url + "/" + _parent.attr("data-step");
               sendUserResponse(_temp, function (data) {
@@ -340,8 +343,8 @@
               hideLoader();
             }
           } else {
-            if ($('.bOptionRow.selected').length > 0) {
-              _arr.push($('.selected').attr("data-id"));
+            if ($('.pQuizCheck .bOptionRow.selected').length > 0) {
+              _arr.push($('.pQuizCheck .selected').attr("data-id"));
               _temp.data = _arr;
               _temp.url = q.url;
               sendUserResponse(_temp, function (data) {
@@ -465,6 +468,12 @@
         case "input_close":
           overlayDown();
           break;
+        case "try_another":
+
+          loadAnotherProblem();
+          overlayDown();
+          showLoader();
+          break;
 
       }
     }
@@ -488,6 +497,8 @@
             $('.pQuizCheck .pQuizButtons').addClass('pDisable');
             $(".pQuizCheck input").css("background-color", "#ebebe4");
             $(".pQuizCheck input").attr("disabled", true);
+            $(q.mShell).find('.pQuizCheck .buttonWrap').hide();
+            $(q.mShell).find('.pQuizCheck .try_another_main').removeClass('pDisable').show();
           } else {
             var feedBackTxt = step_feedback["correct"][0];
             $('.pQuizCheck .pQuizFeedback').hide()
@@ -567,6 +578,8 @@
               $('.pQuizCheck .pAnsWrap').find("input").each(function (i) {
                 $(this).val(q.screenData["a"][i])
               });
+              $(q.mShell).find('.pQuizCheck .buttonWrap').hide();
+              $(q.mShell).find('.pQuizCheck .try_another_main').removeClass('pDisable').show();
             } else {
               $('.pQuizCheck .pQuizFeedback').hide();
               var feedBackTxt = step_feedback["correct"][0];
@@ -668,6 +681,8 @@
     function reset() {
       showSolutionFlag = false;
       manageButtons(false);
+      $(q.mShell).find('.pQuizCheck .try_another_main').removeClass('pDisable').hide();
+      $(q.mShell).find('.pQuizCheck .buttonWrap').show();
       $('.pQuizCheck .pQuizButtons').removeClass('pDisable');
       $('.pQuizCheck .step').remove();
       $('.pHelpWrapper').removeClass("quizboardHelp")
@@ -707,6 +722,16 @@
           $(this).attr("size", q.screenData["solve"][stepId]["maxLength"][i]);
         })
       }
+    }
+    function loadAnotherProblem() {
+      httpRequest(ctrl.getDomain() + "/api/rest/pset/" + q.instance_id + '/' + q.problem_inst_id + '/different', "json", function (data) {
+        data = cleanMML(data);
+        data.videoPlayer = q.videoPlayer;
+        data.instance_id = q.instance_id;
+        data.problem_inst_id = q.problem_inst_id;
+        data.screenData = data;
+        _this.init(data);
+      });
     }
   }
 

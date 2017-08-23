@@ -1,0 +1,112 @@
+{
+  "data": [
+    {
+      "code": "SC.912.P.12.1",
+      "benchmark": "Distinguish between scalar and vector quantities and assess which should be used to describe an event.",
+      "lessons": [
+        "1.2.1 Scalar",
+        "1.2.2 Vectors",
+        "1.2.3 Displacement",
+        "1.4.2 Acceleration as a vector",
+        "1.2.4 Velocity",
+        "Virtual labs: Motion in two dimensions #1",
+        "Virtual labs: Motion in two dimensions #2"
+      ],
+      "hyperLink": [
+        "lesson_false/type_chapter/chapter_1/unit_1/section_1/subsection_0",
+        "lesson_false/type_chapter/chapter_1/unit_1/section_2/subsection_0",
+        "lesson_false/type_chapter/chapter_1/unit_1/section_3/subsection_0",
+        "lesson_false/type_chapter/chapter_1/unit_3/section_2/subsection_0",
+        "lesson_false/type_chapter/chapter_1/unit_1/section_4/subsection_0",
+        "type_labPage/title_Motion%20in%20two%20dimensions%20%231/href_course%7Elabs%7EMotion-in-two-dimensions-1%7Epage.html",
+        "type_labPage/title_Motion%20in%20two%20dimensions%20%232/href_course%7Elabs%7EMotion-in-two-dimensions-2%7Epage.html"
+      ]
+    },
+    {
+      "code": "SC.912.P.12.2",
+      "benchmark": "Analyze the motion of an object in terms of its position, velocity, and acceleration (with respect to a frame of reference) as functions of time.  ",
+      "lessons": [
+        "1.2.3 Displacement",
+        "1.2.4 Velocity",
+        "1.4.1 Acceleration",
+        "1.4.2 Acceleration as a vector",
+        "1.5.1 Motion equations",
+        "1.3.1 Average velocity",
+        "1.3.2 Instantaneous velocity"
+      ],
+      "hyperLink": [
+        "lesson_false/type_chapter/chapter_1/unit_1/section_3/subsection_0",
+        "lesson_false/type_chapter/chapter_1/unit_1/section_4/subsection_0",
+        "lesson_false/type_chapter/chapter_1/unit_3/section_1/subsection_0",
+        "lesson_false/type_chapter/chapter_1/unit_3/section_2/subsection_0",
+        "lesson_false/type_chapter/chapter_1/unit_4/section_1/subsection_0",
+        "lesson_false/type_chapter/chapter_1/unit_2/section_1/subsection_0",
+        "lesson_false/type_chapter/chapter_1/unit_2/section_2/subsection_0"
+      ]
+    },
+    {
+      "code": "LAFS.1112.RST.1.3",
+      "benchmark": "Follow precisely a complex multistep procedure when carrying out experiments, taking measurements, or performing technical tasks; analyze the specific results based on explanations in the text. ",
+      "lessons": [
+        "26.1 Physical labs and demonstrations",
+        "26.2 Virtual labs"
+      ],
+      "hyperLink": [
+        "lesson_false/type_chapter/chapter_3/unit_0/section_1/subsection_0",
+        "lesson_false/type_chapter/chapter_3/unit_0/section_2/subsection_0"
+      ]
+    },
+    {
+      "code": "LAFS.1112.RST.2.4",
+      "benchmark": "Determine the meaning of symbols, key terms, and other domain-specific words and phrases as they are used in a specific scientific or technical context relevant to grades 11-12 texts and topics.  ",
+      "lessons": [
+        "Lesson Plan: Ch1"
+      ],
+      "hyperLink": [
+        "lesson_true/type_chapter/chapter_1/unit_0/section_1/subsection_0"
+      ]
+    },
+    {
+      "code": "LAFS.1112.RST.3.9",
+      "benchmark": "Synthesize information from a range of sources (e.g., texts, experiments, simulations) into a coherent understanding of a process, phenomenon, or concept, resolving conflicting information when possible. ",
+      "lessons": [
+        "Chapter 26: Virtual labs"
+      ],
+      "hyperLink": [
+        "lesson_false/type_chapter/chapter_3/unit_0/section_2/subsection_0"
+      ]
+    },
+    {
+      "code": "LAFS.1112.WHST.4.10",
+      "benchmark": "Write routinely over extended time frames (time for reflection and revision) and shorter time frames (a single sitting or a day or two) for a range of discipline-specific tasks, purposes, and audiences.",
+      "lessons": [
+        "Lesson Plan: Ch1"
+      ],
+      "hyperLink": [
+        "lesson_true/type_chapter/chapter_1/unit_0/section_1/subsection_0"
+      ]
+    },
+    {
+      "code": "MAFS.912.A-CED.1.4",
+      "benchmark": "Rearrange formulas to highlight a quantity of interest, using the same reasoning as in solving equations. For example, rearrange Ohm's law V = IR to highlight resistance R.★",
+      "lessons": [
+        "1.1.5 Math skills",
+        "1.5.1 Motion equations"
+      ],
+      "hyperLink": [
+        "lesson_false/type_chapter/chapter_1/unit_0/section_5/subsection_0",
+        "lesson_false/type_chapter/chapter_1/unit_4/section_1/subsection_0"
+      ]
+    },
+    {
+      "code": "MAFS.912.N-Q.1.1",
+      "benchmark": "Use units as a way to understand problems and to guide the solution of multi-step problems; choose and interpret units consistently in formulas; choose and interpret the scale and the origin in graphs and data displays. ★ ",
+      "lessons": [
+        "1.1.2 Position"
+      ],
+      "hyperLink": [
+        "lesson_false/type_chapter/chapter_1/unit_0/section_2/subsection_0"
+      ]
+    }
+  ]
+}

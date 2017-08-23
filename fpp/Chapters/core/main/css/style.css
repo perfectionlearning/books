@@ -889,7 +889,7 @@ background-position: -5px -1536px;
     border:1px solid #fda400;
     background-position: -31px -1323px;
 }
-.pQuizStep{
+.pQuizStep,.try_another_main{
     width:63px;
     height:22px;
     border-radius: 10px;
@@ -903,7 +903,19 @@ background-position: -5px -1536px;
     background-image: none;
 
 }
-.stepIcon{
+.try_another_main{
+     width: 110px;
+     display:none;
+     text-align: center;
+    padding-right: 0;
+}
+.try_another_main.pHover{
+    
+}
+.try_another_main.pDown{
+    
+}
+.stepIcon,.try_another_icon{
     border-radius: 50%;
     background-color: #ffffff;
     width: 18px;
