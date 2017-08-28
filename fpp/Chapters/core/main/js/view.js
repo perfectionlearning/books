@@ -1329,6 +1329,7 @@
         console.log("window")
         OpenWindow.document.head.append(link);
         OpenWindow.document.getElementById("container").innerHTML = $(".pLabPageWrapper").html();
+		 $(OpenWindow.document.getElementById("container")).find(".mCSB_container").css("top", "0px");
         $(OpenWindow.document.getElementById("container")).find(".pLabSubMenu").remove();
         $(OpenWindow.document.getElementById("container")).find(".pLabSubMenuButton").remove();
         $(OpenWindow.document.getElementById("container")).css("width", "1024px");

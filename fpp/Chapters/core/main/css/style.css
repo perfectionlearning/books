@@ -1043,6 +1043,7 @@ background-position: -5px -1536px;
     line-height: 26px;
     font-size: 14px;
     padding-left: 35px;
+  
 }
 .pQuizButtons.pDisable{
     opacity:0.5;
@@ -1685,7 +1686,7 @@ background-position: -5px -1536px;
     height: calc(100% - 35px);
 }
 
-.pLabSubmitButton#lab-print {
+.pLabSubmitButton, .pPrintPageButton{
     position: absolute;
     width: 170px;
     height: 24px;
@@ -1694,22 +1695,6 @@ background-position: -5px -1536px;
     border-radius: 5px;
     top: 5px;
     left: 20px;
-    font-size: 14px;
-    line-height: 22px;
-    font-weight: bold;
-    cursor: pointer;
-    display: none;
-}
-
-.pLabSubmitButton#lab-submit {
-    position: absolute;
-    width: 170px;
-    height: 24px;
-    background-color: #F36523;
-    z-index: 1004;
-    border-radius: 5px;
-    top: 5px;
-    left: 200px;
     font-size: 14px;
     line-height: 22px;
     font-weight: bold;

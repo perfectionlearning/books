@@ -11842,10 +11842,10 @@
                         },
                         {
                             "number": false,
-                            "SectionTitle": "ELPS Corelation",
+                            "SectionTitle": "ELPS Correlation",
                             "subsection": [
                                 {
-                                    "SectionHeading": "ELPS Corelation",
+                                    "SectionHeading": "ELPS Correlation",
                                     "type": "additonal_resource",
                                     "ref": "course/resources/ELPS_correlation.html"
                                 }
