@@ -869,6 +869,7 @@
       });
       var links = [], // for exact match
         links2 = [], // for all keys match
+		links3 = [], // for some keys match
         found, text, sources = [];
       var div = $(document.createElement("div"));
       p.searchBook.forEach(function (obj) {
@@ -886,7 +887,9 @@
           }
           if (count == keywords.length) {
             push(links2, obj);
-          }
+          }else if(count != 0){
+			  push(links3, obj);
+		  }
         }
         // var a = [div.html(obj.text).text().toLowerCase(), obj.title.toLowerCase(), obj.sectionTitle.toLowerCase(), obj.sectionHeading.toLowerCase()];
         // for (var j = 0; j < a.length && !found; j++) {
@@ -912,7 +915,7 @@
         }
       }
 	  console.log(links.length, links2.length)
-      links = links.concat(links2);
+      links = links.concat(links2).concat(links3);;
       var count = 0;
       if (links.length == 0 && keywords.length == 1) {
 		  console.log("searching in code");
@@ -1081,19 +1084,19 @@
   }
     function std_act_linkUp(e) {
   showLoader();
-  var _this = $(this);
-    _this.removeClass("pHover").removeClass("pDown");
-    var _data = {}
-    _data.SectionHeading = _this.text();
-    _data.ref = _this.attr('data-href');
-	data.hash = _this.attr('data-hash');
-    var _href = _data.ref.replace(/\//g, '~')
-  _href = _href.replace(/_/g, '-');
-  if (_data.SectionHeading == "Return to ELL Lesson Plans Table of Contents") {
-  _data.SectionHeading = "ELL Lesson Plans";
-  }
-  location.hash = escape("type_additonal-resource/title_" + _data.SectionHeading + "/href_" + _href);
-  $(document).trigger("loadAdditionalResource", {screenData: _data})
+      var _this = $(this);
+      _this.removeClass("pHover").removeClass("pDown");
+      var _data = {}
+      _data.SectionHeading = _this.text();
+      _data.ref = _this.attr('data-href');
+      _data.hash = _this.attr('data-hash');
+      var _href = _data.ref.replace(/\//g, '~')
+      _href = _href.replace(/_/g, '-');
+      if (_data.SectionHeading == "Return to ELL Lesson Plans Table of Contents") {
+        _data.SectionHeading = "ELL Lesson Plans";
+      }
+      location.hash = escape("type_additonal-resource/title_" + _data.SectionHeading + "/href_" + _href);
+      $(document).trigger("loadAdditionalResource", {screenData: _data})
     }
   function videoUp() {
     if ($(this).hasClass("pHover")) {
