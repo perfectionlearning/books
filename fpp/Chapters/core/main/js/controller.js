@@ -4,6 +4,7 @@
     p.subSection = 0;
     p.userId;
     p.usertype = "Teacher";
+	p.bookType = "florida";
     var coreData;
     var lessonFlag = false;
     this.init = function () {
@@ -37,6 +38,8 @@
   var baseUrl = getBaseUrl(); // Added by PL
 
     httpRequest("course/json/toc/BookDefinition.json", "json", function (_data) {
+		 httpRequest("course/json/toc/standard.json", "json", function (data) {
+         p.standards = data;
     coreData = _data;
       p.rest_courses = _data.rest_courses;
       p.rest_select_course = _data.rest_select_course;
@@ -52,6 +55,7 @@
       getExternalData();
       $(document).trigger("getBookData", {bookData: _data});
     });
+	  });
   }
 
   // Set up to perform REST calls with wrapping set to false.
@@ -75,6 +79,15 @@
   // Perform REST call to get user ID from session data.
   function getUserId() {
     httpRequest(p.session_info, "json", function (data) {
+		   if (data.hasOwnProperty("book_id")) {
+              var book_id = data.book_id;
+              if (book_id == 66 || book_id == 67)
+              {
+                p.bookType = "national";
+              } else {
+                p.bookType = "florida";
+              }
+            }
 	  if (data.hasOwnProperty("is_demo")) {
         p.is_demo = data.is_demo;
       } else {
@@ -87,6 +100,11 @@
         p.userId = data.data.user_id;
         p.usertype = data.data.homedisplay;
       }
+	   if (p.bookType == "national") {
+              var add_resource = coreData.chapters[27].unit[0].section;
+              add_resource.splice(5, 1);
+              $(document).trigger("getBookData", {bookData: coreData});
+            }
 	  if (p.is_demo) {
               var labs = coreData.chapters[26];
 			  labs.title = "Virtual Lab Sampler";
@@ -100,6 +118,7 @@
               console.log(coreData);
               $(document).trigger("getBookData", {bookData: coreData});
 	 }
+	 
 	view.setUserType(p.usertype);
     $(document).trigger("createShell");
   }, function () {
@@ -412,6 +431,9 @@
 	 if (_data.hasOwnProperty("actRef")) {
               _tempdata.ref = _data["actRef"];
             }
+			if (p.standards[p.bookType].hasOwnProperty(_data.ref)) {
+              _tempdata.screenData.secText[0] = p.standards[p.bookType][_data.ref];
+            }	
     $(document).trigger("loadActivityScreen", _tempdata);
     }, function () {
     $(document).trigger("loadActivityScreen", {json: false});

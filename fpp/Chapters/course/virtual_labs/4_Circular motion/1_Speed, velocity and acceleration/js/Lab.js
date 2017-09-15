@@ -232,12 +232,15 @@ var control=(function(){
 	
 	function play(){
 		this.running=true;
-		createjs.Ticker.addEventListener("tick",this._updateState);
+		Ticker.add({
+				fps:60,
+				callback:this._updateState,
+		});
 	}
 	
 	function pause(){
 		this.running=false;
-		createjs.Ticker.removeEventListener("tick",this._updateState);
+		Ticker.remove(this._updateState);
 	}
 	
 	function reset(){
@@ -251,7 +254,6 @@ var control=(function(){
 	}
 
 	function updateState(){
-		for(var i=0;i<2;i++){
 		var scope=this;
 		this.time=this.time+timeStep;
 		if(this.displacementX > 919){
@@ -317,7 +319,6 @@ var control=(function(){
 			
 			lab.layout.line2.graphics.clear().setStrokeStyle(35).beginStroke("red").moveTo(0,0).lineTo(this.velocityX,0).endStroke();
 		}
-	}
 	}
 	
 	function startConditions(){
