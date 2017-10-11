@@ -191,10 +191,13 @@
   // Fill in instance_ids in BookDefinition object.
   function fillInInstanceIds(syncIDs, qbSyncIDs) {
     p.bookData.forEach((item) => {
+console.log('fillInInstanceIDs', item);
       if (item.sync_id) {
         // Check to see if the fl_sync_id is in the list of syncIDs. If so, use it.
         if (syncIDs[item.fl_sync_id]) item.sync_id = item.fl_sync_id;
+		else if (syncIDs[item.ngss_sync_id]) item.sync_id = item.ngss_sync_id;
         if (qbSyncIDs[item.fl_qb_sync_id]) item.qb_sync_id = item.fl_qb_sync_id;
+        else if (qbSyncIDs[item.ngss_qb_sync_id]) item.qb_sync_id = item.ngss_qb_sync_id;
 
         item.quizBoard_id = qbSyncIDs[item.qb_sync_id];
         item.instance_id = syncIDs[item.sync_id];
@@ -489,11 +492,15 @@
   }
   function getQuizData(_data, cb) {
     httpRequest(p.get_link + p.bookData[p.chap]["instance_id"], "json", function (data) {
+      // Check for NGSS instance ID
+      var ngss_inst_id = p.bookData[p.chap]["unit"][p.unit]["section"][p.section]["subsection"][p.subSection]["ngss_problem_inst_id"];
       // Check for FL instance ID
       var fl_inst_id = p.bookData[p.chap]["unit"][p.unit]["section"][p.section]["subsection"][p.subSection]["fl_problem_inst_id"];
       var inst_id = p.bookData[p.chap]["unit"][p.unit]["section"][p.section]["subsection"][p.subSection]["problem_inst_id"];
       // If this assignment uses FL instance IDs, replace the problem_inst_id with the one for FL. This replacement will remain in place for submission, as well.
       if (data[fl_inst_id]) p.bookData[p.chap]["unit"][p.unit]["section"][p.section]["subsection"][p.subSection]["problem_inst_id"] = fl_inst_id;
+      // If this assignment uses NGSS instance IDs, replace the problem_inst_id with the one for NGSS. This replacement will remain in place for submission, as well.
+      else if (data[ngss_inst_id]) p.bookData[p.chap]["unit"][p.unit]["section"][p.section]["subsection"][p.subSection]["problem_inst_id"] = ngss_inst_id;
 
       data = data[p.bookData[p.chap]["unit"][p.unit]["section"][p.section]["subsection"][p.subSection]["problem_inst_id"]];
       if (!data.video && _data['video']) {
