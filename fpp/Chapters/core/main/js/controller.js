@@ -191,7 +191,6 @@
   // Fill in instance_ids in BookDefinition object.
   function fillInInstanceIds(syncIDs, qbSyncIDs) {
     p.bookData.forEach((item) => {
-console.log('fillInInstanceIDs', item);
       if (item.sync_id) {
         // Check to see if the fl_sync_id is in the list of syncIDs. If so, use it.
         if (syncIDs[item.fl_sync_id]) item.sync_id = item.fl_sync_id;
