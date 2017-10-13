@@ -22,7 +22,7 @@
 
     };
     var feedback = {
-      "correct": ["Great work! You get 5 out of 5 for this problem.", "Great work! You've correctly solved this problem before, so you keep your perfect score"],
+      "correct": ["Great work! You've correctly solved this problem before, so you keep your perfect score", "Great work! You get 5 out of 5 for this problem."],
       "incorrect": [
         "Try again. Check your work or click a help option. Enter a new answer whenever you're ready.",
         "Try again. Check your work or click a help option. Enter a new answer whenever you're ready.",
@@ -486,7 +486,7 @@
           if (q.stepIndex == q.screenData["solve"].length - 1) {
             showSolutionFlag = true;
             var feedBackTxt;
-            if (data.new_status == "correct") {
+            if (data.reject_cause) {
               feedBackTxt = feedback.correct[0];
             } else {
               feedBackTxt = feedback.correct[1];
@@ -565,7 +565,7 @@
             if (q.stepIndex == q.screenData["solve"].length - 1) {
               showSolutionFlag = true;
               var feedBackTxt;
-              if (data.new_status == "correct") {
+              if (data.reject_cause) {
                 feedBackTxt = feedback.correct[0];
               } else {
                 feedBackTxt = feedback.correct[1];
@@ -619,7 +619,7 @@
         if (data.iscorrect) {
           showSolutionFlag = true;
           var feedBackTxt;
-          if (data.new_status == "correct") {
+          if (data.reject_cause) {
             feedBackTxt = feedback.correct[0];
           } else {
             feedBackTxt = feedback.correct[1];
