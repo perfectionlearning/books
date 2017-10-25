@@ -15,8 +15,8 @@ var PresentationData = function(href, lab) {
 		var colKeys = Object.keys(table);
 		colKeys.forEach((key) => {
 			table[key].forEach((cell, cellNdx) => {
-				if (!cell) {
-					table[key][cellNdx] = answer[ndx++];
+				if (/%VALUE%/.test(cell)) {
+					table[key][cellNdx] = table[key][cellNdx].replace(/%VALUE%/, answer[ndx++]);
 				}
 			});
 		});
