@@ -1679,8 +1679,8 @@
 
   // Handle Logout menu option.
   function logout() {
-    var logoutUrl = p.bookData.logout_link;
-    var loginPage = p.bookData.login_link;
+    var logoutUrl =	coreData.bookData.logout_link;
+    var loginPage = coreData.bookData.login_link;
     $.get(logoutUrl).done((resp) => { console.log('Success'); window.location = loginPage; }).fail((resp) => { console.log('Failure'); });
   }
 
