@@ -29,11 +29,13 @@ var PresentationData = function(href, lab) {
 	// REST call URL for saving the presentation_data field
 	var saveUrl = ctrl.getDomain() + '/api/rest/assign/' + lab.assignID + '/presentation';
 
+	var presentationTemplates = {};
+
 	//
 	// Immediately on instantiation, get JSON template for storing table items.
 	//
-	httpRequest(json, 'json', (presentation_template) => {
-		lab.presentationTemplate = presentation_template;
+	httpRequest(json, 'json', (res) => {
+		presentationTemplates = res;
 	});
 
 
@@ -87,7 +89,7 @@ var PresentationData = function(href, lab) {
 	//
 	function buildPresentationObj(quesNo, probInstId, ans) {
 		var answer = ans.split('$|$');
-		var probPresentation = lab.presentationTemplate[quesNo];
+		var probPresentation = $.extend(true, {}, presentationTemplates[quesNo]);
 		if (!probPresentation) return {};
 
 		var obj = {
