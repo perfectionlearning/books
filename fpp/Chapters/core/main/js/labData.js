@@ -266,7 +266,9 @@ console.log('init data', data);
         var probInstId = lab.problemIds[key];
         lab.submissions[probInstId] = 1;
         sendLabResponse(probInstId, lab.ans[key]);
-        presentationData.save(key, probInstId, lab.ans[key]);
+        if (presentationData.hasTemplate(key)) {
+          presentationData.save(key, probInstId, lab.ans[key]);
+        }
       }
     });
     saveLabAnswerList();

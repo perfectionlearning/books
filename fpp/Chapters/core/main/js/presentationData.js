@@ -60,6 +60,13 @@ var PresentationData = function(href, lab) {
 		});
 	};
 
+	//
+	// Test for whether a given question has a table template.
+	//
+	this.hasTemplate = function(quesNo) {
+		return !!presentationTemplates[quesNo];
+	}
+
 
 	/*
 	 * Private / utility functions
