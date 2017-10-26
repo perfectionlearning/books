@@ -1,74 +1,16 @@
 {
    "ques_1": {
       "interactive_frames": [
-         {
-            "title": "_TITLE_",
-            "title_display": null,
-            "orientation": "center",
-            "style": "input_grid_table",
-            "contents": [
-               {
-                  "id": 0,
-                  "shape": "input_rect",
-                  "line": "solid",
-                  "row": 1,
-                  "col": 1,
-                  "data": null
-               },
-               {
-                  "id": 1,
-                  "shape": "input_rect",
-                  "line": "solid",
-                  "row": 1,
-                  "col": 2,
-                  "data": null
-               },
-               {
-                  "id": 2,
-                  "shape": "input_rect",
-                  "line": "solid",
-                  "row": 1,
-                  "col": 3,
-                  "data": null
-               },
-               {
-                  "id": 3,
-                  "shape": "input_rect",
-                  "line": "solid",
-                  "row": 1,
-                  "col": 4,
-                  "data": null
-               },
-               {
-                  "id": 4,
-                  "shape": "input_rect",
-                  "line": "solid",
-                  "row": 1,
-                  "col": 5,
-                  "data": null
-               },
-               {
-                  "id": 5,
-                  "shape": "input_rect",
-                  "line": "solid",
-                  "row": 1,
-                  "col": 6,
-                  "data": null
-               }
-            ],
-            "delimiter": ",",
-            "interaction_method": "text_input_boxes",
-            "content_display_columns": 6,
-            "content_display_rows": 1,
+         {        
             "column_row_vals": {
                "0": [
                   "V<sub>i</sub>",
                   "%VALUE% m/s"
-               ], 
+               ],
                "1": [
                   "x<sub>1</sub>",
                   "%VALUE% m"
-               ],
+               ], 
                "2": [
                   "t<sub>1</sub>",
                   "%VALUE% s"
@@ -76,67 +18,16 @@
                "3": [
                   "x<sub>2</sub>",
                   "%VALUE% m"
-               ],
+               ], 
                "4": [
                   "t<sub>2</sub>",
-                  "%VALUE% s" 
-               ],
+                  "%VALUE% s"
+               ], 
                "5": [
                   "V<sub>avg</sub>(&Delta;x/&Delta;t)",
                   "%VALUE% m/s"
-               ]  
-            }, 
-            "maintain_contents_order": true,
-            "null_sets_input_available": true,
-            "header_rows": [
-               0
-            ],
-            "header_cols": [],
-            "sends_answer": true,
-            "answer_modes": [
-               {
-                  "answer_slot": 0,
-                  "source": "contents",
-                  "source_id": 0,
-                  "source_key": "data",
-                  "order": 0
-               },
-               {
-                  "answer_slot": 1,
-                  "source": "contents",
-                  "source_id": 1,
-                  "source_key": "data",
-                  "order": 1
-               },
-               {
-                  "answer_slot": 2,
-                  "source": "contents",
-                  "source_id": 2,
-                  "source_key": "data",
-                  "order": 2
-               },
-               {
-                  "answer_slot": 3,
-                  "source": "contents",
-                  "source_id": 3,
-                  "source_key": "data",
-                  "order": 3
-               },
-               {
-                  "answer_slot": 4,
-                  "source": "contents",
-                  "source_id": 4,
-                  "source_key": "data",
-                  "order": 4
-               },
-               {
-                  "answer_slot": 5,
-                  "source": "contents",
-                  "source_id": 5,
-                  "source_key": "data",
-                  "order": 5
-               }
-            ]
+               ]
+            }
          }
       ]
    }
