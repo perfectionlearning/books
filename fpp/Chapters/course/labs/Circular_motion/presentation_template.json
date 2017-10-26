@@ -1,0 +1,83 @@
+{
+   "ques_7": {
+      "interactive_frames": [
+         {
+            "column_row_vals": {
+               "0": [
+                  "car speed",
+                  "%VALUE%"
+               ],
+               "1": [
+                  "radius turn 1",
+                  "15.0m"
+               ],
+               "2": [
+                  "centripetal acceleration turn 1",
+                  "%VALUE%"
+               ],
+               "3": [
+                  "radius turn 2",
+                  "7.5m"
+               ],
+               "4": [
+                  "centripetal acceleration turn 2",
+                  "%VALUE%"
+               ]
+            }
+         }
+      ]
+   },
+   "ques_10": {
+      "interactive_frames": [
+         {
+            "column_row_vals": {
+               "0": [
+                  "",
+                  "Trial 1",
+                  "Trial 2",
+                  "Trial 3"
+               ],
+               "1": [
+                  "speed of car",
+                  "%VALUE% m/s",
+                  "%VALUE% m/s",
+                  "%VALUE% m/s"
+               ],
+               "2": [
+                  "centripetal acceleration",
+                  "%VALUE% m/s<sup>2</sup>",
+                  "%VALUE% m/s<sup>2</sup>",
+                  "%VALUE% m/s<sup>2</sup>"
+               ]
+            }
+         }
+      ]
+   },
+   "ques_12": {
+      "interactive_frames": [
+         {
+            "column_row_vals": {
+               "0": [
+                  "",
+                  "Trial 1",
+                  "Trial 2",
+                  "Trial 3"
+               ],
+               "1": [
+                  "radius",
+                  "8.00 m",
+                  "16.75 m",
+                  "8.75 m"
+               ],
+               "2": [
+                  "speed",
+                  "%VALUE% m/s",
+                  "%VALUE% m/s",
+                  "%VALUE% m/s"
+               ]
+            }
+         }
+      ]
+   }
+}
+
