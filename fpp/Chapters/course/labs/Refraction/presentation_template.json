@@ -1,0 +1,40 @@
+{
+   "ques_8": {
+      "interactive_frames": [
+         {
+            "column_row_vals": {
+               "0": [
+                  "Sub",
+                  "1",
+                  "2",
+                  "3"
+               ],
+               "1": [
+                  "n of air, n<sub>1</sub>",
+                  "1.0",
+                  "1.0",
+                  "1.0"
+               ],
+               "2": [
+                  "angle of incidence, &theta;<sub>1</sub>",
+                  "%VALUE%",
+                  "%VALUE%",
+                  "%VALUE%"
+               ],
+               "3": [
+                  "n of water, n<sub>2</sub>",
+                  "1.3",
+                  "1.3",
+                  "1.3"
+               ]
+               "4": [
+                  "angle of refraction, &theta;<sub>2</sub>",
+                  "%VALUE%",
+                  "%VALUE%",
+                  "%VALUE%"
+               ]
+            }
+         }
+      ]
+   }
+}

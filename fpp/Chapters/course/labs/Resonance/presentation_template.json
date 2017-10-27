@@ -1,0 +1,22 @@
+{
+   "ques_3": {
+      "interactive_frames": [
+         {
+            "column_row_vals": {
+               "0": [
+                  "amplitude, A",
+                  "wavelength, &lambda;",
+                  "frequency, f",
+                  "wave speed, v"
+               ],
+               "1": [
+                  "%VALUE% m",
+                  "%VALUE% m",
+                  "%VALUE% Hz",
+                  "%VALUE% m/s"
+               ]
+            }
+         }
+      ]
+   }
+}
