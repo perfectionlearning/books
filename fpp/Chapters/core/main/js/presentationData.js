@@ -82,7 +82,7 @@ var PresentationData = function(href, lab) {
         for (let r = 0; r < rows; r++) {
             colKeys.forEach((key) => {
                 if (/%VALUE%/.test(table[key][r])) {
-                    table[key][r] = table[key][r].replace(/%VALUE%/, answer[ndx++]);
+                    table[key][r] = table[key][r].replace(/%VALUE%/, '__' + answer[ndx++] + '__');
                 }
             });
         }
