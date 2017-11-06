@@ -1,0 +1,30 @@
+{
+   "ques_10": {
+      "interactive_frames": [
+         {
+            "column_row_vals": {
+               "0": [
+                  "",
+                  "Castle door",
+                  "Battering ram"
+               ],
+               "1": [
+                  "Distance from cannon",
+                  "%VALUE% m",
+                  "%VALUE% m"
+               ],
+               "2": [
+                  "Firing speed",
+                  "%VALUE% m/s",
+                  "%VALUE% m/s"
+               ],
+               "3": [
+                  "Firing angle",
+                  "%VALUE% degrees",
+                  "%VALUE% degrees"
+               ]
+            }
+         }
+      ]
+   }
+}

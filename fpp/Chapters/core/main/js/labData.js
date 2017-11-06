@@ -34,27 +34,33 @@
   var LabData = function () {
     var lab = {}
     var device = BrowserDetect.any();
+    var presentationData;
     lab.assignID = "";
     lab.getLink = "";
     lab.setLink = "https://qa1.perfectionlearning.com/api/rest/assign/SJTVRhCmAWb/labdata/update";
     lab.getLink = "https://qa1.perfectionlearning.com/api/rest/assign/SJTVRhCmAWb/defn";
     lab.ans = {};
+    lab.presentationTemplate = {}; // JSON templates for presentation_data
     lab.submitBtnActions = {
       'lab-print': printLabAnswer,
       'lab-submit': submitLabAnswers
     };
 
     this.init = function (data) {
+console.log('init data', data);
       showLoader();
+
       lab.assignID = data.id;
       lab.mShell = $('.mShell')[0];
       lab.setLink = ctrl.getDomain() + "/api/rest/assign/" + lab.assignID + "/labdata/update";
       lab.getLink = ctrl.getDomain() + "/api/rest/assign/" + lab.assignID + "/defn";
       lab.submitLink = ctrl.getDomain() + "/api/rest/submit/" + lab.assignID + "/";
+      presentationData = new PresentationData(data.href, lab);
       httpRequest(lab.getLink, "json", function (udata) {
         hideLoader();
         lab.problemIds = buildIdList(udata.problems);
         if (udata.hasOwnProperty("labData")) {
+
           lab.ans = $.parseJSON(udata.labData);
           if (lab.ans.hasOwnProperty("ques_0")) {
             updateUserData();
@@ -260,6 +266,9 @@
         var probInstId = lab.problemIds[key];
         lab.submissions[probInstId] = 1;
         sendLabResponse(probInstId, lab.ans[key]);
+        if (presentationData.hasTemplate(key)) {
+          presentationData.save(key, probInstId, lab.ans[key]);
+        }
       }
     });
     saveLabAnswerList();

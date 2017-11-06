@@ -1275,7 +1275,7 @@
       parent: contentWrapper,
       callback: function () {
       console.log(assign_id);
-        labData.init({id: assign_id})
+        labData.init({id: assign_id, href: href})
         mainWrapper.find(".pActivityHeader").html(title);
       contentWrapper.find(".pLabAnswerWrapper")//.addClass("pCloseLabAnswerWrapper");
         contentWrapper.find(".pLabQuestionArrow").addClass("pLabQuestionArrowUp");
