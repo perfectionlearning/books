@@ -276,7 +276,8 @@
                                 {
                                     "type": "activity",
                                     "SectionHeading": " Activity: Exploring acceleration ",
-                                    "ref": "actsec_c45123.json"
+                                    "ref": "actsec_c45123.json",
+									"actRef": "course/3DActivity/exploring_acceleration/index.html"
                                 },
                                 {
                                     "type": "videoScreen",
@@ -1407,7 +1408,8 @@
                                 {
                                     "type": "activity",
                                     "SectionHeading": " Activity: Driving a car in two dimensions",
-                                    "ref": "actsec_c451zs.json"
+                                    "ref": "actsec_c451zs.json",
+									"actRef": "course/3DActivity/drive_a_car_2_dimensions/index.html"
                                 },
                                 {
                                     "type": "videoScreen",
