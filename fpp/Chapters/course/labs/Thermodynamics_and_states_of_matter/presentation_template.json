@@ -1,0 +1,46 @@
+{
+   "ques_2": {
+      "interactive_frames": [
+         {
+            "column_row_vals": {
+               "0": [
+                  "",
+                  "Molecule 1",
+                  "Molecule 2",
+                  "Molecule 3",
+                  "Molecule 4",
+                  "Molecule 5",
+                  "Molecule 6",
+                  "Molecule 7",
+                  "Molecule 8",
+                  "Average"
+               ],
+               "1": [
+                  "Speed",
+                  "%VALUE%",
+                  "%VALUE%",
+                  "%VALUE%",
+                  "%VALUE%",
+                  "%VALUE%",
+                  "%VALUE%",
+                  "%VALUE%",
+                  "%VALUE%",
+                  "%VALUE%"
+               ],
+               "2": [
+                  "Speed squared",
+                  "%VALUE%",
+                  "%VALUE%",
+                  "%VALUE%",
+                  "%VALUE%",
+                  "%VALUE%",
+                  "%VALUE%",
+                  "%VALUE%",
+                  "%VALUE%",
+                  "%VALUE%"
+               ]
+            }
+         }
+      ]
+   }
+}

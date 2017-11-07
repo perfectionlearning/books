@@ -1,0 +1,55 @@
+{
+   "ques_2": {
+      "interactive_frames": [
+         {
+            "column_row_vals": {
+               "0": [
+                  "",
+                  "Data point 1",
+                  "Data point 2"
+               ],
+               "1": [
+                  "Force",
+                  "%VALUE% N",
+                  "%VALUE% N"
+               ],
+               "2": [
+                  "Acceleration",
+                  "%VALUE% m/s<sup>2</sup>",
+                  "%VALUE% m/s<sup>2</sup>"
+               ]
+            }
+         }
+      ]
+   },
+   "ques_6": {
+      "interactive_frames": [
+         {
+            "column_row_vals": {
+               "0": [
+                  "",
+                  "Data point 1",
+                  "Data point 2",
+                  "Data point 3",
+                  "Data point 4"
+               ],
+               "1": [
+                  "Speed",
+                  "%VALUE% m/s<sup>2</sup>",
+                  "%VALUE% m/s<sup>2</sup>",
+                  "%VALUE% m/s<sup>2</sup>",
+                  "%VALUE% m/s<sup>2</sup>"
+               ],
+               "2": [
+                  "Force",
+                  "%VALUE% N",
+                  "%VALUE% N",
+                  "%VALUE% N",
+                  "%VALUE% N"
+               ]
+            }
+         }
+      ]
+   }
+}
+

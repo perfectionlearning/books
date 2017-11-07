@@ -1,0 +1,107 @@
+{
+   "ques_7": {
+      "interactive_frames": [
+         {
+            "column_row_vals": {
+               "0": [
+                  "",
+                  "Wave 1",
+                  "Wave 2",
+                  "Wave 3",
+                  "Wave 4"
+               ],
+               "1": [
+                  "Amplitude",
+                  "%VALUE% m",
+                  "%VALUE% m",
+                  "%VALUE% m",
+                  "%VALUE% m"
+               ],
+               "2": [
+                  "Frequency",
+                  "%VALUE% Hz",
+                  "%VALUE% Hz",
+                  "%VALUE% Hz",
+                  "%VALUE% Hz"
+               ],
+               "3": [
+                  "Distance to bird",
+                  "2.5 m",
+                  "2.5 m",
+                  "2.5 m",
+                  "2.5 m"
+               ],
+               "4": [
+                  "Time",
+                  "%VALUE% s",
+                  "%VALUE% s",
+                  "%VALUE% s",
+                  "%VALUE% s"
+               ],
+               "5": [
+                  "Speed",
+                  "%VALUE% m/s",
+                  "%VALUE% m/s",
+                  "%VALUE% m/s",
+                  "%VALUE% m/s"
+               ],
+            }
+         }
+      ]
+   },
+   "ques_10": {
+      "interactive_frames": [
+         {
+            "column_row_vals": {
+               "0": [
+                  "",
+                  "Wave 1",
+                  "Wave 2"
+               ],
+               "1": [
+                  "Frequency",
+                  "%VALUE% Hz",
+                  "%VALUE% Hz"
+               ],
+               "2": [
+                  "Wavelength",
+                  "%VALUE% m",
+                  "%VALUE% m"
+               ],
+               "3": [
+                  "Wave Speed",
+                  "%VALUE% m/s",
+                  "%VALUE% m/s"
+               ]
+            }
+         }
+      ]
+   },
+   "ques_12": {
+      "interactive_frames": [
+         {
+            "column_row_vals": {
+               "0": [
+                  "",
+                  "Trial 1",
+                  "Trial 2",
+                  "Trial 3"
+               ],
+               "1": [
+                  "radius",
+                  "8.00 m",
+                  "16.75 m",
+                  "8.75 m"
+               ],
+               "2": [
+                  "speed",
+                  "%VALUE% m/s",
+                  "%VALUE% m/s",
+                  "%VALUE% m/s"
+               ]
+            }
+         }
+      ]
+   }
+}
+

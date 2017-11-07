@@ -1,0 +1,66 @@
+{
+   "ques_7": {
+      "interactive_frames": [
+         {
+            "column_row_vals": {
+               "0": [
+                  "",
+                  "Data point 1",
+                  "Data point 2",
+                  "Data point 3",
+                  "Data point 4",
+                  "Data point 5"
+               ],
+               "1": [
+                  "Distance",
+                  "%VALUE% m",
+                  "%VALUE% m",
+                  "%VALUE% m",
+                  "%VALUE% m",
+                  "%VALUE% m"
+               ],
+               "2": [
+                  "Force",
+                  "%VALUE% N",
+                  "%VALUE% N",
+                  "%VALUE% N",
+                  "%VALUE% N",
+                  "%VALUE% N"
+               ]
+            }
+         }
+      ]
+   },
+   "ques_11": {
+      "interactive_frames": [
+         {
+            "column_row_vals": {
+               "0": [
+                  "",
+                  "Data point 1",
+                  "Data point 2",
+                  "Data point 3",
+                  "Data point 4",
+                  "Data point 5"
+               ],
+               "1": [
+                  "Charge",
+                  "%VALUE% C",
+                  "%VALUE% C",
+                  "%VALUE% C",
+                  "%VALUE% C",
+                  "%VALUE% C"
+               ],
+               "2": [
+                  "Force",
+                  "%VALUE% N",
+                  "%VALUE% N",
+                  "%VALUE% N",
+                  "%VALUE% N",
+                  "%VALUE% N"
+               ]
+            }
+         }
+      ]
+   },
+}

@@ -1,0 +1,196 @@
+{
+   "ques_0": {
+      "interactive_frames": [
+         {
+            "column_row_vals": {
+               "0": [
+                  "Blue velocity, before",
+                  "%VALUE%",
+                  "%VALUE%",
+                  "%VALUE%",
+                  "%VALUE%"
+               ],
+               "1": [
+                  "Red velocity, before",
+                  "%VALUE%",
+                  "%VALUE%",
+                  "%VALUE%",
+                  "%VALUE%"
+               ],
+               "2": [
+                  "Total velocity, before",
+                  "%VALUE%",
+                  "%VALUE%",
+                  "%VALUE%",
+                  "%VALUE%"
+               ],
+               "3": [
+                  "Blue velocity, after",
+                  "%VALUE%",
+                  "%VALUE%",
+                  "%VALUE%",
+                  "%VALUE%"
+               ],
+               "4": [
+                  "Red velocity, after",
+                  "%VALUE%",
+                  "%VALUE%",
+                  "%VALUE%",
+                  "%VALUE%"
+               ],
+               "5": [
+                  "Total velocity, after",
+                  "%VALUE%",
+                  "%VALUE%",
+                  "%VALUE%",
+                  "%VALUE%"
+               ]
+            }
+         }
+      ]
+   },
+   "ques_1": {
+      "interactive_frames": [
+         {
+            "column_row_vals": {
+               "0": [
+                  "Blue momentum, before",
+                  "%VALUE%",
+                  "%VALUE%",
+                  "%VALUE%",
+                  "%VALUE%"
+               ],
+               "1": [
+                  "Red momentum, before",
+                  "%VALUE%",
+                  "%VALUE%",
+                  "%VALUE%",
+                  "%VALUE%"
+               ],
+               "2": [
+                  "Total momentum, before",
+                  "%VALUE%",
+                  "%VALUE%",
+                  "%VALUE%",
+                  "%VALUE%"
+               ],
+               "3": [
+                  "Blue momentum, after",
+                  "%VALUE%",
+                  "%VALUE%",
+                  "%VALUE%",
+                  "%VALUE%"
+               ],
+               "4": [
+                  "Red momentum, after",
+                  "%VALUE%",
+                  "%VALUE%",
+                  "%VALUE%",
+                  "%VALUE%"
+               ],
+               "5": [
+                  "Total momentum, after",
+                  "%VALUE%",
+                  "%VALUE%",
+                  "%VALUE%",
+                  "%VALUE%"
+               ]
+            }
+         }
+      ]
+   },
+   "ques_5": {
+      "interactive_frames": [
+         {
+            "column_row_vals": {
+               "0": [
+                  "Blue KE, before",
+                  "%VALUE%",
+                  "%VALUE%"
+               ],
+               "1": [
+                  "Red KE, before",
+                  "%VALUE%",
+                  "%VALUE%"
+               ],
+               "2": [
+                  "Total KE, before",
+                  "%VALUE%",
+                  "%VALUE%"
+               ],
+               "3": [
+                  "Blue KE, after",
+                  "%VALUE%",
+                  "%VALUE%"
+               ],
+               "4": [
+                  "Red KE, after",
+                  "%VALUE%",
+                  "%VALUE%"
+               ],
+               "5": [
+                  "Total KE, after",
+                  "%VALUE%",
+                  "%VALUE%"
+               ]
+            }
+         }
+      ]
+   },
+   "ques_10": {
+      "interactive_frames": [
+         {
+            "column_row_vals": {
+               "0": [
+                  "Green momentum, before",
+                  "%VALUE%",
+                  "%VALUE%"
+               ],
+               "1": [
+                  "Brown momentum, before",
+                  "%VALUE%",
+                  "%VALUE%"
+               ],
+               "2": [
+                  "Green momentum, after",
+                  "%VALUE%",
+                  "%VALUE%"
+               ],
+               "3": [
+                  "Brown momentum, after",
+                  "%VALUE%",
+                  "%VALUE%"
+               ]
+            }
+         }
+      ]
+   },
+   "ques_11": {
+      "interactive_frames": [
+         {
+            "column_row_vals": {
+               "0": [
+                  "Green KE, before",
+                  "%VALUE%",
+                  "%VALUE%"
+               ],
+               "1": [
+                  "Brown KE, before",
+                  "%VALUE%",
+                  "%VALUE%"
+               ],
+               "2": [
+                  "Green KE, after",
+                  "%VALUE%",
+                  "%VALUE%"
+               ],
+               "3": [
+                  "Brown KE, after",
+                  "%VALUE%",
+                  "%VALUE%"
+               ]
+            }
+         }
+      ]
+   }
+}

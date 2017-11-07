@@ -1,0 +1,83 @@
+{
+   "ques_0": {
+      "interactive_frames": [
+         {
+            "column_row_vals": {
+               "0": [
+                  "Mass",
+                  "%VALUE% kg",
+                  "%VALUE% kg",
+                  "%VALUE% kg",
+                  "%VALUE% kg"
+               ],
+               "1": [
+                  "Force",
+                  "%VALUE% N",
+                  "%VALUE% N",
+                  "%VALUE% N",
+                  "%VALUE% N"
+               ]
+            }
+         }
+      ]
+   },
+   "ques_3": {
+      "interactive_frames": [
+         {
+            "column_row_vals": {
+               "0": [
+                  "Mass",
+                  "%VALUE% m",
+                  "%VALUE% m",
+                  "%VALUE% m",
+                  "%VALUE% m"
+               ],
+               "1": [
+                  "Force",
+                  "%VALUE% N",
+                  "%VALUE% N",
+                  "%VALUE% N",
+                  "%VALUE% N"
+               ]
+            }
+         }
+      ]
+   },
+   "ques_6": {
+      "interactive_frames": [
+         {
+            "column_row_vals": {
+               "0": [
+                  "Separation",
+                  "%VALUE% m",
+                  "%VALUE% m"
+               ],
+               "1": [
+                  "Force",
+                  "%VALUE% N",
+                  "%VALUE% N"
+               ]
+            }
+         }
+      ]
+   },
+   "ques_7": {
+      "interactive_frames": [
+         {
+            "column_row_vals": {
+               "0": [
+                  "Separation",
+                  "%VALUE% kg",
+                  "%VALUE% kg"
+               ],
+               "1": [
+                  "Force",
+                  "%VALUE% N",
+                  "%VALUE% N"
+               ]
+            }
+         }
+      ]
+   }
+}
+
