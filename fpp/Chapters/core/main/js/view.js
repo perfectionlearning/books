@@ -5,6 +5,7 @@
     var quizCheck = new QuizCheck();
     var quizBoard = new QuizBoard();
     var labData = new LabData();
+	var productDropdown = new ProductDropdown();
     var p = new Object();
     var coreData;
     var getUrl = window.location;
@@ -178,6 +179,7 @@
         });
     $('.activityLoader').hide();
   updateView();
+  productDropdown.populate();
   updateUrl();
   playerEvent();
       }
@@ -784,6 +786,7 @@
     $(p.mShell).find(".std_act_link").off(mouseEvents.up, std_act_linkUp).on(mouseEvents.up, std_act_linkUp);
     $(p.mShell).find(".pButtons,.pSubMenuHeader").off(mouseEvents.down, mousedown).on(mouseEvents.down, mousedown);
     $(p.mShell).find(".pButtons,.sbt_btn").off(mouseEvents.up, mouseup).on(mouseEvents.up, mouseup);
+	$(p.mShell).find(".productMenu").off(mouseEvents.up, mouseup).on(mouseEvents.up, mouseup);
     $(p.mShell).find(".pChapName").off(mouseEvents.down, mousedown).on(mouseEvents.down, mousedown);
     $(p.mShell).find(".pChapName").off("click", chapterUp).on("click", chapterUp);
     //$(p.mShell).find(".pChapName").off(:, chapterUp).on(mouseEvents.up, chapterUp);
@@ -1359,6 +1362,16 @@
     }
 
   break;
+      case 'products':
+console.log('playerbtnManager products; check selected', _obj);
+        if (!_obj._this.hasClass("pSelected")) {
+            $(p.mShell).find(".headerText").addClass('pSelected')
+            $(p.mShell).find(".pProductWrap").slideDown();
+        } else {
+            overlayDown();
+        }
+        break;
+
     case "pHistory":
 
     manageScreen("quizboard");
@@ -1674,6 +1687,8 @@
     if (type !== 'logout') {
       $(p.mShell).find(".pMenu").removeClass('pSelected');
       $(p.mShell).find(".pMenuWrap").slideUp();
+      $(p.mShell).find(".headerText").removeClass('pSelected');
+      $(p.mShell).find(".pProductWrap").slideUp();
     }
   }
 

@@ -130,6 +130,7 @@
   function getFPPCourses() {
     httpRequest(p.rest_courses, "json", function (data) {
       var fpp_courses = data.filter((item) => { return item.product === 'fpp'; });
+	  $(document).trigger("getProductList", { productData: $.extend(true, {} ,fpp_courses) });
       getSyncIDs(fpp_courses);
     }, function () {
     });
