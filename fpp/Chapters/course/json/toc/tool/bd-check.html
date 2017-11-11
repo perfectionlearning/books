@@ -1,0 +1,57 @@
+<!doctype html>
+<html ng-app="bd">
+<head>
+  <title>Check BookDefinition</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular.min.js"></script>
+  <script src="./app/js/app.js"></script>
+  <script src="./app/js/helpers.js"></script>
+  <script>
+    app.service('readBookDefinition', function($http) {
+
+        this.getBd = function() {
+        	return $http.get('./BookDefinition.json').then((res) => {
+				return res.data;
+			}, (res) => { console.log('did not want to get here.'); });
+        };
+
+    });
+
+    app.controller('BookDefinition', ($scope, readBookDefinition, api, helpers) => {
+        api.login().then((res) => {
+            console.log('api.login', res);
+            readBookDefinition.getBd().then((res) => {
+                var chapters = res.chapters;
+                helpers.getCourseAssignments().then((res) => {
+                    var syncIDs = helpers.getSyncIDs(res.data);
+                    console.log('syncIDs', syncIDs);
+                    helpers.compareBD(chapters, syncIDs);
+                });
+            });
+        });
+        $scope.message = "Hello, World!";
+
+        $scope.isEmpty = function(ch) {
+            return Object.keys(ch).length === 0;
+        };
+
+    });
+  </script>
+</head>
+<body>
+<div class="container" ng-controller="BookDefinition">
+<h1>{{message}}</h1>
+<ul>
+  <li ng-repeat="assigns in syncIDs">{{assigns}}:
+    <ul>
+      <li ng-repeat="assign in assigns track by $index">{{assign.id}}, type {{assign.type}}, syncID {{assign.syncID}}</li>
+    </ul>
+  </li>
+</ul>
+<ul>
+  <li ng-repeat="chapter in chapters track by $index" ng-if="!isEmpty(chapter) && chapter.quizBoard_id">{{chapter.title}}, quizboard ID {{chapter.quizBoard_id}}</li>
+  <li ng-repeat="chapter in chapters track by $index" ng-if="!isEmpty(chapter) && !chapter.quizBoard_id">{{chapter.title}}, {{chapter}}</li>
+</ul>
+</div>
+
+</body>
+</html>
