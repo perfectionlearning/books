@@ -22,6 +22,7 @@ var QuizBoard = function() {
     ]
   }
 
+  // data are initialized and events are binded
   this.init = function(data) {
     videoPlayer = data.videoPlayer;
     q.screenData = data.screenData;
@@ -33,7 +34,7 @@ var QuizBoard = function() {
     hideLoader();
 
   }
-
+//quizboard home screen loaded
   function loadScreen() {
     q.submitCnt = 0;
     var cnt = 0;
@@ -85,6 +86,7 @@ var QuizBoard = function() {
     bindEvents();
   }
 
+  //question are loaded
   function loadQuestion(data) {
     $('.pQuizButtons').removeClass('pDisable');
     $('.pQuizBoard .pQuizFeedback').removeClass('correct').removeClass('incorrect').hide();
@@ -116,7 +118,7 @@ var QuizBoard = function() {
       setMaxLength();
     }, 1000);
   }
-
+//events are binded on the buttons 
   function bindEvents() {
     if (!device) {
       $(".pQuizButtons,.qVideo,.bOptionRow").off("mouseover", mouseover).on("mouseover", mouseover);
@@ -133,7 +135,7 @@ var QuizBoard = function() {
     $(".bquestionWrapper").off(mouseEvents.up).on(mouseEvents.up, loadQuestion);
 
   }
-
+// radio button on mouse up
   function radioUp() {
     if (q.screenData[q.problem_inst_id].ansType == "radio") {
       $('.selected').removeClass("selected");
@@ -182,14 +184,14 @@ var QuizBoard = function() {
       });
     }
   }
-
+//remove hover and selected state from the screens
   function btnStateReset() {
     $(".pQuizButtons").removeClass("pHover").removeClass("pDown");
     $(".qVideo").removeClass("pHover").removeClass("pDown");
     $(".bOptionRow").removeClass("pHover").removeClass("pDown");
 
   }
-
+//loads the solution on the screen
   this.loadSolution = function() {
     $('.step').remove();
     $('.pQuizBoard .pQuizFeedback').hide()
@@ -245,6 +247,7 @@ var QuizBoard = function() {
     hideLoader();
   }
 
+  //event manager that manages the event depending upon the type of button
   function playerbtnManager(_obj) {
     //
     btnStateReset();
@@ -448,6 +451,7 @@ var QuizBoard = function() {
 
   }
 
+  // checks the user resonse from the server
   function checkUserResponse(data, cb) {
     var feedbackCorrectNdx = getCorrectMsgNdx(data);
     console.log(data);
@@ -456,11 +460,11 @@ var QuizBoard = function() {
     $('.bquestionWrapper[data-ques="' + q.currentQues + '"]').find('.currentQuestionNo').removeClass('correct');
     $('.bquestionWrapper[data-ques="' + q.currentQues + '"]').find('.currentQuestionNo .status_img').removeClass('correct');
     $('.bquestionWrapper[data-ques="' + q.currentQues + '"]').find('.currentQuestionNo .status_img').removeClass('incorrect');
-    if (data.iscorrect) {
+    
+	if (data.iscorrect) { //if the user response is correct
       $('.bquestionWrapper[data-ques="' + q.currentQues + '"]').find('.currentQuestionNo').addClass('correct');
       $('.bquestionWrapper[data-ques="' + q.currentQues + '"]').find('.currentQuestionNo .status_img').addClass('correct');
-
-      var correctMsgNdx = getCorrectMsgNdx(data);
+	   var correctMsgNdx = getCorrectMsgNdx(data);
       var feedBackTxt = feedback.correct[correctMsgNdx];;
       setProblemStatus('correct');
       $(".step").find("input").css("background-color", "#ebebe4");
@@ -472,6 +476,7 @@ var QuizBoard = function() {
       $('.pQuizBoard .pQuizButtons').not('.quizNavButtons').addClass('pDisable');
       hideLoader();
     } else {
+		//if the user response is incorrect
       $('.bquestionWrapper[data-ques="' + q.currentQues + '"]').find('.currentQuestionNo').addClass('incorrect');
       $('.bquestionWrapper[data-ques="' + q.currentQues + '"]').find('.currentQuestionNo .status_img').addClass('incorrect');
 
@@ -488,7 +493,7 @@ var QuizBoard = function() {
 
 
   }
-
+//sending  user response to server to check the answers
   function sendQuizBoardResponse(_temp, cb) {
     console.log("user response");
     console.log(_temp.data);
@@ -530,6 +535,7 @@ var QuizBoard = function() {
     $(".pDisabler").fadeOut();
   }
 
+  //manage next/prev button enable/disable state
   function quiznavigationState(currentQues) {
     $(".quizNavButtons.pBack").removeClass("pDisable");
     $(".quizNavButtons.pNext").removeClass("pDisable");
@@ -541,7 +547,7 @@ var QuizBoard = function() {
       $(".quizNavButtons.pNext").addClass("pDisable");
     }
   }
-
+// reset the quizboard to initial state
   function reset() {
     $('.pQuizButtons').removeClass('pDisable');
     $('.step').remove();
@@ -556,7 +562,7 @@ var QuizBoard = function() {
     $('.pQuizBoardHeader').html("Click on a question, then select your answer.");
 
   }
-
+//enable/disable submit button on repeated incorrect answers
   function manageButtons(disable) {
     if (disable) {
       $('.pQuizButtons.uSubmit').addClass('pDisable');
@@ -567,7 +573,7 @@ var QuizBoard = function() {
       $(".pQuizBoard .bOptionRow").off(mouseEvents.up).on(mouseEvents.up, radioUp);
     }
   }
-
+//setting the length on the input box depending upon the answer
   function setMaxLength() {
 
     $('.pAnsWrap').find("input").each(function(i) {

@@ -29,7 +29,7 @@ var QuizCheck = function() {
       "It looks like you need to review this material. Click one of the help options for additional assistance."
     ]
   }
-
+ // data are initialized and events are binded
   this.init = function(data) {
     q.submitCnt = 0;
     videoPlayer = data.videoPlayer;
@@ -66,7 +66,7 @@ var QuizCheck = function() {
     }, 200)
 
   }
-
+//appending video or images if any onto the screen
   function appendResource() {
     $(".resource").remove();
     if (q.screenData.hasOwnProperty("qImg") && q.screenData.qImg != "" && q.screenData.qImg != null) {
@@ -152,7 +152,7 @@ var QuizCheck = function() {
 
     }
   }
-
+//events are binded on the buttons 
   function bindEvents() {
     if (!device) {
       $(q.mShell).find(".pQuizButtons,.qVideo,.bOptionRow").off("mouseover", mouseover).on("mouseover", mouseover);
@@ -217,13 +217,14 @@ var QuizCheck = function() {
       });
     }
   }
-
+//remove hover and selected state from the screens
   function btnStateReset() {
     $(q.mShell).find(".pQuizButtons").removeClass("pHover").removeClass("pDown");
     $(q.mShell).find(".qVideo").removeClass("pHover").removeClass("pDown");
     $(q.mShell).find(".bOptionRow").removeClass("pHover").removeClass("pDown");
 
   }
+   // loads step section of the quickcheck
   this.loadStep = function() {
     q.stepIndex++;
     var temp = document.createElement("div");
@@ -281,6 +282,7 @@ var QuizCheck = function() {
     }, 200)
 
   }
+  //loads the solution on the screen
   this.loadSolution = function() {
     showSolutionFlag = true;
     $('.pQuizCheck .pQuizFeedback').hide();
@@ -336,7 +338,7 @@ var QuizCheck = function() {
     $(q.mShell).find('.pQuizCheck .try_another_main').removeClass('pDisable').show();
 
   }
-
+  //event manager that manages the event depending upon the type of button
   function playerbtnManager(_obj) {
     //
     btnStateReset();
@@ -495,7 +497,7 @@ var QuizCheck = function() {
 
     }
   }
-
+ // checks the user resonse for radio from the server
   function checkUserRadioResponse(data) {
     $('.pQuizCheck .pQuizFeedback').removeClass('correct').removeClass('incorrect')
     if (data.hasOwnProperty("step")) {
@@ -571,7 +573,7 @@ var QuizCheck = function() {
       }
     }
   }
-
+ // checks the user resonse from the server
   function checkUserResponse(data, cb) {
     console.log(data);
     $('.pQuizCheck .pQuizFeedback').removeClass('correct').removeClass('incorrect')
@@ -663,7 +665,7 @@ var QuizCheck = function() {
     }
 
   }
-
+//sending  user response to server to check the answers
   function sendUserResponse(_temp, cb) {
     console.log("user response");
     console.log(_temp.data);
@@ -702,7 +704,7 @@ var QuizCheck = function() {
 
     $(q.mShell).find(".pDisabler").fadeOut();
   }
-
+// reset the quickcheck to initial state
   function reset() {
     showSolutionFlag = false;
     manageButtons(false);
@@ -719,7 +721,7 @@ var QuizCheck = function() {
     $(".pQuizCheck .bOptionRow").removeClass('pDisable');
 
   }
-
+//enable/disable submit button on repeated incorrect answers
   function manageButtons(disable) {
     if (disable) {
       $(".pQuizCheck input").attr("disabled", true);
@@ -733,6 +735,7 @@ var QuizCheck = function() {
     }
   }
 
+  //setting the length on the input box depending upon the answer
   function setMaxLength(stepId) {
     $('input,a,button,textarea').attr('tabindex', '-1')
     $('.pQuizCheck').find("input").each(function(i) {
@@ -750,7 +753,7 @@ var QuizCheck = function() {
       })
     }
   }
-
+// load another problem
   function loadAnotherProblem() {
     httpRequest(ctrl.getDomain() + "/api/rest/pset/" + q.instance_id + '/' + q.problem_inst_id + '/different', "json", function(data) {
       data = cleanMML(data);

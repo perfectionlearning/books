@@ -7,13 +7,16 @@ var Controller = function() {
   p.bookType = "florida";
   var coreData;
   var lessonFlag = false;
+  
   this.init = function() {
     showLoader();
     eventListener();
   };
+  // Returns the user type whether student or teacher
   this.getUserType = function() {
     return p.usertype;
   };
+  // Returns the baseUrl
   this.getDomain = function() {
     return getBaseUrl();
   };
@@ -25,17 +28,18 @@ var Controller = function() {
     var baseUrl = protocol + '//' + host;
     return baseUrl;
   }
-
+// This function bind the events
   function eventListener() {
-    $(document).off("loadNext", loadNext).on("loadNext", loadNext);
-    $(document).off("loadPrev", loadPrev).on("loadPrev", loadPrev);
-    $(document).off("changePassword", changePassword).on("changePassword", changePassword);
-    $(document).off("changeEmail", changeEmail).on("changeEmail", changeEmail);
-    $(document).off("loadSpecificTopic", loadSpecificTopic).on("loadSpecificTopic", loadSpecificTopic);
-    $(document).off("updateBook", updateBook).on("updateBook", updateBook);
+    $(document).off("loadNext", loadNext).on("loadNext", loadNext);//loads next page
+    $(document).off("loadPrev", loadPrev).on("loadPrev", loadPrev);// load previous page
+    $(document).off("changePassword", changePassword).on("changePassword", changePassword);//change user password
+    $(document).off("changeEmail", changeEmail).on("changeEmail", changeEmail);// update user email
+    $(document).off("loadSpecificTopic", loadSpecificTopic).on("loadSpecificTopic", loadSpecificTopic); // load specific topic selected by user
+    $(document).off("updateBook", updateBook).on("updateBook", updateBook); // updates the book data depending upon the type whether chapter or lessonplan;
     loadBookData();
   }
 
+  //this function loads BookDefinition.json file
   function loadBookData(e, data) {
     var baseUrl = getBaseUrl(); // Added by PL
 
@@ -241,7 +245,7 @@ var Controller = function() {
     });
     loadScreen();
   }
-
+//updates the book data depending upon the type whether chapter or lessonplan;
   function updateBook(e, book) {
     if (book.book) {
       lessonFlag = false;
@@ -252,7 +256,7 @@ var Controller = function() {
     }
 
   }
-
+//manages the next and previous enable/disable state.
   function manageNavigationState() {
     var unit = p.bookData[p.chap]["unit"].length - 1;
     var section = p.bookData[p.chap]["unit"][unit]["section"].length - 1;
@@ -274,7 +278,7 @@ var Controller = function() {
       });
     }
   }
-
+//loads next page
   function loadNext() {
     var unit = p.bookData[p.chap]["unit"].length - 1;
     var section = p.bookData[p.chap]["unit"][p.unit]["section"].length - 1;
@@ -295,7 +299,7 @@ var Controller = function() {
       loadScreen();
     }
   }
-
+// load previous page
   function loadPrev() {
     if (p.subSection > 0) {
       p.subSection--;
@@ -313,7 +317,7 @@ var Controller = function() {
       loadScreen();
     }
   }
-
+// load specific topic selected by user
   function loadSpecificTopic(e, data) {
     p.chap = data.chap;
     p.unit = data.unit;
@@ -329,6 +333,7 @@ var Controller = function() {
     }
 
   }
+  // function is called on the change of url from the helper.js file
   this.hashChange = function(data) {
     if (data.type == "chapter") {
       p.chap = data.chap;
@@ -383,7 +388,7 @@ var Controller = function() {
     }
 
   }
-
+//This functions get the screen data and depending upon the type of the screen.. data is passed to respective function in the view  
   function loadScreen(vIndex, page) {
     if (!p.chap) return;
     manageNavigationState();
@@ -513,7 +518,7 @@ var Controller = function() {
     }
 
   }
-
+// updates the breadcrumb
   function updateBreadCrumb() {
     var txt, section;
     if (lessonFlag) {
@@ -536,6 +541,7 @@ var Controller = function() {
     $('.pBreadCrumb').show().html(txt);
   }
 
+  // updates the menu inside the screen
   function updateSubMenu() {
     $('.accSysmbol').html("+");
     $('.sopen').removeClass("sopen");
@@ -561,6 +567,7 @@ var Controller = function() {
     $(".pSubMenuTopic[data-chap='" + p.chap + "'][data-topic='" + p.unit + "'][data-subtopic='" + p.section + "'][data-subsection='" + p.subSection + "'] ").prevUntil('.pSubMenuTopicHeader').prev().show();
   }
 
+   // gets the quiz data from the server
   function getQuizData(_data, cb) {
     httpRequest(p.get_link + p.bookData[p.chap]["instance_id"], "json", function(data) {
       // Check for NGSS instance ID
@@ -585,7 +592,7 @@ var Controller = function() {
       })
     });
   }
-
+// gets the quiz board data from the server
   function getQuizboardData(_data, cb) {
     httpRequest(p.quizboard_get_link + p.bookData[p.chap]["quizBoard_id"], "json", function(data) {
       for (var i in data) {
@@ -598,7 +605,7 @@ var Controller = function() {
       })
     });
   }
-
+// updates the password of the user
   function changePassword(e, data) {
     var _data = {
       "old_password": data.old_password,
@@ -629,7 +636,7 @@ var Controller = function() {
       request = null;
     });
   }
-
+// updates the email of the user
   function changeEmail(e, data) {
 
     var _data = {

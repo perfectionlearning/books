@@ -36,11 +36,13 @@ function View() {
       overlayDown(e);
     });
   }
-
+	//This function stores the book data
   function getBookData(e, data) {
     p.bookData = data.bookData;
     coreData = data;
   }
+  
+  //This function updates the p.bookdata variable to chapter data and lesson plan
   this.updateBook = function(book) {
     if (book) {
       lessonFlag = false;
@@ -51,6 +53,7 @@ function View() {
     }
 
   }
+  //This function sets the user type student or teacher
   this.setUserType = function(type) {
     p.usertype = type;
   }
@@ -86,7 +89,7 @@ function View() {
       p.searchCode = data;
     });
   }
-
+// function craetes the DOM
   function createPlayer(_str) {
     switch (_str) {
       case "header":
@@ -196,7 +199,7 @@ function View() {
         break;
     }
   }
-
+	//This function updates the menu in the book depending upon the user type.
   function updateView() {
     switch (p.usertype) {
       case "Student":
@@ -240,7 +243,7 @@ function View() {
       alert(_obj.src + " file not found.");
     });
   }
-
+	//This function creates lab menu.
   function initLabsMenu() { //---->
     var labsWrapper = $(p.mShell).find(".pLabsWrapper");
     labsWrapper.find(".labMenuHeader").html(p.labsData.title);
@@ -275,7 +278,7 @@ function View() {
       }
     });
   } //---->
-
+//This function creates TOC.
   function initBook() {
     $(p.mShell).find('.pChapBody').mCustomScrollbar("destroy");
     var _chapWrap = $('.pChapBody')[0];
@@ -320,7 +323,8 @@ function View() {
       }
     });
   }
-
+  
+	//This function updates the menu inside the screen.
   function loadSubMenu(e, data) {
     $(p.mShell).find('.innerMenuWrap').mCustomScrollbar("destroy");
     var _html = "<div class='pSubTopicWrapper pSubMenuTopicHeader'> <div class='pSubTopicName'>Ch 1 : One-Dimensional</div><div class='pChapSeperator'></div><div class='pSubTopicInnerMainWrap'> <div class='pSubTopicInnerWrap'> <div class='pSubTopicName'>Ch 1 : One-Dimensional</div><div class='pChapSeperator'></div></div></div></div>";
@@ -409,6 +413,7 @@ function View() {
     playerEvent();
   }
 
+  //This function manages the next and previous button enable/disable .
   function navigationState(e, data) {
     $(p.mShell).find(".navButtons.pBack").removeClass("pDisable");
     $(p.mShell).find(".navButtons.pNext").removeClass("pDisable");
@@ -420,7 +425,7 @@ function View() {
     }
 
   }
-
+ //This function updates the menu related to chapters.
   function loadTopic(topic_no) {
 
     var temp = p.bookData.chapters[topic_no];
@@ -490,7 +495,7 @@ function View() {
     });
     playerEvent();
   }
-
+//This function loads the activity screen.
   function loadActivityScreen(e, data) {
     if (!data.hasOwnProperty("json")) {
       showLoader();
@@ -579,7 +584,7 @@ function View() {
     hideLoader();
     playerEvent();
   }
-
+//This function loads the resource screen.
   function loadAdditionalResource(e, data) {
     $('.pMenu').addClass('pDisable');
     $('.book_bck').show()
@@ -611,7 +616,7 @@ function View() {
     $('.pSubmenuButton').hide();
     $('.navButtons').hide();
   }
-
+//This function loads the summary screen.
   function loadSummaryScreen(e, data) {
     var _tempScreenData = data.screenData;
     p.cSrc = _tempScreenData.objectNames;
@@ -631,7 +636,7 @@ function View() {
     manageScreen("summary");
     playerEvent();
   }
-
+//This function loads the screen that contains pdf.
   function loadPdfScreen(e, data) {
     var _tempScreenData = data.screenData;
     var page = 1;
@@ -644,7 +649,7 @@ function View() {
     p.currentType = "pdfScreen";
     manageScreen("pdfScreen");
   }
-
+//This function loads the lab menu.
   function loadLabMenu(e, data) {
     var labsData = data.screenData;
     var labsWrapper = $(p.mShell).find(".pLabsWrapper");
@@ -700,7 +705,7 @@ function View() {
     });
     playerEvent();
   }
-
+//This function loads the screen that contains quickchecks. The quickcheck data is passed on to the init function of quckcheck.js
   function loadQuizCheck(e, data) {
     data.videoPlayer = videoPlayer;
     $(p.mShell).find(".pSummaryHeader").html(data.screenNo + " " + "Quickcheck");
@@ -714,7 +719,7 @@ function View() {
     p.currentType = "quizcheck";
     manageScreen("quizcheck");
   }
-
+//This function loads the screen that contains QuizBoard. The QuizBoard data is passed on to the init function of QuizBoard.js
   function loadQuizBoard(e, data) {
     data.videoPlayer = videoPlayer;
     p.currentType = "quizboard";
@@ -727,7 +732,8 @@ function View() {
     }
     manageScreen("quizboard");
   }
-
+  
+//This function show/hide div depending upon the type of screen for eg. help,summary etc. this function is called whenever a screen is loaded.
   function manageScreen(type) {
     $(".pSearchAreaWrapper").hide();
     $('.pSubmenuButton').show();
@@ -836,7 +842,8 @@ function View() {
         break;
     }
   }
-
+  
+// This function binds events on the buttons; 
   function playerEvent() {
     if (!device) {
       $(p.mShell).find(".pButtons,.pTopic").not('.noLink').off("mouseover", mouseover).on("mouseover", mouseover);
@@ -911,7 +918,7 @@ function View() {
       $(".searchResultCount").text("");
     }
   }
-
+// Disables search header
   function disableHeaderSearch(bool) {
     $("#searchField").attr("disabled", bool);
     if (bool) {
@@ -1091,14 +1098,14 @@ function View() {
     }
   }
   this.getLabRef = getLabref;
-
+//function opens the book menu
   function gotoBook() {
     $(this).removeClass("pDown").removeClass("pHover");
     playerbtnManager({
       type: "book"
     });
   }
-
+//This function is called when user click on topic in the inner menu
   function subMenuTopicDown(e) {
     e.stopPropagation();
     if ($(e.target).parent().hasClass('pSubTopicWrapper')) {
@@ -1256,7 +1263,7 @@ function View() {
       videoPlayer.playVideo(ind);
     }
   }
-
+// function loads the video screen
   function loadOnlyVideo(e, data) {
     $('.pActivityWrapper').show();
     $('.pBookWrapper').hide();
@@ -1453,7 +1460,8 @@ function View() {
       }
     });
   } //---->
-
+  
+// functions prints the window page
   function printPage(e) {
     var OpenWindow = window.open('course/template/printPage.html', '_blank', 'width=1024,height=470,resizable=1');
     window.OpenWindow = OpenWindow;
@@ -1476,14 +1484,16 @@ function View() {
       $(OpenWindow.document.getElementById("container")).css("width", "1024px");
     }
   }
-
+// functions removes hover effect from the button
   function btnStateReset() {
     $(p.mShell).find(".pButtons").removeClass("pHover").removeClass("pDown");
     $(p.mShell).find(".pChapName").removeClass("pHover").removeClass("pDown");
     $(".mPrevwrap").removeClass("pDown");
     $(".mNextwrap").removeClass("pDown");
   }
-
+  
+	//calls functions depending upon the type of event
+  
   function playerbtnManager(_obj) {
     btnStateReset();
     switch (_obj.type) {
@@ -1732,7 +1742,7 @@ function View() {
         break;
     }
   }
-
+//Change password functionality 
   function validatePassword() {
     $(p.mShell).find('.changePassBody .feedback').hide();
     var oldpassword = $('.oldPassword').val();
@@ -1772,7 +1782,7 @@ function View() {
 
 
   }
-
+//Change email functionality 
   function validateEmail() {
 
     $(p.mShell).find('.changeEmailBody .feedback').hide();
@@ -1794,7 +1804,7 @@ function View() {
         $(p.mShell).find('.changeEmailBody .feedback').css("color", "red").html("Enter proper Email-Id.").fadeIn();
       }
     }
-
+// checks for email validation
     function checkValidation() {
 
       $(p.mShell).find('.changeEmailBody .loginInput').each(function(e) {
@@ -1846,7 +1856,7 @@ function View() {
       console.log('Failure');
     });
   }
-
+//function loads the screen depending upon the type
   this.loadScreen = function(data) {
     if (data.type != "labPage") {
       playerbtnManager(data);

@@ -14,6 +14,7 @@ var VideoPlayer = function() {
   var millisec;
   var cIndex;
   var _this = this;
+  // this function is to initialize the video element and bind events. It is called only once from the view.js file
   this.init = function() {
     elem["srcData"] = [];
     elem["video"] = $('.video_setup')[0];
@@ -52,7 +53,7 @@ var VideoPlayer = function() {
     });
 
   }
-
+// this function is called on the click of valoume button and it opens the volume slider
   function volumesliderUp1() {
     $(window).off(mouseEvents.move, volumesliderMove);
     $(window).off(mouseEvents.up, volumesliderUp1);
@@ -64,6 +65,7 @@ var VideoPlayer = function() {
     }
   }
 
+  //This function is called after the user releases the mouse on the volume slider
   function volumesliderUp(e) {
 
 
@@ -91,7 +93,7 @@ var VideoPlayer = function() {
 
 
   }
-
+//This function is to move the volume slider up and down
   function volumesliderMove(e) {
     var pos = getMouseOffset(e);
     $('.videoWrapper').addClass('pHover');
@@ -111,7 +113,7 @@ var VideoPlayer = function() {
     volumesliderUp(e);
 
   }
-
+//This function sets the source of the video elemnt
   this.initiateVideo = function(data) {
     elem["srcData"] = data.src
     $('.videoWrapper').removeClass("small");
@@ -119,7 +121,7 @@ var VideoPlayer = function() {
     elem["title"].html("");
     elem["slideData"].html("");
   }
-
+//This function manages the video next/prev navigation
   function manageVideoNavigation() {
     if (cIndex == 0 && (elem["srcData"].length == 1)) {
       $('.pPrevVideo').addClass("pDisable");
@@ -135,14 +137,17 @@ var VideoPlayer = function() {
       $('.pNextVideo').removeClass("pDisable");
     }
   }
+  //plays the next video
   this.nextVideo = function() {
     cIndex++;
     this.playVideo(cIndex);
   }
+    //plays the prev video
   this.preVideo = function() {
     cIndex--;
     this.playVideo(cIndex);
   }
+  //mute/unmute video volume
   this.setVolume = function(bool) {
     if (bool) {
       elem["video"].volume = 1;
@@ -150,6 +155,7 @@ var VideoPlayer = function() {
       elem["video"].volume = 0;
     }
   }
+   //play the video and sets the video height and width depending upon the size.
   this.playVideo = function(ind, playVideo, qChk) {
     cIndex = ind;
     reset();
@@ -214,7 +220,7 @@ var VideoPlayer = function() {
     });
   }
 
-
+ //toggle play/pause button
   this.playControl = function(obj) {
 
     if (obj._this.hasClass("pPlay")) {
@@ -226,6 +232,7 @@ var VideoPlayer = function() {
       clearInterval(buffer);
     }
   }
+   //stop the video
   this.stopVideo = function() {
     $('.pNext').css('z-index', 'initial');
     $('.pBack').css('z-index', 'initial');
@@ -242,6 +249,7 @@ var VideoPlayer = function() {
     clearInterval(buffer);
     $('.pVideoMainWrapper').hide();
   }
+     //replay the video
   this.replay = function() {
     $(".pButtons[data-type='play']").removeClass("pDisable");
     elem.currentTime = 0;
@@ -277,7 +285,7 @@ var VideoPlayer = function() {
       direction: "down"
     });
   }
-
+   //updates the current time in the 
   function updateTime() {
     elem.duration = elem["video"].duration;
     elem["totalDuration"].html(getTime(elem.duration));
@@ -302,7 +310,7 @@ var VideoPlayer = function() {
       $('.currentTime').html(elem.currentTime);
     }
   }
-
+// jumps the video to particular time and start payinf from there.
   function jumpVideo(per) {
     elem.currentTime = Number(Math.round((elem.duration * per) / 100));
     var tym = getTime(elem.currentTime);
@@ -317,7 +325,7 @@ var VideoPlayer = function() {
     elem["video"].play();
     // }
   }
-
+// function is called on mousedown or touch down on the scrubbar
   function mSliderDown(e) {
     if (!$(this).hasClass("mDisable")) {
       elem["video"].pause();
@@ -327,7 +335,7 @@ var VideoPlayer = function() {
       $(window).off(mouseEvents.up, sliderUp).on(mouseEvents.up, sliderUp);
     }
   }
-
+// function updates the  scrub bar on the mousemove or touchmove
   function sliderMove(e) {
     elem["scruBar"].addClass("pHover");
     var pos = getMouseOffset(e);
@@ -348,7 +356,7 @@ var VideoPlayer = function() {
       });
     }
   }
-
+// function is called on releasing the mouse from the scrub bar
   function sliderUp(e) {
     e.stopImmediatePropagation();
     elem["scruBar"].removeClass("pHover").removeClass("pDown");
@@ -375,6 +383,7 @@ var VideoPlayer = function() {
     jumpVideo(percentage);
   }
 
+  //updates the subtitle on the video
   function updateData(curTime) {
     millisec = parseInt(curTime * 1000);
     elem["title"].html(elem.subtitle.Title);
@@ -399,7 +408,7 @@ var VideoPlayer = function() {
       }
     }
   }
-
+// called on video end
   function videoEnd() {
     $(".pButtons[data-type='play']").addClass("pDisable");
     clearInterval(buffer);
@@ -416,7 +425,7 @@ var VideoPlayer = function() {
     $('.videoWrapper').removeClass('OnlyVideo');
     $('.pVolumeSlider').hide();
   }
-
+// checks if video is buffering
   function checkBuffering() {
     currentPlayPos = elem["video"].currentTime;
     var offset = 1 / checkInterval

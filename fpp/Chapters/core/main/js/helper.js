@@ -31,6 +31,7 @@
       request = null;
     });
   }
+  //allows only numbers 
   function inputKeydown(e) {
     var temp = ['.', '-', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'e', '?'];
     var str = e.key;
@@ -42,6 +43,7 @@
     }
 
   }
+  //updates the mathml code. replace maction with input box
   function cleanMML(data) {
     var pattern = /<maction (.+?)>(.+?)<\/maction>/ig;
     var toReplace = '<semantics><annotation-xml encoding="application/xhtml+xml"><input xmlns="http://www.w3.org/1999/xhtml" type="text" size="5" name="b" maxlength="9" onKeyDown="inputKeydown(event)"  /></annotation-xml></semantics>';
@@ -174,7 +176,7 @@
     return array;
   }
 
-
+//returns the  mouse position
   function getMouseOffset(e) {
     if ((e.type == "touchend" || e.type == "touchmove" || e.type == "touchstart") && e.originalEvent) {
       e.pageX = e.originalEvent.changedTouches[0].pageX;
@@ -184,7 +186,7 @@
     var mouseY = Number(e.pageY);
     return {"x": mouseX, "y": mouseY};
   }
-
+//converts seconds to minutes
   function getTime(currSec) {
     currSec = parseInt(currSec)
     if (currSec < 10) {
@@ -228,6 +230,7 @@
 
   });
   var blockHashEvent = false;
+  //updates the url depending on the screen  
   function updateUrl() {
     if (blockHashEvent === true) {
       return false;
@@ -288,7 +291,7 @@
     }
   }
 
-
+//scaling  2D actvity on window resize
   function resizeJSActivity() {
     if (!$(".pJsActWrapper").is(":visible")) {
       return false;
