@@ -6,28 +6,37 @@
   <script src="./app/js/app.js"></script>
   <script src="./app/js/helpers.js"></script>
   <script>
-    app.service('readBookDefinition', function($http) {
+    app.service('BookDefinition', function($rootScope, api, $http, helpers) {
 
-        this.getBd = function() {
-        	return $http.get('./BookDefinition.json').then((res) => {
+        this.get = function() {
+            api.login().then(helpers.setLoginData).then(loggedIn);
+        }
+
+        function loggedIn(data) {
+            getBd().then(getChapters);
+        }
+
+        function getBd() {
+        	return $http.get('../BookDefinition.json').then((res) => {
 				return res.data;
 			}, (res) => { console.log('did not want to get here.'); });
         };
 
+        function getChapters(res) {
+            var chapters = res.chapters;
+            helpers.getCourseAssignments().then((res) => {
+                var data = helpers.getSyncIDs(res.data);
+                console.log('syncIDs', data.syncIDs, data.assignIDs);
+                helpers.fillInInstanceIds(chapters, data.syncIDs);
+                var problemInstIds = helpers.getProblemInstIds(chapters, data.syncIDs);
+                console.log('problemInstIds', problemInstIds);
+            });
+        }
     });
 
-    app.controller('BookDefinition', ($scope, readBookDefinition, api, helpers) => {
-        api.login().then((res) => {
-            console.log('api.login', res);
-            readBookDefinition.getBd().then((res) => {
-                var chapters = res.chapters;
-                helpers.getCourseAssignments().then((res) => {
-                    var syncIDs = helpers.getSyncIDs(res.data);
-                    console.log('syncIDs', syncIDs);
-                    helpers.compareBD(chapters, syncIDs);
-                });
-            });
-        });
+    app.controller('BookDefinition', ($scope, BookDefinition) => {
+
+        BookDefinition.get();
         $scope.message = "Hello, World!";
 
         $scope.isEmpty = function(ch) {

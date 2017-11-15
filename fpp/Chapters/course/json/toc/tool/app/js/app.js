@@ -13,7 +13,8 @@ app.service('api', function($http) {
         wrapping: 'https://test-ohw.kineticmath.com/rest/endpoint.php/output/wrapping/set',
         courses: 'https://test-ohw.kineticmath.com/rest/rest.php/courses',
         course_select: 'https://test-ohw.kineticmath.com/rest/rest.php/courses/select/',
-        assigns: 'https://test-ohw.kineticmath.com/rest/rest.php/assigns'
+        assigns: 'https://test-ohw.kineticmath.com/rest/rest.php/assigns',
+        quickchecks: 'https://test-ohw.kineticmath.com/rest/rest.php/quickcheck/'
     };
 
 
@@ -70,4 +71,15 @@ app.service('api', function($http) {
             return data;
         });
     };
+
+    /*
+     * Get quickchecks by assignment ID.
+     */
+    this.getQuickchecks = function(assign_id) {
+        return $http.get(rest.quickchecks + assign_id).then((res) => {
+            var data = res.hasOwnProperty('data') ? res.data : res;
+            data.assign_id = assign_id;
+            return data;
+        });
+    }
 });
