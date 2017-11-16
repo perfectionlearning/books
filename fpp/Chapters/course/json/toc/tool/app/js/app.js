@@ -13,6 +13,7 @@ app.service('api', function($http) {
         wrapping: 'https://test-ohw.kineticmath.com/rest/endpoint.php/output/wrapping/set',
         courses: 'https://test-ohw.kineticmath.com/rest/rest.php/courses',
         course_select: 'https://test-ohw.kineticmath.com/rest/rest.php/courses/select/',
+        bootstrap: 'https://test-ohw.kineticmath.com/rest/endpoint.php/bootstrap',
         assigns: 'https://test-ohw.kineticmath.com/rest/rest.php/assigns',
         quickchecks: 'https://test-ohw.kineticmath.com/rest/rest.php/quickcheck/'
     };
@@ -29,6 +30,13 @@ app.service('api', function($http) {
         });
     }
 
+    function getBootstrap() {
+        return $http.get(rest.bootstrap).then((res) => {
+            var data = res.hasOwnProperty('data') ? res.data : res;
+            return data;
+        });
+    }
+
     /*
      * Call to log in.
      */
@@ -40,6 +48,7 @@ app.service('api', function($http) {
         };
         return $http.post(rest.login, payload).then((res) => {
             res.data.session_info = getSessionInfo();
+            res.data.bootstrap = getBootstrap();
             return $http.put(rest.wrapping, { wrap_output: false }).then(() => {
                 return res;
             }, (res) => { console.log('login error', res); });

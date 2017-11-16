@@ -3,44 +3,85 @@
 <head>
   <title>Check BookDefinition</title>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular.min.js"></script>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="./app/css/style.css">
   <script src="./app/js/app.js"></script>
   <script src="./app/js/helpers.js"></script>
   <script>
     app.service('BookDefinition', function($rootScope, api, $http, helpers) {
+        var _sessionData;
+        var _courses;
+
+        this.getSessionData = function() {
+            _sessionData.courseList = _courses;
+            return _sessionData;
+        };
 
         this.get = function() {
-            api.login().then(helpers.setLoginData).then(loggedIn);
+            return api.login().then(helpers.setLoginData).then(loggedIn);
         }
 
         function loggedIn(data) {
-            getBd().then(getChapters);
+            _sessionData = data;
+            return getBd().then(getChapters);
         }
 
         function getBd() {
-        	return $http.get('../BookDefinition.json').then((res) => {
+        	return $http.get('../BookDefinition.json', { cache: false }).then((res) => {
 				return res.data;
 			}, (res) => { console.log('did not want to get here.'); });
         };
 
+        function getCourses(data) {
+            _courses = data.courseData;
+            return data;
+        }
+
         function getChapters(res) {
             var chapters = res.chapters;
-            helpers.getCourseAssignments().then((res) => {
-                var data = helpers.getSyncIDs(res.data);
-                console.log('syncIDs', data.syncIDs, data.assignIDs);
-                helpers.fillInInstanceIds(chapters, data.syncIDs);
-                var problemInstIds = helpers.getProblemInstIds(chapters, data.syncIDs);
-                console.log('problemInstIds', problemInstIds);
+            return helpers.getCourseAssignments().then(getCourses).then((res) => {
+                var data = helpers.getSyncIDs(res);
+                return helpers.fillInInstanceIds(chapters, data.syncIDs).then((res) => {
+                    var problemInstIds = helpers.getProblemInstIds(chapters, data.syncIDs);
+                    var keys = Object.keys(problemInstIds);
+                    console.log('problemInstIds', problemInstIds);
+					return problemInstIds;
+                });
             });
         }
     });
 
     app.controller('BookDefinition', ($scope, BookDefinition) => {
 
-        BookDefinition.get();
-        $scope.message = "Hello, World!";
+        BookDefinition.get().then((data) => {
+console.log('Finally getting data back to controller', data);
+            $scope.chapters = data;
+            $scope.sessionData = BookDefinition.getSessionData();
+        });
+        $scope.message = "BookDefinition.json Diagnostic";
 
         $scope.isEmpty = function(ch) {
             return Object.keys(ch).length === 0;
+        };
+
+        $scope.keys = function(obj) {
+            var problemInstIds = [];
+
+            var ids = Object.keys(obj);
+			ids.forEach((item) => {
+                if (obj[item] === 'not found') {
+                    problemInstIds.push({ class: 'not-found', id: item });
+                } else {
+                    problemInstIds.push({ class: '', id: item });
+                }
+            });
+console.log('keys', problemInstIds);
+            return problemInstIds;
         };
 
     });
@@ -48,18 +89,63 @@
 </head>
 <body>
 <div class="container" ng-controller="BookDefinition">
-<h1>{{message}}</h1>
-<ul>
-  <li ng-repeat="assigns in syncIDs">{{assigns}}:
-    <ul>
-      <li ng-repeat="assign in assigns track by $index">{{assign.id}}, type {{assign.type}}, syncID {{assign.syncID}}</li>
-    </ul>
-  </li>
-</ul>
-<ul>
-  <li ng-repeat="chapter in chapters track by $index" ng-if="!isEmpty(chapter) && chapter.quizBoard_id">{{chapter.title}}, quizboard ID {{chapter.quizBoard_id}}</li>
-  <li ng-repeat="chapter in chapters track by $index" ng-if="!isEmpty(chapter) && !chapter.quizBoard_id">{{chapter.title}}, {{chapter}}</li>
-</ul>
+<h2>FPP Courses for User</h2>
+<table class="table">
+  <thead>
+    <tr>
+      <th>Course ID</th>
+      <th>Course Name</th>
+      <th>Book ID</th>
+      <th>Book</th>
+    </tr>
+  </thead>
+  <tbody ng-repeat="course in sessionData.courseList track by $index">
+    <tr>
+      <td>{{course.id}}</td>
+      <td>{{course.name}}</td>
+      <td>{{course.book_id}}</td>
+      <td>{{course.book}}</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>BookDefinition.json Diagnostic</h2>
+<table class="table">
+  <thead>
+    <tr>
+      <th>Assignment Name</th>
+      <th>FL Quickcheck</th>
+      <th>Nat'l Quickcheck</th>
+      <th>NGSS Quickcheck</th>
+    </tr>
+  </thead>
+  <tbody ng-repeat="chapter in chapters track by $index" ng-if="chapter.flQuickcheckId">
+    <tr>
+      <td>{{chapter.title}}</td>
+      <td ng-if="!chapter.flQuickcheckId.bad">{{chapter.flQuickcheckId}}</td>
+      <td ng-if="chapter.flQuickcheckId.bad" style="color:red">{{chapter.flQuickcheckId.id}}</td>
+      <td ng-if="!chapter.natlQuickcheckId.bad">{{chapter.natlQuickcheckId}}</td>
+      <td ng-if="chapter.natlQuickcheckId.bad" style="color:red">{{chapter.natlQuickcheckId.id}}</td>
+      <td ng-if="!chapter.ngssQuickcheckId.bad">{{chapter.ngssQuickcheckId}}</td>
+      <td ng-if="chapter.ngssQuickcheckId.bad" style="color:red">{{chapter.ngssQuickcheckId.id}}</td>
+    </tr>
+    <tr>
+      <td>---</td>
+      <td ng-if="!chapter.flQuickcheckId.bad">
+        <span ng-repeat="idObj in keys(chapter.problemInstIds.fl)" ng-class="{{idObj.class}}">{{idObj.id}}&nbsp;</span>
+      </td>
+      <td ng-if="chapter.flQuickcheckId.bad">N/A</td>
+      <td ng-if="!chapter.natlQuickcheckId.bad">
+        <span ng-repeat="idObj in keys(chapter.problemInstIds.natl)" ng-class="{{idObj.class}}">{{idObj.id}}&nbsp;</span>
+      </td>
+      <td ng-if="chapter.natlQuickcheckId.bad"></td>
+      <td ng-if="!chapter.ngssQuickcheckId.bad">
+        <span ng-repeat="idObj in keys(chapter.problemInstIds.ngss)" ng-class="{{idObj.class}}">{{idObj.id}}&nbsp;</span>
+      </td>
+      <td ng-if="chapter.ngssQuickcheckId.bad"></td>
+    </tr>
+  </tbody>
+</table>
 </div>
 
 </body>
