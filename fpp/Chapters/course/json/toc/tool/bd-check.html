@@ -69,21 +69,6 @@ console.log('Finally getting data back to controller', data);
             return Object.keys(ch).length === 0;
         };
 
-        $scope.keys = function(obj) {
-            var problemInstIds = [];
-
-            var ids = Object.keys(obj);
-			ids.forEach((item) => {
-                if (obj[item] === 'not found') {
-                    problemInstIds.push({ class: 'not-found', id: item });
-                } else {
-                    problemInstIds.push({ class: '', id: item });
-                }
-            });
-console.log('keys', problemInstIds);
-            return problemInstIds;
-        };
-
     });
   </script>
 </head>
@@ -129,21 +114,35 @@ console.log('keys', problemInstIds);
       <td ng-if="!chapter.ngssQuickcheckId.bad">{{chapter.ngssQuickcheckId}}</td>
       <td ng-if="chapter.ngssQuickcheckId.bad" style="color:red">{{chapter.ngssQuickcheckId.id}}</td>
     </tr>
+
     <tr>
-      <td>---</td>
+      <td></td>
+
       <td ng-if="!chapter.flQuickcheckId.bad">
-        <span ng-repeat="idObj in keys(chapter.problemInstIds.fl)" ng-class="{{idObj.class}}">{{idObj.id}}&nbsp;</span>
+        <div ng-repeat="(key, value) in chapter.problemInstIds.fl">
+          <span ng-if="value === 'not found'" style="color:red">{{key}}</span>
+          <span ng-if="value !== 'not found'" style="color:green">{{key}}</span>
+        </div>
       </td>
-      <td ng-if="chapter.flQuickcheckId.bad">N/A</td>
+      <td ng-if="chapter.flQuickcheckId.bad">Bad assignment sync ID</td>
+
       <td ng-if="!chapter.natlQuickcheckId.bad">
-        <span ng-repeat="idObj in keys(chapter.problemInstIds.natl)" ng-class="{{idObj.class}}">{{idObj.id}}&nbsp;</span>
+        <div ng-repeat="(key, value) in chapter.problemInstIds.natl">
+          <span ng-if="value === 'not found'" style="color:red">{{key}}</span>
+          <span ng-if="value !== 'not found'" style="color:green">{{key}}</span>
+        </div>
       </td>
-      <td ng-if="chapter.natlQuickcheckId.bad"></td>
+      <td ng-if="chapter.natlQuickcheckId.bad">Bad assignment sync ID</td>
+
       <td ng-if="!chapter.ngssQuickcheckId.bad">
-        <span ng-repeat="idObj in keys(chapter.problemInstIds.ngss)" ng-class="{{idObj.class}}">{{idObj.id}}&nbsp;</span>
+        <div ng-repeat="(key, value) in chapter.problemInstIds.ngss">
+          <span ng-if="value === 'not found'" style="color:red">{{key}}</span>
+          <span ng-if="value !== 'not found'" style="color:green">{{key}}</span>
+        </div>
       </td>
-      <td ng-if="chapter.ngssQuickcheckId.bad"></td>
+      <td ng-if="chapter.ngssQuickcheckId.bad">Bad assignment sync ID</td>
     </tr>
+
   </tbody>
 </table>
 </div>

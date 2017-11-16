@@ -20,8 +20,14 @@ app.service('api', function($http) {
 
 
     var creds = {
-        email: 'doombot6@mailinator.com',
-        pw: 'Dddddd1'
+        fl: {
+            email: 'doombot6@mailinator.com',
+            pw: 'Dddddd1'
+        },
+        ngss: {
+            email: 'ngssbot1',
+            pw: 'Nnnnnn1'
+        }
     };
 
     function getSessionInfo() {
@@ -42,8 +48,8 @@ app.service('api', function($http) {
      */
     this.login = function() {
         var payload = {
-            email: creds.email,
-            pw: creds.pw,
+            email: creds.fl.email,
+            pw: creds.fl.pw,
             wrap_output: true
         };
         return $http.post(rest.login, payload).then((res) => {
