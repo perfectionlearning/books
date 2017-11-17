@@ -11,66 +11,11 @@
 
   <link rel="stylesheet" href="./app/css/style.css">
   <script src="./app/js/app.js"></script>
+  <script src="./app/js/rest-service.js"></script>
+  <script src="./app/js/fpp-data-service.js"></script>
+  <script src="./app/js/book-definition-service.js"></script>
+  <script src="./app/js/book-definition-diagnostic-controller.js"></script>
   <script src="./app/js/helpers.js"></script>
-  <script>
-    app.service('BookDefinition', function($rootScope, api, $http, helpers) {
-        var _sessionData;
-        var _courses;
-
-        this.getSessionData = function() {
-            _sessionData.courseList = _courses;
-            return _sessionData;
-        };
-
-        this.get = function() {
-            return api.login().then(helpers.setLoginData).then(loggedIn);
-        }
-
-        function loggedIn(data) {
-            _sessionData = data;
-            return getBd().then(getChapters);
-        }
-
-        function getBd() {
-        	return $http.get('../BookDefinition.json', { cache: false }).then((res) => {
-				return res.data;
-			}, (res) => { console.log('did not want to get here.'); });
-        };
-
-        function getCourses(data) {
-            _courses = data.courseData;
-            return data;
-        }
-
-        function getChapters(res) {
-            var chapters = res.chapters;
-            return helpers.getCourseAssignments().then(getCourses).then((res) => {
-                var data = helpers.getSyncIDs(res);
-                return helpers.fillInInstanceIds(chapters, data.syncIDs).then((res) => {
-                    var problemInstIds = helpers.getProblemInstIds(chapters, data.syncIDs);
-                    var keys = Object.keys(problemInstIds);
-                    console.log('problemInstIds', problemInstIds);
-					return problemInstIds;
-                });
-            });
-        }
-    });
-
-    app.controller('BookDefinition', ($scope, BookDefinition) => {
-
-        BookDefinition.get().then((data) => {
-console.log('Finally getting data back to controller', data);
-            $scope.chapters = data;
-            $scope.sessionData = BookDefinition.getSessionData();
-        });
-        $scope.message = "BookDefinition.json Diagnostic";
-
-        $scope.isEmpty = function(ch) {
-            return Object.keys(ch).length === 0;
-        };
-
-    });
-  </script>
 </head>
 <body>
 <div class="container" ng-controller="BookDefinition">

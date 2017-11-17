@@ -111,6 +111,17 @@ console.log('setLoginData', res);
     }
 
 
+    function formatQcData(data, chapter, syncIdObj) {
+        data.assignData = {
+            title: chapter.title,
+            courseId: syncIdObj.course_id,
+            bookId: syncIdObj.book_id,
+            book: syncIdObj.book,
+            assignmentId: syncIdObj.assignment_id
+        };
+        return data;
+    }
+
     /*
      * chapters: from BookDefinition file.
      * syncIDs: hash of assignment data from db, keyed by assignment syncID.
@@ -118,53 +129,71 @@ console.log('setLoginData', res);
 	function fillInInstanceIds(chapters, syncIDs) {
         var promises = [];
         chapters.forEach((chapter) => {
-            var fl = {
-                quickcheck: chapter.fl_sync_id,
-                quizboard: chapter.fl_qb_sync_id
-            };
-            var ngss = {
-                quickcheck: chapter.ngss_sync_id,
-                quizboard: chapter.ngss_qb_sync_id
-            };
-            var natl = {
-                quickcheck: chapter.sync_id,
-                quizboard: chapter.qb_sync_id
-            };
+            var flSyncId = chapter.qcSyncIds.fl;
+            var ngssSyncId = chapter.qcSyncIds.ngss;
+            var natlSyncId = chapter.qcSyncIds.natl;
 
-            if (fl.quickcheck && syncIDs[fl.quickcheck]) {
-                //console.log('Florida quickcheck', syncIDs[fl.quickcheck]);
-                let assignId = syncIDs[fl.quickcheck].assignment_id;
+            if (flSyncId && syncIDs[flSyncId]) {
+                let assignId = syncIDs[flSyncId].assignment_id;
                 promises.push(api.getQuickchecks(assignId).then((data) => {
-                    //console.log('Florida fillInInstanceIDs, getQuickchecks', data);
+                    var qcData = formatQcData(data, chapter, syncIDs[flSyncId]);
                     assigns[assignId] = Object.keys(data);
                     allProblemInstIds.fl = allProblemInstIds.fl.concat(Object.keys(data));
-                    return data;
+                    return qcData;
                 }));
+            } else {
+                console.log('fillInInstanceIds; not filled in flSyncId', flSyncId);
             }
-            if (ngss.quickcheck && syncIDs[ngss.quickcheck]) {
-                //console.log('NGSS quickcheck', syncIDs[ngss.quickcheck]);
-                let assignId = syncIDs[ngss.quickcheck].assignment_id;
+           
+            if (ngssSyncId && syncIDs[ngssSyncId]) {
+                let assignId = syncIDs[ngssSyncId].assignment_id;
                 promises.push(api.getQuickchecks(assignId).then((data) => {
-                    //console.log('NGSS fillInInstanceIDs, getQuickchecks', data);
+                    var qcData = formatQcData(data, chapter, syncIDs[ngssSyncId]);
                     assigns[assignId] = Object.keys(data);
                     allProblemInstIds.ngss = allProblemInstIds.ngss.concat(Object.keys(data));
-                    return data;
+                    return qcData;
                 }));
             }
-            if (natl.quickcheck && syncIDs[natl.quickcheck]) {
-                //console.log('National quickcheck', syncIDs[natl.quickcheck]);
-                let assignId = syncIDs[natl.quickcheck].assignment_id;
+            if (natlSyncId && syncIDs[natlSyncId]) {
+                let assignId = syncIDs[natlSyncId].assignment_id;
                 promises.push(api.getQuickchecks(assignId).then((data) => {
-                    //console.log('Natl fillInInstanceIDs, getQuickchecks', data);
+                    var qcData = formatQcData(data, chapter, syncIDs[natlSyncId]);
                     assigns[assignId] = Object.keys(data);
                     allProblemInstIds.natl = allProblemInstIds.natl.concat(Object.keys(data));
-                    return data;
+                    return qcData;
                 }));
             }
         });
+
         return Promise.all(promises);
     }
 
+
+    function formatInstanceData(data) {
+console.log('formatInstanceData', data);
+        return data;
+    }
+
+    function checkLabAssignments(labmenu) {
+        var promises = [];
+        labmenu.forEach((lab) => {
+            if (lab.assignId) {
+                lab.assignId = lab.assignId.replace(/\s/g, '');
+                promises.push(api.lab(lab.assignId).then((res) => { 
+                    return {
+                        id: res.id,
+                        syncId: res.syncID,
+                        name: res.name,
+                        due: res.due,
+                        courseId: res.courseID,
+                        product: res.productID
+                    };
+                }));
+            }
+        });
+
+        return promises;
+    }
 
 	function getProblemInstIds(chapters, syncIDs) {
         var bdChapters = [];
@@ -172,6 +201,7 @@ console.log('setLoginData', res);
             try {
                 var units = chapter.unit;
                 var problemInstIds = { fl: {}, ngss: {}, natl: {}};
+                var virtualLabData = {};
                 units.forEach((unit) => {
                     unit.section.forEach((section) => {
                         var quickchecks = section.subsection.filter((sub) => { return sub.type === 'quizcheck';  });
@@ -183,6 +213,11 @@ console.log('setLoginData', res);
                             problemInstIds.ngss[quickcheck.ngss_problem_inst_id] = allProblemInstIds.ngss.indexOf(quickcheck.ngss_problem_inst_id) !== -1 ? syncIDs[ngss_quickcheck_id] : 'not found';
                             problemInstIds.natl[quickcheck.problem_inst_id] = allProblemInstIds.natl.indexOf(quickcheck.problem_inst_id) !== -1 ? syncIDs[natl_quickcheck_id] : 'not found';
                         });
+
+                        var labmenu = section.subsection.filter((sub) => { return sub.type === 'labmenu'; });
+                        Promise.all(checkLabAssignments(labmenu)).then((res) => {
+                            virtualLabData = res;
+                        });
                     });
                 });
                 bdChapterObj = { 
@@ -190,7 +225,8 @@ console.log('setLoginData', res);
                     flQuickcheckId: chapter.fl_sync_id, 
                     ngssQuickcheckId: chapter.ngss_sync_id, 
                     natlQuickcheckId: chapter.sync_id, 
-                    problemInstIds: problemInstIds 
+                    problemInstIds: problemInstIds,
+                    virtualLabData: virtualLabData
                 };
                 flInstIds = [...new Set(Object.values(problemInstIds.fl))];
                 ngssInstIds = [...new Set(Object.values(problemInstIds.ngss))];
@@ -217,6 +253,8 @@ console.log('setLoginData', res);
         getCourseAssignments: getCourseAssignments,
         getSyncIDs: getSyncIDs,
         fillInInstanceIds: fillInInstanceIds,
-        getProblemInstIds: getProblemInstIds
+        formatInstanceData: formatInstanceData,
+        getProblemInstIds: getProblemInstIds,
+        checkLabAssignments: checkLabAssignments
     };
 });
