@@ -170,8 +170,36 @@ console.log('setLoginData', res);
 
 
     function formatInstanceData(data) {
-console.log('formatInstanceData', data);
-        return data;
+        var chapters = [];
+        var chNdx = 0;
+        var lastTitle = data[0].assignData.title;;
+        var courseData = {};
+        data.forEach((item) => {
+            var probInstIds = Object.keys(item);
+            probInstIds = probInstIds.filter((id) => { return !isNaN(parseInt(id, 10)); });
+            var ch = {
+                title: item.assignData.title,
+                courseId: item.assignData.courseId,
+                bookId: item.assignData.bookId,
+                book: item.assignData.book,
+                assignId: item.assignData.assignmentId,
+                probInstIds: probInstIds
+            };
+            if (chNdx === 0) {
+               let chObj = { title: item.assignData.title, chapterData: {} };
+               chObj.chapterData[item.assignData.courseId] = ch;
+               chapters[chNdx++] = chObj;
+            } else {
+               if (item.assignData.title === chapters[chNdx-1].title) {
+                   chapters[chNdx-1].chapterData[item.assignData.courseId] = ch;
+               } else {
+                   let chObj = { title: item.assignData.title, chapterData: {} };
+                   chObj.chapterData[item.assignData.courseId] = ch;
+                   chapters[chNdx++] = chObj;
+               }
+            }
+        });
+        return chapters;
     }
 
     function checkLabAssignments(labmenu) {

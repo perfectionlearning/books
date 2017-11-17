@@ -3,7 +3,13 @@ var app = angular.module('bd');
 app.controller('BookDefinition', ($scope, BookDefinition, FppData, helpers) => {
     var promises = [];
 
-    promises.push(FppData.login().then(FppData.getCourseAssignments).then(FppData.getSyncIDs))
+    function storeCourses(data) {
+console.log('storeCourses', data);
+        $scope.courses = data.courseData;
+        return data;
+    }
+
+    promises.push(FppData.login().then(FppData.getCourseAssignments).then(storeCourses).then(FppData.getSyncIDs))
 
     promises.push(BookDefinition.get());
 
@@ -12,6 +18,8 @@ app.controller('BookDefinition', ($scope, BookDefinition, FppData, helpers) => {
         var bd = res[1];
         
         helpers.fillInInstanceIds(bd, fpp).then(helpers.formatInstanceData).then((res) => {
+console.log('formatInstanceData', res);
+            $scope.chapters = res;
         });
 
         var vlPromises = [];
@@ -20,18 +28,13 @@ app.controller('BookDefinition', ($scope, BookDefinition, FppData, helpers) => {
                 let vlPromises = helpers.checkLabAssignments(chapter.vlData);
                 Promise.all(vlPromises).then((res) => {
 console.log('vlData, checkLabAssignments', res);
+                    $scope.labs = res;
                 });
             }
         });
 
     });
 
-/*
-    BookDefinition.get().then((data) => {
-        $scope.chapters = data;
-        $scope.sessionData = BookDefinition.getSessionData();
-    });
-*/
     $scope.message = "BookDefinition.json Diagnostic";
 
     $scope.isEmpty = function(ch) {

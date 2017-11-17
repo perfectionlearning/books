@@ -29,7 +29,7 @@
       <th>Book</th>
     </tr>
   </thead>
-  <tbody ng-repeat="course in sessionData.courseList track by $index">
+  <tbody ng-repeat="course in courses track by $index">
     <tr>
       <td>{{course.id}}</td>
       <td>{{course.name}}</td>
@@ -40,56 +40,28 @@
 </table>
 
 <h2>BookDefinition.json Diagnostic</h2>
+<div ng-repeat="course in courses track by $index">
 <table class="table">
   <thead>
     <tr>
-      <th>Assignment Name</th>
-      <th>FL Quickcheck</th>
-      <th>Nat'l Quickcheck</th>
-      <th>NGSS Quickcheck</th>
+      <th>Course ID</th>
+      <th>Book</th>
+      <th>Chapter</th>
+      <th>Problem Instance IDs</th>
     </tr>
   </thead>
-  <tbody ng-repeat="chapter in chapters track by $index" ng-if="chapter.flQuickcheckId">
+  <tbody ng-repeat="chapter in chapters track by $index">
     <tr>
+      <td>{{course.id}}</td>
+      <td>{{chapter.chapterData[course.id].bookId}} {{chapter.chapterData[course.id].book}}</td>
       <td>{{chapter.title}}</td>
-      <td ng-if="!chapter.flQuickcheckId.bad">{{chapter.flQuickcheckId}}</td>
-      <td ng-if="chapter.flQuickcheckId.bad" style="color:red">{{chapter.flQuickcheckId.id}}</td>
-      <td ng-if="!chapter.natlQuickcheckId.bad">{{chapter.natlQuickcheckId}}</td>
-      <td ng-if="chapter.natlQuickcheckId.bad" style="color:red">{{chapter.natlQuickcheckId.id}}</td>
-      <td ng-if="!chapter.ngssQuickcheckId.bad">{{chapter.ngssQuickcheckId}}</td>
-      <td ng-if="chapter.ngssQuickcheckId.bad" style="color:red">{{chapter.ngssQuickcheckId.id}}</td>
-    </tr>
-
-    <tr>
-      <td></td>
-
-      <td ng-if="!chapter.flQuickcheckId.bad">
-        <div ng-repeat="(key, value) in chapter.problemInstIds.fl">
-          <span ng-if="value === 'not found'" style="color:red">{{key}}</span>
-          <span ng-if="value !== 'not found'" style="color:green">{{key}}</span>
-        </div>
-      </td>
-      <td ng-if="chapter.flQuickcheckId.bad">Bad assignment sync ID</td>
-
-      <td ng-if="!chapter.natlQuickcheckId.bad">
-        <div ng-repeat="(key, value) in chapter.problemInstIds.natl">
-          <span ng-if="value === 'not found'" style="color:red">{{key}}</span>
-          <span ng-if="value !== 'not found'" style="color:green">{{key}}</span>
-        </div>
-      </td>
-      <td ng-if="chapter.natlQuickcheckId.bad">Bad assignment sync ID</td>
-
-      <td ng-if="!chapter.ngssQuickcheckId.bad">
-        <div ng-repeat="(key, value) in chapter.problemInstIds.ngss">
-          <span ng-if="value === 'not found'" style="color:red">{{key}}</span>
-          <span ng-if="value !== 'not found'" style="color:green">{{key}}</span>
-        </div>
-      </td>
-      <td ng-if="chapter.ngssQuickcheckId.bad">Bad assignment sync ID</td>
+      <td>{{chapter.chapterData[course.id].probInstIds}}</td>
     </tr>
 
   </tbody>
 </table>
+</div>
+
 </div>
 
 </body>
