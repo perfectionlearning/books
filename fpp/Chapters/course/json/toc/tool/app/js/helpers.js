@@ -2,123 +2,17 @@ angular.module('bd')
 
 .factory('helpers', function(api) {
 
-    var assigns = {};
-    var productsByBookId = {};
-    var allProblemInstIds = { fl: [], ngss: [], natl: [] };
-
-    function setLoginData(res) {
-        // Get products from bootstrap data, and key by book_id.
-console.log('setLoginData', res);
-        try {
-            var bootstrap = res.data.bootstrap.$$state.value;
-            bootstrap.UIConfig.products.forEach((product) => { productsByBookId[product.id] = product; });
-        } catch(e) {
-        }
-
-        // Get session_data
-        try {
-            var session_data = res.data.session_info.$$state.value;
-            session_data.status = 'success';
-        } catch(e) {
-            session_data = {
-                status: "this is not the session_info data you're looking for."
-            };
-        }
-        var loginData = {
-		    user_id: session_data.user_id,
-		    book_id: session_data.book_id,
-		    course_id: session_data.course_id,
-		    usertype: session_data.usertype,
-		    is_demo: session_data.is_demo
-        };
-		
-        return loginData;
-    }
-
-    // For each course, the course must be selected and the assignments retrieved.
-    // This must be done synchronously: that is, the assignments for a course must
-    // be retrieved (separate call) before another course is selected.
-    function getCourses(courses, courseAssignments, resolve) {
-        if (courses.length > 0) {
-            var course = courses.shift();
-            api.selectCourse(course.id).then((res) => {
-                api.assigns().then((res) => {
-                    courseAssignments[course.id] = res;
-                    getCourses(courses, courseAssignments, resolve);
-                });
-            });
-        } else {
-            return resolve({ data: courseAssignments });
-        }
-    }
-
-    /*
-     * Result of this is a hash of course IDs and an array of assignments in each course.
-     * Eash assignment is a hash containing, among other things:
-     *     id (assignment ID)
-     *     name (assignment name)
-     *     type ("homework", "quickcheck", "quizboard", &c.
-     *     due (due date)
-     *     pastdue (flag indicating whether assignment is past due)
-     *     syncID (sync ID)
-     */
-    function getCourseAssignments() {
-        return api.courses().then((res) => {
-            var courseAssignments = {};
-            var courses = res.filter((item) => { return item.product === 'fpp'; });
-            let permCourses = res.filter((item) => { return item.product === 'fpp'; });
-            permCourses.map((item) => { item.book = productsByBookId[item.book_id].book; return item; });
-            var result = new Promise((resolve, reject) => {
-                getCourses(courses, courseAssignments, resolve);
-            });
-            return result.then((res) => {
-                var data = res.data;
-                return {
-                    courseData: permCourses,
-                    assignData: data
-                };
-            });
-        });
-    }
-
-    var filterTypes = ['virtual lab', 'quickcheck', 'quizboard'];
-    function getSyncIDs(data) {
-        var syncIDs = {};
-        var assignIDs = {};
-        var courseIDs = Object.keys(data.assignData);
-        courseIDs.forEach((courseID) => {
-            var courseData = data.courseData.filter((item) => { return item.id === courseID; })[0];
-            var assignments = data.assignData[courseID];
-            assignments.forEach((assignment) => {
-	            if (filterTypes.indexOf(assignment.type) === -1) return;
-                let assignmentObj = {
-                    course_id: courseID,
-                    book_id: courseData.book_id,
-                    book: courseData.book,
-                    assignment_id: assignment.id,
-                    name: assignment.name,
-                    type: assignment.type,
-                    due: assignment.due,
-                    pastdue: assignment.pastdue,
-                    sync_id: assignment.syncID
-                };
-                syncIDs[assignment.syncID] = assignmentObj;
-                assignIDs[assignment.id] = assignmentObj;
-            });
-        });
-
-        return { syncIDs: syncIDs, assignIDs: assignIDs };
-    }
-
-
-    function formatQcData(data, chapter, syncIdObj) {
+    function formatQcData(data, chapter, syncId, syncIdObjs, probInstIds) {
+        var syncIdObj = syncIdObjs[syncId];
         data.assignData = {
             title: chapter.title,
+            syncId: syncId,
             courseId: syncIdObj.course_id,
             bookId: syncIdObj.book_id,
             book: syncIdObj.book,
             assignmentId: syncIdObj.assignment_id
         };
+        data.bookDefinitionProbInstIds = probInstIds;
         return data;
     }
 
@@ -127,6 +21,7 @@ console.log('setLoginData', res);
      * syncIDs: hash of assignment data from db, keyed by assignment syncID.
      */
 	function fillInInstanceIds(chapters, syncIDs) {
+console.log('fillInInstanceIds', chapters);
         var promises = [];
         chapters.forEach((chapter) => {
             var flSyncId = chapter.qcSyncIds.fl;
@@ -136,30 +31,26 @@ console.log('setLoginData', res);
             if (flSyncId && syncIDs[flSyncId]) {
                 let assignId = syncIDs[flSyncId].assignment_id;
                 promises.push(api.getQuickchecks(assignId).then((data) => {
-                    var qcData = formatQcData(data, chapter, syncIDs[flSyncId]);
-                    assigns[assignId] = Object.keys(data);
-                    allProblemInstIds.fl = allProblemInstIds.fl.concat(Object.keys(data));
+                    var probInstIds = chapter.probInstIds.map((item) => { return item.fl; });
+                    var qcData = formatQcData(data, chapter, flSyncId, syncIDs, probInstIds);
                     return qcData;
                 }));
-            } else {
-                console.log('fillInInstanceIds; not filled in flSyncId', flSyncId);
             }
            
             if (ngssSyncId && syncIDs[ngssSyncId]) {
                 let assignId = syncIDs[ngssSyncId].assignment_id;
                 promises.push(api.getQuickchecks(assignId).then((data) => {
-                    var qcData = formatQcData(data, chapter, syncIDs[ngssSyncId]);
-                    assigns[assignId] = Object.keys(data);
-                    allProblemInstIds.ngss = allProblemInstIds.ngss.concat(Object.keys(data));
+                    var probInstIds = chapter.probInstIds.map((item) => { return item.ngss; });
+                    var qcData = formatQcData(data, chapter, ngssSyncId, syncIDs, probInstIds);
                     return qcData;
                 }));
             }
+
             if (natlSyncId && syncIDs[natlSyncId]) {
                 let assignId = syncIDs[natlSyncId].assignment_id;
                 promises.push(api.getQuickchecks(assignId).then((data) => {
-                    var qcData = formatQcData(data, chapter, syncIDs[natlSyncId]);
-                    assigns[assignId] = Object.keys(data);
-                    allProblemInstIds.natl = allProblemInstIds.natl.concat(Object.keys(data));
+                    var probInstIds = chapter.probInstIds.map((item) => { return item.natl; });
+                    var qcData = formatQcData(data, chapter, natlSyncId, syncIDs, probInstIds);
                     return qcData;
                 }));
             }
@@ -177,13 +68,17 @@ console.log('setLoginData', res);
         data.forEach((item) => {
             var probInstIds = Object.keys(item);
             probInstIds = probInstIds.filter((id) => { return !isNaN(parseInt(id, 10)); });
+            var unknownIds = item.bookDefinitionProbInstIds.filter((id) => { return probInstIds.indexOf(id) === -1; });
             var ch = {
                 title: item.assignData.title,
+                syncId: item.assignData.syncId,
                 courseId: item.assignData.courseId,
                 bookId: item.assignData.bookId,
                 book: item.assignData.book,
                 assignId: item.assignData.assignmentId,
-                probInstIds: probInstIds
+                probInstIds: probInstIds,
+                bookDefProbInstIds: item.bookDefinitionProbInstIds,
+                unknownProbInstIds: unknownIds
             };
             if (chNdx === 0) {
                let chObj = { title: item.assignData.title, chapterData: {} };
@@ -199,6 +94,7 @@ console.log('setLoginData', res);
                }
             }
         });
+
         return chapters;
     }
 
@@ -277,9 +173,6 @@ console.log('setLoginData', res);
     }
 
     return {
-        setLoginData: setLoginData,
-        getCourseAssignments: getCourseAssignments,
-        getSyncIDs: getSyncIDs,
         fillInInstanceIds: fillInInstanceIds,
         formatInstanceData: formatInstanceData,
         getProblemInstIds: getProblemInstIds,

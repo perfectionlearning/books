@@ -1,63 +1,15 @@
 var app = angular.module('bd');
 
     app.service('BookDefinition', function($http, api, helpers) {
-        var _sessionData;
-        var _courses;
-
-        this.getSessionData = function() {
-            _sessionData.courseList = _courses;
-            return _sessionData;
-        };
-
-        this.login = function() {
-            return api.login().then(helpers.setLoginData);
-        };
-
-        // This one will probably be retired.
-/*
-        this.get = function() {
-            return api.login().then(helpers.setLoginData).then(loggedIn);
-        }
-*/
-
-        function loggedIn(data) {
-            _sessionData = data;
-            return getBd().then(getChapters);
-        }
-
         this.get = function() {
         	return $http.get('../BookDefinition.json', { cache: false }).then((res) => {
                 return parseBookDefinition(res.data.chapters);
 			}, (res) => { console.log('did not want to get here.'); });
         };
 
-        function getBd() {
-        	return $http.get('../BD2.json', { cache: false }).then((res) => {
-console.log('parseBookDefinition', parseBookDefinition(res.data.chapters));
-				return res.data;
-			}, (res) => { console.log('did not want to get here.'); });
-        };
-
-        function getCourses(data) {
-console.log('getCourses', data);
-            _courses = data.courseData;
-            return data;
-        }
-
         function getChapters(res) {
             var chapters = res.chapters;
-            return helpers.getCourseAssignments().then(getCourses);
-/*
-            return helpers.getCourseAssignments().then(getCourses).then((res) => {
-                var data = helpers.getSyncIDs(res);
-                return helpers.fillInInstanceIds(chapters, data.syncIDs).then((res) => {
-                    var problemInstIds = helpers.getProblemInstIds(chapters, data.syncIDs);
-                    var keys = Object.keys(problemInstIds);
-                    console.log('problemInstIds', problemInstIds);
-					return problemInstIds;
-                });
-            });
-*/
+            return helpers.getCourseAssignments();
         }
 
         /*

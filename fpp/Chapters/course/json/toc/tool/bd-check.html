@@ -38,7 +38,10 @@
     </tr>
   </tbody>
 </table>
-
+Lab data: 
+<ul>
+  <li ng-repeat="lab in labs track by $index">{{lab.id}}: {{lab.name}}</li>
+</ul>
 <h2>BookDefinition.json Diagnostic</h2>
 <div ng-repeat="course in courses track by $index">
 <table class="table">
@@ -47,6 +50,7 @@
       <th>Course ID</th>
       <th>Book</th>
       <th>Chapter</th>
+      <th>QC Sync ID</th>
       <th>Problem Instance IDs</th>
     </tr>
   </thead>
@@ -54,8 +58,12 @@
     <tr>
       <td>{{course.id}}</td>
       <td>{{chapter.chapterData[course.id].bookId}} {{chapter.chapterData[course.id].book}}</td>
-      <td>{{chapter.title}}</td>
-      <td>{{chapter.chapterData[course.id].probInstIds}}</td>
+      <td>{{chapter.chapterData[course.id].syncId}}</td>
+      <td>
+        FPP: {{chapter.chapterData[course.id].probInstIds.join(', ')}}<br>
+        BookDefinition: {{chapter.chapterData[course.id].bookDefProbInstIds.join(', ')}}<br>
+        <span ng-if="chapter.chapterData[course.id].unknownProbInstIds.length > 0">Unknown BookDefinition IDs: <span style="color:red">{{chapter.chapterData[course.id].unknownProbInstIds.join(', ')}}</span></span>
+      </td>
     </tr>
 
   </tbody>
