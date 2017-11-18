@@ -19,7 +19,9 @@
 </head>
 <body>
 <div class="container" ng-controller="BookDefinition">
-<h2>FPP Courses for User</h2>
+<h2>BookDefinition.json Diagnostic</h2>
+
+<h2>FPP Courses</h2>
 <table class="table">
   <thead>
     <tr>
@@ -38,12 +40,31 @@
     </tr>
   </tbody>
 </table>
-Lab data: 
-<ul>
-  <li ng-repeat="lab in labs track by $index">{{lab.id}}: {{lab.name}}</li>
-</ul>
-<h2>BookDefinition.json Diagnostic</h2>
+
+<h3>Labs</h3>
+<table class="table">
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Assignment ID</th>
+      <th>from BookDefinition</th>
+      <th>Sync ID</th>
+      <th>from BookDefinition</th>
+    </tr>
+  </thead>
+  <tbody ng-repeat="lab in labs track by $index">
+    <tr ng-class="{'lab-correct': labCorrect(lab), 'lab-err': !labCorrect(lab)}">
+      <td>{{lab.name}}</td>
+      <td>{{lab.id}}</td>
+      <td>{{lab.bdId}}</td>
+      <td>{{lab.syncId}}</td>
+      <td>{{lab.bdSyncId}}</td>
+    </tr>
+  </tbody>
+</table>
+
 <div ng-repeat="course in courses track by $index">
+<h3>Quickchecks</h3>
 <table class="table">
   <thead>
     <tr>
@@ -55,9 +76,13 @@ Lab data:
     </tr>
   </thead>
   <tbody ng-repeat="chapter in chapters track by $index">
-    <tr>
+    <tr ng-class="{'qc-correct': qcCorrect(chapter, course.id), 'qc-err': !qcCorrect(chapter, course.id)}">
       <td>{{course.id}}</td>
       <td>{{chapter.chapterData[course.id].bookId}} {{chapter.chapterData[course.id].book}}</td>
+      <td>
+        {{chapter.title}}<br>
+        <a href="//test-ohw.kineticmath.com/rest/rest.php/quickcheck/{{chapter.chapterData[course.id].assignId}}" target="_blank">{{chapter.chapterData[course.id].assignId}}</a>
+      </td>
       <td>{{chapter.chapterData[course.id].syncId}}</td>
       <td>
         FPP: {{chapter.chapterData[course.id].probInstIds.join(', ')}}<br>

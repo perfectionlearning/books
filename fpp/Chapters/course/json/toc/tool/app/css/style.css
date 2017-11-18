@@ -1,4 +1,6 @@
-.not-found {
+.lab-correct, .qc-correct {
+}
+.lab-err, .qc-err {
   color: red;
 }
 

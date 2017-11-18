@@ -104,9 +104,15 @@ console.log('fillInInstanceIds', chapters);
             if (lab.assignId) {
                 lab.assignId = lab.assignId.replace(/\s/g, '');
                 promises.push(api.lab(lab.assignId).then((res) => { 
+                    var err = '';
+                    if (!res) { err = 'Bad assignment ID in BookDefinition'; }
+                    else if (res.syncID !== lab.syncId) { err = 'Bad sync ID in BookDefinition'; }
                     return {
+                        err: err,
                         id: res.id,
+                        bdId: lab.assignId,
                         syncId: res.syncID,
+                        bdSyncId: lab.syncId,
                         name: res.name,
                         due: res.due,
                         courseId: res.courseID,

@@ -11,7 +11,6 @@ app.controller('BookDefinition', ($scope, BookDefinition, FppData, helpers) => {
 
     function updateScope(data) {
         $scope.chapters = data.shift();
-console.log('updateScope; chapters:', $scope.chapters);
         $scope.labs = data;
         $scope.$apply();
     }
@@ -37,5 +36,13 @@ console.log('updateScope; chapters:', $scope.chapters);
     promises.push(BookDefinition.get());
     Promise.all(promises).then(performDiagnostics).then(updateScope);
 
+
+    $scope.labCorrect = function(lab) {
+        return lab.id > '' && lab.syncId === lab.bdSyncId;
+    }
+
+    $scope.qcCorrect = function(chapter, courseId) {
+        return chapter.chapterData[courseId] && chapter.chapterData[courseId].assignId && chapter.chapterData[courseId].unknownProbInstIds.length === 0;
+    }
 });
 

@@ -20,8 +20,8 @@ app.service('api', function($http) {
             pw: 'Dddddd1'
         },
         ngss: {
-            email: 'ngssbot1',
-            pw: 'Nnnnnn1'
+            email: 'doombot1@mailinator.com',
+            pw: 'Dddddd1'
         }
     };
 
@@ -99,7 +99,7 @@ console.log('loginPayload', loginPayload);
         return $http.get(rest.lab + assignId + '/defn').then((res) => {
             var data = res.hasOwnProperty('data') ? res.data : res;
             return data;
-        });
+        }, (res) => { console.log('Invalid lab assignment', assignId); return {}; });
     }
 
     /*
