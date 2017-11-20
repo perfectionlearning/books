@@ -23,9 +23,11 @@ var ProductDropdown = function() {
                 .replace('%NAME%', item.name);
             $('.pProductWrap').append(el);
         });
+        $(document).find('.headerText').addClass('productMenu');
+        $(document).find('.headerText').attr('data-type', 'products');
     }
 
-    function toggleProductDropdown() {
+    this.toggleProductDropdown = function() {
         $(document).find(".headerText").removeClass('pSelected');
         $(document).find(".pProductWrap").slideUp();
     }

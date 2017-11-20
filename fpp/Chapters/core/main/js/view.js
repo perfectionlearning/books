@@ -1687,8 +1687,7 @@ console.log('playerbtnManager products; check selected', _obj);
     if (type !== 'logout') {
       $(p.mShell).find(".pMenu").removeClass('pSelected');
       $(p.mShell).find(".pMenuWrap").slideUp();
-      $(p.mShell).find(".headerText").removeClass('pSelected');
-      $(p.mShell).find(".pProductWrap").slideUp();
+      productDropdown.toggleProductDropdown();
     }
   }
 
