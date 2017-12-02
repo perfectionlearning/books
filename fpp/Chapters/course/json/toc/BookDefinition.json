@@ -314,8 +314,9 @@
                                 },
                                 {
                                     "type": "activity",
-                                    "SectionHeading": " Activity: Acceleration and velocity",
-                                    "ref": "actsec_c45552d.json"
+                                    "SectionHeading": "Activity: Acceleration and velocity",
+                                    "ref": "actsec_c45552d.json",
+                                    "actRef": "course/3DActivity/acceleration_and_velocity/index.html"
                                 },
                                 {
                                     "type": "quizcheck",
@@ -372,7 +373,8 @@
                                 {
                                     "type": "activity",
                                     "SectionHeading": "Activity: Acceleration and motion equations",
-                                    "ref": "actsec_c4512d.json"
+                                    "ref": "actsec_c4512d.json",
+                                    "actRef": "course/3DActivity/acceleration_and_motion_equations/index.html"
                                 },
                                 {
                                     "type": "playVideo",
@@ -1460,7 +1462,8 @@
                                 {
                                     "type": "activity",
                                     "SectionHeading": " Activity: Driving school",
-                                    "ref": "actsec_c451225.json"
+                                    "ref": "actsec_c451225.json",
+                                    "actRef": "course/3DActivity/drive_a_car_2_dimensions/index.html"
                                 },
                                 {
                                     "type": "videoScreen",
