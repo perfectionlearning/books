@@ -1,1 +1,43 @@
-{"cards":[{"lines":[{"type":"title","text":"Archimedes\u2019 principle equation"},{"type":"headline","text":"  <span class=\"math\">    <i>F<\/i>    <sub>b <\/sub>= buoyant force,<\/span>  <span class=\"math\">    <i>\u03c1 = <\/i>density,<\/span>  <span class=\"math\">    <i>V =<\/i> volume of displaced fluid,<\/span>  <span class=\"math\">    <i>g<\/i> = freefall acceleration<\/span>"}]},{"lines":[{"type":"title","text":"Scuba divers adjust density"},{"type":"headline","text":"Weight belts increase diver\u2019s average density"},{"type":"headline","text":"Inflating vests reduces average density "}]}],"definitions":[],"secText":["  <b>Lesson:<\/b>  <b>    <br \/>  <\/b>1. Define and calculate the buoyant force using <a class='pjumpToTopic' href='javascript:void(0)' data-chap='10' data-topic='3' data-subtopic='1' data-subsection='0'>Archimedes' principle<\/a>.<br \/>2. Determine why objects <a class='pjumpToTopic' href='javascript:void(0)' data-chap='10' data-topic='3' data-subtopic='1' data-subsection='2'>float and sink<\/a>.<br \/>3. Determine how <a class='pjumpToTopic' href='javascript:void(0)' data-chap='10' data-topic='3' data-subtopic='1' data-subsection='3'>divers<\/a> can control their buoyancy.<br \/>4. Work through a sample problem to <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='app_BlimpProblem_question'>calculate the tension<\/a> required to anchor a blimp using the buoyant force.<br \/>5. Work through a sample problem to <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='app_Iceberg_question'>calculate how much of an iceberg is submerged<\/a> under water using the buoyant force and density.<br \/>6. <a class='pjumpToTopic' href='javascript:void(0)' data-chap='10' data-topic='3' data-subtopic='1' data-subsection='6'>Experiment with Archimedes' principle<\/a> by determining the purity of gold objects.","  <b>In-class assessment:<\/b>  <b>    <br \/>  <\/b>1. <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='qc_34967'>Calculate<\/a> the buoyant force acting on an object.","","  <b>Quick Review:<\/b>  <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='sum_archimedes_concept'>Archimedes' Principle<\/a>"],"objNames":["wb_archimedes_concepts","wb_scuba_diver"]}
+{
+  "cards": [
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Archimedes’ principle equation"
+        },
+        {
+          "type": "headline",
+          "text": "  <span class=\"math\">    <i>F</i>    <sub>b </sub>= buoyant force,</span>  <span class=\"math\">    <i>ρ = </i>density,</span>  <span class=\"math\">    <i>V =</i> volume of displaced fluid,</span>  <span class=\"math\">    <i>g</i> = freefall acceleration</span>"
+        }
+      ]
+    },
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Scuba divers adjust density"
+        },
+        {
+          "type": "headline",
+          "text": "Weight belts increase diver’s average density"
+        },
+        {
+          "type": "headline",
+          "text": "Inflating vests reduces average density "
+        }
+      ]
+    }
+  ],
+  "definitions": [],
+  "secText": [
+    "  <b>Lesson:</b>  <b>    <br />  </b>1. Define and calculate the buoyant force using <a class='pjumpToTopic' href='javascript:void(0)' data-chap='10' data-topic='3' data-subtopic='1' data-subsection='0'>Archimedes' principle</a>.<br />2. Determine why objects <a class='pjumpToTopic' href='javascript:void(0)' data-chap='10' data-topic='3' data-subtopic='1' data-subsection='2'>float and sink</a>.<br />3. Determine how <a class='pjumpToTopic' href='javascript:void(0)' data-chap='10' data-topic='3' data-subtopic='1' data-subsection='3'>divers</a> can control their buoyancy.<br />4. Work through a sample problem to <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='app_BlimpProblem_question'>calculate the tension</a> required to anchor a blimp using the buoyant force.<br />5. Work through a sample problem to <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='app_Iceberg_question'>calculate how much of an iceberg is submerged</a> under water using the buoyant force and density.<br />6. <a class='pjumpToTopic' href='javascript:void(0)' data-chap='10' data-topic='3' data-subtopic='1' data-subsection='6'>Experiment with Archimedes' principle</a> by determining the purity of gold objects.",
+    "  <b>In-class assessment:</b>  <b>    <br />  </b>1. <a class='pjumpToTopic' href='javascript:void(0)' data-chap='10' data-topic='3' data-subtopic='1' data-subsection='1'>Calculate</a> the buoyant force acting on an object.",
+    "",
+    "  <b>Quick Review:</b>  <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='sum_archimedes_concept'>Archimedes' Principle</a>"
+  ],
+  "objNames": [
+    "wb_archimedes_concepts",
+    "wb_scuba_diver"
+  ]
+}

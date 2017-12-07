@@ -1,1 +1,38 @@
-{"cards":[{"lines":[{"type":"title","text":"Forced oscillations"},{"type":"headline","text":"Force acts in direction of motion "},{"type":"headline","text":"When natural frequency, driving frequency nearly equal "},{"type":"bullet","text":"Amplitude increases "},{"type":"bullet","text":"Result is called resonance"}]}],"definitions":[],"secText":["  <b>Lesson:<\/b>  <b>    <br \/>  <\/b>1. <a class='pjumpToTopic' href='javascript:void(0)' data-chap='13' data-topic='2' data-subtopic='1' data-subsection='0'>Compare<\/a> simple harmonic motion to uniform circular motion.<br \/>2. Calculate the <a class='pjumpToTopic' href='javascript:void(0)' data-chap='13' data-topic='2' data-subtopic='2' data-subsection='0'>period of a mass on a spring<\/a>.<br \/>3. Define and calculate the <a class='pjumpToTopic' href='javascript:void(0)' data-chap='13' data-topic='2' data-subtopic='3' data-subsection='0'>period of a simple pendulum<\/a>.<br \/>4. Describe <a class='pjumpToTopic' href='javascript:void(0)' data-chap='13' data-topic='2' data-subtopic='4' data-subsection='0'>forced oscillations and resonance<\/a>.","  <b>In-class assessment:<\/b>  <b>    <br \/>  <\/b>1. <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='qc_37016'>Calculate<\/a> the period of the pendulum on a clock.","","  <b>Quick Review:<\/b>  <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='sum_simple_pendulum_equation'>Simple Pendulums<\/a>, <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='sum_forced_and_resonance'>Forced Oscillations and Resonance<\/a>"],"objNames":["wb_resonance1"]}
+{
+  "cards": [
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Forced oscillations"
+        },
+        {
+          "type": "headline",
+          "text": "Force acts in direction of motion "
+        },
+        {
+          "type": "headline",
+          "text": "When natural frequency, driving frequency nearly equal "
+        },
+        {
+          "type": "bullet",
+          "text": "Amplitude increases "
+        },
+        {
+          "type": "bullet",
+          "text": "Result is called resonance"
+        }
+      ]
+    }
+  ],
+  "definitions": [],
+  "secText": [
+    "  <b>Lesson:</b>  <b>    <br />  </b>1. <a class='pjumpToTopic' href='javascript:void(0)' data-chap='13' data-topic='2' data-subtopic='1' data-subsection='0'>Compare</a> simple harmonic motion to uniform circular motion.<br />2. Calculate the <a class='pjumpToTopic' href='javascript:void(0)' data-chap='13' data-topic='2' data-subtopic='2' data-subsection='0'>period of a mass on a spring</a>.<br />3. Define and calculate the <a class='pjumpToTopic' href='javascript:void(0)' data-chap='13' data-topic='2' data-subtopic='3' data-subsection='0'>period of a simple pendulum</a>.<br />4. Describe <a class='pjumpToTopic' href='javascript:void(0)' data-chap='13' data-topic='2' data-subtopic='4' data-subsection='0'>forced oscillations and resonance</a>.",
+    "  <b>In-class assessment:</b>  <b>    <br />  </b>1. <a class='pjumpToTopic' href='javascript:void(0)' data-chap='13' data-topic='2' data-subtopic='3' data-subsection='1'>Calculate</a> the period of the pendulum on a clock.",
+    "",
+    "  <b>Quick Review:</b>  <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='sum_simple_pendulum_equation'>Simple Pendulums</a>, <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='sum_forced_and_resonance'>Forced Oscillations and Resonance</a>"
+  ],
+  "objNames": [
+    "wb_resonance1"
+  ]
+}

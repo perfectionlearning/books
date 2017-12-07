@@ -1,1 +1,43 @@
-{"cards":[{"lines":[{"type":"title","text":"Pressure in liquid is caused by"},{"type":"headline","text":"Density of liquid pressing down"},{"type":"headline","text":"Depth of liquid"}]},{"lines":[{"type":"title","text":"Pressure due to a liquid"},{"type":"headline","text":"Height is depth of object"}]}],"definitions":[],"secText":["  <b>Lesson:<\/b>  <b>    <br \/>  <\/b>1. Identify the <a class='pjumpToTopic' href='javascript:void(0)' data-chap='10' data-topic='1' data-subtopic='1' data-subsection='0'>factors that cause pressure<\/a>.<br \/>2. Calculate <a class='pjumpToTopic' href='javascript:void(0)' data-chap='10' data-topic='1' data-subtopic='1' data-subsection='1'>pressure due to a liquid<\/a>.<br \/>3. Work through a sample problem to <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='app_BallardSub_question'>calculate how deep a submersible robot can dive<\/a> in the ocean using pressure due to a liquid.<br \/>4. <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='der_liquid_pressure'>Derive<\/a> the equation for pressure due to a liquid.","  <b>In-class assessment:<\/b>  <b>    <br \/>  <\/b>1. <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='qc_35612'>Calculate<\/a> pressure due to a liquid.","","  <b>Quick Review:<\/b>  <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='sum_pressure_liquids_concepts'>Liquid Pressure<\/a>"],"objNames":["wb_pressure_liquids_concepts","wb_pressure_liquid_equation"]}
+{
+  "cards": [
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Pressure in liquid is caused by"
+        },
+        {
+          "type": "headline",
+          "text": "Density of liquid pressing down"
+        },
+        {
+          "type": "headline",
+          "text": "Depth of liquid"
+        }
+      ]
+    },
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Pressure due to a liquid"
+        },
+        {
+          "type": "headline",
+          "text": "Height is depth of object"
+        }
+      ]
+    }
+  ],
+  "definitions": [],
+  "secText": [
+    "  <b>Lesson:</b>  <b>    <br />  </b>1. Identify the <a class='pjumpToTopic' href='javascript:void(0)' data-chap='10' data-topic='1' data-subtopic='1' data-subsection='0'>factors that cause pressure</a>.<br />2. Calculate <a class='pjumpToTopic' href='javascript:void(0)' data-chap='10' data-topic='1' data-subtopic='1' data-subsection='1'>pressure due to a liquid</a>.<br />3. Work through a sample problem to <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='app_BallardSub_question'>calculate how deep a submersible robot can dive</a> in the ocean using pressure due to a liquid.<br />4. <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='der_liquid_pressure'>Derive</a> the equation for pressure due to a liquid.",
+    "  <b>In-class assessment:</b>  <b>    <br />  </b>1. <a class='pjumpToTopic' href='javascript:void(0)' data-chap='10' data-topic='1' data-subtopic='1' data-subsection='3'>Calculate</a> pressure due to a liquid.",
+    "",
+    "  <b>Quick Review:</b>  <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='sum_pressure_liquids_concepts'>Liquid Pressure</a>"
+  ],
+  "objNames": [
+    "wb_pressure_liquids_concepts",
+    "wb_pressure_liquid_equation"
+  ]
+}

@@ -1,1 +1,35 @@
-{"cards":[{"lines":[{"type":"title","text":"Calculating displacement "}]},{"lines":[{"type":"title","text":"Calculating velocity "},{"type":"headline","text":"Unit: meters\/second"}]}],"definitions":[],"secText":["  <b>Lesson:<\/b>  <b>    <br \/>  <\/b>1. Identify <a class='pjumpToTopic' href='javascript:void(0)' data-chap='1' data-topic='1' data-subtopic='1' data-subsection='0'>scalars<\/a>.<br \/>2. Identify and define <a class='pjumpToTopic' href='javascript:void(0)' data-chap='1' data-topic='1' data-subtopic='2' data-subsection='0'>vectors<\/a>.<br \/>3. Define and calculate <a class='pjumpToTopic' href='javascript:void(0)' data-chap='1' data-topic='1' data-subtopic='3' data-subsection='0'>displacement<\/a>.<br \/>4. Define and calculate <a class='pjumpToTopic' href='javascript:void(0)' data-chap='1' data-topic='1' data-subtopic='4' data-subsection='0'>velocity<\/a>.<br \/>5. Determine the relationship between speed and velocity by <a class='pjumpToTopic' href='javascript:void(0)' data-chap='1' data-topic='1' data-subtopic='4' data-subsection='2'>driving a car<\/a>.","  <b>In-class assessment:<\/b>  <b>    <br \/>  <\/b>1. <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='qc_37417'>Calculate<\/a> displacement.<br \/>2. <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='qc_37418'>Calculate<\/a> velocity.","  <b>Homework: <\/b>  <span class=\"KBExternalLink\"><a href=\"assign.html#OHW 1.02\">OHW 1.02<\/a><\/span>","  <b>Quick Review: <\/b>  <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='sum_displacement'>Displacement<\/a>, <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='sum_velocity'>Velocity<\/a>"],"objNames":["wb_displacement_equation","wb_velocity_equation"]}
+{
+  "cards": [
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Calculating displacement "
+        }
+      ]
+    },
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Calculating velocity "
+        },
+        {
+          "type": "headline",
+          "text": "Unit: meters/second"
+        }
+      ]
+    }
+  ],
+  "definitions": [],
+  "secText": [
+    "  <b>Lesson:</b>  <b>    <br />  </b>1. Identify <a class='pjumpToTopic' href='javascript:void(0)' data-chap='1' data-topic='1' data-subtopic='1' data-subsection='0'>scalars</a>.<br />2. Identify and define <a class='pjumpToTopic' href='javascript:void(0)' data-chap='1' data-topic='1' data-subtopic='2' data-subsection='0'>vectors</a>.<br />3. Define and calculate <a class='pjumpToTopic' href='javascript:void(0)' data-chap='1' data-topic='1' data-subtopic='3' data-subsection='0'>displacement</a>.<br />4. Define and calculate <a class='pjumpToTopic' href='javascript:void(0)' data-chap='1' data-topic='1' data-subtopic='4' data-subsection='0'>velocity</a>.<br />5. Determine the relationship between speed and velocity by <a class='pjumpToTopic' href='javascript:void(0)' data-chap='1' data-topic='1' data-subtopic='4' data-subsection='2'>driving a car</a>.",
+    "  <b>In-class assessment:</b>  <b>    <br />  </b>1. <a class='pjumpToTopic' href='javascript:void(0)' data-chap='1' data-topic='1' data-subtopic='3' data-subsection='1'>Calculate</a> displacement.<br />2. <a class='pjumpToTopic' href='javascript:void(0)' data-chap='1' data-topic='1' data-subtopic='4' data-subsection='1'>Calculate</a> velocity.",
+    "  <b>Homework: </b>  <span class=\"KBExternalLink\"><a href=\"assign.html#OHW 1.02\">OHW 1.02</a></span>",
+    "  <b>Quick Review: </b>  <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='sum_displacement'>Displacement</a>, <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='sum_velocity'>Velocity</a>"
+  ],
+  "objNames": [
+    "wb_displacement_equation",
+    "wb_velocity_equation"
+  ]
+}

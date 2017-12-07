@@ -1,1 +1,22 @@
-{"cards":[{"lines":[{"type":"title","text":"Set the angular acceleration to launch the rocket"}]}],"definitions":[],"secText":["  <b>Lesson:<\/b>  <b>    <br \/>  <\/b>1. Calculate rotational motion using advanced <a class='pjumpToTopic' href='javascript:void(0)' data-chap='9' data-topic='2' data-subtopic='1' data-subsection='0'>rotational motion equations<\/a>.<br \/>2. <a class='pjumpToTopic' href='javascript:void(0)' data-chap='9' data-topic='2' data-subtopic='1' data-subsection='1'>Experiment<\/a> with the Angular Surge using advanced rotational motion equations.<br \/>3. Work through a sample problem to <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='app_space_capsule_constant_a_question'>calculate the final angular velocity<\/a> using rotational motion equations.<br \/>4. Define and calculate <a class='pjumpToTopic' href='javascript:void(0)' data-chap='9' data-topic='2' data-subtopic='2' data-subsection='0'>tangential velocity<\/a>.<br \/>5. Work through a sample problem to <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='app_golf_club_data_table_question'>determine the angular velocity<\/a> using tangential velocity.","  <b>In-class assessment:<\/b>  <b>    <br \/>  <\/b>1. <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='qc_37175'>Calculate<\/a> angular displacement.<br \/>2. <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='qc_37179'>Calculate<\/a> tangential velocity.","","  <b>Quick Review:<\/b>  <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='sum_rotational_motion_equations'>Rotational Motion Equations<\/a>, <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='sum_tangential_velocity'>Tangential Velocity<\/a>"],"objNames":["jsact_Chapter_10_10"]}
+{
+  "cards": [
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Set the angular acceleration to launch the rocket"
+        }
+      ]
+    }
+  ],
+  "definitions": [],
+  "secText": [
+    "  <b>Lesson:</b>  <b>    <br />  </b>1. Calculate rotational motion using advanced <a class='pjumpToTopic' href='javascript:void(0)' data-chap='9' data-topic='2' data-subtopic='1' data-subsection='0'>rotational motion equations</a>.<br />2. <a class='pjumpToTopic' href='javascript:void(0)' data-chap='9' data-topic='2' data-subtopic='1' data-subsection='1'>Experiment</a> with the Angular Surge using advanced rotational motion equations.<br />3. Work through a sample problem to <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='app_space_capsule_constant_a_question'>calculate the final angular velocity</a> using rotational motion equations.<br />4. Define and calculate <a class='pjumpToTopic' href='javascript:void(0)' data-chap='9' data-topic='2' data-subtopic='2' data-subsection='0'>tangential velocity</a>.<br />5. Work through a sample problem to <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='app_golf_club_data_table_question'>determine the angular velocity</a> using tangential velocity.",
+    "  <b>In-class assessment:</b>  <b>    <br />  </b>1. <a class='pjumpToTopic' href='javascript:void(0)' data-chap='9' data-topic='2' data-subtopic='1' data-subsection='3'>Calculate</a> angular displacement.<br />2. <a class='pjumpToTopic' href='javascript:void(0)' data-chap='9' data-topic='2' data-subtopic='2' data-subsection='1'>Calculate</a> tangential velocity.",
+    "",
+    "  <b>Quick Review:</b>  <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='sum_rotational_motion_equations'>Rotational Motion Equations</a>, <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='sum_tangential_velocity'>Tangential Velocity</a>"
+  ],
+  "objNames": [
+    "jsact_Chapter_10_10"
+  ]
+}

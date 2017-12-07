@@ -1,1 +1,55 @@
-{"cards":[{"lines":[{"type":"title","text":"Exponents"},{"type":"headline","text":"10<sup class=\"\">5 <\/sup>"},{"type":"bullet","text":"5 is the exponent, 10 is the base"},{"type":"bullet","text":"Multiply five factors of 10"}]},{"lines":[{"type":"title","text":"Metric system"},{"type":"headline","text":"Unit measures basic amount of a property"},{"type":"headline","text":"Units based on powers of 10"},{"type":"headline","text":"Part of System International (SI)"}]}],"definitions":[],"secText":["  <b>Lesson:<\/b>  <b>    <br \/>  <\/b>1. <a class='pjumpToTopic' href='javascript:void(0)' data-chap='3' data-topic='0' data-subtopic='1' data-subsection='0'>Powers<\/a> are a number written with a base and exponent.<b><br \/><\/b>2. <a class='pjumpToTopic' href='javascript:void(0)' data-chap='3' data-topic='0' data-subtopic='1' data-subsection='1'>Negative exponents<\/a> are written as the reciprocal of positive exponents.<b><br \/><\/b>3. The <a class='pjumpToTopic' href='javascript:void(0)' data-chap='3' data-topic='0' data-subtopic='2' data-subsection='0'>metric system<\/a> is the system of measurement used in science. Units in the metric system are based on powers of 10.<b><br \/><\/b>4. The <a class='pjumpToTopic' href='javascript:void(0)' data-chap='3' data-topic='0' data-subtopic='2' data-subsection='1'>metric system uses different units<\/a> for length, mass, and volume.<b><br \/><\/b>5. <a class='pjumpToTopic' href='javascript:void(0)' data-chap='3' data-topic='0' data-subtopic='2' data-subsection='2'>Prefixes<\/a>, such as kilo- or centi-, allow scientists to communicate large or small quantities easily.<b><br \/><\/b>6. Prefixes can be used to <a class='pjumpToTopic' href='javascript:void(0)' data-chap='3' data-topic='0' data-subtopic='3' data-subsection='0'>convert large numbers into smaller numbers, and vice versa<\/a>.<b><br \/><\/b>7. A conversion factor can be used to <a class='pjumpToTopic' href='javascript:void(0)' data-chap='3' data-topic='0' data-subtopic='3' data-subsection='1'>convert between different units<\/a>.<b><br \/><\/b>8. Work through a sample problem to <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='app_scruples_glugs_question'>convert between different units<\/a>.<b><br \/><\/b>9. Analyze expressions using <a class='pjumpToTopic' href='javascript:void(0)' data-chap='3' data-topic='0' data-subtopic='4' data-subsection='0'>dimensional analysis.<\/a><b><br \/><\/b>10. <a class='pjumpToTopic' href='javascript:void(0)' data-chap='3' data-topic='0' data-subtopic='4' data-subsection='1'>Confirm the unit for acceleration<\/a> using dimensional analysis.","  <b>In-class assessment:<\/b>  <b>    <br \/>  <\/b>1. <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='qc_37414'>Convert<\/a> between units using a conversion factor.","","  <b>Quick Review:<\/b>  <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='sum_exponents'>Powers<\/a>, <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='sum_metric'>Metric System<\/a>, <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='sum_unit_conversions'>Converting Units<\/a>"],"objNames":["wb_math_Exponents","wb_metric_concepts"]}
+{
+  "cards": [
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Exponents"
+        },
+        {
+          "type": "headline",
+          "text": "10<sup class=\"\">5 </sup>"
+        },
+        {
+          "type": "bullet",
+          "text": "5 is the exponent, 10 is the base"
+        },
+        {
+          "type": "bullet",
+          "text": "Multiply five factors of 10"
+        }
+      ]
+    },
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Metric system"
+        },
+        {
+          "type": "headline",
+          "text": "Unit measures basic amount of a property"
+        },
+        {
+          "type": "headline",
+          "text": "Units based on powers of 10"
+        },
+        {
+          "type": "headline",
+          "text": "Part of System International (SI)"
+        }
+      ]
+    }
+  ],
+  "definitions": [],
+  "secText": [
+    "  <b>Lesson:</b>  <b>    <br />  </b>1. <a class='pjumpToTopic' href='javascript:void(0)' data-chap='3' data-topic='0' data-subtopic='1' data-subsection='0'>Powers</a> are a number written with a base and exponent.<b><br /></b>2. <a class='pjumpToTopic' href='javascript:void(0)' data-chap='3' data-topic='0' data-subtopic='1' data-subsection='1'>Negative exponents</a> are written as the reciprocal of positive exponents.<b><br /></b>3. The <a class='pjumpToTopic' href='javascript:void(0)' data-chap='3' data-topic='0' data-subtopic='2' data-subsection='0'>metric system</a> is the system of measurement used in science. Units in the metric system are based on powers of 10.<b><br /></b>4. The <a class='pjumpToTopic' href='javascript:void(0)' data-chap='3' data-topic='0' data-subtopic='2' data-subsection='1'>metric system uses different units</a> for length, mass, and volume.<b><br /></b>5. <a class='pjumpToTopic' href='javascript:void(0)' data-chap='3' data-topic='0' data-subtopic='2' data-subsection='2'>Prefixes</a>, such as kilo- or centi-, allow scientists to communicate large or small quantities easily.<b><br /></b>6. Prefixes can be used to <a class='pjumpToTopic' href='javascript:void(0)' data-chap='3' data-topic='0' data-subtopic='3' data-subsection='0'>convert large numbers into smaller numbers, and vice versa</a>.<b><br /></b>7. A conversion factor can be used to <a class='pjumpToTopic' href='javascript:void(0)' data-chap='3' data-topic='0' data-subtopic='3' data-subsection='1'>convert between different units</a>.<b><br /></b>8. Work through a sample problem to <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='app_scruples_glugs_question'>convert between different units</a>.<b><br /></b>9. Analyze expressions using <a class='pjumpToTopic' href='javascript:void(0)' data-chap='3' data-topic='0' data-subtopic='4' data-subsection='0'>dimensional analysis.</a><b><br /></b>10. <a class='pjumpToTopic' href='javascript:void(0)' data-chap='3' data-topic='0' data-subtopic='4' data-subsection='1'>Confirm the unit for acceleration</a> using dimensional analysis.",
+    "  <b>In-class assessment:</b>  <b>    <br />  </b>1. <a class='pjumpToTopic' href='javascript:void(0)' data-chap='3' data-topic='0' data-subtopic='3' data-subsection='2'>Convert</a> between units using a conversion factor.",
+    "",
+    "  <b>Quick Review:</b>  <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='sum_exponents'>Powers</a>, <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='sum_metric'>Metric System</a>, <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='sum_unit_conversions'>Converting Units</a>"
+  ],
+  "objNames": [
+    "wb_math_Exponents",
+    "wb_metric_concepts"
+  ]
+}

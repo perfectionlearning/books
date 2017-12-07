@@ -1,1 +1,39 @@
-{"cards":[{"lines":[{"type":"title","text":"Electric force in everyday life"},{"type":"headline","text":"Static cling, hair separating"}]},{"lines":[{"type":"title","text":"Electric force"},{"type":"headline","text":"Charged objects can attract or repel"}]}],"definitions":[],"secText":["  <b>Lesson:<\/b>  <b>    <br \/>  <\/b>1. Experiment with <a class='pjumpToTopic' href='javascript:void(0)' data-chap='15' data-topic='1' data-subtopic='1' data-subsection='0'>electric force<\/a>.<br \/>2. Describe <a class='pjumpToTopic' href='javascript:void(0)' data-chap='15' data-topic='1' data-subtopic='1' data-subsection='1'>everyday examples<\/a> of the electric force.<br \/>3. Define the <a class='pjumpToTopic' href='javascript:void(0)' data-chap='15' data-topic='1' data-subtopic='1' data-subsection='2'>electric force<\/a>.<br \/>4. View the electric force from the <a class='pjumpToTopic' href='javascript:void(0)' data-chap='15' data-topic='1' data-subtopic='1' data-subsection='3'>viewpoint of a proton<\/a>.<br \/>5. Define and calculate the electric force using <a class='pjumpToTopic' href='javascript:void(0)' data-chap='15' data-topic='1' data-subtopic='2' data-subsection='0'>Coulomb's law<\/a>.<br \/>6. Experiment with the electric force by <a class='pjumpToTopic' href='javascript:void(0)' >driving a proton<\/a>.<br \/>7. Work through a sample problem to <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='app_find_num_e_to_balance_question'>calculate the amount of electrons<\/a> needed to balance the force of gravity between charged spheres.<br \/>8. Work through a sample problem to <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='app_compare_grav_EM_force_question'>calculate the ratio of the electric to the gravitational force<\/a> between a proton and electron in an atom.","  <b>In-class assessment:<\/b>  <b>    <br \/>  <\/b>1. <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='qc_36700'>Calculate<\/a> the electric force using Coulomb's law.","","  <b>Quick Review:<\/b>  <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='sum_electrostatic_force'>Electric Force<\/a>, <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='sum_coulomb_law'>Coulomb's Law<\/a>"],"objNames":["wb_e_force_every_day","wb_electrostatic_force_concepts"]}
+{
+  "cards": [
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Electric force in everyday life"
+        },
+        {
+          "type": "headline",
+          "text": "Static cling, hair separating"
+        }
+      ]
+    },
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Electric force"
+        },
+        {
+          "type": "headline",
+          "text": "Charged objects can attract or repel"
+        }
+      ]
+    }
+  ],
+  "definitions": [],
+  "secText": [
+    "  <b>Lesson:</b>  <b>    <br />  </b>1. Experiment with <a class='pjumpToTopic' href='javascript:void(0)' data-chap='15' data-topic='1' data-subtopic='1' data-subsection='0'>electric force</a>.<br />2. Describe <a class='pjumpToTopic' href='javascript:void(0)' data-chap='15' data-topic='1' data-subtopic='1' data-subsection='1'>everyday examples</a> of the electric force.<br />3. Define the <a class='pjumpToTopic' href='javascript:void(0)' data-chap='15' data-topic='1' data-subtopic='1' data-subsection='2'>electric force</a>.<br />4. View the electric force from the <a class='pjumpToTopic' href='javascript:void(0)' data-chap='15' data-topic='1' data-subtopic='1' data-subsection='3'>viewpoint of a proton</a>.<br />5. Define and calculate the electric force using <a class='pjumpToTopic' href='javascript:void(0)' data-chap='15' data-topic='1' data-subtopic='2' data-subsection='0'>Coulomb's law</a>.<br />6. Experiment with the electric force by <a class='pjumpToTopic' href='javascript:void(0)' >driving a proton</a>.<br />7. Work through a sample problem to <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='app_find_num_e_to_balance_question'>calculate the amount of electrons</a> needed to balance the force of gravity between charged spheres.<br />8. Work through a sample problem to <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='app_compare_grav_EM_force_question'>calculate the ratio of the electric to the gravitational force</a> between a proton and electron in an atom.",
+    "  <b>In-class assessment:</b>  <b>    <br />  </b>1. <a class='pjumpToTopic' href='javascript:void(0)' data-chap='15' data-topic='1' data-subtopic='2' data-subsection='1'>Calculate</a> the electric force using Coulomb's law.",
+    "",
+    "  <b>Quick Review:</b>  <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='sum_electrostatic_force'>Electric Force</a>, <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='sum_coulomb_law'>Coulomb's Law</a>"
+  ],
+  "objNames": [
+    "wb_e_force_every_day",
+    "wb_electrostatic_force_concepts"
+  ]
+}

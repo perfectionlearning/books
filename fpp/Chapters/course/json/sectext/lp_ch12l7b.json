@@ -1,1 +1,43 @@
-{"cards":[{"lines":[{"type":"title","text":"Entropy, heat and temperature"},{"type":"headline","text":"  <math>    <mrow>      <mi mathvariant=\"normal\">\u0394<\/mi>      <mi>S<\/mi>      <mo>=<\/mo>      <mfrac linethickness=\"thin\">        <mi>Q<\/mi>        <mi>T<\/mi>      <\/mfrac>    <\/mrow>  <\/math>"},{"type":"headline","text":"  <span class=\"Symbols\">\u2206<\/span>  <i>S<\/i> = change in entropy, <i>Q<\/i> = heat, <span class=\"math\"><i>T<\/i> = temperature<\/span>"}]},{"lines":[{"type":"title","text":"Entropy equation"},{"type":"headline","text":"Entropy is constant or increases"}]}],"definitions":[],"secText":["  <b>Lesson:<\/b>  <b>    <br \/>  <\/b>1. Define entropy and determine the relationship between <a class='pjumpToTopic' href='javascript:void(0)' data-chap='12' data-topic='6' data-subtopic='1' data-subsection='0'>entropy and energy<\/a>.<br \/>2. Define the <a class='pjumpToTopic' href='javascript:void(0)' data-chap='12' data-topic='6' data-subtopic='1' data-subsection='1'>change in entropy<\/a> of a system as always being greater than or equal to zero.<br \/>3. Calculate the <a class='pjumpToTopic' href='javascript:void(0)' data-chap='12' data-topic='6' data-subtopic='1' data-subsection='2'>amount of entropy<\/a> in a system.","  <b>In-class assessment:<\/b>  <b>    <br \/>  <\/b>1. <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='qc_37383'>Calculate<\/a> the change in entropy of a system.","","  <b>Quick Review:<\/b>  <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='sum_entropy_concepts'>Entropy<\/a>, <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='sum_entropy_equation2'>Entropy Increases<\/a>"],"objNames":["wb_entropy_equation2","wb_entropy_increases_equation"]}
+{
+  "cards": [
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Entropy, heat and temperature"
+        },
+        {
+          "type": "headline",
+          "text": "  <math>    <mrow>      <mi mathvariant=\"normal\">Δ</mi>      <mi>S</mi>      <mo>=</mo>      <mfrac linethickness=\"thin\">        <mi>Q</mi>        <mi>T</mi>      </mfrac>    </mrow>  </math>"
+        },
+        {
+          "type": "headline",
+          "text": "  <span class=\"Symbols\">∆</span>  <i>S</i> = change in entropy, <i>Q</i> = heat, <span class=\"math\"><i>T</i> = temperature</span>"
+        }
+      ]
+    },
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Entropy equation"
+        },
+        {
+          "type": "headline",
+          "text": "Entropy is constant or increases"
+        }
+      ]
+    }
+  ],
+  "definitions": [],
+  "secText": [
+    "  <b>Lesson:</b>  <b>    <br />  </b>1. Define entropy and determine the relationship between <a class='pjumpToTopic' href='javascript:void(0)' data-chap='12' data-topic='6' data-subtopic='1' data-subsection='0'>entropy and energy</a>.<br />2. Define the <a class='pjumpToTopic' href='javascript:void(0)' data-chap='12' data-topic='6' data-subtopic='1' data-subsection='1'>change in entropy</a> of a system as always being greater than or equal to zero.<br />3. Calculate the <a class='pjumpToTopic' href='javascript:void(0)' data-chap='12' data-topic='6' data-subtopic='1' data-subsection='2'>amount of entropy</a> in a system.",
+    "  <b>In-class assessment:</b>  <b>    <br />  </b>1. <a class='pjumpToTopic' href='javascript:void(0)' data-chap='12' data-topic='6' data-subtopic='1' data-subsection='3'>Calculate</a> the change in entropy of a system.",
+    "",
+    "  <b>Quick Review:</b>  <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='sum_entropy_concepts'>Entropy</a>, <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='sum_entropy_equation2'>Entropy Increases</a>"
+  ],
+  "objNames": [
+    "wb_entropy_equation2",
+    "wb_entropy_increases_equation"
+  ]
+}

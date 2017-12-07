@@ -1,1 +1,35 @@
-{"cards":[{"lines":[{"type":"title","text":"Light intensity equation"}]},{"lines":[{"type":"title","text":"Particle theory of light"},{"type":"headline","text":"Particles striking surface transfer momentum"}]}],"definitions":[],"secText":["  <b>Lesson:<\/b>  <b>    <br \/>  <\/b>1. Define and calculate <a class='pjumpToTopic' href='javascript:void(0)' data-chap='19' data-topic='1' data-subtopic='1' data-subsection='0'>light intensity<\/a>.<br \/>2. Describe <a class='pjumpToTopic' href='javascript:void(0)' data-chap='19' data-topic='1' data-subtopic='2' data-subsection='0'>radiation pressure<\/a>.","  <b>In-class assessment:<\/b>  <b>    <br \/>  <\/b>1. <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='qc_36403'>Calculate<\/a> the light intensity on Earth.","","  <b>Quick Review:<\/b>  <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='sum_radiation_pressure_concepts2'>Light Intensity and Pressure<\/a>"],"objNames":["wb_light_intensity_concepts","wb_radiation_pressure_concepts2"]}
+{
+  "cards": [
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Light intensity equation"
+        }
+      ]
+    },
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Particle theory of light"
+        },
+        {
+          "type": "headline",
+          "text": "Particles striking surface transfer momentum"
+        }
+      ]
+    }
+  ],
+  "definitions": [],
+  "secText": [
+    "  <b>Lesson:</b>  <b>    <br />  </b>1. Define and calculate <a class='pjumpToTopic' href='javascript:void(0)' data-chap='19' data-topic='1' data-subtopic='1' data-subsection='0'>light intensity</a>.<br />2. Describe <a class='pjumpToTopic' href='javascript:void(0)' data-chap='19' data-topic='1' data-subtopic='2' data-subsection='0'>radiation pressure</a>.",
+    "  <b>In-class assessment:</b>  <b>    <br />  </b>1. <a class='pjumpToTopic' href='javascript:void(0)' data-chap='19' data-topic='1' data-subtopic='1' data-subsection='1'>Calculate</a> the light intensity on Earth.",
+    "",
+    "  <b>Quick Review:</b>  <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='sum_radiation_pressure_concepts2'>Light Intensity and Pressure</a>"
+  ],
+  "objNames": [
+    "wb_light_intensity_concepts",
+    "wb_radiation_pressure_concepts2"
+  ]
+}

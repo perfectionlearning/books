@@ -1,1 +1,47 @@
-{"cards":[{"lines":[{"type":"title","text":"Boyle\u2019s law"},{"type":"headline","text":"  <math>    <mrow>      <msub>        <mi>P<\/mi>        <mtext>i<\/mtext>      <\/msub>      <msub>        <mi>V<\/mi>        <mtext>i<\/mtext>      <\/msub>      <mo>=<\/mo>      <msub>        <mi>P<\/mi>        <mtext>f<\/mtext>      <\/msub>      <msub>        <mi>V<\/mi>        <mtext>f<\/mtext>      <\/msub>    <\/mrow>  <\/math>"},{"type":"bullet","text":"Product of pressure and volume constant, at constant temperature"}]},{"lines":[{"type":"title","text":"Charles\u2019 law"},{"type":"headline","text":"  <math>    <mrow>      <mfrac linethickness=\"thin\">        <mrow>          <msub>            <mi>V<\/mi>            <mtext>i<\/mtext>          <\/msub>        <\/mrow>        <mrow>          <msub>            <mi>T<\/mi>            <mtext>i<\/mtext>          <\/msub>        <\/mrow>      <\/mfrac>      <mo>=<\/mo>      <mfrac linethickness=\"thin\">        <mrow>          <msub>            <mi>V<\/mi>            <mtext>f<\/mtext>          <\/msub>        <\/mrow>        <mrow>          <msub>            <mi>T<\/mi>            <mtext>f<\/mtext>          <\/msub>        <\/mrow>      <\/mfrac>    <\/mrow>  <\/math>"},{"type":"bullet","text":"Ratio of volume to temperature is constant, at constant pressure"}]}],"definitions":[],"secText":["  <b>Lesson:<\/b>  <b>    <br \/>  <\/b>1. Define and calculate using <a class='pjumpToTopic' href='javascript:void(0)' data-chap='12' data-topic='3' data-subtopic='1' data-subsection='0'>Boyle's and Charles' laws<\/a>.<br \/>2. Define the <a class='pjumpToTopic' href='javascript:void(0)' data-chap='12' data-topic='3' data-subtopic='2' data-subsection='0'>ideal gas law<\/a>.<br \/>3. Calculate using the <a class='pjumpToTopic' href='javascript:void(0)' data-chap='12' data-topic='3' data-subtopic='2' data-subsection='1'>ideal gas equations<\/a>.","  <b>In-class assessment:<\/b>  <b>    <br \/>  <\/b>1. <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='qc_38626'>Calculate<\/a> pressure using Boyle's law.<br \/>2. <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='qc_38627'>Calculate<\/a> the amount of moles of a gas using the ideal gas law.","","  <b>Quick Review:<\/b>  <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='sum_boyle_charles'>Boyle's and Charles' Laws<\/a>, <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='sum_ideal_gas_laws'>Ideal Gas Laws<\/a>"],"objNames":["wb_boyle","wb_Charles"]}
+{
+  "cards": [
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Boyle’s law"
+        },
+        {
+          "type": "headline",
+          "text": "  <math>    <mrow>      <msub>        <mi>P</mi>        <mtext>i</mtext>      </msub>      <msub>        <mi>V</mi>        <mtext>i</mtext>      </msub>      <mo>=</mo>      <msub>        <mi>P</mi>        <mtext>f</mtext>      </msub>      <msub>        <mi>V</mi>        <mtext>f</mtext>      </msub>    </mrow>  </math>"
+        },
+        {
+          "type": "bullet",
+          "text": "Product of pressure and volume constant, at constant temperature"
+        }
+      ]
+    },
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Charles’ law"
+        },
+        {
+          "type": "headline",
+          "text": "  <math>    <mrow>      <mfrac linethickness=\"thin\">        <mrow>          <msub>            <mi>V</mi>            <mtext>i</mtext>          </msub>        </mrow>        <mrow>          <msub>            <mi>T</mi>            <mtext>i</mtext>          </msub>        </mrow>      </mfrac>      <mo>=</mo>      <mfrac linethickness=\"thin\">        <mrow>          <msub>            <mi>V</mi>            <mtext>f</mtext>          </msub>        </mrow>        <mrow>          <msub>            <mi>T</mi>            <mtext>f</mtext>          </msub>        </mrow>      </mfrac>    </mrow>  </math>"
+        },
+        {
+          "type": "bullet",
+          "text": "Ratio of volume to temperature is constant, at constant pressure"
+        }
+      ]
+    }
+  ],
+  "definitions": [],
+  "secText": [
+    "  <b>Lesson:</b>  <b>    <br />  </b>1. Define and calculate using <a class='pjumpToTopic' href='javascript:void(0)' data-chap='12' data-topic='3' data-subtopic='1' data-subsection='0'>Boyle's and Charles' laws</a>.<br />2. Define the <a class='pjumpToTopic' href='javascript:void(0)' data-chap='12' data-topic='3' data-subtopic='2' data-subsection='0'>ideal gas law</a>.<br />3. Calculate using the <a class='pjumpToTopic' href='javascript:void(0)' data-chap='12' data-topic='3' data-subtopic='2' data-subsection='1'>ideal gas equations</a>.",
+    "  <b>In-class assessment:</b>  <b>    <br />  </b>1. <a class='pjumpToTopic' href='javascript:void(0)' data-chap='12' data-topic='3' data-subtopic='1' data-subsection='1'>Calculate</a> pressure using Boyle's law.<br />2. <a class='pjumpToTopic' href='javascript:void(0)' data-chap='12' data-topic='3' data-subtopic='2' data-subsection='2'>Calculate</a> the amount of moles of a gas using the ideal gas law.",
+    "",
+    "  <b>Quick Review:</b>  <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='sum_boyle_charles'>Boyle's and Charles' Laws</a>, <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='sum_ideal_gas_laws'>Ideal Gas Laws</a>"
+  ],
+  "objNames": [
+    "wb_boyle",
+    "wb_Charles"
+  ]
+}

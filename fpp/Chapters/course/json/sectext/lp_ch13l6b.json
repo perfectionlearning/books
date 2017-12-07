@@ -1,1 +1,26 @@
-{"cards":[{"lines":[{"type":"title","text":"Wave speed equation"},{"type":"headline","text":"  <math>    <mrow>      <mtext>wave\u00a0speed\u00a0=\u00a0<\/mtext>      <mfrac linethickness=\"thin\">        <mrow>          <mtext>displacement\u00a0of\u00a0wave<\/mtext>        <\/mrow>        <mrow>          <mtext>elapsed\u00a0time<\/mtext>        <\/mrow>      <\/mfrac>    <\/mrow>  <\/math>  <span class=\"KBDefinitionTag\" \/>"}]}],"definitions":[],"secText":["  <b>Lesson:<\/b>  <b>    <br \/>  <\/b>1. Describe <a class='pjumpToTopic' href='javascript:void(0)' data-chap='13' data-topic='5' data-subtopic='1' data-subsection='0'>wave speed<\/a> of a wave.<br \/>2. Calculate <a class='pjumpToTopic' href='javascript:void(0)' data-chap='13' data-topic='5' data-subtopic='1' data-subsection='1'>wave speed<\/a>.","  <b>In-class assessment:<\/b>  <b>    <br \/>  <\/b>1. <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='qc_36676'>Calculate<\/a> the wave speed of light.","","  <b>Quick Review:<\/b>  <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='sum_wavespeed'>Wave Speed<\/a>"],"objNames":["wb_wave_speed_equationa"]}
+{
+  "cards": [
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Wave speed equation"
+        },
+        {
+          "type": "headline",
+          "text": "  <math>    <mrow>      <mtext>wave speed = </mtext>      <mfrac linethickness=\"thin\">        <mrow>          <mtext>displacement of wave</mtext>        </mrow>        <mrow>          <mtext>elapsed time</mtext>        </mrow>      </mfrac>    </mrow>  </math>  <span class=\"KBDefinitionTag\" />"
+        }
+      ]
+    }
+  ],
+  "definitions": [],
+  "secText": [
+    "  <b>Lesson:</b>  <b>    <br />  </b>1. Describe <a class='pjumpToTopic' href='javascript:void(0)' data-chap='13' data-topic='5' data-subtopic='1' data-subsection='0'>wave speed</a> of a wave.<br />2. Calculate <a class='pjumpToTopic' href='javascript:void(0)' data-chap='13' data-topic='5' data-subtopic='1' data-subsection='1'>wave speed</a>.",
+    "  <b>In-class assessment:</b>  <b>    <br />  </b>1. <a class='pjumpToTopic' href='javascript:void(0)' data-chap='13' data-topic='5' data-subtopic='1' data-subsection='2'>Calculate</a> the wave speed of light.",
+    "",
+    "  <b>Quick Review:</b>  <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='sum_wavespeed'>Wave Speed</a>"
+  ],
+  "objNames": [
+    "wb_wave_speed_equationa"
+  ]
+}

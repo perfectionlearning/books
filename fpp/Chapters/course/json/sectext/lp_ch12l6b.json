@@ -1,1 +1,22 @@
-{"cards":[{"lines":[{"type":"title","text":"Engine efficiency"}]}],"definitions":[],"secText":["  <b>Lesson:<\/b>  <b>    <br \/>  <\/b>1. Define and calculate <a class='pjumpToTopic' href='javascript:void(0)' data-chap='12' data-topic='5' data-subtopic='1' data-subsection='0'>engine efficiency<\/a>.<br \/>2. Work through a sample problem to <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='app_impossible_engine_question'>calculate the efficiency<\/a> of an engine.<br \/>3. Calculate the <a class='pjumpToTopic' href='javascript:void(0)' data-chap='12' data-topic='5' data-subtopic='1' data-subsection='3'>efficiency<\/a> of an engine using the temperatures of the hot and cold reservoirs.<br \/>4. Define the <a class='pjumpToTopic' href='javascript:void(0)' data-chap='12' data-topic='5' data-subtopic='2' data-subsection='0'>second law of thermodynamics<\/a>. Calculate engine efficiency using the second law of thermodynamics.<br \/>5. Determine the <a class='pjumpToTopic' href='javascript:void(0)' data-chap='12' data-topic='5' data-subtopic='2' data-subsection='1'>direction of heat flow<\/a>.","  <b>In-class assessment:<\/b>  <b>    <br \/>  <\/b>1. <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='qc_37379'>Calculate<\/a> the efficiency of an engine.","","  <b>Quick Review:<\/b>  <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='sum_efficiency_concepts'>Efficiency<\/a>, <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='sum_heat_flow_direction_concepts'>Second Law of Thermodynamics<\/a>"],"objNames":["wb_efficiency_concepts1"]}
+{
+  "cards": [
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Engine efficiency"
+        }
+      ]
+    }
+  ],
+  "definitions": [],
+  "secText": [
+    "  <b>Lesson:</b>  <b>    <br />  </b>1. Define and calculate <a class='pjumpToTopic' href='javascript:void(0)' data-chap='12' data-topic='5' data-subtopic='1' data-subsection='0'>engine efficiency</a>.<br />2. Work through a sample problem to <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='app_impossible_engine_question'>calculate the efficiency</a> of an engine.<br />3. Calculate the <a class='pjumpToTopic' href='javascript:void(0)' data-chap='12' data-topic='5' data-subtopic='1' data-subsection='3'>efficiency</a> of an engine using the temperatures of the hot and cold reservoirs.<br />4. Define the <a class='pjumpToTopic' href='javascript:void(0)' data-chap='12' data-topic='5' data-subtopic='2' data-subsection='0'>second law of thermodynamics</a>. Calculate engine efficiency using the second law of thermodynamics.<br />5. Determine the <a class='pjumpToTopic' href='javascript:void(0)' data-chap='12' data-topic='5' data-subtopic='2' data-subsection='1'>direction of heat flow</a>.",
+    "  <b>In-class assessment:</b>  <b>    <br />  </b>1. <a class='pjumpToTopic' href='javascript:void(0)' data-chap='12' data-topic='5' data-subtopic='1' data-subsection='2'>Calculate</a> the efficiency of an engine.",
+    "",
+    "  <b>Quick Review:</b>  <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='sum_efficiency_concepts'>Efficiency</a>, <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='sum_heat_flow_direction_concepts'>Second Law of Thermodynamics</a>"
+  ],
+  "objNames": [
+    "wb_efficiency_concepts1"
+  ]
+}

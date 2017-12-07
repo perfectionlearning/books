@@ -1,1 +1,22 @@
-{"cards":[{"lines":[{"type":"title","text":"Play with momentum"}]}],"definitions":[],"secText":["  <b>Lesson:<\/b>  <b>    <br \/>  <\/b>1. <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='same_jsact_Chapter_8_0'>Experiment with shuffleboard<\/a> pucks to determine if momentum can be conserved.<br \/>2. Define and calculate <a class='pjumpToTopic' href='javascript:void(0)' data-chap='7' data-topic='1' data-subtopic='1' data-subsection='1'>conservation of momentum<\/a>.<br \/>3. Work through a sample problem to <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='app_tang_question'>determine the velocity of an object<\/a> using conservation of momentum.","  <b>In-class assessment:<\/b>  <b>    <br \/>  <\/b>1. <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='qc_37458'>Calculate<\/a> the final momentum of an object using conservation of momentum.<br \/>2. <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='qc_37459'>Calculate<\/a> the final momentum of an object when two objects are moving before and after the collision using conservation of momentum.","","  <b>Quick Review:<\/b>  <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='sum_momentum_conservation'>Conservation of Momentum<\/a>"],"objNames":["jsact_Chapter_8_0"]}
+{
+  "cards": [
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Play with momentum"
+        }
+      ]
+    }
+  ],
+  "definitions": [],
+  "secText": [
+    "  <b>Lesson:</b>  <b>    <br />  </b>1. <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='same_jsact_Chapter_8_0'>Experiment with shuffleboard</a> pucks to determine if momentum can be conserved.<br />2. Define and calculate <a class='pjumpToTopic' href='javascript:void(0)' data-chap='7' data-topic='1' data-subtopic='1' data-subsection='1'>conservation of momentum</a>.<br />3. Work through a sample problem to <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='app_tang_question'>determine the velocity of an object</a> using conservation of momentum.",
+    "  <b>In-class assessment:</b>  <b>    <br />  </b>1. <a class='pjumpToTopic' href='javascript:void(0)' data-chap='7' data-topic='1' data-subtopic='1' data-subsection='2'>Calculate</a> the final momentum of an object using conservation of momentum.<br />2. <a class='pjumpToTopic' href='javascript:void(0)' data-chap='7' data-topic='1' data-subtopic='1' data-subsection='3'>Calculate</a> the final momentum of an object when two objects are moving before and after the collision using conservation of momentum.",
+    "",
+    "  <b>Quick Review:</b>  <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='sum_momentum_conservation'>Conservation of Momentum</a>"
+  ],
+  "objNames": [
+    "jsact_Chapter_8_0"
+  ]
+}

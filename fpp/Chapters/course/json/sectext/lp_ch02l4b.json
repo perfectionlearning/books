@@ -1,1 +1,43 @@
-{"cards":[{"lines":[{"type":"title","text":"Freefall acceleration"},{"type":"headline","text":"Represented with <i>g<\/i>"},{"type":"bullet","text":"Equals about 9.81 m\/s<sup class=\"\">2<\/sup> on Earth"}]},{"lines":[{"type":"title","text":"Galileo\u2019s experiment on the Moon"},{"type":"headline","text":"Performed by Apollo 15 astronaut"}]}],"definitions":[],"secText":["  <b>Lesson:<\/b>  <b>    <br \/>  <\/b>1. Define <a class='pjumpToTopic' href='javascript:void(0)' data-chap='2' data-topic='3' data-subtopic='1' data-subsection='0'>freefall acceleration<\/a>. Understand that freefall acceleration has different values around the universe.<b><br \/><\/b>2. Understand that <a class='pjumpToTopic' href='javascript:void(0)' data-chap='2' data-topic='3' data-subtopic='1' data-subsection='1'>freefall acceleration is constant<\/a> using examples and experiments as evidence.<b><br \/><\/b>3. Work through a sample problem to <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='app_identify_v_a_freefall_question'>determine the direction of velocity and freefall acceleration in a vacuum<\/a>.<b><br \/><\/b>4. Work through a sample problem to <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='app_calc_peak_time_height_question'>calculate displacement using freefall acceleration<\/a>.","  <b>In-class assessment:<\/b>  <b>    <br \/>  <\/b>1. <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='qc_37424'>Calculate<\/a> freefall acceleration. <b><br \/><\/b>2. <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='qc_37425'>Calculate<\/a> velocity using freefall acceleration.","","  <b>Quick Review:<\/b>  <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='sum_freefall_projectile'>Freefall Acceleration<\/a>"],"objNames":["wb_free_fall_acceleration_equation","wb_free_fall_nasa"]}
+{
+  "cards": [
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Freefall acceleration"
+        },
+        {
+          "type": "headline",
+          "text": "Represented with <i>g</i>"
+        },
+        {
+          "type": "bullet",
+          "text": "Equals about 9.81 m/s<sup class=\"\">2</sup> on Earth"
+        }
+      ]
+    },
+    {
+      "lines": [
+        {
+          "type": "title",
+          "text": "Galileo’s experiment on the Moon"
+        },
+        {
+          "type": "headline",
+          "text": "Performed by Apollo 15 astronaut"
+        }
+      ]
+    }
+  ],
+  "definitions": [],
+  "secText": [
+    "  <b>Lesson:</b>  <b>    <br />  </b>1. Define <a class='pjumpToTopic' href='javascript:void(0)' data-chap='2' data-topic='3' data-subtopic='1' data-subsection='0'>freefall acceleration</a>. Understand that freefall acceleration has different values around the universe.<b><br /></b>2. Understand that <a class='pjumpToTopic' href='javascript:void(0)' data-chap='2' data-topic='3' data-subtopic='1' data-subsection='1'>freefall acceleration is constant</a> using examples and experiments as evidence.<b><br /></b>3. Work through a sample problem to <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='app_identify_v_a_freefall_question'>determine the direction of velocity and freefall acceleration in a vacuum</a>.<b><br /></b>4. Work through a sample problem to <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='app_calc_peak_time_height_question'>calculate displacement using freefall acceleration</a>.",
+    "  <b>In-class assessment:</b>  <b>    <br />  </b>1. <a class='pjumpToTopic' href='javascript:void(0)' data-chap='2' data-topic='3' data-subtopic='1' data-subsection='4'>Calculate</a> freefall acceleration. <b><br /></b>2. <a class='pjumpToTopic' href='javascript:void(0)' data-chap='2' data-topic='3' data-subtopic='1' data-subsection='5'>Calculate</a> velocity using freefall acceleration.",
+    "",
+    "  <b>Quick Review:</b>  <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='sum_freefall_projectile'>Freefall Acceleration</a>"
+  ],
+  "objNames": [
+    "wb_free_fall_acceleration_equation",
+    "wb_free_fall_nasa"
+  ]
+}
