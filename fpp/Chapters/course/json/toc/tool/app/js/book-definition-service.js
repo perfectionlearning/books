@@ -57,6 +57,7 @@ var app = angular.module('bd');
                     bdChapterObj = { 
                         title: chapter.title, 
                         qcSyncIds: { fl: chapter.fl_sync_id, ngss: chapter.ngss_sync_id, natl: chapter.sync_id },
+                        qbSyncIds: { fl: chapter.fl_qb_sync_id, ngss: chapter.ngss_qb_sync_id, natl: chapter.qb_sync_id },
                         probInstIds: probInstIds,
                         vlData: vlData
                     };
