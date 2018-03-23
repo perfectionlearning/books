@@ -113,7 +113,11 @@ var Controller = function() {
         $(document).trigger("getBookData", {
           bookData: coreData
         });
-      }
+      }else{
+        var add_resource = coreData.chapters[27].unit[0].section;
+        add_resource.splice(7, 1);
+        $(document).trigger("getBookData", {bookData: coreData});
+	  }
       if (p.is_demo) {
         var labs = coreData.chapters[26];
         labs.title = "Virtual Lab Sampler";
@@ -411,7 +415,10 @@ var Controller = function() {
     }, 500);
     if (lessonFlag) {
       if (p.bookData[p.chap]["unit"][p.unit]["section"][p.section]["subsection"].length <= 1) {
-        screenNo = (Number(p.unit) + 1) + "." + (Number(p.section));
+        // added for lesson plan single page lesson and assessment page not present
+        var chr = String.fromCharCode(97 + Number(p.subSection));
+        screenNo = "Lesson " + (Number(p.section) - 1) + "." + (chr) + ":";
+		// screenNo = (Number(p.unit) + 1) + "." + (Number(p.section));
       } else {
         var chr = String.fromCharCode(97 + Number(p.subSection));
         if (p.section == 1) {

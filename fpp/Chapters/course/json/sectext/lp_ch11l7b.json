@@ -1,51 +1,50 @@
 {
-  "cards": [
-    {
-      "lines": [
+    "cards": [
         {
-          "type": "title",
-          "text": "Thermal expansion"
+            "lines": [
+                {
+                    "type": "title",
+                    "text": "Thermal expansion"
+                },
+                {
+                    "type": "headline",
+                    "text": "Most materials expand with increased temperature"
+                },
+                {
+                    "type": "headline",
+                    "text": "Different materials expand at different rates "
+                }
+            ]
         },
         {
-          "type": "headline",
-          "text": "Most materials expand with increased temperature"
-        },
-        {
-          "type": "headline",
-          "text": "Different materials expand at different rates "
+            "lines": [
+                {
+                    "type": "title",
+                    "text": "Thermal expansion of water"
+                },
+                {
+                    "type": "headline",
+                    "text": "Water contracts and sinks as it cools, until 4°C"
+                },
+                {
+                    "type": "headline",
+                    "text": "From 4°C to 0°C, water expands and stays on top"
+                },
+                {
+                    "type": "headline",
+                    "text": "Then ice forms on top and floats"
+                }
+            ]
         }
-      ]
-    },
-    {
-      "lines": [
-        {
-          "type": "title",
-          "text": "Thermal expansion of water"
-        },
-        {
-          "type": "headline",
-          "text": "Water contracts and sinks as it cools, until 4°C"
-        },
-        {
-          "type": "headline",
-          "text": "From 4°C to 0°C, water expands and stays on top"
-        },
-        {
-          "type": "headline",
-          "text": "Then ice forms on top and floats"
-        }
-      ]
-    }
-  ],
-  "definitions": [],
-  "secText": [
-    "  <b>Lesson:</b>  <b>    <br />  </b>1. Define <a class='pjumpToTopic' href='javascript:void(0)' data-chap='11' data-topic='6' data-subtopic='1' data-subsection='0'>thermal expansion</a>.<br />2. Define <a class='pjumpToTopic' href='javascript:void(0)' data-chap='11' data-topic='6' data-subtopic='2' data-subsection='0'>linear thermal expansion</a>.<br />3. Calculate <a class='pjumpToTopic' href='javascript:void(0)' data-chap='11' data-topic='6' data-subtopic='2' data-subsection='1'>linear thermal expansion</a>.<br />4. Work through a sample problem to <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='app_thermal_expansion_question'>calculate the linear thermal expansion</a> of a rod.<br />5. Define and calculate <a class='pjumpToTopic' href='javascript:void(0)' data-chap='11' data-topic='6' data-subtopic='3' data-subsection='0'>thermal volume expansion</a>.<br />6. <a class='pjumpToTopic' href='javascript:void(0)' data-chap='11' data-topic='6' data-subtopic='3' data-subsection='1'>Explain</a> the thermal volume expansion of water.",
-    "  <b>In-class assessment:</b>  <b>    <br />  </b>1. <a class='pjumpToTopic' href='javascript:void(0)' data-chap='11' data-topic='6' data-subtopic='2' data-subsection='3'>Calculate</a> the linear thermal expansion of a copper rod.<b><br /></b>2. <a class='pjumpToTopic' href='javascript:void(0)' data-chap='11' data-topic='6' data-subtopic='3' data-subsection='2'>Calculate</a> the thermal volume expansion of water.",
-    "",
-    "  <b>Quick Review:</b>  <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='sum_thermal_volume_expansion_concepts'>Thermal Expansion</a>, <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='sum_volume_expansion_equation'>Expansion Equations</a>"
-  ],
-  "objNames": [
-    "wb_thermal_expansion_concepts",
-    "wb_water_expansion_concepts"
-  ]
+    ],
+    "definitions": [],
+    "secText": [
+        "  <b>Lesson:</b>  <b>    <br />  </b>1. Define <a class='pjumpToTopic' href='javascript:void(0)' data-chap='11' data-topic='6' data-subtopic='1' data-subsection='0'>thermal expansion</a>.<br />2. Define <a class='pjumpToTopic' href='javascript:void(0)' data-chap='11' data-topic='6' data-subtopic='2' data-subsection='0'>linear thermal expansion</a>.<br />3. Calculate <a class='pjumpToTopic' href='javascript:void(0)' data-chap='11' data-topic='6' data-subtopic='2' data-subsection='1'>linear thermal expansion</a>.<br />4. Work through a sample problem to <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='app_thermal_expansion_question'>calculate the linear thermal expansion</a> of a rod.<br />5. Define and calculate <a class='pjumpToTopic' href='javascript:void(0)' data-chap='11' data-topic='6' data-subtopic='3' data-subsection='0'>thermal volume expansion</a>.<br />6. <a class='pjumpToTopic' href='javascript:void(0)' data-chap='11' data-topic='6' data-subtopic='3' data-subsection='1'>Explain</a> the thermal volume expansion of water.",
+        "  <b>In-class asse</b>  <b>ssment:</b>  <b>    <br />  </b>1. <a class='pjumpToTopic' href='javascript:void(0)' data-chap='11' data-topic='6' data-subtopic='2' data-subsection='3'>Calculate</a> the linear thermal expansion of a copper rod.<b><br /></b>2. <a class='pjumpToTopic' href='javascript:void(0)' data-chap='11' data-topic='6' data-subtopic='3' data-subsection='2'>Calculate</a> the thermal volume expansion of water.",
+        "  <b>Quick Review:</b>  <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='sum_thermal_volume_expansion_concepts'>Thermal Expansion</a>, <a class='pjumpToVideo' href='javascript:void(0)' data-video='true' data-vref='sum_volume_expansion_equation'>Expansion Equations</a>"
+    ],
+    "objNames": [
+        "wb_thermal_expansion_concepts",
+        "wb_water_expansion_concepts"
+    ]
 }

@@ -1,0 +1,48 @@
+{
+    "cards": [
+        {
+            "lines": [
+                {
+                    "type": "title",
+                    "text": "Thermal expansion"
+                },
+                {
+                    "type": "headline",
+                    "text": "Most materials expand with increased temperature"
+                },
+                {
+                    "type": "headline",
+                    "text": "Different materials expand at different rates "
+                }
+            ]
+        },
+        {
+            "lines": [
+                {
+                    "type": "title",
+                    "text": "Thermal expansion of water"
+                },
+                {
+                    "type": "headline",
+                    "text": "Water contracts and sinks as it cools, until 4°C"
+                },
+                {
+                    "type": "headline",
+                    "text": "From 4°C to 0°C, water expands and stays on top"
+                },
+                {
+                    "type": "headline",
+                    "text": "Then ice forms on top and floats"
+                }
+            ]
+        }
+    ],
+    "definitions": [],
+    "secText": [
+        "  <b>Lesson:</b>  <b>    <br />  </b>1. Define <a class='pjumpToTopic' href='javascript:void(0)' data-chap='11' data-topic='6' data-subtopic='1' data-subsection='0'>thermal expansion</a>.<br />"
+    ],
+    "objNames": [
+        "wb_thermal_expansion_concepts",
+        "wb_water_expansion_concepts"
+    ]
+}

@@ -1,0 +1,46 @@
+{
+    "cards": [
+        {
+            "lines": [
+                {
+                    "type": "title",
+                    "text": "Earth’s structure"
+                },
+                {
+                    "type": "headline",
+                    "text": "Earth is made up of 3 layers"
+                },
+                {
+                    "type": "bullet",
+                    "text": "Crust, mantle and core"
+                }
+            ]
+        },
+        {
+            "lines": [
+                {
+                    "type": "title",
+                    "text": "Convection’s key role in Earth"
+                },
+                {
+                    "type": "headline",
+                    "text": "Helps to drive formation of crust"
+                },
+                {
+                    "type": "headline",
+                    "text": "Conduction occurs as well"
+                }
+            ]
+        }
+    ],
+    "definitions": [],
+    "secText": [
+        "  <b>Lesson:</b>  <b>    <br />  </b>1. Show the layers of the Earth and discuss the <a class='pjumpToTopic' href='javascript:void(0)' data-chap='11' data-topic='8' data-subtopic='1' data-subsection='0'>relative heat in each layer</a>.  ",
+        "2. Discuss convection and conduction in <a class='pjumpToTopic' href='javascript:void(0)' data-chap='11' data-topic='8' data-subtopic='1' data-subsection='1'>heat transfer in the Earth</a>.",
+        "3. Discuss the “short” and <a class='pjumpToTopic' href='javascript:void(0)' data-chap='11' data-topic='8' data-subtopic='1' data-subsection='2'>long time scales of our planet</a>."
+    ],
+    "objNames": [
+        "wb_geo_heat_1",
+        "wb_convection"
+    ]
+}

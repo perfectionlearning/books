@@ -1,1 +1,26 @@
-{"cards":[{"lines":[{"type":"title","text":"State change"},{"type":"headline","text":"Transformation between states"},{"type":"bullet","text":"Solid to liquid, liquid to gas"},{"type":"headline","text":"Requires heat to flow "},{"type":"headline","text":"Temperature stays constant"}]}],"definitions":[{"term":"State change","def":"Transformation between states of matter, such as from liquid to gas."}],"secText":["Transferring heat to a material can increase its temperature, but it can also cause it to change state, such as from liquid to gas.    ","Materials change state when they transform between solid, liquid, and gas. For example, at room temperature, the ice cubes we show will melt, changing into a liquid. Different materials change between solid, liquid, and gas at different temperatures. For instance, ice melts at a far lower temperature than iron does. ","Energy must be added to ice, in the form of heat flow, for it to melt into water. Changing from solid to liquid, liquid to gas, or solid to gas requires the addition of energy.  ","Water changes from a solid to a liquid in the temperature range in which humans dwell. This serves to moderate temperature changes \u2212 for instance, the polar ice caps melting serves to moderate the Earth\u2019s temperature as atmospheric temperature increases.  However, if the water does not freeze again during the winter, the polar ice will disappear, and the planet loses one factor that moderates its temperature. ","Heat also flows when liquid water freezes or steam condenses into liquid water. In these cases, heat flows out of the water. The amount of heat flowing in or out during a state change depends on the material, its amount, and which state change is occurring.","Although energy, in the form of heat, is being added or released during a state change, the temperature of the material remains constant. For example, ice cubes remain at 0\u00b0C as they melt into liquid water."],"objNames":["wb_phase_change_concepts"]}
+{
+	"cards": [{
+		"lines": [{
+			"type": "title",
+			"text": "State change"
+		}, {
+			"type": "headline",
+			"text": "Transformation between states"
+		}, {
+			"type": "bullet",
+			"text": "Solid to liquid, liquid to gas"
+		}, {
+			"type": "headline",
+			"text": "Requires heat to flow "
+		}, {
+			"type": "headline",
+			"text": "Temperature stays constant"
+		}]
+	}],
+	"definitions": [{
+		"term": "State",
+		"def": "Transformation between states of matter, such as from liquid to gas."
+	}],
+	"secText": ["Transferring heat to a material can increase its temperature, but it can also cause it to change state, such as from liquid to gas.    ", "Materials change state when they transform between solid, liquid, and gas. For example, at room temperature, the ice cubes we show will melt, changing into a liquid. Different materials change between solid, liquid, and gas at different temperatures. For instance, ice melts at a far lower temperature than iron does. ", "Energy must be added to ice, in the form of heat flow, for it to melt into water. Changing from solid to liquid, liquid to gas, or solid to gas requires the addition of energy.  ", "Water changes from a solid to a liquid in the temperature range in which humans dwell. This serves to moderate temperature changes − for instance, the polar ice caps melting serves to moderate the Earth’s temperature as atmospheric temperature increases.  However, if the water does not freeze again during the winter, the polar ice will disappear, and the planet loses one factor that moderates its temperature. ", "Heat also flows when liquid water freezes or steam condenses into liquid water. In these cases, heat flows out of the water. The amount of heat flowing in or out during a state change depends on the material, its amount, and which state change is occurring.", "Although energy, in the form of heat, is being added or released during a state change, the temperature of the material remains constant. For example, ice cubes remain at 0°C as they melt into liquid water."],
+	"objNames": ["wb_phase_change_concepts"]
+}

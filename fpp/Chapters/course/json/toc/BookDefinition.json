@@ -5183,6 +5183,92 @@
                             ]
                         }
                     ]
+                },
+                {
+                    "section": [
+                        {
+                            "SectionTitle": "Periodic Table and Matter Properties",
+                            "subsection": [
+                                {
+                                    "SectionHeading": "Lesson Overview: Periodic Table and Matter Properties",
+                                    "ref": "lp_ch11l8b_ui.json"
+                                }
+                            ]
+                        },
+                        {
+                            "SectionTitle": "Valence electrons",
+                            "subsection": [
+                                {
+                                    "type": "videoScreen",
+                                    "SectionHeading": "Valence electrons",
+                                    "ref": "expsec_c3543321.json"
+                                },
+                                {
+                                    "type": "videoScreen",
+                                    "SectionHeading": "Valence and bonding",
+                                    "ref": "expsec_c358123378.json"
+                                },
+                                {
+                                    "type": "videoScreen",
+                                    "SectionHeading": "The periodic table",
+                                    "ref": "expsec_c3543234175.json"
+                                },
+                                {
+                                    "type": "videoScreen",
+                                    "SectionHeading": "Metals",
+                                    "ref": "expsec_c35434562325.json"
+                                },
+                                {
+                                    "type": "videoScreen",
+                                    "SectionHeading": "Metalloids and nonmetals",
+                                    "ref": "expsec_c354345623789.json"
+                                },
+                                {
+                                    "type": "videoScreen",
+                                    "SectionHeading": "Physical properties",
+                                    "ref": "expsec_c354323443156.json"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "section": [
+                        {
+                            "SectionTitle": "Geology and Thermal Processess",
+                            "subsection": [
+                                {
+                                    "SectionHeading": "Lesson Overview: Geology and Thermal Processes",
+                                    "ref": "lp_ch11l9a_ui.json"
+                                }
+                            ]
+                        },
+                        {
+                            "SectionTitle": "Heat and the Earth",
+                            "subsection": [
+                                {
+                                    "type": "videoScreen",
+                                    "SectionHeading": "Earth’s structure",
+                                    "ref": "expsec_c354221.json"
+                                },
+                                {
+                                    "type": "videoScreen",
+                                    "SectionHeading": "Convection",
+                                    "ref": "expsec_c3542234.json"
+                                },
+                                {
+                                    "type": "videoScreen",
+                                    "SectionHeading": "Earth and time scales",
+                                    "ref": "expsec_c35812142.json"
+                                },
+                                {
+                                    "type": "videoScreen",
+                                    "SectionHeading": "Quicker events",
+                                    "ref": "expsec_c35855.json"
+                                }
+                            ]
+                        }
+                    ]
                 }
             ],
             "ngss_sync_id": 14801,
@@ -7134,6 +7220,21 @@
                                 }
                             ]
                         },
+                        {
+                            "SectionTitle": "Inverse square forces",
+                            "subsection": [
+                                {
+                                    "type": "videoScreen",
+                                    "SectionHeading": "Force and distance",
+                                    "ref": "expsec_o9945.json"
+                                },
+                                {
+                                    "type": "videoScreen",
+                                    "SectionHeading": "Symmetry of force",
+                                    "ref": "expsec_o9917.json"
+                                }
+							]
+						},
                         {
                             "SectionTitle": "Advanced topics in Coulomb's law",
                             "subsection": [
@@ -11390,6 +11491,61 @@
                                                     "title": "Wave essentials",
                                                     "href": "course/physical labs/Wave_essentials/page.html",
                                                     "pageTitle": "Wave Essentials Lab"
+												},
+                                                {
+                                                    "title": "Analyzing Newton’s Second Law",
+                                                    "href": "/Analyzing Newton’s Second Law.pdf",
+                                                    "pageTitle": "Analyzing Newton’s Second Law Lab"
+                                                },
+                                                {
+                                                    "title": "An Electric Current and Its Accompanying Magnetic Field",
+                                                    "href": "/An Electric Current and Its Accompanying Magnetic Field.pdf",
+                                                    "pageTitle": "An Electric Current and Its Accompanying Magnetic Field Lab"
+                                                },
+                                                {
+                                                    "title": "Egg Drop",
+                                                    "href": "/Egg Drop.pdf",
+                                                    "pageTitle": "Egg Drop Lab"
+                                                },
+                                                {
+                                                    "title": "Electromagnetic Wave Health Issues",
+                                                    "href": "/Electromagnetic Wave Health Issues.pdf",
+                                                    "pageTitle": "Electromagnetic Wave Health Issues Lab"
+                                                },
+                                                {
+                                                    "title": "Energy Conversion",
+                                                    "href": "/Energy Conversion.pdf",
+                                                    "pageTitle": "Energy Conversion Lab"
+                                                },
+                                                {
+                                                    "title": "Heat and Energy",
+                                                    "href": "/Heat and Energy.pdf",
+                                                    "pageTitle": "Heat and Energy Lab"
+                                                },
+                                                {
+                                                    "title": "The Mendenhall Glacier",
+                                                    "href": "/The Mendenhall Glacier.pdf",
+                                                    "pageTitle": "The Mendenhall Glacier Lab"
+                                                },
+                                                {
+                                                    "title": "Molecular Design",
+                                                    "href": "/Molecular Design.pdf",
+                                                    "pageTitle": "Molecular Design Lab"
+                                                },
+                                                {
+                                                    "title": "Mini-lessons on Newton’s Laws of Motion",
+                                                    "href": "/Mini-lessons on Newton’s Laws of Motion.pdf",
+                                                    "pageTitle": "Mini-lessons on Newton’s Laws of Motion Lab"
+                                                },
+                                                {
+                                                    "title": "Surface Tension",
+                                                    "href": "/Surface Tension.pdf",
+                                                    "pageTitle": "Surface Tension Lab"
+                                                },
+                                                {
+                                                    "title": "Water",
+                                                    "href": "/Water.pdf",
+                                                    "pageTitle": "Water Lab"
                                                 }
                                             ]
                                         },
@@ -11573,7 +11729,12 @@
                                                     "sync_id": 14547,
                                                     "title": "Collisions",
                                                     "href": "course/labs/Collisions/page.html"
-                                                }
+                                                },
+                                                {
+                                                    "assign_id": "",
+                                                    "title": "Hyperloop train",
+                                                    "href": "course/labs/hyperloop_train/page.html"
+												}
                                             ]
                                         },
                                         {
@@ -12041,6 +12202,17 @@
                                     "SectionHeading": "ELPS Correlation",
                                     "type": "additonal_resource",
                                     "ref": "course/resources/ELPS_correlation.html"
+                                }
+                            ]
+                        },
+                        {
+                            "number": false,
+                            "SectionTitle": "Physics Next Generation Science Standards Correlation",
+                            "subsection": [
+                                {
+                                    "SectionHeading": "Physics Next Generation Science Standards Correlation",
+                                    "type": "additonal_resource",
+                                    "ref": "course/resources/physics_ng_science_standards_correlation.html"
                                 }
                             ]
                         }
@@ -13469,6 +13641,26 @@
                                         "type": "videoScreen",
                                         "SectionHeading": "Lesson and Assessment ",
                                         "ref": "lp_ch11l7b.json"
+                                    }
+                                ]
+                            },
+                            {
+                                "SectionTitle": "Lesson 8: Periodic Table and Matter Properties",
+                                "subsection": [
+                                    {
+                                        "type": "videoScreen",
+                                        "SectionHeading": "Periodic Table and Matter Properties",
+                                        "ref": "lp_ch11l8b.json"
+                                    }
+                                ]
+                            },
+                            {
+                                "SectionTitle": "Lesson 9: Geology and Thermal Processes",
+                                "subsection": [
+                                    {
+                                        "type": "videoScreen",
+                                        "SectionHeading": "Geology and Thermal Processes",
+                                        "ref": "lp_ch11l9a.json"
                                     }
                                 ]
                             }

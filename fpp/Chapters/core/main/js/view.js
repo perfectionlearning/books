@@ -587,6 +587,12 @@ function View() {
 //This function loads the resource screen.
   function loadAdditionalResource(e, data) {
     $('.pMenu').addClass('pDisable');
+	if ($('.pVideoMainWrapper').hasClass('quizboardOpen')) {
+      videoPlayer.stopVideo();
+    } else {
+      videoPlayer.stopVideo();
+      manageScreen(p.currentType);
+    }
     $('.book_bck').show()
     $('.pVideoIconWrap').hide();
     $('.pActivityDesc').css("width", "100%");
@@ -1384,8 +1390,30 @@ function View() {
     $(".pSearchAreaWrapper").hide();
     disableHeaderSearch(false);
     if (href.split(".")[1] != "html") {
-      $('.pLabsWrapper').show();
-      window.open(href /* .split("~").join("/") */ );
+      if (href.split(".")[1] != "pdf") {
+		$('.pLabsWrapper').show();
+		window.open(href/* .split("~").join("/") */);
+		return false;
+	  }else if (href.split(".")[1] == "pdf"){
+		  var src = href.split("/")[1];
+		  var title = src.split(".")[0];
+		  var _href = href.replace(/\//g, '~')
+		  _href = _href.replace(/_/g, '-');
+			location.hash = escape("type_labPage/href_" + _href);
+		  $(p.mShell).find(".book_bck").hide();
+		  $(p.mShell).find(".lab_bck").show();
+		  console.log("title "+title," href "+ href, " assign_id "+assign_id)
+		  // $(document).trigger("loadPdfScreen", {screenData: _data, screenNo: screenNo});
+		  var page = 1;
+			title = title.replace(/_/g, '-');
+			src = src.replace(/_/g, '-');
+			console.log(title,src)
+		  $(p.mShell).find(".pdfHeader").html(title +" Lab");
+		  $('.pdfBody').html("<iframe id='myFrame' src='core/lib/web/viewer.html#../../../assets/pdf/" + src + "' style='border: none; width: 100%; height: 100%;overflow: scroll' frameborder='0' data-page=" + page + "></iframe>")
+		  p.currentType = "pdfScreen";
+		  manageScreen("pdfScreen");
+	  }
+      //window.open(href/* .split("~").join("/") */);
       return false;
     }
     var _href = href.replace(/\//g, '~')
@@ -1684,6 +1712,9 @@ function View() {
         manageScreen(p.currentType);
         break;
       case "labs_back":
+        if ($(p.mShell).find(".videoWrapper").hasClass("vOpen")) {
+          videoPlayer.stopVideo();
+        }
         $('.pActivityWrapper').hide();
         $(p.mShell).find('.pJsActWrapper').hide();
         $('.pBookWrapper').hide();
@@ -1701,6 +1732,9 @@ function View() {
         validateEmail();
         break;
       case "lessonPlans":
+        if ($(p.mShell).find(".videoWrapper").hasClass("vOpen")) {
+          videoPlayer.stopVideo();
+        }
         $(document).trigger("updateBook", {
           book: false
         });

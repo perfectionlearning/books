@@ -1,0 +1,47 @@
+{
+    "cards": [
+        {
+            "lines": [
+                {
+                    "type": "title",
+                    "text": "Octet rule"
+                },
+                {
+                    "type": "headline",
+                    "text": "Atoms most stable with eight valence atoms"
+                },
+                {
+                    "type": "headline",
+                    "text": "Tend to react to have 8 valence electrons"
+                }
+            ]
+        },
+        {
+            "lines": [
+                {
+                    "type": "title",
+                    "text": "Convection’s key role in Earth"
+                },
+                {
+                    "type": "headline",
+                    "text": "Helps to drive formation of crust"
+                },
+                {
+                    "type": "headline",
+                    "text": "Conduction occurs as well"
+                }
+            ]
+        }
+    ],
+    "definitions": [],
+    "secText": [
+        "  <b>Lesson:</b>  <b>    <br />  </b>1. Define <a class='pjumpToTopic' href='javascript:void(0)' data-chap='11' data-topic='7' data-subtopic='1' data-subsection='0'>valence electrons</a>.<br />2. Explain their role in <a class='pjumpToTopic' href='javascript:void(0)' data-chap='11' data-topic='7' data-subtopic='1' data-subsection='1'>bonding</a>.",
+        "3. Discuss how valence electrons relate to columns in the <a class='pjumpToTopic' href='javascript:void(0)' data-chap='11' data-topic='7' data-subtopic='1' data-subsection='2'>Periodic Table</a>.",
+        "4. Explain how columns relate to metals and nonmetals, including <a class='pjumpToTopic' href='javascript:void(0)' data-chap='11' data-topic='7' data-subtopic='1' data-subsection='4'>semiconductors</a>.",
+        "5. Have students discuss properties of elements they know (e.g. iron) relate to their place in the  <a class='pjumpToTopic' href='javascript:void(0)' data-chap='11' data-topic='7' data-subtopic='1' data-subsection='5'>Periodic Table</a>."
+    ],
+    "objNames": [
+        "wb_valencechem_1",
+        "wb_convection"
+    ]
+}
