@@ -52,18 +52,18 @@
 		{
 			"benchmark": "HS-ESS2-2. Analyze geoscience data to make the claim that one change to Earth's surface can create feedbacks that cause changes to other Earth systems.",
 			"lessons": [
-				"Labs: The Mendenhall Glacier",
 				"11.9.1.c Earth and time scales",
 				"11.9.1.d Quicker events",
 				"11.9.1.a Earth’s structure",
-				"11.6.2 Convection"
+				"11.6.2 Convection",
+				"26.1 Physical Labs and Demonstrations: The Mendenhall Glacier"
 			],
 			"hyperLink": [
-				"type_labPage/href_%7EThe%20Mendenhall%20Glacier.pdf",
 				"lesson_false/type_chapter/chapter_11/unit_8/section_1/subsection_2",
 				"lesson_false/type_chapter/chapter_11/unit_8/section_1/subsection_3",
 				"lesson_false/type_chapter/chapter_11/unit_8/section_1/subsection_0",
-				"lesson_false/type_chapter/chapter_11/unit_5/section_2/subsection_0"
+				"lesson_false/type_chapter/chapter_11/unit_5/section_2/subsection_0",
+				"type_labPage/href_%7EThe%20Mendenhall%20Glacier.pdf"
 			]
 		},
 		{
@@ -95,12 +95,12 @@
 		{
 			"benchmark": "HS-ESS2-5. Plan and investigate the properties of water and its effects on Earth materials and surface processes.",
 			"lessons": [
-				"Labs: Water",
-				"11.7.3.b Expansion of water"
+				"11.7.3.b Expansion of water",
+				"26.1 Physical Labs and Demonstrations: Water"
 			],
 			"hyperLink": [
-				"type_labPage/href_%7EWater.pdf",
-				"lesson_false/type_chapter/chapter_11/unit_6/section_3/subsection_1"
+				"lesson_false/type_chapter/chapter_11/unit_6/section_3/subsection_1",
+				"type_labPage/href_%7EWater.pdf"
 			]
 		},
 		{
@@ -159,21 +159,21 @@
 		{
 			"benchmark": "HS-PS2-1. Analyze data to support the claim that Newton’s second law of motion describes the mathematical relationship among the net force on a macroscopic object, its mass, and its acceleration.",
 			"lessons": [
-				"Labs: Analyzing Newton’s Second Law",
 				"5.2.0 Newton’s second law",
 				"5.2.2.c Activity: Use Newton’s second law",
-				"Labs: Mini-lessons on Newton’s Laws of Motion",
 				"5.2.4 Sample problem: Jet fighter",
-				"26.1. Physical Labs and Demonstrations: Dynamics Apparatus",
-				"26.2. Virtual Labs: Force, mass and acceleration"
+				"26.1 Physical Labs and Demonstrations: Mini-lessons on Newton’s Laws of Motion",
+				"26.1 Physical Labs and Demonstrations: Dynamics Apparatus",
+				"26.1 Physical Labs and Demonstrations: Analyzing Newton’s Second Law",
+				"26.2 Virtual Labs: Force, mass and acceleration"
 			],
 			"hyperLink": [
-				"type_labPage/href_%7EAnalyzing%20Newton%u2019s%20Second%20Law.pdf",
 				"lesson_false/type_chapter/chapter_5/unit_1/section_2/subsection_0",
 				"lesson_false/type_chapter/chapter_5/unit_1/section_2/subsection_2",
-				"type_labPage/href_%7EMini-lessons%20on%20Newton%u2019s%20Laws%20of%20Motion.pdf",
 				"lesson_false/type_chapter/chapter_5/unit_1/section_4/subsection_0",
+				"type_labPage/href_%7EMini-lessons%20on%20Newton%u2019s%20Laws%20of%20Motion.pdf",
 				"type_labPage/title_Dynamics%20Apparatus%20Lab/href_course%7Ephysical%20labs%7EDynamics-apparatus%7Epage.html",
+				"type_labPage/href_%7EAnalyzing%20Newton%u2019s%20Second%20Law.pdf",
 				"type_labPage/title_Force%2C%20mass%20and%20acceleration/href_course%7Elabs%7EForce-mass-acceleration%7Epage.html"
 			]
 		},
@@ -182,35 +182,35 @@
 			"lessons": [
 				"7.2.1.a Activity: Conservation of momentum",
 				"7.2.1.b Conservation of momentum",
-				"26.2. Virtual Labs: Collisions",
 				"7.2.1.c Quickcheck",
 				"7.2.1.d Quickcheck",
 				"7.4.e. Sample problem: Cheers in space",
-				"26.1. Physical Labs and Demonstrations: Collision Apparatus"
+				"26.2 Virtual Labs: Collisions",
+				"26.1 Physical Labs and Demonstrations: Collision Apparatus"
 			],
 			"hyperLink": [
 				"lesson_false/type_chapter/chapter_7/unit_1/section_1/subsection_0",
 				"lesson_false/type_chapter/chapter_7/unit_1/section_1/subsection_1",
-				"type_labPage/title_Collisions/href_course%7Elabs%7ECollisions%7Epage.html",
 				"lesson_false/type_chapter/chapter_7/unit_1/section_1/subsection_2",
 				"lesson_false/type_chapter/chapter_7/unit_1/section_1/subsection_3",
 				"lesson_false/type_chapter/chapter_7/unit_1/section_1/subsection_4",
+				"type_labPage/title_Collisions/href_course%7Elabs%7ECollisions%7Epage.html",
 				"type_labPage/title_Collision%20Apparatus%20Demonstration/href_course%7Edemonstrations%7ECollision-apparatus%7Epage.html"
 			]
 		},
 		{
 			"benchmark": "HS-PS2-3. Apply scientific and engineering ideas to design, evaluate, and refine a device that minimizes the force on a macroscopic object during a collision. *",
 			"lessons": [
-				"Labs: Egg Drop",
 				"7.1.2.b Sample problem: Airbag",
 				"7.1.2.a Impulse",
-				"7.1.2.d Derivation"
+				"7.1.2.d Derivation",
+				"26.1 Physical Labs and Demonstrations: Egg Drop"
 			],
 			"hyperLink": [
-				"type_labPage/href_%7EEgg%20Drop.pdf",
 				"lesson_false/type_chapter/chapter_7/unit_0/section_2/subsection_1",
 				"lesson_false/type_chapter/chapter_7/unit_0/section_2/subsection_0",
-				"lesson_false/type_chapter/chapter_7/unit_0/section_2/subsection_3"
+				"lesson_false/type_chapter/chapter_7/unit_0/section_2/subsection_3",
+				"type_labPage/href_%7EEgg%20Drop.pdf"
 			]
 		},
 		{
@@ -229,12 +229,12 @@
 				"15.3.2.d Electric fields and Coulomb’s law",
 				"15.2.1.d A closer view of electric force",
 				"8.3.1.a Activity: Experimenting with gravity",
-				"26.2. Virtual Labs: Gravity",
-				"26.2. Virtual Labs: Force between charged particles",
 				"15.2.2.b Quickcheck",
 				"15.2.2.c Sample problem: Electric charge",
 				"15.2.3 Summary",
-				"26.1. Physical Labs and Demonstrations: Electrostatics"
+				"26.2 Virtual Labs: Gravity",
+				"26.2 Virtual Labs: Force between charged particles",
+				"26.1 Physical Labs and Demonstrations: Electrostatics"
 			],
 			"hyperLink": [
 				"lesson_false/type_chapter/chapter_8/unit_2/section_0/subsection_0",
@@ -250,44 +250,44 @@
 				"lesson_false/type_chapter/chapter_15/unit_2/section_2/subsection_3",
 				"lesson_false/type_chapter/chapter_15/unit_1/section_1/subsection_3",
 				"lesson_false/type_chapter/chapter_8/unit_2/section_1/subsection_0",
-				"type_labPage/title_Newton%27s%20law%20of%20gravity/href_course%7Elabs%7EGravity%7Epage.html",
-				"type_labPage/title_Force%20between%20charged%20particles/href_course%7Elabs%7EForce-between-charged-particles%7Epage.html",
 				"lesson_false/type_chapter/chapter_15/unit_1/section_2/subsection_1",
 				"lesson_false/type_chapter/chapter_15/unit_1/section_2/subsection_2",
 				"lesson_false/type_chapter/chapter_15/unit_1/section_3/subsection_0",
+				"type_labPage/title_Newton%27s%20law%20of%20gravity/href_course%7Elabs%7EGravity%7Epage.html",
+				"type_labPage/title_Force%20between%20charged%20particles/href_course%7Elabs%7EForce-between-charged-particles%7Epage.html",
 				"type_labPage/title_Electrostatics%20Lab/href_course%7Ephysical%20labs%7EElectrostatics%7Epage.html"
 			]
 		},
 		{
 			"benchmark": "HS-PS2-5 Plan and investigate to provide evidence that an electric current can produce a magnetic field and that a changing magnetic field can produce an electric current.",
 			"lessons": [
-				"Labs: An Electric Current and Its Accompanying Magnetic Field",
 				"17.1.1.a Magnet fundamentals",
 				"17.1.1.b Magnetic field",
 				"17.2.1.a Activity: Explore currents and magnetic fields",
 				"17.2.1.b Currents and magnetic fields",
 				"17.3.1.a Activity: Experiment with induction",
-				"17.3.1.b Electromagnetic induction"
+				"17.3.1.b Electromagnetic induction",
+				"26.1 Physical Labs and Demonstrations: An Electric Current and Its Accompanying Magnetic Field"
 			],
 			"hyperLink": [
-				"type_labPage/href_%7EAn%20Electric%20Current%20and%20Its%20Accompanying%20Magnetic%20Field.pdf",
 				"lesson_false/type_chapter/chapter_17/unit_0/section_1/subsection_0",
 				"lesson_false/type_chapter/chapter_17/unit_0/section_1/subsection_1",
 				"lesson_false/type_chapter/chapter_17/unit_1/section_1/subsection_0",
 				"lesson_false/type_chapter/chapter_17/unit_1/section_1/subsection_1",
 				"lesson_false/type_chapter/chapter_17/unit_2/section_1/subsection_0",
-				"lesson_false/type_chapter/chapter_17/unit_2/section_1/subsection_1"
+				"lesson_false/type_chapter/chapter_17/unit_2/section_1/subsection_1",
+				"type_labPage/href_%7EAn%20Electric%20Current%20and%20Its%20Accompanying%20Magnetic%20Field.pdf"
 			]
 		},
 		{
 			"benchmark": "HS-PS2-6. Communicate scientific and technical information about why the molecular-level structure is important in the functioning of designed materials. *",
 			"lessons": [
-				"Labs: Molecular design",
-				"16.1.4 Properties that determine resistance"
+				"16.1.4 Properties that determine resistance",
+				"26.1 Physical Labs and Demonstrations: Molecular design"
 			],
 			"hyperLink": [
-				"type_labPage/href_%7EMolecular%20Design.pdf",
-				"lesson_false/type_chapter/chapter_16/unit_0/section_4/subsection_0"
+				"lesson_false/type_chapter/chapter_16/unit_0/section_4/subsection_0",
+				"type_labPage/href_%7EMolecular%20Design.pdf"
 			]
 		},
 		{
@@ -364,7 +364,6 @@
 		{
 			"benchmark": "HS-PS3-3. Design, build, and refine a device that works within given constraints to convert one form of energy into another form of energy. *",
 			"lessons": [
-				"Labs: Energy conversion",
 				"12.2.1 Engine",
 				"12.2.2 Heat engines",
 				"12.2.3.a Work done by an engine",
@@ -379,10 +378,10 @@
 				"12.3.2.c Derivation",
 				"12.6.1.a Efficiency",
 				"12.6.1.b Sample problem: An efficient engine?",
-				"12.6.1.d Calculating efficiency using temperature"
+				"12.6.1.d Calculating efficiency using temperature",
+				"Labs: Energy conversion"
 			],
 			"hyperLink": [
-				"type_labPage/href_%7EEnergy%20Conversion.pdf",
 				"lesson_false/type_chapter/chapter_12/unit_1/section_1/subsection_0",
 				"lesson_false/type_chapter/chapter_12/unit_1/section_2/subsection_0",
 				"lesson_false/type_chapter/chapter_12/unit_1/section_3/subsection_0",
@@ -397,7 +396,8 @@
 				"lesson_false/type_chapter/chapter_12/unit_2/section_2/subsection_2",
 				"lesson_false/type_chapter/chapter_12/unit_5/section_1/subsection_0",
 				"lesson_false/type_chapter/chapter_12/unit_5/section_1/subsection_1",
-				"lesson_false/type_chapter/chapter_12/unit_5/section_1/subsection_3"
+				"lesson_false/type_chapter/chapter_12/unit_5/section_1/subsection_3",
+				"type_labPage/href_%7EEnergy%20Conversion.pdf"
 			]
 		},
 		{
@@ -502,28 +502,29 @@
 				"13.4.4.a Wavelength",
 				"13.6.1.a Wave speed",
 				"13.6.1.b Calculating wave speed",
-				"26.2. Virtual Labs: Speed, frequency and wavelength",
 				"14.1.3.a Temperature and speed",
 				"19.1.2.c Speed of radio waves",
 				"14.1.3.b Supersonic speed",
 				"14.1.4 Summary",
 				"19.1.2.a Galileo",
 				"19.1.2.b Moons of Jupiter",
-				"26.1. Physical Labs and Demonstrations: Ripple and wave generator",
-				"26.1. Physical Labs and Demonstrations: Wave essentials"
+				"26.2 Virtual Labs: Speed, frequency and wavelength",
+				"26.1 Physical Labs and Demonstrations: Ripple and wave generator",
+				"26.1 Physical Labs and Demonstrations: Wave essentials"
 			],
 			"hyperLink": [
 				"lesson_false/type_chapter/chapter_13/unit_3/section_3/subsection_0",
 				"lesson_false/type_chapter/chapter_13/unit_3/section_4/subsection_0",
 				"lesson_false/type_chapter/chapter_13/unit_5/section_1/subsection_0",
 				"lesson_false/type_chapter/chapter_13/unit_5/section_1/subsection_1",
-				"type_labPage/title_Speed%2C%20frequency%20and%20wavelength/href_course%7Elabs%7ESpeed-frequency-and-wavelength%7Epage.html",
 				"lesson_false/type_chapter/chapter_14/unit_0/section_3/subsection_0",
 				"lesson_false/type_chapter/chapter_19/unit_0/section_2/subsection_2",
 				"lesson_false/type_chapter/chapter_14/unit_0/section_3/subsection_1",
 				"lesson_false/type_chapter/chapter_14/unit_0/section_4/subsection_0",
 				"lesson_false/type_chapter/chapter_19/unit_0/section_2/subsection_0",
-				"lesson_false/type_chapter/chapter_19/unit_0/section_2/subsection_1", "type_labPage/title_Ripple%20tanks%20and%20wave%20generator%20Demonstration/href_course%7Edemonstrations%7ERipple-and-wave-generator%7Epage.html",
+				"lesson_false/type_chapter/chapter_19/unit_0/section_2/subsection_1",
+				"type_labPage/title_Speed%2C%20frequency%20and%20wavelength/href_course%7Elabs%7ESpeed-frequency-and-wavelength%7Epage.html",
+				"type_labPage/title_Ripple%20tanks%20and%20wave%20generator%20Demonstration/href_course%7Edemonstrations%7ERipple-and-wave-generator%7Epage.html",
 				"type_labPage/title_Wave%20essentials%20Demonstration/href_course%7Edemonstrations%7EWave-essentials%7Epage.html"
 			]
 		},
@@ -594,12 +595,12 @@
 		{
 			"benchmark": "HS-PS4-4 Evaluate the validity and reliability of claims in published materials of the effects that different frequencies of electromagnetic radiation have when absorbed by matter. [Clarification Statement: Emphasis is on the idea that photons associated with different frequencies of light have different energies, and the damage to living tissue from electromagnetic radiation depends on the energy of the radiation. Examples of published materials could include trade books, magazines, web resources, videos, and other passages that may reflect bias.]",
 			"lessons": [
-				"Labs: Electromagnetic Wave Health Issues",
-				"23.1.2.c Energy of a photon"
+				"23.1.2.c Energy of a photon",
+				"26.1 Physical Labs and Demonstrations: Electromagnetic Wave Health Issues"
 			],
 			"hyperLink": [
-				"type_labPage/href_%7EElectromagnetic%20Wave%20Health%20Issues.pdf",
-				"lesson_false/type_chapter/chapter_23/unit_0/section_2/subsection_2"
+				"lesson_false/type_chapter/chapter_23/unit_0/section_2/subsection_2",
+				"type_labPage/href_%7EElectromagnetic%20Wave%20Health%20Issues.pdf"
 			]
 		},
 		{
@@ -647,12 +648,12 @@
 			"lessons": [
 				"24.6.1 Magnetic fields and trains",
 				"24.6.2 Hyperloop trains",
-				"25.6.3 Constraints and criteria",
+				"25.6.3 Propelling a train with fields",
 				"24.5.1 Fission power plants",
-				"24.5.2.a Constraints and criteria",
+				"24.5.2.a Nuclear power costs 1",
 				"24.4.1 Hydroponic farming",
 				"24.4.2 Solar energy",
-				"24.4.3.a Constraints and criteria"
+				"24.4.3.a Solar power costs 1"
 			],
 			"hyperLink": [
 				"lesson_false/type_chapter/chapter_24/unit_5/section_1/subsection_0",
@@ -670,12 +671,12 @@
 			"lessons": [
 				"24.4.1 Hydroponic farming",
 				"24.4.2 Solar energy",
-				"24.4.3.a Constraints and criteria",
+				"24.4.3.a Solar power costs 1",
 				"24.6.1 Magnetic fields and trains",
 				"24.6.2 Hyperloop trains",
-				"24.6.3 Constraints and criteria",
+				"24.6.3 Propelling a train with fields ",
 				"24.5.1 Fission power plants",
-				"24.5.2.a Constraints and criteria"
+				"24.5.2.a Nuclear power costs 1"
 			],
 			"hyperLink": [
 				"lesson_false/type_chapter/chapter_24/unit_3/section_1/subsection_0",
@@ -692,13 +693,13 @@
 			"benchmark": "HS-ETS1-3. Evaluate a solution to a complex real-world problem based on prioritized criteria and trade-offs that account for a range of constraints, including cost, safety, reliability, and aesthetics as well as possible social, cultural, and environmental impacts.",
 			"lessons": [
 				"24.4.2 Solar energy",
-				"24.4.3.a Constraints and criteria",
+				"24.4.3.a Solar power costs 1",
 				"24.5.1 Fission power plants",
-				"24.5.2.a Constraints and criteria",
+				"24.5.2.a Nuclear power costs 1",
 				"24.4.1 Hydroponic farming",
 				"24.6.1 Magnetic fields and trains",
 				"24.6.2 Hyperloop trains",
-				"24.6.3 Constraints and criteria"
+				"24.6.3 Propelling a train with fields"
 			],
 			"hyperLink": [
 				"lesson_false/type_chapter/chapter_24/unit_3/section_2/subsection_0",
@@ -715,9 +716,9 @@
 			"benchmark": "HS-ETS1-4 Use a computer simulation to model the impact of proposed solutions to a complex real-world problem with numerous criteria and constraints on interactions within and between systems relevant to the problem.",
 			"lessons": [
 				"24.6.2 Hyperloop trains",
-				"24.6.3 Constraints and criteria",
+				"24.6.3 Propelling a train with fields",
 				"24.6.1 Magnetic fields and trains",
-				"26.2. Virtual Labs: Hyperloop Trains"
+				"26.2 Virtual Labs: Hyperloop Trains"
 			],
 			"hyperLink": [
 				"lesson_false/type_chapter/chapter_24/unit_5/section_2/subsection_0",
