@@ -587,14 +587,17 @@ function View() {
 //This function loads the resource screen.
   function loadAdditionalResource(e, data) {
     $('.pMenu').addClass('pDisable');
+    $('.pVideoIconWrap').hide();
+    $('.pPrintPageButton').hide();
+    $('.pLabPageWrapper').hide();
+    $('.lab_bck').hide();
 	if ($('.pVideoMainWrapper').hasClass('quizboardOpen')) {
       videoPlayer.stopVideo();
     } else {
       videoPlayer.stopVideo();
       manageScreen(p.currentType);
     }
-    $('.book_bck').show()
-    $('.pVideoIconWrap').hide();
+    $('.book_bck').show();
     $('.pActivityDesc').css("width", "100%");
     $('.pActivityDesc').html(" ");
     $(p.mShell).find(".pActivityHeader").html(data.screenNo + " " + data.screenData.SectionHeading);
