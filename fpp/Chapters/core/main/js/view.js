@@ -58,6 +58,11 @@ function View() {
     p.usertype = type;
   }
 
+  //This function sets the book type national or florida
+  this.setBookType = function (type) {
+    p.bookType = type;
+  }
+  
   function createShell(e) { //create shell dom
     if (p.mShell != null) {
       $(p.mShell).empty();
@@ -1373,7 +1378,11 @@ function View() {
     $(document).trigger("loadSubMenu", {
       "chap": topic_no
     });
-    if (topic_no == "27" && p.usertype.toLowerCase() == "student") {
+    if (topic_no == "27" && p.usertype.toLowerCase() == "student" && p.bookType.toLowerCase() == "national") {
+      $(".pSubtopic[data-subtopic='1']").remove();
+      $(".pSubtopic[data-subtopic='2']").remove();
+      $(".pSubtopic[data-subtopic='5']").remove();
+    }else  if (topic_no == "27" && p.usertype.toLowerCase() == "student" && p.bookType.toLowerCase() == "florida"){
       $(".pSubtopic[data-subtopic='1']").remove();
       $(".pSubtopic[data-subtopic='2']").remove();
       $(".pSubtopic[data-subtopic='6']").remove();

@@ -135,6 +135,7 @@ var Controller = function() {
       }
 
       view.setUserType(p.usertype);
+	  view.setBookType(p.bookType);
       $(document).trigger("createShell");
     }, function() {
 
