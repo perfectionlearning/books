@@ -10260,6 +10260,7 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "294495",
                                     "fl_problem_inst_id": "302168",
+                                    "ngss_problem_inst_id": "304840",
                                     "SectionHeading": "Quickcheck: Red light",
                                     "ref": "qcsec_us08.json"
                                 },
@@ -10621,6 +10622,7 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "295775",
                                     "fl_problem_inst_id": "302171",
+                                    "ngss_problem_inst_id": "304843",
                                     "SectionHeading": "Quickcheck: Time dilation",
                                     "ref": "qcsec_us05.json"
                                 }
@@ -10638,6 +10640,7 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "295774",
                                     "fl_problem_inst_id": "302170",
+                                    "ngss_problem_inst_id": "304842",
                                     "SectionHeading": "Quickcheck: Length contraction",
                                     "ref": "qcsec_us06.json"
                                 }
@@ -10660,6 +10663,7 @@
                                     "type": "quizcheck",
                                     "problem_inst_id": "294496",
                                     "fl_problem_inst_id": "302169",
+                                    "fl_problem_inst_id": "304841",
                                     "SectionHeading": "Quickcheck: Light and Doppler effect",
                                     "ref": "qcsec_us07.json"
                                 }
