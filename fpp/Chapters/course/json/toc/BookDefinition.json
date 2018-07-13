@@ -10,6 +10,8 @@
     "admin_link": "admin/class-wizard/list",
     "homework_Teacher_link": "/assignments/list",
     "homework_Student_link": "/books/student/project.html#assignments",
+    "home_Student_link": "/books/student/project.html#home",
+    "digitalLibrary_Student_link": "/books/student/project.html#library",
     "grades_link": "/reports/overview",
     "wrap_data": "/api/endpoint/output/wrapping/set",
     "logout_link": "/api/rest/users/logout",

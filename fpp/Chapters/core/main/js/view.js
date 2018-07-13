@@ -32,18 +32,18 @@ function View() {
     $(document).off("showSearchBox", showSearchBox).on("showSearchBox", showSearchBox);
     // Call overlayDown on mouseup rather than mousedown. This is intended to fix the issue with a slideUp menu option not responding.
     //$(document).off(mouseEvents.down).on(mouseEvents.down, function (e) {
-    $(document).off(mouseEvents.up).on(mouseEvents.up, function(e) {
+    $(document).off(mouseEvents.up).on(mouseEvents.up, function (e) {
       overlayDown(e);
     });
   }
-	//This function stores the book data
+  //This function stores the book data
   function getBookData(e, data) {
     p.bookData = data.bookData;
     coreData = data;
   }
-  
+
   //This function updates the p.bookdata variable to chapter data and lesson plan
-  this.updateBook = function(book) {
+  this.updateBook = function (book) {
     if (book) {
       lessonFlag = false;
       p.bookData = coreData.bookData;
@@ -54,7 +54,7 @@ function View() {
 
   }
   //This function sets the user type student or teacher
-  this.setUserType = function(type) {
+  this.setUserType = function (type) {
     p.usertype = type;
   }
 
@@ -62,7 +62,7 @@ function View() {
   this.setBookType = function (type) {
     p.bookType = type;
   }
-  
+
   function createShell(e) { //create shell dom
     if (p.mShell != null) {
       $(p.mShell).empty();
@@ -84,17 +84,17 @@ function View() {
     });
     $(p.mContainer).appendTo(p.mShell);
     var path = p.bookData.is_demo ? "searchBook_demo" : "searchBook";
-    $.getJSON("course/json/searchBook/" + path + ".json", function(data) {
+    $.getJSON("course/json/searchBook/" + path + ".json", function (data) {
       p.searchBook = data.data;
       createPlayer("header");
     });
     // search benchmark code
     path = p.bookData.is_demo ? "searchCode_demo" : "searchCode";
-    $.getJSON("course/json/searchBook/" + path + ".json", function(data) {
+    $.getJSON("course/json/searchBook/" + path + ".json", function (data) {
       p.searchCode = data;
     });
   }
-// function craetes the DOM
+  // function craetes the DOM
   function createPlayer(_str) {
     switch (_str) {
       case "header":
@@ -116,7 +116,7 @@ function View() {
           src: "course/template/help.html",
           parent: ".pActivityWrapper",
           next: "videoPlayer",
-          callback: function() {
+          callback: function () {
             $(".pHelpBody").mCustomScrollbar({
               theme: "dark-3",
               axis: "y",
@@ -134,7 +134,7 @@ function View() {
           src: "course/template/videoPlayer.html",
           parent: ".pActivityWrapper",
           next: "footer",
-          callback: function() {
+          callback: function () {
 
           }
         });
@@ -144,7 +144,7 @@ function View() {
           src: "course/template/footer.html",
           parent: p.mContainer,
           next: "book",
-          callback: function() {
+          callback: function () {
 
             videoPlayer.init();
           }
@@ -155,7 +155,7 @@ function View() {
           src: "course/template/book.html",
           parent: p.mContainer,
           next: "labmenu",
-          callback: function() {
+          callback: function () {
             initBook();
           }
         });
@@ -165,7 +165,7 @@ function View() {
           src: "course/template/labsmenu.html",
           parent: p.mContainer,
           next: "labpage",
-          callback: function() {
+          callback: function () {
             //initLabsMenu();
           }
         });
@@ -175,7 +175,7 @@ function View() {
           src: "course/template/labpage.html",
           parent: p.mContainer,
           next: "setting",
-          callback: function() {
+          callback: function () {
             $(p.mShell).find(".pLabSubMenuButton").click(openCloseLabSubMenu);
           }
         });
@@ -184,7 +184,7 @@ function View() {
         loadHtml({
           src: "course/template/setting.html",
           parent: ".pActivityWrapper",
-          callback: function() {
+          callback: function () {
             console.log("hide loader called");
             $(".pSettingBody").mCustomScrollbar({
               theme: "dark-3",
@@ -204,7 +204,7 @@ function View() {
         break;
     }
   }
-	//This function updates the menu in the book depending upon the user type.
+  //This function updates the menu in the book depending upon the user type.
   function updateView() {
     switch (p.usertype) {
       case "Student":
@@ -236,7 +236,7 @@ function View() {
   }
 
   function loadHtml(_obj) {
-    httpRequest(_obj.src, "html", function(_data) {
+    httpRequest(_obj.src, "html", function (_data) {
       $(_data).appendTo(_obj.parent);
       if (_obj.hasOwnProperty("next")) {
         createPlayer(_obj.next);
@@ -244,17 +244,17 @@ function View() {
       if (_obj.hasOwnProperty("callback")) {
         _obj.callback();
       }
-    }, function() {
+    }, function () {
       alert(_obj.src + " file not found.");
     });
   }
-	//This function creates lab menu.
+  //This function creates lab menu.
   function initLabsMenu() { //---->
     var labsWrapper = $(p.mShell).find(".pLabsWrapper");
     labsWrapper.find(".labMenuHeader").html(p.labsData.title);
     labsWrapper.find(".labMenuIntro").html(p.labsData.intro);
     var chapWrapper, chapTitle;
-    p.labsData.chapters.forEach(function(chapter) {
+    p.labsData.chapters.forEach(function (chapter) {
       chapWrapper = $(createElement({
         tagName: "div"
       })).addClass("pLabChapterWrapper");
@@ -262,7 +262,7 @@ function View() {
       $(createElement({
         tagName: "div"
       })).addClass("pLabChapterTitle").appendTo(chapWrapper).html(chapter.title).css(chapter.icon ? chapter.icon : {});
-      chapter.labs.forEach(function(lab) {
+      chapter.labs.forEach(function (lab) {
         $(createElement({
           tagName: "div"
         })).addClass("pLabTitle").appendTo(chapWrapper).html(lab.title).attr("data-href", lab.href);
@@ -283,7 +283,7 @@ function View() {
       }
     });
   } //---->
-//This function creates TOC.
+  //This function creates TOC.
   function initBook() {
     $(p.mShell).find('.pChapBody').mCustomScrollbar("destroy");
     var _chapWrap = $('.pChapBody')[0];
@@ -310,7 +310,7 @@ function View() {
     }
     $('.pChapName').last().remove();
     $('.pChapBody .pChapSeperator').last().remove();
-    $('.pChapName').each(function(i) {
+    $('.pChapName').each(function (i) {
       $(this).attr("data-chapter", (i + 1));
       $(this).html("Ch " + (i + 1) + ": " + p.bookData.chapters[i + 1]["title"]);
     });
@@ -328,8 +328,8 @@ function View() {
       }
     });
   }
-  
-	//This function updates the menu inside the screen.
+
+  //This function updates the menu inside the screen.
   function loadSubMenu(e, data) {
     $(p.mShell).find('.innerMenuWrap').mCustomScrollbar("destroy");
     var _html = "<div class='pSubTopicWrapper pSubMenuTopicHeader'> <div class='pSubTopicName'>Ch 1 : One-Dimensional</div><div class='pChapSeperator'></div><div class='pSubTopicInnerMainWrap'> <div class='pSubTopicInnerWrap'> <div class='pSubTopicName'>Ch 1 : One-Dimensional</div><div class='pChapSeperator'></div></div></div></div>";
@@ -351,7 +351,7 @@ function View() {
     $('.pSubTopicWrapper').removeClass("pHover").last().remove();
     var _pSubTopicInnerWrap = $('.pSubTopicInnerWrap')[0];
     var _pSubTopicInnerMainWrap = $('.pSubTopicInnerMainWrap')[0];
-    $('.pSubTopicWrapper').each(function(i) {
+    $('.pSubTopicWrapper').each(function (i) {
       if (!lessonFlag) {
         $(this).find('.pSubTopicName').html("<span class='accSysmbol'>+</span> Lesson " + (Number(i) + 1) + ": " + temp.unit[i]["section"][0]["SectionTitle"])
       } else {
@@ -383,7 +383,7 @@ function View() {
 
       $(this).find('.pSubTopicInnerMainWrap .pSubTopicInnerWrap').first().remove();
     });
-    $(p.mShell).find('.pSubTopicInnerWrap.child').each(function() {
+    $(p.mShell).find('.pSubTopicInnerWrap.child').each(function () {
       var chap, unit, section;
       chap = Number($(this).attr("data-chap"));
       unit = Number($(this).attr("data-topic"));
@@ -430,7 +430,7 @@ function View() {
     }
 
   }
- //This function updates the menu related to chapters.
+  //This function updates the menu related to chapters.
   function loadTopic(topic_no) {
 
     var temp = p.bookData.chapters[topic_no];
@@ -500,7 +500,7 @@ function View() {
     });
     playerEvent();
   }
-//This function loads the activity screen.
+  //This function loads the activity screen.
   function loadActivityScreen(e, data) {
     if (!data.hasOwnProperty("json")) {
       showLoader();
@@ -521,7 +521,7 @@ function View() {
           $(vIconWrap).clone().appendTo(pVideoIconWrap);
         }
         $(vIconWrap).last().remove();
-        $(p.mShell).find(".pVideoIcon").each(function(i) {
+        $(p.mShell).find(".pVideoIcon").each(function (i) {
           $(this).addClass(data.type);
           $(this).find(".vIcon").css("background-image", "url('assets/images/" + _tempScreenData.objNames[i] + "@2x.png')");
           lines = _tempScreenData["cards"][i]["lines"];
@@ -582,21 +582,21 @@ function View() {
       p.currentType = "videoScreen";
       manageScreen("videoScreen");
     }
-    var maxHeight = Math.max.apply(null, $(".pVideoIcon").map(function() {
+    var maxHeight = Math.max.apply(null, $(".pVideoIcon").map(function () {
       return $(this).outerHeight();
     }).get());
     //$(".pVideoIcon").css("height", maxHeight + "px")
     hideLoader();
     playerEvent();
   }
-//This function loads the resource screen.
+  //This function loads the resource screen.
   function loadAdditionalResource(e, data) {
     $('.pMenu').addClass('pDisable');
     $('.pVideoIconWrap').hide();
     $('.pPrintPageButton').hide();
     $('.pLabPageWrapper').hide();
     $('.lab_bck').hide();
-	if ($('.pVideoMainWrapper').hasClass('quizboardOpen')) {
+    if ($('.pVideoMainWrapper').hasClass('quizboardOpen')) {
       videoPlayer.stopVideo();
     } else {
       videoPlayer.stopVideo();
@@ -608,7 +608,7 @@ function View() {
     $(p.mShell).find(".pActivityHeader").html(data.screenNo + " " + data.screenData.SectionHeading);
     $(p.mShell).find(".pActivityHeader").html(data.screenData.SectionHeading);
     hideLoader();
-    httpRequest(data.screenData.ref, "html", function(_data) {
+    httpRequest(data.screenData.ref, "html", function (_data) {
       $(".pActivityDesc").html(_data);
       $(p.mShell).find('.pActivityArea .pActivityBody').mCustomScrollbar("destroy");
       $(p.mShell).find('.pActivityArea .pActivityBody').mCustomScrollbar({
@@ -630,7 +630,7 @@ function View() {
     $('.pSubmenuButton').hide();
     $('.navButtons').hide();
   }
-//This function loads the summary screen.
+  //This function loads the summary screen.
   function loadSummaryScreen(e, data) {
     var _tempScreenData = data.screenData;
     p.cSrc = _tempScreenData.objectNames;
@@ -642,7 +642,7 @@ function View() {
       $(vIconWrap).clone().appendTo(pVideoIconWrap);
     }
     $(vIconWrap).last().remove();
-    $(p.mShell).find(".pSummaryIconWrap").each(function(i) {
+    $(p.mShell).find(".pSummaryIconWrap").each(function (i) {
       $(this).find(".pSummaryIcon").css("background-image", "url('assets/images/" + _tempScreenData.objectNames[i] + "@2x.png')");
       $(this).attr("data-ind", i);
     });
@@ -650,7 +650,7 @@ function View() {
     manageScreen("summary");
     playerEvent();
   }
-//This function loads the screen that contains pdf.
+  //This function loads the screen that contains pdf.
   function loadPdfScreen(e, data) {
     var _tempScreenData = data.screenData;
     var page = 1;
@@ -663,7 +663,7 @@ function View() {
     p.currentType = "pdfScreen";
     manageScreen("pdfScreen");
   }
-//This function loads the lab menu.
+  //This function loads the lab menu.
   function loadLabMenu(e, data) {
     var labsData = data.screenData;
     var labsWrapper = $(p.mShell).find(".pLabsWrapper");
@@ -675,7 +675,7 @@ function View() {
     labsWrapper.find(".pLeftWrapper").html("");
     labsWrapper.find(".pRightWrapper").html("");
     var chapWrapper, chapTitle;
-    labsData.chapters.forEach(function(chapter) {
+    labsData.chapters.forEach(function (chapter) {
       chapWrapper = $(createElement({
         tagName: "div"
       })).addClass("pLabChapterWrapper");
@@ -683,7 +683,7 @@ function View() {
       $(createElement({
         tagName: "div"
       })).addClass("pLabChapterTitle").appendTo(chapWrapper).html(chapter.title).css(chapter.icon ? chapter.icon : {});
-      chapter.labs.forEach(function(lab) {
+      chapter.labs.forEach(function (lab) {
         var _labTopic = $(createElement({
           tagName: "div"
         }));
@@ -719,7 +719,7 @@ function View() {
     });
     playerEvent();
   }
-//This function loads the screen that contains quickchecks. The quickcheck data is passed on to the init function of quckcheck.js
+  //This function loads the screen that contains quickchecks. The quickcheck data is passed on to the init function of quckcheck.js
   function loadQuizCheck(e, data) {
     data.videoPlayer = videoPlayer;
     $(p.mShell).find(".pSummaryHeader").html(data.screenNo + " " + "Quickcheck");
@@ -733,7 +733,7 @@ function View() {
     p.currentType = "quizcheck";
     manageScreen("quizcheck");
   }
-//This function loads the screen that contains QuizBoard. The QuizBoard data is passed on to the init function of QuizBoard.js
+  //This function loads the screen that contains QuizBoard. The QuizBoard data is passed on to the init function of QuizBoard.js
   function loadQuizBoard(e, data) {
     data.videoPlayer = videoPlayer;
     p.currentType = "quizboard";
@@ -746,8 +746,8 @@ function View() {
     }
     manageScreen("quizboard");
   }
-  
-//This function show/hide div depending upon the type of screen for eg. help,summary etc. this function is called whenever a screen is loaded.
+
+  //This function show/hide div depending upon the type of screen for eg. help,summary etc. this function is called whenever a screen is loaded.
   function manageScreen(type) {
     $(".pSearchAreaWrapper").hide();
     $('.pSubmenuButton').show();
@@ -856,8 +856,8 @@ function View() {
         break;
     }
   }
-  
-// This function binds events on the buttons; 
+
+  // This function binds events on the buttons; 
   function playerEvent() {
     if (!device) {
       $(p.mShell).find(".pButtons,.pTopic").not('.noLink').off("mouseover", mouseover).on("mouseover", mouseover);
@@ -886,7 +886,7 @@ function View() {
     $(p.mShell).find(".pLabTitle").off(mouseEvents.down, mousedown).on(mouseEvents.down, mousedown); //---->
     $(p.mShell).find(".pLabTitle").not(".pjumpToVideo").off("click", labChapterUp).on("click", labChapterUp); //---->
     $(p.mShell).find(".pSearch").off("click", showSearchBox).on("click", showSearchBox); //---->
-    $(p.mShell).find("#searchField, #searchField2").off("keyup").on('keyup', function(e) {
+    $(p.mShell).find("#searchField, #searchField2").off("keyup").on('keyup', function (e) {
       if ($(e.target).attr("id") == "searchField2") {
         $("#searchField").val($("#searchField2").val());
       }
@@ -932,7 +932,7 @@ function View() {
       $(".searchResultCount").text("");
     }
   }
-// Disables search header
+  // Disables search header
   function disableHeaderSearch(bool) {
     $("#searchField").attr("disabled", bool);
     if (bool) {
@@ -962,7 +962,7 @@ function View() {
       return false;
     }
     $(".activityLoader").show();
-    var keywords = $("#searchField").val().split(" ").map(function(key) {
+    var keywords = $("#searchField").val().split(" ").map(function (key) {
       return " " + key.toLowerCase() + " ";
     });
     var links = [], // for exact match
@@ -970,7 +970,7 @@ function View() {
       links3 = [], // for some keys match
       found, text, sources = [];
     var div = $(document.createElement("div"));
-    p.searchBook.forEach(function(obj) {
+    p.searchBook.forEach(function (obj) {
       found = false;
       var allText = div.html(obj.text).text().toLowerCase() + " " + obj.title.toLowerCase() + " " + obj.sectionTitle.toLowerCase() + " " + obj.sectionHeading.toLowerCase();
       var toSearch = $("#searchField").val().trim().toLowerCase();
@@ -1054,7 +1054,7 @@ function View() {
         }
       }
     }
-    links.forEach(function(obj) {
+    links.forEach(function (obj) {
       if (p.usertype && p.usertype.toLowerCase() == "student" && obj.type == "lessonPlan") {
         return false;
       }
@@ -1076,7 +1076,7 @@ function View() {
       }
     });
     $(".searchResultCount").text(count + " results");
-    $(".searchResult").off("click").on("click", function(e) {
+    $(".searchResult").off("click").on("click", function (e) {
       var link = $(this).attr("data-link");
       console.log(link)
       if (link && link != "undefined") {
@@ -1096,7 +1096,7 @@ function View() {
       disableHeaderSearch(false);
     });
 
-    setTimeout(function() {
+    setTimeout(function () {
       $(".activityLoader").hide();
     }, 500);
   }
@@ -1112,14 +1112,14 @@ function View() {
     }
   }
   this.getLabRef = getLabref;
-//function opens the book menu
+  //function opens the book menu
   function gotoBook() {
     $(this).removeClass("pDown").removeClass("pHover");
     playerbtnManager({
       type: "book"
     });
   }
-//This function is called when user click on topic in the inner menu
+  //This function is called when user click on topic in the inner menu
   function subMenuTopicDown(e) {
     e.stopPropagation();
     if ($(e.target).parent().hasClass('pSubTopicWrapper')) {
@@ -1227,7 +1227,7 @@ function View() {
   function videoUp() {
     if ($(this).hasClass("pHover")) {
       var _this = $(this);
-      setTimeout(function() {
+      setTimeout(function () {
         _this.removeClass("pHover");
       }, 200)
 
@@ -1242,7 +1242,7 @@ function View() {
       height: 600
     }
     $("#pJSActFrame").attr("src", "course/JSActivities/" + ref + "/index.html").css("width", dimensions.width).css("height", dimensions.height);
-    $(".jsClose").off("click").on("click", function() {
+    $(".jsClose").off("click").on("click", function () {
       $("#pJSActFrame").attr("src", "about:blank");
       playerbtnManager("jsClose");
     });
@@ -1277,7 +1277,7 @@ function View() {
       videoPlayer.playVideo(ind);
     }
   }
-// function loads the video screen
+  // function loads the video screen
   function loadOnlyVideo(e, data) {
     $('.pActivityWrapper').show();
     $('.pBookWrapper').hide();
@@ -1314,7 +1314,7 @@ function View() {
       videoPlayer.playVideo(0, true);
       $(temp).off("mouseout", mouseout).on("mouseout", mouseout);
       $(temp).off("mouseover", mouseover).on("mouseover", mouseover);
-      $(temp).off(mouseEvents.down).on(mouseEvents.down, function() {
+      $(temp).off(mouseEvents.down).on(mouseEvents.down, function () {
         $(temp).remove();
         videoPlayer.initiateVideo({
           src: [data.screenData.ansref]
@@ -1382,7 +1382,7 @@ function View() {
       $(".pSubtopic[data-subtopic='1']").remove();
       $(".pSubtopic[data-subtopic='2']").remove();
       $(".pSubtopic[data-subtopic='5']").remove();
-    }else  if (topic_no == "27" && p.usertype.toLowerCase() == "student" && p.bookType.toLowerCase() == "florida"){
+    } else if (topic_no == "27" && p.usertype.toLowerCase() == "student" && p.bookType.toLowerCase() == "florida") {
       $(".pSubtopic[data-subtopic='1']").remove();
       $(".pSubtopic[data-subtopic='2']").remove();
       $(".pSubtopic[data-subtopic='6']").remove();
@@ -1403,28 +1403,28 @@ function View() {
     disableHeaderSearch(false);
     if (href.split(".")[1] != "html") {
       if (href.split(".")[1] != "pdf") {
-		$('.pLabsWrapper').show();
-		window.open(href/* .split("~").join("/") */);
-		return false;
-	  }else if (href.split(".")[1] == "pdf"){
-		  var src = href.split("/")[1];
-		  var title = src.split(".")[0];
-		  var _href = href.replace(/\//g, '~')
-		  _href = _href.replace(/_/g, '-');
-			location.hash = escape("type_labPage/href_" + _href);
-		  $(p.mShell).find(".book_bck").hide();
-		  $(p.mShell).find(".lab_bck").show();
-		  console.log("title "+title," href "+ href, " assign_id "+assign_id)
-		  // $(document).trigger("loadPdfScreen", {screenData: _data, screenNo: screenNo});
-		  var page = 1;
-			title = title.replace(/_/g, '-');
-			src = src.replace(/_/g, '-');
-			console.log(title,src)
-		  $(p.mShell).find(".pdfHeader").html(title +" Lab");
-		  $('.pdfBody').html("<iframe id='myFrame' src='core/lib/web/viewer.html#../../../assets/pdf/" + src + "' style='border: none; width: 100%; height: 100%;overflow: scroll' frameborder='0' data-page=" + page + "></iframe>")
-		  p.currentType = "pdfScreen";
-		  manageScreen("pdfScreen");
-	  }
+        $('.pLabsWrapper').show();
+        window.open(href/* .split("~").join("/") */);
+        return false;
+      } else if (href.split(".")[1] == "pdf") {
+        var src = href.split("/")[1];
+        var title = src.split(".")[0];
+        var _href = href.replace(/\//g, '~')
+        _href = _href.replace(/_/g, '-');
+        location.hash = escape("type_labPage/href_" + _href);
+        $(p.mShell).find(".book_bck").hide();
+        $(p.mShell).find(".lab_bck").show();
+        console.log("title " + title, " href " + href, " assign_id " + assign_id)
+        // $(document).trigger("loadPdfScreen", {screenData: _data, screenNo: screenNo});
+        var page = 1;
+        title = title.replace(/_/g, '-');
+        src = src.replace(/_/g, '-');
+        console.log(title, src)
+        $(p.mShell).find(".pdfHeader").html(title + " Lab");
+        $('.pdfBody').html("<iframe id='myFrame' src='core/lib/web/viewer.html#../../../assets/pdf/" + src + "' style='border: none; width: 100%; height: 100%;overflow: scroll' frameborder='0' data-page=" + page + "></iframe>")
+        p.currentType = "pdfScreen";
+        manageScreen("pdfScreen");
+      }
       //window.open(href/* .split("~").join("/") */);
       return false;
     }
@@ -1434,7 +1434,7 @@ function View() {
     $(p.mShell).find(".lab_bck").show();
     blockHashEvent = true;
     location.hash = escape("type_labPage/title_" + title + "/href_" + _href);
-    setTimeout(function() {
+    setTimeout(function () {
       blockHashEvent = false;
     }, 500);
     if (href.split("/")[1] == "labs") {
@@ -1452,7 +1452,7 @@ function View() {
     loadHtml({
       src: href,
       parent: contentWrapper,
-      callback: function() {
+      callback: function () {
         console.log(assign_id);
         labData.init({
           id: assign_id,
@@ -1461,11 +1461,11 @@ function View() {
         mainWrapper.find(".pActivityHeader").html(title);
         contentWrapper.find(".pLabAnswerWrapper") //.addClass("pCloseLabAnswerWrapper");
         contentWrapper.find(".pLabQuestionArrow").addClass("pLabQuestionArrowUp");
-        contentWrapper.find(".pLabQText").on("click", function(e) {
+        contentWrapper.find(".pLabQText").on("click", function (e) {
           $(this).parent().find(".pLabAnswerWrapper").toggleClass("pCloseLabAnswerWrapper");
           $(this).parent().find(".pLabQuestionArrow").toggleClass("pLabQuestionArrowUp");
         });
-        contentWrapper.find(".pLabQuestion").each(function(e) {
+        contentWrapper.find(".pLabQuestion").each(function (e) {
           if ($(this).find(".pLabAnswerWrapper").length == 0) {
             $(this).find(".pLabQuestionArrow").hide();
             $(this).find(".pLabQText").css("cursor", "default");
@@ -1475,16 +1475,16 @@ function View() {
             }
           }
         });
-        contentWrapper.find(".pExerciseButton").on("click", function(e) {
+        contentWrapper.find(".pExerciseButton").on("click", function (e) {
           window.open($(this).attr("data-href"), "lab", "scrollbars=yes,resizable=yes,top=0,left=0,width=760,height=600");
         });
         var list = [];
-        contentWrapper.children().each(function(i, ele) {
+        contentWrapper.children().each(function (i, ele) {
           $(ele).attr("data-index", i);
           sideMenuWrapper.append("<div class='pLabSubMenuTopic' data-index=" + i + ">" + (i == 0 ? "Introduction" : $(ele).find(".pExcersiseTitle").text()) + "</div>");
         });
         sideMenuWrapper.css("left", -sideMenuWrapper.outerWidth(true)).data("open", false);
-        setTimeout(function() {
+        setTimeout(function () {
           sideMenuWrapper.css("opacity", 1);
         }, 800);
         contentWrapper.mCustomScrollbar({
@@ -1500,21 +1500,21 @@ function View() {
       }
     });
   } //---->
-  
-// functions prints the window page
+
+  // functions prints the window page
   function printPage(e) {
     var OpenWindow = window.open('course/template/printPage.html', '_blank', 'width=1024,height=470,resizable=1');
     window.OpenWindow = OpenWindow;
     var link = document.createElement("link");
-    link.onload = function() {
+    link.onload = function () {
       console.log("link")
-      setTimeout(function() {
+      setTimeout(function () {
         OpenWindow.print();
       }, 500);
     }
     link.rel = "stylesheet";
     link.href = "../../core/main/css/style.css";
-    OpenWindow.onload = function() {
+    OpenWindow.onload = function () {
       console.log("window")
       OpenWindow.document.head.append(link);
       OpenWindow.document.getElementById("container").innerHTML = $(".pLabPageWrapper").html();
@@ -1524,16 +1524,16 @@ function View() {
       $(OpenWindow.document.getElementById("container")).css("width", "1024px");
     }
   }
-// functions removes hover effect from the button
+  // functions removes hover effect from the button
   function btnStateReset() {
     $(p.mShell).find(".pButtons").removeClass("pHover").removeClass("pDown");
     $(p.mShell).find(".pChapName").removeClass("pHover").removeClass("pDown");
     $(".mPrevwrap").removeClass("pDown");
     $(".mNextwrap").removeClass("pDown");
   }
-  
-	//calls functions depending upon the type of event
-  
+
+  //calls functions depending upon the type of event
+
   function playerbtnManager(_obj) {
     btnStateReset();
     switch (_obj.type) {
@@ -1616,6 +1616,14 @@ function View() {
         overlayDown();
         location.href = coreData.bookData["grades_link"];
         //window.open("https://qa1.kineticmath.com/reports/overview");
+        break;
+      case "home":
+        overlayDown();
+        location.href = coreData.bookData["home_" + p.usertype + "_link"];
+        break;
+      case "digitalLibrary":
+        overlayDown();
+        location.href = coreData.bookData["digitalLibrary_" + p.usertype + "_link"];
         break;
       case "factbook":
         window.open("course/factbook/index.html", "_blank", "scrollbars=yes,resizable=0,top=0,left=0,width=842,height=593");
@@ -1788,7 +1796,7 @@ function View() {
         break;
     }
   }
-//Change password functionality 
+  //Change password functionality 
   function validatePassword() {
     $(p.mShell).find('.changePassBody .feedback').hide();
     var oldpassword = $('.oldPassword').val();
@@ -1817,7 +1825,7 @@ function View() {
 
     function checkValidation() {
 
-      $(p.mShell).find('.changePassBody .loginInput').each(function(e) {
+      $(p.mShell).find('.changePassBody .loginInput').each(function (e) {
         if ($(this).val() == "") {
           valFlag = true;
           $(p.mShell).find('.changePassBody .feedback').css("color", "red").html("Please fill in all of the fields.").fadeIn();
@@ -1828,7 +1836,7 @@ function View() {
 
 
   }
-//Change email functionality 
+  //Change email functionality 
   function validateEmail() {
 
     $(p.mShell).find('.changeEmailBody .feedback').hide();
@@ -1850,10 +1858,10 @@ function View() {
         $(p.mShell).find('.changeEmailBody .feedback').css("color", "red").html("Enter proper Email-Id.").fadeIn();
       }
     }
-// checks for email validation
+    // checks for email validation
     function checkValidation() {
 
-      $(p.mShell).find('.changeEmailBody .loginInput').each(function(e) {
+      $(p.mShell).find('.changeEmailBody .loginInput').each(function (e) {
         if ($(this).val() == "") {
           valFlag = true;
           $(p.mShell).find('.changeEmailBody .feedback').css("color", "red").html("Please fill in all of the fields.").fadeIn();
@@ -1902,8 +1910,8 @@ function View() {
       console.log('Failure');
     });
   }
-//function loads the screen depending upon the type
-  this.loadScreen = function(data) {
+  //function loads the screen depending upon the type
+  this.loadScreen = function (data) {
     if (data.type != "labPage") {
       playerbtnManager(data);
     } else {

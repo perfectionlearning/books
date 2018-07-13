@@ -403,6 +403,27 @@ input {
 }
 
 
+.pMenuWrap .pButtons.digitalLibrary{
+  background-position: -5px -1948px;
+}
+.pMenuWrap .pButtons.digitalLibrary.pHover{
+  background-position: -5px -1908px;
+}
+.pMenuWrap .pButtons.digitalLibrary.pDown{
+  background-position: -5px -1908px;
+}
+
+
+.pMenuWrap .pButtons.home{
+background-position: -8px -2418px;
+}
+.pMenuWrap .pButtons.home.pHover{
+background-position: -8px -2460px;
+}
+.pMenuWrap .pButtons.home.pDown{
+background-position: -8px -2460px;
+}
+
 
 
 .pMenuWrap .pButtons.pGrades{
