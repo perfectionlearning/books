@@ -757,7 +757,7 @@ var QuizCheck = function() {
   function loadAnotherProblem() {
     httpRequest(ctrl.getDomain() + "/api/rest/pset/" + q.instance_id + '/' + q.problem_inst_id + '/different', "json", function(data) {
       data = cleanMML(data);
-      data.videoPlayer = q.videoPlayer;
+      data.videoPlayer = videoPlayer;
       data.instance_id = q.instance_id;
       data.problem_inst_id = q.problem_inst_id;
       data.screenData = data;
