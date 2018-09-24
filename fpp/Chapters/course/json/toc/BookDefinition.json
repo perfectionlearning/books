@@ -12191,6 +12191,13 @@
                         },
                         {
                             "number": false,
+                            "SectionTitle": "Solutions for Student Assignments",
+                            "hyperLink": true,
+                            "href": "<a href='assets/pdf/Solutions_for_Student_Assignments.pdf' download>Solutions for Student Assignments</a>",
+                            "subsection": []
+                        },
+                        {
+                            "number": false,
                             "SectionTitle": "Florida Physics Honors I Correlation",
                             "subsection": [
                                 {

@@ -109,12 +109,13 @@ var Controller = function() {
       }
       if (p.bookType == "national") {
         var add_resource = coreData.chapters[27].unit[0].section;
-        add_resource.splice(5, 1);
+        add_resource.splice(6, 1);
         $(document).trigger("getBookData", {
           bookData: coreData
         });
       }else{
         var add_resource = coreData.chapters[27].unit[0].section;
+        add_resource.splice(5, 1);
         add_resource.splice(7, 1);
         $(document).trigger("getBookData", {bookData: coreData});
 	  }
