@@ -74,7 +74,7 @@ var Controller = function() {
         withCredentials: true
       },
       crossDomain: true,
-      data: '{"wrap_output": false}',
+      data: '{"wrap_output": true}',
       method: "PUT",
       complete: function(jqXHR, textStatus) {
         getUserId();
@@ -201,6 +201,7 @@ var Controller = function() {
         }
       });
     } else {
+console.log('getSyncIDs p.syncIDs, p.qbSyncIDs', p.syncIDs, p.qbSyncIDs);
       if (p.syncIDs || p.qbSyncIDs) {
         if (!p.syncIDs) p.syncIDs = {};
         if (!p.qbSyncIDs) p.qbSyncIDs = {};
