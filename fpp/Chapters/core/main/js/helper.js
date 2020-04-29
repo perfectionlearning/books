@@ -16,6 +16,7 @@
 
     request.done(function (data) {
       if (typeof _callback != "undefined") {
+        if (data.hasOwnProperty('data')) data = data.data; // compensate for wrap_output = true;
         _callback(data);
         request = null;
       }
