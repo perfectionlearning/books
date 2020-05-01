@@ -687,6 +687,7 @@ var QuizCheck = function() {
     });
 
     request.done(function(data) {
+      if (data.hasOwnProperty('data')) data = data.data; // compensate for wrap_output = true;
       cb(data)
       request = null;
 
