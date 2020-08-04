@@ -164,7 +164,7 @@ var Controller = function() {
     httpRequest(p.rest_courses, "json", function(data) {
       var fpp_courses = data.filter((item) => {
         return hasFPPBook(item); // Added new function to check FPP book present in course_books attribute as well as existing condition
-        return item.product === 'fpp';
+//        return item.product === 'fpp';
       });
       getSyncIDs(fpp_courses);
     }, function() {});
@@ -218,7 +218,6 @@ var Controller = function() {
         }
       });
     } else {
-console.log('getSyncIDs p.syncIDs, p.qbSyncIDs', p.syncIDs, p.qbSyncIDs);
       if (p.syncIDs || p.qbSyncIDs) {
         if (!p.syncIDs) p.syncIDs = {};
         if (!p.qbSyncIDs) p.qbSyncIDs = {};
@@ -606,7 +605,6 @@ console.log('getSyncIDs p.syncIDs, p.qbSyncIDs', p.syncIDs, p.qbSyncIDs);
       if (data[fl_inst_id]) p.bookData[p.chap]["unit"][p.unit]["section"][p.section]["subsection"][p.subSection]["problem_inst_id"] = fl_inst_id;
       // If this assignment uses NGSS instance IDs, replace the problem_inst_id with the one for NGSS. This replacement will remain in place for submission, as well.
       else if (data[ngss_inst_id]) p.bookData[p.chap]["unit"][p.unit]["section"][p.section]["subsection"][p.subSection]["problem_inst_id"] = ngss_inst_id;
-
       data = data[p.bookData[p.chap]["unit"][p.unit]["section"][p.section]["subsection"][p.subSection]["problem_inst_id"]];
       if (!data.video && _data['video']) {
         data.video = _data['video'];

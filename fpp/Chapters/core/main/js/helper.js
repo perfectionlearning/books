@@ -3,7 +3,6 @@
    * make async http request.
    */
   function httpRequest(_url, _type, _callback, _errorCallback) {
-    //console.log("request : ",_url);
     var request = $.ajax({
       url: _url,
       xhrFields: {
