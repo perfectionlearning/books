@@ -143,10 +143,27 @@ var Controller = function() {
     });
   }
 
+  // Returns if passed course data has FPP book or not.
+  function hasFPPBook(course) {
+    var hasFPPBookFlag = false;
+    if (course.product === 'fpp') {
+      hasFPPBookFlag = true;
+    } else if (course.course_books && course.course_books.length > 0) {
+      var books = course.course_books.filter((book) => {
+        return book.book_full && book.book_full.product_line && book.book_full.product_line === 'FPP';
+      });
+      if (books && books.length > 0) {
+        hasFPPBookFlag = true;
+      }
+    }
+    return hasFPPBookFlag;
+  }
+
   // Get FPP courses
   function getFPPCourses() {
     httpRequest(p.rest_courses, "json", function(data) {
       var fpp_courses = data.filter((item) => {
+        return hasFPPBook(item); // Added new function to check FPP book present in course_books attribute as well as existing condition
         return item.product === 'fpp';
       });
       getSyncIDs(fpp_courses);
