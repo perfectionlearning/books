@@ -208,7 +208,6 @@ var QuizCheck = function() {
 
   function mouseup(e) {
     e.stopImmediatePropagation();
-    console.log("in quiz check Mouse Up");
     btnStateReset();
     if (!$(this).hasClass("pDisable")) {
       playerbtnManager({
