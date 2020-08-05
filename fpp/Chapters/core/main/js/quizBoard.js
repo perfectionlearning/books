@@ -591,7 +591,7 @@ var QuizBoard = function() {
   function setMaxLength() {
     /* Added pQuizBoard class to find input because
      * this function is private function. Should be
-     * executed only for quizboard function */
+     * executed only for quizboard elements */
     $('.pQuizBoard .pAnsWrap').find("input").each(function(i) {
       $(this).attr("maxlength", q.screenData[q.currentQues]["maxLength"][i]);
     })
