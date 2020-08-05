@@ -3,7 +3,6 @@
    * make async http request.
    */
   function httpRequest(_url, _type, _callback, _errorCallback) {
-    //console.log("request : ",_url);
     var _requestObject = {
       url: _url,
       xhrFields: {
