@@ -672,7 +672,7 @@ var QuizCheck = function() {
     var _data = JSON.stringify({
       "studentResponse": _temp.data
     });
-    var request = $.ajax({
+    var _requestObject = {
       url: _temp.url,
       xhrFields: {
         withCredentials: true
@@ -684,21 +684,35 @@ var QuizCheck = function() {
       data: _data,
       method: "PUT",
       dataType: "json"
-    });
+    };
+    executeHttpRequest({ _requestObject, _url: _temp.url, _callback: cb });
+    // var request = $.ajax({
+    //   url: _temp.url,
+    //   xhrFields: {
+    //     withCredentials: true
+    //   },
+    //   headers: {
+    //     "Content-Type": "application/json"
+    //   },
+    //   crossDomain: true,
+    //   data: _data,
+    //   method: "PUT",
+    //   dataType: "json"
+    // });
 
-    request.done(function(data) {
-      if (data.hasOwnProperty('data')) data = data.data; // compensate for wrap_output = true;
-      cb(data)
-      request = null;
+    // request.done(function(data) {
+    //   if (data.hasOwnProperty('data')) data = data.data; // compensate for wrap_output = true;
+    //   cb(data)
+    //   request = null;
 
-    });
+    // });
 
-    request.fail(function(jqXHR, textStatus) {
-      console.log(jqXHR);
-      console.log(textStatus);
-      request = null;
-      alert("please login");
-    });
+    // request.fail(function(jqXHR, textStatus) {
+    //   console.log(jqXHR);
+    //   console.log(textStatus);
+    //   request = null;
+    //   alert("please login");
+    // });
   }
 
   function overlayDown() {
