@@ -47,19 +47,19 @@
    * We create new executeHttpRequest function to
    * have same done function to all submit method.
    */
-  function executeHttpRequest(data) {
+  function executeHttpRequest(request_data) {
     var _url, _callback, _errorCallback, _requestObject = {};
-    if (data._callback) {
-      _callback = data._callback;
+    if (request_data._callback) {
+      _callback = request_data._callback;
     }
-    if (data._errorCallback) {
-      _errorCallback = data._errorCallback;
+    if (request_data._errorCallback) {
+      _errorCallback = request_data._errorCallback;
     }
-    if (data._url) {
-      _url = data._url;
+    if (request_data._url) {
+      _url = request_data._url;
     }
-    if (data._requestObject && JSON.stringify(data._requestObject) !== '{}') {
-      _requestObject = data._requestObject;
+    if (request_data._requestObject && JSON.stringify(request_data._requestObject) !== '{}') {
+      _requestObject = request_data._requestObject;
     } else {
       alert('requestObject should not be blank');
       return;
