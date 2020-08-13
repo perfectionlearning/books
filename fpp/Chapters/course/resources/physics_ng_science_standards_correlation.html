@@ -31,33 +31,33 @@ var i,j;
 httpRequest("course/json/searchBook/nationalCode.json", "json", function (_data) {
 		myData = _data;
 		var user = ctrl.getUserType().toLowerCase();
-		<!-- console.log("hi---"+myData.data[0].code); -->
+		<!-- console.log("hi---"+myData[0].code); -->
 		var myStr = '<tr><th align="center" bgcolor="#d5d5d5" class="myTh" style="width:50%; vertical-align:middle"><b>NGSS Standard</b></th><th align="center" class="myTh"  bgcolor="#d5d5d5" style="width:50%; vertical-align:middle"><b>First Person Physics Topics</b></th></tr>';
 		var str="";
 		var chap, topic, subtopic,mainTitle;
 		var count = 0;
-		for(i=0;i<myData.data.length;i++)
+		for(i=0;i<myData.length;i++)
 		{
 			lessonStr = "";
 			if(user != "teacher"){
-				if(myData.data[i].type == "teacher"){
+				if(myData[i].type == "teacher"){
 					continue;
 				}
 			}
-			for(j=0;j<myData.data[i].lessons.length;j++){
+			for(j=0;j<myData[i].lessons.length;j++){
 				count++;
-				var link = myData.data[i].hyperLink[j];
-				var title = myData.data[i].lessons[j];
+				var link = myData[i].hyperLink[j];
+				var title = myData[i].lessons[j];
 				var mainTitle = title;
 				if(mainTitle.split(" ")[0].toLowerCase() == "lesson" && user != "teacher"){
 					continue;
 				}
 				lessonStr+= "<span onclick='openLink(event)' style='color:#0000FF;text-decoration: underline;cursor: pointer;float:left;clear:both' data-link='" + link + "'>" + mainTitle + "</span>";
 			}
-			if(myData.data[i].singlecell){
-				str+= '<tr><td class="myTd bold" colspan="2" bgcolor="#e9e9e9">'+myData.data[i].benchmark+'</td></tr>';
+			if(myData[i].singlecell){
+				str+= '<tr><td class="myTd bold" colspan="2" bgcolor="#e9e9e9">'+myData[i].benchmark+'</td></tr>';
 			}else{
-				str+= '<tr><td class="myTd" bgcolor="#e9e9e9">'+myData.data[i].benchmark+'</td><td class="myTd" bgcolor="#e9e9e9">'+lessonStr+'</td></tr>';
+				str+= '<tr><td class="myTd" bgcolor="#e9e9e9">'+myData[i].benchmark+'</td><td class="myTd" bgcolor="#e9e9e9">'+lessonStr+'</td></tr>';
 			}
 		}
 		console.log(count)
