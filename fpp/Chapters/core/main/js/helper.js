@@ -3,7 +3,7 @@
    * make async http request.
    */
   function httpRequest(_url, _type, _callback, _errorCallback) {
-    var request = $.ajax({
+    var _requestObject = {
       url: _url,
       xhrFields: {
         withCredentials: true
@@ -11,7 +11,60 @@
       crossDomain: true,
       method: "GET",
       dataType: _type
-    });
+    };
+    executeHttpRequest({ _requestObject, _url, _callback, _errorCallback });
+    // var request = $.ajax({
+    //   url: _url,
+    //   xhrFields: {
+    //     withCredentials: true
+    //   },
+    //   crossDomain: true,
+    //   method: "GET",
+    //   dataType: _type
+    // });
+
+    // request.done(function (data) {
+    //   if (typeof _callback != "undefined") {
+    //     if (data.hasOwnProperty('data')) data = data.data; // compensate for wrap_output = true;
+    //     _callback(data);
+    //     request = null;
+    //   }
+    // });
+
+    // request.fail(function (jqXHR, textStatus) {
+    //   if (typeof _errorCallback != "undefined") {
+    //     _errorCallback();
+    //   }
+    //   console.log(jqXHR);
+    //   console.log(textStatus);
+    //   console.log("Request failed: " + _url);
+    //   request = null;
+    // });
+  }
+
+  /*
+   * executes async http request.
+   * We create new executeHttpRequest function to
+   * have same done function to all submit method.
+   */
+  function executeHttpRequest(request_data) {
+    var _url, _callback, _errorCallback, _requestObject = {};
+    if (request_data._callback) {
+      _callback = request_data._callback;
+    }
+    if (request_data._errorCallback) {
+      _errorCallback = request_data._errorCallback;
+    }
+    if (request_data._url) {
+      _url = request_data._url;
+    }
+    if (request_data._requestObject && JSON.stringify(request_data._requestObject) !== '{}') {
+      _requestObject = request_data._requestObject;
+    } else {
+      alert('requestObject should not be blank');
+      return;
+    }
+    var request = $.ajax(_requestObject);
 
     request.done(function (data) {
       if (typeof _callback != "undefined") {

@@ -501,7 +501,7 @@ var QuizBoard = function() {
     var _data = JSON.stringify({
       "studentResponse": _temp.data
     });
-    var request = $.ajax({
+    var _requestObject = {
       url: _temp.url,
       xhrFields: {
         withCredentials: true
@@ -513,21 +513,35 @@ var QuizBoard = function() {
       data: _data,
       method: "PUT",
       dataType: "json"
-    });
+    };
+    executeHttpRequest({ _requestObject, _url: _temp.url, _callback: cb });
+    // var request = $.ajax({
+    //   url: _temp.url,
+    //   xhrFields: {
+    //     withCredentials: true
+    //   },
+    //   headers: {
+    //     "Content-Type": "application/json"
+    //   },
+    //   crossDomain: true,
+    //   data: _data,
+    //   method: "PUT",
+    //   dataType: "json"
+    // });
 
-    request.done(function(data) {
-      console.log(data);
-      cb(data)
-      request = null;
+    // request.done(function(data) {
+    //   console.log(data);
+    //   cb(data)
+    //   request = null;
 
-    });
+    // });
 
-    request.fail(function(jqXHR, textStatus) {
-      console.log(jqXHR);
-      console.log(textStatus);
-      request = null;
-      alert("please login");
-    });
+    // request.fail(function(jqXHR, textStatus) {
+    //   console.log(jqXHR);
+    //   console.log(textStatus);
+    //   request = null;
+    //   alert("please login");
+    // });
   }
 
   function overlayDown() {
@@ -575,8 +589,10 @@ var QuizBoard = function() {
   }
 //setting the length on the input box depending upon the answer
   function setMaxLength() {
-
-    $('.pAnsWrap').find("input").each(function(i) {
+    /* Added pQuizBoard class to find input because
+     * this function is private function. Should be
+     * executed only for quizboard elements */
+    $('.pQuizBoard .pAnsWrap').find("input").each(function(i) {
       $(this).attr("maxlength", q.screenData[q.currentQues]["maxLength"][i]);
     })
 
