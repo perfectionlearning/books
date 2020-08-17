@@ -852,7 +852,7 @@ function View() {
         $(p.mShell).find('.pActivitySummary').hide();
         $(p.mShell).find('.pSettingArea').hide();
         $(p.mShell).find('.pMainHelpWrapper').hide();
-        disableHeaderSearch(true);
+        // disableHeaderSearch(true);
         break;
     }
   }
