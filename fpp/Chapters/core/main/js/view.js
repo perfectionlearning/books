@@ -1476,7 +1476,7 @@ function View() {
           }
         });
         contentWrapper.find(".pExerciseButton").on("click", function (e) {
-          window.open($(this).attr("data-href"), "lab", "scrollbars=yes,resizable=yes,top=0,left=0,width=760,height=600");
+          window.open($(this).attr("data-href") + 'index.html', "lab", "scrollbars=yes,resizable=yes,top=0,left=0,width=760,height=600");
         });
         var list = [];
         contentWrapper.children().each(function (i, ele) {
