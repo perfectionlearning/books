@@ -516,6 +516,7 @@ var QuizBoard = function() {
     });
 
     request.done(function(data) {
+      if (data.hasOwnProperty('data')) data = data.data; // compensate for wrap_output = true;
       console.log(data);
       cb(data)
       request = null;
